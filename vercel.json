@@ -1,4 +1,5 @@
 {
+  "name": "psc-aneesh",
   "rewrites": [
     {
       "source": "/(.*)",

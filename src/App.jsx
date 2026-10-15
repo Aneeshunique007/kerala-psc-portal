@@ -350,7 +350,7 @@ export default function App() {
             onClick={() => handleSwitchSubject('malayalam')}
           >
             <span>📚 Malayalam</span>
-            <span className="subject-qcount">2,774 Qs</span>
+            <span className="subject-qcount">{QUESTION_BANK.length.toLocaleString()} Qs</span>
           </button>
           <button
             type="button"
@@ -358,7 +358,7 @@ export default function App() {
             onClick={() => handleSwitchSubject('english')}
           >
             <span>🇬🇧 English</span>
-            <span className="subject-qcount">2,834 Qs</span>
+            <span className="subject-qcount">{ENGLISH_QUESTION_BANK.length.toLocaleString()} Qs</span>
           </button>
         </div>
 

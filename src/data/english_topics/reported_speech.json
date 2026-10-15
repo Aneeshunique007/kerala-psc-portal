@@ -1,0 +1,2009 @@
+{
+  "topic_id": "reported_speech",
+  "topic_name": "Direct and Indirect Speech",
+  "total_questions": 154,
+  "questions": [
+    {
+      "id": "speech_1",
+      "topic": "reported_speech",
+      "question": "He said, 'I am busy today.' Change to indirect speech:",
+      "options": [
+        "He said that he was busy that day.",
+        "He said that he is busy today.",
+        "He said that he was busy today.",
+        "He said that he had been busy that day."
+      ],
+      "answer": 0,
+      "explanation": "Present tense 'am' changes to 'was', and 'today' changes to 'that day'."
+    },
+    {
+      "id": "speech_2",
+      "topic": "reported_speech",
+      "question": "She said, 'I bought a car yesterday.' Change to indirect speech:",
+      "options": [
+        "She said that she had bought a car the previous day.",
+        "She said that she bought a car yesterday.",
+        "She said that she had bought a car yesterday.",
+        "She said that she has bought a car the previous day."
+      ],
+      "answer": 0,
+      "explanation": "Simple Past 'bought' changes to Past Perfect 'had bought', and 'yesterday' changes to 'the previous day'."
+    },
+    {
+      "id": "speech_3",
+      "topic": "reported_speech",
+      "question": "The teacher said, 'The Earth revolves around the Sun.' Change to indirect speech:",
+      "options": [
+        "The teacher said that the Earth revolves around the Sun.",
+        "The teacher said that the Earth revolved around the Sun.",
+        "The teacher said that the Earth had revolved around the Sun.",
+        "The teacher said that the Earth will revolve around the Sun."
+      ],
+      "answer": 0,
+      "explanation": "Universal truths and scientific facts remain in the Present tense even when reporting verb is in past tense."
+    },
+    {
+      "id": "speech_4",
+      "topic": "reported_speech",
+      "question": "He said to me, 'Where do you live?' Change to indirect speech:",
+      "options": [
+        "He asked me where I lived.",
+        "He asked me where did I live.",
+        "He asked me where I live.",
+        "He asked me where do I live."
+      ],
+      "answer": 0,
+      "explanation": "Wh-interrogative changes to affirmative order: 'asked me where I lived' without 'did'."
+    },
+    {
+      "id": "speech_5",
+      "topic": "reported_speech",
+      "question": "She said to him, 'Are you coming with us?' Change to indirect speech:",
+      "options": [
+        "She asked him if he was coming with them.",
+        "She asked him that if he was coming with them.",
+        "She asked him was he coming with them.",
+        "She asked him if he is coming with them."
+      ],
+      "answer": 0,
+      "explanation": "Yes/No question uses 'if/whether' as conjunction, 'are you coming' -> 'he was coming'."
+    },
+    {
+      "id": "speech_6",
+      "topic": "reported_speech",
+      "question": "The doctor said to the patient, 'Take these medicines regularly.' Change to indirect speech:",
+      "options": [
+        "The doctor advised the patient to take those medicines regularly.",
+        "The doctor ordered the patient take these medicines regularly.",
+        "The doctor told the patient that take those medicines regularly.",
+        "The doctor said the patient to take those medicines regularly."
+      ],
+      "answer": 0,
+      "explanation": "Imperative sentence of advice uses 'advised + object + to + V1', and 'these' becomes 'those'."
+    },
+    {
+      "id": "speech_7",
+      "topic": "reported_speech",
+      "question": "He said, 'Alas! I am ruined.' Change to indirect speech:",
+      "options": [
+        "He exclaimed with sorrow that he was ruined.",
+        "He said that alas he was ruined.",
+        "He exclaimed with joy that he was ruined.",
+        "He exclaimed sadly that I am ruined."
+      ],
+      "answer": 0,
+      "explanation": "Exclamation 'Alas!' indicates sorrow -> 'exclaimed with sorrow that he was ruined'."
+    },
+    {
+      "id": "speech_8",
+      "topic": "reported_speech",
+      "question": "She said, 'Hurrah! We have won the match.' Change to indirect speech:",
+      "options": [
+        "She exclaimed with joy that they had won the match.",
+        "She exclaimed with joy that we had won the match.",
+        "She said hurrah they have won the match.",
+        "She exclaimed that they won the match."
+      ],
+      "answer": 0,
+      "explanation": "'Hurrah!' indicates joy -> 'exclaimed with joy that they had won the match'."
+    },
+    {
+      "id": "speech_9",
+      "topic": "reported_speech",
+      "question": "He said to me, 'Please give me your pen.' Change to indirect speech:",
+      "options": [
+        "He requested me to give him my pen.",
+        "He told me to please give him my pen.",
+        "He asked me that give him your pen.",
+        "He ordered me to give him his pen."
+      ],
+      "answer": 0,
+      "explanation": "Polite request 'Please' changes to 'requested + object + to + V1'."
+    },
+    {
+      "id": "speech_10",
+      "topic": "reported_speech",
+      "question": "The officer said to the soldiers, 'March forward!' Change to indirect speech:",
+      "options": [
+        "The officer ordered the soldiers to march forward.",
+        "The officer told the soldiers march forward.",
+        "The officer requested the soldiers to march forward.",
+        "The officer said to soldiers to march forward."
+      ],
+      "answer": 0,
+      "explanation": "Military command takes 'ordered + object + to + V1'."
+    },
+    {
+      "id": "speech_11",
+      "topic": "reported_speech",
+      "question": "Father said to son, 'Do not waste your time.' Change to indirect speech:",
+      "options": [
+        "Father advised his son not to waste his time.",
+        "Father advised his son to not waste your time.",
+        "Father forbade his son not to waste his time.",
+        "Father told his son don't waste his time."
+      ],
+      "answer": 0,
+      "explanation": "Negative imperative changes to 'advised... not to waste his time' (Note: 'forbade' already contains 'not')."
+    },
+    {
+      "id": "speech_12",
+      "topic": "reported_speech",
+      "question": "He said, 'I have seen this movie.' Change to indirect speech:",
+      "options": [
+        "He said that he had seen that movie.",
+        "He said that he saw that movie.",
+        "He said that he has seen that movie.",
+        "He said that he had seen this movie."
+      ],
+      "answer": 0,
+      "explanation": "Present Perfect 'have seen' -> Past Perfect 'had seen', and 'this' -> 'that'."
+    },
+    {
+      "id": "speech_13",
+      "topic": "reported_speech",
+      "question": "She said, 'I will call you tomorrow.' Change to indirect speech:",
+      "options": [
+        "She said that she would call me the next day.",
+        "She said that she will call me tomorrow.",
+        "She said that she would call you tomorrow.",
+        "She said that she would call me yesterday."
+      ],
+      "answer": 0,
+      "explanation": "'will' changes to 'would', 'tomorrow' changes to 'the next day'."
+    },
+    {
+      "id": "speech_14",
+      "topic": "reported_speech",
+      "question": "He said, 'Can you help me?' Change to indirect speech:",
+      "options": [
+        "He asked if I could help him.",
+        "He asked could I help him.",
+        "He said if I can help him.",
+        "He asked that if I could help him."
+      ],
+      "answer": 0,
+      "explanation": "'Can' changes to 'could' with 'if', following subject-verb word order ('if I could help him')."
+    },
+    {
+      "id": "speech_15",
+      "topic": "reported_speech",
+      "question": "Mother said to me, 'May God bless you!' Change to indirect speech:",
+      "options": [
+        "Mother prayed that God might bless me.",
+        "Mother said that God may bless me.",
+        "Mother wished that God would bless me.",
+        "Mother prayed God to bless you."
+      ],
+      "answer": 0,
+      "explanation": "Optative sentence expressing prayer: 'prayed that God might bless me'."
+    },
+    {
+      "id": "speech_16",
+      "topic": "reported_speech",
+      "question": "She said to her friend, 'Let us go for a picnic.' Change to indirect speech:",
+      "options": [
+        "She proposed to her friend that they should go for a picnic.",
+        "She told her friend to go for a picnic.",
+        "She ordered her friend that they go for a picnic.",
+        "She asked her friend let them go for a picnic."
+      ],
+      "answer": 0,
+      "explanation": "'Let us' expressing suggestion changes to 'proposed/suggested that they should...'"
+    },
+    {
+      "id": "speech_17",
+      "topic": "reported_speech",
+      "question": "He said, 'I am writing a letter now.' Change to indirect speech:",
+      "options": [
+        "He said that he was writing a letter then.",
+        "He said that he is writing a letter now.",
+        "He said that he was writing a letter now.",
+        "He said that he wrote a letter then."
+      ],
+      "answer": 0,
+      "explanation": "'is/am writing' -> 'was writing', and 'now' -> 'then'."
+    },
+    {
+      "id": "speech_18",
+      "topic": "reported_speech",
+      "question": "She said, 'I had already left before he arrived.' Change to indirect speech:",
+      "options": [
+        "She said that she had already left before he arrived.",
+        "She said that she had already left before he had arrived.",
+        "She said that she left before he arrived.",
+        "She said that she has already left before he arrived."
+      ],
+      "answer": 0,
+      "explanation": "Past perfect tenses generally do not change in indirect speech."
+    },
+    {
+      "id": "speech_19",
+      "topic": "reported_speech",
+      "question": "He said, 'Two and two make four.' Change to indirect speech:",
+      "options": [
+        "He said that two and two make four.",
+        "He said that two and two made four.",
+        "He said that two and two makes four.",
+        "He said that two and two had made four."
+      ],
+      "answer": 0,
+      "explanation": "Mathematical and universal truths remain unchanged in tense."
+    },
+    {
+      "id": "speech_20",
+      "topic": "reported_speech",
+      "question": "She said to me, 'What is your name?' Change to indirect speech:",
+      "options": [
+        "She asked me what my name was.",
+        "She asked me what was my name.",
+        "She asked me that what my name was.",
+        "She asked me what is your name."
+      ],
+      "answer": 0,
+      "explanation": "In indirect wh-questions, the verb comes after the subject: 'what my name was' (not 'what was my name')."
+    },
+    {
+      "id": "speech_21",
+      "topic": "reported_speech",
+      "question": "He said to her, 'Why are you crying?' Change to indirect speech:",
+      "options": [
+        "He asked her why she was crying.",
+        "He asked her why was she crying.",
+        "He asked her that why she was crying.",
+        "He told her why she was crying."
+      ],
+      "answer": 0,
+      "explanation": "Wh-word acts as connective; word order becomes assertive: 'why she was crying'."
+    },
+    {
+      "id": "speech_22",
+      "topic": "reported_speech",
+      "question": "The teacher said to the boys, 'Work hard to pass.' Change to indirect speech:",
+      "options": [
+        "The teacher advised the boys to work hard to pass.",
+        "The teacher told the boys hard work to pass.",
+        "The teacher ordered the boys that they work hard.",
+        "The teacher asked the boys work hard."
+      ],
+      "answer": 0,
+      "explanation": "Advice imperative -> 'advised the boys to work hard to pass'."
+    },
+    {
+      "id": "speech_23",
+      "topic": "reported_speech",
+      "question": "He said, 'Good morning, friends!' Change to indirect speech:",
+      "options": [
+        "He wished his friends good morning.",
+        "He said good morning to his friends.",
+        "He exclaimed good morning his friends.",
+        "He told his friends good morning."
+      ],
+      "answer": 0,
+      "explanation": "Salutations like 'Good morning' take reporting verb 'wished'."
+    },
+    {
+      "id": "speech_24",
+      "topic": "reported_speech",
+      "question": "She said, 'Farewell, my friends!' Change to indirect speech:",
+      "options": [
+        "She bade farewell to her friends.",
+        "She wished farewell to her friends.",
+        "She said farewell to her friends.",
+        "She told farewell to her friends."
+      ],
+      "answer": 0,
+      "explanation": "Goodbyes and farewells take the reporting verb 'bade' (past of bid)."
+    },
+    {
+      "id": "speech_25",
+      "topic": "reported_speech",
+      "question": "He said to me, 'I do not believe you.' Change to indirect speech:",
+      "options": [
+        "He told me that he did not believe me.",
+        "He said to me that he does not believe me.",
+        "He told me that he had not believed me.",
+        "He asked me that he did not believe me."
+      ],
+      "answer": 0,
+      "explanation": "Simple present negative 'do not believe' -> Simple past 'did not believe'."
+    },
+    {
+      "id": "speech_26",
+      "topic": "reported_speech",
+      "question": "She said, 'I must go now.' Change to indirect speech:",
+      "options": [
+        "She said that she had to go then.",
+        "She said that she must go now.",
+        "She said that she should go then.",
+        "She said that she would go then."
+      ],
+      "answer": 0,
+      "explanation": "'Must' expressing immediate necessity changes to 'had to', and 'now' -> 'then'."
+    },
+    {
+      "id": "speech_27",
+      "topic": "reported_speech",
+      "question": "He says, 'I am feeling unwell.' Change to indirect speech:",
+      "options": [
+        "He says that he is feeling unwell.",
+        "He said that he was feeling unwell.",
+        "He says that he was feeling unwell.",
+        "He says that he had felt unwell."
+      ],
+      "answer": 0,
+      "explanation": "When the reporting verb is in the Present tense ('says'), the tense of the reported speech does not change!"
+    },
+    {
+      "id": "speech_28",
+      "topic": "reported_speech",
+      "question": "She will say, 'I have finished my work.' Change to indirect speech:",
+      "options": [
+        "She will say that she has finished her work.",
+        "She will say that she had finished her work.",
+        "She will tell that she finished her work.",
+        "She said that she has finished her work."
+      ],
+      "answer": 0,
+      "explanation": "When reporting verb is in Future tense ('will say'), the reported tense does not change."
+    },
+    {
+      "id": "speech_29",
+      "topic": "reported_speech",
+      "question": "Raju said, 'I visited London last month.' Change to indirect speech:",
+      "options": [
+        "Raju said that he had visited London the previous month.",
+        "Raju said that he visited London last month.",
+        "Raju said that he has visited London the previous month.",
+        "Raju said that he had visited London last month."
+      ],
+      "answer": 0,
+      "explanation": "Past Simple 'visited' -> Past Perfect 'had visited'; 'last month' -> 'the previous month'."
+    },
+    {
+      "id": "speech_30",
+      "topic": "reported_speech",
+      "question": "The old man said, 'Honesty is the best policy.' Change to indirect speech:",
+      "options": [
+        "The old man said that honesty is the best policy.",
+        "The old man said that honesty was the best policy.",
+        "The old man told honesty is best policy.",
+        "The old man said that honesty had been the best policy."
+      ],
+      "answer": 0,
+      "explanation": "Proverbs do not change their tense in indirect speech."
+    },
+    {
+      "id": "speech_31",
+      "topic": "reported_speech",
+      "question": "He said to me, 'Wait here until I return.' Change to indirect speech:",
+      "options": [
+        "He asked me to wait there until he returned.",
+        "He asked me to wait here until I return.",
+        "He told me wait there until he returned.",
+        "He said me to wait there until he returned."
+      ],
+      "answer": 0,
+      "explanation": "'Wait here' -> 'to wait there'; 'return' -> 'returned'."
+    },
+    {
+      "id": "speech_32",
+      "topic": "reported_speech",
+      "question": "She said, 'What a beautiful flower it is!' Change to indirect speech:",
+      "options": [
+        "She exclaimed that it was a very beautiful flower.",
+        "She exclaimed what a beautiful flower it was.",
+        "She said that it is a beautiful flower.",
+        "She asked if it was a beautiful flower."
+      ],
+      "answer": 0,
+      "explanation": "Exclamatory sentence -> 'She exclaimed that it was a very beautiful flower.'"
+    },
+    {
+      "id": "speech_33",
+      "topic": "reported_speech",
+      "question": "He said, 'How clever I am!' Change to indirect speech:",
+      "options": [
+        "He exclaimed that he was very clever.",
+        "He exclaimed how clever he was.",
+        "He said that he was very clever.",
+        "He told that he is clever."
+      ],
+      "answer": 0,
+      "explanation": "Exclamatory sentence -> 'He exclaimed that he was very clever.'"
+    },
+    {
+      "id": "speech_34",
+      "topic": "reported_speech",
+      "question": "The master said to the servant, 'Bring a glass of water.' Change to indirect speech:",
+      "options": [
+        "The master ordered the servant to bring a glass of water.",
+        "The master requested the servant to bring a glass of water.",
+        "The master asked the servant that bring a glass of water.",
+        "The master told to servant to bring water."
+      ],
+      "answer": 0,
+      "explanation": "Order to servant -> 'ordered the servant to bring a glass of water'."
+    },
+    {
+      "id": "speech_35",
+      "topic": "reported_speech",
+      "question": "The judge said to the accused, 'Tell the truth.' Change to indirect speech:",
+      "options": [
+        "The judge commanded the accused to tell the truth.",
+        "The judge asked the accused tell truth.",
+        "The judge said accused to tell the truth.",
+        "The judge told the accused tell the truth."
+      ],
+      "answer": 0,
+      "explanation": "Command from authority -> 'commanded/ordered the accused to tell the truth'."
+    },
+    {
+      "id": "speech_36",
+      "topic": "reported_speech",
+      "question": "He said, 'I shall go as soon as it is possible.' Change to indirect speech:",
+      "options": [
+        "He said that he would go as soon as it was possible.",
+        "He said that he should go as soon as it is possible.",
+        "He said that he will go as soon as it was possible.",
+        "He said that he would go as soon as it is possible."
+      ],
+      "answer": 0,
+      "explanation": "'shall' -> 'would' (for 3rd person 'he'), 'is' -> 'was'."
+    },
+    {
+      "id": "speech_37",
+      "topic": "reported_speech",
+      "question": "She said to him, 'Do you know French?' Change to indirect speech:",
+      "options": [
+        "She asked him whether he knew French.",
+        "She asked him did he know French.",
+        "She told him if he knew French.",
+        "She asked him whether he knows French."
+      ],
+      "answer": 0,
+      "explanation": "Simple present question 'Do you know...' -> 'whether he knew French'."
+    },
+    {
+      "id": "speech_38",
+      "topic": "reported_speech",
+      "question": "He said to her, 'Can I borrow your dictionary?' Change to indirect speech:",
+      "options": [
+        "He asked her if he could borrow her dictionary.",
+        "He asked her can he borrow her dictionary.",
+        "He requested her that could he borrow dictionary.",
+        "He told her if he could borrow her dictionary."
+      ],
+      "answer": 0,
+      "explanation": "Yes/No modal question -> 'if he could borrow her dictionary'."
+    },
+    {
+      "id": "speech_39",
+      "topic": "reported_speech",
+      "question": "The teacher said to the student, 'Why were you absent yesterday?' Change to indirect speech:",
+      "options": [
+        "The teacher asked the student why he had been absent the previous day.",
+        "The teacher asked the student why was he absent yesterday.",
+        "The teacher asked the student why he was absent the previous day.",
+        "The teacher asked the student that why he had been absent."
+      ],
+      "answer": 0,
+      "explanation": "Past tense 'were' changes to Past Perfect 'had been', 'yesterday' -> 'the previous day'."
+    },
+    {
+      "id": "speech_40",
+      "topic": "reported_speech",
+      "question": "He said to his sister, 'Please pass the salt.' Change to indirect speech:",
+      "options": [
+        "He requested his sister to pass the salt.",
+        "He told his sister to please pass salt.",
+        "He ordered his sister to pass the salt.",
+        "He asked his sister that pass salt."
+      ],
+      "answer": 0,
+      "explanation": "Polite request -> 'requested his sister to pass the salt'."
+    },
+    {
+      "id": "speech_41",
+      "topic": "reported_speech",
+      "question": "Mother said to me, 'Did you lock the front door?' Change to indirect speech:",
+      "options": [
+        "Mother asked me whether I had locked the front door.",
+        "Mother asked me whether did I lock the front door.",
+        "Mother asked me whether I locked the front door.",
+        "Mother told me whether I had locked the door."
+      ],
+      "answer": 0,
+      "explanation": "Simple Past question 'Did you lock...' -> 'whether I had locked...'"
+    },
+    {
+      "id": "speech_42",
+      "topic": "reported_speech",
+      "question": "He said, 'I have been waiting for two hours.' Change to indirect speech:",
+      "options": [
+        "He said that he had been waiting for two hours.",
+        "He said that he has been waiting for two hours.",
+        "He said that he was waiting for two hours.",
+        "He said that he had waited for two hours."
+      ],
+      "answer": 0,
+      "explanation": "Present Perfect Continuous 'have been waiting' -> Past Perfect Continuous 'had been waiting'."
+    },
+    {
+      "id": "speech_43",
+      "topic": "reported_speech",
+      "question": "She said, 'I may come tomorrow.' Change to indirect speech:",
+      "options": [
+        "She said that she might come the next day.",
+        "She said that she may come tomorrow.",
+        "She said that she could come the next day.",
+        "She said that she might come tomorrow."
+      ],
+      "answer": 0,
+      "explanation": "'may' changes to 'might', 'tomorrow' changes to 'the next day'."
+    },
+    {
+      "id": "speech_44",
+      "topic": "reported_speech",
+      "question": "He said, 'Water freezes at zero degree Celsius.' Change to indirect speech:",
+      "options": [
+        "He said that water freezes at zero degree Celsius.",
+        "He said that water froze at zero degree Celsius.",
+        "He said that water had frozen at zero degree Celsius.",
+        "He said that water will freeze at zero degree Celsius."
+      ],
+      "answer": 0,
+      "explanation": "Scientific fact remains in Present tense."
+    },
+    {
+      "id": "speech_45",
+      "topic": "reported_speech",
+      "question": "The stranger said to me, 'Which way leads to the station?' Change to indirect speech:",
+      "options": [
+        "The stranger asked me which way led to the station.",
+        "The stranger asked me which way did lead to the station.",
+        "The stranger asked me that which way led to station.",
+        "The stranger told me which way led to station."
+      ],
+      "answer": 0,
+      "explanation": "'leads' (present) -> 'led' (past) in indirect speech."
+    },
+    {
+      "id": "speech_46",
+      "topic": "reported_speech",
+      "question": "He said to them, 'Don't make a noise.' Change to indirect speech:",
+      "options": [
+        "He forbade them to make a noise.",
+        "He forbade them not to make a noise.",
+        "He ordered them don't make a noise.",
+        "He told them to not make noise."
+      ],
+      "answer": 0,
+      "explanation": "'Forbade' means 'ordered not to'; do not add another 'not' after 'forbade'."
+    },
+    {
+      "id": "speech_47",
+      "topic": "reported_speech",
+      "question": "She said, 'I am so glad to be here tonight.' Change to indirect speech:",
+      "options": [
+        "She said that she was so glad to be there that night.",
+        "She said that she is so glad to be here tonight.",
+        "She said that she was so glad to be here that night.",
+        "She said that she had been glad to be there that night."
+      ],
+      "answer": 0,
+      "explanation": "'here' -> 'there', 'tonight' -> 'that night', 'am' -> 'was'."
+    },
+    {
+      "id": "speech_48",
+      "topic": "reported_speech",
+      "question": "He said, 'These mangoes are sweet.' Change to indirect speech:",
+      "options": [
+        "He said that those mangoes were sweet.",
+        "He said that these mangoes were sweet.",
+        "He said that those mangoes are sweet.",
+        "He said that these mangoes had been sweet."
+      ],
+      "answer": 0,
+      "explanation": "'These' -> 'those', 'are' -> 'were'."
+    },
+    {
+      "id": "speech_49",
+      "topic": "reported_speech",
+      "question": "The beggar said, 'May you live long!' Change to indirect speech:",
+      "options": [
+        "The beggar wished that I might live long.",
+        "The beggar prayed that I may live long.",
+        "The beggar told that I might live long.",
+        "The beggar wished I live long."
+      ],
+      "answer": 0,
+      "explanation": "Wish/prayer -> 'wished that I might live long'."
+    },
+    {
+      "id": "speech_50",
+      "topic": "reported_speech",
+      "question": "He said to me, 'You should consult a doctor.' Change to indirect speech:",
+      "options": [
+        "He advised me that I should consult a doctor.",
+        "He told me to consult doctor.",
+        "He ordered me to consult doctor.",
+        "He asked me if I should consult a doctor."
+      ],
+      "answer": 0,
+      "explanation": "Advice with 'should' remains unchanged in modal form."
+    },
+    {
+      "id": "speech_51",
+      "topic": "reported_speech",
+      "question": "She said, 'I could not attend the meeting.' Change to indirect speech:",
+      "options": [
+        "She said that she could not attend the meeting.",
+        "She said that she cannot attend the meeting.",
+        "She said that she had not could attend.",
+        "She said that she might not attend."
+      ],
+      "answer": 0,
+      "explanation": "'Could' does not change in indirect speech."
+    },
+    {
+      "id": "speech_52",
+      "topic": "reported_speech",
+      "question": "He said, 'We ought to help the poor.' Change to indirect speech:",
+      "options": [
+        "He said that they ought to help the poor.",
+        "He said that they should to help the poor.",
+        "He said that we ought to help the poor.",
+        "He told that they had to help the poor."
+      ],
+      "answer": 0,
+      "explanation": "'Ought to' remains unchanged; pronoun 'we' changes to 'they'."
+    },
+    {
+      "id": "speech_53",
+      "topic": "reported_speech",
+      "question": "The boy said, 'Sir, please grant me leave.' Change to indirect speech:",
+      "options": [
+        "The boy respectfully requested his sir to grant him leave.",
+        "The boy requested sir to please grant him leave.",
+        "The boy asked sir grant him leave.",
+        "The boy told sir to grant leave."
+      ],
+      "answer": 0,
+      "explanation": "'Sir' changes to 'respectfully requested'."
+    },
+    {
+      "id": "speech_54",
+      "topic": "reported_speech",
+      "question": "He said, 'Yes, I committed the crime.' Change to indirect speech:",
+      "options": [
+        "He admitted that he had committed the crime.",
+        "He agreed that he committed the crime.",
+        "He said yes he committed crime.",
+        "He confessed that he committed crime."
+      ],
+      "answer": 0,
+      "explanation": "'Yes, I committed...' -> 'He admitted/confessed that he had committed the crime'."
+    },
+    {
+      "id": "speech_55",
+      "topic": "reported_speech",
+      "question": "She said, 'No, I didn't take your purse.' Change to indirect speech:",
+      "options": [
+        "She denied having taken my purse.",
+        "She said no that she didn't take my purse.",
+        "She refused that she took my purse.",
+        "She rejected taking my purse."
+      ],
+      "answer": 0,
+      "explanation": "'No, I didn't...' -> 'She denied having taken my purse' (or 'denied that she had taken')."
+    },
+    {
+      "id": "speech_56",
+      "topic": "reported_speech",
+      "question": "He said, 'Thank you!' Change to indirect speech:",
+      "options": [
+        "He thanked me.",
+        "He said thank you to me.",
+        "He wished me thanks.",
+        "He exclaimed thank you."
+      ],
+      "answer": 0,
+      "explanation": "'Thank you' directly becomes the reporting verb: 'He thanked me.'"
+    },
+    {
+      "id": "speech_57",
+      "topic": "reported_speech",
+      "question": "She said, 'Welcome!' Change to indirect speech:",
+      "options": [
+        "She welcomed me.",
+        "She said welcome to me.",
+        "She wished welcome.",
+        "She cheered welcome."
+      ],
+      "answer": 0,
+      "explanation": "'Welcome!' becomes 'She welcomed me.'"
+    },
+    {
+      "id": "speech_58",
+      "topic": "reported_speech",
+      "question": "He said, 'Congratulations!' Change to indirect speech:",
+      "options": [
+        "He congratulated me.",
+        "He wished me congratulations.",
+        "He told congratulations to me.",
+        "He said congratulations."
+      ],
+      "answer": 0,
+      "explanation": "'Congratulations!' becomes 'He congratulated me.'"
+    },
+    {
+      "id": "speech_59",
+      "topic": "reported_speech",
+      "question": "The captain said, 'Bravo! Well done, boys!' Change to indirect speech:",
+      "options": [
+        "The captain applauded the boys, saying that they had done well.",
+        "The captain said bravo to boys.",
+        "The captain praised boys saying well done.",
+        "The captain cheered the boys."
+      ],
+      "answer": 0,
+      "explanation": "'Bravo! Well done' -> 'applauded the boys, saying that they had done well'."
+    },
+    {
+      "id": "speech_60",
+      "topic": "reported_speech",
+      "question": "He said to me, 'I will meet you here next Monday.' Change to indirect speech:",
+      "options": [
+        "He told me that he would meet me there the following Monday.",
+        "He told me that he will meet me here next Monday.",
+        "He told me that he would meet me here next Monday.",
+        "He told me that he would meet me there next Monday."
+      ],
+      "answer": 0,
+      "explanation": "'will' -> 'would', 'here' -> 'there', 'next Monday' -> 'the following Monday'."
+    },
+    {
+      "id": "speech_61",
+      "topic": "reported_speech",
+      "question": "She said, 'I have been suffering from headache since morning.' Change to indirect speech:",
+      "options": [
+        "She said that she had been suffering from headache since morning.",
+        "She said that she has been suffering from headache since morning.",
+        "She said that she was suffering from headache since morning.",
+        "She said that she had suffered from headache since morning."
+      ],
+      "answer": 0,
+      "explanation": "'have been suffering' -> 'had been suffering'."
+    },
+    {
+      "id": "speech_62",
+      "topic": "reported_speech",
+      "question": "He said to the servant, 'Leave the room at once.' Change to indirect speech:",
+      "options": [
+        "He ordered the servant to leave the room at once.",
+        "He asked the servant that leave the room at once.",
+        "He told the servant leave room at once.",
+        "He commanded that servant leaves room."
+      ],
+      "answer": 0,
+      "explanation": "Imperative order -> 'ordered the servant to leave the room at once'."
+    },
+    {
+      "id": "speech_63",
+      "topic": "reported_speech",
+      "question": "The policeman said to the driver, 'Show your license.' Change to indirect speech:",
+      "options": [
+        "The policeman demanded the driver to show his license.",
+        "The policeman requested the driver to show his license.",
+        "The policeman said to driver show license.",
+        "The policeman told driver that show license."
+      ],
+      "answer": 0,
+      "explanation": "Official command -> 'ordered/demanded the driver to show his license'."
+    },
+    {
+      "id": "speech_64",
+      "topic": "reported_speech",
+      "question": "Father said, 'Do your duty sincerely.' Change to indirect speech:",
+      "options": [
+        "Father advised me to do my duty sincerely.",
+        "Father told me do my duty sincerely.",
+        "Father ordered that do duty sincerely.",
+        "Father asked to do duty sincerely."
+      ],
+      "answer": 0,
+      "explanation": "Moral guidance -> 'advised me to do my duty sincerely'."
+    },
+    {
+      "id": "speech_65",
+      "topic": "reported_speech",
+      "question": "He said, 'I am reading a novel.' Change to indirect speech:",
+      "options": [
+        "He said that he was reading a novel.",
+        "He said that he is reading a novel.",
+        "He said that he had read a novel.",
+        "He said that he read a novel."
+      ],
+      "answer": 0,
+      "explanation": "Present continuous 'am reading' -> Past continuous 'was reading'."
+    },
+    {
+      "id": "speech_66",
+      "topic": "reported_speech",
+      "question": "She said, 'My brother wrote a letter.' Change to indirect speech:",
+      "options": [
+        "She said that her brother had written a letter.",
+        "She said that her brother wrote a letter.",
+        "She said that her brother has written a letter.",
+        "She said that her brother was writing a letter."
+      ],
+      "answer": 0,
+      "explanation": "Past simple 'wrote' -> Past perfect 'had written'."
+    },
+    {
+      "id": "speech_67",
+      "topic": "reported_speech",
+      "question": "He said to me, 'Have you done your homework?' Change to indirect speech:",
+      "options": [
+        "He asked me if I had done my homework.",
+        "He asked me if I have done my homework.",
+        "He asked me had I done my homework.",
+        "He asked me if did I do my homework."
+      ],
+      "answer": 0,
+      "explanation": "Present perfect question -> 'if I had done my homework'."
+    },
+    {
+      "id": "speech_68",
+      "topic": "reported_speech",
+      "question": "She said to him, 'Where are you going?' Change to indirect speech:",
+      "options": [
+        "She asked him where he was going.",
+        "She asked him where was he going.",
+        "She told him where he was going.",
+        "She asked him that where he was going."
+      ],
+      "answer": 0,
+      "explanation": "Wh-interrogative -> 'where he was going'."
+    },
+    {
+      "id": "speech_69",
+      "topic": "reported_speech",
+      "question": "The teacher said to Rahul, 'Stand up on the bench.' Change to indirect speech:",
+      "options": [
+        "The teacher ordered Rahul to stand up on the bench.",
+        "The teacher requested Rahul to stand up on the bench.",
+        "The teacher asked Rahul that stand on bench.",
+        "The teacher told Rahul stand on bench."
+      ],
+      "answer": 0,
+      "explanation": "Classroom command -> 'ordered Rahul to stand up on the bench'."
+    },
+    {
+      "id": "speech_70",
+      "topic": "reported_speech",
+      "question": "He said, 'I shall be twenty next week.' Change to indirect speech:",
+      "options": [
+        "He said that he would be twenty the following week.",
+        "He said that he should be twenty next week.",
+        "He said that he will be twenty the following week.",
+        "He said that he would be twenty next week."
+      ],
+      "answer": 0,
+      "explanation": "'shall' -> 'would', 'next week' -> 'the following week'."
+    },
+    {
+      "id": "speech_71",
+      "topic": "reported_speech",
+      "question": "She said, 'I don't know the way.' Change to indirect speech:",
+      "options": [
+        "She said that she didn't know the way.",
+        "She said that she doesn't know the way.",
+        "She said that she hadn't known the way.",
+        "She told that she didn't know the way."
+      ],
+      "answer": 0,
+      "explanation": "'don't know' -> 'didn't know'."
+    },
+    {
+      "id": "speech_72",
+      "topic": "reported_speech",
+      "question": "He said, 'Will you lend me some money?' Change to indirect speech:",
+      "options": [
+        "He asked whether I would lend him some money.",
+        "He asked will I lend him some money.",
+        "He asked whether would I lend him money.",
+        "He told whether I would lend him money."
+      ],
+      "answer": 0,
+      "explanation": "'Will you...' -> 'whether I would lend him some money'."
+    },
+    {
+      "id": "speech_73",
+      "topic": "reported_speech",
+      "question": "She said, 'How hot it is!' Change to indirect speech:",
+      "options": [
+        "She exclaimed that it was very hot.",
+        "She exclaimed how hot it was.",
+        "She said that it was hot.",
+        "She exclaimed that it is very hot."
+      ],
+      "answer": 0,
+      "explanation": "Exclamatory -> 'She exclaimed that it was very hot.'"
+    },
+    {
+      "id": "speech_74",
+      "topic": "reported_speech",
+      "question": "He said, 'What a pity!' Change to indirect speech:",
+      "options": [
+        "He exclaimed that it was a great pity.",
+        "He said what a pity.",
+        "He told that it was a pity.",
+        "He exclaimed it is a great pity."
+      ],
+      "answer": 0,
+      "explanation": "'What a pity!' -> 'He exclaimed that it was a great pity.'"
+    },
+    {
+      "id": "speech_75",
+      "topic": "reported_speech",
+      "question": "The doctor said, 'Don't smoke.' Change to indirect speech:",
+      "options": [
+        "The doctor advised not to smoke.",
+        "The doctor ordered don't smoke.",
+        "The doctor forbade not to smoke.",
+        "The doctor said not to smoke."
+      ],
+      "answer": 0,
+      "explanation": "Medical advice -> 'advised not to smoke'."
+    },
+    {
+      "id": "speech_76",
+      "topic": "reported_speech",
+      "question": "He said, 'Let me have some water.' Change to indirect speech:",
+      "options": [
+        "He requested that he might have some water.",
+        "He ordered that let him have water.",
+        "He said to have some water.",
+        "He wished to have water."
+      ],
+      "answer": 0,
+      "explanation": "'Let me...' (request) -> 'requested that he might have some water'."
+    },
+    {
+      "id": "speech_77",
+      "topic": "reported_speech",
+      "question": "She said, 'Let us start now.' Change to indirect speech:",
+      "options": [
+        "She suggested that they should start then.",
+        "She ordered to start now.",
+        "She said that they start then.",
+        "She told let them start then."
+      ],
+      "answer": 0,
+      "explanation": "'Let us start now' -> 'suggested that they should start then'."
+    },
+    {
+      "id": "speech_78",
+      "topic": "reported_speech",
+      "question": "He said, 'I am proud of my country.' Change to indirect speech:",
+      "options": [
+        "He said that he was proud of his country.",
+        "He said that he is proud of his country.",
+        "He said that he had been proud of his country.",
+        "He told he was proud of country."
+      ],
+      "answer": 0,
+      "explanation": "Present -> Past: 'was proud of his country'."
+    },
+    {
+      "id": "speech_79",
+      "topic": "reported_speech",
+      "question": "She said, 'I saw an eagle in the sky.' Change to indirect speech:",
+      "options": [
+        "She said that she had seen an eagle in the sky.",
+        "She said that she saw an eagle in the sky.",
+        "She said that she has seen an eagle.",
+        "She said that she had saw an eagle."
+      ],
+      "answer": 0,
+      "explanation": "Past Simple 'saw' -> Past Perfect 'had seen'."
+    },
+    {
+      "id": "speech_80",
+      "topic": "reported_speech",
+      "question": "He said to me, 'Whom do you want to see?' Change to indirect speech:",
+      "options": [
+        "He asked me whom I wanted to see.",
+        "He asked me whom did I want to see.",
+        "He asked me that whom I wanted to see.",
+        "He told me whom I wanted to see."
+      ],
+      "answer": 0,
+      "explanation": "Whom question -> 'whom I wanted to see'."
+    },
+    {
+      "id": "speech_81",
+      "topic": "reported_speech",
+      "question": "The traveller said, 'Can you tell me the way to the inn?' Change to indirect speech:",
+      "options": [
+        "The traveller asked if I could tell him the way to the inn.",
+        "The traveller asked could I tell him the way to the inn.",
+        "The traveller told if I could tell him the way.",
+        "The traveller requested if I can tell the way."
+      ],
+      "answer": 0,
+      "explanation": "Polite enquiry -> 'asked if I could tell him the way to the inn'."
+    },
+    {
+      "id": "speech_82",
+      "topic": "reported_speech",
+      "question": "He said, 'I was ill yesterday.' Change to indirect speech:",
+      "options": [
+        "He said that he had been ill the previous day.",
+        "He said that he was ill yesterday.",
+        "He said that he had been ill yesterday.",
+        "He said that he was ill the previous day."
+      ],
+      "answer": 0,
+      "explanation": "Past 'was' -> 'had been', 'yesterday' -> 'the previous day'."
+    },
+    {
+      "id": "speech_83",
+      "topic": "reported_speech",
+      "question": "She said, 'I had already seen the film.' Change to indirect speech:",
+      "options": [
+        "She said that she had already seen the film.",
+        "She said that she has already seen the film.",
+        "She said that she had been seeing the film.",
+        "She said that she saw the film."
+      ],
+      "answer": 0,
+      "explanation": "Past Perfect remains unchanged: 'had already seen'."
+    },
+    {
+      "id": "speech_84",
+      "topic": "reported_speech",
+      "question": "He said, 'What an idiot I am!' Change to indirect speech:",
+      "options": [
+        "He exclaimed that he was a great idiot.",
+        "He said what an idiot he was.",
+        "He exclaimed he is a great idiot.",
+        "He told that he was an idiot."
+      ],
+      "answer": 0,
+      "explanation": "Exclamation -> 'exclaimed that he was a great idiot'."
+    },
+    {
+      "id": "speech_85",
+      "topic": "reported_speech",
+      "question": "She said, 'May you succeed in life!' Change to indirect speech:",
+      "options": [
+        "She wished that I might succeed in life.",
+        "She prayed that I may succeed in life.",
+        "She said that I might succeed in life.",
+        "She told me that I succeed in life."
+      ],
+      "answer": 0,
+      "explanation": "Wish -> 'wished that I might succeed in life'."
+    },
+    {
+      "id": "speech_86",
+      "topic": "reported_speech",
+      "question": "He said, 'Let there be no dispute.' Change to indirect speech:",
+      "options": [
+        "He wished that there should be no dispute.",
+        "He ordered that let there be no dispute.",
+        "He said to be no dispute.",
+        "He told that there be no dispute."
+      ],
+      "answer": 0,
+      "explanation": "Impersonal 'Let there be...' -> 'wished/proposed that there should be no dispute'."
+    },
+    {
+      "id": "speech_87",
+      "topic": "reported_speech",
+      "question": "The boy said, 'I can solve this sum easily.' Change to indirect speech:",
+      "options": [
+        "The boy said that he could solve that sum easily.",
+        "The boy said that he can solve that sum easily.",
+        "The boy said that he could solve this sum easily.",
+        "The boy said that he would solve that sum easily."
+      ],
+      "answer": 0,
+      "explanation": "'can' -> 'could', 'this' -> 'that'."
+    },
+    {
+      "id": "speech_88",
+      "topic": "reported_speech",
+      "question": "She said, 'I will not come tomorrow.' Change to indirect speech:",
+      "options": [
+        "She said that she would not come the next day.",
+        "She said that she will not come tomorrow.",
+        "She said that she would not come tomorrow.",
+        "She said that she shall not come the next day."
+      ],
+      "answer": 0,
+      "explanation": "'will not' -> 'would not', 'tomorrow' -> 'the next day'."
+    },
+    {
+      "id": "speech_89",
+      "topic": "reported_speech",
+      "question": "He said to me, 'Are you happy here?' Change to indirect speech:",
+      "options": [
+        "He asked me if I was happy there.",
+        "He asked me if was I happy there.",
+        "He asked me if I am happy there.",
+        "He asked me that if I was happy there."
+      ],
+      "answer": 0,
+      "explanation": "'Are you happy here?' -> 'if I was happy there'."
+    },
+    {
+      "id": "speech_90",
+      "topic": "reported_speech",
+      "question": "The commander said to the army, 'Attack the enemy!' Change to indirect speech:",
+      "options": [
+        "The commander ordered the army to attack the enemy.",
+        "The commander requested the army to attack.",
+        "The commander told army that attack enemy.",
+        "The commander asked army attack enemy."
+      ],
+      "answer": 0,
+      "explanation": "Military order -> 'ordered the army to attack the enemy'."
+    },
+    {
+      "id": "speech_91",
+      "topic": "reported_speech",
+      "question": "He said, 'I have lost my watch.' Change to indirect speech:",
+      "options": [
+        "He said that he had lost his watch.",
+        "He said that he has lost his watch.",
+        "He said that he lost his watch.",
+        "He said that he was losing his watch."
+      ],
+      "answer": 0,
+      "explanation": "Present Perfect 'have lost' -> Past Perfect 'had lost'."
+    },
+    {
+      "id": "speech_92",
+      "topic": "reported_speech",
+      "question": "Mother said, 'The milk has boiled over.' Change to indirect speech:",
+      "options": [
+        "Mother said that the milk had boiled over.",
+        "Mother said that the milk has boiled over.",
+        "Mother said that milk boiled over.",
+        "Mother said that the milk was boiling over."
+      ],
+      "answer": 0,
+      "explanation": "'has boiled' -> 'had boiled'."
+    },
+    {
+      "id": "speech_93",
+      "topic": "reported_speech",
+      "question": "She said, 'I am going to market now.' Change to indirect speech:",
+      "options": [
+        "She said that she was going to market then.",
+        "She said that she is going to market now.",
+        "She said that she was going to market now.",
+        "She said that she had gone to market then."
+      ],
+      "answer": 0,
+      "explanation": "'am going' -> 'was going', 'now' -> 'then'."
+    },
+    {
+      "id": "speech_94",
+      "topic": "reported_speech",
+      "question": "He said, 'Light travels in a straight line.' Change to indirect speech:",
+      "options": [
+        "He said that light travels in a straight line.",
+        "He said that light traveled in a straight line.",
+        "He said that light had traveled in a straight line.",
+        "He said that light would travel in a straight line."
+      ],
+      "answer": 0,
+      "explanation": "Universal law of science retains Present tense."
+    },
+    {
+      "id": "speech_95",
+      "topic": "reported_speech",
+      "question": "She said, 'I did not recognize him.' Change to indirect speech:",
+      "options": [
+        "She said that she had not recognized him.",
+        "She said that she did not recognize him.",
+        "She said that she has not recognized him.",
+        "She said that she was not recognizing him."
+      ],
+      "answer": 0,
+      "explanation": "Past negative 'did not recognize' -> Past Perfect negative 'had not recognized'."
+    },
+    {
+      "id": "speech_96",
+      "topic": "reported_speech",
+      "question": "The teacher said, 'Sit down quietly.' Change to indirect speech:",
+      "options": [
+        "The teacher ordered them to sit down quietly.",
+        "The teacher requested them to sit down quietly.",
+        "The teacher told them sit quietly.",
+        "The teacher asked to sit down quietly."
+      ],
+      "answer": 0,
+      "explanation": "Imperative order -> 'ordered them to sit down quietly'."
+    },
+    {
+      "id": "speech_97",
+      "topic": "reported_speech",
+      "question": "He said, 'Is anyone there?' Change to indirect speech:",
+      "options": [
+        "He asked if anyone was there.",
+        "He asked was anyone there.",
+        "He asked that if anyone was there.",
+        "He inquired is anyone there."
+      ],
+      "answer": 0,
+      "explanation": "Yes/No question -> 'asked if anyone was there'."
+    },
+    {
+      "id": "speech_98",
+      "topic": "reported_speech",
+      "question": "She said, 'Why did you not inform me?' Change to indirect speech:",
+      "options": [
+        "She asked why I had not informed her.",
+        "She asked why did I not inform her.",
+        "She asked why had I not informed her.",
+        "She asked that why I had not informed her."
+      ],
+      "answer": 0,
+      "explanation": "Wh-question in Simple Past -> 'why I had not informed her'."
+    },
+    {
+      "id": "speech_99",
+      "topic": "reported_speech",
+      "question": "The beggar said, 'Give me five rupees, please.' Change to indirect speech:",
+      "options": [
+        "The beggar requested to give him five rupees.",
+        "The beggar ordered to give him five rupees.",
+        "The beggar said please give him five rupees.",
+        "The beggar asked give five rupees."
+      ],
+      "answer": 0,
+      "explanation": "Request with 'please' -> 'requested to give him five rupees'."
+    },
+    {
+      "id": "speech_100",
+      "topic": "reported_speech",
+      "question": "He said, 'I shall return before sunset.' Change to indirect speech:",
+      "options": [
+        "He said that he would return before sunset.",
+        "He said that he should return before sunset.",
+        "He said that he will return before sunset.",
+        "He said that he returned before sunset."
+      ],
+      "answer": 0,
+      "explanation": "'shall' with 3rd person subject 'he' changes to 'would'."
+    },
+    {
+      "id": "speech_101",
+      "topic": "reported_speech",
+      "question": "She said to her brother, 'Don't go near the fire.' Change to indirect speech:",
+      "options": [
+        "She warned her brother not to go near the fire.",
+        "She told her brother don't go near fire.",
+        "She warned her brother to not go near fire.",
+        "She forbade her brother not to go near fire."
+      ],
+      "answer": 0,
+      "explanation": "Warning imperative -> 'warned her brother not to go near the fire'."
+    },
+    {
+      "id": "speech_102",
+      "topic": "reported_speech",
+      "question": "He said, 'What a marvelous performance!' Change to indirect speech:",
+      "options": [
+        "He exclaimed that it was a marvelous performance.",
+        "He said what a marvelous performance it was.",
+        "He exclaimed it is a marvelous performance.",
+        "He asked if it was a marvelous performance."
+      ],
+      "answer": 0,
+      "explanation": "Exclamatory statement -> 'exclaimed that it was a marvelous performance'."
+    },
+    {
+      "id": "speech_103",
+      "topic": "reported_speech",
+      "question": "She said, 'I prefer coffee to tea.' Change to indirect speech:",
+      "options": [
+        "She said that she preferred coffee to tea.",
+        "She said that she prefers coffee to tea.",
+        "She said that she had preferred coffee to tea.",
+        "She told that she prefers coffee to tea."
+      ],
+      "answer": 0,
+      "explanation": "Personal general preference -> Simple past 'preferred coffee to tea'."
+    },
+    {
+      "id": "speech_104",
+      "topic": "reported_speech",
+      "question": "He said, 'We are all mortals.' Change to indirect speech:",
+      "options": [
+        "He said that we are all mortals.",
+        "He said that they were all mortals.",
+        "He said that we were all mortals.",
+        "He said that all had been mortals."
+      ],
+      "answer": 0,
+      "explanation": "Universal truth applicable to all mankind remains in Present tense with 'we': 'we are all mortals'."
+    },
+    {
+      "id": "reported_speech_105",
+      "topic": "reported_speech",
+      "question": "He said, 'I am reading a book.' (Reported Speech)",
+      "options": [
+        "He said that he was reading a book.",
+        "He said that he is reading a book.",
+        "He said he read a book.",
+        "He said that I was reading a book."
+      ],
+      "answer": 0,
+      "explanation": "Present continuous 'am reading' changes to past continuous 'was reading'."
+    },
+    {
+      "id": "reported_speech_106",
+      "topic": "reported_speech",
+      "question": "She said to me, 'Where do you live?'",
+      "options": [
+        "She asked me where I lived.",
+        "She asked me where did I live.",
+        "She asked me where do I live.",
+        "She asked me where I live."
+      ],
+      "answer": 0,
+      "explanation": "Wh-questions change to affirmative word order in indirect speech ('where I lived')."
+    },
+    {
+      "id": "reported_speech_107",
+      "topic": "reported_speech",
+      "question": "He said, 'Honesty is the best policy.'",
+      "options": [
+        "He said that honesty is the best policy.",
+        "He said that honesty was the best policy.",
+        "He said that honesty had been best policy.",
+        "He says honesty is best."
+      ],
+      "answer": 0,
+      "explanation": "Universal truths and proverbs do not change tense in indirect speech."
+    },
+    {
+      "id": "reported_speech_108",
+      "topic": "reported_speech",
+      "question": "The doctor said to the patient, 'Take your medicine on time.'",
+      "options": [
+        "The doctor advised the patient to take his medicine on time.",
+        "The doctor ordered the patient take medicine on time.",
+        "The doctor told patient that take medicine.",
+        "The doctor said patient to take medicine."
+      ],
+      "answer": 0,
+      "explanation": "Imperative sentences take 'advised/ordered + to + verb'."
+    },
+    {
+      "id": "reported_speech_109",
+      "topic": "reported_speech",
+      "question": "He said, 'I have finished my homework.'",
+      "options": [
+        "He said that he had finished his homework.",
+        "He said that he has finished his homework.",
+        "He said he finished homework.",
+        "He said that he had been finished."
+      ],
+      "answer": 0,
+      "explanation": "Present perfect 'have finished' changes to past perfect 'had finished'."
+    },
+    {
+      "id": "reported_speech_110",
+      "topic": "reported_speech",
+      "question": "The teacher said, 'The earth revolves around the sun.'",
+      "options": [
+        "The teacher said that the earth revolves around the sun.",
+        "The teacher said that earth revolved around sun.",
+        "The teacher told earth revolves around sun.",
+        "The teacher asked if earth revolves around sun."
+      ],
+      "answer": 0,
+      "explanation": "Scientific fact stays in simple present tense."
+    },
+    {
+      "id": "reported_speech_111",
+      "topic": "reported_speech",
+      "question": "She said, 'Will you help me?'",
+      "options": [
+        "She asked if I would help her.",
+        "She asked whether I will help her.",
+        "She asked that would I help her.",
+        "She asked if would I help her."
+      ],
+      "answer": 0,
+      "explanation": "Yes/No questions use 'if/whether' and 'will' becomes 'would'."
+    },
+    {
+      "id": "reported_speech_112",
+      "topic": "reported_speech",
+      "question": "Raju said, 'Alas! I am ruined.'",
+      "options": [
+        "Raju exclaimed sorrowfully that he was ruined.",
+        "Raju said alas he was ruined.",
+        "Raju exclaimed that he is ruined.",
+        "Raju cried that I was ruined."
+      ],
+      "answer": 0,
+      "explanation": "Exclamations with 'Alas!' change to 'exclaimed with sorrow / sorrowfully that'."
+    },
+    {
+      "id": "reported_speech_113",
+      "topic": "reported_speech",
+      "question": "He said to her, 'Please lend me your pen.'",
+      "options": [
+        "He requested her to lend him her pen.",
+        "He told her to lend pen.",
+        "He ordered her lend pen.",
+        "He asked that please lend pen."
+      ],
+      "answer": 0,
+      "explanation": "Polite requests using 'Please' change to 'requested + to + infinitive'."
+    },
+    {
+      "id": "reported_speech_114",
+      "topic": "reported_speech",
+      "question": "The policeman said to the driver, 'Show me your license.'",
+      "options": [
+        "The policeman ordered the driver to show him his license.",
+        "The policeman requested the driver show license.",
+        "The policeman told driver that show license.",
+        "The policeman asked driver showed license."
+      ],
+      "answer": 0,
+      "explanation": "Official instructions become 'ordered to show'."
+    },
+    {
+      "id": "reported_speech_115",
+      "topic": "reported_speech",
+      "question": "She said, 'I saw him yesterday.'",
+      "options": [
+        "She said that she had seen him the day before.",
+        "She said that she saw him yesterday.",
+        "She said that she had seen him yesterday.",
+        "She said she has seen him the day before."
+      ],
+      "answer": 0,
+      "explanation": "Simple past 'saw' becomes past perfect 'had seen', and 'yesterday' becomes 'the day before'."
+    },
+    {
+      "id": "reported_speech_116",
+      "topic": "reported_speech",
+      "question": "He said, 'I will leave tomorrow.'",
+      "options": [
+        "He said that he would leave the next day.",
+        "He said that he will leave tomorrow.",
+        "He said that he would leave tomorrow.",
+        "He said that he will leave the next day."
+      ],
+      "answer": 0,
+      "explanation": "'Will' becomes 'would' and 'tomorrow' becomes 'the next day'."
+    },
+    {
+      "id": "reported_speech_117",
+      "topic": "reported_speech",
+      "question": "She said to him, 'Do not shout in class.'",
+      "options": [
+        "She forbade him to shout in class.",
+        "She ordered him that not to shout.",
+        "She asked him do not shout.",
+        "She told him to not shouting."
+      ],
+      "answer": 0,
+      "explanation": "'Forbade to shout' or 'told/ordered not to shout'."
+    },
+    {
+      "id": "reported_speech_118",
+      "topic": "reported_speech",
+      "question": "Father said to me, 'Where were you last night?'",
+      "options": [
+        "Father asked me where I had been the previous night.",
+        "Father asked me where was I last night.",
+        "Father asked where had I been last night.",
+        "Father inquired where I was last night."
+      ],
+      "answer": 0,
+      "explanation": "Past 'were' becomes 'had been', 'last night' becomes 'the previous night'."
+    },
+    {
+      "id": "reported_speech_119",
+      "topic": "reported_speech",
+      "question": "He said, 'Hurrah! We have won the tournament.'",
+      "options": [
+        "He exclaimed with joy that they had won the tournament.",
+        "He said hurrah they had won tournament.",
+        "He exclaimed with joy that we have won.",
+        "He told that they won."
+      ],
+      "answer": 0,
+      "explanation": "'Hurrah!' expresses joy -> 'exclaimed with joy that they had won'."
+    },
+    {
+      "id": "reported_speech_120",
+      "topic": "reported_speech",
+      "question": "She said, 'May God bless you!'",
+      "options": [
+        "She prayed that God might bless me.",
+        "She wished that God may bless me.",
+        "She exclaimed that God bless me.",
+        "She prayed God bless me."
+      ],
+      "answer": 0,
+      "explanation": "Optative sentence: 'prayed that God might bless'."
+    },
+    {
+      "id": "reported_speech_121",
+      "topic": "reported_speech",
+      "question": "The master said to the servant, 'Bring a glass of water.'",
+      "options": [
+        "The master ordered the servant to bring a glass of water.",
+        "The master requested servant bring water.",
+        "The master told that bring water.",
+        "The master asked to bring water."
+      ],
+      "answer": 0,
+      "explanation": "Imperative command becomes 'ordered to bring'."
+    },
+    {
+      "id": "reported_speech_122",
+      "topic": "reported_speech",
+      "question": "He said, 'I bought this pen this morning.'",
+      "options": [
+        "He said that he had bought that pen that morning.",
+        "He said that he bought this pen this morning.",
+        "He said he had bought this pen that morning.",
+        "He said that he has bought that pen."
+      ],
+      "answer": 0,
+      "explanation": "'This' changes to 'that' in indirect speech."
+    },
+    {
+      "id": "reported_speech_123",
+      "topic": "reported_speech",
+      "question": "She said, 'I can solve this puzzle.'",
+      "options": [
+        "She said that she could solve that puzzle.",
+        "She said that she can solve that puzzle.",
+        "She said she could solve this puzzle.",
+        "She said that she will solve that puzzle."
+      ],
+      "answer": 0,
+      "explanation": "'Can' becomes 'could' and 'this' becomes 'that'."
+    },
+    {
+      "id": "reported_speech_124",
+      "topic": "reported_speech",
+      "question": "He said, 'I must leave immediately.'",
+      "options": [
+        "He said that he had to leave immediately.",
+        "He said that he must have left.",
+        "He said that he will leave.",
+        "He said that he should leave."
+      ],
+      "answer": 0,
+      "explanation": "'Must' expressing present necessity becomes 'had to'."
+    },
+    {
+      "id": "reported_speech_125",
+      "topic": "reported_speech",
+      "question": "She said, 'Let us go for a walk.'",
+      "options": [
+        "She suggested that they should go for a walk.",
+        "She told that they go for a walk.",
+        "She ordered to go for a walk.",
+        "She said that let them go for walk."
+      ],
+      "answer": 0,
+      "explanation": "'Let us' expresses suggestion -> 'suggested that they should go'."
+    },
+    {
+      "id": "reported_speech_126",
+      "topic": "reported_speech",
+      "question": "He said to me, 'Are you coming with us?'",
+      "options": [
+        "He asked me if I was coming with them.",
+        "He asked me that was I coming with them.",
+        "He told me if I was coming.",
+        "He inquired if I am coming with them."
+      ],
+      "answer": 0,
+      "explanation": "Interrogative: 'if I was coming with them'."
+    },
+    {
+      "id": "reported_speech_127",
+      "topic": "reported_speech",
+      "question": "The boy said, 'What a beautiful flower it is!'",
+      "options": [
+        "The boy exclaimed that it was a very beautiful flower.",
+        "The boy said what a beautiful flower was it.",
+        "The boy exclaimed that it is very beautiful.",
+        "The boy asked if it was beautiful."
+      ],
+      "answer": 0,
+      "explanation": "Exclamatory sentence changes to assertive with 'very'."
+    },
+    {
+      "id": "reported_speech_128",
+      "topic": "reported_speech",
+      "question": "The teacher said to the boy, 'Why are you late?'",
+      "options": [
+        "The teacher asked the boy why he was late.",
+        "The teacher asked the boy why was he late.",
+        "The teacher inquired why the boy is late.",
+        "The teacher told the boy why he was late."
+      ],
+      "answer": 0,
+      "explanation": "Indirect question maintains subject + verb order ('why he was late')."
+    },
+    {
+      "id": "reported_speech_129",
+      "topic": "reported_speech",
+      "question": "She said, 'I have been waiting here for two hours.'",
+      "options": [
+        "She said that she had been waiting there for two hours.",
+        "She said that she has been waiting here.",
+        "She said that she had been waiting here.",
+        "She said that she was waiting there."
+      ],
+      "answer": 0,
+      "explanation": "Present perfect continuous becomes past perfect continuous; 'here' becomes 'there'."
+    },
+    {
+      "id": "reported_speech_130",
+      "topic": "reported_speech",
+      "question": "He said, 'Water boils at 100 degrees Celsius.'",
+      "options": [
+        "He said that water boils at 100 degrees Celsius.",
+        "He said that water boiled at 100 degrees Celsius.",
+        "He told that water boils at 100 degrees.",
+        "He asked if water boils at 100 degrees."
+      ],
+      "answer": 0,
+      "explanation": "Scientific fact remains in simple present tense."
+    },
+    {
+      "id": "reported_speech_131",
+      "topic": "reported_speech",
+      "question": "She said to me, 'Don't disturb me.'",
+      "options": [
+        "She told me not to disturb her.",
+        "She asked me to not disturb her.",
+        "She told me do not disturb.",
+        "She ordered me that not disturb."
+      ],
+      "answer": 0,
+      "explanation": "Negative imperative changes to 'not to disturb'."
+    },
+    {
+      "id": "reported_speech_132",
+      "topic": "reported_speech",
+      "question": "He said, 'How clever I am!'",
+      "options": [
+        "He exclaimed that he was very clever.",
+        "He said that how clever he was.",
+        "He exclaimed that how clever I was.",
+        "He said he was clever."
+      ],
+      "answer": 0,
+      "explanation": "Exclamation becomes assertive: 'he was very clever'."
+    },
+    {
+      "id": "reported_speech_133",
+      "topic": "reported_speech",
+      "question": "The commander said to the soldiers, 'March forward.'",
+      "options": [
+        "The commander commanded the soldiers to march forward.",
+        "The commander requested soldiers to march.",
+        "The commander told that march forward.",
+        "The commander asked soldiers marching."
+      ],
+      "answer": 0,
+      "explanation": "Military command uses 'commanded to march'."
+    },
+    {
+      "id": "reported_speech_134",
+      "topic": "reported_speech",
+      "question": "She said, 'I had already seen the movie.'",
+      "options": [
+        "She said that she had already seen the movie.",
+        "She said she has seen the movie.",
+        "She said she saw the movie.",
+        "She said that she had had seen the movie."
+      ],
+      "answer": 0,
+      "explanation": "Past perfect remains unchanged in indirect speech."
+    },
+    {
+      "id": "reported_speech_135",
+      "topic": "reported_speech",
+      "question": "He said to his friend, 'Good morning!'",
+      "options": [
+        "He wished his friend a good morning.",
+        "He said good morning to his friend.",
+        "He told good morning.",
+        "He greeted that good morning."
+      ],
+      "answer": 0,
+      "explanation": "Greetings transform using 'wished'."
+    },
+    {
+      "id": "reported_speech_136",
+      "topic": "reported_speech",
+      "question": "She said to her companions, 'Farewell!'",
+      "options": [
+        "She bade farewell to her companions.",
+        "She wished farewell to her companions.",
+        "She said farewell.",
+        "She told farewell."
+      ],
+      "answer": 0,
+      "explanation": "Parting words take 'bade' ('bade farewell')."
+    },
+    {
+      "id": "reported_speech_137",
+      "topic": "reported_speech",
+      "question": "He said, 'I will do it now.'",
+      "options": [
+        "He said that he would do it then.",
+        "He said that he will do it now.",
+        "He said he would do it now.",
+        "He said he will do it then."
+      ],
+      "answer": 0,
+      "explanation": "'Will' -> 'would', 'now' -> 'then'."
+    },
+    {
+      "id": "reported_speech_138",
+      "topic": "reported_speech",
+      "question": "The judge said to the accused, 'Call the witness.'",
+      "options": [
+        "The judge ordered to call the witness.",
+        "The judge requested to call the witness.",
+        "The judge asked call the witness.",
+        "The judge told that call witness."
+      ],
+      "answer": 0,
+      "explanation": "Court command uses 'ordered to call'."
+    },
+    {
+      "id": "reported_speech_139",
+      "topic": "reported_speech",
+      "question": "Mother said, 'Did you complete your project?'",
+      "options": [
+        "Mother asked if I had completed my project.",
+        "Mother asked that did I complete project.",
+        "Mother asked whether I completed project.",
+        "Mother asked if did I complete."
+      ],
+      "answer": 0,
+      "explanation": "Simple past in question ('did complete') becomes past perfect ('had completed')."
+    },
+    {
+      "id": "reported_speech_140",
+      "topic": "reported_speech",
+      "question": "He said to me, 'May you succeed in life!'",
+      "options": [
+        "He wished that I might succeed in life.",
+        "He prayed that I may succeed.",
+        "He told me to succeed.",
+        "He blessed that I will succeed."
+      ],
+      "answer": 0,
+      "explanation": "Optative wish uses 'wished/prayed that I might succeed'."
+    },
+    {
+      "id": "reported_speech_141",
+      "topic": "reported_speech",
+      "question": "She said, 'These flowers are very fresh.'",
+      "options": [
+        "She said that those flowers were very fresh.",
+        "She said that these flowers were fresh.",
+        "She said that those flowers are fresh.",
+        "She said those flowers had been fresh."
+      ],
+      "answer": 0,
+      "explanation": "'These' changes to 'those'."
+    },
+    {
+      "id": "reported_speech_142",
+      "topic": "reported_speech",
+      "question": "He said, 'I didn't steal the money.'",
+      "options": [
+        "He denied having stolen the money.",
+        "He refused that he stole money.",
+        "He said that he didn't stole.",
+        "He exclaimed that he not stole."
+      ],
+      "answer": 0,
+      "explanation": "'Denied having stolen' is the concise indirect equivalent."
+    },
+    {
+      "id": "reported_speech_143",
+      "topic": "reported_speech",
+      "question": "She said, 'Yes, I committed the error.'",
+      "options": [
+        "She admitted that she had committed the error.",
+        "She said yes she committed error.",
+        "She agreed that I committed error.",
+        "She replied yes she had committed."
+      ],
+      "answer": 0,
+      "explanation": "Affirmation of fault becomes 'admitted that she had committed'."
+    },
+    {
+      "id": "reported_speech_144",
+      "topic": "reported_speech",
+      "question": "The speaker said, 'Ladies and gentlemen, listen to me.'",
+      "options": [
+        "Addressing them as ladies and gentlemen, he asked them to listen to him.",
+        "He told ladies and gentlemen to listen.",
+        "He ordered ladies and gentlemen listen.",
+        "He said that listen to him."
+      ],
+      "answer": 0,
+      "explanation": "Vocative 'ladies and gentlemen' is reported via 'Addressing them as...'"
+    },
+    {
+      "id": "reported_speech_145",
+      "topic": "reported_speech",
+      "question": "He said, 'Two and two make four.'",
+      "options": [
+        "He said that two and two make four.",
+        "He said that two and two made four.",
+        "He said that two and two makes four.",
+        "He told that two and two makes four."
+      ],
+      "answer": 0,
+      "explanation": "Mathematical fact retains present tense."
+    },
+    {
+      "id": "reported_speech_146",
+      "topic": "reported_speech",
+      "question": "She said, 'I write poems.'",
+      "options": [
+        "She said that she wrote poems.",
+        "She said that she writes poems.",
+        "She said that she has written poems.",
+        "She said she is writing poems."
+      ],
+      "answer": 0,
+      "explanation": "Habitual statement changes from present 'write' to past 'wrote' when no longer general."
+    },
+    {
+      "id": "reported_speech_147",
+      "topic": "reported_speech",
+      "question": "He said to her, 'Whom do you want to meet?'",
+      "options": [
+        "He asked her whom she wanted to meet.",
+        "He asked her whom did she want to meet.",
+        "He asked her whom she wants to meet.",
+        "He inquired whom she want to meet."
+      ],
+      "answer": 0,
+      "explanation": "Question order shifts to statement order 'whom she wanted'."
+    },
+    {
+      "id": "reported_speech_148",
+      "topic": "reported_speech",
+      "question": "The captain said, 'Bravo! You played splendidly.'",
+      "options": [
+        "The captain applauded him saying that he had played splendidly.",
+        "The captain shouted bravo he played.",
+        "The captain exclaimed that you played well.",
+        "The captain told bravo."
+      ],
+      "answer": 0,
+      "explanation": "'Bravo!' changes to 'applauded saying that...'"
+    },
+    {
+      "id": "reported_speech_149",
+      "topic": "reported_speech",
+      "question": "She said, 'I may attend the conference.'",
+      "options": [
+        "She said that she might attend the conference.",
+        "She said that she may attend.",
+        "She said that she will attend.",
+        "She said she would attend."
+      ],
+      "answer": 0,
+      "explanation": "'May' becomes 'might'."
+    },
+    {
+      "id": "reported_speech_150",
+      "topic": "reported_speech",
+      "question": "He said, 'I am busy now.'",
+      "options": [
+        "He said that he was busy then.",
+        "He said that he is busy now.",
+        "He said that he was busy now.",
+        "He said he had been busy then."
+      ],
+      "answer": 0,
+      "explanation": "'Am' -> 'was', 'now' -> 'then'."
+    },
+    {
+      "id": "reported_speech_151",
+      "topic": "reported_speech",
+      "question": "She said to him, 'Wait here till I return.'",
+      "options": [
+        "She asked him to wait there till she returned.",
+        "She told him wait here till she returns.",
+        "She ordered him that wait there.",
+        "She asked him waiting there."
+      ],
+      "answer": 0,
+      "explanation": "'Here' -> 'there', 'return' -> 'returned'."
+    },
+    {
+      "id": "reported_speech_152",
+      "topic": "reported_speech",
+      "question": "He said, 'What a pity!'",
+      "options": [
+        "He exclaimed that it was a great pity.",
+        "He said that it is a great pity.",
+        "He exclaimed what a pity it was.",
+        "He said pity."
+      ],
+      "answer": 0,
+      "explanation": "Elliptical exclamation changes to 'it was a great pity'."
+    },
+    {
+      "id": "reported_speech_153",
+      "topic": "reported_speech",
+      "question": "The mother said to the child, 'Don't touch the stove.'",
+      "options": [
+        "The mother warned the child not to touch the stove.",
+        "The mother asked child don't touch.",
+        "The mother told child that not touch.",
+        "The mother suggested not touching."
+      ],
+      "answer": 0,
+      "explanation": "'Warned not to touch'."
+    },
+    {
+      "id": "reported_speech_154",
+      "topic": "reported_speech",
+      "question": "He said, 'I have been living in Kochi since 2015.'",
+      "options": [
+        "He said that he had been living in Kochi since 2015.",
+        "He said he has been living in Kochi.",
+        "He said that he lived in Kochi.",
+        "He said he was living in Kochi."
+      ],
+      "answer": 0,
+      "explanation": "Present perfect continuous becomes past perfect continuous."
+    }
+  ]
+}

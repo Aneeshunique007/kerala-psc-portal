@@ -1,0 +1,2386 @@
+{
+  "topic_id": "singular_plural_gender_collective",
+  "topic_name": "Singular & Plural, Change of Gender, Collective Nouns",
+  "total_questions": 183,
+  "questions": [
+    {
+      "id": "spgc_1",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Criterion'?",
+      "options": [
+        "Criteria",
+        "Criterions",
+        "Criterias",
+        "Criterium"
+      ],
+      "answer": 0,
+      "explanation": "Greek singular '-on' changes to plural '-a': 'Criteria'."
+    },
+    {
+      "id": "spgc_2",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Phenomenon'?",
+      "options": [
+        "Phenomena",
+        "Phenomenons",
+        "Phenomenas",
+        "Phenomenon"
+      ],
+      "answer": 0,
+      "explanation": "Greek loan word 'Phenomenon' has plural 'Phenomena'."
+    },
+    {
+      "id": "spgc_3",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Crisis'?",
+      "options": [
+        "Crises",
+        "Crisises",
+        "Crisus",
+        "Crisi"
+      ],
+      "answer": 0,
+      "explanation": "Singular '-is' changes to plural '-es': 'Crises'."
+    },
+    {
+      "id": "spgc_4",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Oasis'?",
+      "options": [
+        "Oases",
+        "Oasises",
+        "Oasus",
+        "Oasi"
+      ],
+      "answer": 0,
+      "explanation": "Singular '-is' changes to '-es': 'Oases'."
+    },
+    {
+      "id": "spgc_5",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Basis'?",
+      "options": [
+        "Bases",
+        "Basises",
+        "Basi",
+        "Basium"
+      ],
+      "answer": 0,
+      "explanation": "Singular '-is' becomes '-es': 'Bases'."
+    },
+    {
+      "id": "spgc_6",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Hypothesis'?",
+      "options": [
+        "Hypotheses",
+        "Hypothesis",
+        "Hypothesis's",
+        "Hypothesises"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Hypotheses'."
+    },
+    {
+      "id": "spgc_7",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Thesis'?",
+      "options": [
+        "Theses",
+        "Thesises",
+        "Thesus",
+        "Thesi"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Theses'."
+    },
+    {
+      "id": "spgc_8",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Axis'?",
+      "options": [
+        "Axes",
+        "Axises",
+        "Axi",
+        "Axium"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Axes'."
+    },
+    {
+      "id": "spgc_9",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Focus'?",
+      "options": [
+        "Foci (or Focuses)",
+        "Focuses only",
+        "Foca",
+        "Focies"
+      ],
+      "answer": 0,
+      "explanation": "Latin '-us' becomes '-i': 'Foci'."
+    },
+    {
+      "id": "spgc_10",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Radius'?",
+      "options": [
+        "Radii",
+        "Radiuses",
+        "Radia",
+        "Radi"
+      ],
+      "answer": 0,
+      "explanation": "Latin '-us' becomes '-i': 'Radii'."
+    },
+    {
+      "id": "spgc_11",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Syllabus'?",
+      "options": [
+        "Syllabi (or Syllabuses)",
+        "Syllaba",
+        "Syllabuses only",
+        "Syllabies"
+      ],
+      "answer": 0,
+      "explanation": "Latin plural is 'Syllabi'."
+    },
+    {
+      "id": "spgc_12",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Alumnus' (male graduate)?",
+      "options": [
+        "Alumni",
+        "Alumnae",
+        "Alumnuses",
+        "Alumna"
+      ],
+      "answer": 0,
+      "explanation": "Male singular 'Alumnus' -> plural 'Alumni'."
+    },
+    {
+      "id": "spgc_13",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Alumna' (female graduate)?",
+      "options": [
+        "Alumnae",
+        "Alumni",
+        "Alumnas",
+        "Alumna"
+      ],
+      "answer": 0,
+      "explanation": "Female singular 'Alumna' -> plural 'Alumnae'."
+    },
+    {
+      "id": "spgc_14",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Bacterium'?",
+      "options": [
+        "Bacteria",
+        "Bacterias",
+        "Bacteriums",
+        "Bacteri"
+      ],
+      "answer": 0,
+      "explanation": "Latin '-um' becomes '-a': 'Bacteria'."
+    },
+    {
+      "id": "spgc_15",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Medium'?",
+      "options": [
+        "Media",
+        "Mediums",
+        "Medias",
+        "Medii"
+      ],
+      "answer": 0,
+      "explanation": "Latin '-um' becomes '-a': 'Media'."
+    },
+    {
+      "id": "spgc_16",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Datum'?",
+      "options": [
+        "Data",
+        "Datums",
+        "Datas",
+        "Dati"
+      ],
+      "answer": 0,
+      "explanation": "Singular 'Datum' -> plural 'Data'."
+    },
+    {
+      "id": "spgc_17",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Curriculum'?",
+      "options": [
+        "Curricula (or Curriculums)",
+        "Curriculi",
+        "Curriculas",
+        "Curriculum"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Curricula'."
+    },
+    {
+      "id": "spgc_18",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Index'?",
+      "options": [
+        "Indices (or Indexes)",
+        "Indexen",
+        "Indici",
+        "Indexies"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Indices' (or 'Indexes')."
+    },
+    {
+      "id": "spgc_19",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Appendix'?",
+      "options": [
+        "Appendices (or Appendixes)",
+        "Appendi",
+        "Appendicies",
+        "Appendixs"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Appendices'."
+    },
+    {
+      "id": "spgc_20",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Matrix'?",
+      "options": [
+        "Matrices",
+        "Matrixes only",
+        "Matri",
+        "Matricies"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Matrices'."
+    },
+    {
+      "id": "spgc_21",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Passer-by'?",
+      "options": [
+        "Passers-by",
+        "Passer-bys",
+        "Passers-bys",
+        "Passer-by"
+      ],
+      "answer": 0,
+      "explanation": "In compound nouns, the principal noun takes plural '-s': 'Passers-by'."
+    },
+    {
+      "id": "spgc_22",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Brother-in-law'?",
+      "options": [
+        "Brothers-in-law",
+        "Brother-in-laws",
+        "Brothers-in-laws",
+        "Brother-ins-law"
+      ],
+      "answer": 0,
+      "explanation": "Principal noun is 'Brother' -> 'Brothers-in-law'."
+    },
+    {
+      "id": "spgc_23",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Commander-in-chief'?",
+      "options": [
+        "Commanders-in-chief",
+        "Commander-in-chiefs",
+        "Commanders-in-chiefs",
+        "Commander-ins-chief"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Commanders-in-chief'."
+    },
+    {
+      "id": "spgc_24",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Looker-on'?",
+      "options": [
+        "Lookers-on",
+        "Looker-ons",
+        "Lookers-ons",
+        "Looker-on"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Lookers-on'."
+    },
+    {
+      "id": "spgc_25",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Step-son'?",
+      "options": [
+        "Step-sons",
+        "Steps-son",
+        "Steps-sons",
+        "Step-son"
+      ],
+      "answer": 0,
+      "explanation": "Here 'son' is the principal noun -> 'Step-sons'."
+    },
+    {
+      "id": "spgc_26",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Maid-servant'?",
+      "options": [
+        "Maid-servants",
+        "Maids-servant",
+        "Maids-servants",
+        "Maid-servant"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Maid-servants'."
+    },
+    {
+      "id": "spgc_27",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Man-servant'?",
+      "options": [
+        "Men-servants",
+        "Man-servants",
+        "Men-servant",
+        "Man-servant"
+      ],
+      "answer": 0,
+      "explanation": "Both components change: 'Men-servants'."
+    },
+    {
+      "id": "spgc_28",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Woman-doctor'?",
+      "options": [
+        "Women-doctors",
+        "Woman-doctors",
+        "Women-doctor",
+        "Woman-doctor"
+      ],
+      "answer": 0,
+      "explanation": "Both components change: 'Women-doctors'."
+    },
+    {
+      "id": "spgc_29",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Ox'?",
+      "options": [
+        "Oxen",
+        "Oxes",
+        "Oxens",
+        "Oxs"
+      ],
+      "answer": 0,
+      "explanation": "Old English plural ending '-en': 'Oxen'."
+    },
+    {
+      "id": "spgc_30",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Child'?",
+      "options": [
+        "Children",
+        "Childs",
+        "Childrens",
+        "Childer"
+      ],
+      "answer": 0,
+      "explanation": "Plural is 'Children'."
+    },
+    {
+      "id": "spgc_31",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Goose'?",
+      "options": [
+        "Geese",
+        "Gooses",
+        "Geeses",
+        "Goosen"
+      ],
+      "answer": 0,
+      "explanation": "Vowel mutation: 'Goose' -> 'Geese'."
+    },
+    {
+      "id": "spgc_32",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Foot'?",
+      "options": [
+        "Feet",
+        "Foots",
+        "Feets",
+        "Footen"
+      ],
+      "answer": 0,
+      "explanation": "Vowel mutation: 'Foot' -> 'Feet'."
+    },
+    {
+      "id": "spgc_33",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Tooth'?",
+      "options": [
+        "Teeth",
+        "Tooths",
+        "Teeths",
+        "Toothen"
+      ],
+      "answer": 0,
+      "explanation": "Vowel mutation: 'Tooth' -> 'Teeth'."
+    },
+    {
+      "id": "spgc_34",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Mouse'?",
+      "options": [
+        "Mice",
+        "Mouses",
+        "Mices",
+        "Mousen"
+      ],
+      "answer": 0,
+      "explanation": "Vowel mutation: 'Mouse' -> 'Mice'."
+    },
+    {
+      "id": "spgc_35",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Louse'?",
+      "options": [
+        "Lice",
+        "Louses",
+        "Lices",
+        "Lousen"
+      ],
+      "answer": 0,
+      "explanation": "Vowel mutation: 'Louse' -> 'Lice'."
+    },
+    {
+      "id": "spgc_36",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Sheep'?",
+      "options": [
+        "Sheep",
+        "Sheeps",
+        "Sheepes",
+        "Shoop"
+      ],
+      "answer": 0,
+      "explanation": "'Sheep' has the same form in singular and plural."
+    },
+    {
+      "id": "spgc_37",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Deer'?",
+      "options": [
+        "Deer",
+        "Deers",
+        "Deeres",
+        "Doer"
+      ],
+      "answer": 0,
+      "explanation": "'Deer' remains 'Deer' in plural."
+    },
+    {
+      "id": "spgc_38",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Swine'?",
+      "options": [
+        "Swine",
+        "Swines",
+        "Swinees",
+        "Swoon"
+      ],
+      "answer": 0,
+      "explanation": "'Swine' remains 'Swine' in plural."
+    },
+    {
+      "id": "spgc_39",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Salmon'?",
+      "options": [
+        "Salmon",
+        "Salmons",
+        "Salmones",
+        "Salmi"
+      ],
+      "answer": 0,
+      "explanation": "'Salmon' remains 'Salmon'."
+    },
+    {
+      "id": "spgc_40",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Trout'?",
+      "options": [
+        "Trout",
+        "Trouts",
+        "Troutes",
+        "Trouti"
+      ],
+      "answer": 0,
+      "explanation": "'Trout' remains 'Trout'."
+    },
+    {
+      "id": "spgc_41",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Bachelor'?",
+      "options": [
+        "Spinster (or Maid)",
+        "Widow",
+        "Nun",
+        "Bachelorette"
+      ],
+      "answer": 0,
+      "explanation": "Traditional feminine of 'Bachelor' is 'Spinster'."
+    },
+    {
+      "id": "spgc_42",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Widower'?",
+      "options": [
+        "Widow",
+        "Spinster",
+        "Bride",
+        "Matron"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Widower' is 'Widow'."
+    },
+    {
+      "id": "spgc_43",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Monk'?",
+      "options": [
+        "Nun",
+        "Sister",
+        "Priestess",
+        "Abbess"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Monk' is 'Nun'."
+    },
+    {
+      "id": "spgc_44",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Abbot'?",
+      "options": [
+        "Abbess",
+        "Nun",
+        "Priestess",
+        "Duchess"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Abbot' is 'Abbess'."
+    },
+    {
+      "id": "spgc_45",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Duke'?",
+      "options": [
+        "Duchess",
+        "Countess",
+        "Baroness",
+        "Empress"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Duke' is 'Duchess'."
+    },
+    {
+      "id": "spgc_46",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Earl' (or Count)?",
+      "options": [
+        "Countess",
+        "Duchess",
+        "Baroness",
+        "Viscountess"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Earl' is 'Countess'."
+    },
+    {
+      "id": "spgc_47",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Fox'?",
+      "options": [
+        "Vixen",
+        "Bitch",
+        "Doe",
+        "Ewe"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Fox' is 'Vixen'."
+    },
+    {
+      "id": "spgc_48",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Stag' (or Hart)?",
+      "options": [
+        "Hind (or Doe)",
+        "Ewe",
+        "Vixen",
+        "Bitch"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Stag' is 'Hind'."
+    },
+    {
+      "id": "spgc_49",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Ram'?",
+      "options": [
+        "Ewe",
+        "Doe",
+        "Sow",
+        "Mare"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Ram' (male sheep) is 'Ewe'."
+    },
+    {
+      "id": "spgc_50",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Boar'?",
+      "options": [
+        "Sow",
+        "Ewe",
+        "Doe",
+        "Vixen"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Boar' (male pig) is 'Sow'."
+    },
+    {
+      "id": "spgc_51",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Buck' (male deer/rabbit)?",
+      "options": [
+        "Doe",
+        "Ewe",
+        "Sow",
+        "Vixen"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Buck' is 'Doe'."
+    },
+    {
+      "id": "spgc_52",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Bull' (or Ox)?",
+      "options": [
+        "Cow",
+        "Heifer",
+        "Mare",
+        "Ewe"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Bull' is 'Cow'."
+    },
+    {
+      "id": "spgc_53",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Stallion' (or Horse)?",
+      "options": [
+        "Mare",
+        "Filly",
+        "Dam",
+        "Cow"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Stallion' is 'Mare'."
+    },
+    {
+      "id": "spgc_54",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Colt' (young male horse)?",
+      "options": [
+        "Filly",
+        "Mare",
+        "Foal",
+        "Heifer"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Colt' is 'Filly'."
+    },
+    {
+      "id": "spgc_55",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Gander'?",
+      "options": [
+        "Goose",
+        "Duck",
+        "Hen",
+        "Swan"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Gander' (male goose) is 'Goose'."
+    },
+    {
+      "id": "spgc_56",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Drake'?",
+      "options": [
+        "Duck",
+        "Goose",
+        "Hen",
+        "Pen"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Drake' (male duck) is 'Duck'."
+    },
+    {
+      "id": "spgc_57",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Rooster' (or Cock)?",
+      "options": [
+        "Hen",
+        "Duck",
+        "Goose",
+        "Peahen"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Rooster' is 'Hen'."
+    },
+    {
+      "id": "spgc_58",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Peacock'?",
+      "options": [
+        "Peahen",
+        "Peacockess",
+        "Hen",
+        "Piahen"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Peacock' is 'Peahen'."
+    },
+    {
+      "id": "spgc_59",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Dog'?",
+      "options": [
+        "Bitch",
+        "Vixen",
+        "Doe",
+        "Ewe"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Dog' is 'Bitch'."
+    },
+    {
+      "id": "spgc_60",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Wizard'?",
+      "options": [
+        "Witch",
+        "Sorceress",
+        "Fairy",
+        "Enchantress"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Wizard' is 'Witch'."
+    },
+    {
+      "id": "spgc_61",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Nephew'?",
+      "options": [
+        "Niece",
+        "Cousin",
+        "Aunt",
+        "Sister"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Nephew' is 'Niece'."
+    },
+    {
+      "id": "spgc_62",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Hero'?",
+      "options": [
+        "Heroine",
+        "Heress",
+        "Heroess",
+        "Heroic"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Hero' is 'Heroine'."
+    },
+    {
+      "id": "spgc_63",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Emperor'?",
+      "options": [
+        "Empress",
+        "Queen",
+        "Duchess",
+        "Countess"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Emperor' is 'Empress'."
+    },
+    {
+      "id": "spgc_64",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Traitor'?",
+      "options": [
+        "Traitress",
+        "Traitoress",
+        "Traitrix",
+        "Traitor"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Traitor' is 'Traitress'."
+    },
+    {
+      "id": "spgc_65",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Actor'?",
+      "options": [
+        "Actress",
+        "Actor",
+        "Actrix",
+        "Actorette"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Actor' is 'Actress'."
+    },
+    {
+      "id": "spgc_66",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Master'?",
+      "options": [
+        "Mistress",
+        "Madam",
+        "Dame",
+        "Lady"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Master' is 'Mistress'."
+    },
+    {
+      "id": "spgc_67",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Lord'?",
+      "options": [
+        "Lady",
+        "Dame",
+        "Mistress",
+        "Duchess"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Lord' is 'Lady'."
+    },
+    {
+      "id": "spgc_68",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'King'?",
+      "options": [
+        "Queen",
+        "Princess",
+        "Empress",
+        "Duchess"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'King' is 'Queen'."
+    },
+    {
+      "id": "spgc_69",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Prince'?",
+      "options": [
+        "Princess",
+        "Queen",
+        "Duchess",
+        "Countess"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Prince' is 'Princess'."
+    },
+    {
+      "id": "spgc_70",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'He-goat'?",
+      "options": [
+        "She-goat",
+        "Doe-goat",
+        "Cow-goat",
+        "Nanny-goat"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'He-goat' is 'She-goat' (or 'Nanny-goat')."
+    },
+    {
+      "id": "spgc_71",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Billy-goat'?",
+      "options": [
+        "Nanny-goat",
+        "She-goat",
+        "Doe",
+        "Ewe"
+      ],
+      "answer": 0,
+      "explanation": "Feminine of 'Billy-goat' is 'Nanny-goat'."
+    },
+    {
+      "id": "spgc_72",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of lions?",
+      "options": [
+        "Pride",
+        "Pack",
+        "Flock",
+        "Herd"
+      ],
+      "answer": 0,
+      "explanation": "A collective noun for lions is a 'Pride'."
+    },
+    {
+      "id": "spgc_73",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of wolves?",
+      "options": [
+        "Pack",
+        "Pride",
+        "Flock",
+        "School"
+      ],
+      "answer": 0,
+      "explanation": "A group of wolves or hounds is a 'Pack'."
+    },
+    {
+      "id": "spgc_74",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of cattle or elephants?",
+      "options": [
+        "Herd",
+        "Flock",
+        "Pack",
+        "Troop"
+      ],
+      "answer": 0,
+      "explanation": "A group of cattle, deer, or elephants is a 'Herd'."
+    },
+    {
+      "id": "spgc_75",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of sheep or birds?",
+      "options": [
+        "Flock",
+        "Herd",
+        "Swarm",
+        "Pack"
+      ],
+      "answer": 0,
+      "explanation": "A group of sheep or birds is a 'Flock'."
+    },
+    {
+      "id": "spgc_76",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of fish?",
+      "options": [
+        "Shoal (or School)",
+        "Pack",
+        "Flock",
+        "Herd"
+      ],
+      "answer": 0,
+      "explanation": "A group of fish swimming together is a 'Shoal' or 'School'."
+    },
+    {
+      "id": "spgc_77",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of bees or ants?",
+      "options": [
+        "Swarm",
+        "Flock",
+        "Pack",
+        "Colony"
+      ],
+      "answer": 0,
+      "explanation": "A group of flying insects/bees is a 'Swarm'."
+    },
+    {
+      "id": "spgc_78",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of ants or penguins?",
+      "options": [
+        "Colony",
+        "Swarm",
+        "Flock",
+        "Herd"
+      ],
+      "answer": 0,
+      "explanation": "A community of ants, termites, or penguins is a 'Colony'."
+    },
+    {
+      "id": "spgc_79",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of monkeys?",
+      "options": [
+        "Troop",
+        "Pack",
+        "Herd",
+        "Flock"
+      ],
+      "answer": 0,
+      "explanation": "A group of monkeys or baboons is a 'Troop'."
+    },
+    {
+      "id": "spgc_80",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of geese on the ground?",
+      "options": [
+        "Gaggle",
+        "Flock",
+        "Skein",
+        "Pride"
+      ],
+      "answer": 0,
+      "explanation": "Geese on the ground form a 'Gaggle'; flying geese form a 'Skein'."
+    },
+    {
+      "id": "spgc_81",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of geese flying in V-formation?",
+      "options": [
+        "Skein",
+        "Gaggle",
+        "Flock",
+        "Swarm"
+      ],
+      "answer": 0,
+      "explanation": "Geese in flight form a 'Skein'."
+    },
+    {
+      "id": "spgc_82",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of peacocks?",
+      "options": [
+        "Muster",
+        "Pride",
+        "Flock",
+        "Herd"
+      ],
+      "answer": 0,
+      "explanation": "A group of peacocks is a 'Muster'."
+    },
+    {
+      "id": "spgc_83",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of owls?",
+      "options": [
+        "Parliament",
+        "Congregation",
+        "Flock",
+        "Pack"
+      ],
+      "answer": 0,
+      "explanation": "A group of owls is traditionally called a 'Parliament'."
+    },
+    {
+      "id": "spgc_84",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of crows?",
+      "options": [
+        "Murder",
+        "Mob",
+        "Flock",
+        "Pack"
+      ],
+      "answer": 0,
+      "explanation": "A group of crows is a 'Murder'."
+    },
+    {
+      "id": "spgc_85",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of sailors?",
+      "options": [
+        "Crew",
+        "Troop",
+        "Mob",
+        "Band"
+      ],
+      "answer": 0,
+      "explanation": "The personnel working on a ship is a 'Crew'."
+    },
+    {
+      "id": "spgc_86",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of soldiers?",
+      "options": [
+        "Regiment (or Army)",
+        "Crew",
+        "Mob",
+        "Flock"
+      ],
+      "answer": 0,
+      "explanation": "A military unit is a 'Regiment' or 'Army'."
+    },
+    {
+      "id": "spgc_87",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of thieves?",
+      "options": [
+        "Gang",
+        "Crew",
+        "Pack",
+        "Swarm"
+      ],
+      "answer": 0,
+      "explanation": "A group of thieves or criminals is a 'Gang'."
+    },
+    {
+      "id": "spgc_88",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of musicians?",
+      "options": [
+        "Band (or Orchestra)",
+        "Chorus",
+        "Troop",
+        "Crew"
+      ],
+      "answer": 0,
+      "explanation": "A group of musicians is a 'Band' or 'Orchestra'."
+    },
+    {
+      "id": "spgc_89",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of singers?",
+      "options": [
+        "Choir",
+        "Band",
+        "Troop",
+        "Orchestra"
+      ],
+      "answer": 0,
+      "explanation": "An organized group of singers is a 'Choir'."
+    },
+    {
+      "id": "spgc_90",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of directors in a company?",
+      "options": [
+        "Board",
+        "Bench",
+        "Panel",
+        "Jury"
+      ],
+      "answer": 0,
+      "explanation": "Governing group of a company is a 'Board of Directors'."
+    },
+    {
+      "id": "spgc_91",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of judges?",
+      "options": [
+        "Bench",
+        "Board",
+        "Panel",
+        "Jury"
+      ],
+      "answer": 0,
+      "explanation": "Judges sitting together form a 'Bench'."
+    },
+    {
+      "id": "spgc_92",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of jurors?",
+      "options": [
+        "Jury",
+        "Bench",
+        "Panel",
+        "Board"
+      ],
+      "answer": 0,
+      "explanation": "A body of people sworn to give a verdict is a 'Jury'."
+    },
+    {
+      "id": "spgc_93",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of experts?",
+      "options": [
+        "Panel",
+        "Bench",
+        "Board",
+        "Jury"
+      ],
+      "answer": 0,
+      "explanation": "A group of specialists/experts is a 'Panel'."
+    },
+    {
+      "id": "spgc_94",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of ships?",
+      "options": [
+        "Fleet",
+        "Armada",
+        "Flotilla",
+        "Convey"
+      ],
+      "answer": 0,
+      "explanation": "A group of ships under one commander is a 'Fleet'."
+    },
+    {
+      "id": "spgc_95",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of warships?",
+      "options": [
+        "Armada",
+        "Fleet",
+        "Flotilla",
+        "Squadron"
+      ],
+      "answer": 0,
+      "explanation": "A large fleet of warships is an 'Armada'."
+    },
+    {
+      "id": "spgc_96",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of vehicles traveling together?",
+      "options": [
+        "Convoy",
+        "Fleet",
+        "Flight",
+        "Troop"
+      ],
+      "answer": 0,
+      "explanation": "A group of vehicles/ships traveling together for protection is a 'Convoy'."
+    },
+    {
+      "id": "spgc_97",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of steps/stairs?",
+      "options": [
+        "Flight",
+        "Suite",
+        "Row",
+        "Series"
+      ],
+      "answer": 0,
+      "explanation": "A continuous series of stairs is a 'Flight of stairs'."
+    },
+    {
+      "id": "spgc_98",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of rooms in a hotel?",
+      "options": [
+        "Suite",
+        "Suite",
+        "Set",
+        "Block"
+      ],
+      "answer": 0,
+      "explanation": "A set of connected rooms is a 'Suite of rooms'."
+    },
+    {
+      "id": "spgc_99",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a collection of keys or grapes?",
+      "options": [
+        "Bunch",
+        "Bouquet",
+        "Clump",
+        "Bale"
+      ],
+      "answer": 0,
+      "explanation": "A group of keys, flowers, or grapes joined together is a 'Bunch'."
+    },
+    {
+      "id": "spgc_100",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for an arrangement of flowers?",
+      "options": [
+        "Bouquet",
+        "Bunch",
+        "Garland",
+        "Wreath"
+      ],
+      "answer": 0,
+      "explanation": "An attractively arranged bunch of flowers is a 'Bouquet'."
+    },
+    {
+      "id": "spgc_101",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of trees?",
+      "options": [
+        "Clump (or Grove)",
+        "Forest",
+        "Cluster",
+        "Fleet"
+      ],
+      "answer": 0,
+      "explanation": "A small group of trees is a 'Clump' or 'Grove'."
+    },
+    {
+      "id": "spgc_102",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of islands?",
+      "options": [
+        "Archipelago (or Chain)",
+        "Peninsula",
+        "Delta",
+        "Cluster"
+      ],
+      "answer": 0,
+      "explanation": "A group or chain of islands is an 'Archipelago'."
+    },
+    {
+      "id": "spgc_103",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a collection of cotton or hay tied together?",
+      "options": [
+        "Bale",
+        "Bundle",
+        "Stack",
+        "Heap"
+      ],
+      "answer": 0,
+      "explanation": "A bundle of compressed cotton or paper is a 'Bale'."
+    },
+    {
+      "id": "spgc_104",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a group of stars forming a pattern?",
+      "options": [
+        "Constellation (or Galaxy)",
+        "Cluster",
+        "Solar system",
+        "Nebula"
+      ],
+      "answer": 0,
+      "explanation": "A recognized pattern of stars is a 'Constellation'."
+    },
+    {
+      "id": "spgc_105",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the collective noun for a collection of arrows?",
+      "options": [
+        "Quiver",
+        "Sheaf",
+        "Bundle",
+        "Stack"
+      ],
+      "answer": 0,
+      "explanation": "An archer's case for holding arrows is a 'Quiver'."
+    },
+    {
+      "id": "singular_plural_gender_collective_106",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Alumnus'?",
+      "options": [
+        "Alumni",
+        "Alumnae",
+        "Alumnuses",
+        "Alumna"
+      ],
+      "answer": 0,
+      "explanation": "Latin masculine singular 'Alumnus' becomes plural 'Alumni'."
+    },
+    {
+      "id": "singular_plural_gender_collective_107",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Alumna' (female graduate)?",
+      "options": [
+        "Alumnae",
+        "Alumni",
+        "Alumnas",
+        "Alumnaes"
+      ],
+      "answer": 0,
+      "explanation": "Latin feminine singular 'Alumna' becomes plural 'Alumnae'."
+    },
+    {
+      "id": "singular_plural_gender_collective_108",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Datum'?",
+      "options": [
+        "Data",
+        "Datums",
+        "Datae",
+        "Datas"
+      ],
+      "answer": 0,
+      "explanation": "Latin neuter singular 'Datum' becomes plural 'Data'."
+    },
+    {
+      "id": "singular_plural_gender_collective_109",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Medium'?",
+      "options": [
+        "Media",
+        "Mediums",
+        "Mediae",
+        "Medias"
+      ],
+      "answer": 0,
+      "explanation": "'Medium' pluralizes to 'Media' (or 'mediums' for spiritualists)."
+    },
+    {
+      "id": "singular_plural_gender_collective_110",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Crisis'?",
+      "options": [
+        "Crises",
+        "Crisises",
+        "Crisise",
+        "Crisi"
+      ],
+      "answer": 0,
+      "explanation": "Greek nouns ending in -is change to -es in plural ('Crises')."
+    },
+    {
+      "id": "singular_plural_gender_collective_111",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Thesis'?",
+      "options": [
+        "Theses",
+        "Thesises",
+        "Thesise",
+        "Thesi"
+      ],
+      "answer": 0,
+      "explanation": "'Thesis' becomes 'Theses'."
+    },
+    {
+      "id": "singular_plural_gender_collective_112",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Oasis'?",
+      "options": [
+        "Oases",
+        "Oasises",
+        "Oasise",
+        "Oasi"
+      ],
+      "answer": 0,
+      "explanation": "'Oasis' becomes 'Oases'."
+    },
+    {
+      "id": "singular_plural_gender_collective_113",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Bacterium'?",
+      "options": [
+        "Bacteria",
+        "Bacteriums",
+        "Bacterias",
+        "Bacteriae"
+      ],
+      "answer": 0,
+      "explanation": "'Bacterium' becomes 'Bacteria'."
+    },
+    {
+      "id": "singular_plural_gender_collective_114",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Phenomenon'?",
+      "options": [
+        "Phenomena",
+        "Phenomenons",
+        "Phenomenae",
+        "Phenomenas"
+      ],
+      "answer": 0,
+      "explanation": "Greek neuter singular 'Phenomenon' becomes 'Phenomena'."
+    },
+    {
+      "id": "singular_plural_gender_collective_115",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Criterion'?",
+      "options": [
+        "Criteria",
+        "Criterions",
+        "Criteriae",
+        "Criterias"
+      ],
+      "answer": 0,
+      "explanation": "'Criterion' becomes 'Criteria'."
+    },
+    {
+      "id": "singular_plural_gender_collective_116",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Radius'?",
+      "options": [
+        "Radii",
+        "Radiuses",
+        "Radia",
+        "Radi"
+      ],
+      "answer": 0,
+      "explanation": "'Radius' becomes 'Radii'."
+    },
+    {
+      "id": "singular_plural_gender_collective_117",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural of 'Focus'?",
+      "options": [
+        "Foci",
+        "Focuses",
+        "Both A and B",
+        "Focia"
+      ],
+      "answer": 2,
+      "explanation": "Both 'Foci' and 'Focuses' are accepted plurals."
+    },
+    {
+      "id": "singular_plural_gender_collective_118",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Fox'?",
+      "options": [
+        "Vixen",
+        "Bitch",
+        "Doe",
+        "Ewe"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Fox' -> Feminine 'Vixen'."
+    },
+    {
+      "id": "singular_plural_gender_collective_119",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Stag' (male deer)?",
+      "options": [
+        "Hind",
+        "Doe",
+        "Ewe",
+        "Filly"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Stag' -> Feminine 'Hind'."
+    },
+    {
+      "id": "singular_plural_gender_collective_120",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Buck' (rabbit/goat)?",
+      "options": [
+        "Doe",
+        "Roebuck",
+        "Ewe",
+        "Mare"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Buck' -> Feminine 'Doe'."
+    },
+    {
+      "id": "singular_plural_gender_collective_121",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Ram' (male sheep)?",
+      "options": [
+        "Ewe",
+        "Nanny",
+        "Doe",
+        "Vixen"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Ram' -> Feminine 'Ewe'."
+    },
+    {
+      "id": "singular_plural_gender_collective_122",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Colt' (young male horse)?",
+      "options": [
+        "Filly",
+        "Mare",
+        "Dam",
+        "Heifer"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Colt' -> Feminine 'Filly'."
+    },
+    {
+      "id": "singular_plural_gender_collective_123",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Bullock' / 'Steer'?",
+      "options": [
+        "Heifer",
+        "Cow",
+        "Calf",
+        "Filly"
+      ],
+      "answer": 0,
+      "explanation": "Young male bovine 'Bullock' -> Young female 'Heifer'."
+    },
+    {
+      "id": "singular_plural_gender_collective_124",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Drake' (male duck)?",
+      "options": [
+        "Duck",
+        "Goose",
+        "Hen",
+        "Swan"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Drake' -> Feminine 'Duck'."
+    },
+    {
+      "id": "singular_plural_gender_collective_125",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Gander' (male goose)?",
+      "options": [
+        "Goose",
+        "Duck",
+        "Hen",
+        "Swan"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Gander' -> Feminine 'Goose'."
+    },
+    {
+      "id": "singular_plural_gender_collective_126",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Monk' / 'Friar'?",
+      "options": [
+        "Nun",
+        "Sister",
+        "Priestess",
+        "Dame"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Monk' -> Feminine 'Nun'."
+    },
+    {
+      "id": "singular_plural_gender_collective_127",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Wizard'?",
+      "options": [
+        "Witch",
+        "Sorceress",
+        "Enchantress",
+        "Fairy"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Wizard' -> Feminine 'Witch'."
+    },
+    {
+      "id": "singular_plural_gender_collective_128",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Bachelor'?",
+      "options": [
+        "Spinster",
+        "Widow",
+        "Dame",
+        "Maid"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Bachelor' -> Feminine 'Spinster'."
+    },
+    {
+      "id": "singular_plural_gender_collective_129",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Boar' (male pig)?",
+      "options": [
+        "Sow",
+        "Doe",
+        "Ewe",
+        "Vixen"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Boar' -> Feminine 'Sow'."
+    },
+    {
+      "id": "singular_plural_gender_collective_130",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Horse' / 'Stallion'?",
+      "options": [
+        "Mare",
+        "Filly",
+        "Dam",
+        "Hind"
+      ],
+      "answer": 0,
+      "explanation": "Adult male horse 'Stallion' -> Adult female 'Mare'."
+    },
+    {
+      "id": "singular_plural_gender_collective_131",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Duke'?",
+      "options": [
+        "Duchess",
+        "Countess",
+        "Baroness",
+        "Marchioness"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Duke' -> Feminine 'Duchess'."
+    },
+    {
+      "id": "singular_plural_gender_collective_132",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Earl' / 'Count'?",
+      "options": [
+        "Countess",
+        "Duchess",
+        "Baroness",
+        "Princess"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Earl' -> Feminine 'Countess'."
+    },
+    {
+      "id": "singular_plural_gender_collective_133",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Marquis' / 'Marquess'?",
+      "options": [
+        "Marchioness",
+        "Duchess",
+        "Countess",
+        "Baroness"
+      ],
+      "answer": 0,
+      "explanation": "Masculine 'Marquis' -> Feminine 'Marchioness'."
+    },
+    {
+      "id": "singular_plural_gender_collective_134",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Viscount'?",
+      "options": [
+        "Viscountess",
+        "Countess",
+        "Duchess",
+        "Baroness"
+      ],
+      "answer": 0,
+      "explanation": "'Viscount' -> 'Viscountess'."
+    },
+    {
+      "id": "singular_plural_gender_collective_135",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the feminine gender of 'Czar' / 'Tsar'?",
+      "options": [
+        "Czarina / Tsarina",
+        "Czareff",
+        "Czarine",
+        "Princess"
+      ],
+      "answer": 0,
+      "explanation": "'Czar' -> 'Czarina'."
+    },
+    {
+      "id": "singular_plural_gender_collective_136",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of fish.",
+      "options": [
+        "shoal / school",
+        "pack",
+        "herd",
+        "flock"
+      ],
+      "answer": 0,
+      "explanation": "A group of fish swimming together is a 'shoal' or 'school'."
+    },
+    {
+      "id": "singular_plural_gender_collective_137",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of wolves / hounds.",
+      "options": [
+        "pack",
+        "flock",
+        "herd",
+        "pride"
+      ],
+      "answer": 0,
+      "explanation": "A group of wolves or hounds is a 'pack'."
+    },
+    {
+      "id": "singular_plural_gender_collective_138",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of lions.",
+      "options": [
+        "pride",
+        "pack",
+        "troop",
+        "herd"
+      ],
+      "answer": 0,
+      "explanation": "A group of lions is a 'pride'."
+    },
+    {
+      "id": "singular_plural_gender_collective_139",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of geese.",
+      "options": [
+        "gaggle",
+        "flock",
+        "brood",
+        "swarm"
+      ],
+      "answer": 0,
+      "explanation": "A group of geese on the ground is a 'gaggle' (in flight, a 'skein')."
+    },
+    {
+      "id": "singular_plural_gender_collective_140",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of birds / sheep.",
+      "options": [
+        "flock",
+        "herd",
+        "swarm",
+        "pack"
+      ],
+      "answer": 0,
+      "explanation": "A group of birds or sheep is a 'flock'."
+    },
+    {
+      "id": "singular_plural_gender_collective_141",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of cattle / elephants.",
+      "options": [
+        "herd",
+        "pack",
+        "flock",
+        "pride"
+      ],
+      "answer": 0,
+      "explanation": "A group of large herbivorous animals is a 'herd'."
+    },
+    {
+      "id": "singular_plural_gender_collective_142",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of bees / locusts / ants.",
+      "options": [
+        "swarm",
+        "hive",
+        "flock",
+        "brood"
+      ],
+      "answer": 0,
+      "explanation": "A group of flying insects is a 'swarm'."
+    },
+    {
+      "id": "singular_plural_gender_collective_143",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of chickens / hens.",
+      "options": [
+        "brood",
+        "flock",
+        "clutch",
+        "nest"
+      ],
+      "answer": 0,
+      "explanation": "Young birds hatched at one time form a 'brood'."
+    },
+    {
+      "id": "singular_plural_gender_collective_144",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of whales / seals.",
+      "options": [
+        "pod",
+        "school",
+        "pack",
+        "shoal"
+      ],
+      "answer": 0,
+      "explanation": "A group of marine mammals (whales, dolphins) is a 'pod'."
+    },
+    {
+      "id": "singular_plural_gender_collective_145",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of monkeys / baboons.",
+      "options": [
+        "troop",
+        "pack",
+        "pride",
+        "herd"
+      ],
+      "answer": 0,
+      "explanation": "A group of monkeys is a 'troop'."
+    },
+    {
+      "id": "singular_plural_gender_collective_146",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of puppies / kittens.",
+      "options": [
+        "litter",
+        "brood",
+        "pack",
+        "cluster"
+      ],
+      "answer": 0,
+      "explanation": "The offspring at one birth of animal is a 'litter'."
+    },
+    {
+      "id": "singular_plural_gender_collective_147",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of musicians.",
+      "options": [
+        "band / orchestra",
+        "choir",
+        "troupe",
+        "crew"
+      ],
+      "answer": 0,
+      "explanation": "A group of musicians is a 'band' or 'orchestra'."
+    },
+    {
+      "id": "singular_plural_gender_collective_148",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of singers in a church.",
+      "options": [
+        "choir",
+        "band",
+        "troupe",
+        "mob"
+      ],
+      "answer": 0,
+      "explanation": "An organized group of singers is a 'choir'."
+    },
+    {
+      "id": "singular_plural_gender_collective_149",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of dancers / acrobats.",
+      "options": [
+        "troupe",
+        "troop",
+        "gang",
+        "crew"
+      ],
+      "answer": 0,
+      "explanation": "A company of theatrical performers is a 'troupe'."
+    },
+    {
+      "id": "singular_plural_gender_collective_150",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of sailors.",
+      "options": [
+        "crew",
+        "team",
+        "band",
+        "gang"
+      ],
+      "answer": 0,
+      "explanation": "A group of sailors operating a ship is a 'crew'."
+    },
+    {
+      "id": "singular_plural_gender_collective_151",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of thieves / laborers.",
+      "options": [
+        "gang",
+        "pack",
+        "troop",
+        "mob"
+      ],
+      "answer": 0,
+      "explanation": "A group of thieves or workers is a 'gang'."
+    },
+    {
+      "id": "singular_plural_gender_collective_152",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of soldiers.",
+      "options": [
+        "regiment / army",
+        "pack",
+        "gang",
+        "crew"
+      ],
+      "answer": 0,
+      "explanation": "A military collective is an 'army', 'battalion', or 'regiment'."
+    },
+    {
+      "id": "singular_plural_gender_collective_153",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of pearls / beads.",
+      "options": [
+        "string",
+        "cluster",
+        "suite",
+        "bunch"
+      ],
+      "answer": 0,
+      "explanation": "A series of pearls threaded together is a 'string' of pearls."
+    },
+    {
+      "id": "singular_plural_gender_collective_154",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of islands.",
+      "options": [
+        "archipelago / group",
+        "constellation",
+        "fleet",
+        "range"
+      ],
+      "answer": 0,
+      "explanation": "A group of islands is an 'archipelago'."
+    },
+    {
+      "id": "singular_plural_gender_collective_155",
+      "topic": "singular_plural_gender_collective",
+      "question": "Collective noun: A ______ of mountains / hills.",
+      "options": [
+        "range / chain",
+        "cluster",
+        "heap",
+        "suite"
+      ],
+      "answer": 0,
+      "explanation": "A line of mountains is a 'range' or 'chain'."
+    },
+    {
+      "id": "singular_plural_gender_collective_156",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Aircraft'?",
+      "options": [
+        "Aircraft",
+        "Aircraftes",
+        "Aircrafts",
+        "Aircrafties"
+      ],
+      "answer": 0,
+      "explanation": "Nouns like 'aircraft', 'sheep', 'deer' maintain identical forms in singular and plural."
+    },
+    {
+      "id": "singular_plural_gender_collective_157",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Barracks'?",
+      "options": [
+        "Barracks",
+        "Barrackss",
+        "Barracksies",
+        "Barracksen"
+      ],
+      "answer": 0,
+      "explanation": "'Barracks' has the same form in singular and plural."
+    },
+    {
+      "id": "singular_plural_gender_collective_158",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Analysis'?",
+      "options": [
+        "Analyses",
+        "Analysiss",
+        "Analysis",
+        "Analysisies"
+      ],
+      "answer": 0,
+      "explanation": "Greek loanwords ending in -is change to -es in plural ('analyses')."
+    },
+    {
+      "id": "singular_plural_gender_collective_159",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Curriculum'?",
+      "options": [
+        "Curricula",
+        "Curriculumes",
+        "Curriculums",
+        "Curriculumies"
+      ],
+      "answer": 0,
+      "explanation": "Latin neuter noun 'curriculum' forms plural 'curricula'."
+    },
+    {
+      "id": "singular_plural_gender_collective_160",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Diagnosis'?",
+      "options": [
+        "Diagnoses",
+        "Diagnosiss",
+        "Diagnosis",
+        "Diagnosisies"
+      ],
+      "answer": 0,
+      "explanation": "Medical term 'diagnosis' changes -is to -es in plural ('diagnoses')."
+    },
+    {
+      "id": "singular_plural_gender_collective_161",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Erratum'?",
+      "options": [
+        "Errata",
+        "Erratumes",
+        "Erratums",
+        "Erratumies"
+      ],
+      "answer": 0,
+      "explanation": "Latin 'erratum' (printer's error) becomes plural 'errata'."
+    },
+    {
+      "id": "singular_plural_gender_collective_162",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Fungus'?",
+      "options": [
+        "Fungi",
+        "Funguss",
+        "Fungus",
+        "Fungusies"
+      ],
+      "answer": 0,
+      "explanation": "Latin singular 'fungus' becomes plural 'fungi'."
+    },
+    {
+      "id": "singular_plural_gender_collective_163",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Hanger-on'?",
+      "options": [
+        "Hangers-on",
+        "Hanger-ones",
+        "Hanger-ons",
+        "Hanger-onies"
+      ],
+      "answer": 0,
+      "explanation": "In compound nouns formed with a noun + adverb/preposition, the principal noun takes 's' ('hangers-on')."
+    },
+    {
+      "id": "singular_plural_gender_collective_164",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Handful'?",
+      "options": [
+        "Handfuls",
+        "Handfules",
+        "Handfulies",
+        "Handfulen"
+      ],
+      "answer": 0,
+      "explanation": "Nouns ending in -ful add 's' at the end ('handfuls', 'cupfuls', 'spoonfuls')."
+    },
+    {
+      "id": "singular_plural_gender_collective_165",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Index'?",
+      "options": [
+        "Indices",
+        "Indexes",
+        "Indexs",
+        "Indexies"
+      ],
+      "answer": 0,
+      "explanation": "Mathematical/scientific plural of 'index' is 'indices' (also 'indexes' for books)."
+    },
+    {
+      "id": "singular_plural_gender_collective_166",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Locus'?",
+      "options": [
+        "Loci",
+        "Locuss",
+        "Locus",
+        "Locusies"
+      ],
+      "answer": 0,
+      "explanation": "Latin mathematical term 'locus' changes to 'loci' in plural."
+    },
+    {
+      "id": "singular_plural_gender_collective_167",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Maid of Honour'?",
+      "options": [
+        "Maids of Honour",
+        "Maid of Honoures",
+        "Maid of Honours",
+        "Maid of Honouries"
+      ],
+      "answer": 0,
+      "explanation": "Principal noun 'maid' takes the plural inflection: 'maids of honour'."
+    },
+    {
+      "id": "singular_plural_gender_collective_168",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Man-at-arms'?",
+      "options": [
+        "Men-at-arms",
+        "Man-at-armss",
+        "Man-at-arms",
+        "Man-at-armsies"
+      ],
+      "answer": 0,
+      "explanation": "Principal element 'man' changes to 'men': 'men-at-arms'."
+    },
+    {
+      "id": "singular_plural_gender_collective_169",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Matrix'?",
+      "options": [
+        "Matrices",
+        "Matrixes",
+        "Matrixs",
+        "Matrixies"
+      ],
+      "answer": 0,
+      "explanation": "Mathematical/technical plural of 'matrix' is 'matrices'."
+    },
+    {
+      "id": "singular_plural_gender_collective_170",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Memorandum'?",
+      "options": [
+        "Memoranda",
+        "Memorandumes",
+        "Memorandums",
+        "Memorandumies"
+      ],
+      "answer": 0,
+      "explanation": "Latin singular 'memorandum' changes -um to -a in plural ('memoranda')."
+    },
+    {
+      "id": "singular_plural_gender_collective_171",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Mouthful'?",
+      "options": [
+        "Mouthfuls",
+        "Mouthfules",
+        "Mouthfulies",
+        "Mouthfulen"
+      ],
+      "answer": 0,
+      "explanation": "Plural of 'mouthful' is 'mouthfuls'."
+    },
+    {
+      "id": "singular_plural_gender_collective_172",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Opus'?",
+      "options": [
+        "Opera",
+        "Opuss",
+        "Opus",
+        "Opusies"
+      ],
+      "answer": 0,
+      "explanation": "Latin artistic work 'opus' takes plural 'opera'."
+    },
+    {
+      "id": "singular_plural_gender_collective_173",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Spoonful'?",
+      "options": [
+        "Spoonfuls",
+        "Spoonfules",
+        "Spoonfulies",
+        "Spoonfulen"
+      ],
+      "answer": 0,
+      "explanation": "Plural of 'spoonful' is 'spoonfuls'."
+    },
+    {
+      "id": "singular_plural_gender_collective_174",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Stratum'?",
+      "options": [
+        "Strata",
+        "Stratumes",
+        "Stratums",
+        "Stratumies"
+      ],
+      "answer": 0,
+      "explanation": "Geological/social layer 'stratum' becomes plural 'strata'."
+    },
+    {
+      "id": "singular_plural_gender_collective_175",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Woman Doctor'?",
+      "options": [
+        "Women Doctors",
+        "Woman Doctores",
+        "Woman Doctors",
+        "Woman Doctories"
+      ],
+      "answer": 0,
+      "explanation": "In compound nouns denoting profession with woman/man, both elements pluralize: 'women doctors'."
+    },
+    {
+      "id": "singular_plural_gender_collective_176",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Woman Student'?",
+      "options": [
+        "Women Students",
+        "Woman Studentes",
+        "Woman Students",
+        "Woman Studenties"
+      ],
+      "answer": 0,
+      "explanation": "Both elements pluralize: 'women students'."
+    },
+    {
+      "id": "singular_plural_gender_collective_177",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Woman-servant'?",
+      "options": [
+        "Women-servants",
+        "Woman-servantes",
+        "Woman-servants",
+        "Woman-servanties"
+      ],
+      "answer": 0,
+      "explanation": "Both elements pluralize: 'women-servants' (just like 'men-servants')."
+    },
+    {
+      "id": "singular_plural_gender_collective_178",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Dynamo'?",
+      "options": [
+        "Dynamos",
+        "Dynamoes",
+        "Dynamoies",
+        "Dynamoen"
+      ],
+      "answer": 0,
+      "explanation": "Foreign loanword 'dynamo' takes 's' only: 'dynamos'."
+    },
+    {
+      "id": "singular_plural_gender_collective_179",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Fresco'?",
+      "options": [
+        "Frescos",
+        "Frescoes",
+        "Frescoies",
+        "Frescoen"
+      ],
+      "answer": 0,
+      "explanation": "Artistic plaster painting 'fresco' takes 'frescos'."
+    },
+    {
+      "id": "singular_plural_gender_collective_180",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Axe'?",
+      "options": [
+        "Axes",
+        "Axees",
+        "Axeies",
+        "Axeen"
+      ],
+      "answer": 0,
+      "explanation": "Plural of 'axe' is 'axes'."
+    },
+    {
+      "id": "singular_plural_gender_collective_181",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Octopus'?",
+      "options": [
+        "Octopi",
+        "Octopuss",
+        "Octopus",
+        "Octopusies"
+      ],
+      "answer": 0,
+      "explanation": "Classical plural of 'octopus' is 'octopi' (or 'octopuses')."
+    },
+    {
+      "id": "singular_plural_gender_collective_182",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Bamboo'?",
+      "options": [
+        "Bamboos",
+        "Bambooes",
+        "Bambooies",
+        "Bambooen"
+      ],
+      "answer": 0,
+      "explanation": "Words ending in double vowels add 's': 'bamboos'."
+    },
+    {
+      "id": "singular_plural_gender_collective_183",
+      "topic": "singular_plural_gender_collective",
+      "question": "What is the plural form of the noun 'Cuckoo'?",
+      "options": [
+        "Cuckoos",
+        "Cuckooes",
+        "Cuckooies",
+        "Cuckooen"
+      ],
+      "answer": 0,
+      "explanation": "Words ending in -oo add 's': 'cuckoos'."
+    }
+  ]
+}

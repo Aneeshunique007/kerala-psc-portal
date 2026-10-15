@@ -1,0 +1,2022 @@
+{
+  "topic_id": "question_tags",
+  "topic_name": "Question Tags",
+  "total_questions": 155,
+  "questions": [
+    {
+      "id": "qtag_1",
+      "topic": "question_tags",
+      "question": "She is reading a book, ______?",
+      "options": [
+        "is she",
+        "isn't she",
+        "was she",
+        "wasn't she"
+      ],
+      "answer": 1,
+      "explanation": "Affirmative statement with auxiliary 'is' takes negative tag 'isn't she?'."
+    },
+    {
+      "id": "qtag_2",
+      "topic": "question_tags",
+      "question": "You don't like coffee, ______?",
+      "options": [
+        "do you",
+        "don't you",
+        "did you",
+        "are you"
+      ],
+      "answer": 0,
+      "explanation": "Negative statement with 'don't' takes positive tag 'do you?'."
+    },
+    {
+      "id": "qtag_3",
+      "topic": "question_tags",
+      "question": "Let's go for a walk, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "can we",
+        "won't we"
+      ],
+      "answer": 1,
+      "explanation": "Statements beginning with 'Let's' always take the question tag 'shall we?'."
+    },
+    {
+      "id": "qtag_4",
+      "topic": "question_tags",
+      "question": "Close the door, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "can't we"
+      ],
+      "answer": 0,
+      "explanation": "Imperative sentences (requests/orders) take 'will you?' or 'won't you?' as tag."
+    },
+    {
+      "id": "qtag_5",
+      "topic": "question_tags",
+      "question": "I am right, ______?",
+      "options": [
+        "am I",
+        "aren't I",
+        "amn't I",
+        "ain't I"
+      ],
+      "answer": 1,
+      "explanation": "Affirmative 'I am' takes the tag 'aren't I?' in standard English."
+    },
+    {
+      "id": "qtag_6",
+      "topic": "question_tags",
+      "question": "I am not late, ______?",
+      "options": [
+        "am I",
+        "aren't I",
+        "are I",
+        "is I"
+      ],
+      "answer": 0,
+      "explanation": "Negative 'I am not' takes the positive tag 'am I?'."
+    },
+    {
+      "id": "qtag_7",
+      "topic": "question_tags",
+      "question": "Neither of them came, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "do they",
+        "don't they"
+      ],
+      "answer": 0,
+      "explanation": "'Neither' makes the clause negative, taking pronoun 'they' and positive tag 'did they?'."
+    },
+    {
+      "id": "qtag_8",
+      "topic": "question_tags",
+      "question": "Nobody phoned, ______?",
+      "options": [
+        "did he",
+        "didn't they",
+        "did they",
+        "didn't he"
+      ],
+      "answer": 2,
+      "explanation": "Indefinite pronoun 'Nobody' takes plural pronoun 'they' and positive auxiliary 'did they?'."
+    },
+    {
+      "id": "qtag_9",
+      "topic": "question_tags",
+      "question": "Few people know the answer, ______?",
+      "options": [
+        "do they",
+        "don't they",
+        "did they",
+        "does he"
+      ],
+      "answer": 0,
+      "explanation": "'Few' has a negative meaning, so it takes a positive tag 'do they?'."
+    },
+    {
+      "id": "qtag_10",
+      "topic": "question_tags",
+      "question": "A few students attended the class, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "do they",
+        "don't they"
+      ],
+      "answer": 1,
+      "explanation": "'A few' has a positive meaning, so it takes a negative tag 'didn't they?'."
+    },
+    {
+      "id": "qtag_11",
+      "topic": "question_tags",
+      "question": "Little progress has been made, ______?",
+      "options": [
+        "has it",
+        "hasn't it",
+        "have they",
+        "haven't they"
+      ],
+      "answer": 0,
+      "explanation": "'Little' has a negative meaning without 'a', so it takes the positive tag 'has it?'."
+    },
+    {
+      "id": "qtag_12",
+      "topic": "question_tags",
+      "question": "A little progress has been made, ______?",
+      "options": [
+        "has it",
+        "hasn't it",
+        "did it",
+        "didn't it"
+      ],
+      "answer": 1,
+      "explanation": "'A little' is positive in meaning, so it takes the negative tag 'hasn't it?'."
+    },
+    {
+      "id": "qtag_13",
+      "topic": "question_tags",
+      "question": "Barking dogs seldom bite, ______?",
+      "options": [
+        "do they",
+        "don't they",
+        "does it",
+        "doesn't it"
+      ],
+      "answer": 0,
+      "explanation": "'Seldom' is semi-negative; 'dogs' is plural, requiring 'do they?'."
+    },
+    {
+      "id": "qtag_14",
+      "topic": "question_tags",
+      "question": "He hardly ever goes there, ______?",
+      "options": [
+        "does he",
+        "doesn't he",
+        "is he",
+        "isn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Hardly' makes the sentence negative, requiring a positive tag 'does he?'."
+    },
+    {
+      "id": "qtag_15",
+      "topic": "question_tags",
+      "question": "She scarcely uttered a word, ______?",
+      "options": [
+        "did she",
+        "didn't she",
+        "does she",
+        "doesn't she"
+      ],
+      "answer": 0,
+      "explanation": "'Scarcely' conveys a negative idea; past tense 'uttered' takes 'did she?'."
+    },
+    {
+      "id": "qtag_16",
+      "topic": "question_tags",
+      "question": "Everyone has arrived, ______?",
+      "options": [
+        "has he",
+        "haven't they",
+        "hasn't he",
+        "have they"
+      ],
+      "answer": 1,
+      "explanation": "'Everyone' takes plural pronoun 'they' in question tags, requiring plural verb 'haven't they?'."
+    },
+    {
+      "id": "qtag_17",
+      "topic": "question_tags",
+      "question": "Somebody stole my purse, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "did he",
+        "didn't he"
+      ],
+      "answer": 1,
+      "explanation": "'Somebody' takes pronoun 'they' in the tag; past tense 'stole' takes 'didn't they?'."
+    },
+    {
+      "id": "qtag_18",
+      "topic": "question_tags",
+      "question": "Nothing was said, ______?",
+      "options": [
+        "was it",
+        "wasn't it",
+        "were they",
+        "weren't they"
+      ],
+      "answer": 0,
+      "explanation": "'Nothing' refers to a thing (it) and makes the sentence negative, so the tag is 'was it?'."
+    },
+    {
+      "id": "qtag_19",
+      "topic": "question_tags",
+      "question": "Everything looks fine, ______?",
+      "options": [
+        "doesn't it",
+        "does it",
+        "don't they",
+        "do they"
+      ],
+      "answer": 0,
+      "explanation": "'Everything' takes singular neuter pronoun 'it'; positive present takes 'doesn't it?'."
+    },
+    {
+      "id": "qtag_20",
+      "topic": "question_tags",
+      "question": "Don't make noise, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "don't you"
+      ],
+      "answer": 0,
+      "explanation": "Negative imperative 'Don't...' takes positive tag 'will you?'."
+    },
+    {
+      "id": "qtag_21",
+      "topic": "question_tags",
+      "question": "Have some tea, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "have you"
+      ],
+      "answer": 0,
+      "explanation": "Imperative offer takes 'will you?'."
+    },
+    {
+      "id": "qtag_22",
+      "topic": "question_tags",
+      "question": "Let us do this work, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "can we"
+      ],
+      "answer": 0,
+      "explanation": "'Let us' (allowing us) takes 'will you?' whereas 'Let's' (suggestion) takes 'shall we?'."
+    },
+    {
+      "id": "qtag_23",
+      "topic": "question_tags",
+      "question": "There is some water in the glass, ______?",
+      "options": [
+        "isn't there",
+        "is there",
+        "isn't it",
+        "is it"
+      ],
+      "answer": 0,
+      "explanation": "Sentences beginning with introductory 'there' retain 'there' in the tag: 'isn't there?'."
+    },
+    {
+      "id": "qtag_24",
+      "topic": "question_tags",
+      "question": "There are no problems, ______?",
+      "options": [
+        "aren't there",
+        "are there",
+        "are they",
+        "aren't they"
+      ],
+      "answer": 1,
+      "explanation": "Negative sentence with 'no' and introductory 'there' takes positive tag 'are there?'."
+    },
+    {
+      "id": "qtag_25",
+      "topic": "question_tags",
+      "question": "One should obey one's elders, ______?",
+      "options": [
+        "shouldn't one",
+        "should one",
+        "shouldn't he",
+        "should he"
+      ],
+      "answer": 0,
+      "explanation": "'One' as subject retains 'one' in the tag: 'shouldn't one?'."
+    },
+    {
+      "id": "qtag_26",
+      "topic": "question_tags",
+      "question": "He used to live here, ______?",
+      "options": [
+        "used he",
+        "didn't he",
+        "did he",
+        "usedn't he"
+      ],
+      "answer": 1,
+      "explanation": "'Used to' expresses past habit; standard modern usage takes 'didn't he?'."
+    },
+    {
+      "id": "qtag_27",
+      "topic": "question_tags",
+      "question": "She ought to help him, ______?",
+      "options": [
+        "oughtn't she",
+        "shouldn't she",
+        "ought she",
+        "should she"
+      ],
+      "answer": 0,
+      "explanation": "'Ought to' takes 'oughtn't she?'."
+    },
+    {
+      "id": "qtag_28",
+      "topic": "question_tags",
+      "question": "He dare not do that, ______?",
+      "options": [
+        "dare he",
+        "daren't he",
+        "does he",
+        "doesn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Dare not' is a negative modal auxiliary, so it takes 'dare he?'."
+    },
+    {
+      "id": "qtag_29",
+      "topic": "question_tags",
+      "question": "She dares to challenge him, ______?",
+      "options": [
+        "dare she",
+        "dares she",
+        "doesn't she",
+        "does she"
+      ],
+      "answer": 2,
+      "explanation": "Here 'dares' is an ordinary verb in present simple, taking 'doesn't she?'."
+    },
+    {
+      "id": "qtag_30",
+      "topic": "question_tags",
+      "question": "You need not go there, ______?",
+      "options": [
+        "need you",
+        "needn't you",
+        "do you",
+        "don't you"
+      ],
+      "answer": 0,
+      "explanation": "'Need not' functions as a modal auxiliary, taking positive tag 'need you?'."
+    },
+    {
+      "id": "qtag_31",
+      "topic": "question_tags",
+      "question": "He needs money, ______?",
+      "options": [
+        "needs he",
+        "need he",
+        "doesn't he",
+        "does he"
+      ],
+      "answer": 2,
+      "explanation": "Here 'needs' is a principal verb in present simple; affirmative statement takes 'doesn't he?'."
+    },
+    {
+      "id": "qtag_32",
+      "topic": "question_tags",
+      "question": "You had better leave now, ______?",
+      "options": [
+        "hadn't you",
+        "had you",
+        "didn't you",
+        "wouldn't you"
+      ],
+      "answer": 0,
+      "explanation": "'Had better' takes 'hadn't you?'."
+    },
+    {
+      "id": "qtag_33",
+      "topic": "question_tags",
+      "question": "You would rather stay, ______?",
+      "options": [
+        "wouldn't you",
+        "would you",
+        "hadn't you",
+        "had you"
+      ],
+      "answer": 0,
+      "explanation": "'Would rather' takes 'wouldn't you?'."
+    },
+    {
+      "id": "qtag_34",
+      "topic": "question_tags",
+      "question": "The boy broke the window, ______?",
+      "options": [
+        "did he",
+        "didn't he",
+        "was he",
+        "wasn't he"
+      ],
+      "answer": 1,
+      "explanation": "Past simple affirmative 'broke' takes 'didn't he?'."
+    },
+    {
+      "id": "qtag_35",
+      "topic": "question_tags",
+      "question": "Children like sweets, ______?",
+      "options": [
+        "do they",
+        "don't they",
+        "did they",
+        "are they"
+      ],
+      "answer": 1,
+      "explanation": "Present simple plural affirmative 'like' takes 'don't they?'."
+    },
+    {
+      "id": "qtag_36",
+      "topic": "question_tags",
+      "question": "Gita sings well, ______?",
+      "options": [
+        "does she",
+        "doesn't she",
+        "is she",
+        "isn't she"
+      ],
+      "answer": 1,
+      "explanation": "Present simple 3rd person singular affirmative takes 'doesn't she?'."
+    },
+    {
+      "id": "qtag_37",
+      "topic": "question_tags",
+      "question": "Rahul wrote a letter, ______?",
+      "options": [
+        "did he",
+        "didn't he",
+        "does he",
+        "doesn't he"
+      ],
+      "answer": 1,
+      "explanation": "Past simple affirmative 'wrote' takes 'didn't he?'."
+    },
+    {
+      "id": "qtag_38",
+      "topic": "question_tags",
+      "question": "They have been working hard, ______?",
+      "options": [
+        "have they",
+        "haven't they",
+        "did they",
+        "didn't they"
+      ],
+      "answer": 1,
+      "explanation": "Present perfect continuous affirmative takes negative auxiliary tag 'haven't they?'."
+    },
+    {
+      "id": "qtag_39",
+      "topic": "question_tags",
+      "question": "She has a new car, ______?",
+      "options": [
+        "has she",
+        "hasn't she",
+        "doesn't she",
+        "does she"
+      ],
+      "answer": 2,
+      "explanation": "In modern English, 'has' as a main verb (possession) takes 'doesn't she?' (or 'hasn't she?')."
+    },
+    {
+      "id": "qtag_40",
+      "topic": "question_tags",
+      "question": "They have lunch at 1 PM, ______?",
+      "options": [
+        "haven't they",
+        "don't they",
+        "do they",
+        "have they"
+      ],
+      "answer": 1,
+      "explanation": "'Have lunch' uses 'have' as an action verb in simple present, taking 'don't they?'."
+    },
+    {
+      "id": "qtag_41",
+      "topic": "question_tags",
+      "question": "We had dinner late, ______?",
+      "options": [
+        "hadn't we",
+        "didn't we",
+        "did we",
+        "had we"
+      ],
+      "answer": 1,
+      "explanation": "'Had dinner' uses 'had' as main verb in past tense, taking 'didn't we?'."
+    },
+    {
+      "id": "qtag_42",
+      "topic": "question_tags",
+      "question": "None of the food was wasted, ______?",
+      "options": [
+        "was it",
+        "wasn't it",
+        "were they",
+        "weren't they"
+      ],
+      "answer": 0,
+      "explanation": "'None' of uncountable 'food' takes singular neuter pronoun 'it' and positive tag 'was it?'."
+    },
+    {
+      "id": "qtag_43",
+      "topic": "question_tags",
+      "question": "None of the students failed, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "did he",
+        "didn't he"
+      ],
+      "answer": 0,
+      "explanation": "'None' of countable plural takes pronoun 'they' and positive tag 'did they?'."
+    },
+    {
+      "id": "qtag_44",
+      "topic": "question_tags",
+      "question": "Neither of the sisters is married, ______?",
+      "options": [
+        "are they",
+        "aren't they",
+        "is she",
+        "isn't she"
+      ],
+      "answer": 0,
+      "explanation": "'Neither' implies negative; pronoun for two persons in tag is 'they' -> 'are they?'."
+    },
+    {
+      "id": "qtag_45",
+      "topic": "question_tags",
+      "question": "Either of you can solve this, ______?",
+      "options": [
+        "can't you",
+        "can you",
+        "can't they",
+        "can they"
+      ],
+      "answer": 0,
+      "explanation": "'Either of you' takes 'you' as tag pronoun; affirmative statement takes 'can't you?'."
+    },
+    {
+      "id": "qtag_46",
+      "topic": "question_tags",
+      "question": "Each student brought a book, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "did he",
+        "didn't he"
+      ],
+      "answer": 1,
+      "explanation": "'Each student' takes plural pronoun 'they' in the question tag: 'didn't they?'."
+    },
+    {
+      "id": "qtag_47",
+      "topic": "question_tags",
+      "question": "He is rarely absent, ______?",
+      "options": [
+        "is he",
+        "isn't he",
+        "was he",
+        "wasn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Rarely' has a negative meaning, so it takes the positive tag 'is he?'."
+    },
+    {
+      "id": "qtag_48",
+      "topic": "question_tags",
+      "question": "She never tells a lie, ______?",
+      "options": [
+        "does she",
+        "doesn't she",
+        "is she",
+        "isn't she"
+      ],
+      "answer": 0,
+      "explanation": "'Never' makes the clause negative, requiring positive tag 'does she?'."
+    },
+    {
+      "id": "qtag_49",
+      "topic": "question_tags",
+      "question": "They barely escaped the accident, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "do they",
+        "don't they"
+      ],
+      "answer": 0,
+      "explanation": "'Barely' conveys a negative sense; past tense 'escaped' takes 'did they?'."
+    },
+    {
+      "id": "qtag_50",
+      "topic": "question_tags",
+      "question": "No one helped him, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "did he",
+        "didn't he"
+      ],
+      "answer": 0,
+      "explanation": "'No one' makes sentence negative and takes pronoun 'they': 'did they?'."
+    },
+    {
+      "id": "qtag_51",
+      "topic": "question_tags",
+      "question": "Pass me the salt, ______?",
+      "options": [
+        "will you",
+        "shall you",
+        "do you",
+        "can't you"
+      ],
+      "answer": 0,
+      "explanation": "Polite request imperative takes 'will you?'."
+    },
+    {
+      "id": "qtag_52",
+      "topic": "question_tags",
+      "question": "Wait a minute, ______?",
+      "options": [
+        "can you",
+        "will you",
+        "shall we",
+        "do you"
+      ],
+      "answer": 1,
+      "explanation": "Ordinary imperative command/request takes 'will you?'."
+    },
+    {
+      "id": "qtag_53",
+      "topic": "question_tags",
+      "question": "Don't forget to post the letter, ______?",
+      "options": [
+        "will you",
+        "won't you",
+        "do you",
+        "shall you"
+      ],
+      "answer": 0,
+      "explanation": "Negative imperative takes 'will you?'."
+    },
+    {
+      "id": "qtag_54",
+      "topic": "question_tags",
+      "question": "Let us have some coffee, ______?",
+      "options": [
+        "shall we",
+        "will you",
+        "can we",
+        "do we"
+      ],
+      "answer": 0,
+      "explanation": "Suggestion starting with 'Let us' takes 'shall we?'."
+    },
+    {
+      "id": "qtag_55",
+      "topic": "question_tags",
+      "question": "I think he is honest, ______?",
+      "options": [
+        "isn't he",
+        "don't I",
+        "is he",
+        "do I"
+      ],
+      "answer": 0,
+      "explanation": "When sentence starts with 'I think', the question tag is formed from the subordinate clause: 'isn't he?'."
+    },
+    {
+      "id": "qtag_56",
+      "topic": "question_tags",
+      "question": "I don't think she will come, ______?",
+      "options": [
+        "will she",
+        "won't she",
+        "do I",
+        "don't I"
+      ],
+      "answer": 0,
+      "explanation": "'I don't think...' transfers negation to the main thought, so tag is positive 'will she?'."
+    },
+    {
+      "id": "qtag_57",
+      "topic": "question_tags",
+      "question": "You must attend the seminar, ______?",
+      "options": [
+        "mustn't you",
+        "must you",
+        "needn't you",
+        "shouldn't you"
+      ],
+      "answer": 0,
+      "explanation": "Obligation modal 'must' in affirmative statement takes 'mustn't you?'."
+    },
+    {
+      "id": "qtag_58",
+      "topic": "question_tags",
+      "question": "We needn't wait any longer, ______?",
+      "options": [
+        "need we",
+        "needn't we",
+        "do we",
+        "must we"
+      ],
+      "answer": 0,
+      "explanation": "Negative modal 'needn't' takes positive tag 'need we?'."
+    },
+    {
+      "id": "qtag_59",
+      "topic": "question_tags",
+      "question": "She can swim across the river, ______?",
+      "options": [
+        "can't she",
+        "can she",
+        "couldn't she",
+        "could she"
+      ],
+      "answer": 0,
+      "explanation": "Modal 'can' in affirmative takes negative tag 'can't she?'."
+    },
+    {
+      "id": "qtag_60",
+      "topic": "question_tags",
+      "question": "They couldn't answer the question, ______?",
+      "options": [
+        "could they",
+        "couldn't they",
+        "did they",
+        "didn't they"
+      ],
+      "answer": 0,
+      "explanation": "Negative modal 'couldn't' takes positive tag 'could they?'."
+    },
+    {
+      "id": "qtag_61",
+      "topic": "question_tags",
+      "question": "He won't mind, ______?",
+      "options": [
+        "will he",
+        "won't he",
+        "does he",
+        "is he"
+      ],
+      "answer": 0,
+      "explanation": "Future negative 'won't' takes positive tag 'will he?'."
+    },
+    {
+      "id": "qtag_62",
+      "topic": "question_tags",
+      "question": "You will help me, ______?",
+      "options": [
+        "won't you",
+        "will you",
+        "can't you",
+        "shall you"
+      ],
+      "answer": 0,
+      "explanation": "Future affirmative 'will' takes negative tag 'won't you?'."
+    },
+    {
+      "id": "qtag_63",
+      "topic": "question_tags",
+      "question": "She would like some water, ______?",
+      "options": [
+        "wouldn't she",
+        "would she",
+        "shouldn't she",
+        "should she"
+      ],
+      "answer": 0,
+      "explanation": "'Would' affirmative takes negative tag 'wouldn't she?'."
+    },
+    {
+      "id": "qtag_64",
+      "topic": "question_tags",
+      "question": "He'd rather die than beg, ______?",
+      "options": [
+        "wouldn't he",
+        "hadn't he",
+        "didn't he",
+        "won't he"
+      ],
+      "answer": 0,
+      "explanation": "'d rather = would rather, which takes 'wouldn't he?'."
+    },
+    {
+      "id": "qtag_65",
+      "topic": "question_tags",
+      "question": "He'd better consult a doctor, ______?",
+      "options": [
+        "hadn't he",
+        "wouldn't he",
+        "didn't he",
+        "hasn't he"
+      ],
+      "answer": 0,
+      "explanation": "'d better = had better, which takes 'hadn't he?'."
+    },
+    {
+      "id": "qtag_66",
+      "topic": "question_tags",
+      "question": "He'd finished the work before noon, ______?",
+      "options": [
+        "hadn't he",
+        "wouldn't he",
+        "didn't he",
+        "hasn't he"
+      ],
+      "answer": 0,
+      "explanation": "'d + past participle (finished) = had finished, taking 'hadn't he?'."
+    },
+    {
+      "id": "qtag_67",
+      "topic": "question_tags",
+      "question": "He's coming tonight, ______?",
+      "options": [
+        "isn't he",
+        "hasn't he",
+        "wasn't he",
+        "doesn't he"
+      ],
+      "answer": 0,
+      "explanation": "'He's + -ing = He is, taking 'isn't he?'."
+    },
+    {
+      "id": "qtag_68",
+      "topic": "question_tags",
+      "question": "He's done his homework, ______?",
+      "options": [
+        "hasn't he",
+        "isn't he",
+        "didn't he",
+        "wasn't he"
+      ],
+      "answer": 0,
+      "explanation": "'He's + V3 (done) = He has, taking 'hasn't he?'."
+    },
+    {
+      "id": "qtag_69",
+      "topic": "question_tags",
+      "question": "Nothing is impossible, ______?",
+      "options": [
+        "is it",
+        "isn't it",
+        "are they",
+        "aren't they"
+      ],
+      "answer": 0,
+      "explanation": "'Nothing' is negative; pronoun is 'it', taking 'is it?'."
+    },
+    {
+      "id": "qtag_70",
+      "topic": "question_tags",
+      "question": "Something is wrong, ______?",
+      "options": [
+        "isn't it",
+        "is it",
+        "aren't they",
+        "are they"
+      ],
+      "answer": 0,
+      "explanation": "'Something' is affirmative; pronoun is 'it', taking 'isn't it?'."
+    },
+    {
+      "id": "qtag_71",
+      "topic": "question_tags",
+      "question": "Someone was knocking at the door, ______?",
+      "options": [
+        "weren't they",
+        "wasn't he",
+        "were they",
+        "was he"
+      ],
+      "answer": 0,
+      "explanation": "'Someone' takes plural pronoun 'they' in question tags, requiring plural verb 'weren't they?'."
+    },
+    {
+      "id": "qtag_72",
+      "topic": "question_tags",
+      "question": "No one knows the truth, ______?",
+      "options": [
+        "do they",
+        "don't they",
+        "does he",
+        "doesn't he"
+      ],
+      "answer": 0,
+      "explanation": "'No one' is negative and takes 'they', requiring present plural verb 'do they?'."
+    },
+    {
+      "id": "qtag_73",
+      "topic": "question_tags",
+      "question": "Everybody applauded the performance, ______?",
+      "options": [
+        "didn't they",
+        "did they",
+        "didn't he",
+        "did he"
+      ],
+      "answer": 0,
+      "explanation": "'Everybody' takes plural pronoun 'they'; past simple takes 'didn't they?'."
+    },
+    {
+      "id": "qtag_74",
+      "topic": "question_tags",
+      "question": "Anybody can do this, ______?",
+      "options": [
+        "can't they",
+        "can they",
+        "can't he",
+        "can he"
+      ],
+      "answer": 0,
+      "explanation": "'Anybody' takes pronoun 'they'; affirmative modal takes 'can't they?'."
+    },
+    {
+      "id": "qtag_75",
+      "topic": "question_tags",
+      "question": "Few politicians are honest, ______?",
+      "options": [
+        "are they",
+        "aren't they",
+        "do they",
+        "don't they"
+      ],
+      "answer": 0,
+      "explanation": "'Few' is negative, taking positive tag 'are they?'."
+    },
+    {
+      "id": "qtag_76",
+      "topic": "question_tags",
+      "question": "A few friends visited me, ______?",
+      "options": [
+        "didn't they",
+        "did they",
+        "don't they",
+        "do they"
+      ],
+      "answer": 0,
+      "explanation": "'A few' is positive; past tense 'visited' takes negative tag 'didn't they?'."
+    },
+    {
+      "id": "qtag_77",
+      "topic": "question_tags",
+      "question": "Little milk was left in the pot, ______?",
+      "options": [
+        "was it",
+        "wasn't it",
+        "were they",
+        "weren't they"
+      ],
+      "answer": 0,
+      "explanation": "'Little' is negative, taking positive tag 'was it?'."
+    },
+    {
+      "id": "qtag_78",
+      "topic": "question_tags",
+      "question": "A little knowledge is dangerous, ______?",
+      "options": [
+        "isn't it",
+        "is it",
+        "aren't they",
+        "are they"
+      ],
+      "answer": 0,
+      "explanation": "'A little' is positive, taking negative tag 'isn't it?'."
+    },
+    {
+      "id": "qtag_79",
+      "topic": "question_tags",
+      "question": "She seldom speaks in public, ______?",
+      "options": [
+        "does she",
+        "doesn't she",
+        "is she",
+        "isn't she"
+      ],
+      "answer": 0,
+      "explanation": "'Seldom' is negative, taking positive tag 'does she?'."
+    },
+    {
+      "id": "qtag_80",
+      "topic": "question_tags",
+      "question": "The climate is pleasant here, ______?",
+      "options": [
+        "isn't it",
+        "is it",
+        "wasn't it",
+        "was it"
+      ],
+      "answer": 0,
+      "explanation": "'The climate' takes pronoun 'it'; positive present takes 'isn't it?'."
+    },
+    {
+      "id": "qtag_81",
+      "topic": "question_tags",
+      "question": "Birds fly in the sky, ______?",
+      "options": [
+        "don't they",
+        "do they",
+        "aren't they",
+        "are they"
+      ],
+      "answer": 0,
+      "explanation": "Present simple plural affirmative takes 'don't they?'."
+    },
+    {
+      "id": "qtag_82",
+      "topic": "question_tags",
+      "question": "A bird flies in the sky, ______?",
+      "options": [
+        "doesn't it",
+        "does it",
+        "isn't it",
+        "is it"
+      ],
+      "answer": 0,
+      "explanation": "Present simple 3rd person singular affirmative takes 'doesn't it?'."
+    },
+    {
+      "id": "qtag_83",
+      "topic": "question_tags",
+      "question": "We ought to respect our parents, ______?",
+      "options": [
+        "oughtn't we",
+        "ought we",
+        "shouldn't we",
+        "should we"
+      ],
+      "answer": 0,
+      "explanation": "'Ought to' takes negative tag 'oughtn't we?'."
+    },
+    {
+      "id": "qtag_84",
+      "topic": "question_tags",
+      "question": "You need to work harder, ______?",
+      "options": [
+        "don't you",
+        "needn't you",
+        "do you",
+        "need you"
+      ],
+      "answer": 0,
+      "explanation": "Here 'need' is a main verb with 'to work', so present simple takes 'don't you?'."
+    },
+    {
+      "id": "qtag_85",
+      "topic": "question_tags",
+      "question": "She dare not tell a lie, ______?",
+      "options": [
+        "dare she",
+        "daren't she",
+        "does she",
+        "doesn't she"
+      ],
+      "answer": 0,
+      "explanation": "'Dare not' is a modal auxiliary, taking 'dare she?'."
+    },
+    {
+      "id": "qtag_86",
+      "topic": "question_tags",
+      "question": "He dares anyone to fight, ______?",
+      "options": [
+        "doesn't he",
+        "dares he",
+        "does he",
+        "daren't he"
+      ],
+      "answer": 0,
+      "explanation": "'Dares' is a main verb, taking 'doesn't he?'."
+    },
+    {
+      "id": "qtag_87",
+      "topic": "question_tags",
+      "question": "Neither boy was selected, ______?",
+      "options": [
+        "were they",
+        "was he",
+        "wasn't he",
+        "weren't they"
+      ],
+      "answer": 0,
+      "explanation": "'Neither boy' is negative; tag pronoun for subjects with 'neither' is 'they' -> 'were they?'."
+    },
+    {
+      "id": "qtag_88",
+      "topic": "question_tags",
+      "question": "None of these books belong to me, ______?",
+      "options": [
+        "do they",
+        "don't they",
+        "does it",
+        "doesn't it"
+      ],
+      "answer": 0,
+      "explanation": "'None' of plural countable nouns takes plural pronoun 'they' and positive tag 'do they?'."
+    },
+    {
+      "id": "qtag_89",
+      "topic": "question_tags",
+      "question": "One cannot be too careful, ______?",
+      "options": [
+        "can one",
+        "can't one",
+        "can he",
+        "can't he"
+      ],
+      "answer": 0,
+      "explanation": "'One' as subject repeats as 'one' in the tag; negative 'cannot' takes 'can one?'."
+    },
+    {
+      "id": "qtag_90",
+      "topic": "question_tags",
+      "question": "Let's begin the test, ______?",
+      "options": [
+        "shall we",
+        "will you",
+        "can we",
+        "do we"
+      ],
+      "answer": 0,
+      "explanation": "Suggestions with 'Let's' always take 'shall we?'."
+    },
+    {
+      "id": "qtag_91",
+      "topic": "question_tags",
+      "question": "Open the window, ______?",
+      "options": [
+        "will you",
+        "shall you",
+        "do you",
+        "won't we"
+      ],
+      "answer": 0,
+      "explanation": "Polite imperative commands take 'will you?'."
+    },
+    {
+      "id": "qtag_92",
+      "topic": "question_tags",
+      "question": "Don't shout here, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "can't you"
+      ],
+      "answer": 0,
+      "explanation": "Negative imperative 'Don't...' takes positive tag 'will you?'."
+    },
+    {
+      "id": "qtag_93",
+      "topic": "question_tags",
+      "question": "You have completed the course, ______?",
+      "options": [
+        "haven't you",
+        "have you",
+        "didn't you",
+        "did you"
+      ],
+      "answer": 0,
+      "explanation": "Present perfect affirmative statement takes 'haven't you?'."
+    },
+    {
+      "id": "qtag_94",
+      "topic": "question_tags",
+      "question": "She had seen the movie earlier, ______?",
+      "options": [
+        "hadn't she",
+        "had she",
+        "didn't she",
+        "did she"
+      ],
+      "answer": 0,
+      "explanation": "Past perfect affirmative statement takes 'hadn't she?'."
+    },
+    {
+      "id": "qtag_95",
+      "topic": "question_tags",
+      "question": "They will join us later, ______?",
+      "options": [
+        "won't they",
+        "will they",
+        "aren't they",
+        "are they"
+      ],
+      "answer": 0,
+      "explanation": "Future affirmative with 'will' takes 'won't they?'."
+    },
+    {
+      "id": "qtag_96",
+      "topic": "question_tags",
+      "question": "He won't give up, ______?",
+      "options": [
+        "will he",
+        "won't he",
+        "does he",
+        "doesn't he"
+      ],
+      "answer": 0,
+      "explanation": "Future negative with 'won't' takes 'will he?'."
+    },
+    {
+      "id": "qtag_97",
+      "topic": "question_tags",
+      "question": "I am taller than you, ______?",
+      "options": [
+        "aren't I",
+        "am I",
+        "amn't I",
+        "ain't I"
+      ],
+      "answer": 0,
+      "explanation": "Positive 'I am' takes 'aren't I?' in question tags."
+    },
+    {
+      "id": "qtag_98",
+      "topic": "question_tags",
+      "question": "I am your friend, ______?",
+      "options": [
+        "aren't I",
+        "am I",
+        "is it",
+        "isn't it"
+      ],
+      "answer": 0,
+      "explanation": "Positive 'I am' takes 'aren't I?' in question tags."
+    },
+    {
+      "id": "qtag_99",
+      "topic": "question_tags",
+      "question": "It rarely rains in the desert, ______?",
+      "options": [
+        "does it",
+        "doesn't it",
+        "is it",
+        "isn't it"
+      ],
+      "answer": 0,
+      "explanation": "'Rarely' has a negative meaning, taking positive tag 'does it?'."
+    },
+    {
+      "id": "qtag_100",
+      "topic": "question_tags",
+      "question": "The dog barks at strangers, ______?",
+      "options": [
+        "doesn't it",
+        "does it",
+        "isn't it",
+        "is it"
+      ],
+      "answer": 0,
+      "explanation": "Singular animal noun takes pronoun 'it' and 'doesn't it?'."
+    },
+    {
+      "id": "qtag_101",
+      "topic": "question_tags",
+      "question": "The police caught the thief, ______?",
+      "options": [
+        "didn't they",
+        "did they",
+        "didn't he",
+        "wasn't it"
+      ],
+      "answer": 0,
+      "explanation": "'Police' is a plural noun in English, taking pronoun 'they' -> 'didn't they?'."
+    },
+    {
+      "id": "qtag_102",
+      "topic": "question_tags",
+      "question": "Cattle are grazing in the field, ______?",
+      "options": [
+        "aren't they",
+        "are they",
+        "isn't it",
+        "is it"
+      ],
+      "answer": 0,
+      "explanation": "'Cattle' is a plural noun, taking pronoun 'they' -> 'aren't they?'."
+    },
+    {
+      "id": "qtag_103",
+      "topic": "question_tags",
+      "question": "Nobody was present at the meeting, ______?",
+      "options": [
+        "were they",
+        "weren't they",
+        "was he",
+        "wasn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Nobody' is negative and takes plural pronoun 'they' with plural verb 'were they?'."
+    },
+    {
+      "id": "qtag_104",
+      "topic": "question_tags",
+      "question": "Everybody enjoyed the movie, ______?",
+      "options": [
+        "didn't they",
+        "did they",
+        "didn't he",
+        "wasn't it"
+      ],
+      "answer": 0,
+      "explanation": "'Everybody' takes plural pronoun 'they', taking 'didn't they?'."
+    },
+    {
+      "id": "qtag_105",
+      "topic": "question_tags",
+      "question": "There was a huge crowd, ______?",
+      "options": [
+        "wasn't there",
+        "was there",
+        "wasn't it",
+        "is there"
+      ],
+      "answer": 0,
+      "explanation": "Introductory 'there' with past singular verb takes 'wasn't there?'."
+    },
+    {
+      "id": "question_tags_106",
+      "topic": "question_tags",
+      "question": "You will come tomorrow, ______?",
+      "options": [
+        "won't you",
+        "will you",
+        "don't you",
+        "aren't you"
+      ],
+      "answer": 0,
+      "explanation": "Affirmative 'will' takes negative tag 'won't you?'."
+    },
+    {
+      "id": "question_tags_107",
+      "topic": "question_tags",
+      "question": "She won't mind, ______?",
+      "options": [
+        "will she",
+        "won't she",
+        "does she",
+        "is she"
+      ],
+      "answer": 0,
+      "explanation": "Negative 'won't' takes positive tag 'will she?'."
+    },
+    {
+      "id": "question_tags_108",
+      "topic": "question_tags",
+      "question": "He can drive a truck, ______?",
+      "options": [
+        "can't he",
+        "can he",
+        "could he",
+        "doesn't he"
+      ],
+      "answer": 0,
+      "explanation": "'can' takes negative tag 'can't he?'."
+    },
+    {
+      "id": "question_tags_109",
+      "topic": "question_tags",
+      "question": "They couldn't swim, ______?",
+      "options": [
+        "could they",
+        "couldn't they",
+        "can they",
+        "did they"
+      ],
+      "answer": 0,
+      "explanation": "Negative 'couldn't' takes 'could they?'."
+    },
+    {
+      "id": "question_tags_110",
+      "topic": "question_tags",
+      "question": "We must leave now, ______?",
+      "options": [
+        "mustn't we",
+        "must we",
+        "shouldn't we",
+        "needn't we"
+      ],
+      "answer": 0,
+      "explanation": "'must' takes 'mustn't we?'."
+    },
+    {
+      "id": "question_tags_111",
+      "topic": "question_tags",
+      "question": "You shouldn't shout, ______?",
+      "options": [
+        "should you",
+        "shouldn't you",
+        "would you",
+        "do you"
+      ],
+      "answer": 0,
+      "explanation": "Negative 'shouldn't' takes 'should you?'."
+    },
+    {
+      "id": "question_tags_112",
+      "topic": "question_tags",
+      "question": "Let's play football, ______?",
+      "options": [
+        "shall we",
+        "will you",
+        "can we",
+        "won't we"
+      ],
+      "answer": 0,
+      "explanation": "'Let's' takes 'shall we?'."
+    },
+    {
+      "id": "question_tags_113",
+      "topic": "question_tags",
+      "question": "Let us go out, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "can we",
+        "do you"
+      ],
+      "answer": 0,
+      "explanation": "'Let us' (asking permission) takes 'will you?'."
+    },
+    {
+      "id": "question_tags_114",
+      "topic": "question_tags",
+      "question": "Open the gate, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "won't you"
+      ],
+      "answer": 0,
+      "explanation": "Imperative request takes 'will you?'."
+    },
+    {
+      "id": "question_tags_115",
+      "topic": "question_tags",
+      "question": "Don't make a noise, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "don't you"
+      ],
+      "answer": 0,
+      "explanation": "Negative imperative takes 'will you?'."
+    },
+    {
+      "id": "question_tags_116",
+      "topic": "question_tags",
+      "question": "Have another cup of tea, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "have you"
+      ],
+      "answer": 0,
+      "explanation": "Imperative offer takes 'will you?'."
+    },
+    {
+      "id": "question_tags_117",
+      "topic": "question_tags",
+      "question": "Pass the salt, please, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "can't you"
+      ],
+      "answer": 0,
+      "explanation": "Polite imperative request takes 'will you?'."
+    },
+    {
+      "id": "question_tags_118",
+      "topic": "question_tags",
+      "question": "I am your best friend, ______?",
+      "options": [
+        "aren't I",
+        "am I",
+        "amn't I",
+        "ain't I"
+      ],
+      "answer": 0,
+      "explanation": "Affirmative 'I am' takes 'aren't I?'."
+    },
+    {
+      "id": "question_tags_119",
+      "topic": "question_tags",
+      "question": "I am not disturbing you, ______?",
+      "options": [
+        "am I",
+        "aren't I",
+        "are I",
+        "is I"
+      ],
+      "answer": 0,
+      "explanation": "Negative 'I am not' takes 'am I?'."
+    },
+    {
+      "id": "question_tags_120",
+      "topic": "question_tags",
+      "question": "Nobody came to the party, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "did he",
+        "didn't he"
+      ],
+      "answer": 0,
+      "explanation": "Indefinite 'Nobody' takes plural pronoun 'they' and positive tag 'did they?'."
+    },
+    {
+      "id": "question_tags_121",
+      "topic": "question_tags",
+      "question": "Somebody left their bag, ______?",
+      "options": [
+        "didn't they",
+        "did they",
+        "did he",
+        "didn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Somebody' takes 'they' and past auxiliary 'didn't they?'."
+    },
+    {
+      "id": "question_tags_122",
+      "topic": "question_tags",
+      "question": "Everyone has finished the exam, ______?",
+      "options": [
+        "haven't they",
+        "hasn't he",
+        "has he",
+        "have they"
+      ],
+      "answer": 0,
+      "explanation": "'Everyone' takes pronoun 'they' and plural auxiliary 'haven't they?'."
+    },
+    {
+      "id": "question_tags_123",
+      "topic": "question_tags",
+      "question": "Everybody loves ice cream, ______?",
+      "options": [
+        "don't they",
+        "doesn't he",
+        "do they",
+        "does he"
+      ],
+      "answer": 0,
+      "explanation": "'Everybody' takes pronoun 'they' and auxiliary 'don't they?'."
+    },
+    {
+      "id": "question_tags_124",
+      "topic": "question_tags",
+      "question": "Nothing is permanent, ______?",
+      "options": [
+        "is it",
+        "isn't it",
+        "are they",
+        "aren't they"
+      ],
+      "answer": 0,
+      "explanation": "'Nothing' takes singular neuter pronoun 'it' and positive tag 'is it?'."
+    },
+    {
+      "id": "question_tags_125",
+      "topic": "question_tags",
+      "question": "Everything is ready, ______?",
+      "options": [
+        "isn't it",
+        "is it",
+        "aren't they",
+        "are they"
+      ],
+      "answer": 0,
+      "explanation": "'Everything' takes 'it' and negative tag 'isn't it?'."
+    },
+    {
+      "id": "question_tags_126",
+      "topic": "question_tags",
+      "question": "Neither of them was present, ______?",
+      "options": [
+        "were they",
+        "weren't they",
+        "was he",
+        "wasn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Neither' conveys negative sense and takes plural pronoun 'they' -> 'were they?'."
+    },
+    {
+      "id": "question_tags_127",
+      "topic": "question_tags",
+      "question": "Few students attended the class, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "do they",
+        "don't they"
+      ],
+      "answer": 0,
+      "explanation": "'Few' is negative, taking positive tag 'did they?'."
+    },
+    {
+      "id": "question_tags_128",
+      "topic": "question_tags",
+      "question": "A few students attended the class, ______?",
+      "options": [
+        "didn't they",
+        "did they",
+        "do they",
+        "don't they"
+      ],
+      "answer": 0,
+      "explanation": "'A few' is positive, taking negative tag 'didn't they?'."
+    },
+    {
+      "id": "question_tags_129",
+      "topic": "question_tags",
+      "question": "Little milk was left in the pot, ______?",
+      "options": [
+        "was it",
+        "wasn't it",
+        "did it",
+        "didn't it"
+      ],
+      "answer": 0,
+      "explanation": "'Little' is negative, taking positive tag 'was it?'."
+    },
+    {
+      "id": "question_tags_130",
+      "topic": "question_tags",
+      "question": "A little milk was left in the pot, ______?",
+      "options": [
+        "wasn't it",
+        "was it",
+        "did it",
+        "didn't it"
+      ],
+      "answer": 0,
+      "explanation": "'A little' is positive, taking negative tag 'wasn't it?'."
+    },
+    {
+      "id": "question_tags_131",
+      "topic": "question_tags",
+      "question": "Barking dogs seldom bite, ______?",
+      "options": [
+        "do they",
+        "don't they",
+        "does it",
+        "doesn't it"
+      ],
+      "answer": 0,
+      "explanation": "'Seldom' is semi-negative; plural subject takes 'do they?'."
+    },
+    {
+      "id": "question_tags_132",
+      "topic": "question_tags",
+      "question": "He hardly ever speaks, ______?",
+      "options": [
+        "does he",
+        "doesn't he",
+        "is he",
+        "isn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Hardly' makes the clause negative, requiring 'does he?'."
+    },
+    {
+      "id": "question_tags_133",
+      "topic": "question_tags",
+      "question": "She rarely complains, ______?",
+      "options": [
+        "does she",
+        "doesn't she",
+        "is she",
+        "isn't she"
+      ],
+      "answer": 0,
+      "explanation": "'Rarely' takes positive tag 'does she?'."
+    },
+    {
+      "id": "question_tags_134",
+      "topic": "question_tags",
+      "question": "They barely escaped the fire, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "do they",
+        "don't they"
+      ],
+      "answer": 0,
+      "explanation": "'Barely' takes positive tag 'did they?'."
+    },
+    {
+      "id": "question_tags_135",
+      "topic": "question_tags",
+      "question": "He never tells a lie, ______?",
+      "options": [
+        "does he",
+        "doesn't he",
+        "is he",
+        "isn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Never' takes positive tag 'does he?'."
+    },
+    {
+      "id": "question_tags_136",
+      "topic": "question_tags",
+      "question": "There is a bird on the branch, ______?",
+      "options": [
+        "isn't there",
+        "is there",
+        "isn't it",
+        "is it"
+      ],
+      "answer": 0,
+      "explanation": "Introductory 'there' is retained in tag: 'isn't there?'."
+    },
+    {
+      "id": "question_tags_137",
+      "topic": "question_tags",
+      "question": "There are no problems, ______?",
+      "options": [
+        "are there",
+        "aren't there",
+        "are they",
+        "aren't they"
+      ],
+      "answer": 0,
+      "explanation": "Negative 'no' with introductory 'there' takes positive tag 'are there?'."
+    },
+    {
+      "id": "question_tags_138",
+      "topic": "question_tags",
+      "question": "There were many people in the hall, ______?",
+      "options": [
+        "weren't there",
+        "were there",
+        "weren't they",
+        "were they"
+      ],
+      "answer": 0,
+      "explanation": "Past plural 'there were' takes 'weren't there?'."
+    },
+    {
+      "id": "question_tags_139",
+      "topic": "question_tags",
+      "question": "One should keep one's word, ______?",
+      "options": [
+        "shouldn't one",
+        "should one",
+        "shouldn't he",
+        "should he"
+      ],
+      "answer": 0,
+      "explanation": "Indefinite 'One' retains 'one' in tag: 'shouldn't one?'."
+    },
+    {
+      "id": "question_tags_140",
+      "topic": "question_tags",
+      "question": "He used to live in London, ______?",
+      "options": [
+        "didn't he",
+        "used he",
+        "usedn't he",
+        "did he"
+      ],
+      "answer": 0,
+      "explanation": "'Used to' takes 'didn't he?' in standard modern usage."
+    },
+    {
+      "id": "question_tags_141",
+      "topic": "question_tags",
+      "question": "She ought to help him, ______?",
+      "options": [
+        "oughtn't she",
+        "shouldn't she",
+        "ought she",
+        "should she"
+      ],
+      "answer": 0,
+      "explanation": "'Ought to' takes 'oughtn't she?'."
+    },
+    {
+      "id": "question_tags_142",
+      "topic": "question_tags",
+      "question": "He dare not touch it, ______?",
+      "options": [
+        "dare he",
+        "daren't he",
+        "does he",
+        "doesn't he"
+      ],
+      "answer": 0,
+      "explanation": "'Dare not' is a modal, taking positive tag 'dare he?'."
+    },
+    {
+      "id": "question_tags_143",
+      "topic": "question_tags",
+      "question": "She dares to challenge him, ______?",
+      "options": [
+        "doesn't she",
+        "dares she",
+        "dare she",
+        "does she"
+      ],
+      "answer": 0,
+      "explanation": "'Dares' is an ordinary verb in simple present, taking 'doesn't she?'."
+    },
+    {
+      "id": "question_tags_144",
+      "topic": "question_tags",
+      "question": "You need not worry, ______?",
+      "options": [
+        "need you",
+        "needn't you",
+        "do you",
+        "don't you"
+      ],
+      "answer": 0,
+      "explanation": "'Need not' functions as a modal, taking positive tag 'need you?'."
+    },
+    {
+      "id": "question_tags_145",
+      "topic": "question_tags",
+      "question": "He needs some rest, ______?",
+      "options": [
+        "doesn't he",
+        "needs he",
+        "need he",
+        "does he"
+      ],
+      "answer": 0,
+      "explanation": "Ordinary verb 'needs' takes 'doesn't he?'."
+    },
+    {
+      "id": "question_tags_146",
+      "topic": "question_tags",
+      "question": "You had better go now, ______?",
+      "options": [
+        "hadn't you",
+        "had you",
+        "didn't you",
+        "wouldn't you"
+      ],
+      "answer": 0,
+      "explanation": "'Had better' takes 'hadn't you?'."
+    },
+    {
+      "id": "question_tags_147",
+      "topic": "question_tags",
+      "question": "She would rather stay at home, ______?",
+      "options": [
+        "wouldn't she",
+        "would she",
+        "hadn't she",
+        "had she"
+      ],
+      "answer": 0,
+      "explanation": "'Would rather' takes 'wouldn't she?'."
+    },
+    {
+      "id": "question_tags_148",
+      "topic": "question_tags",
+      "question": "Rahul plays cricket well, ______?",
+      "options": [
+        "doesn't he",
+        "does he",
+        "isn't he",
+        "is he"
+      ],
+      "answer": 0,
+      "explanation": "Simple present affirmative takes 'doesn't he?'."
+    },
+    {
+      "id": "question_tags_149",
+      "topic": "question_tags",
+      "question": "The children broke the window, ______?",
+      "options": [
+        "didn't they",
+        "did they",
+        "weren't they",
+        "were they"
+      ],
+      "answer": 0,
+      "explanation": "Simple past affirmative takes 'didn't they?'."
+    },
+    {
+      "id": "question_tags_150",
+      "topic": "question_tags",
+      "question": "They have two cars, ______?",
+      "options": [
+        "don't they",
+        "haven't they",
+        "have they",
+        "do they"
+      ],
+      "answer": 0,
+      "explanation": "'Have' expressing possession in modern English takes 'don't they?'."
+    },
+    {
+      "id": "question_tags_151",
+      "topic": "question_tags",
+      "question": "She had breakfast at 8 AM, ______?",
+      "options": [
+        "didn't she",
+        "hadn't she",
+        "did she",
+        "had she"
+      ],
+      "answer": 0,
+      "explanation": "'Had breakfast' is past action, taking 'didn't she?'."
+    },
+    {
+      "id": "question_tags_152",
+      "topic": "question_tags",
+      "question": "We have had our dinner, ______?",
+      "options": [
+        "haven't we",
+        "hadn't we",
+        "didn't we",
+        "don't we"
+      ],
+      "answer": 0,
+      "explanation": "Present perfect 'have had' takes auxiliary tag 'haven't we?'."
+    },
+    {
+      "id": "question_tags_153",
+      "topic": "question_tags",
+      "question": "Nobody was ready, ______?",
+      "options": [
+        "were they",
+        "weren't they",
+        "was he",
+        "wasn't he"
+      ],
+      "answer": 0,
+      "explanation": "Negative 'Nobody' takes plural pronoun 'they' and positive verb 'were they?'."
+    },
+    {
+      "id": "question_tags_154",
+      "topic": "question_tags",
+      "question": "Let's go for a movie tonight, ______?",
+      "options": [
+        "shall we",
+        "will you",
+        "can we",
+        "won't we"
+      ],
+      "answer": 0,
+      "explanation": "'Let's' takes 'shall we?'."
+    },
+    {
+      "id": "question_tags_155",
+      "topic": "question_tags",
+      "question": "Close your books, ______?",
+      "options": [
+        "will you",
+        "shall we",
+        "do you",
+        "don't you"
+      ],
+      "answer": 0,
+      "explanation": "Imperative command takes 'will you?'."
+    }
+  ]
+}

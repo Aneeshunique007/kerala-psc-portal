@@ -1,0 +1,2022 @@
+{
+  "topic_id": "abbreviations",
+  "topic_name": "Expansion and Meaning of Common Abbreviations",
+  "total_questions": 155,
+  "questions": [
+    {
+      "id": "abbr_1",
+      "topic": "abbreviations",
+      "question": "What does UNESCO stand for?",
+      "options": [
+        "United Nations Educational, Scientific and Cultural Organization",
+        "United Nations Economic, Social and Cultural Organization",
+        "Universal Nations Educational, Scientific and Cultural Office",
+        "United Nations Environment, Science and Culture Organization"
+      ],
+      "answer": 0,
+      "explanation": "UNESCO = United Nations Educational, Scientific and Cultural Organization."
+    },
+    {
+      "id": "abbr_2",
+      "topic": "abbreviations",
+      "question": "What does UNICEF stand for?",
+      "options": [
+        "United Nations International Children's Emergency Fund",
+        "United Nations International Child Education Fund",
+        "Universal Nations International Children's Emergency Fund",
+        "United Nations Indian Children's Educational Fund"
+      ],
+      "answer": 0,
+      "explanation": "UNICEF = United Nations International Children's Emergency Fund (now United Nations Children's Fund)."
+    },
+    {
+      "id": "abbr_3",
+      "topic": "abbreviations",
+      "question": "What does WHO stand for?",
+      "options": [
+        "World Health Organization",
+        "World Heritage Organization",
+        "World Hygiene Office",
+        "World Housing Organization"
+      ],
+      "answer": 0,
+      "explanation": "WHO = World Health Organization."
+    },
+    {
+      "id": "abbr_4",
+      "topic": "abbreviations",
+      "question": "What does WTO stand for?",
+      "options": [
+        "World Trade Organization",
+        "World Transport Organization",
+        "World Tourism Office",
+        "World Tariff Organization"
+      ],
+      "answer": 0,
+      "explanation": "WTO = World Trade Organization."
+    },
+    {
+      "id": "abbr_5",
+      "topic": "abbreviations",
+      "question": "What does ILO stand for?",
+      "options": [
+        "International Labour Organization",
+        "International Law Organization",
+        "International Land Office",
+        "Indian Labour Organization"
+      ],
+      "answer": 0,
+      "explanation": "ILO = International Labour Organization."
+    },
+    {
+      "id": "abbr_6",
+      "topic": "abbreviations",
+      "question": "What does IMF stand for?",
+      "options": [
+        "International Monetary Fund",
+        "International Money Foundation",
+        "Indian Monetary Fund",
+        "International Market Forum"
+      ],
+      "answer": 0,
+      "explanation": "IMF = International Monetary Fund."
+    },
+    {
+      "id": "abbr_7",
+      "topic": "abbreviations",
+      "question": "What does ISRO stand for?",
+      "options": [
+        "Indian Space Research Organisation",
+        "International Space Research Organisation",
+        "Indian Satellite Research Office",
+        "Indian Science Research Organisation"
+      ],
+      "answer": 0,
+      "explanation": "ISRO = Indian Space Research Organisation."
+    },
+    {
+      "id": "abbr_8",
+      "topic": "abbreviations",
+      "question": "What does NASA stand for?",
+      "options": [
+        "National Aeronautics and Space Administration",
+        "National Aerospace and Science Administration",
+        "North American Space Agency",
+        "National Aeronautics and Satellite Agency"
+      ],
+      "answer": 0,
+      "explanation": "NASA = National Aeronautics and Space Administration."
+    },
+    {
+      "id": "abbr_9",
+      "topic": "abbreviations",
+      "question": "What does DRDO stand for?",
+      "options": [
+        "Defence Research and Development Organisation",
+        "Department of Research and Defence Organisation",
+        "Defence Resource and Development Office",
+        "Delhi Research and Development Organisation"
+      ],
+      "answer": 0,
+      "explanation": "DRDO = Defence Research and Development Organisation."
+    },
+    {
+      "id": "abbr_10",
+      "topic": "abbreviations",
+      "question": "What does BARC stand for?",
+      "options": [
+        "Bhabha Atomic Research Centre",
+        "Bharat Atomic Research Centre",
+        "Biological and Agricultural Research Centre",
+        "Bhabha Advanced Radiation Centre"
+      ],
+      "answer": 0,
+      "explanation": "BARC = Bhabha Atomic Research Centre."
+    },
+    {
+      "id": "abbr_11",
+      "topic": "abbreviations",
+      "question": "What does PSC stand for in Kerala state administration?",
+      "options": [
+        "Public Service Commission",
+        "Public Selection Committee",
+        "Police Service Commission",
+        "People's Service Council"
+      ],
+      "answer": 0,
+      "explanation": "PSC = Public Service Commission."
+    },
+    {
+      "id": "abbr_12",
+      "topic": "abbreviations",
+      "question": "What does UPSC stand for?",
+      "options": [
+        "Union Public Service Commission",
+        "United Public Service Commission",
+        "Universal Public Service Council",
+        "Union People's Selection Commission"
+      ],
+      "answer": 0,
+      "explanation": "UPSC = Union Public Service Commission."
+    },
+    {
+      "id": "abbr_13",
+      "topic": "abbreviations",
+      "question": "What does FIR stand for in police reporting?",
+      "options": [
+        "First Information Report",
+        "Final Investigation Report",
+        "Formal Inquiry Record",
+        "Fast Investigation Report"
+      ],
+      "answer": 0,
+      "explanation": "FIR = First Information Report."
+    },
+    {
+      "id": "abbr_14",
+      "topic": "abbreviations",
+      "question": "What does CBI stand for?",
+      "options": [
+        "Central Bureau of Investigation",
+        "Central Board of Investigation",
+        "Central Branch of Inquiry",
+        "Crime Branch of India"
+      ],
+      "answer": 0,
+      "explanation": "CBI = Central Bureau of Investigation."
+    },
+    {
+      "id": "abbr_15",
+      "topic": "abbreviations",
+      "question": "What does CID stand for?",
+      "options": [
+        "Criminal Investigation Department",
+        "Crime Information Department",
+        "Central Intelligence Department",
+        "Criminal Intelligence Division"
+      ],
+      "answer": 0,
+      "explanation": "CID = Criminal Investigation Department."
+    },
+    {
+      "id": "abbr_16",
+      "topic": "abbreviations",
+      "question": "What does RAW stand for in Indian intelligence?",
+      "options": [
+        "Research and Analysis Wing",
+        "Radar and Aviation Wing",
+        "Radio and Audio Wing",
+        "Reconnaissance and Analysis Wing"
+      ],
+      "answer": 0,
+      "explanation": "RAW = Research and Analysis Wing."
+    },
+    {
+      "id": "abbr_17",
+      "topic": "abbreviations",
+      "question": "What does IB stand for in Indian intelligence?",
+      "options": [
+        "Intelligence Bureau",
+        "Investigation Bureau",
+        "Internal Branch",
+        "Indian Bureau"
+      ],
+      "answer": 0,
+      "explanation": "IB = Intelligence Bureau."
+    },
+    {
+      "id": "abbr_18",
+      "topic": "abbreviations",
+      "question": "What does RTI stand for in Indian law?",
+      "options": [
+        "Right to Information",
+        "Right to Income",
+        "Road Traffic Insurance",
+        "Right to Investigation"
+      ],
+      "answer": 0,
+      "explanation": "RTI = Right to Information Act, 2005."
+    },
+    {
+      "id": "abbr_19",
+      "topic": "abbreviations",
+      "question": "What does RTE stand for in Indian law?",
+      "options": [
+        "Right to Education",
+        "Right to Employment",
+        "Right to Equality",
+        "Road Transport Examination"
+      ],
+      "answer": 0,
+      "explanation": "RTE = Right to Education Act, 2009."
+    },
+    {
+      "id": "abbr_20",
+      "topic": "abbreviations",
+      "question": "What does GST stand for in Indian taxation?",
+      "options": [
+        "Goods and Services Tax",
+        "General Sales Tax",
+        "Government Service Tax",
+        "Goods and Securities Tax"
+      ],
+      "answer": 0,
+      "explanation": "GST = Goods and Services Tax."
+    },
+    {
+      "id": "abbr_21",
+      "topic": "abbreviations",
+      "question": "What does PAN stand for in income tax?",
+      "options": [
+        "Permanent Account Number",
+        "Personal Account Number",
+        "Postal Account Number",
+        "Primary Access Number"
+      ],
+      "answer": 0,
+      "explanation": "PAN = Permanent Account Number."
+    },
+    {
+      "id": "abbr_22",
+      "topic": "abbreviations",
+      "question": "What does PIN stand for in postal addresses?",
+      "options": [
+        "Postal Index Number",
+        "Postal Identification Number",
+        "Personal Identification Number",
+        "Public Index Number"
+      ],
+      "answer": 0,
+      "explanation": "PIN = Postal Index Number (in banking it stands for Personal Identification Number)."
+    },
+    {
+      "id": "abbr_23",
+      "topic": "abbreviations",
+      "question": "What does ATM stand for in banking?",
+      "options": [
+        "Automated Teller Machine",
+        "Any Time Money",
+        "Automatic Transaction Machine",
+        "Auto Transfer Machine"
+      ],
+      "answer": 0,
+      "explanation": "ATM = Automated Teller Machine."
+    },
+    {
+      "id": "abbr_24",
+      "topic": "abbreviations",
+      "question": "What does IFSC stand for in banking?",
+      "options": [
+        "Indian Financial System Code",
+        "International Financial Services Code",
+        "Indian Fund Settlement Code",
+        "Interbank Financial System Code"
+      ],
+      "answer": 0,
+      "explanation": "IFSC = Indian Financial System Code."
+    },
+    {
+      "id": "abbr_25",
+      "topic": "abbreviations",
+      "question": "What does RTGS stand for in money transfer?",
+      "options": [
+        "Real Time Gross Settlement",
+        "Rapid Transfer Gross Settlement",
+        "Real Time Guaranteed Settlement",
+        "Reserve Transfer Government System"
+      ],
+      "answer": 0,
+      "explanation": "RTGS = Real Time Gross Settlement."
+    },
+    {
+      "id": "abbr_26",
+      "topic": "abbreviations",
+      "question": "What does NEFT stand for in money transfer?",
+      "options": [
+        "National Electronic Funds Transfer",
+        "National Electronic Fast Transfer",
+        "Net Electronic Funds Transfer",
+        "New Electronic Financial Transaction"
+      ],
+      "answer": 0,
+      "explanation": "NEFT = National Electronic Funds Transfer."
+    },
+    {
+      "id": "abbr_27",
+      "topic": "abbreviations",
+      "question": "What does UPI stand for in digital payments?",
+      "options": [
+        "Unified Payments Interface",
+        "Universal Payment Identifier",
+        "United Payment Interface",
+        "Unique Personal Identification"
+      ],
+      "answer": 0,
+      "explanation": "UPI = Unified Payments Interface."
+    },
+    {
+      "id": "abbr_28",
+      "topic": "abbreviations",
+      "question": "What does KYC stand for in banking?",
+      "options": [
+        "Know Your Customer",
+        "Keep Your Cash",
+        "Know Your Credit",
+        "Key Yield Capital"
+      ],
+      "answer": 0,
+      "explanation": "KYC = Know Your Customer."
+    },
+    {
+      "id": "abbr_29",
+      "topic": "abbreviations",
+      "question": "What does OTP stand for in security verification?",
+      "options": [
+        "One Time Password",
+        "One Time PIN",
+        "Online Transaction Protocol",
+        "Official Transaction Password"
+      ],
+      "answer": 0,
+      "explanation": "OTP = One Time Password."
+    },
+    {
+      "id": "abbr_30",
+      "topic": "abbreviations",
+      "question": "What does HTTP stand for in internet technology?",
+      "options": [
+        "Hypertext Transfer Protocol",
+        "Hypertext Transmission Protocol",
+        "High Transfer Text Protocol",
+        "Hyper Terminal Test Protocol"
+      ],
+      "answer": 0,
+      "explanation": "HTTP = Hypertext Transfer Protocol."
+    },
+    {
+      "id": "abbr_31",
+      "topic": "abbreviations",
+      "question": "What does HTTPS stand for?",
+      "options": [
+        "Hypertext Transfer Protocol Secure",
+        "Hypertext Transfer Protocol System",
+        "Hypertext Transfer Protocol Standard",
+        "Hyper Transfer Text Protocol Secure"
+      ],
+      "answer": 0,
+      "explanation": "HTTPS = Hypertext Transfer Protocol Secure."
+    },
+    {
+      "id": "abbr_32",
+      "topic": "abbreviations",
+      "question": "What does HTML stand for in web development?",
+      "options": [
+        "Hypertext Markup Language",
+        "Hypertext Management Language",
+        "High Text Machine Language",
+        "Hyper Terminal Markup Language"
+      ],
+      "answer": 0,
+      "explanation": "HTML = Hypertext Markup Language."
+    },
+    {
+      "id": "abbr_33",
+      "topic": "abbreviations",
+      "question": "What does URL stand for in computer networks?",
+      "options": [
+        "Uniform Resource Locator",
+        "Universal Resource Locator",
+        "Uniform Resource Link",
+        "Unified Record Locator"
+      ],
+      "answer": 0,
+      "explanation": "URL = Uniform Resource Locator."
+    },
+    {
+      "id": "abbr_34",
+      "topic": "abbreviations",
+      "question": "What does USB stand for in computer hardware?",
+      "options": [
+        "Universal Serial Bus",
+        "Universal System Bus",
+        "Uniform Serial Board",
+        "Unified Storage Bus"
+      ],
+      "answer": 0,
+      "explanation": "USB = Universal Serial Bus."
+    },
+    {
+      "id": "abbr_35",
+      "topic": "abbreviations",
+      "question": "What does CPU stand for in computers?",
+      "options": [
+        "Central Processing Unit",
+        "Central Program Unit",
+        "Computer Processing Unit",
+        "Control Processing Unit"
+      ],
+      "answer": 0,
+      "explanation": "CPU = Central Processing Unit."
+    },
+    {
+      "id": "abbr_36",
+      "topic": "abbreviations",
+      "question": "What does RAM stand for in computer memory?",
+      "options": [
+        "Random Access Memory",
+        "Read Access Memory",
+        "Rapid Access Memory",
+        "Run Access Memory"
+      ],
+      "answer": 0,
+      "explanation": "RAM = Random Access Memory."
+    },
+    {
+      "id": "abbr_37",
+      "topic": "abbreviations",
+      "question": "What does ROM stand for in computer memory?",
+      "options": [
+        "Read Only Memory",
+        "Random Only Memory",
+        "Rapid Operation Memory",
+        "Run Only Memory"
+      ],
+      "answer": 0,
+      "explanation": "ROM = Read Only Memory."
+    },
+    {
+      "id": "abbr_38",
+      "topic": "abbreviations",
+      "question": "What does PDF stand for in digital documents?",
+      "options": [
+        "Portable Document Format",
+        "Public Document Format",
+        "Printed Document File",
+        "Portable Data File"
+      ],
+      "answer": 0,
+      "explanation": "PDF = Portable Document Format."
+    },
+    {
+      "id": "abbr_39",
+      "topic": "abbreviations",
+      "question": "What does LAN stand for in computer networks?",
+      "options": [
+        "Local Area Network",
+        "Large Area Network",
+        "Logical Area Network",
+        "Line Area Network"
+      ],
+      "answer": 0,
+      "explanation": "LAN = Local Area Network."
+    },
+    {
+      "id": "abbr_40",
+      "topic": "abbreviations",
+      "question": "What does WAN stand for in computer networks?",
+      "options": [
+        "Wide Area Network",
+        "Wireless Area Network",
+        "World Area Network",
+        "Web Area Network"
+      ],
+      "answer": 0,
+      "explanation": "WAN = Wide Area Network."
+    },
+    {
+      "id": "abbr_41",
+      "topic": "abbreviations",
+      "question": "What does Wi-Fi stand for?",
+      "options": [
+        "Wireless Fidelity",
+        "Wireless Finder",
+        "Wireless Field",
+        "Wireless File"
+      ],
+      "answer": 0,
+      "explanation": "Wi-Fi = Wireless Fidelity."
+    },
+    {
+      "id": "abbr_42",
+      "topic": "abbreviations",
+      "question": "What does SIM stand for in mobile telephony?",
+      "options": [
+        "Subscriber Identity Module",
+        "Subscriber Identification Machine",
+        "System Information Module",
+        "Standard Identity Module"
+      ],
+      "answer": 0,
+      "explanation": "SIM = Subscriber Identity Module."
+    },
+    {
+      "id": "abbr_43",
+      "topic": "abbreviations",
+      "question": "What does GPS stand for in navigation?",
+      "options": [
+        "Global Positioning System",
+        "General Positioning Satellite",
+        "Global Placement System",
+        "Geographical Positioning System"
+      ],
+      "answer": 0,
+      "explanation": "GPS = Global Positioning System."
+    },
+    {
+      "id": "abbr_44",
+      "topic": "abbreviations",
+      "question": "What does CCTV stand for in surveillance?",
+      "options": [
+        "Closed Circuit Television",
+        "Central Circuit Television",
+        "Connected Circuit Television",
+        "Continuous Camera Television"
+      ],
+      "answer": 0,
+      "explanation": "CCTV = Closed Circuit Television."
+    },
+    {
+      "id": "abbr_45",
+      "topic": "abbreviations",
+      "question": "What does RADAR stand for in aviation and defense?",
+      "options": [
+        "Radio Detection and Ranging",
+        "Radio Direction and Range",
+        "Radiation Detection and Radar",
+        "Radio Distance and Range"
+      ],
+      "answer": 0,
+      "explanation": "RADAR = Radio Detection and Ranging."
+    },
+    {
+      "id": "abbr_46",
+      "topic": "abbreviations",
+      "question": "What does SONAR stand for in submarine navigation?",
+      "options": [
+        "Sound Navigation and Ranging",
+        "Sound Navigation and Radio",
+        "Solar Navigation and Ranging",
+        "Sonic Navigation and Radar"
+      ],
+      "answer": 0,
+      "explanation": "SONAR = Sound Navigation and Ranging."
+    },
+    {
+      "id": "abbr_47",
+      "topic": "abbreviations",
+      "question": "What does LASER stand for in physics?",
+      "options": [
+        "Light Amplification by Stimulated Emission of Radiation",
+        "Light Absorption by Stimulated Emission of Radiation",
+        "Light Amplification by Solar Energy Radiation",
+        "Laser Action by Stimulated Emission of Radiation"
+      ],
+      "answer": 0,
+      "explanation": "LASER = Light Amplification by Stimulated Emission of Radiation."
+    },
+    {
+      "id": "abbr_48",
+      "topic": "abbreviations",
+      "question": "What does AIDS stand for in medicine?",
+      "options": [
+        "Acquired Immunodeficiency Syndrome",
+        "Acute Immunodeficiency Syndrome",
+        "Acquired Immune Deficiency Sickness",
+        "Auto Immune Deficiency Syndrome"
+      ],
+      "answer": 0,
+      "explanation": "AIDS = Acquired Immunodeficiency Syndrome."
+    },
+    {
+      "id": "abbr_49",
+      "topic": "abbreviations",
+      "question": "What does HIV stand for?",
+      "options": [
+        "Human Immunodeficiency Virus",
+        "Human Immune Virus",
+        "Human Infection Virus",
+        "Health Immunodeficiency Virus"
+      ],
+      "answer": 0,
+      "explanation": "HIV = Human Immunodeficiency Virus."
+    },
+    {
+      "id": "abbr_50",
+      "topic": "abbreviations",
+      "question": "What does COVID-19 stand for?",
+      "options": [
+        "Coronavirus Disease 2019",
+        "Corona Virus Infectious Disease 2019",
+        "Central Viral Infection 2019",
+        "Corona Viral Disease 2019"
+      ],
+      "answer": 0,
+      "explanation": "COVID-19 = Coronavirus Disease 2019."
+    },
+    {
+      "id": "abbr_51",
+      "topic": "abbreviations",
+      "question": "What does ECG stand for in cardiology?",
+      "options": [
+        "Electrocardiogram",
+        "Electroencephalogram",
+        "Echocardiogram",
+        "Electrocytogram"
+      ],
+      "answer": 0,
+      "explanation": "ECG = Electrocardiogram."
+    },
+    {
+      "id": "abbr_52",
+      "topic": "abbreviations",
+      "question": "What does EEG stand for in neurology?",
+      "options": [
+        "Electroencephalogram",
+        "Electrocardiogram",
+        "Electromyelogram",
+        "Electrocytogram"
+      ],
+      "answer": 0,
+      "explanation": "EEG = Electroencephalogram (brain activity)."
+    },
+    {
+      "id": "abbr_53",
+      "topic": "abbreviations",
+      "question": "What does MRI stand for in medical imaging?",
+      "options": [
+        "Magnetic Resonance Imaging",
+        "Medical Resonance Imaging",
+        "Magnetic Radiation Imaging",
+        "Modular Resonance Image"
+      ],
+      "answer": 0,
+      "explanation": "MRI = Magnetic Resonance Imaging."
+    },
+    {
+      "id": "abbr_54",
+      "topic": "abbreviations",
+      "question": "What does CT scan stand for in medical radiology?",
+      "options": [
+        "Computed Tomography",
+        "Computerized Tracking",
+        "Cardio Tomography",
+        "Central Telemetry"
+      ],
+      "answer": 0,
+      "explanation": "CT scan = Computed Tomography."
+    },
+    {
+      "id": "abbr_55",
+      "topic": "abbreviations",
+      "question": "What does ICU stand for in hospitals?",
+      "options": [
+        "Intensive Care Unit",
+        "Immediate Care Unit",
+        "Internal Care Unit",
+        "Integrated Care Unit"
+      ],
+      "answer": 0,
+      "explanation": "ICU = Intensive Care Unit."
+    },
+    {
+      "id": "abbr_56",
+      "topic": "abbreviations",
+      "question": "What does OPD stand for in hospitals?",
+      "options": [
+        "Outpatient Department",
+        "Official Patient Division",
+        "Operative Procedure Department",
+        "On-duty Patient Department"
+      ],
+      "answer": 0,
+      "explanation": "OPD = Outpatient Department."
+    },
+    {
+      "id": "abbr_57",
+      "topic": "abbreviations",
+      "question": "What does BCG stand for in vaccine immunization?",
+      "options": [
+        "Bacille Calmette-Guérin",
+        "Bacterial Compound Growth",
+        "Bharat Child Growth",
+        "Biological Cell Generation"
+      ],
+      "answer": 0,
+      "explanation": "BCG = Bacille Calmette-Guérin (tuberculosis vaccine)."
+    },
+    {
+      "id": "abbr_58",
+      "topic": "abbreviations",
+      "question": "What does DPT stand for in childhood vaccines?",
+      "options": [
+        "Diphtheria, Pertussis, Tetanus",
+        "Diarrhea, Polio, Tetanus",
+        "Diphtheria, Polio, Typhoid",
+        "Diphtheria, Pneumonia, Tetanus"
+      ],
+      "answer": 0,
+      "explanation": "DPT = Diphtheria, Pertussis, Tetanus vaccine."
+    },
+    {
+      "id": "abbr_59",
+      "topic": "abbreviations",
+      "question": "What does MMR stand for in vaccines?",
+      "options": [
+        "Measles, Mumps, Rubella",
+        "Malaria, Measles, Rabies",
+        "Meningitis, Mumps, Rubella",
+        "Measles, Malaria, Rabies"
+      ],
+      "answer": 0,
+      "explanation": "MMR = Measles, Mumps, Rubella vaccine."
+    },
+    {
+      "id": "abbr_60",
+      "topic": "abbreviations",
+      "question": "What does AICTE stand for in Indian education?",
+      "options": [
+        "All India Council for Technical Education",
+        "All India Commission for Technology and Engineering",
+        "All India Council for Teacher Education",
+        "Association of Indian College and Technical Education"
+      ],
+      "answer": 0,
+      "explanation": "AICTE = All India Council for Technical Education."
+    },
+    {
+      "id": "abbr_61",
+      "topic": "abbreviations",
+      "question": "What does UGC stand for in Indian higher education?",
+      "options": [
+        "University Grants Commission",
+        "Union Grants Commission",
+        "Universal Graduate Council",
+        "University Guidance Committee"
+      ],
+      "answer": 0,
+      "explanation": "UGC = University Grants Commission."
+    },
+    {
+      "id": "abbr_62",
+      "topic": "abbreviations",
+      "question": "What does NCERT stand for in Indian school education?",
+      "options": [
+        "National Council of Educational Research and Training",
+        "National Commission of Educational Research and Training",
+        "National Council of Examination and Research Testing",
+        "National Committee for Educational Research and Teaching"
+      ],
+      "answer": 0,
+      "explanation": "NCERT = National Council of Educational Research and Training."
+    },
+    {
+      "id": "abbr_63",
+      "topic": "abbreviations",
+      "question": "What does SCERT stand for in state education?",
+      "options": [
+        "State Council of Educational Research and Training",
+        "State Commission of Educational Research and Teaching",
+        "State Committee for Educational Resources and Testing",
+        "State Council for Examination and Research Training"
+      ],
+      "answer": 0,
+      "explanation": "SCERT = State Council of Educational Research and Training."
+    },
+    {
+      "id": "abbr_64",
+      "topic": "abbreviations",
+      "question": "What does CBSE stand for?",
+      "options": [
+        "Central Board of Secondary Education",
+        "Central Bureau of Secondary Examination",
+        "Council of Board of Secondary Education",
+        "Central Board of School Education"
+      ],
+      "answer": 0,
+      "explanation": "CBSE = Central Board of Secondary Education."
+    },
+    {
+      "id": "abbr_65",
+      "topic": "abbreviations",
+      "question": "What does ICSE stand for?",
+      "options": [
+        "Indian Certificate of Secondary Education",
+        "International Certificate of School Education",
+        "Indian Council of Secondary Education",
+        "Indian Certificate of School Examination"
+      ],
+      "answer": 0,
+      "explanation": "ICSE = Indian Certificate of Secondary Education."
+    },
+    {
+      "id": "abbr_66",
+      "topic": "abbreviations",
+      "question": "What does IGNOU stand for?",
+      "options": [
+        "Indira Gandhi National Open University",
+        "Indian Government National Open University",
+        "International Gandhi National Open University",
+        "Indira Gandhi National Online University"
+      ],
+      "answer": 0,
+      "explanation": "IGNOU = Indira Gandhi National Open University."
+    },
+    {
+      "id": "abbr_67",
+      "topic": "abbreviations",
+      "question": "What does IIT stand for in higher education?",
+      "options": [
+        "Indian Institute of Technology",
+        "International Institute of Technology",
+        "Indian Information Technology",
+        "Institute of Industrial Technology"
+      ],
+      "answer": 0,
+      "explanation": "IIT = Indian Institute of Technology."
+    },
+    {
+      "id": "abbr_68",
+      "topic": "abbreviations",
+      "question": "What does IIM stand for?",
+      "options": [
+        "Indian Institute of Management",
+        "International Institute of Management",
+        "Indian Industrial Management",
+        "Institute of Information Management"
+      ],
+      "answer": 0,
+      "explanation": "IIM = Indian Institute of Management."
+    },
+    {
+      "id": "abbr_69",
+      "topic": "abbreviations",
+      "question": "What does AIIMS stand for?",
+      "options": [
+        "All India Institute of Medical Sciences",
+        "All India Institute of Management and Science",
+        "All India Indian Medical School",
+        "Apex Indian Institute of Medical Sciences"
+      ],
+      "answer": 0,
+      "explanation": "AIIMS = All India Institute of Medical Sciences."
+    },
+    {
+      "id": "abbr_70",
+      "topic": "abbreviations",
+      "question": "What does NIT stand for?",
+      "options": [
+        "National Institute of Technology",
+        "National Information Technology",
+        "Naval Institute of Technology",
+        "Northern Institute of Technology"
+      ],
+      "answer": 0,
+      "explanation": "NIT = National Institute of Technology."
+    },
+    {
+      "id": "abbr_71",
+      "topic": "abbreviations",
+      "question": "What does SAARC stand for?",
+      "options": [
+        "South Asian Association for Regional Cooperation",
+        "South Asian Alliance for Regional Commerce",
+        "South Asian Association for Relief and Care",
+        "South Asian Agency for Regional Coordination"
+      ],
+      "answer": 0,
+      "explanation": "SAARC = South Asian Association for Regional Cooperation."
+    },
+    {
+      "id": "abbr_72",
+      "topic": "abbreviations",
+      "question": "What does ASEAN stand for?",
+      "options": [
+        "Association of Southeast Asian Nations",
+        "Alliance of South East Asian Nations",
+        "Association of South European and Asian Nations",
+        "Agency for Southeast Asian Nations"
+      ],
+      "answer": 0,
+      "explanation": "ASEAN = Association of Southeast Asian Nations."
+    },
+    {
+      "id": "abbr_73",
+      "topic": "abbreviations",
+      "question": "What does BRICS stand for?",
+      "options": [
+        "Brazil, Russia, India, China, South Africa",
+        "Britain, Russia, India, China, Singapore",
+        "Brazil, Russia, Indonesia, China, South Africa",
+        "Belgium, Russia, India, Canada, Switzerland"
+      ],
+      "answer": 0,
+      "explanation": "BRICS = Brazil, Russia, India, China, South Africa."
+    },
+    {
+      "id": "abbr_74",
+      "topic": "abbreviations",
+      "question": "What does NATO stand for?",
+      "options": [
+        "North Atlantic Treaty Organization",
+        "North American Treaty Organization",
+        "National Atlantic Trade Organization",
+        "North Atlantic Transport Organization"
+      ],
+      "answer": 0,
+      "explanation": "NATO = North Atlantic Treaty Organization."
+    },
+    {
+      "id": "abbr_75",
+      "topic": "abbreviations",
+      "question": "What does OPEC stand for?",
+      "options": [
+        "Organization of the Petroleum Exporting Countries",
+        "Organization of Petroleum Energy Countries",
+        "Oil Producing and Exporting Corporation",
+        "Organization of Pacific Energy Countries"
+      ],
+      "answer": 0,
+      "explanation": "OPEC = Organization of the Petroleum Exporting Countries."
+    },
+    {
+      "id": "abbr_76",
+      "topic": "abbreviations",
+      "question": "What does INTERPOL stand for?",
+      "options": [
+        "International Criminal Police Organization",
+        "International Police Intelligence",
+        "Interstate Police Network",
+        "International Police League"
+      ],
+      "answer": 0,
+      "explanation": "INTERPOL = International Criminal Police Organization."
+    },
+    {
+      "id": "abbr_77",
+      "topic": "abbreviations",
+      "question": "What does WWF stand for in environmental conservation?",
+      "options": [
+        "World Wide Fund for Nature",
+        "World Wildlife Federation",
+        "World Wilderness Fund",
+        "World Wildlife Foundation"
+      ],
+      "answer": 0,
+      "explanation": "WWF = World Wide Fund for Nature (originally World Wildlife Fund)."
+    },
+    {
+      "id": "abbr_78",
+      "topic": "abbreviations",
+      "question": "What does IUCN stand for?",
+      "options": [
+        "International Union for Conservation of Nature",
+        "Indian Union for Conservation of Nature",
+        "International Union for Climate Neutrality",
+        "International Unit for Creature Nature"
+      ],
+      "answer": 0,
+      "explanation": "IUCN = International Union for Conservation of Nature."
+    },
+    {
+      "id": "abbr_79",
+      "topic": "abbreviations",
+      "question": "What does UNEP stand for?",
+      "options": [
+        "United Nations Environment Programme",
+        "United Nations Energy Programme",
+        "Universal Nations Environment Protocol",
+        "United Nations Ecology Policy"
+      ],
+      "answer": 0,
+      "explanation": "UNEP = United Nations Environment Programme."
+    },
+    {
+      "id": "abbr_80",
+      "topic": "abbreviations",
+      "question": "What does LPG stand for in domestic fuel?",
+      "options": [
+        "Liquefied Petroleum Gas",
+        "Liquid Petrol Gas",
+        "Liquefied Propane Gas",
+        "Low Pressure Gas"
+      ],
+      "answer": 0,
+      "explanation": "LPG = Liquefied Petroleum Gas."
+    },
+    {
+      "id": "abbr_81",
+      "topic": "abbreviations",
+      "question": "What does CNG stand for in vehicle fuels?",
+      "options": [
+        "Compressed Natural Gas",
+        "Carbon Neutral Gas",
+        "Condensed Natural Gas",
+        "Compressed Nitrogen Gas"
+      ],
+      "answer": 0,
+      "explanation": "CNG = Compressed Natural Gas."
+    },
+    {
+      "id": "abbr_82",
+      "topic": "abbreviations",
+      "question": "What does LED stand for in lighting?",
+      "options": [
+        "Light Emitting Diode",
+        "Light Energy Device",
+        "Luminescent Electric Diode",
+        "Laser Emitting Diode"
+      ],
+      "answer": 0,
+      "explanation": "LED = Light Emitting Diode."
+    },
+    {
+      "id": "abbr_83",
+      "topic": "abbreviations",
+      "question": "What does LCD stand for in display monitors?",
+      "options": [
+        "Liquid Crystal Display",
+        "Light Crystal Display",
+        "Liquid Cathode Display",
+        "Luminescent Color Display"
+      ],
+      "answer": 0,
+      "explanation": "LCD = Liquid Crystal Display."
+    },
+    {
+      "id": "abbr_84",
+      "topic": "abbreviations",
+      "question": "What does CCTV stand for?",
+      "options": [
+        "Closed-Circuit Television",
+        "Continuous-Capture Television",
+        "Central-Control Television",
+        "Citizen-Camera Television"
+      ],
+      "answer": 0,
+      "explanation": "CCTV = Closed-Circuit Television."
+    },
+    {
+      "id": "abbr_85",
+      "topic": "abbreviations",
+      "question": "What does EVM stand for in Indian elections?",
+      "options": [
+        "Electronic Voting Machine",
+        "Election Verification Machine",
+        "Electoral Vote Monitor",
+        "Electronic Verification Module"
+      ],
+      "answer": 0,
+      "explanation": "EVM = Electronic Voting Machine."
+    },
+    {
+      "id": "abbr_86",
+      "topic": "abbreviations",
+      "question": "What does VVPAT stand for in Indian elections?",
+      "options": [
+        "Voter Verifiable Paper Audit Trail",
+        "Voter Verified Paper Account Trail",
+        "Verified Voter Paper Audit Test",
+        "Voting Verification Paper Audit Trail"
+      ],
+      "answer": 0,
+      "explanation": "VVPAT = Voter Verifiable Paper Audit Trail."
+    },
+    {
+      "id": "abbr_87",
+      "topic": "abbreviations",
+      "question": "What does NOTA stand for on the ballot paper?",
+      "options": [
+        "None of the Above",
+        "Not on the Account",
+        "Null of the All",
+        "Neither of These Answers"
+      ],
+      "answer": 0,
+      "explanation": "NOTA = None of the Above."
+    },
+    {
+      "id": "abbr_88",
+      "topic": "abbreviations",
+      "question": "What does MLA stand for in state legislative assemblies?",
+      "options": [
+        "Member of Legislative Assembly",
+        "Minister of Legislative Affairs",
+        "Member of Legal Assembly",
+        "Master of Legislative Affairs"
+      ],
+      "answer": 0,
+      "explanation": "MLA = Member of Legislative Assembly."
+    },
+    {
+      "id": "abbr_89",
+      "topic": "abbreviations",
+      "question": "What does MP stand for in Parliament?",
+      "options": [
+        "Member of Parliament",
+        "Minister of Parliament",
+        "Managing Parliamentarian",
+        "Military Police"
+      ],
+      "answer": 0,
+      "explanation": "MP = Member of Parliament."
+    },
+    {
+      "id": "abbr_90",
+      "topic": "abbreviations",
+      "question": "What does CJI stand for in the Indian judiciary?",
+      "options": [
+        "Chief Justice of India",
+        "Central Judge of India",
+        "Chief Judicial In-charge",
+        "Court Judge of India"
+      ],
+      "answer": 0,
+      "explanation": "CJI = Chief Justice of India."
+    },
+    {
+      "id": "abbr_91",
+      "topic": "abbreviations",
+      "question": "What does PIL stand for in Indian constitutional law?",
+      "options": [
+        "Public Interest Litigation",
+        "Private Interest Litigation",
+        "Public Inquiry Law",
+        "Police Investigation Law"
+      ],
+      "answer": 0,
+      "explanation": "PIL = Public Interest Litigation."
+    },
+    {
+      "id": "abbr_92",
+      "topic": "abbreviations",
+      "question": "What does NITI stand for in NITI Aayog?",
+      "options": [
+        "National Institution for Transforming India",
+        "National Institute for Trade in India",
+        "National Initiative for Technology in India",
+        "National Infrastructure Transforming India"
+      ],
+      "answer": 0,
+      "explanation": "NITI = National Institution for Transforming India (Aayog)."
+    },
+    {
+      "id": "abbr_93",
+      "topic": "abbreviations",
+      "question": "What does RBI stand for in central banking?",
+      "options": [
+        "Reserve Bank of India",
+        "Royal Bank of India",
+        "Revenue Bank of India",
+        "Regional Bank of India"
+      ],
+      "answer": 0,
+      "explanation": "RBI = Reserve Bank of India."
+    },
+    {
+      "id": "abbr_94",
+      "topic": "abbreviations",
+      "question": "What does SBI stand for?",
+      "options": [
+        "State Bank of India",
+        "Southern Bank of India",
+        "Special Bank of India",
+        "Standard Bank of India"
+      ],
+      "answer": 0,
+      "explanation": "SBI = State Bank of India."
+    },
+    {
+      "id": "abbr_95",
+      "topic": "abbreviations",
+      "question": "What does SEBI stand for in financial market regulation?",
+      "options": [
+        "Securities and Exchange Board of India",
+        "Stock Exchange Bureau of India",
+        "State Economic Board of India",
+        "Security and Equity Board of India"
+      ],
+      "answer": 0,
+      "explanation": "SEBI = Securities and Exchange Board of India."
+    },
+    {
+      "id": "abbr_96",
+      "topic": "abbreviations",
+      "question": "What does NABARD stand for?",
+      "options": [
+        "National Bank for Agriculture and Rural Development",
+        "National Board of Agriculture and Rural Development",
+        "National Bank for Agro-Business and Rural Development",
+        "New Agricultural Bank and Rural Development"
+      ],
+      "answer": 0,
+      "explanation": "NABARD = National Bank for Agriculture and Rural Development."
+    },
+    {
+      "id": "abbr_97",
+      "topic": "abbreviations",
+      "question": "What does SIDBI stand for?",
+      "options": [
+        "Small Industries Development Bank of India",
+        "State Industries Development Bank of India",
+        "Small Investment Development Bank of India",
+        "Secondary Industries Development Board of India"
+      ],
+      "answer": 0,
+      "explanation": "SIDBI = Small Industries Development Bank of India."
+    },
+    {
+      "id": "abbr_98",
+      "topic": "abbreviations",
+      "question": "What does TRAI stand for in telecom regulation?",
+      "options": [
+        "Telecom Regulatory Authority of India",
+        "Telephone Regulation Agency of India",
+        "Telecommunications Research Authority of India",
+        "Telecom Reform Authority of India"
+      ],
+      "answer": 0,
+      "explanation": "TRAI = Telecom Regulatory Authority of India."
+    },
+    {
+      "id": "abbr_99",
+      "topic": "abbreviations",
+      "question": "What does IRDAI stand for in insurance regulation?",
+      "options": [
+        "Insurance Regulatory and Development Authority of India",
+        "Indian Revenue and Development Agency of India",
+        "Insurance Reform and Development Authority of India",
+        "Income Regulation and Development Authority of India"
+      ],
+      "answer": 0,
+      "explanation": "IRDAI = Insurance Regulatory and Development Authority of India."
+    },
+    {
+      "id": "abbr_100",
+      "topic": "abbreviations",
+      "question": "What does FSSAI stand for in food safety standards?",
+      "options": [
+        "Food Safety and Standards Authority of India",
+        "Food Security and Standards Agency of India",
+        "Federal Safety and Standards Authority of India",
+        "Food Sanitation and Standards Authority of India"
+      ],
+      "answer": 0,
+      "explanation": "FSSAI = Food Safety and Standards Authority of India."
+    },
+    {
+      "id": "abbr_101",
+      "topic": "abbreviations",
+      "question": "What does KSEB stand for in Kerala?",
+      "options": [
+        "Kerala State Electricity Board",
+        "Kerala State Energy Board",
+        "Kerala State Environmental Bureau",
+        "Kerala Solar Energy Board"
+      ],
+      "answer": 0,
+      "explanation": "KSEB = Kerala State Electricity Board."
+    },
+    {
+      "id": "abbr_102",
+      "topic": "abbreviations",
+      "question": "What does KSRTC stand for in Kerala public transport?",
+      "options": [
+        "Kerala State Road Transport Corporation",
+        "Kerala State Railway Transport Corporation",
+        "Kerala State Road Travel Company",
+        "Kerala Southern Road Transport Corporation"
+      ],
+      "answer": 0,
+      "explanation": "KSRTC = Kerala State Road Transport Corporation."
+    },
+    {
+      "id": "abbr_103",
+      "topic": "abbreviations",
+      "question": "What does KWA stand for in Kerala utility services?",
+      "options": [
+        "Kerala Water Authority",
+        "Kerala Welfare Association",
+        "Kerala Waterway Agency",
+        "Kerala Wildlife Authority"
+      ],
+      "answer": 0,
+      "explanation": "KWA = Kerala Water Authority."
+    },
+    {
+      "id": "abbr_104",
+      "topic": "abbreviations",
+      "question": "What does IT stand for in technology?",
+      "options": [
+        "Information Technology",
+        "Integrated Technology",
+        "Internet Technology",
+        "Internal Telecommunications"
+      ],
+      "answer": 0,
+      "explanation": "IT = Information Technology."
+    },
+    {
+      "id": "abbr_105",
+      "topic": "abbreviations",
+      "question": "What does AI stand for in modern computing?",
+      "options": [
+        "Artificial Intelligence",
+        "Automated Intelligence",
+        "Advanced Information",
+        "Applied Informatics"
+      ],
+      "answer": 0,
+      "explanation": "AI = Artificial Intelligence."
+    },
+    {
+      "id": "abbreviations_106",
+      "topic": "abbreviations",
+      "question": "Expansion of 'UNICEF':",
+      "options": [
+        "United Nations Children's Fund",
+        "United Nations International Child Education Fund",
+        "United Nations Child Relief Fund",
+        "United Nations Infant Care Fund"
+      ],
+      "answer": 0,
+      "explanation": "United Nations Children's Fund (originally UN International Children's Emergency Fund)."
+    },
+    {
+      "id": "abbreviations_107",
+      "topic": "abbreviations",
+      "question": "Expansion of 'UNESCO':",
+      "options": [
+        "United Nations Educational, Scientific and Cultural Organization",
+        "United Nations Economic, Social and Cultural Organization",
+        "United Nations Environmental, Scientific and Children Organization",
+        "United Nations Educational, Social and Civic Organization"
+      ],
+      "answer": 0,
+      "explanation": "UNESCO stands for United Nations Educational, Scientific and Cultural Organization."
+    },
+    {
+      "id": "abbreviations_108",
+      "topic": "abbreviations",
+      "question": "Expansion of 'WHO':",
+      "options": [
+        "World Health Organization",
+        "World Housing Organization",
+        "World Humanitarian Organization",
+        "World Hygiene Office"
+      ],
+      "answer": 0,
+      "explanation": "WHO stands for World Health Organization."
+    },
+    {
+      "id": "abbreviations_109",
+      "topic": "abbreviations",
+      "question": "Expansion of 'ISRO':",
+      "options": [
+        "Indian Space Research Organisation",
+        "Indian Scientific Research Office",
+        "International Space Research Organisation",
+        "Indian Satellite Radiation Organisation"
+      ],
+      "answer": 0,
+      "explanation": "ISRO is Indian Space Research Organisation."
+    },
+    {
+      "id": "abbreviations_110",
+      "topic": "abbreviations",
+      "question": "Expansion of 'DRDO':",
+      "options": [
+        "Defence Research and Development Organisation",
+        "Department of Rural Development Organisation",
+        "Defence Radio and Detection Organisation",
+        "Directorate of Road Development Organisation"
+      ],
+      "answer": 0,
+      "explanation": "DRDO is Defence Research and Development Organisation."
+    },
+    {
+      "id": "abbreviations_111",
+      "topic": "abbreviations",
+      "question": "Expansion of 'NASA':",
+      "options": [
+        "National Aeronautics and Space Administration",
+        "National Aerospace and Satellite Agency",
+        "North American Space Administration",
+        "National Astronomical Science Association"
+      ],
+      "answer": 0,
+      "explanation": "NASA is National Aeronautics and Space Administration."
+    },
+    {
+      "id": "abbreviations_112",
+      "topic": "abbreviations",
+      "question": "Expansion of 'COVID':",
+      "options": [
+        "Coronavirus Disease",
+        "Corona Viral Infectious Disorder",
+        "Corona Virus Illness Department",
+        "Common Viral Infection Disease"
+      ],
+      "answer": 0,
+      "explanation": "COVID-19 = COronaVIrus Disease 2019."
+    },
+    {
+      "id": "abbreviations_113",
+      "topic": "abbreviations",
+      "question": "Expansion of 'AIDS':",
+      "options": [
+        "Acquired Immuno Deficiency Syndrome",
+        "Acute Immune Deficiency Syndrome",
+        "Acquired Infection Disease Syndrome",
+        "Active Immuno Deficiency Sickness"
+      ],
+      "answer": 0,
+      "explanation": "AIDS stands for Acquired Immuno Deficiency Syndrome."
+    },
+    {
+      "id": "abbreviations_114",
+      "topic": "abbreviations",
+      "question": "Expansion of 'HIV':",
+      "options": [
+        "Human Immunodeficiency Virus",
+        "Human Infection Virus",
+        "Host Immune Virus",
+        "Human Immunity Vector"
+      ],
+      "answer": 0,
+      "explanation": "HIV is Human Immunodeficiency Virus."
+    },
+    {
+      "id": "abbreviations_115",
+      "topic": "abbreviations",
+      "question": "Expansion of 'SARS':",
+      "options": [
+        "Severe Acute Respiratory Syndrome",
+        "Sudden Acute Respiratory Sickness",
+        "Severe Airborne Respiratory Syndrome",
+        "Systemic Acute Respiratory Syndrome"
+      ],
+      "answer": 0,
+      "explanation": "SARS stands for Severe Acute Respiratory Syndrome."
+    },
+    {
+      "id": "abbreviations_116",
+      "topic": "abbreviations",
+      "question": "Expansion of 'ATM':",
+      "options": [
+        "Automated Teller Machine",
+        "Any Time Money",
+        "Automatic Transaction Machine",
+        "All Time Money"
+      ],
+      "answer": 0,
+      "explanation": "ATM stands for Automated Teller Machine."
+    },
+    {
+      "id": "abbreviations_117",
+      "topic": "abbreviations",
+      "question": "Expansion of 'PIN':",
+      "options": [
+        "Personal Identification Number",
+        "Postal Index Number",
+        "Permanent Identification Number",
+        "Public Information Number"
+      ],
+      "answer": 0,
+      "explanation": "PIN in banking stands for Personal Identification Number."
+    },
+    {
+      "id": "abbreviations_118",
+      "topic": "abbreviations",
+      "question": "Expansion of 'IFSC':",
+      "options": [
+        "Indian Financial System Code",
+        "International Financial Service Code",
+        "Indian Fiscal System Code",
+        "Inter-bank Financial Settlement Code"
+      ],
+      "answer": 0,
+      "explanation": "IFSC stands for Indian Financial System Code."
+    },
+    {
+      "id": "abbreviations_119",
+      "topic": "abbreviations",
+      "question": "Expansion of 'NEFT':",
+      "options": [
+        "National Electronic Funds Transfer",
+        "National Electronic Fast Transfer",
+        "Net Electronic Funds Transfer",
+        "National Easy Funds Transfer"
+      ],
+      "answer": 0,
+      "explanation": "NEFT is National Electronic Funds Transfer."
+    },
+    {
+      "id": "abbreviations_120",
+      "topic": "abbreviations",
+      "question": "Expansion of 'RTGS':",
+      "options": [
+        "Real Time Gross Settlement",
+        "Rapid Time General Settlement",
+        "Real Time Guaranteed Settlement",
+        "Regional Trade Gross Settlement"
+      ],
+      "answer": 0,
+      "explanation": "RTGS is Real Time Gross Settlement."
+    },
+    {
+      "id": "abbreviations_121",
+      "topic": "abbreviations",
+      "question": "Expansion of 'UPI':",
+      "options": [
+        "Unified Payments Interface",
+        "Universal Payment Integration",
+        "Unified Personal Interface",
+        "United Payment Infrastructure"
+      ],
+      "answer": 0,
+      "explanation": "UPI is Unified Payments Interface."
+    },
+    {
+      "id": "abbreviations_122",
+      "topic": "abbreviations",
+      "question": "Expansion of 'PAN':",
+      "options": [
+        "Permanent Account Number",
+        "Personal Account Number",
+        "Public Account Number",
+        "Primary Account Number"
+      ],
+      "answer": 0,
+      "explanation": "PAN card = Permanent Account Number."
+    },
+    {
+      "id": "abbreviations_123",
+      "topic": "abbreviations",
+      "question": "Expansion of 'GST':",
+      "options": [
+        "Goods and Services Tax",
+        "General Sales Tax",
+        "Government Services Tax",
+        "Global Sales Tariff"
+      ],
+      "answer": 0,
+      "explanation": "GST is Goods and Services Tax."
+    },
+    {
+      "id": "abbreviations_124",
+      "topic": "abbreviations",
+      "question": "Expansion of 'KYC':",
+      "options": [
+        "Know Your Customer",
+        "Know Your Client",
+        "Keep Your Card",
+        "Known Yearly Cash"
+      ],
+      "answer": 0,
+      "explanation": "KYC stands for Know Your Customer."
+    },
+    {
+      "id": "abbreviations_125",
+      "topic": "abbreviations",
+      "question": "Expansion of 'URL':",
+      "options": [
+        "Uniform Resource Locator",
+        "Universal Resource Locator",
+        "Unified Resource Link",
+        "Uniform Reference Link"
+      ],
+      "answer": 0,
+      "explanation": "URL is Uniform Resource Locator."
+    },
+    {
+      "id": "abbreviations_126",
+      "topic": "abbreviations",
+      "question": "Expansion of 'HTTP':",
+      "options": [
+        "Hypertext Transfer Protocol",
+        "Hypertext Transmission Protocol",
+        "High Transfer Text Protocol",
+        "Hyper Transfer Terminal Protocol"
+      ],
+      "answer": 0,
+      "explanation": "HTTP stands for Hypertext Transfer Protocol."
+    },
+    {
+      "id": "abbreviations_127",
+      "topic": "abbreviations",
+      "question": "Expansion of 'HTML':",
+      "options": [
+        "Hypertext Markup Language",
+        "Hypertext Modern Language",
+        "High Tech Markup Language",
+        "Hyperlink Text Makeup Language"
+      ],
+      "answer": 0,
+      "explanation": "HTML is Hypertext Markup Language."
+    },
+    {
+      "id": "abbreviations_128",
+      "topic": "abbreviations",
+      "question": "Expansion of 'Wi-Fi':",
+      "options": [
+        "Wireless Fidelity",
+        "Wireless Field",
+        "Wide Frequency Internet",
+        "Wireless Flow"
+      ],
+      "answer": 0,
+      "explanation": "Wi-Fi stands for Wireless Fidelity."
+    },
+    {
+      "id": "abbreviations_129",
+      "topic": "abbreviations",
+      "question": "Expansion of 'SIM':",
+      "options": [
+        "Subscriber Identity Module",
+        "Subscriber Information Module",
+        "Single Integrated Module",
+        "System Identity Module"
+      ],
+      "answer": 0,
+      "explanation": "SIM card = Subscriber Identity Module."
+    },
+    {
+      "id": "abbreviations_130",
+      "topic": "abbreviations",
+      "question": "Expansion of 'PDF':",
+      "options": [
+        "Portable Document Format",
+        "Printed Document File",
+        "Portable Data File",
+        "Public Document Format"
+      ],
+      "answer": 0,
+      "explanation": "PDF is Portable Document Format."
+    },
+    {
+      "id": "abbreviations_131",
+      "topic": "abbreviations",
+      "question": "Expansion of 'USB':",
+      "options": [
+        "Universal Serial Bus",
+        "Universal System Bus",
+        "Unified Serial Board",
+        "Universal Storage Bus"
+      ],
+      "answer": 0,
+      "explanation": "USB is Universal Serial Bus."
+    },
+    {
+      "id": "abbreviations_132",
+      "topic": "abbreviations",
+      "question": "Expansion of 'GPS':",
+      "options": [
+        "Global Positioning System",
+        "General Positioning System",
+        "Geographic Path System",
+        "Global Planet Satellite"
+      ],
+      "answer": 0,
+      "explanation": "GPS is Global Positioning System."
+    },
+    {
+      "id": "abbreviations_133",
+      "topic": "abbreviations",
+      "question": "Expansion of 'LED':",
+      "options": [
+        "Light Emitting Diode",
+        "Low Energy Diode",
+        "Light Electronic Device",
+        "Luminescent Energy Diode"
+      ],
+      "answer": 0,
+      "explanation": "LED stands for Light Emitting Diode."
+    },
+    {
+      "id": "abbreviations_134",
+      "topic": "abbreviations",
+      "question": "Expansion of 'OLED':",
+      "options": [
+        "Organic Light Emitting Diode",
+        "Optic Light Emitting Diode",
+        "Operational Light Emitting Diode",
+        "Oscillating Light Emitting Diode"
+      ],
+      "answer": 0,
+      "explanation": "OLED is Organic Light Emitting Diode."
+    },
+    {
+      "id": "abbreviations_135",
+      "topic": "abbreviations",
+      "question": "Expansion of 'RADAR':",
+      "options": [
+        "Radio Detection and Ranging",
+        "Radio Distance and Ranging",
+        "Radiation Detection and Ranging",
+        "Radio Direction and Ranging"
+      ],
+      "answer": 0,
+      "explanation": "RADAR stands for RAdio Detection And Ranging."
+    },
+    {
+      "id": "abbreviations_136",
+      "topic": "abbreviations",
+      "question": "Expansion of 'SONAR':",
+      "options": [
+        "Sound Navigation and Ranging",
+        "Sound Noise and Ranging",
+        "Solar Navigation and Ranging",
+        "Sonic Navigation and Ranging"
+      ],
+      "answer": 0,
+      "explanation": "SONAR is SOund Navigation And Ranging."
+    },
+    {
+      "id": "abbreviations_137",
+      "topic": "abbreviations",
+      "question": "Expansion of 'LASER':",
+      "options": [
+        "Light Amplification by Stimulated Emission of Radiation",
+        "Light Absorption by Stimulated Emission of Rays",
+        "Light Amplification by Synchronized Energy Rays",
+        "Laser Atomic Stimulated Emission Radiation"
+      ],
+      "answer": 0,
+      "explanation": "LASER is Light Amplification by Stimulated Emission of Radiation."
+    },
+    {
+      "id": "abbreviations_138",
+      "topic": "abbreviations",
+      "question": "Expansion of 'CCTV':",
+      "options": [
+        "Closed-Circuit Television",
+        "Central Camera Television",
+        "Circuited Camera Television",
+        "Common Circuit Television"
+      ],
+      "answer": 0,
+      "explanation": "CCTV stands for Closed-Circuit Television."
+    },
+    {
+      "id": "abbreviations_139",
+      "topic": "abbreviations",
+      "question": "Expansion of 'FIR':",
+      "options": [
+        "First Information Report",
+        "Formal Investigation Report",
+        "First Incident Record",
+        "Fast Incident Report"
+      ],
+      "answer": 0,
+      "explanation": "FIR is First Information Report."
+    },
+    {
+      "id": "abbreviations_140",
+      "topic": "abbreviations",
+      "question": "Expansion of 'PIL':",
+      "options": [
+        "Public Interest Litigation",
+        "Public Information Law",
+        "Private Interest Litigation",
+        "Police Investigation Ledger"
+      ],
+      "answer": 0,
+      "explanation": "PIL is Public Interest Litigation."
+    },
+    {
+      "id": "abbreviations_141",
+      "topic": "abbreviations",
+      "question": "Expansion of 'RTI':",
+      "options": [
+        "Right to Information",
+        "Right to Internet",
+        "Road Transport Institute",
+        "Rural Talent Initiative"
+      ],
+      "answer": 0,
+      "explanation": "RTI is Right to Information."
+    },
+    {
+      "id": "abbreviations_142",
+      "topic": "abbreviations",
+      "question": "Expansion of 'RTE':",
+      "options": [
+        "Right to Education",
+        "Right to Employment",
+        "Right to Equality",
+        "Right to Environment"
+      ],
+      "answer": 0,
+      "explanation": "RTE is Right to Education."
+    },
+    {
+      "id": "abbreviations_143",
+      "topic": "abbreviations",
+      "question": "Expansion of 'OTP':",
+      "options": [
+        "One-Time Password",
+        "One-Time Pin",
+        "Online Transaction Password",
+        "Official Transaction Pin"
+      ],
+      "answer": 0,
+      "explanation": "OTP is One-Time Password."
+    },
+    {
+      "id": "abbreviations_144",
+      "topic": "abbreviations",
+      "question": "Expansion of 'CV':",
+      "options": [
+        "Curriculum Vitae",
+        "Certificate of Value",
+        "Career Verification",
+        "Certified Vocation"
+      ],
+      "answer": 0,
+      "explanation": "CV stands for Curriculum Vitae."
+    },
+    {
+      "id": "abbreviations_145",
+      "topic": "abbreviations",
+      "question": "Expansion of 'PhD':",
+      "options": [
+        "Doctor of Philosophy",
+        "Master of Philosophy",
+        "Philosophical Doctorate",
+        "Physical Doctorate"
+      ],
+      "answer": 0,
+      "explanation": "PhD = Philosophiae Doctor (Doctor of Philosophy)."
+    },
+    {
+      "id": "abbreviations_146",
+      "topic": "abbreviations",
+      "question": "Expansion of 'OPEC':",
+      "options": [
+        "Organization of the Petroleum Exporting Countries",
+        "Oil Producing and Exporting Corporation",
+        "Organization of Petroleum Economic Countries",
+        "Overseas Petroleum Energy Council"
+      ],
+      "answer": 0,
+      "explanation": "OPEC is Organization of the Petroleum Exporting Countries."
+    },
+    {
+      "id": "abbreviations_147",
+      "topic": "abbreviations",
+      "question": "Expansion of 'SAARC':",
+      "options": [
+        "South Asian Association for Regional Cooperation",
+        "South Asian Alliance for Regional Commerce",
+        "Southern Asian Association for Relief and Care",
+        "South Asian Association for Rural Cooperation"
+      ],
+      "answer": 0,
+      "explanation": "SAARC is South Asian Association for Regional Cooperation."
+    },
+    {
+      "id": "abbreviations_148",
+      "topic": "abbreviations",
+      "question": "Expansion of 'ASEAN':",
+      "options": [
+        "Association of Southeast Asian Nations",
+        "Alliance of South East Asian Nations",
+        "Asian Southeast Economic Action Network",
+        "Association of Southern Asian Nations"
+      ],
+      "answer": 0,
+      "explanation": "ASEAN is Association of Southeast Asian Nations."
+    },
+    {
+      "id": "abbreviations_149",
+      "topic": "abbreviations",
+      "question": "Expansion of 'INTERPOL':",
+      "options": [
+        "International Criminal Police Organization",
+        "International Police Commission",
+        "Internal Police Bureau",
+        "International Port Police"
+      ],
+      "answer": 0,
+      "explanation": "INTERPOL is International Criminal Police Organization."
+    },
+    {
+      "id": "abbreviations_150",
+      "topic": "abbreviations",
+      "question": "Expansion of 'FIFA':",
+      "options": [
+        "Federation Internationale de Football Association",
+        "Federal International Football Alliance",
+        "First International Football Association",
+        "Federation of Indian Football Association"
+      ],
+      "answer": 0,
+      "explanation": "FIFA is Federation Internationale de Football Association."
+    },
+    {
+      "id": "abbreviations_151",
+      "topic": "abbreviations",
+      "question": "Expansion of 'IOC':",
+      "options": [
+        "International Olympic Committee",
+        "Indian Olympic Council",
+        "International Oil Corporation",
+        "Intergovernmental Olympic Commission"
+      ],
+      "answer": 0,
+      "explanation": "IOC is International Olympic Committee."
+    },
+    {
+      "id": "abbreviations_152",
+      "topic": "abbreviations",
+      "question": "Expansion of 'BSE':",
+      "options": [
+        "Bombay Stock Exchange",
+        "Bharat Stock Exchange",
+        "Board of Securities and Exchange",
+        "British Stock Exchange"
+      ],
+      "answer": 0,
+      "explanation": "BSE is Bombay Stock Exchange."
+    },
+    {
+      "id": "abbreviations_153",
+      "topic": "abbreviations",
+      "question": "Expansion of 'SEBI':",
+      "options": [
+        "Securities and Exchange Board of India",
+        "Stock and Equity Board of India",
+        "State Economic Bureau of India",
+        "Securities Exchange Bureau International"
+      ],
+      "answer": 0,
+      "explanation": "SEBI is Securities and Exchange Board of India."
+    },
+    {
+      "id": "abbreviations_154",
+      "topic": "abbreviations",
+      "question": "Expansion of 'NABARD':",
+      "options": [
+        "National Bank for Agriculture and Rural Development",
+        "National Board of Agriculture and Rural Development",
+        "National Bank for Agricultural Resources and Development",
+        "New Agro Bank and Rural Development"
+      ],
+      "answer": 0,
+      "explanation": "NABARD is National Bank for Agriculture and Rural Development."
+    },
+    {
+      "id": "abbreviations_155",
+      "topic": "abbreviations",
+      "question": "Expansion of 'NITI' (in NITI Aayog):",
+      "options": [
+        "National Institution for Transforming India",
+        "National Institute for Technical Innovation",
+        "National Initiative for Total Infrastructure",
+        "New India Transformation Institute"
+      ],
+      "answer": 0,
+      "explanation": "NITI Aayog = National Institution for Transforming India."
+    }
+  ]
+}

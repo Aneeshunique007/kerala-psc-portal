@@ -1,0 +1,2022 @@
+{
+  "topic_id": "parts_of_speech",
+  "topic_name": "Different Parts of Speech",
+  "total_questions": 155,
+  "questions": [
+    {
+      "id": "pos_1",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'fast' in: 'He ran fast.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Fast' modifies the verb 'ran', so it is an Adverb."
+    },
+    {
+      "id": "pos_2",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'fast' in: 'He is a fast runner.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Fast' modifies the noun 'runner', so it is an Adjective."
+    },
+    {
+      "id": "pos_3",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'fast' in: 'He kept a fast on Monday.'",
+      "options": [
+        "Noun",
+        "Verb",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Fast' preceded by article 'a' is the name of an action/state, so it is a Noun."
+    },
+    {
+      "id": "pos_4",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'fast' in: 'Muslims fast during Ramadan.'",
+      "options": [
+        "Verb",
+        "Noun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Fast' denotes the action of abstaining from food, so it is a Verb."
+    },
+    {
+      "id": "pos_5",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'well' in: 'She sings well.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Interjection"
+      ],
+      "answer": 0,
+      "explanation": "'Well' modifies the verb 'sings', so it is an Adverb."
+    },
+    {
+      "id": "pos_6",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'well' in: 'He is quite well now.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Well' describes the subject's health state, so it functions as an Adjective."
+    },
+    {
+      "id": "pos_7",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'well' in: 'Tears welled up in her eyes.'",
+      "options": [
+        "Verb",
+        "Noun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Welled' is the past finite verb denoting overflowing."
+    },
+    {
+      "id": "pos_8",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'well' in: 'They drew water from a deep well.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Well' is a concrete physical entity, so it is a Noun."
+    },
+    {
+      "id": "pos_9",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'after' in: 'They arrived after the show had begun.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Adverb",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'After' connects two clauses ('They arrived' and 'the show had begun'), so it is a Conjunction."
+    },
+    {
+      "id": "pos_10",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'after' in: 'He arrived after 5 PM.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Adverb",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'After' takes a noun phrase object '5 PM', so it is a Preposition."
+    },
+    {
+      "id": "pos_11",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'after' in: 'They arrived soon after.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Conjunction",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'After' modifies 'soon' and the verb 'arrived' without an object, so it is an Adverb."
+    },
+    {
+      "id": "pos_12",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'before' in: 'Think before you leap.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Adverb",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'Before' joins two clauses ('Think' and 'you leap'), so it is a Conjunction."
+    },
+    {
+      "id": "pos_13",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'before' in: 'He stood before the magistrate.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Before' takes the noun object 'the magistrate', so it is a Preposition."
+    },
+    {
+      "id": "pos_14",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'before' in: 'I have seen this movie before.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Conjunction",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'Before' modifies the verb 'have seen' indicating time, so it is an Adverb."
+    },
+    {
+      "id": "pos_15",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'down' in: 'The down train has arrived.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Preposition",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Down' qualifies the noun 'train', so it is an Adjective."
+    },
+    {
+      "id": "pos_16",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'down' in: 'He fell down.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Down' modifies the verb 'fell', so it is an Adverb."
+    },
+    {
+      "id": "pos_17",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'down' in: 'The ball rolled down the hill.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Down' governs the noun object 'the hill', so it is a Preposition."
+    },
+    {
+      "id": "pos_18",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'down' in: 'Life has its ups and downs.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Downs' is pluralized and preceded by possessive 'its', so it is a Noun."
+    },
+    {
+      "id": "pos_19",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'like' in: 'She is like her mother.'",
+      "options": [
+        "Preposition",
+        "Verb",
+        "Adjective",
+        "Conjunction"
+      ],
+      "answer": 0,
+      "explanation": "'Like' shows similarity with noun object 'her mother', functioning as a Preposition."
+    },
+    {
+      "id": "pos_20",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'like' in: 'I like classical music.'",
+      "options": [
+        "Verb",
+        "Preposition",
+        "Noun",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'Like' is the finite transitive verb."
+    },
+    {
+      "id": "pos_21",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'like' in: 'We shall not see his like again.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Verb",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Like' preceded by possessive 'his' means equal/counterpart, so it is a Noun."
+    },
+    {
+      "id": "pos_22",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'right' in: 'He is the right person for this post.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Right' modifies the noun 'person', so it is an Adjective."
+    },
+    {
+      "id": "pos_23",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'right' in: 'He hit the ball right into the stands.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Right' modifies the prepositional phrase 'into the stands', so it is an Adverb."
+    },
+    {
+      "id": "pos_24",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'right' in: 'Every citizen has the right to vote.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Right' preceded by article 'the' is an abstract Noun."
+    },
+    {
+      "id": "pos_25",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'right' in: 'We must right the wrongs.'",
+      "options": [
+        "Verb",
+        "Noun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Right' preceded by modal 'must' is a transitive Verb."
+    },
+    {
+      "id": "pos_26",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'still' in: 'Still waters run deep.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Still' qualifies the noun 'waters', so it is an Adjective."
+    },
+    {
+      "id": "pos_27",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'still' in: 'He is still waiting for you.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Verb",
+        "Conjunction"
+      ],
+      "answer": 0,
+      "explanation": "'Still' modifies the verb phrase 'is waiting', so it is an Adverb."
+    },
+    {
+      "id": "pos_28",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'still' in: 'The mother tried to still the crying baby.'",
+      "options": [
+        "Verb",
+        "Adjective",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'To still' is an infinitive Verb meaning to calm/quiet."
+    },
+    {
+      "id": "pos_29",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'but' in: 'He worked hard, but he failed.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Adverb",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'But' connects two independent clauses, so it is a Conjunction."
+    },
+    {
+      "id": "pos_30",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'but' in: 'None but the brave deserve the fair.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Adverb",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'But' meaning 'except' takes noun object 'the brave', so it is a Preposition."
+    },
+    {
+      "id": "pos_31",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'but' in: 'It is but right to say so.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Conjunction",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'But' meaning 'only' or 'merely' modifies 'right', so it is an Adverb."
+    },
+    {
+      "id": "pos_32",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'round' in: 'The Earth is round.'",
+      "options": [
+        "Adjective",
+        "Noun",
+        "Adverb",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Round' describes the subject 'The Earth', so it is a predicate Adjective."
+    },
+    {
+      "id": "pos_33",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'round' in: 'The earth moves round the sun.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Round' governs the noun 'the sun', so it is a Preposition."
+    },
+    {
+      "id": "pos_34",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'round' in: 'The doctor went on his daily rounds.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Rounds' is pluralized after possessive 'his', so it is a Noun."
+    },
+    {
+      "id": "pos_35",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'round' in: 'The wheel turned round and round.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Round' modifies the verb 'turned', so it is an Adverb."
+    },
+    {
+      "id": "pos_36",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'round' in: 'Let us round off the discussion.'",
+      "options": [
+        "Verb",
+        "Preposition",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Round off' is a phrasal Verb."
+    },
+    {
+      "id": "pos_37",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'since' in: 'I have not seen him since Monday.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Since' governs the noun 'Monday', so it is a Preposition."
+    },
+    {
+      "id": "pos_38",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'since' in: 'Since you are late, you cannot enter.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Adverb",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'Since' introduces a subordinate clause of reason, so it is a Conjunction."
+    },
+    {
+      "id": "pos_39",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'since' in: 'He left five years ago and has not been seen since.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Conjunction",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Since' functions as an adverb of time without an object."
+    },
+    {
+      "id": "pos_40",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'only' in: 'He is an only child.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Conjunction",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Only' qualifies the noun 'child', so it is an Adjective."
+    },
+    {
+      "id": "pos_41",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'only' in: 'He only lent me fifty rupees.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Conjunction",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Only' modifies the verb 'lent', so it is an Adverb."
+    },
+    {
+      "id": "pos_42",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'only' in: 'Read as much as you like, only do not copy.'",
+      "options": [
+        "Conjunction",
+        "Adverb",
+        "Adjective",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Only' connects two clauses meaning 'but/except that', so it is a Conjunction."
+    },
+    {
+      "id": "pos_43",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'up' in: 'The prices have gone up.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Up' modifies the verb 'have gone', so it is an Adverb."
+    },
+    {
+      "id": "pos_44",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'up' in: 'He climbed up the tree.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Up' takes the noun object 'the tree', so it is a Preposition."
+    },
+    {
+      "id": "pos_45",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'up' in: 'He is on the up platform.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Preposition",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Up' qualifies the noun 'platform', so it is an Adjective."
+    },
+    {
+      "id": "pos_46",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'bravery' in: 'His bravery was rewarded.'",
+      "options": [
+        "Abstract Noun",
+        "Proper Noun",
+        "Collective Noun",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'Bravery' is the name of a quality/concept, so it is an Abstract Noun."
+    },
+    {
+      "id": "pos_47",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'flock' in: 'A flock of birds flew overhead.'",
+      "options": [
+        "Collective Noun",
+        "Proper Noun",
+        "Abstract Noun",
+        "Material Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Flock' is the name of a group of birds, so it is a Collective Noun."
+    },
+    {
+      "id": "pos_48",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'gold' in: 'Gold is a precious metal.'",
+      "options": [
+        "Material Noun",
+        "Abstract Noun",
+        "Proper Noun",
+        "Common Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Gold' denotes a physical substance/matter, so it is a Material Noun."
+    },
+    {
+      "id": "pos_49",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'himself' in: 'He cut himself with a knife.'",
+      "options": [
+        "Reflexive Pronoun",
+        "Emphatic Pronoun",
+        "Demonstrative Pronoun",
+        "Relative Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "When the action reflects back upon the subject as the direct object, it is a Reflexive Pronoun."
+    },
+    {
+      "id": "pos_50",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'himself' in: 'The King himself gave away the prizes.'",
+      "options": [
+        "Emphatic Pronoun",
+        "Reflexive Pronoun",
+        "Relative Pronoun",
+        "Indefinite Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "When used merely for emphasis alongside the subject noun, it is an Emphatic (Intensive) Pronoun."
+    },
+    {
+      "id": "pos_51",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'who' in: 'The boy who won the race is my friend.'",
+      "options": [
+        "Relative Pronoun",
+        "Interrogative Pronoun",
+        "Demonstrative Pronoun",
+        "Indefinite Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Who' relates back to the antecedent 'The boy', so it is a Relative Pronoun."
+    },
+    {
+      "id": "pos_52",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'who' in: 'Who wrote this letter?'",
+      "options": [
+        "Interrogative Pronoun",
+        "Relative Pronoun",
+        "Indefinite Pronoun",
+        "Demonstrative Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Who' asks a direct question, so it is an Interrogative Pronoun."
+    },
+    {
+      "id": "pos_53",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'this' in: 'This is my book.'",
+      "options": [
+        "Demonstrative Pronoun",
+        "Demonstrative Adjective",
+        "Relative Pronoun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'This' stands alone as the subject replacing a noun, so it is a Demonstrative Pronoun."
+    },
+    {
+      "id": "pos_54",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'this' in: 'This book belongs to me.'",
+      "options": [
+        "Demonstrative Adjective",
+        "Demonstrative Pronoun",
+        "Noun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'This' qualifies the noun 'book', so it is a Demonstrative Adjective."
+    },
+    {
+      "id": "pos_55",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'each' in: 'Each boy received a prize.'",
+      "options": [
+        "Distributive Adjective",
+        "Distributive Pronoun",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Each' qualifies the noun 'boy', so it is a Distributive Adjective."
+    },
+    {
+      "id": "pos_56",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'each' in: 'Each of the boys received a prize.'",
+      "options": [
+        "Distributive Pronoun",
+        "Distributive Adjective",
+        "Noun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Each' stands alone followed by 'of', so it is a Distributive Pronoun."
+    },
+    {
+      "id": "pos_57",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'neither' in: 'Neither of them was present.'",
+      "options": [
+        "Distributive Pronoun",
+        "Distributive Adjective",
+        "Conjunction",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Neither' stands alone followed by 'of', so it is a Distributive Pronoun."
+    },
+    {
+      "id": "pos_58",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'neither' in: 'Neither side won.'",
+      "options": [
+        "Distributive Adjective",
+        "Distributive Pronoun",
+        "Conjunction",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Neither' qualifies the noun 'side', so it is a Distributive Adjective."
+    },
+    {
+      "id": "pos_59",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'neither' in: 'He is neither wise nor honest.'",
+      "options": [
+        "Correlative Conjunction",
+        "Pronoun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Neither... nor' connects two coordinate adjectives, so it is a Correlative Conjunction."
+    },
+    {
+      "id": "pos_60",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'some' in: 'Some men are born great.'",
+      "options": [
+        "Indefinite Adjective",
+        "Indefinite Pronoun",
+        "Noun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Some' qualifies the noun 'men', so it is an Indefinite Adjective."
+    },
+    {
+      "id": "pos_61",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'some' in: 'Some were killed, others wounded.'",
+      "options": [
+        "Indefinite Pronoun",
+        "Indefinite Adjective",
+        "Noun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Some' stands alone as the subject, so it is an Indefinite Pronoun."
+    },
+    {
+      "id": "pos_62",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'alas' in: 'Alas! We have lost the match.'",
+      "options": [
+        "Interjection",
+        "Conjunction",
+        "Preposition",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Alas!' expresses sudden emotion, so it is an Interjection."
+    },
+    {
+      "id": "pos_63",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'hurrah' in: 'Hurrah! It's a holiday.'",
+      "options": [
+        "Interjection",
+        "Adverb",
+        "Conjunction",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Hurrah!' is an Interjection expressing joy."
+    },
+    {
+      "id": "pos_64",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'better' in: 'He is a better player than me.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Better' qualifies the noun 'player', so it is an Adjective."
+    },
+    {
+      "id": "pos_65",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'better' in: 'He plays better than before.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Better' modifies the verb 'plays', so it is an Adverb."
+    },
+    {
+      "id": "pos_66",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'better' in: 'You should better your previous score.'",
+      "options": [
+        "Verb",
+        "Noun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Better' preceded by modal 'should' is a transitive Verb meaning to improve."
+    },
+    {
+      "id": "pos_67",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'better' in: 'He got the better of his opponent.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'The better' functions as an abstract Noun meaning advantage/victory."
+    },
+    {
+      "id": "pos_68",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'little' in: 'There is little hope of his recovery.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Little' qualifies uncountable noun 'hope', so it is an Adjective of quantity."
+    },
+    {
+      "id": "pos_69",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'little' in: 'He sleeps very little.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Little' modifies the verb 'sleeps', so it is an Adverb."
+    },
+    {
+      "id": "pos_70",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'little' in: 'Man wants but little here below.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Little' functions as a Noun meaning 'small amount/few things'."
+    },
+    {
+      "id": "pos_71",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'near' in: 'The church is near the river.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Near' governs the noun 'the river', so it is a Preposition."
+    },
+    {
+      "id": "pos_72",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'near' in: 'The winter is drawing near.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Near' modifies the phrasal verb 'is drawing', so it is an Adverb."
+    },
+    {
+      "id": "pos_73",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'near' in: 'He is a near relative of mine.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Preposition",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Near' qualifies the noun 'relative', so it is an Adjective."
+    },
+    {
+      "id": "pos_74",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'past' in: 'He walked past the gate.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Past' governs the noun object 'the gate', so it is a Preposition."
+    },
+    {
+      "id": "pos_75",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'past' in: 'The bus drove past.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Past' modifies the verb 'drove' without an object, so it is an Adverb."
+    },
+    {
+      "id": "pos_76",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'past' in: 'Forget the past and move on.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'The past' is a Noun denoting past time."
+    },
+    {
+      "id": "pos_77",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'past' in: 'For the past three years, he worked hard.'",
+      "options": [
+        "Adjective",
+        "Noun",
+        "Adverb",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Past' qualifies the noun 'years', so it is an Adjective."
+    },
+    {
+      "id": "pos_78",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'as' in: 'As he was tired, he went to sleep.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Adverb",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'As' joins two clauses denoting reason, so it is a Conjunction."
+    },
+    {
+      "id": "pos_79",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'as' in: 'She works as a nurse.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Adverb",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'As' governs the noun 'a nurse' denoting role/capacity, functioning as a Preposition."
+    },
+    {
+      "id": "pos_80",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'as' in: 'He is as clever as his brother.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Conjunction",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "The first 'as' modifies the adjective 'clever', functioning as an Adverb of degree."
+    },
+    {
+      "id": "pos_81",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'for' in: 'I bought this pen for ten rupees.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'For' governs the noun phrase 'ten rupees', so it is a Preposition."
+    },
+    {
+      "id": "pos_82",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'for' in: 'I cannot go, for it is raining.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'For' connects two clauses denoting cause/reason, functioning as a coordinating Conjunction."
+    },
+    {
+      "id": "pos_83",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'over' in: 'The bird flew over the roof.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Over' governs the noun 'the roof', so it is a Preposition."
+    },
+    {
+      "id": "pos_84",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'over' in: 'The match is over.'",
+      "options": [
+        "Adverb (or Predicate Adjective)",
+        "Preposition",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Over' modifies the state meaning finished/ended, functioning as an Adverb/Adjective."
+    },
+    {
+      "id": "pos_85",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'over' in: 'Read this document over carefully.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Over' modifies the verb 'read', so it is an Adverb."
+    },
+    {
+      "id": "pos_86",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'in' in: 'He is in the garden.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'In' governs the noun 'the garden', so it is a Preposition."
+    },
+    {
+      "id": "pos_87",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'in' in: 'Please come in.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'In' modifies the verb 'come' indicating direction, so it is an Adverb."
+    },
+    {
+      "id": "pos_88",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'in' in: 'He has an in with the management.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'An in' functions as an informal Noun meaning influence/access."
+    },
+    {
+      "id": "pos_89",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'water' in: 'Drink pure water.'",
+      "options": [
+        "Noun",
+        "Verb",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Water' is a Material Noun."
+    },
+    {
+      "id": "pos_90",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'water' in: 'Water the plants daily.'",
+      "options": [
+        "Verb",
+        "Noun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Water' is an imperative Verb meaning to pour water."
+    },
+    {
+      "id": "pos_91",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'water' in: 'He carries a water bottle.'",
+      "options": [
+        "Adjective (Noun Adjunct)",
+        "Noun",
+        "Verb",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Water' qualifies the noun 'bottle', functioning as a noun adjunct / Adjective."
+    },
+    {
+      "id": "pos_92",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'iron' in: 'Iron is a useful metal.'",
+      "options": [
+        "Noun",
+        "Verb",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Iron' is a Material Noun."
+    },
+    {
+      "id": "pos_93",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'iron' in: 'Iron your clothes properly.'",
+      "options": [
+        "Verb",
+        "Noun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Iron' is an imperative Verb."
+    },
+    {
+      "id": "pos_94",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'iron' in: 'He has an iron will.'",
+      "options": [
+        "Adjective",
+        "Noun",
+        "Verb",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Iron' modifies the noun 'will', so it functions as an Adjective."
+    },
+    {
+      "id": "pos_95",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'hard' in: 'He works hard.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Hard' modifies the verb 'works', so it is an Adverb."
+    },
+    {
+      "id": "pos_96",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'hard' in: 'This is a hard nut to crack.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Hard' qualifies the noun 'nut', so it is an Adjective."
+    },
+    {
+      "id": "pos_97",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'early' in: 'He is an early riser.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Early' qualifies the noun 'riser', so it is an Adjective."
+    },
+    {
+      "id": "pos_98",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'early' in: 'He woke up early.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Early' modifies the verb 'woke up', so it is an Adverb."
+    },
+    {
+      "id": "pos_99",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'late' in: 'He arrived late.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Late' modifies the verb 'arrived', so it is an Adverb."
+    },
+    {
+      "id": "pos_100",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'late' in: 'He is late for the meeting.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Late' describes the subject 'He', so it is a predicate Adjective."
+    },
+    {
+      "id": "pos_101",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'daily' in: 'He reads a daily newspaper.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Daily' qualifies the noun 'newspaper', so it is an Adjective."
+    },
+    {
+      "id": "pos_102",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'daily' in: 'He exercises daily.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Daily' modifies the verb 'exercises', so it is an Adverb."
+    },
+    {
+      "id": "pos_103",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'fast' in: 'Hold fast to your principles.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Fast' modifies the verb 'hold' meaning firmly, so it is an Adverb."
+    },
+    {
+      "id": "pos_104",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'that' in: 'That is my house.'",
+      "options": [
+        "Demonstrative Pronoun",
+        "Demonstrative Adjective",
+        "Conjunction",
+        "Relative Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'That' stands alone as the subject, so it is a Demonstrative Pronoun."
+    },
+    {
+      "id": "pos_105",
+      "topic": "parts_of_speech",
+      "question": "Identify the part of speech of 'that' in: 'That boy is my brother.'",
+      "options": [
+        "Demonstrative Adjective",
+        "Demonstrative Pronoun",
+        "Conjunction",
+        "Relative Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'That' modifies the noun 'boy', so it is a Demonstrative Adjective."
+    },
+    {
+      "id": "parts_of_speech_106",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'about' in: 'He walked about the town.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'About' takes the noun object 'the town', so it is a Preposition."
+    },
+    {
+      "id": "parts_of_speech_107",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'about' in: 'He wandered about aimlessly.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'About' modifies the verb 'wandered' without an object, so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_108",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'all' in: 'All men are mortal.'",
+      "options": [
+        "Adjective",
+        "Pronoun",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'All' qualifies the noun 'men', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_109",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'all' in: 'All spoke in his favor.'",
+      "options": [
+        "Pronoun",
+        "Adjective",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'All' stands alone as the subject, so it is a Pronoun."
+    },
+    {
+      "id": "parts_of_speech_110",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'all' in: 'He was all alone in the dark.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Pronoun",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'All' modifies the adjective 'alone' meaning completely, so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_111",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'any' in: 'Is there any milk in the jug?'",
+      "options": [
+        "Adjective",
+        "Pronoun",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Any' qualifies uncountable noun 'milk', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_112",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'any' in: 'Did you see any of the candidates?'",
+      "options": [
+        "Pronoun",
+        "Adjective",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Any' stands alone followed by 'of', so it is a Pronoun."
+    },
+    {
+      "id": "parts_of_speech_113",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'any' in: 'Is he any better today?'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Pronoun",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Any' modifies comparative adjective 'better', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_114",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'both' in: 'Both books are interesting.'",
+      "options": [
+        "Adjective",
+        "Pronoun",
+        "Conjunction",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Both' qualifies the noun 'books', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_115",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'both' in: 'Both of them attended the function.'",
+      "options": [
+        "Pronoun",
+        "Adjective",
+        "Conjunction",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Both' stands alone as subject, so it is a Pronoun."
+    },
+    {
+      "id": "parts_of_speech_116",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'both' in: 'He is both wise and humble.'",
+      "options": [
+        "Conjunction",
+        "Adjective",
+        "Pronoun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Both... and' connects coordinate adjectives, functioning as a Correlative Conjunction."
+    },
+    {
+      "id": "parts_of_speech_117",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'enough' in: 'There is enough food for everyone.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Enough' qualifies the noun 'food', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_118",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'enough' in: 'He ran fast enough to catch the bus.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Enough' modifies the adverb 'fast', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_119",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'half' in: 'He gave me half an apple.'",
+      "options": [
+        "Adjective",
+        "Noun",
+        "Adverb",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Half' qualifies 'an apple', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_120",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'half' in: 'Half of the work is completed.'",
+      "options": [
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'Half' functions as a Noun/Pronoun before 'of'."
+    },
+    {
+      "id": "parts_of_speech_121",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'half' in: 'He was half dead with exhaustion.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Half' modifies the adjective 'dead', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_122",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'more' in: 'We need more men for this project.'",
+      "options": [
+        "Adjective",
+        "Pronoun",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'More' qualifies the noun 'men', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_123",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'more' in: 'More of them were injured.'",
+      "options": [
+        "Pronoun",
+        "Adjective",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'More' stands alone before 'of', so it is a Pronoun."
+    },
+    {
+      "id": "parts_of_speech_124",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'more' in: 'Speak more clearly.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Pronoun",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'More' modifies the adverb 'clearly', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_125",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'much' in: 'There is much work left to do.'",
+      "options": [
+        "Adjective",
+        "Pronoun",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Much' qualifies uncountable noun 'work', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_126",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'much' in: 'Much of what he said was true.'",
+      "options": [
+        "Pronoun",
+        "Adjective",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Much' stands alone as the subject, so it is a Pronoun."
+    },
+    {
+      "id": "parts_of_speech_127",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'much' in: 'He is much better today.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Pronoun",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Much' modifies comparative adjective 'better', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_128",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'near' in: 'Come near and listen to me.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Near' modifies the verb 'come', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_129",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'near' in: 'His house is near the temple.'",
+      "options": [
+        "Preposition",
+        "Adverb",
+        "Adjective",
+        "Verb"
+      ],
+      "answer": 0,
+      "explanation": "'Near' governs the noun 'the temple', so it is a Preposition."
+    },
+    {
+      "id": "parts_of_speech_130",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'near' in: 'He is a near relative of mine.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Preposition",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Near' qualifies the noun 'relative', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_131",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'no' in: 'He has no sense of humor.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Interjection"
+      ],
+      "answer": 0,
+      "explanation": "'No' qualifies the noun 'sense', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_132",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'no' in: 'He is no more.'",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Noun",
+        "Interjection"
+      ],
+      "answer": 0,
+      "explanation": "'No' modifies the adverb 'more', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_133",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'no' in: 'No! I will never agree to this.'",
+      "options": [
+        "Interjection",
+        "Adverb",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'No!' expresses strong exclamation/negation, functioning as an Interjection."
+    },
+    {
+      "id": "parts_of_speech_134",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'once' in: 'I was young once.'",
+      "options": [
+        "Adverb",
+        "Conjunction",
+        "Noun",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'Once' modifies the verb phrase 'was young' indicating past time, so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_135",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'once' in: 'Once you begin, you must finish.'",
+      "options": [
+        "Conjunction",
+        "Adverb",
+        "Noun",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'Once' connects two clauses meaning 'as soon as', so it is a Conjunction."
+    },
+    {
+      "id": "parts_of_speech_136",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'once' in: 'Please give me once more chance.'",
+      "options": [
+        "Adjective",
+        "Adverb",
+        "Noun",
+        "Conjunction"
+      ],
+      "answer": 0,
+      "explanation": "'Once' modifying 'more'."
+    },
+    {
+      "id": "parts_of_speech_137",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'round' in: 'A square peg in a round hole.'",
+      "options": [
+        "Adjective",
+        "Noun",
+        "Preposition",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Round' qualifies the noun 'hole', so it is an Adjective."
+    },
+    {
+      "id": "parts_of_speech_138",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'round' in: 'The ship sailed round the cape.'",
+      "options": [
+        "Preposition",
+        "Adjective",
+        "Noun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'Round' governs the noun 'the cape', so it is a Preposition."
+    },
+    {
+      "id": "parts_of_speech_139",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'round' in: 'The wheel turned round.'",
+      "options": [
+        "Adverb",
+        "Preposition",
+        "Adjective",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Round' modifies the verb 'turned', so it is an Adverb."
+    },
+    {
+      "id": "parts_of_speech_140",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'save' in: 'All save him were drowned.'",
+      "options": [
+        "Preposition",
+        "Verb",
+        "Noun",
+        "Conjunction"
+      ],
+      "answer": 0,
+      "explanation": "'Save' meaning 'except' takes pronoun object 'him', so it is a Preposition."
+    },
+    {
+      "id": "parts_of_speech_141",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'save' in: 'Save your money for emergencies.'",
+      "options": [
+        "Verb",
+        "Preposition",
+        "Noun",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'Save' is an imperative Verb."
+    },
+    {
+      "id": "parts_of_speech_142",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'since' in: 'I have not seen him since yesterday.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Since' governs the noun 'yesterday', so it is a Preposition."
+    },
+    {
+      "id": "parts_of_speech_143",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'since' in: 'Since you say so, I believe it.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Adverb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Since' introduces a clause of reason, so it is a Conjunction."
+    },
+    {
+      "id": "parts_of_speech_144",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'so' in: 'He is so tired that he fell asleep.'",
+      "options": [
+        "Adverb",
+        "Conjunction",
+        "Pronoun",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'So' modifies the adjective 'tired', so it is an Adverb of degree."
+    },
+    {
+      "id": "parts_of_speech_145",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'so' in: 'He was ill, and so he could not come.'",
+      "options": [
+        "Conjunction",
+        "Adverb",
+        "Pronoun",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "'So' joins two clauses as a coordinating Conjunction."
+    },
+    {
+      "id": "parts_of_speech_146",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'that' in: 'That is what I meant.'",
+      "options": [
+        "Demonstrative Pronoun",
+        "Demonstrative Adjective",
+        "Conjunction",
+        "Relative Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'That' stands alone as the subject, so it is a Demonstrative Pronoun."
+    },
+    {
+      "id": "parts_of_speech_147",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'that' in: 'That boy broke the window.'",
+      "options": [
+        "Demonstrative Adjective",
+        "Demonstrative Pronoun",
+        "Conjunction",
+        "Relative Pronoun"
+      ],
+      "answer": 0,
+      "explanation": "'That' qualifies the noun 'boy', so it is a Demonstrative Adjective."
+    },
+    {
+      "id": "parts_of_speech_148",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'that' in: 'He said that he was busy.'",
+      "options": [
+        "Conjunction",
+        "Pronoun",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'That' connects the reporting verb and noun clause, so it is a Conjunction."
+    },
+    {
+      "id": "parts_of_speech_149",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'that' in: 'The pen that you gave me writes well.'",
+      "options": [
+        "Relative Pronoun",
+        "Conjunction",
+        "Demonstrative Pronoun",
+        "Adjective"
+      ],
+      "answer": 0,
+      "explanation": "'That' relates back to antecedent 'The pen', so it is a Relative Pronoun."
+    },
+    {
+      "id": "parts_of_speech_150",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'the' in: 'The sooner you leave, the earlier you arrive.'",
+      "options": [
+        "Adverb",
+        "Definite Article",
+        "Pronoun",
+        "Preposition"
+      ],
+      "answer": 0,
+      "explanation": "In parallel double comparatives, 'The' functions as an Adverb of degree modifying 'sooner'."
+    },
+    {
+      "id": "parts_of_speech_151",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'till' in: 'Wait till tomorrow.'",
+      "options": [
+        "Preposition",
+        "Conjunction",
+        "Verb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Till' governs the noun 'tomorrow', so it is a Preposition."
+    },
+    {
+      "id": "parts_of_speech_152",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'till' in: 'Wait till I return.'",
+      "options": [
+        "Conjunction",
+        "Preposition",
+        "Verb",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Till' joins two clauses, so it is a Conjunction."
+    },
+    {
+      "id": "parts_of_speech_153",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'till' in: 'Farmers till the fertile land.'",
+      "options": [
+        "Verb",
+        "Preposition",
+        "Conjunction",
+        "Noun"
+      ],
+      "answer": 0,
+      "explanation": "'Till' is a transitive Verb meaning to cultivate soil."
+    },
+    {
+      "id": "parts_of_speech_154",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'what' in: 'What is your name?'",
+      "options": [
+        "Interrogative Pronoun",
+        "Relative Pronoun",
+        "Interrogative Adjective",
+        "Interjection"
+      ],
+      "answer": 0,
+      "explanation": "'What' stands alone to ask a question, so it is an Interrogative Pronoun."
+    },
+    {
+      "id": "parts_of_speech_155",
+      "topic": "parts_of_speech",
+      "question": "Identify part of speech of 'what' in: 'What book are you reading?'",
+      "options": [
+        "Interrogative Adjective",
+        "Interrogative Pronoun",
+        "Relative Pronoun",
+        "Adverb"
+      ],
+      "answer": 0,
+      "explanation": "'What' qualifies the noun 'book', so it is an Interrogative Adjective."
+    }
+  ]
+}

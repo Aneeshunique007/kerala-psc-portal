@@ -1,0 +1,2022 @@
+{
+  "topic_id": "types_of_sentences",
+  "topic_name": "Types of Sentences and Interchange of Sentences",
+  "total_questions": 155,
+  "questions": [
+    {
+      "id": "typesent_1",
+      "topic": "types_of_sentences",
+      "question": "Identify the sentence type: 'How wonderful the weather is!'",
+      "options": [
+        "Exclamatory",
+        "Assertive",
+        "Imperative",
+        "Interrogative"
+      ],
+      "answer": 0,
+      "explanation": "Sentences expressing strong emotion ending with an exclamation mark are Exclamatory."
+    },
+    {
+      "id": "typesent_2",
+      "topic": "types_of_sentences",
+      "question": "Identify the sentence type: 'Please lend me your notebook.'",
+      "options": [
+        "Imperative",
+        "Declarative",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "answer": 0,
+      "explanation": "Sentences expressing requests, commands, or advice are Imperative."
+    },
+    {
+      "id": "typesent_3",
+      "topic": "types_of_sentences",
+      "question": "Identify the sentence type: 'The Earth revolves around the sun.'",
+      "options": [
+        "Assertive (Declarative)",
+        "Imperative",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "answer": 0,
+      "explanation": "Sentences making a factual statement or assertion are Assertive/Declarative."
+    },
+    {
+      "id": "typesent_4",
+      "topic": "types_of_sentences",
+      "question": "Identify the clause structure: 'Though he was poor, he was honest.'",
+      "options": [
+        "Complex sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Compound-complex sentence"
+      ],
+      "answer": 0,
+      "explanation": "A sentence containing one principal clause and one subordinate clause (with 'Though') is a Complex sentence."
+    },
+    {
+      "id": "typesent_5",
+      "topic": "types_of_sentences",
+      "question": "Identify the clause structure: 'He worked hard and passed the examination.'",
+      "options": [
+        "Compound sentence",
+        "Simple sentence",
+        "Complex sentence",
+        "Negative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two independent coordinate clauses joined by coordinating conjunction 'and' form a Compound sentence."
+    },
+    {
+      "id": "typesent_6",
+      "topic": "types_of_sentences",
+      "question": "Identify the clause structure: 'In spite of his poverty, he was honest.'",
+      "options": [
+        "Simple sentence",
+        "Complex sentence",
+        "Compound sentence",
+        "Interrogative sentence"
+      ],
+      "answer": 0,
+      "explanation": "A sentence with only one finite verb ('was') and a prepositional phrase is a Simple sentence."
+    },
+    {
+      "id": "typesent_7",
+      "topic": "types_of_sentences",
+      "question": "Convert into Negative: 'As soon as he saw the police, he ran away.'",
+      "options": [
+        "No sooner did he see the police than he ran away.",
+        "He saw the police and he did not run away.",
+        "No sooner had he saw the police when he ran away.",
+        "Hardly did he see the police than he ran away."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative 'As soon as...' changes to negative 'No sooner did... than...'."
+    },
+    {
+      "id": "typesent_8",
+      "topic": "types_of_sentences",
+      "question": "Convert into Affirmative: 'Nobody was absent today.'",
+      "options": [
+        "Everybody was present today.",
+        "All were absent today.",
+        "No one was present today.",
+        "Everybody was not absent today."
+      ],
+      "answer": 0,
+      "explanation": "'Nobody was absent' is affirmatively equivalent to 'Everybody was present'."
+    },
+    {
+      "id": "typesent_9",
+      "topic": "types_of_sentences",
+      "question": "Convert into Assertive: 'Who does not love his country?'",
+      "options": [
+        "Everyone loves his country.",
+        "Nobody loves his country.",
+        "Someone loves his country.",
+        "Does everyone love his country?"
+      ],
+      "answer": 0,
+      "explanation": "A negative rhetorical question 'Who does not love...?' transforms to affirmative assertive 'Everyone loves...'."
+    },
+    {
+      "id": "typesent_10",
+      "topic": "types_of_sentences",
+      "question": "Convert into Assertive: 'Can a man change his skin?'",
+      "options": [
+        "A man cannot change his skin.",
+        "A man can change his skin.",
+        "Can anyone change his skin?",
+        "Man is able to change his skin."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative rhetorical question transforms into a negative assertive statement."
+    },
+    {
+      "id": "typesent_11",
+      "topic": "types_of_sentences",
+      "question": "Convert into Exclamatory: 'It is a very beautiful night.'",
+      "options": [
+        "What a beautiful night it is!",
+        "How a beautiful night it is!",
+        "Is it a beautiful night!",
+        "It is so beautiful night!"
+      ],
+      "answer": 0,
+      "explanation": "Assertive with 'a very [adj] [noun]' transforms into 'What a [adj] [noun] it is!'"
+    },
+    {
+      "id": "typesent_12",
+      "topic": "types_of_sentences",
+      "question": "Convert into Exclamatory: 'I wish I were a bird.'",
+      "options": [
+        "O that I were a bird!",
+        "How I wish to be a bird!",
+        "Am I a bird!",
+        "What a bird I am!"
+      ],
+      "answer": 0,
+      "explanation": "'I wish I were...' transforms into exclamatory 'O that I were a bird!' or 'If only I were a bird!'"
+    },
+    {
+      "id": "typesent_13",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'He finished his work and went home.'",
+      "options": [
+        "Having finished his work, he went home.",
+        "He finished his work so he went home.",
+        "After he had finished his work he went home.",
+        "When he finished work he went home."
+      ],
+      "answer": 0,
+      "explanation": "Compound joined by 'and' reduces to Simple by using a participle phrase ('Having finished...')."
+    },
+    {
+      "id": "typesent_14",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'Besides being a poet, he was a philosopher.'",
+      "options": [
+        "He was not only a poet but also a philosopher.",
+        "Though he was a poet he was a philosopher.",
+        "He was a poet because he was a philosopher.",
+        "If he was a poet he was a philosopher."
+      ],
+      "answer": 0,
+      "explanation": "'Besides being...' converts to Compound using 'not only... but also...'."
+    },
+    {
+      "id": "typesent_15",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'I saw a wounded bird.'",
+      "options": [
+        "I saw a bird which was wounded.",
+        "I saw a bird and it was wounded.",
+        "Seeing a wounded bird I stopped.",
+        "A wounded bird was seen by me."
+      ],
+      "answer": 0,
+      "explanation": "Expanding the adjective 'wounded' into an adjective relative clause 'which was wounded' makes it Complex."
+    },
+    {
+      "id": "typesent_16",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'He is too weak to walk.'",
+      "options": [
+        "He is so weak that he cannot walk.",
+        "He is very weak and he cannot walk.",
+        "He is too weak that he can walk.",
+        "He cannot walk because of weak."
+      ],
+      "answer": 0,
+      "explanation": "'too... to' transforms into 'so... that... cannot'."
+    },
+    {
+      "id": "typesent_17",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'She is always on time.'",
+      "options": [
+        "She is never late.",
+        "She is always not late.",
+        "She is late never.",
+        "She is not on time."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative with antonym: 'always on time' becomes 'never late'."
+    },
+    {
+      "id": "typesent_18",
+      "topic": "types_of_sentences",
+      "question": "Transform into Affirmative: 'There is no smoke without fire.'",
+      "options": [
+        "Where there is smoke, there is fire.",
+        "Smoke has no fire.",
+        "Fire causes smoke always.",
+        "No smoke has fire."
+      ],
+      "answer": 0,
+      "explanation": "Proverbial transformation: 'Where there is smoke, there is fire.'"
+    },
+    {
+      "id": "typesent_19",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'Only a millionaire can afford this car.'",
+      "options": [
+        "None but a millionaire can afford this car.",
+        "No one can afford this car except millionaire.",
+        "A millionaire only cannot afford this car.",
+        "Only nobody can afford this car."
+      ],
+      "answer": 0,
+      "explanation": "'Only' applied to a person transforms to 'None but' in negative sentences."
+    },
+    {
+      "id": "typesent_20",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'Only courage can save us.'",
+      "options": [
+        "Nothing but courage can save us.",
+        "None but courage can save us.",
+        "Courage only cannot save us.",
+        "No courage can save us."
+      ],
+      "answer": 0,
+      "explanation": "'Only' applied to an abstract thing or non-person transforms to 'Nothing but'."
+    },
+    {
+      "id": "typesent_21",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'Every mother loves her child.'",
+      "options": [
+        "There is no mother but loves her child.",
+        "No mother loves her child.",
+        "Every mother does not love child.",
+        "Mothers do not hate children."
+      ],
+      "answer": 0,
+      "explanation": "'Every [noun]' transforms into 'There is no [noun] but + verb...'"
+    },
+    {
+      "id": "typesent_22",
+      "topic": "types_of_sentences",
+      "question": "Convert into Assertive: 'What though the field be lost?'",
+      "options": [
+        "It does not matter much though the field be lost.",
+        "The field is completely lost.",
+        "Has the field been lost?",
+        "Though the field is lost we won."
+      ],
+      "answer": 0,
+      "explanation": "'What though...' transforms to 'It does not matter much though...'"
+    },
+    {
+      "id": "typesent_23",
+      "topic": "types_of_sentences",
+      "question": "Convert into Assertive: 'When can their glory fade?'",
+      "options": [
+        "Their glory can never fade.",
+        "Their glory can fade anytime.",
+        "Can their glory fade?",
+        "Their glory fades quickly."
+      ],
+      "answer": 0,
+      "explanation": "Rhetorical question 'When can...?' transforms into '... can never fade.'"
+    },
+    {
+      "id": "typesent_24",
+      "topic": "types_of_sentences",
+      "question": "Convert into Interrogative: 'Nobody can bear such an insult.'",
+      "options": [
+        "Can anybody bear such an insult?",
+        "Cannot anybody bear such an insult?",
+        "Who can bear an insult?",
+        "Can nobody bear an insult?"
+      ],
+      "answer": 0,
+      "explanation": "Negative statement transforms into affirmative question 'Can anybody bear...?'"
+    },
+    {
+      "id": "typesent_25",
+      "topic": "types_of_sentences",
+      "question": "Convert into Interrogative: 'Money cannot buy happiness.'",
+      "options": [
+        "Can money buy happiness?",
+        "Can't money buy happiness?",
+        "Could money buy happiness?",
+        "Money can buy happiness?"
+      ],
+      "answer": 0,
+      "explanation": "Negative statement transforms into positive interrogative 'Can money buy happiness?'"
+    },
+    {
+      "id": "typesent_26",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Do or die.'",
+      "options": [
+        "Compound sentence",
+        "Simple sentence",
+        "Complex sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two imperative coordinate clauses connected by coordinating conjunction 'or'."
+    },
+    {
+      "id": "typesent_27",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Speak the truth and you will be respected.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two coordinate clauses joined by 'and' -> Compound sentence."
+    },
+    {
+      "id": "typesent_28",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'He admitted that he was guilty.'",
+      "options": [
+        "He admitted his guilt.",
+        "He was guilty and he admitted it.",
+        "Admitting that he was guilty he wept.",
+        "Guilty as he was, he admitted."
+      ],
+      "answer": 0,
+      "explanation": "Noun clause 'that he was guilty' is reduced to noun phrase 'his guilt' in a Simple sentence."
+    },
+    {
+      "id": "typesent_29",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'He promised to help me.'",
+      "options": [
+        "He promised that he would help me.",
+        "He promised and helped me.",
+        "Promising to help me he left.",
+        "He had promised helping me."
+      ],
+      "answer": 0,
+      "explanation": "Infinitive phrase 'to help me' expands into noun clause 'that he would help me'."
+    },
+    {
+      "id": "typesent_30",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Tell me where you live.'",
+      "options": [
+        "Complex sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Interrogative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Principal clause 'Tell me' + noun clause 'where you live' = Complex sentence."
+    },
+    {
+      "id": "typesent_31",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Man proposes, but God disposes.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Optative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Coordinate clauses connected by adversative conjunction 'but' = Compound sentence."
+    },
+    {
+      "id": "typesent_32",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'Brutus loved Caesar.'",
+      "options": [
+        "Brutus was not without love for Caesar.",
+        "Brutus did not hate Caesar completely.",
+        "Brutus was without love for Caesar.",
+        "Brutus did not love Caesar."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative to negative without changing meaning: 'was not without love for Caesar'."
+    },
+    {
+      "id": "typesent_33",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'O that I had wings like a dove!'",
+      "options": [
+        "I wish that I had wings like a dove.",
+        "I have wings like a dove.",
+        "How I have wings like dove!",
+        "Wings of dove are desirable."
+      ],
+      "answer": 0,
+      "explanation": "Exclamatory wish 'O that...' transforms to 'I wish that...'"
+    },
+    {
+      "id": "typesent_34",
+      "topic": "types_of_sentences",
+      "question": "Transform into Exclamatory: 'It was a very tragic accident.'",
+      "options": [
+        "What a tragic accident it was!",
+        "How tragic accident it was!",
+        "Was it a tragic accident!",
+        "What tragic the accident was!"
+      ],
+      "answer": 0,
+      "explanation": "'What a tragic accident it was!'"
+    },
+    {
+      "id": "typesent_35",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'Owing to illness, he could not attend school.'",
+      "options": [
+        "He was ill, therefore he could not attend school.",
+        "Because he was ill he could not attend school.",
+        "Being ill, he could not attend school.",
+        "Though he was ill, he attended school."
+      ],
+      "answer": 0,
+      "explanation": "Prepositional cause 'Owing to illness' becomes coordinate clause with 'therefore/so' in Compound."
+    },
+    {
+      "id": "typesent_36",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'He is rich, yet he is unhappy.'",
+      "options": [
+        "In spite of being rich, he is unhappy.",
+        "Although he is rich, he is unhappy.",
+        "He is rich and unhappy.",
+        "Rich as he is, he is unhappy."
+      ],
+      "answer": 0,
+      "explanation": "Adversative compound becomes Simple with 'In spite of being rich'."
+    },
+    {
+      "id": "typesent_37",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'Search his pockets to find the key.'",
+      "options": [
+        "Search his pockets so that you may find the key.",
+        "Search his pockets and find the key.",
+        "Searching his pockets he found the key.",
+        "Find the key by searching his pockets."
+      ],
+      "answer": 0,
+      "explanation": "Adverbial clause of purpose 'so that you may find the key' makes it Complex."
+    },
+    {
+      "id": "typesent_38",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Unless you work hard, you will not succeed.'",
+      "options": [
+        "Complex sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Imperative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Subordinate clause of condition 'Unless you work hard' makes it a Complex sentence."
+    },
+    {
+      "id": "typesent_39",
+      "topic": "types_of_sentences",
+      "question": "Convert into Affirmative: 'No one could deny that he was clever.'",
+      "options": [
+        "Everyone had to admit that he was clever.",
+        "No one admitted that he was clever.",
+        "Anyone could deny his cleverness.",
+        "He was not clever to everyone."
+      ],
+      "answer": 0,
+      "explanation": "'No one could deny' -> 'Everyone had to admit'."
+    },
+    {
+      "id": "typesent_40",
+      "topic": "types_of_sentences",
+      "question": "Convert into Negative: 'He is always careful.'",
+      "options": [
+        "He is never careless.",
+        "He is not always careful.",
+        "He is never careful.",
+        "He is always not careless."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative -> 'never careless'."
+    },
+    {
+      "id": "typesent_41",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'If only I could see my mother once more!'",
+      "options": [
+        "I strongly desire to see my mother once more.",
+        "Could I see my mother once more?",
+        "I might see my mother once more.",
+        "My mother wants to see me."
+      ],
+      "answer": 0,
+      "explanation": "'If only I could...' transforms to assertive expression of strong desire."
+    },
+    {
+      "id": "typesent_42",
+      "topic": "types_of_sentences",
+      "question": "Convert into Interrogative: 'Everyone wishes to be happy.'",
+      "options": [
+        "Who does not wish to be happy?",
+        "Does anyone wish to be happy?",
+        "Who wishes to be happy?",
+        "Why does everyone wish to be happy?"
+      ],
+      "answer": 0,
+      "explanation": "'Everyone wishes...' transforms to rhetorical 'Who does not wish to be happy?'"
+    },
+    {
+      "id": "typesent_43",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Get out of the room.'",
+      "options": [
+        "Imperative sentence",
+        "Assertive sentence",
+        "Exclamatory sentence",
+        "Optative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Direct command with implied subject 'You' is an Imperative sentence."
+    },
+    {
+      "id": "typesent_44",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'May you live happily!'",
+      "options": [
+        "Optative sentence",
+        "Imperative sentence",
+        "Assertive sentence",
+        "Interrogative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Sentence expressing a prayer, wish, or blessing is an Optative sentence."
+    },
+    {
+      "id": "typesent_45",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'She is richer than her sister.'",
+      "options": [
+        "Her sister is not as rich as she is.",
+        "Her sister is as rich as she is.",
+        "She is not as rich as her sister.",
+        "Her sister is richer than she."
+      ],
+      "answer": 0,
+      "explanation": "Comparative to negative positive degree: 'Her sister is not as rich as she is.'"
+    },
+    {
+      "id": "typesent_46",
+      "topic": "types_of_sentences",
+      "question": "Transform into Comparative: 'No other boy is as clever as Ramu.'",
+      "options": [
+        "Ramu is cleverer than any other boy.",
+        "Ramu is the cleverest boy.",
+        "Ramu is not cleverer than any boy.",
+        "Any other boy is cleverer than Ramu."
+      ],
+      "answer": 0,
+      "explanation": "Positive to comparative: 'cleverer than any other boy'."
+    },
+    {
+      "id": "typesent_47",
+      "topic": "types_of_sentences",
+      "question": "Transform into Superlative: 'Iron is more useful than any other metal.'",
+      "options": [
+        "Iron is the most useful of all metals.",
+        "Iron is useful of all metals.",
+        "Iron is the more useful metal.",
+        "No metal is most useful as iron."
+      ],
+      "answer": 0,
+      "explanation": "Comparative to superlative: 'the most useful of all metals'."
+    },
+    {
+      "id": "typesent_48",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'When the sun rose, the fog disappeared.'",
+      "options": [
+        "The sun having risen, the fog disappeared.",
+        "The sun rose and the fog disappeared.",
+        "As the sun rose the fog disappeared.",
+        "At sunrise the fog did not disappear."
+      ],
+      "answer": 0,
+      "explanation": "Nominative absolute construction: 'The sun having risen, the fog disappeared.'"
+    },
+    {
+      "id": "typesent_49",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'If you do not run fast, you will miss the train.'",
+      "options": [
+        "Run fast, or you will miss the train.",
+        "Unless you run fast you will miss the train.",
+        "Running fast you will catch the train.",
+        "Running fast or miss the train."
+      ],
+      "answer": 0,
+      "explanation": "Conditional complex clause transforms to alternative coordinate with 'or'."
+    },
+    {
+      "id": "typesent_50",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'The boy who won the prize is my nephew.'",
+      "options": [
+        "Complex sentence",
+        "Compound sentence",
+        "Simple sentence",
+        "Interrogative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Relative clause 'who won the prize' modifying 'The boy' makes it a Complex sentence."
+    },
+    {
+      "id": "typesent_51",
+      "topic": "types_of_sentences",
+      "question": "Convert into Affirmative: 'She did not leave any stone unturned.'",
+      "options": [
+        "She tried every possible means.",
+        "She left all stones unturned.",
+        "She turned some stones.",
+        "She did not try every means."
+      ],
+      "answer": 0,
+      "explanation": "Idiomatic transformation: 'left no stone unturned' -> 'tried every possible means'."
+    },
+    {
+      "id": "typesent_52",
+      "topic": "types_of_sentences",
+      "question": "Convert into Negative: 'I shall always remember your help.'",
+      "options": [
+        "I shall never forget your help.",
+        "I shall not always remember your help.",
+        "I shall never remember your help.",
+        "I shall always not forget your help."
+      ],
+      "answer": 0,
+      "explanation": "'always remember' -> 'never forget'."
+    },
+    {
+      "id": "typesent_53",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'Who can touch pitch without being defiled?'",
+      "options": [
+        "No one can touch pitch without being defiled.",
+        "Anyone can touch pitch without being defiled.",
+        "Can someone touch pitch?",
+        "Who touches pitch without defilement?"
+      ],
+      "answer": 0,
+      "explanation": "Proverbial rhetorical question transforms to universal negative 'No one can...'"
+    },
+    {
+      "id": "typesent_54",
+      "topic": "types_of_sentences",
+      "question": "Convert into Exclamatory: 'The sunset looks exceedingly lovely.'",
+      "options": [
+        "How lovely the sunset looks!",
+        "What a lovely the sunset looks!",
+        "Is the sunset very lovely!",
+        "How very lovely sunset looks!"
+      ],
+      "answer": 0,
+      "explanation": "'How lovely the sunset looks!'"
+    },
+    {
+      "id": "typesent_55",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'He worked hard so that he might pass.'",
+      "options": [
+        "He worked hard to pass.",
+        "He worked hard and passed.",
+        "He passed because he worked hard.",
+        "Working hard he might pass."
+      ],
+      "answer": 0,
+      "explanation": "Adverbial purpose clause 'so that he might pass' reduces to infinitive of purpose 'to pass'."
+    },
+    {
+      "id": "typesent_56",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'Hearing the noise, the child woke up.'",
+      "options": [
+        "The child heard the noise and woke up.",
+        "When the child heard the noise it woke up.",
+        "The child woke up because of noise.",
+        "As the child heard noise it woke up."
+      ],
+      "answer": 0,
+      "explanation": "Participle simple sentence expands into coordinate clauses with 'and'."
+    },
+    {
+      "id": "typesent_57",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'I know his residence.'",
+      "options": [
+        "I know where he lives.",
+        "I know his house and residence.",
+        "I know he resides somewhere.",
+        "Knowing his residence I went."
+      ],
+      "answer": 0,
+      "explanation": "Noun phrase 'his residence' expands into noun clause 'where he lives'."
+    },
+    {
+      "id": "typesent_58",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'He confessed his crime.'",
+      "options": [
+        "Simple sentence",
+        "Complex sentence",
+        "Compound sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Single subject 'He' and finite verb 'confessed' with object 'his crime' = Simple sentence."
+    },
+    {
+      "id": "typesent_59",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'He confessed that he had committed a crime.'",
+      "options": [
+        "Complex sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Assertive-compound sentence"
+      ],
+      "answer": 0,
+      "explanation": "Main clause + noun clause 'that he had committed a crime' = Complex sentence."
+    },
+    {
+      "id": "typesent_60",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'All must die.'",
+      "options": [
+        "None can escape death.",
+        "No one must die.",
+        "All must not die.",
+        "Everyone will not live."
+      ],
+      "answer": 0,
+      "explanation": "Philosophical affirmative transforms to 'None can escape death.'"
+    },
+    {
+      "id": "typesent_61",
+      "topic": "types_of_sentences",
+      "question": "Transform into Affirmative: 'None but the brave deserve the fair.'",
+      "options": [
+        "Only the brave deserve the fair.",
+        "All brave deserve fair.",
+        "The brave never deserve fair.",
+        "Everyone except brave deserves fair."
+      ],
+      "answer": 0,
+      "explanation": "'None but' transforms to affirmative 'Only'."
+    },
+    {
+      "id": "typesent_62",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'What a piece of work is man!'",
+      "options": [
+        "Man is a wonderful piece of work.",
+        "Is man a piece of work?",
+        "Man is not a piece of work.",
+        "What man is a piece of work!"
+      ],
+      "answer": 0,
+      "explanation": "Shakespearean exclamation transforms to assertive statement."
+    },
+    {
+      "id": "typesent_63",
+      "topic": "types_of_sentences",
+      "question": "Convert into Interrogative: 'Their bravery cannot be questioned.'",
+      "options": [
+        "Can their bravery be questioned?",
+        "Cannot their bravery be questioned?",
+        "Why can their bravery be questioned?",
+        "Their bravery can be questioned?"
+      ],
+      "answer": 0,
+      "explanation": "Negative assertive statement -> affirmative question 'Can their bravery be questioned?'"
+    },
+    {
+      "id": "typesent_64",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'He is so old that he cannot run.'",
+      "options": [
+        "He is too old to run.",
+        "He is very old and cannot run.",
+        "He cannot run because he is old.",
+        "Being old he cannot run."
+      ],
+      "answer": 0,
+      "explanation": "'so... that... cannot' reduces to 'too... to'."
+    },
+    {
+      "id": "typesent_65",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'In addition to giving him advice, I gave him money.'",
+      "options": [
+        "I gave him not only advice but also money.",
+        "Though I gave advice I gave money.",
+        "Giving him advice I gave him money.",
+        "I gave advice because I gave money."
+      ],
+      "answer": 0,
+      "explanation": "Cumulative addition transforms to 'not only... but also...' in a Compound sentence."
+    },
+    {
+      "id": "typesent_66",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'I saw a blind man.'",
+      "options": [
+        "I saw a man who was blind.",
+        "I saw a man and he was blind.",
+        "Seeing a blind man I stopped.",
+        "A blind man was seen by me."
+      ],
+      "answer": 0,
+      "explanation": "Adjective 'blind' expands to relative clause 'who was blind'."
+    },
+    {
+      "id": "typesent_67",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Neither a borrower nor a lender be.'",
+      "options": [
+        "Compound sentence",
+        "Simple sentence",
+        "Complex sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Correlative coordinating conjunction 'neither... nor' connects coordinate imperative elements = Compound."
+    },
+    {
+      "id": "typesent_68",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'God made the country and man made the town.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two coordinate clauses joined by 'and' = Compound sentence."
+    },
+    {
+      "id": "typesent_69",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'As soon as the bell rang, the boys entered the class.'",
+      "options": [
+        "No sooner did the bell ring than the boys entered the class.",
+        "No sooner had the bell rang when the boys entered.",
+        "The bell rang and no sooner boys entered.",
+        "Hardly did the bell ring when the boys entered."
+      ],
+      "answer": 0,
+      "explanation": "'As soon as...' -> 'No sooner did [V1]... than...'"
+    },
+    {
+      "id": "typesent_70",
+      "topic": "types_of_sentences",
+      "question": "Transform into Affirmative: 'I am not a little surprised.'",
+      "options": [
+        "I am greatly surprised.",
+        "I am surprised a little.",
+        "I am not surprised.",
+        "I am surprised somewhat."
+      ],
+      "answer": 0,
+      "explanation": "'Not a little' means 'greatly/very much'."
+    },
+    {
+      "id": "typesent_71",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'Could I ever forget those happy days?'",
+      "options": [
+        "I could never forget those happy days.",
+        "I could forget those happy days.",
+        "Could I forget those days never?",
+        "Those happy days are forgotten."
+      ],
+      "answer": 0,
+      "explanation": "Rhetorical question -> 'I could never forget...'"
+    },
+    {
+      "id": "typesent_72",
+      "topic": "types_of_sentences",
+      "question": "Convert into Exclamatory: 'I wish that I were young again.'",
+      "options": [
+        "O for a youth once again!",
+        "Am I young again!",
+        "How I am young again!",
+        "What a young man I am!"
+      ],
+      "answer": 0,
+      "explanation": "Poetic wish transforms to 'O for...' or 'If only I were young again!'"
+    },
+    {
+      "id": "typesent_73",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'We eat so that we may live.'",
+      "options": [
+        "We eat to live.",
+        "We eat and we live.",
+        "Eating we live.",
+        "We live because we eat."
+      ],
+      "answer": 0,
+      "explanation": "'so that we may live' reduces to infinitive 'to live'."
+    },
+    {
+      "id": "typesent_74",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'Besides being punished, he was fined.'",
+      "options": [
+        "He was not only punished but also fined.",
+        "Though he was punished he was fined.",
+        "Being punished he was fined.",
+        "He was punished because he was fined."
+      ],
+      "answer": 0,
+      "explanation": "'Besides being...' -> 'He was not only punished but also fined.'"
+    },
+    {
+      "id": "typesent_75",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'He told me the time of his arrival.'",
+      "options": [
+        "He told me when he would arrive.",
+        "He told me about his arrival time.",
+        "He arrived and told me the time.",
+        "Telling me the time he arrived."
+      ],
+      "answer": 0,
+      "explanation": "Noun phrase 'the time of his arrival' expands to noun clause 'when he would arrive'."
+    },
+    {
+      "id": "typesent_76",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Wait until I return.'",
+      "options": [
+        "Complex sentence",
+        "Simple sentence",
+        "Compound sentence",
+        "Optative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Main imperative clause + subordinate time clause 'until I return' = Complex sentence."
+    },
+    {
+      "id": "typesent_77",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Listen carefully and take notes.'",
+      "options": [
+        "Compound sentence",
+        "Simple sentence",
+        "Complex sentence",
+        "Declarative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two coordinate imperative clauses joined by 'and' = Compound sentence."
+    },
+    {
+      "id": "typesent_78",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'Every rose has a thorn.'",
+      "options": [
+        "There is no rose without a thorn.",
+        "No rose has a thorn.",
+        "Every rose does not have thorn.",
+        "A rose has no thorn."
+      ],
+      "answer": 0,
+      "explanation": "Universal truth transforms to 'There is no rose without a thorn.'"
+    },
+    {
+      "id": "typesent_79",
+      "topic": "types_of_sentences",
+      "question": "Transform into Affirmative: 'He did not leave me alone.'",
+      "options": [
+        "He kept me company.",
+        "He left me alone.",
+        "He was not with me.",
+        "He left someone with me."
+      ],
+      "answer": 0,
+      "explanation": "Negative -> 'He kept me company'."
+    },
+    {
+      "id": "typesent_80",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'Who would not like to be rich?'",
+      "options": [
+        "Everyone would like to be rich.",
+        "Nobody would like to be rich.",
+        "Would anyone like to be rich?",
+        "Someone likes to be rich."
+      ],
+      "answer": 0,
+      "explanation": "Rhetorical question -> 'Everyone would like to be rich.'"
+    },
+    {
+      "id": "typesent_81",
+      "topic": "types_of_sentences",
+      "question": "Convert into Exclamatory: 'It was a terrible storm.'",
+      "options": [
+        "What a terrible storm it was!",
+        "How terrible storm it was!",
+        "Was it a terrible storm!",
+        "How the storm was terrible!"
+      ],
+      "answer": 0,
+      "explanation": "'What a terrible storm it was!'"
+    },
+    {
+      "id": "typesent_82",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'A man who is industrious is sure to succeed.'",
+      "options": [
+        "An industrious man is sure to succeed.",
+        "An industrious man will succeed and be sure.",
+        "If a man is industrious he succeeds.",
+        "Being industrious a man is sure to succeed."
+      ],
+      "answer": 0,
+      "explanation": "Adjective clause 'who is industrious' reduces to single attributive adjective 'industrious'."
+    },
+    {
+      "id": "typesent_83",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'He took his gun and shot the tiger.'",
+      "options": [
+        "Having taken his gun, he shot the tiger (Simple form).",
+        "He took his gun and shot the tiger.",
+        "Taking his gun he shot tiger.",
+        "When he took gun he shot tiger."
+      ],
+      "answer": 1,
+      "explanation": "The sentence 'He took his gun and shot the tiger' is already a Compound sentence joined by 'and'."
+    },
+    {
+      "id": "typesent_84",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'I heard of his failure.'",
+      "options": [
+        "I heard that he had failed.",
+        "I heard his failure news.",
+        "He failed and I heard it.",
+        "Hearing of his failure I felt sad."
+      ],
+      "answer": 0,
+      "explanation": "Noun phrase 'his failure' expands into noun clause 'that he had failed'."
+    },
+    {
+      "id": "typesent_85",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Although the weather was bad, the plane took off.'",
+      "options": [
+        "Complex sentence",
+        "Compound sentence",
+        "Simple sentence",
+        "Compound-complex sentence"
+      ],
+      "answer": 0,
+      "explanation": "'Although...' introduces an adverbial concession clause -> Complex sentence."
+    },
+    {
+      "id": "typesent_86",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'The sun set and night fell.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Negative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two independent clauses joined by 'and' = Compound sentence."
+    },
+    {
+      "id": "typesent_87",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'He is the best boy in the class.'",
+      "options": [
+        "No other boy in the class is as good as he is.",
+        "He is not the worst boy in the class.",
+        "Other boys are not better than he.",
+        "No boy is good as he."
+      ],
+      "answer": 0,
+      "explanation": "Superlative transforms to negative positive degree: 'No other boy... is as good as he is.'"
+    },
+    {
+      "id": "typesent_88",
+      "topic": "types_of_sentences",
+      "question": "Transform into Affirmative: 'Nobody denied the fact.'",
+      "options": [
+        "Everybody accepted the fact.",
+        "All denied the fact.",
+        "Nobody accepted the fact.",
+        "Some denied the fact."
+      ],
+      "answer": 0,
+      "explanation": "'Nobody denied' -> 'Everybody accepted'."
+    },
+    {
+      "id": "typesent_89",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'What is the use of crying over split milk?'",
+      "options": [
+        "It is of no use crying over spilt milk.",
+        "There is use of crying over spilt milk.",
+        "Can we cry over spilt milk?",
+        "Crying over milk is useful."
+      ],
+      "answer": 0,
+      "explanation": "Rhetorical question -> 'It is of no use crying over spilt milk.'"
+    },
+    {
+      "id": "typesent_90",
+      "topic": "types_of_sentences",
+      "question": "Convert into Exclamatory: 'You have grown very tall.'",
+      "options": [
+        "How tall you have grown!",
+        "What tall you have grown!",
+        "Are you very tall!",
+        "How a tall you are!"
+      ],
+      "answer": 0,
+      "explanation": "'How tall you have grown!'"
+    },
+    {
+      "id": "typesent_91",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'He failed in the exam, which surprised us.'",
+      "options": [
+        "His failure in the exam surprised us.",
+        "He failed in exam and it surprised us.",
+        "Because he failed it surprised us.",
+        "When he failed it surprised us."
+      ],
+      "answer": 0,
+      "explanation": "Complex relative clause reduces to noun phrase subject 'His failure in the exam surprised us.'"
+    },
+    {
+      "id": "typesent_92",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'Walk fast lest you should miss the bus.'",
+      "options": [
+        "Walk fast, otherwise you will miss the bus.",
+        "If you don't walk fast you miss bus.",
+        "Walking fast you catch bus.",
+        "Walk fast to catch bus."
+      ],
+      "answer": 0,
+      "explanation": "'lest... should' transforms to Compound with 'otherwise' or 'or'."
+    },
+    {
+      "id": "typesent_93",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'The time of his departure is unknown.'",
+      "options": [
+        "When he will depart is unknown.",
+        "His departure time is unknown.",
+        "He will depart and time is unknown.",
+        "Departing time is unknown."
+      ],
+      "answer": 0,
+      "explanation": "Noun phrase expands into noun clause subject 'When he will depart is unknown.'"
+    },
+    {
+      "id": "typesent_94",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Since you are here, help me with this.'",
+      "options": [
+        "Complex sentence",
+        "Compound sentence",
+        "Simple sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Subordinate clause of reason 'Since you are here' + imperative main clause = Complex sentence."
+    },
+    {
+      "id": "typesent_95",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Work hard, or you will fail.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Optative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Coordinate clauses connected by alternative conjunction 'or' = Compound sentence."
+    },
+    {
+      "id": "typesent_96",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'She is too proud to beg.'",
+      "options": [
+        "She is so proud that she will not beg.",
+        "She is very proud and she will not beg.",
+        "She is proud so she begs.",
+        "She cannot beg because of pride."
+      ],
+      "answer": 0,
+      "explanation": "'too... to' -> 'so proud that she will not beg'."
+    },
+    {
+      "id": "typesent_97",
+      "topic": "types_of_sentences",
+      "question": "Transform into Affirmative: 'I am not uncertain of his success.'",
+      "options": [
+        "I am certain of his success.",
+        "I am doubtful of his success.",
+        "I am not sure of his success.",
+        "His success is uncertain to me."
+      ],
+      "answer": 0,
+      "explanation": "Double negative 'not uncertain' -> affirmative 'certain'."
+    },
+    {
+      "id": "typesent_98",
+      "topic": "types_of_sentences",
+      "question": "Transform into Assertive: 'Is this the way to behave?'",
+      "options": [
+        "This is not the way to behave.",
+        "This is the way to behave.",
+        "Can this be the way to behave?",
+        "Behaving this way is good."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative rhetorical question -> negative assertive statement 'This is not the way to behave.'"
+    },
+    {
+      "id": "typesent_99",
+      "topic": "types_of_sentences",
+      "question": "Convert into Exclamatory: 'I earnestly wish to see my homeland again.'",
+      "options": [
+        "O to see my homeland again!",
+        "How I see my homeland!",
+        "What a homeland I see!",
+        "Is that my homeland!"
+      ],
+      "answer": 0,
+      "explanation": "Intense wish transforms to exclamatory infinitive 'O to see my homeland again!'"
+    },
+    {
+      "id": "typesent_100",
+      "topic": "types_of_sentences",
+      "question": "Convert into Simple: 'The teacher entered the room and all stood up.'",
+      "options": [
+        "On the teacher entering the room, all stood up.",
+        "When teacher entered all stood up.",
+        "The teacher having entered the room all stood up.",
+        "As teacher entered room all stood up."
+      ],
+      "answer": 2,
+      "explanation": "Nominative absolute construction 'The teacher having entered the room, all stood up.'"
+    },
+    {
+      "id": "typesent_101",
+      "topic": "types_of_sentences",
+      "question": "Convert into Compound: 'Not only did he give me advice, but he also helped me financially.'",
+      "options": [
+        "He gave me advice and he helped me financially as well.",
+        "Though he gave advice he helped me.",
+        "Giving advice he helped me.",
+        "He helped me because he gave advice."
+      ],
+      "answer": 0,
+      "explanation": "'Not only... but also' is a correlative compound coordinator."
+    },
+    {
+      "id": "typesent_102",
+      "topic": "types_of_sentences",
+      "question": "Convert into Complex: 'He was punished for his disobedience.'",
+      "options": [
+        "He was punished because he was disobedient.",
+        "He was disobedient and so he was punished.",
+        "Being disobedient he was punished.",
+        "His disobedience brought punishment."
+      ],
+      "answer": 0,
+      "explanation": "Prepositional cause 'for his disobedience' expands into adverbial clause of cause 'because he was disobedient'."
+    },
+    {
+      "id": "typesent_103",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Neither John nor his brother attended the meeting.'",
+      "options": [
+        "Simple sentence",
+        "Compound sentence",
+        "Complex sentence",
+        "Compound-complex sentence"
+      ],
+      "answer": 0,
+      "explanation": "Only one finite verb ('attended') with compound subject = Simple sentence!"
+    },
+    {
+      "id": "typesent_104",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'He tried hard, yet he could not succeed.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Optative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Adversative coordinating conjunction 'yet' connects two coordinate clauses = Compound sentence."
+    },
+    {
+      "id": "typesent_105",
+      "topic": "types_of_sentences",
+      "question": "Transform into Negative: 'Where there is love, there is peace.'",
+      "options": [
+        "There is no love without peace.",
+        "There is no peace where there is love.",
+        "Love and peace do not exist.",
+        "Love never brings peace."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative proverb transforms into 'There is no love without peace.'"
+    },
+    {
+      "id": "types_of_sentences_106",
+      "topic": "types_of_sentences",
+      "question": "Convert to Negative: 'He is always punctual.'",
+      "options": [
+        "He is never late.",
+        "He is always not late.",
+        "He is punctual never.",
+        "He is not punctual."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative with antonym: 'always punctual' becomes 'never late'."
+    },
+    {
+      "id": "types_of_sentences_107",
+      "topic": "types_of_sentences",
+      "question": "Convert to Simple: 'He must work hard, or he will not pass.'",
+      "options": [
+        "He must work hard to pass.",
+        "If he does not work hard he fails.",
+        "He works hard and passes.",
+        "Working hard he will not pass."
+      ],
+      "answer": 0,
+      "explanation": "Compound clause with 'or' reduces to simple with infinitive of purpose 'to pass'."
+    },
+    {
+      "id": "types_of_sentences_108",
+      "topic": "types_of_sentences",
+      "question": "Convert to Complex: 'I saw a running deer.'",
+      "options": [
+        "I saw a deer which was running.",
+        "I saw a deer and it was running.",
+        "Seeing a deer it was running.",
+        "A running deer was seen by me."
+      ],
+      "answer": 0,
+      "explanation": "Adjective participle 'running' expands into relative clause 'which was running'."
+    },
+    {
+      "id": "types_of_sentences_109",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Tell me the truth or leave the room.'",
+      "options": [
+        "Compound sentence",
+        "Simple sentence",
+        "Complex sentence",
+        "Declarative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two coordinate imperative clauses connected by 'or' = Compound."
+    },
+    {
+      "id": "types_of_sentences_110",
+      "topic": "types_of_sentences",
+      "question": "Convert to Assertive: 'What a terrible tragedy!'",
+      "options": [
+        "It was a very terrible tragedy.",
+        "Is it a terrible tragedy?",
+        "It is not a terrible tragedy.",
+        "What a tragedy was terrible!"
+      ],
+      "answer": 0,
+      "explanation": "Exclamatory statement transforms to assertive declarative."
+    },
+    {
+      "id": "types_of_sentences_111",
+      "topic": "types_of_sentences",
+      "question": "Convert to Affirmative: 'No one will dispute your integrity.'",
+      "options": [
+        "Everyone will acknowledge your integrity.",
+        "Nobody will acknowledge your integrity.",
+        "All will dispute your integrity.",
+        "Some will dispute your integrity."
+      ],
+      "answer": 0,
+      "explanation": "'No one will dispute' -> 'Everyone will acknowledge'."
+    },
+    {
+      "id": "types_of_sentences_112",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'He returned home because he was unwell.'",
+      "options": [
+        "Complex sentence",
+        "Compound sentence",
+        "Simple sentence",
+        "Compound-complex sentence"
+      ],
+      "answer": 0,
+      "explanation": "Subordinate clause of reason introduced by 'because' = Complex sentence."
+    },
+    {
+      "id": "types_of_sentences_113",
+      "topic": "types_of_sentences",
+      "question": "Convert to Simple: 'The thief saw the policeman and fled.'",
+      "options": [
+        "Seeing the policeman, the thief fled.",
+        "The thief saw policeman so he fled.",
+        "When the thief saw policeman he fled.",
+        "The policeman saw thief and fled."
+      ],
+      "answer": 0,
+      "explanation": "Compound sentence reduces to simple via participle 'Seeing the policeman'."
+    },
+    {
+      "id": "types_of_sentences_114",
+      "topic": "types_of_sentences",
+      "question": "Convert to Compound: 'In spite of the heavy rain, the match continued.'",
+      "options": [
+        "It rained heavily, yet the match continued.",
+        "Although it rained the match continued.",
+        "Because it rained match continued.",
+        "Heavy rain and match continued."
+      ],
+      "answer": 0,
+      "explanation": "Prepositional concession transforms to coordinate clause with 'yet'."
+    },
+    {
+      "id": "types_of_sentences_115",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Barking dogs seldom bite.'",
+      "options": [
+        "Simple sentence",
+        "Complex sentence",
+        "Compound sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Single subject and single finite verb ('bite') = Simple sentence."
+    },
+    {
+      "id": "types_of_sentences_116",
+      "topic": "types_of_sentences",
+      "question": "Convert to Interrogative: 'Nobody can escape destiny.'",
+      "options": [
+        "Can anybody escape destiny?",
+        "Cannot anybody escape destiny?",
+        "Who escapes destiny?",
+        "Does anybody escape destiny?"
+      ],
+      "answer": 0,
+      "explanation": "Negative statement transforms to affirmative question 'Can anybody escape destiny?'"
+    },
+    {
+      "id": "types_of_sentences_117",
+      "topic": "types_of_sentences",
+      "question": "Convert to Assertive: 'Shall I ever forget your kindness?'",
+      "options": [
+        "I shall never forget your kindness.",
+        "I shall forget your kindness.",
+        "Could I forget your kindness?",
+        "Your kindness is forgotten."
+      ],
+      "answer": 0,
+      "explanation": "Rhetorical question transforms to 'I shall never forget your kindness.'"
+    },
+    {
+      "id": "types_of_sentences_118",
+      "topic": "types_of_sentences",
+      "question": "Convert to Exclamatory: 'The sunset looks very splendid.'",
+      "options": [
+        "How splendid the sunset looks!",
+        "What a splendid the sunset looks!",
+        "Is sunset very splendid!",
+        "Splendid is sunset!"
+      ],
+      "answer": 0,
+      "explanation": "'How splendid the sunset looks!'"
+    },
+    {
+      "id": "types_of_sentences_119",
+      "topic": "types_of_sentences",
+      "question": "Convert to Negative: 'Only graduates need apply.'",
+      "options": [
+        "None but graduates need apply.",
+        "Nobody need apply.",
+        "Graduates only do not apply.",
+        "Nothing but graduates apply."
+      ],
+      "answer": 0,
+      "explanation": "'Only' applied to persons transforms to 'None but' in negative."
+    },
+    {
+      "id": "types_of_sentences_120",
+      "topic": "types_of_sentences",
+      "question": "Convert to Affirmative: 'He did not fail to notice the change.'",
+      "options": [
+        "He noticed the change.",
+        "He failed to notice the change.",
+        "He did not notice change.",
+        "He noticed no change."
+      ],
+      "answer": 0,
+      "explanation": "Double negative 'did not fail to notice' = 'noticed'."
+    },
+    {
+      "id": "types_of_sentences_121",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'If you sow good seeds, you will reap a good harvest.'",
+      "options": [
+        "Complex sentence",
+        "Compound sentence",
+        "Simple sentence",
+        "Imperative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Subordinate conditional clause + main clause = Complex sentence."
+    },
+    {
+      "id": "types_of_sentences_122",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'The sun rose and the birds began to sing.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two coordinate independent clauses joined by 'and' = Compound sentence."
+    },
+    {
+      "id": "types_of_sentences_123",
+      "topic": "types_of_sentences",
+      "question": "Convert to Simple: 'He bought a house that belonged to his uncle.'",
+      "options": [
+        "He bought his uncle's house.",
+        "He bought house and it belonged to uncle.",
+        "Belonging to uncle he bought house.",
+        "Uncle sold house to him."
+      ],
+      "answer": 0,
+      "explanation": "Relative clause reduces to possessive noun phrase 'his uncle's house'."
+    },
+    {
+      "id": "types_of_sentences_124",
+      "topic": "types_of_sentences",
+      "question": "Convert to Compound: 'Besides being clever, he is hardworking.'",
+      "options": [
+        "He is not only clever but also hardworking.",
+        "Though he is clever he is hardworking.",
+        "Because he is clever he works hard.",
+        "Clever and hardworking."
+      ],
+      "answer": 0,
+      "explanation": "'Besides being...' -> 'not only... but also...'"
+    },
+    {
+      "id": "types_of_sentences_125",
+      "topic": "types_of_sentences",
+      "question": "Convert to Complex: 'He declared his innocence.'",
+      "options": [
+        "He declared that he was innocent.",
+        "He declared and he was innocent.",
+        "Declaring his innocence he wept.",
+        "His innocence was declared."
+      ],
+      "answer": 0,
+      "explanation": "Noun phrase 'his innocence' expands into noun clause 'that he was innocent'."
+    },
+    {
+      "id": "types_of_sentences_126",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'May God grant you peace and happiness!'",
+      "options": [
+        "Optative sentence",
+        "Imperative sentence",
+        "Assertive sentence",
+        "Interrogative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Sentence expressing a blessing or prayer is Optative."
+    },
+    {
+      "id": "types_of_sentences_127",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Don't lean against the wet paint.'",
+      "options": [
+        "Imperative sentence",
+        "Assertive sentence",
+        "Exclamatory sentence",
+        "Declarative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Command/warning addressed to implied 'You' is Imperative."
+    },
+    {
+      "id": "types_of_sentences_128",
+      "topic": "types_of_sentences",
+      "question": "Convert to Negative: 'All men are mortal.'",
+      "options": [
+        "No man is immortal.",
+        "All men are not mortal.",
+        "No man is mortal.",
+        "Men are not living."
+      ],
+      "answer": 0,
+      "explanation": "Affirmative universal transforms to 'No man is immortal.'"
+    },
+    {
+      "id": "types_of_sentences_129",
+      "topic": "types_of_sentences",
+      "question": "Convert to Affirmative: 'There is nobody who does not love freedom.'",
+      "options": [
+        "Everybody loves freedom.",
+        "Nobody loves freedom.",
+        "All hate freedom.",
+        "Some love freedom."
+      ],
+      "answer": 0,
+      "explanation": "Double negative transforms to 'Everybody loves freedom.'"
+    },
+    {
+      "id": "types_of_sentences_130",
+      "topic": "types_of_sentences",
+      "question": "Convert to Assertive: 'Who does not know Mahatma Gandhi?'",
+      "options": [
+        "Everyone knows Mahatma Gandhi.",
+        "Nobody knows Mahatma Gandhi.",
+        "Does everyone know Gandhi?",
+        "Someone knows Gandhi."
+      ],
+      "answer": 0,
+      "explanation": "Rhetorical question transforms to 'Everyone knows Mahatma Gandhi.'"
+    },
+    {
+      "id": "types_of_sentences_131",
+      "topic": "types_of_sentences",
+      "question": "Convert to Interrogative: 'Their sacrifice will never be forgotten.'",
+      "options": [
+        "Will their sacrifice ever be forgotten?",
+        "Will not their sacrifice be forgotten?",
+        "Why their sacrifice is forgotten?",
+        "Can sacrifice be forgotten?"
+      ],
+      "answer": 0,
+      "explanation": "Negative statement transforms to positive question with 'ever'."
+    },
+    {
+      "id": "types_of_sentences_132",
+      "topic": "types_of_sentences",
+      "question": "Convert to Exclamatory: 'I wish I had met him earlier.'",
+      "options": [
+        "If only I had met him earlier!",
+        "How I met him earlier!",
+        "Did I meet him earlier!",
+        "What I met him earlier!"
+      ],
+      "answer": 0,
+      "explanation": "'I wish I had...' transforms to 'If only I had...'"
+    },
+    {
+      "id": "types_of_sentences_133",
+      "topic": "types_of_sentences",
+      "question": "Convert to Simple: 'As soon as he got the telegram, he left.'",
+      "options": [
+        "Immediately on getting the telegram, he left.",
+        "He got telegram and left.",
+        "Getting telegram he left so.",
+        "When he got telegram he left."
+      ],
+      "answer": 0,
+      "explanation": "Subordinate time clause reduces to prepositional phrase 'Immediately on getting...'"
+    },
+    {
+      "id": "types_of_sentences_134",
+      "topic": "types_of_sentences",
+      "question": "Convert to Compound: 'Though he was wealthy, he lived a simple life.'",
+      "options": [
+        "He was wealthy, yet he lived a simple life.",
+        "In spite of wealth he lived simple.",
+        "Because he was wealthy he lived simple.",
+        "Wealthy being he lived simple."
+      ],
+      "answer": 0,
+      "explanation": "Complex clause of concession transforms to compound with 'yet'."
+    },
+    {
+      "id": "types_of_sentences_135",
+      "topic": "types_of_sentences",
+      "question": "Convert to Complex: 'A rolling stone gathers no moss.'",
+      "options": [
+        "A stone which rolls gathers no moss.",
+        "A stone rolls and gathers no moss.",
+        "Rolling stone has no moss.",
+        "Stone gathers no moss when rolling."
+      ],
+      "answer": 0,
+      "explanation": "Participle adjective 'rolling' expands into relative clause 'which rolls'."
+    },
+    {
+      "id": "types_of_sentences_136",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Speak clearly so that everyone can hear you.'",
+      "options": [
+        "Complex sentence",
+        "Compound sentence",
+        "Simple sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Adverbial clause of purpose 'so that everyone can hear you' = Complex."
+    },
+    {
+      "id": "types_of_sentences_137",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'He was tired; therefore, he went to bed early.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Assertive sentence"
+      ],
+      "answer": 0,
+      "explanation": "Two coordinate clauses joined by illative conjunction 'therefore' = Compound."
+    },
+    {
+      "id": "types_of_sentences_138",
+      "topic": "types_of_sentences",
+      "question": "Convert to Negative: 'She is too weak to walk alone.'",
+      "options": [
+        "She is so weak that she cannot walk alone.",
+        "She is very weak and cannot walk alone.",
+        "She cannot walk alone because of weak.",
+        "She is weak so she walks alone."
+      ],
+      "answer": 0,
+      "explanation": "'too... to' -> 'so... that... cannot'."
+    },
+    {
+      "id": "types_of_sentences_139",
+      "topic": "types_of_sentences",
+      "question": "Convert to Affirmative: 'None but the pure in heart shall see God.'",
+      "options": [
+        "Only the pure in heart shall see God.",
+        "All pure in heart shall see God.",
+        "The pure in heart never see God.",
+        "Everyone except pure sees God."
+      ],
+      "answer": 0,
+      "explanation": "'None but' transforms to 'Only'."
+    },
+    {
+      "id": "types_of_sentences_140",
+      "topic": "types_of_sentences",
+      "question": "Convert to Assertive: 'How sweet the moonlight sleeps upon this bank!'",
+      "options": [
+        "The moonlight sleeps very sweetly upon this bank.",
+        "Does the moonlight sleep sweetly?",
+        "The moonlight does not sleep.",
+        "How the moonlight is sleeping!"
+      ],
+      "answer": 0,
+      "explanation": "Shakespearean exclamation transforms into assertive statement."
+    },
+    {
+      "id": "types_of_sentences_141",
+      "topic": "types_of_sentences",
+      "question": "Convert to Interrogative: 'It is useless to offer help to an ungrateful person.'",
+      "options": [
+        "What is the use of offering help to an ungrateful person?",
+        "Is it useless to help anyone?",
+        "Why help an ungrateful person?",
+        "Can anyone help an ungrateful person?"
+      ],
+      "answer": 0,
+      "explanation": "'It is useless to...' transforms to rhetorical question 'What is the use of...?'"
+    },
+    {
+      "id": "types_of_sentences_142",
+      "topic": "types_of_sentences",
+      "question": "Convert to Exclamatory: 'It is a terribly cold morning.'",
+      "options": [
+        "How cold the morning is!",
+        "What a cold morning is it!",
+        "Is the morning very cold!",
+        "How morning is terribly cold!"
+      ],
+      "answer": 0,
+      "explanation": "'How cold the morning is!'"
+    },
+    {
+      "id": "types_of_sentences_143",
+      "topic": "types_of_sentences",
+      "question": "Convert to Simple: 'He ran fast so that he might catch the train.'",
+      "options": [
+        "He ran fast to catch the train.",
+        "He ran fast and caught the train.",
+        "Running fast he caught train.",
+        "Because he ran fast he caught train."
+      ],
+      "answer": 0,
+      "explanation": "Purpose clause reduces to infinitive 'to catch the train'."
+    },
+    {
+      "id": "types_of_sentences_144",
+      "topic": "types_of_sentences",
+      "question": "Convert to Compound: 'Owing to heavy fog, all flights were delayed.'",
+      "options": [
+        "There was heavy fog, and so all flights were delayed.",
+        "Because there was fog flights delayed.",
+        "Fog being heavy flights delayed.",
+        "In spite of fog flights delayed."
+      ],
+      "answer": 0,
+      "explanation": "Cause phrase expands into coordinate clause joined by 'and so'."
+    },
+    {
+      "id": "types_of_sentences_145",
+      "topic": "types_of_sentences",
+      "question": "Convert to Complex: 'He admitted his fault.'",
+      "options": [
+        "He admitted that he had made a fault.",
+        "He had a fault and admitted it.",
+        "Admitting his fault he apologized.",
+        "His fault was admitted by him."
+      ],
+      "answer": 0,
+      "explanation": "Noun phrase expands into noun clause 'that he had made a fault'."
+    },
+    {
+      "id": "types_of_sentences_146",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Neither John nor his sister came to school today.'",
+      "options": [
+        "Simple sentence",
+        "Compound sentence",
+        "Complex sentence",
+        "Exclamatory sentence"
+      ],
+      "answer": 0,
+      "explanation": "Single finite verb ('came') with compound subject = Simple sentence."
+    },
+    {
+      "id": "types_of_sentences_147",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Work carefully, otherwise you will make errors.'",
+      "options": [
+        "Compound sentence",
+        "Complex sentence",
+        "Simple sentence",
+        "Declarative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Coordinate clauses connected by alternative conjunction 'otherwise' = Compound."
+    },
+    {
+      "id": "types_of_sentences_148",
+      "topic": "types_of_sentences",
+      "question": "Convert to Negative: 'Every cloud has a silver lining.'",
+      "options": [
+        "There is no cloud without a silver lining.",
+        "No cloud has a silver lining.",
+        "Every cloud does not have silver lining.",
+        "Clouds have no lining."
+      ],
+      "answer": 0,
+      "explanation": "Proverbial transformation: 'There is no cloud without a silver lining.'"
+    },
+    {
+      "id": "types_of_sentences_149",
+      "topic": "types_of_sentences",
+      "question": "Convert to Affirmative: 'I cannot but admire his dedication.'",
+      "options": [
+        "I must admire his dedication.",
+        "I do not admire his dedication.",
+        "I cannot admire his dedication.",
+        "Dedication is not admired."
+      ],
+      "answer": 0,
+      "explanation": "'cannot but + V1' = 'must + V1'."
+    },
+    {
+      "id": "types_of_sentences_150",
+      "topic": "types_of_sentences",
+      "question": "Convert to Assertive: 'What though we lose the game?'",
+      "options": [
+        "It matters little though we lose the game.",
+        "The game is lost forever.",
+        "Did we lose the game?",
+        "We lost the game and it matters."
+      ],
+      "answer": 0,
+      "explanation": "'What though...' transforms to 'It matters little though...'"
+    },
+    {
+      "id": "types_of_sentences_151",
+      "topic": "types_of_sentences",
+      "question": "Convert to Interrogative: 'Everyone appreciates honesty.'",
+      "options": [
+        "Who does not appreciate honesty?",
+        "Does everyone appreciate honesty?",
+        "Why appreciate honesty?",
+        "Can anyone appreciate honesty?"
+      ],
+      "answer": 0,
+      "explanation": "Universal affirmative transforms to rhetorical question 'Who does not appreciate honesty?'"
+    },
+    {
+      "id": "types_of_sentences_152",
+      "topic": "types_of_sentences",
+      "question": "Convert to Simple: 'A man who is honest is respected by all.'",
+      "options": [
+        "An honest man is respected by all.",
+        "A man is honest and respected.",
+        "Being honest a man is respected.",
+        "If a man is honest he is respected."
+      ],
+      "answer": 0,
+      "explanation": "Relative clause reduces to attributive adjective 'An honest man'."
+    },
+    {
+      "id": "types_of_sentences_153",
+      "topic": "types_of_sentences",
+      "question": "Convert to Compound: 'To everyone's surprise, the underdog won.'",
+      "options": [
+        "The underdog won, and this surprised everyone.",
+        "Because the underdog won everyone surprised.",
+        "Winning underdog surprised all.",
+        "When underdog won all surprised."
+      ],
+      "answer": 0,
+      "explanation": "Prepositional phrase expands to coordinate clause with 'and'."
+    },
+    {
+      "id": "types_of_sentences_154",
+      "topic": "types_of_sentences",
+      "question": "Convert to Complex: 'I heard of his great success.'",
+      "options": [
+        "I heard that he had succeeded greatly.",
+        "He succeeded and I heard it.",
+        "Hearing of his success I cheered.",
+        "His success was heard by me."
+      ],
+      "answer": 0,
+      "explanation": "Noun phrase expands to noun clause 'that he had succeeded greatly'."
+    },
+    {
+      "id": "types_of_sentences_155",
+      "topic": "types_of_sentences",
+      "question": "Identify the type: 'Unless you hurry, you will miss the morning bus.'",
+      "options": [
+        "Complex sentence",
+        "Compound sentence",
+        "Simple sentence",
+        "Imperative sentence"
+      ],
+      "answer": 0,
+      "explanation": "Conditional subordinate clause introduced by 'Unless' = Complex."
+    }
+  ]
+}

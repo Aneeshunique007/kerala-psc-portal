@@ -1,0 +1,2022 @@
+{
+  "topic_id": "conditional_sentences",
+  "topic_name": "Tenses in Conditional Sentences",
+  "total_questions": 155,
+  "questions": [
+    {
+      "id": "cond_1",
+      "topic": "conditional_sentences",
+      "question": "If you study hard, you ______ the examination.",
+      "options": [
+        "will pass",
+        "would pass",
+        "would have passed",
+        "passed"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 Condition (Open): If + Simple Present (study) -> will + bare infinitive (will pass)."
+    },
+    {
+      "id": "cond_2",
+      "topic": "conditional_sentences",
+      "question": "If it rains, we ______ at home.",
+      "options": [
+        "will stay",
+        "would stay",
+        "would have stayed",
+        "stayed"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 Condition: If + Present Simple (rains) -> will + V1 (will stay)."
+    },
+    {
+      "id": "cond_3",
+      "topic": "conditional_sentences",
+      "question": "If you heat ice, it ______ into water.",
+      "options": [
+        "turns",
+        "will turn",
+        "would turn",
+        "turned"
+      ],
+      "answer": 0,
+      "explanation": "Zero Condition (Universal Scientific Fact): If + Present Simple -> Present Simple (turns)."
+    },
+    {
+      "id": "cond_4",
+      "topic": "conditional_sentences",
+      "question": "If I won a lottery, I ______ a luxury house.",
+      "options": [
+        "would buy",
+        "will buy",
+        "would have bought",
+        "bought"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 Condition (Hypothetical Present): If + Simple Past (won) -> would + bare infinitive (would buy)."
+    },
+    {
+      "id": "cond_5",
+      "topic": "conditional_sentences",
+      "question": "If I were the Prime Minister, I ______ corruption.",
+      "options": [
+        "would eradicate",
+        "will eradicate",
+        "would have eradicated",
+        "eradicated"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 Subjunctive: If + were -> would + V1 (would eradicate)."
+    },
+    {
+      "id": "cond_6",
+      "topic": "conditional_sentences",
+      "question": "If she had invited me, I ______ the party.",
+      "options": [
+        "would have attended",
+        "would attend",
+        "will attend",
+        "attended"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 Condition (Unfulfilled Past): If + Past Perfect (had invited) -> would have + V3 (would have attended)."
+    },
+    {
+      "id": "cond_7",
+      "topic": "conditional_sentences",
+      "question": "If they had played well, they ______ the match.",
+      "options": [
+        "would have won",
+        "would win",
+        "will win",
+        "won"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: If + had played -> would have won."
+    },
+    {
+      "id": "cond_8",
+      "topic": "conditional_sentences",
+      "question": "Had I known the truth, I ______ you.",
+      "options": [
+        "would have told",
+        "would tell",
+        "will tell",
+        "told"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 3: 'Had I known' = 'If I had known' -> would have told."
+    },
+    {
+      "id": "cond_9",
+      "topic": "conditional_sentences",
+      "question": "Were I a bird, I ______ in the sky.",
+      "options": [
+        "would fly",
+        "will fly",
+        "would have flown",
+        "flew"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 2: 'Were I a bird' = 'If I were a bird' -> would fly."
+    },
+    {
+      "id": "cond_10",
+      "topic": "conditional_sentences",
+      "question": "Should you meet him, ______ him my regards.",
+      "options": [
+        "give",
+        "will give",
+        "would give",
+        "gave"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 1: 'Should you meet him' = 'If you happen to meet him' -> imperative 'give'."
+    },
+    {
+      "id": "cond_11",
+      "topic": "conditional_sentences",
+      "question": "Unless you work hard, you ______ succeed.",
+      "options": [
+        "cannot",
+        "can",
+        "could",
+        "would"
+      ],
+      "answer": 0,
+      "explanation": "'Unless' = 'If not'. 'Unless you work hard, you cannot succeed'."
+    },
+    {
+      "id": "cond_12",
+      "topic": "conditional_sentences",
+      "question": "If he ______ faster, he would catch the bus.",
+      "options": [
+        "ran",
+        "runs",
+        "had run",
+        "has run"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 requires Simple Past 'ran' when main clause has 'would catch'."
+    },
+    {
+      "id": "cond_13",
+      "topic": "conditional_sentences",
+      "question": "If she ______ rich, she would help the poor.",
+      "options": [
+        "were",
+        "was",
+        "is",
+        "are"
+      ],
+      "answer": 0,
+      "explanation": "In hypothetical conditional clauses, 'were' is used with all persons (subjunctive mood)."
+    },
+    {
+      "id": "cond_14",
+      "topic": "conditional_sentences",
+      "question": "If I ______ you, I would not accept the offer.",
+      "options": [
+        "were",
+        "was",
+        "am",
+        "have been"
+      ],
+      "answer": 0,
+      "explanation": "Idiomatic subjunctive advice: 'If I were you, I would...'."
+    },
+    {
+      "id": "cond_15",
+      "topic": "conditional_sentences",
+      "question": "If you had taken an umbrella, you ______ wet.",
+      "options": [
+        "would not have got",
+        "would not get",
+        "will not get",
+        "did not get"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: If + had taken -> would not have got."
+    },
+    {
+      "id": "cond_16",
+      "topic": "conditional_sentences",
+      "question": "If he had worked hard, he ______.",
+      "options": [
+        "would have passed",
+        "would pass",
+        "will pass",
+        "passed"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: If + had worked -> would have passed."
+    },
+    {
+      "id": "cond_17",
+      "topic": "conditional_sentences",
+      "question": "If you drop the glass, it ______.",
+      "options": [
+        "breaks",
+        "broke",
+        "would break",
+        "would have broken"
+      ],
+      "answer": 0,
+      "explanation": "Zero/Type 1 Condition: Present simple cause and effect -> breaks."
+    },
+    {
+      "id": "cond_18",
+      "topic": "conditional_sentences",
+      "question": "If I find your lost key, I ______ you.",
+      "options": [
+        "will call",
+        "would call",
+        "would have called",
+        "called"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: If + find -> will call."
+    },
+    {
+      "id": "cond_19",
+      "topic": "conditional_sentences",
+      "question": "What ______ you do if you missed the train?",
+      "options": [
+        "would",
+        "will",
+        "would have",
+        "can"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 question: If + missed (past) -> would you do?"
+    },
+    {
+      "id": "cond_20",
+      "topic": "conditional_sentences",
+      "question": "What would have happened if the driver ______ the brakes?",
+      "options": [
+        "had not applied",
+        "did not apply",
+        "does not apply",
+        "would not apply"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 condition requires past perfect 'had not applied' after 'if'."
+    },
+    {
+      "id": "cond_21",
+      "topic": "conditional_sentences",
+      "question": "If she came early, we ______ together.",
+      "options": [
+        "could leave",
+        "can leave",
+        "could have left",
+        "will leave"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: If + came (past simple) -> could/would + V1."
+    },
+    {
+      "id": "cond_22",
+      "topic": "conditional_sentences",
+      "question": "If water reaches 100 degrees Celsius, it ______.",
+      "options": [
+        "boils",
+        "will boil",
+        "would boil",
+        "boiled"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition (scientific law): reaches -> boils."
+    },
+    {
+      "id": "cond_23",
+      "topic": "conditional_sentences",
+      "question": "Unless he ______ an apology, I will not forgive him.",
+      "options": [
+        "tenders",
+        "tendered",
+        "will tender",
+        "would tender"
+      ],
+      "answer": 0,
+      "explanation": "'Unless' clause takes simple present 'tenders' for future conditions; no 'will' inside conditional clause."
+    },
+    {
+      "id": "cond_24",
+      "topic": "conditional_sentences",
+      "question": "If you boil water, it ______ into steam.",
+      "options": [
+        "evaporates",
+        "evaporated",
+        "would evaporate",
+        "will evaporate"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: universal physical fact -> evaporates."
+    },
+    {
+      "id": "cond_25",
+      "topic": "conditional_sentences",
+      "question": "If I had seen you, I ______ hello.",
+      "options": [
+        "would have said",
+        "would say",
+        "will say",
+        "said"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: If + had seen -> would have said."
+    },
+    {
+      "id": "cond_26",
+      "topic": "conditional_sentences",
+      "question": "Had he arrived on time, he ______ the speech.",
+      "options": [
+        "would have heard",
+        "would hear",
+        "will hear",
+        "heard"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 3: Had he arrived -> would have heard."
+    },
+    {
+      "id": "cond_27",
+      "topic": "conditional_sentences",
+      "question": "If you ______ red and blue, you get purple.",
+      "options": [
+        "mix",
+        "mixed",
+        "will mix",
+        "would mix"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition (factual result): mix -> get."
+    },
+    {
+      "id": "cond_28",
+      "topic": "conditional_sentences",
+      "question": "If she ______ the truth, she would have been praised.",
+      "options": [
+        "had told",
+        "told",
+        "tells",
+        "has told"
+      ],
+      "answer": 0,
+      "explanation": "Main clause has 'would have been', so 'if' clause requires past perfect 'had told'."
+    },
+    {
+      "id": "cond_29",
+      "topic": "conditional_sentences",
+      "question": "I will phone you if I ______ any news.",
+      "options": [
+        "get",
+        "got",
+        "will get",
+        "would get"
+      ],
+      "answer": 0,
+      "explanation": "Time/conditional clause after 'if' takes present simple 'get'."
+    },
+    {
+      "id": "cond_30",
+      "topic": "conditional_sentences",
+      "question": "If it ______ tomorrow, the match will be cancelled.",
+      "options": [
+        "rains",
+        "will rain",
+        "rained",
+        "would rain"
+      ],
+      "answer": 0,
+      "explanation": "Conditional clause takes present tense 'rains', not 'will rain'."
+    },
+    {
+      "id": "cond_31",
+      "topic": "conditional_sentences",
+      "question": "If he ______ hard, he will win the prize.",
+      "options": [
+        "tries",
+        "tried",
+        "will try",
+        "would try"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 takes simple present 'tries'."
+    },
+    {
+      "id": "cond_32",
+      "topic": "conditional_sentences",
+      "question": "If I had a car, I ______ you a lift.",
+      "options": [
+        "would give",
+        "will give",
+        "would have given",
+        "gave"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: 'had' is simple past here (possession), taking 'would give'."
+    },
+    {
+      "id": "cond_33",
+      "topic": "conditional_sentences",
+      "question": "If she had enough money, she ______ a new laptop.",
+      "options": [
+        "would buy",
+        "will buy",
+        "would have bought",
+        "bought"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: 'had' is simple past, taking 'would buy'."
+    },
+    {
+      "id": "cond_34",
+      "topic": "conditional_sentences",
+      "question": "If they invited us, we ______.",
+      "options": [
+        "would go",
+        "will go",
+        "would have gone",
+        "went"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: invited (past) -> would go."
+    },
+    {
+      "id": "cond_35",
+      "topic": "conditional_sentences",
+      "question": "Had she asked me, I ______ her.",
+      "options": [
+        "would have helped",
+        "would help",
+        "will help",
+        "helped"
+      ],
+      "answer": 0,
+      "explanation": "Inverted Type 3: Had she asked -> would have helped."
+    },
+    {
+      "id": "cond_36",
+      "topic": "conditional_sentences",
+      "question": "Were he honest, people ______ him.",
+      "options": [
+        "would trust",
+        "will trust",
+        "would have trusted",
+        "trusted"
+      ],
+      "answer": 0,
+      "explanation": "Inverted Type 2: Were he honest -> would trust."
+    },
+    {
+      "id": "cond_37",
+      "topic": "conditional_sentences",
+      "question": "If you ______ your homework, teacher will scold you.",
+      "options": [
+        "don't do",
+        "didn't do",
+        "won't do",
+        "wouldn't do"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: don't do -> will scold."
+    },
+    {
+      "id": "cond_38",
+      "topic": "conditional_sentences",
+      "question": "If he ______ well, he would not have failed.",
+      "options": [
+        "had prepared",
+        "prepared",
+        "prepares",
+        "would prepare"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had prepared -> would not have failed."
+    },
+    {
+      "id": "cond_39",
+      "topic": "conditional_sentences",
+      "question": "If I knew his address, I ______ him a letter.",
+      "options": [
+        "would send",
+        "will send",
+        "would have sent",
+        "sent"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: knew (past) -> would send."
+    },
+    {
+      "id": "cond_40",
+      "topic": "conditional_sentences",
+      "question": "If you touch a live wire, you ______ an electric shock.",
+      "options": [
+        "get",
+        "got",
+        "would get",
+        "would have gotten"
+      ],
+      "answer": 0,
+      "explanation": "Zero conditional: natural consequence -> get."
+    },
+    {
+      "id": "cond_41",
+      "topic": "conditional_sentences",
+      "question": "If I had known you were in hospital, I ______ you.",
+      "options": [
+        "would have visited",
+        "would visit",
+        "will visit",
+        "visited"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had known -> would have visited."
+    },
+    {
+      "id": "cond_42",
+      "topic": "conditional_sentences",
+      "question": "If the sun shines, the snow ______.",
+      "options": [
+        "melts",
+        "melted",
+        "would melt",
+        "will melt"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: shines -> melts."
+    },
+    {
+      "id": "cond_43",
+      "topic": "conditional_sentences",
+      "question": "If she practice regularly, she ______ fluent in English.",
+      "options": [
+        "will become",
+        "would become",
+        "would have become",
+        "became"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: will become."
+    },
+    {
+      "id": "cond_44",
+      "topic": "conditional_sentences",
+      "question": "Had the police arrived in time, the robbery ______.",
+      "options": [
+        "would have been averted",
+        "would be averted",
+        "will be averted",
+        "was averted"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 passive: Had the police arrived -> would have been averted."
+    },
+    {
+      "id": "cond_45",
+      "topic": "conditional_sentences",
+      "question": "Were I in your place, I ______ that job.",
+      "options": [
+        "would reject",
+        "will reject",
+        "would have rejected",
+        "rejected"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 subjunctive: Were I in your place -> would reject."
+    },
+    {
+      "id": "cond_46",
+      "topic": "conditional_sentences",
+      "question": "If you ______ green and yellow, you get cyan.",
+      "options": [
+        "mix",
+        "mixed",
+        "will mix",
+        "would mix"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: mix -> get."
+    },
+    {
+      "id": "cond_47",
+      "topic": "conditional_sentences",
+      "question": "If he had taken medicine, he ______ better now.",
+      "options": [
+        "would feel",
+        "would have felt",
+        "will feel",
+        "feels"
+      ],
+      "answer": 0,
+      "explanation": "Mixed conditional: Past condition (had taken) with present result (now) -> would feel."
+    },
+    {
+      "id": "cond_48",
+      "topic": "conditional_sentences",
+      "question": "If they ______ the flight, they would have been stranded.",
+      "options": [
+        "had missed",
+        "missed",
+        "miss",
+        "have missed"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had missed -> would have been."
+    },
+    {
+      "id": "cond_49",
+      "topic": "conditional_sentences",
+      "question": "Unless you ______ immediately, you will be late.",
+      "options": [
+        "leave",
+        "left",
+        "will leave",
+        "would leave"
+      ],
+      "answer": 0,
+      "explanation": "'Unless' with present tense: leave."
+    },
+    {
+      "id": "cond_50",
+      "topic": "conditional_sentences",
+      "question": "If I were an eagle, I ______ above the clouds.",
+      "options": [
+        "would soar",
+        "will soar",
+        "would have soared",
+        "soared"
+      ],
+      "answer": 0,
+      "explanation": "Subjunctive Type 2: were -> would soar."
+    },
+    {
+      "id": "cond_51",
+      "topic": "conditional_sentences",
+      "question": "If you press this button, the alarm ______.",
+      "options": [
+        "rings",
+        "rang",
+        "would ring",
+        "would have rung"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: press -> rings."
+    },
+    {
+      "id": "cond_52",
+      "topic": "conditional_sentences",
+      "question": "If he ______ careful, he would not have met with an accident.",
+      "options": [
+        "had been",
+        "was",
+        "were",
+        "is"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had been -> would not have met."
+    },
+    {
+      "id": "cond_53",
+      "topic": "conditional_sentences",
+      "question": "If you don't water plants, they ______.",
+      "options": [
+        "die",
+        "died",
+        "will die",
+        "would die"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: don't water -> die."
+    },
+    {
+      "id": "cond_54",
+      "topic": "conditional_sentences",
+      "question": "If she ______ the competition, she will get a scholarship.",
+      "options": [
+        "wins",
+        "won",
+        "will win",
+        "would win"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: wins -> will get."
+    },
+    {
+      "id": "cond_55",
+      "topic": "conditional_sentences",
+      "question": "If I had known his real intention, I ______ him.",
+      "options": [
+        "would not have trusted",
+        "would not trust",
+        "will not trust",
+        "did not trust"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had known -> would not have trusted."
+    },
+    {
+      "id": "cond_56",
+      "topic": "conditional_sentences",
+      "question": "Were the weather fine, we ______ for a picnic.",
+      "options": [
+        "would go",
+        "will go",
+        "would have gone",
+        "went"
+      ],
+      "answer": 0,
+      "explanation": "Inversion Type 2: Were the weather fine -> would go."
+    },
+    {
+      "id": "cond_57",
+      "topic": "conditional_sentences",
+      "question": "Had we left earlier, we ______ caught the train.",
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "shall have"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: Had we left -> would have caught."
+    },
+    {
+      "id": "cond_58",
+      "topic": "conditional_sentences",
+      "question": "If you ______ milk, it turns into curd.",
+      "options": [
+        "ferment",
+        "fermented",
+        "will ferment",
+        "would ferment"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: ferment -> turns."
+    },
+    {
+      "id": "cond_59",
+      "topic": "conditional_sentences",
+      "question": "If she ______ harder, she would speak English fluently.",
+      "options": [
+        "practised",
+        "practises",
+        "had practised",
+        "will practise"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: practised (past) -> would speak."
+    },
+    {
+      "id": "cond_60",
+      "topic": "conditional_sentences",
+      "question": "If I ______ ten million dollars, I would build a hospital.",
+      "options": [
+        "had",
+        "have",
+        "had had",
+        "will have"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: simple past 'had' -> would build."
+    },
+    {
+      "id": "cond_61",
+      "topic": "conditional_sentences",
+      "question": "What ______ you have done if you had been in my position?",
+      "options": [
+        "would",
+        "will",
+        "did",
+        "can"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 question: What would you have done if..."
+    },
+    {
+      "id": "cond_62",
+      "topic": "conditional_sentences",
+      "question": "If you heat water, it ______ at 100°C.",
+      "options": [
+        "boils",
+        "boiled",
+        "will boil",
+        "would boil"
+      ],
+      "answer": 0,
+      "explanation": "Scientific fact (Zero condition): boils."
+    },
+    {
+      "id": "cond_63",
+      "topic": "conditional_sentences",
+      "question": "Had I realized the danger, I ______ entered the cave.",
+      "options": [
+        "would not have",
+        "will not have",
+        "would not",
+        "did not"
+      ],
+      "answer": 0,
+      "explanation": "Inverted Type 3: would not have entered."
+    },
+    {
+      "id": "cond_64",
+      "topic": "conditional_sentences",
+      "question": "If he ______ the truth, he would not be in trouble now.",
+      "options": [
+        "had told",
+        "told",
+        "tells",
+        "has told"
+      ],
+      "answer": 0,
+      "explanation": "Mixed conditional: past action (had told) affecting present state."
+    },
+    {
+      "id": "cond_65",
+      "topic": "conditional_sentences",
+      "question": "If you ______ oil on water, it floats.",
+      "options": [
+        "pour",
+        "poured",
+        "will pour",
+        "would pour"
+      ],
+      "answer": 0,
+      "explanation": "Scientific fact: pour -> floats."
+    },
+    {
+      "id": "cond_66",
+      "topic": "conditional_sentences",
+      "question": "Unless she ______ hard, she will not pass.",
+      "options": [
+        "works",
+        "worked",
+        "will work",
+        "would work"
+      ],
+      "answer": 0,
+      "explanation": "Present simple inside unless clause: works."
+    },
+    {
+      "id": "cond_67",
+      "topic": "conditional_sentences",
+      "question": "If I ______ you, I would consult a lawyer.",
+      "options": [
+        "were",
+        "was",
+        "am",
+        "have been"
+      ],
+      "answer": 0,
+      "explanation": "Subjunctive advice: were."
+    },
+    {
+      "id": "cond_68",
+      "topic": "conditional_sentences",
+      "question": "If they ______ the signal, the accident wouldn't have happened.",
+      "options": [
+        "hadn't ignored",
+        "didn't ignore",
+        "don't ignore",
+        "haven't ignored"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: hadn't ignored -> wouldn't have happened."
+    },
+    {
+      "id": "cond_69",
+      "topic": "conditional_sentences",
+      "question": "If you freeze water, it ______ ice.",
+      "options": [
+        "becomes",
+        "became",
+        "will become",
+        "would become"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: freeze -> becomes."
+    },
+    {
+      "id": "cond_70",
+      "topic": "conditional_sentences",
+      "question": "If she ______ earlier, she wouldn't have missed the bus.",
+      "options": [
+        "had started",
+        "started",
+        "starts",
+        "has started"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had started -> wouldn't have missed."
+    },
+    {
+      "id": "cond_71",
+      "topic": "conditional_sentences",
+      "question": "Were she here, she ______ support us.",
+      "options": [
+        "would",
+        "will",
+        "would have",
+        "can"
+      ],
+      "answer": 0,
+      "explanation": "Inverted Type 2: Were she here -> would support."
+    },
+    {
+      "id": "cond_72",
+      "topic": "conditional_sentences",
+      "question": "Had you told me earlier, I ______ arranged the tickets.",
+      "options": [
+        "could have",
+        "can have",
+        "could",
+        "will have"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 with modal: could have arranged."
+    },
+    {
+      "id": "cond_73",
+      "topic": "conditional_sentences",
+      "question": "If I ______ wings, I would fly across the world.",
+      "options": [
+        "had",
+        "have",
+        "had had",
+        "will have"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: had -> would fly."
+    },
+    {
+      "id": "cond_74",
+      "topic": "conditional_sentences",
+      "question": "If you ______ late, you will miss the keynote speech.",
+      "options": [
+        "arrive",
+        "arrived",
+        "will arrive",
+        "would arrive"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: arrive -> will miss."
+    },
+    {
+      "id": "cond_75",
+      "topic": "conditional_sentences",
+      "question": "If he ______ the money, he would have repaid the debt.",
+      "options": [
+        "had had",
+        "had",
+        "has",
+        "have"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 requires Past Perfect: had (auxiliary) + had (V3) -> had had."
+    },
+    {
+      "id": "cond_76",
+      "topic": "conditional_sentences",
+      "question": "If it ______ heavily, the match will be abandoned.",
+      "options": [
+        "rains",
+        "will rain",
+        "rained",
+        "would rain"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: rains."
+    },
+    {
+      "id": "cond_77",
+      "topic": "conditional_sentences",
+      "question": "If I were a millionaire, I ______ poor children.",
+      "options": [
+        "would educate",
+        "will educate",
+        "would have educated",
+        "educated"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: were -> would educate."
+    },
+    {
+      "id": "cond_78",
+      "topic": "conditional_sentences",
+      "question": "Had you followed my advice, you ______ succeeded.",
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "had"
+      ],
+      "answer": 0,
+      "explanation": "Inverted Type 3: would have succeeded."
+    },
+    {
+      "id": "cond_79",
+      "topic": "conditional_sentences",
+      "question": "If you heat butter, it ______.",
+      "options": [
+        "melts",
+        "melted",
+        "will melt",
+        "would melt"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: melts."
+    },
+    {
+      "id": "cond_80",
+      "topic": "conditional_sentences",
+      "question": "If she ______ to me, she wouldn't be in this dilemma.",
+      "options": [
+        "had listened",
+        "listened",
+        "listens",
+        "has listened"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 / Mixed: had listened."
+    },
+    {
+      "id": "cond_81",
+      "topic": "conditional_sentences",
+      "question": "If you ______ this medicine, you will feel better.",
+      "options": [
+        "take",
+        "took",
+        "will take",
+        "would take"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: take -> will feel."
+    },
+    {
+      "id": "cond_82",
+      "topic": "conditional_sentences",
+      "question": "Were I the captain, I ______ chosen to bat first.",
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "shall have"
+      ],
+      "answer": 0,
+      "explanation": "Hypothetical past choice: would have chosen."
+    },
+    {
+      "id": "cond_83",
+      "topic": "conditional_sentences",
+      "question": "If he had not been vigilant, the thief ______.",
+      "options": [
+        "would have escaped",
+        "would escape",
+        "will escape",
+        "escaped"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: would have escaped."
+    },
+    {
+      "id": "cond_84",
+      "topic": "conditional_sentences",
+      "question": "If wood is placed in water, it ______.",
+      "options": [
+        "floats",
+        "floated",
+        "will float",
+        "would float"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: floats."
+    },
+    {
+      "id": "cond_85",
+      "topic": "conditional_sentences",
+      "question": "If you don't hurry, you ______ the bus.",
+      "options": [
+        "will miss",
+        "would miss",
+        "would have missed",
+        "missed"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: will miss."
+    },
+    {
+      "id": "cond_86",
+      "topic": "conditional_sentences",
+      "question": "If she ______ the truth, she would be relieved.",
+      "options": [
+        "knew",
+        "knows",
+        "had known",
+        "will know"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: knew -> would be."
+    },
+    {
+      "id": "cond_87",
+      "topic": "conditional_sentences",
+      "question": "Had they informed us, we ______ waited.",
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "can have"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: would have waited."
+    },
+    {
+      "id": "cond_88",
+      "topic": "conditional_sentences",
+      "question": "If it ______ fine tomorrow, we will go trekking.",
+      "options": [
+        "is",
+        "will be",
+        "was",
+        "were"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: present simple 'is' for future condition."
+    },
+    {
+      "id": "cond_89",
+      "topic": "conditional_sentences",
+      "question": "If you ______ twice two, you get four.",
+      "options": [
+        "multiply",
+        "multiplied",
+        "will multiply",
+        "would multiply"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: multiply -> get."
+    },
+    {
+      "id": "cond_90",
+      "topic": "conditional_sentences",
+      "question": "If I ______ the question, I would answer it.",
+      "options": [
+        "understood",
+        "understand",
+        "had understood",
+        "will understand"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: understood -> would answer."
+    },
+    {
+      "id": "cond_91",
+      "topic": "conditional_sentences",
+      "question": "If he ______ more carefully, the accident wouldn't have occurred.",
+      "options": [
+        "had driven",
+        "drove",
+        "drives",
+        "has driven"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had driven."
+    },
+    {
+      "id": "cond_92",
+      "topic": "conditional_sentences",
+      "question": "Were he in my shoes, he ______ the same thing.",
+      "options": [
+        "would do",
+        "will do",
+        "would have done",
+        "did"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: would do."
+    },
+    {
+      "id": "cond_93",
+      "topic": "conditional_sentences",
+      "question": "Unless you ______ hard, you cannot score full marks.",
+      "options": [
+        "try",
+        "tried",
+        "will try",
+        "would try"
+      ],
+      "answer": 0,
+      "explanation": "Unless clause takes present tense: try."
+    },
+    {
+      "id": "cond_94",
+      "topic": "conditional_sentences",
+      "question": "If I had seen the danger, I ______ warned everyone.",
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "can have"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: would have warned."
+    },
+    {
+      "id": "cond_95",
+      "topic": "conditional_sentences",
+      "question": "If you mix acid and water carelessly, it ______ a hazard.",
+      "options": [
+        "creates",
+        "created",
+        "would create",
+        "will create"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: creates."
+    },
+    {
+      "id": "cond_96",
+      "topic": "conditional_sentences",
+      "question": "If she ______ the train, she will arrive by evening.",
+      "options": [
+        "catches",
+        "caught",
+        "will catch",
+        "would catch"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: catches -> will arrive."
+    },
+    {
+      "id": "cond_97",
+      "topic": "conditional_sentences",
+      "question": "If I ______ his phone number, I would have rung him up.",
+      "options": [
+        "had known",
+        "knew",
+        "know",
+        "have known"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had known -> would have rung."
+    },
+    {
+      "id": "cond_98",
+      "topic": "conditional_sentences",
+      "question": "Had the doctor come earlier, the patient ______ saved.",
+      "options": [
+        "might have been",
+        "might be",
+        "will be",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 passive with modal: might have been saved."
+    },
+    {
+      "id": "cond_99",
+      "topic": "conditional_sentences",
+      "question": "If you exercise daily, you ______ fit.",
+      "options": [
+        "stay",
+        "stayed",
+        "would stay",
+        "would have stayed"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: stay."
+    },
+    {
+      "id": "cond_100",
+      "topic": "conditional_sentences",
+      "question": "If she ______ the offer, she would have regretted it.",
+      "options": [
+        "had accepted",
+        "accepted",
+        "accepts",
+        "has accepted"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: had accepted -> would have regretted."
+    },
+    {
+      "id": "cond_101",
+      "topic": "conditional_sentences",
+      "question": "If he ______ time, he would visit us.",
+      "options": [
+        "had",
+        "has",
+        "had had",
+        "will have"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: had (simple past) -> would visit."
+    },
+    {
+      "id": "cond_102",
+      "topic": "conditional_sentences",
+      "question": "If it rains, the grass ______ wet.",
+      "options": [
+        "gets",
+        "got",
+        "would get",
+        "would have gotten"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition: gets."
+    },
+    {
+      "id": "cond_103",
+      "topic": "conditional_sentences",
+      "question": "Unless you ______ permission, you cannot enter.",
+      "options": [
+        "obtain",
+        "obtained",
+        "will obtain",
+        "would obtain"
+      ],
+      "answer": 0,
+      "explanation": "Present simple after unless: obtain."
+    },
+    {
+      "id": "cond_104",
+      "topic": "conditional_sentences",
+      "question": "Had I possessed the required qualification, I ______ applied.",
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "can have"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: would have applied."
+    },
+    {
+      "id": "cond_105",
+      "topic": "conditional_sentences",
+      "question": "If you heat iron, it ______.",
+      "options": [
+        "expands",
+        "expanded",
+        "will expand",
+        "would expand"
+      ],
+      "answer": 0,
+      "explanation": "Scientific fact: expands."
+    },
+    {
+      "id": "conditional_sentences_106",
+      "topic": "conditional_sentences",
+      "question": "If you study sincerely, you ______ high marks.",
+      "options": [
+        "will score",
+        "would score",
+        "would have scored",
+        "scored"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 Open Condition: 'If + present' takes 'will + V1'."
+    },
+    {
+      "id": "conditional_sentences_107",
+      "topic": "conditional_sentences",
+      "question": "If it rains tomorrow, we ______ the picnic.",
+      "options": [
+        "shall cancel",
+        "would cancel",
+        "would have cancelled",
+        "cancelled"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: 'If + rains' takes 'shall/will cancel'."
+    },
+    {
+      "id": "conditional_sentences_108",
+      "topic": "conditional_sentences",
+      "question": "If you boil water, it ______ into steam.",
+      "options": [
+        "turns",
+        "will turn",
+        "would turn",
+        "turned"
+      ],
+      "answer": 0,
+      "explanation": "Zero Condition (Scientific Fact): 'If + present' takes Present Simple ('turns')."
+    },
+    {
+      "id": "conditional_sentences_109",
+      "topic": "conditional_sentences",
+      "question": "If I won a jackpot, I ______ a hospital.",
+      "options": [
+        "would build",
+        "will build",
+        "would have built",
+        "built"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 Hypothetical Condition: 'If + won' (past) takes 'would + build'."
+    },
+    {
+      "id": "conditional_sentences_110",
+      "topic": "conditional_sentences",
+      "question": "If I were the President, I ______ free healthcare.",
+      "options": [
+        "would provide",
+        "will provide",
+        "would have provided",
+        "provided"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 Subjunctive: 'If + were' takes 'would provide'."
+    },
+    {
+      "id": "conditional_sentences_111",
+      "topic": "conditional_sentences",
+      "question": "If she had invited him, he ______ the wedding.",
+      "options": [
+        "would have attended",
+        "would attend",
+        "will attend",
+        "attended"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 Past Unfulfilled: 'If + had invited' takes 'would have attended'."
+    },
+    {
+      "id": "conditional_sentences_112",
+      "topic": "conditional_sentences",
+      "question": "If they had played carefully, they ______ the match.",
+      "options": [
+        "would have won",
+        "would win",
+        "will win",
+        "won"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: 'If + had played' takes 'would have won'."
+    },
+    {
+      "id": "conditional_sentences_113",
+      "topic": "conditional_sentences",
+      "question": "Had I known the truth, I ______ you immediately.",
+      "options": [
+        "would have informed",
+        "would inform",
+        "will inform",
+        "informed"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 3: 'Had I known' = 'If I had known' -> 'would have informed'."
+    },
+    {
+      "id": "conditional_sentences_114",
+      "topic": "conditional_sentences",
+      "question": "Were I a millionaire, I ______ poverty from my village.",
+      "options": [
+        "would eradicate",
+        "will eradicate",
+        "would have eradicated",
+        "eradicated"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 2: 'Were I' = 'If I were' -> 'would eradicate'."
+    },
+    {
+      "id": "conditional_sentences_115",
+      "topic": "conditional_sentences",
+      "question": "Should you meet him, ______ him my regards.",
+      "options": [
+        "give",
+        "will give",
+        "would give",
+        "gave"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 1: 'Should you meet him' = 'If you meet him' -> imperative 'give'."
+    },
+    {
+      "id": "conditional_sentences_116",
+      "topic": "conditional_sentences",
+      "question": "Unless you work hard, you ______ succeed.",
+      "options": [
+        "will not",
+        "would not",
+        "would not have",
+        "did not"
+      ],
+      "answer": 0,
+      "explanation": "'Unless' clause in present takes 'will not' in main clause."
+    },
+    {
+      "id": "conditional_sentences_117",
+      "topic": "conditional_sentences",
+      "question": "Unless he runs fast, he ______ the bus.",
+      "options": [
+        "will miss",
+        "would miss",
+        "would have missed",
+        "missed"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 with 'Unless': takes 'will miss'."
+    },
+    {
+      "id": "conditional_sentences_118",
+      "topic": "conditional_sentences",
+      "question": "Provided that you pay on time, you ______ a discount.",
+      "options": [
+        "will receive",
+        "would receive",
+        "would have received",
+        "received"
+      ],
+      "answer": 0,
+      "explanation": "'Provided that' (if) + present takes 'will receive'."
+    },
+    {
+      "id": "conditional_sentences_119",
+      "topic": "conditional_sentences",
+      "question": "As long as you are honest, nobody ______ harm you.",
+      "options": [
+        "can",
+        "could",
+        "might",
+        "would"
+      ],
+      "answer": 0,
+      "explanation": "'As long as' + present takes modal 'can'."
+    },
+    {
+      "id": "conditional_sentences_120",
+      "topic": "conditional_sentences",
+      "question": "Supposing he refused your offer, what ______ you do?",
+      "options": [
+        "would",
+        "will",
+        "shall",
+        "can"
+      ],
+      "answer": 0,
+      "explanation": "'Supposing + past' (Type 2) takes 'would'."
+    },
+    {
+      "id": "conditional_sentences_121",
+      "topic": "conditional_sentences",
+      "question": "If you heat butter, it ______.",
+      "options": [
+        "melts",
+        "will melt",
+        "would melt",
+        "melted"
+      ],
+      "answer": 0,
+      "explanation": "Zero conditional constant fact takes Present Simple ('melts')."
+    },
+    {
+      "id": "conditional_sentences_122",
+      "topic": "conditional_sentences",
+      "question": "If I had known his address, I ______ him a letter.",
+      "options": [
+        "would have written",
+        "would write",
+        "will write",
+        "wrote"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: 'If + had known' takes 'would have written'."
+    },
+    {
+      "id": "conditional_sentences_123",
+      "topic": "conditional_sentences",
+      "question": "If she worked hard, she ______ the examination.",
+      "options": [
+        "would pass",
+        "will pass",
+        "would have passed",
+        "passed"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: 'If + worked' takes 'would pass'."
+    },
+    {
+      "id": "conditional_sentences_124",
+      "topic": "conditional_sentences",
+      "question": "If you touch a live wire, you ______ an electric shock.",
+      "options": [
+        "get",
+        "would get",
+        "would have got",
+        "got"
+      ],
+      "answer": 0,
+      "explanation": "Scientific certainty takes Present Simple ('get')."
+    },
+    {
+      "id": "conditional_sentences_125",
+      "topic": "conditional_sentences",
+      "question": "If he had taken the medicine, he ______ cured.",
+      "options": [
+        "would have been",
+        "would be",
+        "will be",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 passive: 'would have been cured'."
+    },
+    {
+      "id": "conditional_sentences_126",
+      "topic": "conditional_sentences",
+      "question": "Had the police arrived on time, the bank ______ saved.",
+      "options": [
+        "would have been",
+        "would be",
+        "will be",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 3: takes 'would have been saved'."
+    },
+    {
+      "id": "conditional_sentences_127",
+      "topic": "conditional_sentences",
+      "question": "Were I in your position, I ______ accept the offer.",
+      "options": [
+        "would",
+        "will",
+        "shall",
+        "can"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 inversion takes 'would'."
+    },
+    {
+      "id": "conditional_sentences_128",
+      "topic": "conditional_sentences",
+      "question": "If you drop glass on concrete, it ______.",
+      "options": [
+        "breaks",
+        "will break",
+        "would break",
+        "broke"
+      ],
+      "answer": 0,
+      "explanation": "Zero conditional fact takes 'breaks'."
+    },
+    {
+      "id": "conditional_sentences_129",
+      "topic": "conditional_sentences",
+      "question": "If he drives recklessly, he ______ an accident.",
+      "options": [
+        "will meet with",
+        "would meet with",
+        "would have met",
+        "met"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 takes 'will meet with'."
+    },
+    {
+      "id": "conditional_sentences_130",
+      "topic": "conditional_sentences",
+      "question": "If I had a car, I ______ you a lift.",
+      "options": [
+        "would give",
+        "will give",
+        "would have given",
+        "gave"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: 'If + had' (simple past) takes 'would give'."
+    },
+    {
+      "id": "conditional_sentences_131",
+      "topic": "conditional_sentences",
+      "question": "If he had had money, he ______ bought the house.",
+      "options": [
+        "would have",
+        "would",
+        "will have",
+        "had"
+      ],
+      "answer": 0,
+      "explanation": "Type 3: 'If + had had' (past perfect) takes 'would have bought'."
+    },
+    {
+      "id": "conditional_sentences_132",
+      "topic": "conditional_sentences",
+      "question": "Unless you apologize, I ______ report you to the principal.",
+      "options": [
+        "will",
+        "would",
+        "would have",
+        "did"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 with 'Unless' takes 'will'."
+    },
+    {
+      "id": "conditional_sentences_133",
+      "topic": "conditional_sentences",
+      "question": "If she ______ hard, she will succeed.",
+      "options": [
+        "works",
+        "worked",
+        "had worked",
+        "working"
+      ],
+      "answer": 0,
+      "explanation": "Main clause with 'will succeed' requires Simple Present 'works' in if-clause."
+    },
+    {
+      "id": "conditional_sentences_134",
+      "topic": "conditional_sentences",
+      "question": "If he ______ hard, he would succeed.",
+      "options": [
+        "worked",
+        "works",
+        "had worked",
+        "working"
+      ],
+      "answer": 0,
+      "explanation": "Main clause with 'would succeed' requires Simple Past 'worked' in if-clause."
+    },
+    {
+      "id": "conditional_sentences_135",
+      "topic": "conditional_sentences",
+      "question": "If he ______ hard, he would have succeeded.",
+      "options": [
+        "had worked",
+        "worked",
+        "works",
+        "has worked"
+      ],
+      "answer": 0,
+      "explanation": "Main clause with 'would have succeeded' requires Past Perfect 'had worked'."
+    },
+    {
+      "id": "conditional_sentences_136",
+      "topic": "conditional_sentences",
+      "question": "Had you warned me, I ______ cautious.",
+      "options": [
+        "would have been",
+        "would be",
+        "will be",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 3: takes 'would have been'."
+    },
+    {
+      "id": "conditional_sentences_137",
+      "topic": "conditional_sentences",
+      "question": "If I were a king, you ______ my minister.",
+      "options": [
+        "would be",
+        "will be",
+        "would have been",
+        "were"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 subjunctive takes 'would be'."
+    },
+    {
+      "id": "conditional_sentences_138",
+      "topic": "conditional_sentences",
+      "question": "Should it rain, the match ______ abandoned.",
+      "options": [
+        "will be",
+        "would be",
+        "would have been",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 inversion takes 'will be'."
+    },
+    {
+      "id": "conditional_sentences_139",
+      "topic": "conditional_sentences",
+      "question": "If you press this button, the alarm ______.",
+      "options": [
+        "rings",
+        "will ring",
+        "would ring",
+        "rang"
+      ],
+      "answer": 0,
+      "explanation": "Cause and immediate machine effect takes Present Simple ('rings')."
+    },
+    {
+      "id": "conditional_sentences_140",
+      "topic": "conditional_sentences",
+      "question": "If you had told me earlier, I ______ arranged it.",
+      "options": [
+        "could have",
+        "can",
+        "will have",
+        "may have"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 modal takes 'could have arranged'."
+    },
+    {
+      "id": "conditional_sentences_141",
+      "topic": "conditional_sentences",
+      "question": "If I had time, I ______ accompany you.",
+      "options": [
+        "would",
+        "will",
+        "would have",
+        "had"
+      ],
+      "answer": 0,
+      "explanation": "Type 2: 'If + had' takes 'would accompany'."
+    },
+    {
+      "id": "conditional_sentences_142",
+      "topic": "conditional_sentences",
+      "question": "If he ______ rich, he would help the poor.",
+      "options": [
+        "were",
+        "was",
+        "is",
+        "has been"
+      ],
+      "answer": 0,
+      "explanation": "Unreal conditional takes subjunctive 'were'."
+    },
+    {
+      "id": "conditional_sentences_143",
+      "topic": "conditional_sentences",
+      "question": "If they invite us, we ______ go.",
+      "options": [
+        "shall",
+        "would",
+        "would have",
+        "should have"
+      ],
+      "answer": 0,
+      "explanation": "Type 1: 'If + present' takes 'shall/will go'."
+    },
+    {
+      "id": "conditional_sentences_144",
+      "topic": "conditional_sentences",
+      "question": "If she ______ the truth, she would have told us.",
+      "options": [
+        "had known",
+        "knew",
+        "knows",
+        "has known"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 requires 'had known'."
+    },
+    {
+      "id": "conditional_sentences_145",
+      "topic": "conditional_sentences",
+      "question": "Had I seen the thief, I ______ an alarm.",
+      "options": [
+        "would have raised",
+        "would raise",
+        "will raise",
+        "raised"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 3 takes 'would have raised'."
+    },
+    {
+      "id": "conditional_sentences_146",
+      "topic": "conditional_sentences",
+      "question": "Were he here, he ______ support our decision.",
+      "options": [
+        "would",
+        "will",
+        "shall",
+        "can"
+      ],
+      "answer": 0,
+      "explanation": "Type 2 inversion takes 'would'."
+    },
+    {
+      "id": "conditional_sentences_147",
+      "topic": "conditional_sentences",
+      "question": "If you do not hurry, you ______ the bus.",
+      "options": [
+        "will miss",
+        "would miss",
+        "would have missed",
+        "missed"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 takes 'will miss'."
+    },
+    {
+      "id": "conditional_sentences_148",
+      "topic": "conditional_sentences",
+      "question": "If you ______ ice, it turns into water.",
+      "options": [
+        "heat",
+        "heated",
+        "will heat",
+        "heating"
+      ],
+      "answer": 0,
+      "explanation": "Zero condition takes Present Simple 'heat'."
+    },
+    {
+      "id": "conditional_sentences_149",
+      "topic": "conditional_sentences",
+      "question": "If I had reached earlier, I ______ the chief guest.",
+      "options": [
+        "could have met",
+        "can meet",
+        "will meet",
+        "met"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 takes 'could have met'."
+    },
+    {
+      "id": "conditional_sentences_150",
+      "topic": "conditional_sentences",
+      "question": "If he ______ faster, he would catch the train.",
+      "options": [
+        "ran",
+        "runs",
+        "had run",
+        "running"
+      ],
+      "answer": 0,
+      "explanation": "Main clause with 'would catch' takes Simple Past 'ran'."
+    },
+    {
+      "id": "conditional_sentences_151",
+      "topic": "conditional_sentences",
+      "question": "Unless you study well, you ______ pass.",
+      "options": [
+        "cannot",
+        "could not",
+        "would not have",
+        "did not"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 takes 'cannot pass'."
+    },
+    {
+      "id": "conditional_sentences_152",
+      "topic": "conditional_sentences",
+      "question": "If water reaches 100 degrees Celsius, it ______.",
+      "options": [
+        "boils",
+        "will boil",
+        "would boil",
+        "boiled"
+      ],
+      "answer": 0,
+      "explanation": "Scientific constant fact takes 'boils'."
+    },
+    {
+      "id": "conditional_sentences_153",
+      "topic": "conditional_sentences",
+      "question": "If I had known you were ill, I ______ to see you.",
+      "options": [
+        "would have come",
+        "would come",
+        "will come",
+        "came"
+      ],
+      "answer": 0,
+      "explanation": "Type 3 takes 'would have come'."
+    },
+    {
+      "id": "conditional_sentences_154",
+      "topic": "conditional_sentences",
+      "question": "Had they played with discipline, they ______ defeated.",
+      "options": [
+        "would not have been",
+        "would not be",
+        "will not be",
+        "were not"
+      ],
+      "answer": 0,
+      "explanation": "Inversion of Type 3 takes 'would not have been'."
+    },
+    {
+      "id": "conditional_sentences_155",
+      "topic": "conditional_sentences",
+      "question": "If he ______ carefully, he will avoid errors.",
+      "options": [
+        "writes",
+        "wrote",
+        "had written",
+        "writing"
+      ],
+      "answer": 0,
+      "explanation": "Type 1 if-clause takes 'writes'."
+    }
+  ]
+}

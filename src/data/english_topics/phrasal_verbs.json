@@ -8,12 +8,12 @@
       "topic": "phrasal_verbs",
       "question": "The strike was ______ after negotiations.",
       "options": [
-        "called off",
         "called out",
         "called on",
-        "called for"
+        "called for",
+        "called off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call off' means to cancel an event or strike."
     },
     {
@@ -22,9 +22,9 @@
       "question": "The meeting was ______ until next Monday.",
       "options": [
         "put off",
-        "put out",
         "put away",
-        "put on"
+        "put on",
+        "put out"
       ],
       "answer": 0,
       "explanation": "'Put off' means to postpone or delay."
@@ -34,12 +34,12 @@
       "topic": "phrasal_verbs",
       "question": "Firefighters managed to ______ the fire.",
       "options": [
+        "put up",
         "put out",
         "put on",
-        "put up",
         "put off"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Put out' means to extinguish a fire or light."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "phrasal_verbs",
       "question": "I cannot ______ such rude behavior any longer.",
       "options": [
-        "put up with",
         "put up",
         "put on",
+        "put up with",
         "put down"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Put up with' means to tolerate or endure."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ his jacket because it was warm.",
       "options": [
-        "took off",
         "took on",
-        "took down",
-        "took up"
+        "took off",
+        "took up",
+        "took down"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Take off' means to remove clothing, or for an aircraft to leave the ground."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "phrasal_verbs",
       "question": "The thief tried to ______ from the police.",
       "options": [
-        "run away",
-        "run into",
         "run over",
+        "run into",
+        "run away",
         "run through"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Run away' means to escape from custody or danger."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "phrasal_verbs",
       "question": "I ______ an old friend at the supermarket yesterday.",
       "options": [
-        "ran into",
-        "ran out",
         "ran down",
-        "ran after"
+        "ran after",
+        "ran into",
+        "ran out"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Run into' means to meet someone unexpectedly."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "phrasal_verbs",
       "question": "We have ______ sugar; please buy some.",
       "options": [
-        "run out of",
+        "run down",
         "run out",
-        "run into",
-        "run down"
+        "run out of",
+        "run into"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Run out of' means to have none left; deplete the supply."
     },
     {
@@ -113,9 +113,9 @@
       "question": "The car broke down and we had to ______ help.",
       "options": [
         "call for",
-        "call off",
         "call in",
-        "call on"
+        "call on",
+        "call off"
       ],
       "answer": 0,
       "explanation": "'Call for' means to demand or require help."
@@ -125,12 +125,12 @@
       "topic": "phrasal_verbs",
       "question": "The nurse was instructed to ______ the patient.",
       "options": [
-        "look after",
-        "look into",
         "look down",
-        "look up"
+        "look into",
+        "look up",
+        "look after"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Look after' means to take care of someone."
     },
     {
@@ -139,9 +139,9 @@
       "question": "The police promised to ______ the robbery.",
       "options": [
         "look into",
-        "look after",
         "look at",
-        "look over"
+        "look over",
+        "look after"
       ],
       "answer": 0,
       "explanation": "'Look into' means to investigate."
@@ -152,9 +152,9 @@
       "question": "You can ______ the meaning of this word in a dictionary.",
       "options": [
         "look up",
-        "look for",
+        "look into",
         "look after",
-        "look into"
+        "look for"
       ],
       "answer": 0,
       "explanation": "'Look up' means to search for information in a book/database."
@@ -177,12 +177,12 @@
       "topic": "phrasal_verbs",
       "question": "Students should ______ to their teachers.",
       "options": [
-        "look up",
         "look down",
         "look into",
-        "look for"
+        "look for",
+        "look up"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Look up to' means to respect and admire."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "phrasal_verbs",
       "question": "He promised to ______ his bad habits.",
       "options": [
-        "give up",
-        "give away",
         "give in",
-        "give out"
+        "give out",
+        "give away",
+        "give up"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Give up' means to stop doing or abandon a habit."
     },
     {
@@ -203,12 +203,12 @@
       "topic": "phrasal_verbs",
       "question": "The government refused to ______ to the terrorists' demands.",
       "options": [
+        "give out",
         "give in",
         "give up",
-        "give out",
         "give away"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Give in' means to yield or surrender."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "phrasal_verbs",
       "question": "The chief guest ______ the prizes to the winners.",
       "options": [
-        "gave away",
-        "gave up",
+        "gave out",
         "gave in",
-        "gave out"
+        "gave up",
+        "gave away"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Give away' means to distribute prizes or gifts."
     },
     {
@@ -230,9 +230,9 @@
       "question": "The engine ______ thick black smoke.",
       "options": [
         "gave off",
+        "gave away",
         "gave up",
-        "gave in",
-        "gave away"
+        "gave in"
       ],
       "answer": 0,
       "explanation": "'Give off' means to emit fumes, gas, or smell."
@@ -242,12 +242,12 @@
       "topic": "phrasal_verbs",
       "question": "The bomb ______ in the crowded market.",
       "options": [
+        "went by",
         "went off",
-        "went out",
         "went on",
-        "went by"
+        "went out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Go off' means to explode (bomb) or ring loudly (alarm)."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "phrasal_verbs",
       "question": "Please ______ reading the passage.",
       "options": [
-        "go on",
-        "go off",
         "go through",
-        "go out"
+        "go on",
+        "go out",
+        "go off"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Go on' means to continue."
     },
     {
@@ -269,8 +269,8 @@
       "question": "He ______ great difficulties in his childhood.",
       "options": [
         "went through",
-        "went over",
         "went by",
+        "went over",
         "went into"
       ],
       "answer": 0,
@@ -281,12 +281,12 @@
       "topic": "phrasal_verbs",
       "question": "Can you ______ this report before I submit it?",
       "options": [
-        "go through",
-        "go off",
         "go on",
-        "go out"
+        "go out",
+        "go through",
+        "go off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Go through' also means to examine or check carefully."
     },
     {
@@ -294,12 +294,12 @@
       "topic": "phrasal_verbs",
       "question": "She ______ her grandmother in looks and temper.",
       "options": [
-        "takes after",
-        "takes off",
         "takes down",
+        "takes off",
+        "takes after",
         "takes over"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Take after' means to resemble an older family member."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "phrasal_verbs",
       "question": "The military ______ the administration of the country.",
       "options": [
-        "took over",
-        "took on",
         "took after",
-        "took off"
+        "took off",
+        "took on",
+        "took over"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Take over' means to assume control of something."
     },
     {
@@ -321,9 +321,9 @@
       "question": "He ______ photography as a new hobby.",
       "options": [
         "took up",
-        "took down",
         "took off",
-        "took over"
+        "took over",
+        "took down"
       ],
       "answer": 0,
       "explanation": "'Take up' means to start a new hobby or study."
@@ -334,9 +334,9 @@
       "question": "Please ______ the important points the teacher mentions.",
       "options": [
         "take down",
+        "take after",
         "take up",
-        "take off",
-        "take after"
+        "take off"
       ],
       "answer": 0,
       "explanation": "'Take down' means to write down or record."
@@ -348,8 +348,8 @@
       "options": [
         "broke out",
         "broke down",
-        "broke in",
-        "broke up"
+        "broke up",
+        "broke in"
       ],
       "answer": 0,
       "explanation": "'Break out' means to start suddenly (war, epidemic, fire)."
@@ -359,12 +359,12 @@
       "topic": "phrasal_verbs",
       "question": "The bus ______ on our way to Munnar.",
       "options": [
+        "broke off",
         "broke down",
         "broke out",
-        "broke into",
-        "broke off"
+        "broke into"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Break down' means to stop functioning mechanically."
     },
     {
@@ -374,8 +374,8 @@
       "options": [
         "broke into",
         "broke out",
-        "broke down",
-        "broke up"
+        "broke up",
+        "broke down"
       ],
       "answer": 0,
       "explanation": "'Break into' means to enter illegally by force."
@@ -386,9 +386,9 @@
       "question": "The school ______ for the summer vacation yesterday.",
       "options": [
         "broke up",
-        "broke down",
+        "broke off",
         "broke out",
-        "broke off"
+        "broke down"
       ],
       "answer": 0,
       "explanation": "'Break up' means to close for holidays or disperse."
@@ -398,12 +398,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ all relations with his selfish relatives.",
       "options": [
-        "broke off",
         "broke down",
         "broke into",
-        "broke out"
+        "broke out",
+        "broke off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Break off' means to abruptly end a relationship or conversation."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "phrasal_verbs",
       "question": "She ______ in tears on hearing the tragic news.",
       "options": [
-        "broke down",
         "broke out",
         "broke into",
-        "broke off"
+        "broke off",
+        "broke down"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Break down' also means to lose control of one's emotions and weep."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "phrasal_verbs",
       "question": "He was ______ by his aunt after his parents died.",
       "options": [
-        "brought up",
-        "brought about",
+        "brought in",
         "brought out",
-        "brought in"
+        "brought about",
+        "brought up"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bring up' means to raise and educate a child."
     },
     {
@@ -438,9 +438,9 @@
       "question": "The heavy rains ______ severe flooding.",
       "options": [
         "brought about",
-        "brought up",
+        "brought off",
         "brought out",
-        "brought off"
+        "brought up"
       ],
       "answer": 0,
       "explanation": "'Bring about' means to cause something to happen."
@@ -450,12 +450,12 @@
       "topic": "phrasal_verbs",
       "question": "The publisher has ______ a revised edition of the book.",
       "options": [
-        "brought out",
-        "brought up",
         "brought about",
+        "brought up",
+        "brought out",
         "brought in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bring out' means to publish or release a product."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "phrasal_verbs",
       "question": "New laws were ______ to curb corruption.",
       "options": [
-        "brought in",
-        "brought up",
+        "brought out",
         "brought about",
-        "brought out"
+        "brought up",
+        "brought in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bring in' means to introduce a law or legislation."
     },
     {
@@ -477,8 +477,8 @@
       "question": "The patient was unconscious, but the doctor ______ him around.",
       "options": [
         "brought",
-        "took",
         "put",
+        "took",
         "got"
       ],
       "answer": 0,
@@ -489,12 +489,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ on the Minister at his official residence.",
       "options": [
-        "called",
         "held",
+        "looked",
         "took",
-        "looked"
+        "called"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call on someone' means to pay a visit to a person."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "phrasal_verbs",
       "question": "I will ______ at the bank on my way to work.",
       "options": [
-        "call",
-        "drop",
         "look",
-        "put"
+        "put",
+        "drop",
+        "call"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call at a place' means to visit a place briefly."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "phrasal_verbs",
       "question": "His bad conduct ______ severe punishment.",
       "options": [
-        "calls for",
-        "calls on",
         "calls off",
-        "calls up"
+        "calls for",
+        "calls up",
+        "calls on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Call for' means to demand or warrant."
     },
     {
@@ -529,9 +529,9 @@
       "question": "The old veteran ______ memories of his wartime days.",
       "options": [
         "called up",
-        "called off",
+        "called on",
         "called for",
-        "called on"
+        "called off"
       ],
       "answer": 0,
       "explanation": "'Call up' means to recollect or summon."
@@ -541,12 +541,12 @@
       "topic": "phrasal_verbs",
       "question": "You can always ______ your true friends in times of need.",
       "options": [
+        "count up",
         "count on",
-        "count out",
         "count in",
-        "count up"
+        "count out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Count on' means to rely on or depend upon."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "phrasal_verbs",
       "question": "Prices have ______ significantly over the past year.",
       "options": [
-        "gone up",
-        "gone down",
         "gone off",
-        "gone out"
+        "gone up",
+        "gone out",
+        "gone down"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Go up' means to increase or rise."
     },
     {
@@ -567,12 +567,12 @@
       "topic": "phrasal_verbs",
       "question": "Please ______ the lights before leaving the hall.",
       "options": [
-        "switch off",
-        "switch on",
         "switch in",
-        "switch over"
+        "switch off",
+        "switch over",
+        "switch on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Switch off' means to turn off electrical appliances."
     },
     {
@@ -580,12 +580,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ early in the morning for his long journey.",
       "options": [
-        "set out",
+        "set down",
         "set up",
-        "set in",
-        "set down"
+        "set out",
+        "set in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Set out / Set off' means to begin a journey."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "phrasal_verbs",
       "question": "Winter has ______ early this year.",
       "options": [
-        "set in",
-        "set out",
+        "set off",
         "set up",
-        "set off"
+        "set out",
+        "set in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Set in' means to begin and seem likely to continue (weather, seasons)."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "phrasal_verbs",
       "question": "He wants to ______ a new software company.",
       "options": [
-        "set up",
-        "set out",
         "set in",
-        "set off"
+        "set off",
+        "set out",
+        "set up"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Set up' means to establish or start a business."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "phrasal_verbs",
       "question": "You should ______ some money for a rainy day.",
       "options": [
-        "set aside",
-        "set up",
         "set out",
-        "set in"
+        "set up",
+        "set in",
+        "set aside"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Set aside' means to save or reserve money/time."
     },
     {
@@ -633,8 +633,8 @@
       "question": "The court ______ the verdict of the lower court.",
       "options": [
         "set aside",
-        "set up",
         "set in",
+        "set up",
         "set out"
       ],
       "answer": 0,
@@ -645,12 +645,12 @@
       "topic": "phrasal_verbs",
       "question": "The boy ______ his father.",
       "options": [
-        "takes after",
-        "takes up",
         "takes off",
-        "takes down"
+        "takes down",
+        "takes up",
+        "takes after"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Takes after' means resembles."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "phrasal_verbs",
       "question": "The plane ______ smoothly from the runway.",
       "options": [
+        "took down",
         "took off",
         "took up",
-        "took down",
         "took in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Took off' means became airborne."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "phrasal_verbs",
       "question": "Don't be ______ by his smooth talk.",
       "options": [
-        "taken in",
-        "taken up",
         "taken off",
-        "taken out"
+        "taken out",
+        "taken in",
+        "taken up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Taken in' means deceived or cheated."
     },
     {
@@ -684,12 +684,12 @@
       "topic": "phrasal_verbs",
       "question": "He was asked to ______ the explanation of his absence.",
       "options": [
-        "stand by",
         "bear out",
-        "give in",
-        "put off"
+        "put off",
+        "stand by",
+        "give in"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "'Bear out' means to confirm or support the truth of something."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "phrasal_verbs",
       "question": "I will ______ you whatever happens.",
       "options": [
-        "stand by",
-        "stand up",
         "stand for",
+        "stand up",
+        "stand by",
         "stand out"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Stand by' means to remain loyal and support someone."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "phrasal_verbs",
       "question": "What does the abbreviation PSC ______?",
       "options": [
-        "stand for",
         "stand by",
-        "stand out",
-        "stand up"
+        "stand up",
+        "stand for",
+        "stand out"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Stand for' means to represent or signify."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "phrasal_verbs",
       "question": "Her extraordinary talent makes her ______ in the crowd.",
       "options": [
-        "stand out",
         "stand by",
         "stand for",
+        "stand out",
         "stand in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Stand out' means to be clearly noticeable or distinguished."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "phrasal_verbs",
       "question": "The two brothers ______ over the ancestral property.",
       "options": [
-        "fell out",
-        "fell off",
         "fell through",
-        "fell in"
+        "fell in",
+        "fell out",
+        "fell off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Fall out' means to quarrel or disagree."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "phrasal_verbs",
       "question": "Our holiday plans ______ due to the lockdown.",
       "options": [
+        "fell off",
         "fell through",
         "fell out",
-        "fell off",
         "fell behind"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Fall through' means to fail or come to nothing."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "phrasal_verbs",
       "question": "The roof of the old hut ______ during the heavy storm.",
       "options": [
-        "fell in",
-        "fell out",
+        "fell through",
         "fell off",
-        "fell through"
+        "fell out",
+        "fell in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fall in' means to collapse inwards."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ with his studies during his illness.",
       "options": [
-        "fell behind",
-        "fell out",
         "fell off",
-        "fell through"
+        "fell behind",
+        "fell through",
+        "fell out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Fall behind' means to fail to keep up with pace."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "phrasal_verbs",
       "question": "We should ______ the traditions of our ancestors.",
       "options": [
-        "keep up",
         "keep off",
-        "keep down",
-        "keep away"
+        "keep up",
+        "keep away",
+        "keep down"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Keep up' means to maintain or continue."
     },
     {
@@ -815,8 +815,8 @@
       "question": "Please ______ the grass.",
       "options": [
         "keep off",
-        "keep up",
         "keep in",
+        "keep up",
         "keep on"
       ],
       "answer": 0,
@@ -828,8 +828,8 @@
       "question": "The soldiers managed to ______ the enemy attack.",
       "options": [
         "hold off",
-        "hold on",
         "hold up",
+        "hold on",
         "hold out"
       ],
       "answer": 0,
@@ -840,12 +840,12 @@
       "topic": "phrasal_verbs",
       "question": "Please ______ for a minute while I connect your call.",
       "options": [
-        "hold on",
-        "hold off",
+        "hold out",
         "hold up",
-        "hold out"
+        "hold off",
+        "hold on"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hold on' means to wait briefly on the telephone."
     },
     {
@@ -854,9 +854,9 @@
       "question": "The armed robbers ______ the bank and escaped with cash.",
       "options": [
         "held up",
-        "held on",
         "held off",
-        "held out"
+        "held out",
+        "held on"
       ],
       "answer": 0,
       "explanation": "'Hold up' means to rob using weapons; delay."
@@ -866,12 +866,12 @@
       "topic": "phrasal_verbs",
       "question": "I cannot ______ what he is trying to say.",
       "options": [
-        "make out",
-        "make up",
         "make over",
-        "make off"
+        "make up",
+        "make off",
+        "make out"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Make out' means to decipher, understand, or perceive."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "phrasal_verbs",
       "question": "She ______ an excuse for being late.",
       "options": [
-        "made up",
         "made out",
+        "made up",
         "made over",
         "made off"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Make up' means to invent a story or lie; reconcile."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "phrasal_verbs",
       "question": "The thief ______ with the diamond necklace.",
       "options": [
-        "made off",
-        "made up",
         "made out",
-        "made over"
+        "made off",
+        "made over",
+        "made up"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Make off / Make away with' means to escape with stolen goods."
     },
     {
@@ -906,9 +906,9 @@
       "question": "He ______ all his property to a charitable trust.",
       "options": [
         "made over",
+        "made off",
         "made up",
-        "made out",
-        "made off"
+        "made out"
       ],
       "answer": 0,
       "explanation": "'Make over' means to legally transfer ownership."
@@ -918,12 +918,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ the competition with his brilliant speech.",
       "options": [
-        "carried off",
-        "carried on",
+        "carried away",
         "carried out",
-        "carried away"
+        "carried on",
+        "carried off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Carry off' means to win a prize or handle successfully."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "phrasal_verbs",
       "question": "The soldiers ______ the commander's orders faithfully.",
       "options": [
-        "carried out",
-        "carried off",
         "carried on",
-        "carried away"
+        "carried away",
+        "carried out",
+        "carried off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Carry out' means to execute or perform an order/task."
     },
     {
@@ -945,9 +945,9 @@
       "question": "Please ______ with your work without interruption.",
       "options": [
         "carry on",
-        "carry out",
+        "carry away",
         "carry off",
-        "carry away"
+        "carry out"
       ],
       "answer": 0,
       "explanation": "'Carry on' means to continue doing something."
@@ -957,12 +957,12 @@
       "topic": "phrasal_verbs",
       "question": "He was ______ by emotion and began to cry.",
       "options": [
-        "carried away",
         "carried out",
-        "carried on",
-        "carried off"
+        "carried away",
+        "carried off",
+        "carried on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Carry away' means to lose self-control through enthusiasm or emotion."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ all his ancestral wealth in gambling.",
       "options": [
-        "ran through",
         "ran into",
         "ran out",
-        "ran down"
+        "ran down",
+        "ran through"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Run through' means to spend or squander money quickly."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "phrasal_verbs",
       "question": "The battery has ______ completely.",
       "options": [
+        "run through",
         "run down",
         "run out",
-        "run through",
         "run into"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Run down' means to lose charge or become exhausted."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "phrasal_verbs",
       "question": "Don't ______ other people in public.",
       "options": [
+        "run over",
         "run down",
         "run into",
-        "run out",
-        "run over"
+        "run out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Run down' also means to criticize or speak ill of someone."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "phrasal_verbs",
       "question": "She ______ her father's footsteps and became a doctor.",
       "options": [
-        "followed in",
-        "followed through",
         "followed up",
-        "followed out"
+        "followed through",
+        "followed out",
+        "followed in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Follow in someone's footsteps' means to pursue the same career."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "phrasal_verbs",
       "question": "The police decided to ______ the lead given by the informant.",
       "options": [
-        "follow up",
-        "follow through",
         "follow out",
-        "follow in"
+        "follow in",
+        "follow up",
+        "follow through"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Follow up' means to investigate further."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "phrasal_verbs",
       "question": "He managed to ______ his graduation despite financial hurdles.",
       "options": [
-        "get through",
-        "get over",
         "get by",
-        "get along"
+        "get over",
+        "get along",
+        "get through"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Get through' means to successfully complete an exam or hurdle."
     },
     {
@@ -1062,9 +1062,9 @@
       "question": "It took him months to ______ the shock of his loss.",
       "options": [
         "get over",
+        "get away",
         "get through",
-        "get by",
-        "get away"
+        "get by"
       ],
       "answer": 0,
       "explanation": "'Get over' means to recover from an illness, shock, or grief."
@@ -1087,12 +1087,12 @@
       "topic": "phrasal_verbs",
       "question": "The thief managed to ______ through the back door.",
       "options": [
-        "get away",
         "get over",
-        "get by",
-        "get through"
+        "get through",
+        "get away",
+        "get by"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Get away' means to escape."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "phrasal_verbs",
       "question": "With a small salary, it is hard to ______.",
       "options": [
-        "get by",
-        "get over",
         "get along",
-        "get through"
+        "get through",
+        "get by",
+        "get over"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Get by' means to manage or survive financially."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "phrasal_verbs",
       "question": "He promised to ______ the lost time by working on weekends.",
       "options": [
-        "make up for",
-        "make up",
         "make out",
-        "make off"
+        "make off",
+        "make up",
+        "make up for"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Make up for' means to compensate for something."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "phrasal_verbs",
       "question": "I will ______ your application to the committee.",
       "options": [
-        "put forward",
-        "put off",
         "put out",
-        "put up"
+        "put up",
+        "put off",
+        "put forward"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Put forward' means to propose or recommend an idea/candidate."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ at a luxury hotel during his stay in Kochi.",
       "options": [
-        "put up",
-        "put on",
         "put out",
-        "put off"
+        "put on",
+        "put off",
+        "put up"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Put up' means to stay temporarily or lodge."
     },
     {
@@ -1166,8 +1166,8 @@
       "question": "He ______ weight after quitting exercise.",
       "options": [
         "put on",
-        "put off",
         "put out",
+        "put off",
         "put up"
       ],
       "answer": 0,
@@ -1178,12 +1178,12 @@
       "topic": "phrasal_verbs",
       "question": "The doctor told him to ______ sugar.",
       "options": [
+        "cut out",
         "cut down on",
         "cut off",
-        "cut out",
         "cut into"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Cut down on' means to reduce consumption of something."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "phrasal_verbs",
       "question": "The storm ______ power supplies to the entire village.",
       "options": [
-        "cut off",
-        "cut down",
+        "cut out",
         "cut in",
-        "cut out"
+        "cut off",
+        "cut down"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cut off' means to disconnect or sever."
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ while his father was talking.",
       "options": [
-        "cut in",
-        "cut off",
+        "cut out",
         "cut down",
-        "cut out"
+        "cut in",
+        "cut off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cut in' means to interrupt someone speaking."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "phrasal_verbs",
       "question": "She is well ______ for a career in teaching.",
       "options": [
-        "cut out",
-        "cut off",
+        "cut in",
         "cut down",
-        "cut in"
+        "cut out",
+        "cut off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cut out for' means naturally suited or qualified for."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ his jacket and went out in the rain.",
       "options": [
-        "put on",
         "put off",
+        "put on",
         "put down",
         "put away"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Put on' means to wear clothes."
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "phrasal_verbs",
       "question": "Please ______ your toys in the cupboard.",
       "options": [
-        "put away",
-        "put off",
         "put on",
-        "put out"
+        "put away",
+        "put out",
+        "put off"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Put away' means to store in proper place."
     },
     {
@@ -1256,12 +1256,12 @@
       "topic": "phrasal_verbs",
       "question": "The rebellion was swiftly ______ by the army.",
       "options": [
-        "put down",
-        "put up",
+        "put out",
         "put off",
-        "put out"
+        "put up",
+        "put down"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Put down' means to suppress a rebellion or record in writing."
     },
     {
@@ -1270,9 +1270,9 @@
       "question": "I will ______ with him about the missing keys.",
       "options": [
         "take up",
-        "take down",
         "take off",
-        "take after"
+        "take after",
+        "take down"
       ],
       "answer": 0,
       "explanation": "'Take up with' means to discuss a problem with someone."
@@ -1282,12 +1282,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ his watch to see the time.",
       "options": [
-        "looked at",
         "looked into",
         "looked after",
-        "looked up"
+        "looked up",
+        "looked at"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Look at' means to direct eyes toward."
     },
     {
@@ -1296,9 +1296,9 @@
       "question": "We are ______ seeing you at the reunion.",
       "options": [
         "looking forward to",
-        "looking up to",
+        "looking over",
         "looking into",
-        "looking over"
+        "looking up to"
       ],
       "answer": 0,
       "explanation": "'Looking forward to' means anticipating with pleasure."
@@ -1308,12 +1308,12 @@
       "topic": "phrasal_verbs",
       "question": "The factory ______ 500 cars a week.",
       "options": [
+        "turns down",
         "turns out",
         "turns up",
-        "turns down",
         "turns away"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Turn out' means to produce or manufacture."
     },
     {
@@ -1321,12 +1321,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ the lucrative job offer in London.",
       "options": [
-        "turned down",
         "turned up",
+        "turned down",
         "turned out",
         "turned in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Turn down' means to reject or refuse an offer."
     },
     {
@@ -1335,9 +1335,9 @@
       "question": "He ______ late for the interview.",
       "options": [
         "turned up",
-        "turned down",
         "turned out",
-        "turned off"
+        "turned off",
+        "turned down"
       ],
       "answer": 0,
       "explanation": "'Turn up' means to arrive or appear."
@@ -1347,12 +1347,12 @@
       "topic": "phrasal_verbs",
       "question": "Please ______ the volume of the radio.",
       "options": [
-        "turn down",
-        "turn off",
         "turn up",
-        "turn on"
+        "turn on",
+        "turn off",
+        "turn down"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Turn down' means reduce intensity; 'Turn up' means increase."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "phrasal_verbs",
       "question": "The caterpillar ______ a beautiful butterfly.",
       "options": [
-        "turned into",
+        "turned on",
         "turned out",
         "turned up",
-        "turned on"
+        "turned into"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Turn into' means to transform or become."
     },
     {
@@ -1374,8 +1374,8 @@
       "question": "The fire brigade managed to ______ the blaze.",
       "options": [
         "put out",
-        "put off",
         "put up",
+        "put off",
         "put down"
       ],
       "answer": 0,
@@ -1386,12 +1386,12 @@
       "topic": "phrasal_verbs",
       "question": "The meeting was ______ due to lack of quorum.",
       "options": [
-        "put off",
-        "put out",
+        "put down",
         "put away",
-        "put down"
+        "put out",
+        "put off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Put off' means to postpone or delay."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "phrasal_verbs",
       "question": "He decided to ______ smoking for good.",
       "options": [
+        "give away",
         "give up",
-        "give in",
         "give out",
-        "give away"
+        "give in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Give up' means to quit or abandon a habit."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "phrasal_verbs",
       "question": "The enemy finally ______ to the armed forces.",
       "options": [
-        "gave in",
-        "gave up",
+        "gave away",
         "gave out",
-        "gave away"
+        "gave up",
+        "gave in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Give in' means to surrender or yield."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "phrasal_verbs",
       "question": "The Governor ______ the annual prizes to students.",
       "options": [
-        "gave away",
-        "gave out",
+        "gave up",
         "gave in",
-        "gave up"
+        "gave out",
+        "gave away"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Give away' means to distribute prizes or gifts."
     },
     {
@@ -1451,12 +1451,12 @@
       "topic": "phrasal_verbs",
       "question": "Cholera ______ in the village during the monsoon.",
       "options": [
-        "broke out",
-        "broke into",
         "broke down",
+        "broke into",
+        "broke out",
         "broke up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Break out' means to start suddenly (war, epidemic, fire)."
     },
     {
@@ -1465,9 +1465,9 @@
       "question": "A thief ______ the bank at midnight.",
       "options": [
         "broke into",
+        "broke through",
         "broke out",
-        "broke down",
-        "broke through"
+        "broke down"
       ],
       "answer": 0,
       "explanation": "'Break into' means to enter by force or illegally."
@@ -1477,12 +1477,12 @@
       "topic": "phrasal_verbs",
       "question": "Her car ______ on the expressway.",
       "options": [
-        "broke down",
-        "broke out",
         "broke in",
-        "broke through"
+        "broke out",
+        "broke through",
+        "broke down"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Break down' means to cease functioning mechanically."
     },
     {
@@ -1491,9 +1491,9 @@
       "question": "The school ______ for the summer vacation.",
       "options": [
         "broke up",
-        "broke down",
         "broke out",
-        "broke off"
+        "broke off",
+        "broke down"
       ],
       "answer": 0,
       "explanation": "'Break up' means to disperse or end sessions."
@@ -1503,12 +1503,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ his uncle in temperament.",
       "options": [
-        "takes after",
         "takes off",
         "takes down",
+        "takes after",
         "takes over"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Take after' means to resemble an older relative."
     },
     {
@@ -1518,8 +1518,8 @@
       "options": [
         "take off",
         "take up",
-        "take on",
-        "take in"
+        "take in",
+        "take on"
       ],
       "answer": 0,
       "explanation": "'Take off' means to leave the ground and start flying."
@@ -1530,9 +1530,9 @@
       "question": "Please ______ notes of the lecture.",
       "options": [
         "take down",
-        "take up",
         "take off",
-        "take over"
+        "take over",
+        "take up"
       ],
       "answer": 0,
       "explanation": "'Take down' means to write or record in writing."
@@ -1555,12 +1555,12 @@
       "topic": "phrasal_verbs",
       "question": "The police are ______ the mysterious murder.",
       "options": [
-        "looking into",
         "looking for",
         "looking after",
+        "looking into",
         "looking at"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Look into' means to investigate."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "phrasal_verbs",
       "question": "She ______ her aged parents with great affection.",
       "options": [
-        "looks after",
         "looks into",
-        "looks at",
-        "looks for"
+        "looks after",
+        "looks for",
+        "looks at"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Look after' means to take care of."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "phrasal_verbs",
       "question": "I am ______ my missing car keys.",
       "options": [
-        "looking for",
         "looking into",
         "looking after",
+        "looking for",
         "looking up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Look for' means to search for."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "phrasal_verbs",
       "question": "You should ______ the word in the dictionary.",
       "options": [
-        "look up",
-        "look for",
         "look after",
-        "look out"
+        "look out",
+        "look up",
+        "look for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Look up' means to search for information in a reference book."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ his poor relatives with disdain.",
       "options": [
-        "looks down upon",
-        "looks up to",
+        "looks into",
         "looks after",
-        "looks into"
+        "looks up to",
+        "looks down upon"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Look down upon' means to regard with contempt."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "phrasal_verbs",
       "question": "Students always ______ their inspiring mentor.",
       "options": [
-        "look up to",
         "look down upon",
-        "look for",
-        "look at"
+        "look at",
+        "look up to",
+        "look for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Look up to' means to admire and respect."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "phrasal_verbs",
       "question": "The workers ______ the strike after fruitful talks.",
       "options": [
-        "called off",
-        "called on",
         "called for",
-        "called out"
+        "called on",
+        "called out",
+        "called off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call off' means to cancel an event or strike."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "phrasal_verbs",
       "question": "The minister ______ the flood-affected areas.",
       "options": [
+        "called off",
         "called on",
         "called at",
-        "called for",
-        "called off"
+        "called for"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Call on' means to visit a person; 'call at' means to visit a place."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "phrasal_verbs",
       "question": "The ship ______ Cochin port for refueling.",
       "options": [
+        "called out",
         "called at",
-        "called on",
         "called for",
-        "called out"
+        "called on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Call at' a place."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "phrasal_verbs",
       "question": "The serious crisis ______ immediate action.",
       "options": [
-        "calls for",
-        "calls on",
+        "calls off",
         "calls in",
-        "calls off"
+        "calls on",
+        "calls for"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call for' means to require or demand."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "phrasal_verbs",
       "question": "Please ______ a doctor immediately.",
       "options": [
-        "call in",
         "call out",
+        "call up",
         "call on",
-        "call up"
+        "call in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call in' means to summon a specialist for help."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "phrasal_verbs",
       "question": "I cannot ______ what he is saying.",
       "options": [
-        "make out",
         "make up",
+        "make off",
         "make over",
-        "make off"
+        "make out"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Make out' means to understand or decipher."
     },
     {
@@ -1712,8 +1712,8 @@
       "question": "She ______ a fantastic excuse for being late.",
       "options": [
         "made up",
-        "made out",
         "made over",
+        "made out",
         "made off"
       ],
       "answer": 0,
@@ -1724,12 +1724,12 @@
       "topic": "phrasal_verbs",
       "question": "The burglar ______ with the gold jewels.",
       "options": [
-        "made off",
+        "made over",
         "made out",
-        "made up",
-        "made over"
+        "made off",
+        "made up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Make off' means to escape or hurry away with stolen goods."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ the property to his nephew.",
       "options": [
+        "made off",
         "made over",
-        "made out",
         "made up",
-        "made off"
+        "made out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Make over' means to legally transfer ownership."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "phrasal_verbs",
       "question": "He was ______ by his maternal grandmother.",
       "options": [
-        "brought up",
-        "brought out",
+        "brought about",
         "brought in",
-        "brought about"
+        "brought out",
+        "brought up"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bring up' means to rear and educate a child."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "phrasal_verbs",
       "question": "The publisher has ______ a revised edition.",
       "options": [
-        "brought out",
         "brought up",
         "brought in",
-        "brought about"
+        "brought about",
+        "brought out"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bring out' means to publish or release."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "phrasal_verbs",
       "question": "His carelessness ______ his financial ruin.",
       "options": [
-        "brought about",
         "brought out",
+        "brought in",
         "brought up",
-        "brought in"
+        "brought about"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bring about' means to cause to happen."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "phrasal_verbs",
       "question": "The government ______ a new agricultural policy.",
       "options": [
+        "brought on",
         "brought in",
-        "brought up",
         "brought out",
-        "brought on"
+        "brought up"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bring in' means to introduce a bill or policy."
     },
     {
@@ -1802,12 +1802,12 @@
       "topic": "phrasal_verbs",
       "question": "The soldiers ______ the commander's orders faithfully.",
       "options": [
-        "carried out",
-        "carried on",
         "carried off",
-        "carried away"
+        "carried out",
+        "carried away",
+        "carried on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Carry out' means to execute or fulfill orders."
     },
     {
@@ -1817,8 +1817,8 @@
       "options": [
         "carry on",
         "carry out",
-        "carry off",
-        "carry away"
+        "carry away",
+        "carry off"
       ],
       "answer": 0,
       "explanation": "'Carry on' means to continue doing something."
@@ -1828,12 +1828,12 @@
       "topic": "phrasal_verbs",
       "question": "He was ______ by the enthusiastic applause.",
       "options": [
-        "carried away",
         "carried out",
+        "carried away",
         "carried on",
         "carried off"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Carry away' means to be overcome by emotion or excitement."
     },
     {
@@ -1842,9 +1842,9 @@
       "question": "He ______ with five prestigious gold medals.",
       "options": [
         "carried off",
-        "carried on",
+        "carried away",
         "carried out",
-        "carried away"
+        "carried on"
       ],
       "answer": 0,
       "explanation": "'Carry off' means to win or handle successfully."
@@ -1854,12 +1854,12 @@
       "topic": "phrasal_verbs",
       "question": "I ______ an old friend at the railway station.",
       "options": [
-        "came across",
         "came by",
-        "came upon",
-        "came into"
+        "came into",
+        "came across",
+        "came upon"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Come across' means to meet or find by chance."
     },
     {
@@ -1868,9 +1868,9 @@
       "question": "How did you ______ this rare antique coin?",
       "options": [
         "come by",
-        "come across",
         "come into",
-        "come out"
+        "come out",
+        "come across"
       ],
       "answer": 0,
       "explanation": "'Come by' means to acquire or obtain."
@@ -1880,12 +1880,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ a massive fortune after his father's death.",
       "options": [
-        "came into",
-        "came across",
         "came by",
-        "came about"
+        "came across",
+        "came about",
+        "came into"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Come into' means to inherit money or property."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "phrasal_verbs",
       "question": "How did this terrible misunderstanding ______?",
       "options": [
+        "come by",
         "come about",
         "come across",
-        "come into",
-        "come by"
+        "come into"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Come about' means to happen or occur."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "phrasal_verbs",
       "question": "The patient has ______ after anesthesia.",
       "options": [
-        "come to / come round",
-        "come off",
+        "come upon",
         "come over",
-        "come upon"
+        "come off",
+        "come to / come round"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Come round / Come to' means to regain consciousness."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "phrasal_verbs",
       "question": "We have ______ sugar; please buy some from the grocery.",
       "options": [
+        "run over",
         "run out of",
         "run into",
-        "run over",
         "run down"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Run out of' means to deplete the entire supply of something."
     },
     {
@@ -1933,9 +1933,9 @@
       "question": "The reckless speeding car ______ a stray dog.",
       "options": [
         "ran over",
-        "ran into",
+        "ran down",
         "ran out",
-        "ran down"
+        "ran into"
       ],
       "answer": 0,
       "explanation": "'Run over' means to knock down and drive over."
@@ -1945,12 +1945,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ heavy debts due to gambling.",
       "options": [
-        "ran into",
-        "ran over",
         "ran out",
-        "ran down"
+        "ran down",
+        "ran into",
+        "ran over"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Run into' means to encounter problems or incur debts."
     },
     {
@@ -1959,8 +1959,8 @@
       "question": "Don't ______ your colleagues in public.",
       "options": [
         "run down",
-        "run out",
         "run over",
+        "run out",
         "run into"
       ],
       "answer": 0,
@@ -1971,12 +1971,12 @@
       "topic": "phrasal_verbs",
       "question": "I ______ at the airport to receive the chief guest.",
       "options": [
-        "turned up",
+        "turned in",
         "turned down",
-        "turned out",
-        "turned in"
+        "turned up",
+        "turned out"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Turn up' means to arrive or appear."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "phrasal_verbs",
       "question": "The manager ______ my leave application.",
       "options": [
-        "turned down",
-        "turned up",
+        "turned off",
         "turned out",
-        "turned off"
+        "turned down",
+        "turned up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Turn down' means to reject or refuse."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "phrasal_verbs",
       "question": "The rumor ______ to be completely baseless.",
       "options": [
-        "turned out",
-        "turned up",
+        "turned off",
         "turned down",
-        "turned off"
+        "turned up",
+        "turned out"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Turn out' means to prove to be in the end."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "phrasal_verbs",
       "question": "He ______ early after a tiring journey.",
       "options": [
-        "turned in",
-        "turned up",
         "turned down",
+        "turned up",
+        "turned in",
         "turned out"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Turn in' means to go to bed."
     },
     {
@@ -2023,12 +2023,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To comply with a rule, decision, or promise'?",
       "options": [
-        "Abide by",
-        "Abide out",
         "Abide off",
-        "Abide up"
+        "Abide up",
+        "Abide out",
+        "Abide by"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Abide by' means 'To comply with a rule, decision, or promise'. Example: You must abide by the rules of the institution."
     },
     {
@@ -2036,12 +2036,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To misbehave or malfunction'?",
       "options": [
+        "Act away",
         "Act up",
-        "Act out",
         "Act off",
-        "Act away"
+        "Act out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Act up' means 'To misbehave or malfunction'. Example: The car engine started to act up on the steep incline."
     },
     {
@@ -2050,9 +2050,9 @@
       "question": "Which phrasal verb means 'To make sense or seem logical'?",
       "options": [
         "Add up",
+        "Add away",
         "Add out",
-        "Add off",
-        "Add away"
+        "Add off"
       ],
       "answer": 0,
       "explanation": "'Add up' means 'To make sense or seem logical'. Example: His conflicting statements simply do not add up."
@@ -2064,8 +2064,8 @@
       "options": [
         "Answer back",
         "Answer out",
-        "Answer off",
-        "Answer up"
+        "Answer up",
+        "Answer off"
       ],
       "answer": 0,
       "explanation": "'Answer back' means 'To reply rudely or defiantly'. Example: The insolent child answered back to the teacher."
@@ -2075,12 +2075,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To inquire with multiple people'?",
       "options": [
-        "Ask around",
+        "Ask up",
         "Ask out",
-        "Ask off",
-        "Ask up"
+        "Ask around",
+        "Ask off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ask around' means 'To inquire with multiple people'. Example: I asked around to find a good mechanic in town."
     },
     {
@@ -2089,9 +2089,9 @@
       "question": "Which phrasal verb means 'To move backwards due to fear'?",
       "options": [
         "Back away",
-        "Back out",
+        "Back up",
         "Back off",
-        "Back up"
+        "Back out"
       ],
       "answer": 0,
       "explanation": "'Back away' means 'To move backwards due to fear'. Example: The security guard backed away from the barking dog."
@@ -2101,12 +2101,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To concede or yield in an argument'?",
       "options": [
-        "Back down",
         "Back out",
+        "Back down",
         "Back off",
         "Back up"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Back down' means 'To concede or yield in an argument'. Example: Neither political party was willing to back down."
     },
     {
@@ -2127,12 +2127,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To enter forcibly or interrupt a conversation'?",
       "options": [
-        "Break in",
-        "Break out",
         "Break off",
+        "Break out",
+        "Break in",
         "Break up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Break in' means 'To enter forcibly or interrupt a conversation'. Example: Thieves broke in while the family was away."
     },
     {
@@ -2140,12 +2140,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To dismiss or ignore someone'?",
       "options": [
-        "Brush off",
-        "Brush out",
         "Brush up",
-        "Brush away"
+        "Brush out",
+        "Brush away",
+        "Brush off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Brush off' means 'To dismiss or ignore someone'. Example: The manager brushed off the employee's genuine complaints."
     },
     {
@@ -2153,12 +2153,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To become physically or mentally exhausted'?",
       "options": [
-        "Burn out",
         "Burn off",
+        "Burn out",
         "Burn up",
         "Burn away"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Burn out' means 'To become physically or mentally exhausted'. Example: Working overtime continuously caused him to burn out."
     },
     {
@@ -2166,12 +2166,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To do something you missed or fell behind on'?",
       "options": [
-        "Catch up on",
         "Catch out",
-        "Catch off",
-        "Catch up"
+        "Catch up",
+        "Catch up on",
+        "Catch off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Catch up on' means 'To do something you missed or fell behind on'. Example: I need to catch up on my reading this weekend."
     },
     {
@@ -2181,8 +2181,8 @@
       "options": [
         "Cheer on",
         "Cheer out",
-        "Cheer off",
-        "Cheer up"
+        "Cheer up",
+        "Cheer off"
       ],
       "answer": 0,
       "explanation": "'Cheer on' means 'To shout encouragement to someone'. Example: The home crowd cheered on the runners at the finish line."
@@ -2192,12 +2192,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To decide not to do something out of fear'?",
       "options": [
-        "Chicken out",
-        "Chicken off",
+        "Chicken away",
         "Chicken up",
-        "Chicken away"
+        "Chicken out",
+        "Chicken off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Chicken out' means 'To decide not to do something out of fear'. Example: He wanted to skydive but chickened out at the last minute."
     },
     {
@@ -2205,12 +2205,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To contribute money or interrupt with a comment'?",
       "options": [
-        "Chip in",
+        "Chip up",
         "Chip out",
-        "Chip off",
-        "Chip up"
+        "Chip in",
+        "Chip off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Chip in' means 'To contribute money or interrupt with a comment'. Example: All colleagues chipped in to buy a retirement gift."
     },
     {
@@ -2218,12 +2218,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To enforce strict restrictions against something'?",
       "options": [
-        "Clamp down on",
         "Clamp out",
+        "Clamp down on",
         "Clamp off",
         "Clamp up"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Clamp down on' means 'To enforce strict restrictions against something'. Example: Police are clamping down on drunk driving."
     },
     {
@@ -2231,12 +2231,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To change one's opinion or regain consciousness'?",
       "options": [
-        "Come around",
-        "Come out",
+        "Come up",
         "Come off",
-        "Come up"
+        "Come out",
+        "Come around"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Come around' means 'To change one's opinion or regain consciousness'. Example: He eventually came around to our perspective."
     },
     {
@@ -2244,12 +2244,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To volunteer information or help'?",
       "options": [
-        "Come forward",
         "Come out",
-        "Come off",
-        "Come up"
+        "Come up",
+        "Come forward",
+        "Come off"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Come forward' means 'To volunteer information or help'. Example: Witnesses were urged to come forward."
     },
     {
@@ -2257,12 +2257,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To interrupt someone who is speaking'?",
       "options": [
-        "Cut in",
-        "Cut out",
+        "Cut up",
         "Cut off",
-        "Cut up"
+        "Cut out",
+        "Cut in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cut in' means 'To interrupt someone who is speaking'. Example: She politely cut in with an urgent clarification."
     },
     {
@@ -2270,12 +2270,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To delete, remove, or cease functioning'?",
       "options": [
-        "Cut out",
-        "Cut off",
+        "Cut away",
         "Cut up",
-        "Cut away"
+        "Cut off",
+        "Cut out"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cut out' means 'To delete, remove, or cease functioning'. Example: Cut out junk food to improve your health."
     },
     {
@@ -2283,12 +2283,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To act foolishly or clown around to make people laugh'?",
       "options": [
+        "Cut away",
         "Cut up",
-        "Cut out",
         "Cut off",
-        "Cut away"
+        "Cut out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Cut up' means 'To act foolishly or clown around to make people laugh'. Example: The boys cut up during the boring lecture."
     },
     {
@@ -2297,9 +2297,9 @@
       "question": "Which phrasal verb means 'To examine something deeply and thoroughly'?",
       "options": [
         "Delve into",
+        "Delve up",
         "Delve out",
-        "Delve off",
-        "Delve up"
+        "Delve off"
       ],
       "answer": 0,
       "explanation": "'Delve into' means 'To examine something deeply and thoroughly'. Example: The journalist delved into the corruption scandal."
@@ -2310,9 +2310,9 @@
       "question": "Which phrasal verb means 'To investigate thoroughly or start eating enthusiastically'?",
       "options": [
         "Dig into",
-        "Dig out",
+        "Dig up",
         "Dig off",
-        "Dig up"
+        "Dig out"
       ],
       "answer": 0,
       "explanation": "'Dig into' means 'To investigate thoroughly or start eating enthusiastically'. Example: They dug into the delicious feast immediately."
@@ -2322,12 +2322,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To abolish or get rid of something'?",
       "options": [
-        "Do away with",
-        "Do out",
         "Do off",
-        "Do up"
+        "Do up",
+        "Do away with",
+        "Do out"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Do away with' means 'To abolish or get rid of something'. Example: The government decided to do away with obsolete regulations."
     },
     {
@@ -2336,9 +2336,9 @@
       "question": "Which phrasal verb means 'To fasten, tie, or renovate'?",
       "options": [
         "Do up",
-        "Do out",
         "Do off",
-        "Do away"
+        "Do away",
+        "Do out"
       ],
       "answer": 0,
       "explanation": "'Do up' means 'To fasten, tie, or renovate'. Example: Do up your shoelaces before running."
@@ -2348,12 +2348,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To fall lightly asleep'?",
       "options": [
-        "Doze off",
-        "Doze out",
         "Doze up",
-        "Doze away"
+        "Doze out",
+        "Doze away",
+        "Doze off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Doze off' means 'To fall lightly asleep'. Example: He dozed off during the long afternoon seminar."
     },
     {
@@ -2361,12 +2361,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To continue for longer than expected'?",
       "options": [
-        "Drag on",
         "Drag out",
         "Drag off",
+        "Drag on",
         "Drag up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Drag on' means 'To continue for longer than expected'. Example: The court dispute dragged on for fifteen years."
     },
     {
@@ -2374,12 +2374,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To pay an informal, brief visit'?",
       "options": [
-        "Drop by",
-        "Drop out",
         "Drop off",
-        "Drop up"
+        "Drop up",
+        "Drop out",
+        "Drop by"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Drop by' means 'To pay an informal, brief visit'. Example: Drop by my office whenever you are in the city."
     },
     {
@@ -2387,12 +2387,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To start doing something gradually'?",
       "options": [
-        "Ease into",
-        "Ease out",
         "Ease off",
+        "Ease out",
+        "Ease into",
         "Ease up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ease into' means 'To start doing something gradually'. Example: Ease into your new workout routine slowly."
     },
     {
@@ -2400,12 +2400,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To lessen in intensity or severity'?",
       "options": [
-        "Ease off",
-        "Ease out",
+        "Ease away",
         "Ease up",
-        "Ease away"
+        "Ease out",
+        "Ease off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ease off' means 'To lessen in intensity or severity'. Example: The heavy rain eased off by midnight."
     },
     {
@@ -2414,8 +2414,8 @@
       "question": "Which phrasal verb means 'To encourage or incite someone to do something reckless'?",
       "options": [
         "Egg on",
-        "Egg out",
         "Egg off",
+        "Egg out",
         "Egg up"
       ],
       "answer": 0,
@@ -2427,8 +2427,8 @@
       "question": "Which phrasal verb means 'To fail to materialize or collapse as a plan'?",
       "options": [
         "Fall through",
-        "Fall out",
         "Fall off",
+        "Fall out",
         "Fall up"
       ],
       "answer": 0,
@@ -2439,12 +2439,12 @@
       "topic": "phrasal_verbs",
       "question": "Which phrasal verb means 'To escape blame or punishment'?",
       "options": [
-        "Get away with",
         "Get out",
         "Get off",
+        "Get away with",
         "Get up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Get away with' means 'To escape blame or punishment'. Example: He managed to get away with a petty traffic violation."
     }
   ]

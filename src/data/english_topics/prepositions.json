@@ -9,9 +9,9 @@
       "question": "He is accused ______ murder.",
       "options": [
         "of",
-        "with",
         "for",
-        "by"
+        "by",
+        "with"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'accused of' a crime."
@@ -21,12 +21,12 @@
       "topic": "prepositions",
       "question": "She died ______ cancer.",
       "options": [
+        "by",
         "of",
-        "from",
         "with",
-        "by"
+        "from"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Die of a disease ('died of cancer'); die from an indirect cause ('died from overwork')."
     },
     {
@@ -35,9 +35,9 @@
       "question": "He died ______ loss of blood.",
       "options": [
         "from",
-        "of",
         "with",
-        "by"
+        "by",
+        "of"
       ],
       "answer": 0,
       "explanation": "'Died from' an injury, external factor, or loss of blood."
@@ -47,12 +47,12 @@
       "topic": "prepositions",
       "question": "He is senior ______ me by two years.",
       "options": [
-        "to",
         "than",
+        "of",
         "from",
-        "of"
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin comparative adjectives (senior, junior, prior, superior, inferior) take 'to', not 'than'."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "prepositions",
       "question": "This cloth is superior ______ that one.",
       "options": [
-        "to",
+        "over",
         "than",
-        "from",
-        "over"
+        "to",
+        "from"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Superior' takes preposition 'to'."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "prepositions",
       "question": "She is junior ______ all her colleagues.",
       "options": [
-        "to",
-        "than",
         "from",
-        "by"
+        "than",
+        "by",
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Junior' takes preposition 'to'."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "prepositions",
       "question": "He prefers tea ______ coffee.",
       "options": [
-        "to",
         "than",
-        "over",
-        "from"
+        "from",
+        "to",
+        "over"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Prefer' takes preposition 'to' ('prefer tea to coffee')."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "prepositions",
       "question": "The police are looking ______ the theft case.",
       "options": [
-        "into",
-        "after",
+        "at",
         "for",
-        "at"
+        "after",
+        "into"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Phrasal verb 'look into' means to investigate."
     },
     {
@@ -113,9 +113,9 @@
       "question": "She looks ______ her aged grandmother.",
       "options": [
         "after",
+        "at",
         "into",
-        "for",
-        "at"
+        "for"
       ],
       "answer": 0,
       "explanation": "'Look after' means to take care of someone."
@@ -125,12 +125,12 @@
       "topic": "prepositions",
       "question": "He was looking ______ his missing keys.",
       "options": [
-        "for",
         "into",
         "after",
+        "for",
         "at"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Look for' means to search for something."
     },
     {
@@ -139,9 +139,9 @@
       "question": "He congratulated me ______ my grand success.",
       "options": [
         "on",
-        "for",
+        "with",
         "at",
-        "with"
+        "for"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'congratulate someone ON something'."
@@ -151,12 +151,12 @@
       "topic": "prepositions",
       "question": "She prevented him ______ leaving the room.",
       "options": [
-        "from",
-        "to",
+        "for",
         "against",
-        "for"
+        "to",
+        "from"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'prevent someone from doing something'."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "prepositions",
       "question": "He was prohibited ______ entering the examination hall.",
       "options": [
-        "from",
-        "to",
         "against",
-        "by"
+        "by",
+        "from",
+        "to"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'prohibit from'."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "prepositions",
       "question": "She is good ______ mathematics.",
       "options": [
-        "at",
-        "in",
         "with",
-        "for"
+        "in",
+        "for",
+        "at"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Be skilled at a subject: 'good at', 'bad at', 'clever at'."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "prepositions",
       "question": "He is proficient ______ English.",
       "options": [
-        "in",
-        "at",
         "with",
-        "on"
+        "at",
+        "on",
+        "in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Proficient in' a subject or language."
     },
     {
@@ -217,8 +217,8 @@
       "question": "The letter was written ______ blue ink.",
       "options": [
         "in",
-        "with",
         "by",
+        "with",
         "from"
       ],
       "answer": 0,
@@ -229,12 +229,12 @@
       "topic": "prepositions",
       "question": "The letter was written ______ a fountain pen.",
       "options": [
-        "with",
         "in",
+        "with",
         "by",
         "from"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'With a pen' (instrument)."
     },
     {
@@ -243,9 +243,9 @@
       "question": "He has been living here ______ 2010.",
       "options": [
         "since",
-        "for",
+        "by",
         "from",
-        "by"
+        "for"
       ],
       "answer": 0,
       "explanation": "'Since' denotes a specific starting point in time with perfect tenses."
@@ -269,9 +269,9 @@
       "question": "He jumped ______ the river to save the child.",
       "options": [
         "into",
-        "in",
+        "on",
         "onto",
-        "on"
+        "in"
       ],
       "answer": 0,
       "explanation": "'Into' indicates movement towards the inside of something."
@@ -281,12 +281,12 @@
       "topic": "prepositions",
       "question": "The cat jumped ______ the table.",
       "options": [
-        "onto",
+        "in",
         "on",
         "into",
-        "in"
+        "onto"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Onto' indicates movement to a surface."
     },
     {
@@ -294,12 +294,12 @@
       "topic": "prepositions",
       "question": "The cat is sitting ______ the table.",
       "options": [
-        "on",
-        "onto",
         "into",
+        "onto",
+        "on",
         "in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'On' indicates position resting on a surface."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "prepositions",
       "question": "Distribute these mangoes ______ the two brothers.",
       "options": [
-        "between",
         "among",
-        "with",
-        "to"
+        "between",
+        "to",
+        "with"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Between' is used for two persons or things."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "prepositions",
       "question": "There is a treaty ______ India, USA, and Japan.",
       "options": [
-        "between",
         "among",
         "within",
-        "with"
+        "with",
+        "between"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Between' is used for more than two when naming specific mutual/reciprocal relationships."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "prepositions",
       "question": "The meeting starts ______ 9:00 AM.",
       "options": [
-        "at",
         "on",
-        "in",
-        "by"
+        "at",
+        "by",
+        "in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Specific clock times take 'at' ('at 9:00 AM')."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "prepositions",
       "question": "India got independence ______ 15th August 1947.",
       "options": [
-        "on",
         "in",
         "at",
-        "by"
+        "by",
+        "on"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Specific dates and days of the week take 'on' ('on 15th August', 'on Monday')."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "prepositions",
       "question": "He was born ______ July.",
       "options": [
-        "in",
-        "on",
         "at",
-        "by"
+        "in",
+        "by",
+        "on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Months and years take 'in' ('in July', 'in 1995')."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "prepositions",
       "question": "We arrived ______ the airport on time.",
       "options": [
-        "at",
         "in",
+        "to",
         "on",
-        "to"
+        "at"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Specific building locations and points take 'at' ('at the airport', 'at the station')."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "prepositions",
       "question": "He lives ______ Kochi ______ Kerala.",
       "options": [
-        "at, in",
-        "in, at",
         "at, on",
-        "in, on"
+        "in, on",
+        "in, at",
+        "at, in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'at' for smaller town/locality, 'in' for larger city/state ('at Kochi in Kerala')."
     },
     {
@@ -412,9 +412,9 @@
       "question": "He is married ______ a doctor.",
       "options": [
         "to",
-        "with",
+        "for",
         "by",
-        "for"
+        "with"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'married to someone' (not 'with')."
@@ -424,12 +424,12 @@
       "topic": "prepositions",
       "question": "She agreed ______ my proposal.",
       "options": [
-        "to",
+        "at",
         "with",
         "on",
-        "at"
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Agree to' a proposal, plan, or terms."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "prepositions",
       "question": "I agree ______ you on this matter.",
       "options": [
-        "with",
         "to",
+        "with",
         "for",
         "on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Agree with' a person."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "prepositions",
       "question": "The teacher was angry ______ the student.",
       "options": [
-        "with",
-        "at",
         "for",
+        "at",
+        "with",
         "about"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Angry with' a person."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "prepositions",
       "question": "He was angry ______ his bad behaviour.",
       "options": [
-        "at",
-        "with",
         "for",
+        "with",
+        "at",
         "about"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Angry at/about' an action, circumstance, or thing."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "prepositions",
       "question": "He deals ______ silk and spices.",
       "options": [
-        "in",
+        "at",
         "with",
         "for",
-        "at"
+        "in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Deal in' means to trade/do business in a commodity."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "prepositions",
       "question": "The teacher knows how to deal ______ naughty boys.",
       "options": [
+        "for",
         "with",
         "in",
-        "for",
         "at"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Deal with' means to handle or manage a person/situation."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "prepositions",
       "question": "She parted ______ her mother with tears.",
       "options": [
-        "from",
         "with",
         "of",
-        "to"
+        "to",
+        "from"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Part from' a person (separate)."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "prepositions",
       "question": "He refused to part ______ his favorite antique watch.",
       "options": [
-        "with",
         "from",
-        "of",
-        "to"
+        "to",
+        "with",
+        "of"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Part with' a possession/thing."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "prepositions",
       "question": "Beware ______ pickpockets in crowded buses.",
       "options": [
-        "of",
         "with",
-        "for",
-        "against"
+        "against",
+        "of",
+        "for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'beware of'."
     },
     {
@@ -541,12 +541,12 @@
       "topic": "prepositions",
       "question": "He is addicted ______ gambling.",
       "options": [
+        "in",
         "to",
         "with",
-        "for",
-        "in"
+        "for"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'addicted to'."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "prepositions",
       "question": "She is blind ______ one eye.",
       "options": [
-        "in",
+        "with",
         "of",
         "to",
-        "with"
+        "in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Blind in' (or 'of') an eye (physical blindness)."
     },
     {
@@ -567,12 +567,12 @@
       "topic": "prepositions",
       "question": "He is blind ______ his son's shortcomings.",
       "options": [
-        "to",
-        "in",
+        "with",
         "of",
-        "with"
+        "to",
+        "in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Blind to' faults (ignoring or refusing to see)."
     },
     {
@@ -580,12 +580,12 @@
       "topic": "prepositions",
       "question": "He died ______ a noble cause.",
       "options": [
+        "by",
         "for",
         "of",
-        "from",
-        "by"
+        "from"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Die for' a country or noble cause."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "prepositions",
       "question": "The dog jumped ______ the fence.",
       "options": [
-        "over",
+        "into",
         "above",
-        "on",
-        "into"
+        "over",
+        "on"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Over' indicates movement from one side to the other above something."
     },
     {
@@ -607,9 +607,9 @@
       "question": "The aeroplane flew ______ the clouds.",
       "options": [
         "above",
+        "in",
         "over",
-        "on",
-        "in"
+        "on"
       ],
       "answer": 0,
       "explanation": "'Above' indicates higher level or elevation."
@@ -619,12 +619,12 @@
       "topic": "prepositions",
       "question": "The bridge was built ______ the river.",
       "options": [
-        "across",
         "over",
         "on",
-        "through"
+        "through",
+        "across"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Across' means from one side to the other ('across the river')."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "prepositions",
       "question": "He walked ______ the dark tunnel.",
       "options": [
+        "in",
         "through",
-        "across",
         "along",
-        "in"
+        "across"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Through' indicates movement within a 3D enclosed space."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "prepositions",
       "question": "She is confident ______ her success.",
       "options": [
-        "of",
-        "about",
         "for",
-        "in"
+        "in",
+        "about",
+        "of"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'confident of'."
     },
     {
@@ -672,9 +672,9 @@
       "question": "He was deprived ______ his basic rights.",
       "options": [
         "of",
+        "by",
         "from",
-        "with",
-        "by"
+        "with"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'deprive of'."
@@ -684,12 +684,12 @@
       "topic": "prepositions",
       "question": "She apologized ______ him ______ her mistake.",
       "options": [
-        "to, for",
-        "for, to",
         "with, for",
-        "to, with"
+        "to, with",
+        "for, to",
+        "to, for"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Apologize to someone for something'."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "prepositions",
       "question": "The thief was acquitted ______ all charges.",
       "options": [
-        "of",
         "from",
+        "of",
         "with",
         "for"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'acquit of'."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "prepositions",
       "question": "He insists ______ going there alone.",
       "options": [
-        "on",
-        "upon",
         "for",
-        "in"
+        "in",
+        "upon",
+        "on"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'insist on doing something'."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "prepositions",
       "question": "He persisted ______ making excuses.",
       "options": [
+        "at",
         "in",
-        "on",
         "with",
-        "at"
+        "on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'persist in doing something'."
     },
     {
@@ -738,8 +738,8 @@
       "options": [
         "in",
         "at",
-        "for",
-        "on"
+        "on",
+        "for"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'succeed in doing something'."
@@ -749,12 +749,12 @@
       "topic": "prepositions",
       "question": "She refrained ______ making any controversial remarks.",
       "options": [
-        "from",
         "to",
         "of",
+        "from",
         "with"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'refrain from'."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "prepositions",
       "question": "He abstains ______ alcohol.",
       "options": [
-        "from",
-        "of",
         "to",
-        "with"
+        "from",
+        "with",
+        "of"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'abstain from'."
     },
     {
@@ -776,9 +776,9 @@
       "question": "He is guilty ______ theft.",
       "options": [
         "of",
-        "for",
+        "by",
         "with",
-        "by"
+        "for"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'guilty of' a crime."
@@ -788,12 +788,12 @@
       "topic": "prepositions",
       "question": "I was astonished ______ his remarkable memory.",
       "options": [
-        "at",
         "by",
         "with",
+        "at",
         "for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'astonished at/by'."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "prepositions",
       "question": "She is afraid ______ dogs.",
       "options": [
-        "of",
-        "with",
+        "for",
         "by",
-        "for"
+        "of",
+        "with"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'afraid of'."
     },
     {
@@ -828,8 +828,8 @@
       "question": "The box was full ______ sweets.",
       "options": [
         "of",
-        "with",
         "by",
+        "with",
         "for"
       ],
       "answer": 0,
@@ -840,12 +840,12 @@
       "topic": "prepositions",
       "question": "The bucket was filled ______ water.",
       "options": [
+        "by",
         "with",
         "of",
-        "by",
         "in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Filled with' (full of)."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "prepositions",
       "question": "She is jealous ______ her sister's success.",
       "options": [
-        "of",
         "with",
-        "for",
-        "at"
+        "at",
+        "of",
+        "for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'jealous of'."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "prepositions",
       "question": "He is envious ______ his neighbor's wealth.",
       "options": [
-        "of",
-        "with",
         "for",
-        "at"
+        "at",
+        "with",
+        "of"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'envious of'."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "prepositions",
       "question": "She is ashamed ______ her conduct.",
       "options": [
-        "of",
         "for",
+        "of",
         "with",
         "at"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'ashamed of'."
     },
     {
@@ -893,9 +893,9 @@
       "question": "He was fined ______ overspeeding.",
       "options": [
         "for",
-        "of",
+        "by",
         "with",
-        "by"
+        "of"
       ],
       "answer": 0,
       "explanation": "'Fined for' a violation."
@@ -905,12 +905,12 @@
       "topic": "prepositions",
       "question": "She was punished ______ cheating.",
       "options": [
-        "for",
-        "of",
         "with",
+        "of",
+        "for",
         "by"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Punished for' a misdeed."
     },
     {
@@ -920,8 +920,8 @@
       "options": [
         "by",
         "of",
-        "from",
-        "with"
+        "with",
+        "from"
       ],
       "answer": 0,
       "explanation": "'Die by' suicide, violence, or poison."
@@ -931,12 +931,12 @@
       "topic": "prepositions",
       "question": "She jumped ______ the moving train.",
       "options": [
+        "of",
         "off",
         "from",
-        "of",
         "away"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Off' indicates separation from a surface or vehicle."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "prepositions",
       "question": "The airplane took ______ smoothly.",
       "options": [
+        "out",
         "off",
         "up",
-        "away",
-        "out"
+        "away"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Phrasal verb 'take off' means to become airborne."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "prepositions",
       "question": "He called ______ the Prime Minister at his residence.",
       "options": [
-        "on",
         "at",
+        "in",
         "up",
-        "in"
+        "on"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call on' means to visit a person; 'call at' means to visit a place."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "prepositions",
       "question": "The train called ______ Thrissur station.",
       "options": [
-        "at",
+        "by",
         "on",
         "in",
-        "by"
+        "at"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call at' means to stop at a place/station."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "prepositions",
       "question": "The strike was called ______ after negotiations.",
       "options": [
-        "off",
         "away",
         "out",
-        "down"
+        "down",
+        "off"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Call off' means to cancel."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "prepositions",
       "question": "Never put ______ till tomorrow what you can do today.",
       "options": [
-        "off",
         "out",
+        "off",
         "away",
         "down"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Put off' means to postpone."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "prepositions",
       "question": "She put ______ a beautiful red dress.",
       "options": [
-        "on",
         "in",
+        "off",
         "up",
-        "off"
+        "on"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Put on' means to wear clothes."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "prepositions",
       "question": "I cannot put up ______ such insolent behavior.",
       "options": [
-        "with",
         "to",
+        "with",
         "for",
         "at"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Put up with' means to tolerate or endure."
     },
     {
@@ -1062,9 +1062,9 @@
       "question": "He gave ______ smoking after medical advice.",
       "options": [
         "up",
+        "out",
         "in",
-        "away",
-        "out"
+        "away"
       ],
       "answer": 0,
       "explanation": "'Give up' means to quit a habit."
@@ -1074,12 +1074,12 @@
       "topic": "prepositions",
       "question": "The rebel soldiers gave ______ to the army.",
       "options": [
-        "in",
         "up",
         "away",
+        "in",
         "out"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Give in' means to surrender."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "prepositions",
       "question": "The chief guest gave ______ the prizes.",
       "options": [
-        "away",
-        "in",
+        "out",
         "up",
-        "out"
+        "in",
+        "away"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Give away' means to distribute prizes."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "prepositions",
       "question": "He broke ______ in tears during the eulogy.",
       "options": [
-        "down",
-        "up",
         "out",
-        "into"
+        "down",
+        "into",
+        "up"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Break down' means to collapse emotionally."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "prepositions",
       "question": "Cholera broke ______ in the relief camp.",
       "options": [
+        "into",
         "out",
-        "up",
         "down",
-        "into"
+        "up"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Break out' means to start suddenly (epidemic, war, fire)."
     },
     {
@@ -1128,8 +1128,8 @@
       "options": [
         "into",
         "in",
-        "through",
-        "down"
+        "down",
+        "through"
       ],
       "answer": 0,
       "explanation": "'Break into' means to enter forcibly with criminal intent."
@@ -1139,12 +1139,12 @@
       "topic": "prepositions",
       "question": "The two countries broke ______ diplomatic ties.",
       "options": [
-        "off",
-        "up",
         "down",
-        "out"
+        "out",
+        "off",
+        "up"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Break off' means to discontinue or sever relations."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "prepositions",
       "question": "He came ______ an old photograph in the drawer.",
       "options": [
-        "across",
-        "by",
         "upon",
-        "into"
+        "into",
+        "across",
+        "by"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Come across' means to meet or find by chance."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "prepositions",
       "question": "How did you come ______ such rare coins?",
       "options": [
-        "by",
+        "at",
         "across",
-        "into",
-        "at"
+        "by",
+        "into"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Come by' means to obtain or acquire."
     },
     {
@@ -1178,12 +1178,12 @@
       "topic": "prepositions",
       "question": "She came ______ a large fortune after her uncle passed away.",
       "options": [
-        "into",
         "across",
+        "into",
         "by",
         "on"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Come into' means to inherit wealth."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "prepositions",
       "question": "The meeting came ______ an end.",
       "options": [
-        "to",
-        "at",
         "with",
-        "in"
+        "at",
+        "in",
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Idiomatic phrase: 'come to an end'."
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "prepositions",
       "question": "He was born ______ noble parents.",
       "options": [
-        "of",
-        "to",
+        "by",
         "from",
-        "by"
+        "to",
+        "of"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'born of parents'."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "prepositions",
       "question": "She was born ______ a wealthy family.",
       "options": [
+        "from",
         "into",
-        "in",
         "of",
-        "from"
+        "in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'born into/in a family'."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "prepositions",
       "question": "He is capable ______ doing wonders.",
       "options": [
-        "of",
-        "for",
+        "in",
         "with",
-        "in"
+        "of",
+        "for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'capable of'."
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "prepositions",
       "question": "She is worthy ______ all praise.",
       "options": [
-        "of",
-        "for",
         "with",
-        "at"
+        "for",
+        "at",
+        "of"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'worthy of'."
     },
     {
@@ -1257,9 +1257,9 @@
       "question": "He was shocked ______ the news of the accident.",
       "options": [
         "at",
-        "by",
+        "for",
         "with",
-        "for"
+        "by"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'shocked at/by'."
@@ -1269,12 +1269,12 @@
       "topic": "prepositions",
       "question": "The mother is anxious ______ her child's health.",
       "options": [
+        "with",
         "about",
-        "for",
         "of",
-        "with"
+        "for"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'anxious about' health or situation."
     },
     {
@@ -1284,8 +1284,8 @@
       "options": [
         "for",
         "about",
-        "of",
-        "to"
+        "to",
+        "of"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'anxious for' something desired."
@@ -1295,12 +1295,12 @@
       "topic": "prepositions",
       "question": "He is eligible ______ the post.",
       "options": [
-        "for",
-        "to",
         "with",
-        "of"
+        "of",
+        "to",
+        "for"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'eligible for' a post."
     },
     {
@@ -1309,9 +1309,9 @@
       "question": "He qualified ______ the final round.",
       "options": [
         "for",
+        "with",
         "to",
-        "in",
-        "with"
+        "in"
       ],
       "answer": 0,
       "explanation": "Fixed preposition: 'qualified for'."
@@ -1321,12 +1321,12 @@
       "topic": "prepositions",
       "question": "She is popular ______ her classmates.",
       "options": [
-        "with",
+        "to",
         "among",
-        "for",
-        "to"
+        "with",
+        "for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'popular with/among someone'."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "prepositions",
       "question": "He is famous ______ his witty humor.",
       "options": [
+        "of",
         "for",
         "with",
-        "of",
         "in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'famous for' a quality."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "prepositions",
       "question": "Smoking is injurious ______ health.",
       "options": [
-        "to",
-        "for",
         "with",
-        "on"
+        "on",
+        "to",
+        "for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'injurious to health' (not 'for')."
     },
     {
@@ -1373,12 +1373,12 @@
       "topic": "prepositions",
       "question": "She is loyal ______ her country.",
       "options": [
-        "to",
+        "in",
         "with",
-        "for",
-        "in"
+        "to",
+        "for"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'loyal to'."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "prepositions",
       "question": "The dog is obedient ______ its trainer.",
       "options": [
-        "to",
-        "with",
         "for",
-        "of"
+        "to",
+        "of",
+        "with"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed preposition: 'obedient to'."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "prepositions",
       "question": "He is devoid ______ any moral sense.",
       "options": [
-        "of",
         "with",
+        "in",
         "from",
-        "in"
+        "of"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fixed preposition: 'devoid of' (lacking completely)."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "prepositions",
       "question": "The room is infested ______ termites.",
       "options": [
-        "with",
         "by",
         "of",
+        "with",
         "in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed preposition: 'infested with'."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "prepositions",
       "question": "He is blind ______ the faults of his son.",
       "options": [
-        "to",
-        "in",
         "with",
-        "of"
+        "of",
+        "to",
+        "in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Blind to' means unwilling to notice or acknowledge defects."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "prepositions",
       "question": "A blind person is blind ______ one eye.",
       "options": [
-        "in",
         "to",
-        "with",
-        "from"
+        "from",
+        "in",
+        "with"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Blind in one eye' refers to physical loss of sight in an eye."
     },
     {
@@ -1451,12 +1451,12 @@
       "topic": "prepositions",
       "question": "He died ______ cholera.",
       "options": [
-        "of",
-        "from",
+        "by",
         "with",
-        "by"
+        "from",
+        "of"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Die + of a specific disease (cholera, malaria, cancer)."
     },
     {
@@ -1464,12 +1464,12 @@
       "topic": "prepositions",
       "question": "He died ______ overwork and exhaustion.",
       "options": [
-        "from",
+        "in",
         "of",
         "with",
-        "in"
+        "from"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Die + from an indirect cause (exhaustion, hunger, overeating)."
     },
     {
@@ -1477,12 +1477,12 @@
       "topic": "prepositions",
       "question": "She presided ______ the meeting.",
       "options": [
-        "over",
         "at",
-        "in",
-        "on"
+        "on",
+        "over",
+        "in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Preside over' means to be in charge of a meeting or ceremony."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "prepositions",
       "question": "He was accused ______ murder.",
       "options": [
-        "of",
-        "for",
         "with",
+        "for",
+        "of",
         "to"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The verb 'accuse' takes the preposition 'of' ('accused of murder')."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "prepositions",
       "question": "He was charged ______ murder.",
       "options": [
-        "with",
-        "of",
         "for",
-        "about"
+        "about",
+        "of",
+        "with"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The verb 'charge' takes the preposition 'with' ('charged with murder')."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "prepositions",
       "question": "She is proficient ______ English.",
       "options": [
-        "in",
+        "for",
         "at",
         "with",
-        "for"
+        "in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Proficient in' a subject or language."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "prepositions",
       "question": "He is good ______ mathematics.",
       "options": [
-        "at",
+        "with",
         "in",
         "for",
-        "with"
+        "at"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Good at' indicates skill or competence in an area."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "prepositions",
       "question": "He is weak ______ mathematics.",
       "options": [
-        "in",
         "at",
         "with",
-        "for"
+        "for",
+        "in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Weak in' indicates lack of competence in an area."
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "prepositions",
       "question": "Smoking is injurious ______ health.",
       "options": [
-        "to",
-        "for",
+        "in",
         "with",
-        "in"
+        "for",
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Injurious' takes the preposition 'to'."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "prepositions",
       "question": "He abstained ______ voting.",
       "options": [
-        "from",
         "to",
         "with",
-        "of"
+        "of",
+        "from"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Abstain from' means to voluntarily refrain from doing something."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "prepositions",
       "question": "One should beware ______ pickpockets.",
       "options": [
-        "of",
-        "from",
         "against",
+        "from",
+        "of",
         "to"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Beware' takes the preposition 'of'."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "prepositions",
       "question": "She insisted ______ going there.",
       "options": [
-        "on",
         "for",
         "in",
+        "on",
         "to"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Insist' takes the preposition 'on' followed by a gerund."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "prepositions",
       "question": "He persists ______ making the same mistake.",
       "options": [
-        "in",
         "on",
+        "with",
         "at",
-        "with"
+        "in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Persist' takes the preposition 'in'."
     },
     {
@@ -1621,9 +1621,9 @@
       "question": "He was acquitted ______ all charges.",
       "options": [
         "of",
+        "by",
         "from",
-        "with",
-        "by"
+        "with"
       ],
       "answer": 0,
       "explanation": "'Acquit' takes the preposition 'of' ('acquitted of murder')."
@@ -1633,12 +1633,12 @@
       "topic": "prepositions",
       "question": "She congratulated him ______ his spectacular success.",
       "options": [
-        "on",
+        "with",
         "for",
         "at",
-        "with"
+        "on"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Congratulate' takes 'on' ('congratulate somebody on something')."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "prepositions",
       "question": "He was deprived ______ his parental rights.",
       "options": [
+        "by",
         "of",
-        "from",
         "with",
-        "by"
+        "from"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Deprive' takes 'of' ('deprived of rights')."
     },
     {
@@ -1660,8 +1660,8 @@
       "question": "You must conform ______ the regulations of the college.",
       "options": [
         "to",
-        "with",
         "by",
+        "with",
         "for"
       ],
       "answer": 0,
@@ -1672,12 +1672,12 @@
       "topic": "prepositions",
       "question": "The train is running ______ time.",
       "options": [
-        "on",
         "in",
+        "on",
         "at",
         "by"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'On time' means punctual / adhering to the schedule."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "prepositions",
       "question": "I reached the examination hall just ______ time.",
       "options": [
-        "in",
         "on",
-        "at",
-        "by"
+        "in",
+        "by",
+        "at"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'In time' means before it was too late / with sufficient time to spare."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "prepositions",
       "question": "He jumps ______ conclusions without checking facts.",
       "options": [
-        "to",
-        "at",
+        "in",
         "on",
-        "in"
+        "to",
+        "at"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Jump to conclusions' means forming hasty judgments."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "prepositions",
       "question": "He jumped ______ the lucrative offer.",
       "options": [
-        "at",
         "to",
+        "into",
         "on",
-        "into"
+        "at"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Jump at' an offer means to accept it eagerly."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "prepositions",
       "question": "He jumped ______ the river to rescue the boy.",
       "options": [
+        "towards",
         "into",
-        "in",
         "to",
-        "towards"
+        "in"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Movement from outside to inside takes 'into'."
     },
     {
@@ -1751,9 +1751,9 @@
       "question": "Distribute these mangoes ______ the two children.",
       "options": [
         "between",
+        "within",
         "among",
-        "amidst",
-        "within"
+        "amidst"
       ],
       "answer": 0,
       "explanation": "'Between' is used when referring to two persons or things."
@@ -1776,12 +1776,12 @@
       "topic": "prepositions",
       "question": "He sat ______ his father during the prayer.",
       "options": [
-        "beside",
-        "besides",
+        "behind",
         "between",
-        "behind"
+        "beside",
+        "besides"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Beside' means by the side of / next to."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "prepositions",
       "question": "______ a car, he owns two motorbikes.",
       "options": [
-        "Besides",
         "Beside",
         "Except",
-        "Between"
+        "Between",
+        "Besides"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Besides' means 'in addition to'."
     },
     {
@@ -1804,8 +1804,8 @@
       "options": [
         "with",
         "at",
-        "for",
-        "to"
+        "to",
+        "for"
       ],
       "answer": 0,
       "explanation": "'Angry with' a person; 'angry at' a thing or behavior."
@@ -1815,12 +1815,12 @@
       "topic": "prepositions",
       "question": "He was angry ______ my careless remark.",
       "options": [
+        "on",
         "at",
         "with",
-        "for",
-        "on"
+        "for"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Angry at/about' a situation or remark."
     },
     {
@@ -1829,9 +1829,9 @@
       "question": "I am indebted ______ my teachers for their guidance.",
       "options": [
         "to",
-        "for",
         "with",
-        "at"
+        "at",
+        "for"
       ],
       "answer": 0,
       "explanation": "'Indebted to' a person."
@@ -1842,9 +1842,9 @@
       "question": "The soldier succumbed ______ his fatal injuries.",
       "options": [
         "to",
+        "under",
         "for",
-        "with",
-        "under"
+        "with"
       ],
       "answer": 0,
       "explanation": "'Succumb' takes the preposition 'to'."
@@ -1854,12 +1854,12 @@
       "topic": "prepositions",
       "question": "He apologized ______ the teacher for his misbehaviour.",
       "options": [
-        "to",
         "for",
+        "at",
         "with",
-        "at"
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Apologize to' a person 'for' something."
     },
     {
@@ -1867,12 +1867,12 @@
       "topic": "prepositions",
       "question": "She takes pride ______ her classical singing.",
       "options": [
-        "in",
         "for",
         "of",
-        "with"
+        "with",
+        "in"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Take pride in' (noun), but 'proud of' (adjective)."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "prepositions",
       "question": "She is proud ______ her achievement.",
       "options": [
+        "for",
         "of",
         "in",
-        "for",
         "to"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Proud of' someone or something."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "prepositions",
       "question": "The patient is cured ______ his illness.",
       "options": [
+        "by",
         "of",
-        "from",
         "with",
-        "by"
+        "from"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Verb 'cure' takes 'of' ('cured of fever')."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "prepositions",
       "question": "He prevented me ______ entering the lab.",
       "options": [
-        "from",
-        "to",
         "against",
-        "with"
+        "with",
+        "to",
+        "from"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Prevent someone from doing something'."
     },
     {
@@ -1934,8 +1934,8 @@
       "options": [
         "with",
         "from",
-        "to",
-        "of"
+        "of",
+        "to"
       ],
       "answer": 0,
       "explanation": "'Part with' a thing / possession; 'part from' a person."
@@ -1946,9 +1946,9 @@
       "question": "He was parted ______ his childhood friend during the war.",
       "options": [
         "from",
+        "of",
         "with",
-        "by",
-        "of"
+        "by"
       ],
       "answer": 0,
       "explanation": "'Part from' a person."
@@ -1958,12 +1958,12 @@
       "topic": "prepositions",
       "question": "I agree ______ your proposal entirely.",
       "options": [
-        "to",
-        "with",
         "on",
-        "for"
+        "for",
+        "to",
+        "with"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Agree to' a proposal/plan; 'agree with' a person."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "prepositions",
       "question": "I agree ______ you on this issue.",
       "options": [
-        "with",
-        "to",
         "for",
-        "in"
+        "in",
+        "to",
+        "with"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Agree with' a person."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "prepositions",
       "question": "He disposed ______ his old scooter.",
       "options": [
-        "of",
         "off",
+        "out",
         "away",
-        "out"
+        "of"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Dispose of' (single 'f') means to sell or get rid of."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "prepositions",
       "question": "The shopkeeper deals ______ cotton textiles.",
       "options": [
-        "in",
-        "with",
         "for",
-        "at"
+        "in",
+        "at",
+        "with"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Deal in' means to trade in goods; 'deal with' means to handle or interact."
     },
     {
@@ -2011,9 +2011,9 @@
       "question": "He knows how to deal ______ stubborn customers.",
       "options": [
         "with",
-        "in",
         "at",
-        "for"
+        "for",
+        "in"
       ],
       "answer": 0,
       "explanation": "'Deal with' means to handle people or problems."
@@ -2023,12 +2023,12 @@
       "topic": "prepositions",
       "question": "The culprit was sent ______ prison for three years.",
       "options": [
-        "to",
-        "into",
         "at",
+        "into",
+        "to",
         "in"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Sent to prison' (no article for primary institutional purpose)."
     },
     {
@@ -2036,12 +2036,12 @@
       "topic": "prepositions",
       "question": "We walked ______ the seashore in the cool evening.",
       "options": [
-        "along",
-        "across",
         "through",
-        "on"
+        "on",
+        "along",
+        "across"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Along' means moving in a line parallel to the edge."
     },
     {
@@ -2049,12 +2049,12 @@
       "topic": "prepositions",
       "question": "The snake crawled ______ the narrow hole.",
       "options": [
-        "through",
-        "across",
         "along",
-        "over"
+        "across",
+        "over",
+        "through"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Through' indicates movement within a 3D enclosed space."
     },
     {
@@ -2062,12 +2062,12 @@
       "topic": "prepositions",
       "question": "He climbed ______ the tall mango tree.",
       "options": [
-        "up",
         "into",
+        "over",
         "on",
-        "over"
+        "up"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Climb up' indicates upward movement on a vertical surface."
     }
   ]

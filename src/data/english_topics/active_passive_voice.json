@@ -8,12 +8,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The boy threw the ball.'",
       "options": [
-        "The ball was thrown by the boy.",
         "The ball is thrown by the boy.",
         "The ball has been thrown by the boy.",
-        "The ball had thrown by the boy."
+        "The ball had thrown by the boy.",
+        "The ball was thrown by the boy."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Simple Past (threw) changes to was/were + V3 ('was thrown')."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'She is singing a song.'",
       "options": [
-        "A song is being sung by her.",
         "A song was being sung by her.",
+        "A song is being sung by her.",
         "A song is sung by her.",
         "A song has been sung by her."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Present Continuous (is singing) changes to is/are/am + being + V3 ('is being sung')."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They have built a new bridge.'",
       "options": [
+        "A new bridge had been built by them.",
         "A new bridge has been built by them.",
         "A new bridge was built by them.",
-        "A new bridge had been built by them.",
         "A new bridge is built by them."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Present Perfect (have built) changes to has/have + been + V3 ('has been built')."
     },
     {
@@ -48,8 +48,8 @@
       "question": "Change into passive: 'Who wrote this book?'",
       "options": [
         "By whom was this book written?",
-        "By whom is this book written?",
         "Who was this book written by?",
+        "By whom is this book written?",
         "By who this book was written?"
       ],
       "answer": 0,
@@ -60,12 +60,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Close the door.'",
       "options": [
-        "Let the door be closed.",
-        "The door should close.",
+        "You are order to close the door.",
         "Let the door closed.",
-        "You are order to close the door."
+        "Let the door be closed.",
+        "The door should close."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Imperative order changes to 'Let + object + be + V3' ('Let the door be closed')."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Someone has stolen my pen.'",
       "options": [
-        "My pen has been stolen.",
-        "My pen was stolen.",
         "My pen had been stolen.",
-        "My pen is stolen."
+        "My pen is stolen.",
+        "My pen was stolen.",
+        "My pen has been stolen."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Vague subjects like 'Someone' are omitted in passive: 'My pen has been stolen.'"
     },
     {
@@ -87,9 +87,9 @@
       "question": "Change into active: 'The letter was posted by John.'",
       "options": [
         "John posted the letter.",
-        "John had posted the letter.",
+        "John posts the letter.",
         "John has posted the letter.",
-        "John posts the letter."
+        "John had posted the letter."
       ],
       "answer": 0,
       "explanation": "'was posted' is Simple Past passive -> active is Simple Past 'posted'."
@@ -99,12 +99,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The cat killed the mouse.'",
       "options": [
-        "The mouse was killed by the cat.",
         "The mouse is killed by the cat.",
+        "The mouse was being killed by the cat.",
         "The mouse has been killed by the cat.",
-        "The mouse was being killed by the cat."
+        "The mouse was killed by the cat."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Simple Past active 'killed' -> 'was killed' in passive."
     },
     {
@@ -112,12 +112,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'He had completed the project.'",
       "options": [
-        "The project had been completed by him.",
-        "The project was completed by him.",
         "The project has been completed by him.",
-        "The project is completed by him."
+        "The project is completed by him.",
+        "The project was completed by him.",
+        "The project had been completed by him."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past Perfect (had completed) -> had been + V3 ('had been completed')."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Can you solve this puzzle?'",
       "options": [
-        "Can this puzzle be solved by you?",
-        "Could this puzzle be solved by you?",
         "Can this puzzle solved by you?",
+        "Could this puzzle be solved by you?",
+        "Can this puzzle be solved by you?",
         "Is this puzzle solved by you?"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Modal question 'Can you solve...?' -> 'Can + object + be + V3?'."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'He teaches us English.'",
       "options": [
+        "We were taught English by him.",
         "We are taught English by him.",
         "English was taught to us by him.",
-        "We were taught English by him.",
         "English is being taught to us by him."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple Present 'teaches' with indirect object 'us' -> 'We are taught English by him.'"
     },
     {
@@ -179,8 +179,8 @@
       "options": [
         "Let the flowers not be plucked.",
         "Flowers are not plucked.",
-        "Let not flowers plucked.",
-        "You should not pluck flowers."
+        "You should not pluck flowers.",
+        "Let not flowers plucked."
       ],
       "answer": 0,
       "explanation": "Negative imperative 'Do not pluck...' -> 'Let + object + not be + V3'."
@@ -191,9 +191,9 @@
       "question": "Change into passive: 'Please help me.'",
       "options": [
         "You are requested to help me.",
-        "Let me be helped.",
         "I should be helped.",
-        "You should help me."
+        "You should help me.",
+        "Let me be helped."
       ],
       "answer": 0,
       "explanation": "Polite imperative with 'Please' -> 'You are requested to + V1'."
@@ -203,12 +203,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They are repairing the bridge.'",
       "options": [
-        "The bridge is being repaired by them.",
+        "The bridge is repaired by them.",
         "The bridge was being repaired by them.",
         "The bridge has been repaired by them.",
-        "The bridge is repaired by them."
+        "The bridge is being repaired by them."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Present continuous -> is being + V3 ('is being repaired')."
     },
     {
@@ -217,9 +217,9 @@
       "question": "Change into passive: 'She was baking a cake.'",
       "options": [
         "A cake was being baked by her.",
-        "A cake is being baked by her.",
         "A cake had been baked by her.",
-        "A cake was baked by her."
+        "A cake was baked by her.",
+        "A cake is being baked by her."
       ],
       "answer": 0,
       "explanation": "Past Continuous -> was/were + being + V3 ('was being baked')."
@@ -229,12 +229,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'I know him.'",
       "options": [
-        "He is known to me.",
         "He is known by me.",
-        "He was known to me.",
-        "He is known with me."
+        "He is known to me.",
+        "He is known with me.",
+        "He was known to me."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The verb 'know' takes preposition 'to' in passive voice, not 'by': 'He is known to me.'"
     },
     {
@@ -242,12 +242,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Her behaviour surprised me.'",
       "options": [
-        "I was surprised at her behaviour.",
-        "I was surprised by her behaviour.",
+        "I am surprised at her behaviour.",
         "I was surprised with her behaviour.",
-        "I am surprised at her behaviour."
+        "I was surprised at her behaviour.",
+        "I was surprised by her behaviour."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Surprised' takes preposition 'at' when referring to conduct/behaviour: 'surprised at'."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The news pleased us.'",
       "options": [
-        "We were pleased with the news.",
         "We were pleased by the news.",
+        "We were pleased with the news.",
         "We are pleased with the news.",
         "We were pleased at the news."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Pleased' takes preposition 'with': 'We were pleased with the news.'"
     },
     {
@@ -268,12 +268,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Smoke filled the room.'",
       "options": [
-        "The room was filled with smoke.",
-        "The room was filled by smoke.",
         "The room is filled with smoke.",
-        "The room was being filled with smoke."
+        "The room was being filled with smoke.",
+        "The room was filled with smoke.",
+        "The room was filled by smoke."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Filled' takes preposition 'with' for substance: 'filled with smoke'."
     },
     {
@@ -282,8 +282,8 @@
       "question": "Change into passive: 'People speak English all over the world.'",
       "options": [
         "English is spoken all over the world.",
-        "English was spoken all over the world.",
         "English has spoken all over the world.",
+        "English was spoken all over the world.",
         "English is being spoken all over the world."
       ],
       "answer": 0,
@@ -294,12 +294,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They laughed at the beggar.'",
       "options": [
-        "The beggar was laughed at by them.",
         "The beggar was laughed by them.",
         "The beggar is laughed at by them.",
+        "The beggar was laughed at by them.",
         "The beggar had been laughed at by them."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prepositional verbs retain their prepositions: 'was laughed at'."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The doctor looked after the patient.'",
       "options": [
+        "The patient is looked after by the doctor.",
         "The patient was looked after by the doctor.",
         "The patient was looked by the doctor.",
-        "The patient is looked after by the doctor.",
         "The patient had been looked after by the doctor."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Phrasal verb 'look after' retains 'after': 'was looked after'."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "active_passive_voice",
       "question": "Change into active: 'The match was won by our team.'",
       "options": [
+        "Our team had won the match.",
         "Our team won the match.",
         "Our team has won the match.",
-        "Our team had won the match.",
         "Our team was winning the match."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'was won' is Simple Past passive -> active is 'won'."
     },
     {
@@ -334,9 +334,9 @@
       "question": "Change into passive: 'Nobody has answered my question.'",
       "options": [
         "My question has not been answered.",
+        "My question had not been answered.",
         "My question has been answered by nobody.",
-        "My question was not answered.",
-        "My question had not been answered."
+        "My question was not answered."
       ],
       "answer": 0,
       "explanation": "Negative 'Nobody has...' changes to negative passive 'has not been answered'."
@@ -346,12 +346,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'One should keep one's promises.'",
       "options": [
-        "Promises should be kept.",
         "One's promises should be kept by one.",
+        "Promises should be kept.",
         "Promises ought to keep.",
         "Promises are to be kept by one."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Moral maxim with indefinite subject 'One' -> 'Promises should be kept.'"
     },
     {
@@ -359,12 +359,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The police arrested the thief.'",
       "options": [
-        "The thief was arrested.",
-        "The thief was arrested by the police.",
         "The thief has been arrested.",
+        "The thief was arrested by the police.",
+        "The thief was arrested.",
         "The thief is arrested."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When the agent is obvious (police), 'by the police' is omitted in standard usage: 'The thief was arrested.'"
     },
     {
@@ -372,12 +372,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Give the order.'",
       "options": [
+        "Let order given.",
         "Let the order be given.",
         "The order should be given.",
-        "Let order given.",
         "You give the order."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Imperative order -> 'Let the order be given.'"
     },
     {
@@ -386,8 +386,8 @@
       "question": "Change into passive: 'Who broke the mirror?'",
       "options": [
         "By whom was the mirror broken?",
-        "By whom is the mirror broken?",
         "Who was the mirror broken by?",
+        "By whom is the mirror broken?",
         "Whom broke the mirror?"
       ],
       "answer": 0,
@@ -398,12 +398,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'He did not write the letter.'",
       "options": [
-        "The letter was not written by him.",
-        "The letter is not written by him.",
         "The letter has not been written by him.",
-        "The letter was not being written by him."
+        "The letter was not written by him.",
+        "The letter was not being written by him.",
+        "The letter is not written by him."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple Past negative (did not write) -> was/were not + V3 ('was not written')."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Does she like apples?'",
       "options": [
-        "Are apples liked by her?",
-        "Were apples liked by her?",
         "Is apples liked by her?",
-        "Do apples liked by her?"
+        "Do apples liked by her?",
+        "Were apples liked by her?",
+        "Are apples liked by her?"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Simple Present question with plural object 'apples' -> 'Are apples liked by her?'."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Did he complete the work?'",
       "options": [
-        "Was the work completed by him?",
+        "Did the work completed by him?",
         "Is the work completed by him?",
         "Has the work completed by him?",
-        "Did the work completed by him?"
+        "Was the work completed by him?"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Simple Past question with singular object 'the work' -> 'Was the work completed by him?'."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They are watching a movie.'",
       "options": [
-        "A movie is being watched by them.",
-        "A movie was being watched by them.",
         "A movie has been watched by them.",
-        "A movie is watched by them."
+        "A movie is being watched by them.",
+        "A movie is watched by them.",
+        "A movie was being watched by them."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Present continuous active -> is being + V3 ('is being watched')."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They were discussing the problem.'",
       "options": [
-        "The problem was being discussed by them.",
-        "The problem is being discussed by them.",
+        "The problem was discussed by them.",
         "The problem has been discussed by them.",
-        "The problem was discussed by them."
+        "The problem is being discussed by them.",
+        "The problem was being discussed by them."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past continuous active -> was being + V3 ('was being discussed')."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'She will write a novel.'",
       "options": [
-        "A novel will be written by her.",
+        "A novel is written by her.",
         "A novel would be written by her.",
-        "A novel will have written by her.",
-        "A novel is written by her."
+        "A novel will be written by her.",
+        "A novel will have written by her."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Simple future active -> will be + V3 ('will be written')."
     },
     {
@@ -477,9 +477,9 @@
       "question": "Change into passive: 'You ought to respect your teachers.'",
       "options": [
         "Your teachers ought to be respected by you.",
+        "Your teachers ought to respect.",
         "Your teachers should respect by you.",
-        "Your teachers are respected by you.",
-        "Your teachers ought to respect."
+        "Your teachers are respected by you."
       ],
       "answer": 0,
       "explanation": "'Ought to + V1' -> ought to be + V3 ('ought to be respected')."
@@ -490,9 +490,9 @@
       "question": "Change into passive: 'We have dispatched the parcels.'",
       "options": [
         "The parcels have been dispatched by us.",
+        "The parcels had been dispatched by us.",
         "The parcels has been dispatched by us.",
-        "The parcels were dispatched by us.",
-        "The parcels had been dispatched by us."
+        "The parcels were dispatched by us."
       ],
       "answer": 0,
       "explanation": "Plural object 'parcels' takes 'have been dispatched'."
@@ -502,12 +502,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The fire destroyed the building.'",
       "options": [
-        "The building was destroyed by the fire.",
-        "The building is destroyed by the fire.",
         "The building had been destroyed by the fire.",
-        "The building was being destroyed by the fire."
+        "The building was being destroyed by the fire.",
+        "The building is destroyed by the fire.",
+        "The building was destroyed by the fire."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Simple Past active -> was + V3 ('was destroyed')."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Who can do this work?'",
       "options": [
-        "By whom can this work be done?",
-        "By whom this work can be done?",
         "Can this work done by who?",
-        "Who can this work be done by?"
+        "Who can this work be done by?",
+        "By whom this work can be done?",
+        "By whom can this work be done?"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Modal interrogative -> 'By whom can this work be done?'."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They elected him Chairman.'",
       "options": [
-        "He was elected Chairman by them.",
         "Chairman was elected him by them.",
+        "He has been elected Chairman.",
         "He is elected Chairman.",
-        "He has been elected Chairman."
+        "He was elected Chairman by them."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Verb with factitive object complement ('Chairman') -> 'He was elected Chairman.'"
     },
     {
@@ -541,12 +541,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The teacher made him stand up.'",
       "options": [
-        "He was made to stand up by the teacher.",
         "He was made stand up by the teacher.",
         "He is made to stand up.",
-        "He had made to stand up."
+        "He had made to stand up.",
+        "He was made to stand up by the teacher."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Verbs like 'make', 'see', 'hear' take bare infinitive in active, but full infinitive with 'to' in passive ('was made to stand up')."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'I saw him cross the road.'",
       "options": [
-        "He was seen to cross the road by me.",
         "He was seen cross the road by me.",
+        "He was seen crossing the road.",
         "He is seen cross the road.",
-        "He was seen crossing the road."
+        "He was seen to cross the road by me."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Bare infinitive 'cross' becomes 'to cross' in passive voice."
     },
     {
@@ -567,12 +567,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'We heard her sing a song.'",
       "options": [
-        "She was heard to sing a song by us.",
-        "She was heard sing a song by us.",
         "She is heard singing a song.",
-        "A song was heard sung by her."
+        "A song was heard sung by her.",
+        "She was heard to sing a song by us.",
+        "She was heard sing a song by us."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Heard' takes 'to sing' in passive voice: 'She was heard to sing a song.'"
     },
     {
@@ -580,12 +580,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Why did you beat the child?'",
       "options": [
-        "Why was the child beaten by you?",
         "Why did the child beaten by you?",
+        "Why is the child beaten by you?",
         "Why the child was beaten by you?",
-        "Why is the child beaten by you?"
+        "Why was the child beaten by you?"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Wh-question in Simple Past -> 'Why was + object + V3 + by you?'."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Have you finished the task?'",
       "options": [
-        "Has the task been finished by you?",
         "Have the task been finished by you?",
-        "Was the task finished by you?",
-        "Had the task finished by you?"
+        "Had the task finished by you?",
+        "Has the task been finished by you?",
+        "Was the task finished by you?"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Present perfect question with singular object 'the task' -> 'Has the task been finished by you?'."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Will they accept the offer?'",
       "options": [
-        "Will the offer be accepted by them?",
-        "Would the offer be accepted by them?",
         "Will the offer accept by them?",
-        "Is the offer accepted by them?"
+        "Will the offer be accepted by them?",
+        "Is the offer accepted by them?",
+        "Would the offer be accepted by them?"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Future question -> 'Will + object + be + V3?'."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The manager granted him leave.'",
       "options": [
-        "He was granted leave by the manager.",
-        "Leave was granted him by the manager.",
+        "Leave has been granted to him.",
         "He is granted leave by the manager.",
-        "Leave has been granted to him."
+        "Leave was granted him by the manager.",
+        "He was granted leave by the manager."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "With two objects (indirect and direct), making the person subject is most natural: 'He was granted leave...'"
     },
     {
@@ -645,12 +645,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They refused him admission.'",
       "options": [
-        "He was refused admission by them.",
         "Admission was refused him by them.",
+        "He was refused admission by them.",
         "He is refused admission.",
         "Admission has been refused."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'He was refused admission.'"
     },
     {
@@ -658,12 +658,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Switch off the fan.'",
       "options": [
-        "Let the fan be switched off.",
         "The fan should switch off.",
+        "You are requested to switch off the fan.",
         "Let fan switched off.",
-        "You are requested to switch off the fan."
+        "Let the fan be switched off."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Imperative order -> 'Let the fan be switched off.'"
     },
     {
@@ -671,12 +671,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Open the window.'",
       "options": [
-        "Let the window be opened.",
+        "You open the window.",
         "The window may be opened.",
         "Let window opened.",
-        "You open the window."
+        "Let the window be opened."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Imperative -> 'Let the window be opened.'"
     },
     {
@@ -684,12 +684,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Do your work.'",
       "options": [
-        "Let your work be done.",
         "Your work should do.",
+        "You do your work.",
         "Let work done.",
-        "You do your work."
+        "Let your work be done."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Imperative -> 'Let your work be done.'"
     },
     {
@@ -699,8 +699,8 @@
       "options": [
         "Let the wire not be touched.",
         "Wire should not touch.",
-        "Let not wire touched.",
-        "You don't touch wire."
+        "You don't touch wire.",
+        "Let not wire touched."
       ],
       "answer": 0,
       "explanation": "Negative imperative -> 'Let the wire not be touched.'"
@@ -710,12 +710,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Kindness conquered all.'",
       "options": [
-        "All was conquered by kindness.",
+        "All is conquered by kindness.",
         "All were conquered by kindness.",
-        "All has been conquered by kindness.",
-        "All is conquered by kindness."
+        "All was conquered by kindness.",
+        "All has been conquered by kindness."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'All' as a singular collective concept here takes 'was conquered'."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The storm caused heavy damage.'",
       "options": [
-        "Heavy damage was caused by the storm.",
-        "Heavy damage is caused by the storm.",
+        "Heavy damage was being caused by the storm.",
         "Heavy damage has been caused by the storm.",
-        "Heavy damage was being caused by the storm."
+        "Heavy damage is caused by the storm.",
+        "Heavy damage was caused by the storm."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Simple Past active -> was caused."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The mason is building the wall.'",
       "options": [
-        "The wall is being built by the mason.",
-        "The wall was being built by the mason.",
+        "The wall is built by the mason.",
         "The wall has been built by the mason.",
-        "The wall is built by the mason."
+        "The wall was being built by the mason.",
+        "The wall is being built by the mason."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Present Continuous active -> is being built."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The peon rang the bell.'",
       "options": [
-        "The bell was rung by the peon.",
         "The bell was ringed by the peon.",
+        "The bell was rung by the peon.",
         "The bell is rung by the peon.",
         "The bell had rung by the peon."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple Past active -> was rung (V3 of ring is rung)."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They had already sold the house.'",
       "options": [
-        "The house had already been sold by them.",
-        "The house was already sold by them.",
         "The house has already been sold by them.",
+        "The house was already sold by them.",
+        "The house had already been sold by them.",
         "The house had been already sold."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Past Perfect active -> had already been sold."
     },
     {
@@ -776,8 +776,8 @@
       "question": "Change into passive: 'The hunter shot the tiger.'",
       "options": [
         "The tiger was shot by the hunter.",
-        "The tiger is shot by the hunter.",
         "The tiger has been shot by the hunter.",
+        "The tiger is shot by the hunter.",
         "The tiger had shot by the hunter."
       ],
       "answer": 0,
@@ -788,12 +788,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'He posted the letter yesterday.'",
       "options": [
+        "The letter had been posted yesterday.",
         "The letter was posted by him yesterday.",
         "The letter is posted by him yesterday.",
-        "The letter was being posted yesterday.",
-        "The letter had been posted yesterday."
+        "The letter was being posted yesterday."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple Past active -> was posted."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "active_passive_voice",
       "question": "Change into active: 'The thief was caught by the police.'",
       "options": [
-        "The police caught the thief.",
-        "The police catches the thief.",
+        "The police had caught the thief.",
         "The police has caught the thief.",
-        "The police had caught the thief."
+        "The police catches the thief.",
+        "The police caught the thief."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'was caught' -> active Simple Past 'caught'."
     },
     {
@@ -815,9 +815,9 @@
       "question": "Change into active: 'The snake was killed by Raju.'",
       "options": [
         "Raju killed the snake.",
-        "Raju kills the snake.",
         "Raju has killed the snake.",
-        "Raju had killed the snake."
+        "Raju had killed the snake.",
+        "Raju kills the snake."
       ],
       "answer": 0,
       "explanation": "'was killed' -> active 'killed'."
@@ -827,12 +827,12 @@
       "topic": "active_passive_voice",
       "question": "Change into active: 'A car has been bought by Mohan.'",
       "options": [
-        "Mohan has bought a car.",
+        "Mohan buys a car.",
         "Mohan had bought a car.",
-        "Mohan bought a car.",
-        "Mohan buys a car."
+        "Mohan has bought a car.",
+        "Mohan bought a car."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'has been bought' -> active 'has bought'."
     },
     {
@@ -840,12 +840,12 @@
       "topic": "active_passive_voice",
       "question": "Change into active: 'The work will be finished by her.'",
       "options": [
-        "She will finish the work.",
+        "She finishes the work.",
         "She would finish the work.",
-        "She will have finished the work.",
-        "She finishes the work."
+        "She will finish the work.",
+        "She will have finished the work."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'will be finished' -> active 'will finish'."
     },
     {
@@ -854,9 +854,9 @@
       "question": "Change into active: 'English is spoken by them.'",
       "options": [
         "They speak English.",
-        "They spoke English.",
         "They are speaking English.",
-        "They have spoken English."
+        "They have spoken English.",
+        "They spoke English."
       ],
       "answer": 0,
       "explanation": "'is spoken' -> active Simple Present 'speak'."
@@ -867,9 +867,9 @@
       "question": "Change into active: 'Let the truth be told.'",
       "options": [
         "Tell the truth.",
+        "Truth should be told.",
         "You told the truth.",
-        "The truth told.",
-        "Truth should be told."
+        "The truth told."
       ],
       "answer": 0,
       "explanation": "Imperative passive 'Let the truth be told' -> active 'Tell the truth.'"
@@ -879,12 +879,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They are cutting down the trees.'",
       "options": [
-        "The trees are being cut down by them.",
         "The trees were being cut down by them.",
+        "The trees are cut down by them.",
         "The trees have been cut down by them.",
-        "The trees are cut down by them."
+        "The trees are being cut down by them."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Present continuous -> are being cut down."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'She showed me the photograph.'",
       "options": [
-        "I was shown the photograph by her.",
-        "The photograph showed me by her.",
         "I am shown the photograph by her.",
-        "The photograph was shown me."
+        "The photograph showed me by her.",
+        "The photograph was shown me.",
+        "I was shown the photograph by her."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Indirect object 'me' -> 'I was shown the photograph by her.'"
     },
     {
@@ -905,12 +905,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'We expect good news.'",
       "options": [
-        "Good news is expected by us.",
         "Good news was expected by us.",
+        "Good news is expected by us.",
         "Good news has been expected by us.",
         "Good news are expected by us."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'News' is singular -> 'is expected'."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Can anyone cure this disease?'",
       "options": [
-        "Can this disease be cured by anyone?",
         "Could this disease be cured by anyone?",
         "Can this disease cured?",
+        "Can this disease be cured by anyone?",
         "Is this disease cured by anyone?"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Modal passive interrogative -> 'Can this disease be cured?'"
     },
     {
@@ -944,12 +944,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Who taught you French?'",
       "options": [
-        "By whom were you taught French?",
+        "By whom French was taught to you?",
         "By whom was you taught French?",
-        "Who was French taught to you?",
-        "By whom French was taught to you?"
+        "By whom were you taught French?",
+        "Who was French taught to you?"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'you' takes plural auxiliary 'were' -> 'By whom were you taught French?'."
     },
     {
@@ -958,9 +958,9 @@
       "question": "Change into passive: 'The audience clapped loudly.'",
       "options": [
         "No passive possible (intransitive verb).",
-        "The audience was clapped loudly.",
         "Clapping was done by audience.",
-        "The audience were clapped."
+        "The audience were clapped.",
+        "The audience was clapped loudly."
       ],
       "answer": 0,
       "explanation": "Intransitive verbs without an object cannot be changed into the passive voice."
@@ -998,8 +998,8 @@
       "options": [
         "It was proposed to hold a meeting.",
         "A meeting was proposed to hold.",
-        "To hold a meeting proposed.",
-        "They were proposed to hold a meeting."
+        "They were proposed to hold a meeting.",
+        "To hold a meeting proposed."
       ],
       "answer": 0,
       "explanation": "Introductory 'It' construction: 'It was proposed to hold a meeting.'"
@@ -1010,9 +1010,9 @@
       "question": "Change into passive: 'People say that he is honest.'",
       "options": [
         "It is said that he is honest.",
+        "He is said honest.",
         "He was said to be honest.",
-        "It was said that he is honest.",
-        "He is said honest."
+        "It was said that he is honest."
       ],
       "answer": 0,
       "explanation": "'People say that...' changes to 'It is said that...' or 'He is said to be honest.'"
@@ -1022,12 +1022,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They believe that the earth is round.'",
       "options": [
-        "It is believed that the earth is round.",
-        "The earth was believed to be round.",
+        "The earth is believed round.",
         "It was believed that the earth is round.",
-        "The earth is believed round."
+        "It is believed that the earth is round.",
+        "The earth was believed to be round."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'They believe that...' -> 'It is believed that the earth is round.'"
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Call in the doctor.'",
       "options": [
-        "Let the doctor be called in.",
         "The doctor may be called.",
-        "Let doctor called in.",
-        "You call the doctor."
+        "You call the doctor.",
+        "Let the doctor be called in.",
+        "Let doctor called in."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Phrasal imperative -> 'Let the doctor be called in.'"
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Take care of your health.'",
       "options": [
-        "Your health should be taken care of.",
-        "Let health be taken care of.",
         "You are taken care of health.",
-        "Health should take care."
+        "Health should take care.",
+        "Your health should be taken care of.",
+        "Let health be taken care of."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Advice imperative with phrasal verb -> 'Your health should be taken care of.'"
     },
     {
@@ -1063,8 +1063,8 @@
       "options": [
         "Your elders should be respected.",
         "Let elders respected.",
-        "Your elders ought respect.",
-        "You respect your elders."
+        "You respect your elders.",
+        "Your elders ought respect."
       ],
       "answer": 0,
       "explanation": "Moral advice -> 'Your elders should be respected.'"
@@ -1074,12 +1074,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Do not tell a lie.'",
       "options": [
-        "Let a lie not be told.",
-        "A lie should not tell.",
         "Let not lie told.",
-        "A lie is not told."
+        "A lie should not tell.",
+        "A lie is not told.",
+        "Let a lie not be told."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Negative imperative -> 'Let a lie not be told.'"
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'Never deceive anyone.'",
       "options": [
-        "Let no one ever be deceived.",
-        "You should never deceive.",
         "Anyone should not be deceived.",
-        "Let anyone not deceived."
+        "Let no one ever be deceived.",
+        "Let anyone not deceived.",
+        "You should never deceive."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Never deceive anyone' -> 'Let no one ever be deceived.'"
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'I have to do this work.'",
       "options": [
-        "This work has to be done by me.",
         "This work have to be done by me.",
-        "This work had to be done by me.",
-        "This work is to do by me."
+        "This work is to do by me.",
+        "This work has to be done by me.",
+        "This work had to be done by me."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'have to + V1' -> 'has/have to be + V3' ('has to be done')."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'She has to write a letter.'",
       "options": [
-        "A letter has to be written by her.",
         "A letter have to be written by her.",
-        "A letter was to be written by her.",
-        "A letter had to be written."
+        "A letter had to be written.",
+        "A letter has to be written by her.",
+        "A letter was to be written by her."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Infinitive of obligation -> has to be + V3 ('has to be written')."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'He is to open the shop.'",
       "options": [
-        "The shop is to be opened by him.",
         "The shop was to be opened by him.",
-        "The shop has to open by him.",
-        "The shop will be opened by him."
+        "The shop is to be opened by him.",
+        "The shop will be opened by him.",
+        "The shop has to open by him."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'is to + V1' -> is to be + V3 ('is to be opened')."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'There is no time to lose.'",
       "options": [
-        "There is no time to be lost.",
         "There was no time to lose.",
         "No time is there to lose.",
+        "There is no time to be lost.",
         "Time is not to be lost."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Infinitive after noun -> 'There is no time to be lost.'"
     },
     {
@@ -1153,9 +1153,9 @@
       "question": "Change into passive: 'It is time to take tea.'",
       "options": [
         "It is time for tea to be taken.",
+        "It was time tea to take.",
         "It is time tea taken.",
-        "Tea is time to take.",
-        "It was time tea to take."
+        "Tea is time to take."
       ],
       "answer": 0,
       "explanation": "Structure: 'It is time for + object + to be + V3' ('It is time for tea to be taken')."
@@ -1165,12 +1165,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'It is time to ring the bell.'",
       "options": [
+        "The bell is time to ring.",
         "It is time for the bell to be rung.",
         "It is time the bell rung.",
-        "The bell is time to ring.",
         "It was time for bell to ring."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'It is time for the bell to be rung.'"
     },
     {
@@ -1178,12 +1178,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The boy laughed at the monkey.'",
       "options": [
-        "The monkey was laughed at by the boy.",
-        "The monkey was laughed by the boy.",
+        "The monkey had been laughed at.",
         "The monkey is laughed at by the boy.",
-        "The monkey had been laughed at."
+        "The monkey was laughed by the boy.",
+        "The monkey was laughed at by the boy."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Preposition stays attached to verb: 'was laughed at'."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'They object to my proposal.'",
       "options": [
-        "My proposal is objected to by them.",
-        "My proposal is objected by them.",
         "My proposal was objected to.",
-        "My proposal has been objected."
+        "My proposal is objected by them.",
+        "My proposal has been objected.",
+        "My proposal is objected to by them."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'is objected to by them.'"
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The teacher looked into the matter.'",
       "options": [
-        "The matter was looked into by the teacher.",
         "The matter was looked by the teacher.",
         "The matter is looked into by the teacher.",
+        "The matter was looked into by the teacher.",
         "The matter has been looked into."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'was looked into by the teacher.'"
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'You must write to him.'",
       "options": [
-        "He must be written to by you.",
-        "He must be written by you.",
         "He should write to you.",
-        "He must write to you."
+        "He must write to you.",
+        "He must be written to by you.",
+        "He must be written by you."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'He must be written to by you.'"
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'She aims at winning the gold medal.'",
       "options": [
-        "Winning the gold medal is aimed at by her.",
         "Gold medal was aimed by her.",
         "Winning medal is aimed by her.",
-        "She is aimed at winning."
+        "She is aimed at winning.",
+        "Winning the gold medal is aimed at by her."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Winning the gold medal is aimed at by her.'"
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'His conduct shocked everyone.'",
       "options": [
-        "Everyone was shocked at his conduct.",
         "Everyone was shocked by his conduct.",
+        "Everyone was shocked at his conduct.",
         "Everyone was shocked with his conduct.",
         "Everyone was shocked in his conduct."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Shocked' takes preposition 'at': 'shocked at his conduct'."
     },
     {
@@ -1257,8 +1257,8 @@
       "question": "Change into passive: 'The news surprised us.'",
       "options": [
         "We were surprised at the news.",
-        "We were surprised by the news.",
         "We were surprised with the news.",
+        "We were surprised by the news.",
         "We are surprised at the news."
       ],
       "answer": 0,
@@ -1271,8 +1271,8 @@
       "options": [
         "Milk is contained in this bottle.",
         "Milk is contained by this bottle.",
-        "Milk is contained with this bottle.",
-        "Milk was contained in this bottle."
+        "Milk was contained in this bottle.",
+        "Milk is contained with this bottle."
       ],
       "answer": 0,
       "explanation": "'Contained' takes preposition 'in': 'contained in this bottle'."
@@ -1282,12 +1282,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The novel interested me.'",
       "options": [
-        "I was interested in the novel.",
         "I was interested by the novel.",
-        "I was interested with the novel.",
-        "I was interested to the novel."
+        "I was interested in the novel.",
+        "I was interested to the novel.",
+        "I was interested with the novel."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Interested' takes preposition 'in': 'interested in the novel'."
     },
     {
@@ -1295,12 +1295,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'His reply satisfied the officer.'",
       "options": [
-        "The officer was satisfied with his reply.",
         "The officer was satisfied by his reply.",
         "The officer was satisfied at his reply.",
-        "The officer was satisfied in his reply."
+        "The officer was satisfied in his reply.",
+        "The officer was satisfied with his reply."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Satisfied' takes preposition 'with': 'satisfied with his reply'."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "active_passive_voice",
       "question": "Change into passive: 'The room was cleaned yesterday.' (Identify voice)",
       "options": [
-        "Passive voice",
         "Active voice",
-        "Middle voice",
-        "Subjunctive voice"
+        "Passive voice",
+        "Subjunctive voice",
+        "Middle voice"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'was cleaned' (be + past participle) represents Passive voice."
     },
     {
@@ -1321,12 +1321,12 @@
       "topic": "active_passive_voice",
       "question": "Change into active: 'He was punished by the master.'",
       "options": [
-        "The master punished him.",
-        "The master punishes him.",
+        "The master has punished him.",
         "The master had punished him.",
-        "The master has punished him."
+        "The master punished him.",
+        "The master punishes him."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Simple Past passive 'was punished' -> active 'punished'."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "active_passive_voice",
       "question": "Change into active: 'A song was being sung by Mary.'",
       "options": [
-        "Mary was singing a song.",
         "Mary is singing a song.",
         "Mary sang a song.",
-        "Mary had sung a song."
+        "Mary had sung a song.",
+        "Mary was singing a song."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past continuous passive 'was being sung' -> active 'was singing'."
     },
     {
@@ -1348,8 +1348,8 @@
       "question": "Change into active: 'The work will have been completed by them.'",
       "options": [
         "They will have completed the work.",
-        "They will complete the work.",
         "They would have completed the work.",
+        "They will complete the work.",
         "They have completed the work."
       ],
       "answer": 0,
@@ -1360,12 +1360,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Someone has stolen my watch.'",
       "options": [
-        "My watch has been stolen.",
         "My watch was stolen by someone.",
-        "My watch had been stolen.",
-        "Someone stole my watch."
+        "Someone stole my watch.",
+        "My watch has been stolen.",
+        "My watch had been stolen."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Indefinite agents like 'someone' are omitted in passive: 'My watch has been stolen.'"
     },
     {
@@ -1375,8 +1375,8 @@
       "options": [
         "Let the door be closed.",
         "The door should close.",
-        "Let door closed.",
-        "You are asked close door."
+        "You are asked close door.",
+        "Let door closed."
       ],
       "answer": 0,
       "explanation": "Imperative passive formula: 'Let + object + be + past participle'."
@@ -1386,12 +1386,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Who wrote this masterpiece?'",
       "options": [
-        "By whom was this masterpiece written?",
         "By who was this masterpiece written?",
         "Who was this masterpiece written by?",
+        "By whom was this masterpiece written?",
         "Whom was this masterpiece written?"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Who' transforms to 'By whom was... written?'"
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Active: 'The bridge was designed by a British engineer.'",
       "options": [
-        "A British engineer designed the bridge.",
         "A British engineer had designed the bridge.",
-        "A British engineer was designing the bridge.",
-        "A British engineer designs the bridge."
+        "A British engineer designed the bridge.",
+        "A British engineer designs the bridge.",
+        "A British engineer was designing the bridge."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Passive simple past 'was designed' converts to active 'designed'."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They are constructing a new highway.'",
       "options": [
-        "A new highway is being constructed by them.",
         "A new highway was being constructed.",
         "A new highway has been constructed.",
+        "A new highway is being constructed by them.",
         "A new highway is constructed."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Present continuous passive: 'is/are + being + past participle'."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'The police caught the thief red-handed.'",
       "options": [
-        "The thief was caught red-handed by the police.",
-        "The thief has been caught red-handed.",
         "The thief had been caught by police.",
-        "The thief was being caught."
+        "The thief was caught red-handed by the police.",
+        "The thief was being caught.",
+        "The thief has been caught red-handed."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple past 'caught' becomes 'was caught'."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'He will write an article.'",
       "options": [
-        "An article will be written by him.",
         "An article would be written by him.",
         "An article will have been written.",
-        "An article is written by him."
+        "An article is written by him.",
+        "An article will be written by him."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Future simple 'will write' becomes 'will be written'."
     },
     {
@@ -1453,8 +1453,8 @@
       "options": [
         "Our elders must be respected.",
         "Our elders should have been respected.",
-        "Our elders must respect us.",
-        "Let our elders be respected."
+        "Let our elders be respected.",
+        "Our elders must respect us."
       ],
       "answer": 0,
       "explanation": "Modal passive: 'must + be + past participle'."
@@ -1464,12 +1464,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'People speak English all over the world.'",
       "options": [
-        "English is spoken all over the world.",
-        "English was spoken all over world.",
         "English has been spoken by people.",
+        "English was spoken all over world.",
+        "English is spoken all over the world.",
         "English is being spoken."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Vague subject 'people' is omitted: 'English is spoken all over the world.'"
     },
     {
@@ -1479,8 +1479,8 @@
       "options": [
         "Let the flowers not be plucked.",
         "Flowers should not pluck.",
-        "Let not flowers plucked.",
-        "You pluck not flowers."
+        "You pluck not flowers.",
+        "Let not flowers plucked."
       ],
       "answer": 0,
       "explanation": "Negative imperative: 'Let + object + not be + past participle'."
@@ -1492,8 +1492,8 @@
       "options": [
         "A delicious meal has been prepared by the chef.",
         "A delicious meal was prepared by chef.",
-        "A delicious meal had been prepared.",
-        "A delicious meal is prepared."
+        "A delicious meal is prepared.",
+        "A delicious meal had been prepared."
       ],
       "answer": 0,
       "explanation": "Present perfect passive: 'has been prepared'."
@@ -1503,12 +1503,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Active: 'The letter was delivered by the postman.'",
       "options": [
-        "The postman delivered the letter.",
         "The postman has delivered the letter.",
         "The postman had delivered the letter.",
+        "The postman delivered the letter.",
         "The postman delivers the letter."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Simple past active 'delivered'."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They had already informed the manager.'",
       "options": [
-        "The manager had already been informed by them.",
         "The manager has already been informed.",
-        "The manager was already informed.",
-        "The manager had been already informing."
+        "The manager had been already informing.",
+        "The manager had already been informed by them.",
+        "The manager was already informed."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Past perfect passive: 'had already been informed'."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'One should keep one's promises.'",
       "options": [
+        "Promises should have kept.",
         "Promises should be kept.",
-        "One's promises should be kept by one.",
         "Promises must keep.",
-        "Promises should have kept."
+        "One's promises should be kept by one."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Impersonal pronoun 'one' is omitted: 'Promises should be kept.'"
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They elected him President.'",
       "options": [
-        "He was elected President.",
         "President was elected by him.",
-        "He has been elected President.",
-        "He was being elected President."
+        "He was elected President.",
+        "He was being elected President.",
+        "He has been elected President."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Factitive object complement: 'He was elected President.'"
     },
     {
@@ -1569,9 +1569,9 @@
       "question": "Change to Passive: 'The teacher made him stand outside.'",
       "options": [
         "He was made to stand outside by the teacher.",
-        "He was made stand outside.",
         "He was making to stand outside.",
-        "Outside he stood by teacher."
+        "Outside he stood by teacher.",
+        "He was made stand outside."
       ],
       "answer": 0,
       "explanation": "Verbs like 'make' take bare infinitive in active but 'to-infinitive' in passive ('made to stand')."
@@ -1581,12 +1581,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'I know him very well.'",
       "options": [
-        "He is known to me very well.",
+        "He has been known to me.",
         "He is known by me very well.",
-        "He was known to me.",
-        "He has been known to me."
+        "He is known to me very well.",
+        "He was known to me."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The verb 'know' takes 'to', not 'by' ('known to me')."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Her melodious voice pleased everyone.'",
       "options": [
-        "Everyone was pleased with her melodious voice.",
-        "Everyone was pleased by her voice.",
         "Everyone was pleased at her voice.",
+        "Everyone was pleased by her voice.",
+        "Everyone was pleased with her melodious voice.",
         "Everyone is pleased with voice."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Pleased' takes the preposition 'with' when referring to things."
     },
     {
@@ -1608,9 +1608,9 @@
       "question": "Change to Passive: 'The sudden news surprised us all.'",
       "options": [
         "We all were surprised at the sudden news.",
+        "We all are surprised at news.",
         "We all were surprised by news.",
-        "We all were surprised with news.",
-        "We all are surprised at news."
+        "We all were surprised with news."
       ],
       "answer": 0,
       "explanation": "'Surprised' takes the preposition 'at' for news/events."
@@ -1620,12 +1620,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'The smoke filled the entire hall.'",
       "options": [
-        "The entire hall was filled with smoke.",
         "The entire hall was filled by smoke.",
-        "The entire hall was filled of smoke.",
-        "The hall had filled with smoke."
+        "The entire hall was filled with smoke.",
+        "The hall had filled with smoke.",
+        "The entire hall was filled of smoke."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Filled' takes preposition 'with'."
     },
     {
@@ -1634,9 +1634,9 @@
       "question": "Change to Passive: 'Water contains hydrogen and oxygen.'",
       "options": [
         "Hydrogen and oxygen are contained in water.",
-        "Hydrogen and oxygen are contained by water.",
         "Hydrogen and oxygen were contained.",
-        "Water is contained with hydrogen."
+        "Water is contained with hydrogen.",
+        "Hydrogen and oxygen are contained by water."
       ],
       "answer": 0,
       "explanation": "'Contained' takes the preposition 'in'."
@@ -1647,8 +1647,8 @@
       "question": "Change to Passive: 'Open your textbooks.'",
       "options": [
         "Let your textbooks be opened.",
-        "Your textbooks should open.",
         "Let open your textbooks.",
+        "Your textbooks should open.",
         "You are opened textbooks."
       ],
       "answer": 0,
@@ -1659,12 +1659,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Why did you insult the poor beggar?'",
       "options": [
-        "Why was the poor beggar insulted by you?",
-        "Why did the poor beggar insulted by you?",
         "Why had the poor beggar been insulted?",
-        "Why the poor beggar was insulted?"
+        "Why the poor beggar was insulted?",
+        "Why did the poor beggar insulted by you?",
+        "Why was the poor beggar insulted by you?"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past simple interrogative: 'Why was + object + V3 + by you?'"
     },
     {
@@ -1673,9 +1673,9 @@
       "question": "Change to Passive: 'Where did you find this antique coin?'",
       "options": [
         "Where was this antique coin found by you?",
+        "Where this coin was found?",
         "Where did this antique coin found?",
-        "Where had this coin found?",
-        "Where this coin was found?"
+        "Where had this coin found?"
       ],
       "answer": 0,
       "explanation": "'Where was this antique coin found by you?'"
@@ -1685,12 +1685,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They are repairing the bridge.'",
       "options": [
-        "The bridge is being repaired by them.",
-        "The bridge was being repaired.",
         "The bridge has been repaired.",
-        "The bridge is repaired."
+        "The bridge is repaired.",
+        "The bridge was being repaired.",
+        "The bridge is being repaired by them."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Present continuous passive uses 'is being repaired'."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'The fire destroyed the warehouse.'",
       "options": [
+        "The warehouse has been destroyed.",
         "The warehouse was destroyed by the fire.",
         "The warehouse had been destroyed.",
-        "The warehouse has been destroyed.",
         "The warehouse was being destroyed."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple past 'was destroyed'."
     },
     {
@@ -1712,9 +1712,9 @@
       "question": "Change to Passive: 'Nobody can solve this riddle.'",
       "options": [
         "This riddle cannot be solved by anybody.",
-        "This riddle can be solved by nobody.",
+        "This riddle is not solved.",
         "This riddle can not be solve.",
-        "This riddle is not solved."
+        "This riddle can be solved by nobody."
       ],
       "answer": 0,
       "explanation": "'Nobody can...' becomes 'This riddle cannot be solved by anybody.'"
@@ -1737,12 +1737,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Active: 'The match has been won by our team.'",
       "options": [
-        "Our team has won the match.",
-        "Our team won the match.",
         "Our team had won the match.",
-        "Our team will win the match."
+        "Our team won the match.",
+        "Our team will win the match.",
+        "Our team has won the match."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Present perfect active: 'Our team has won the match.'"
     },
     {
@@ -1751,9 +1751,9 @@
       "question": "Change to Passive: 'Post this letter immediately.'",
       "options": [
         "Let this letter be posted immediately.",
-        "This letter must post.",
         "You post this letter.",
-        "Let post this letter."
+        "Let post this letter.",
+        "This letter must post."
       ],
       "answer": 0,
       "explanation": "'Let this letter be posted immediately.'"
@@ -1763,12 +1763,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Help the needy.'",
       "options": [
-        "Let the needy be helped.",
         "The needy should be helped.",
         "Both A and B are acceptable.",
+        "Let the needy be helped.",
         "The needy helps."
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Moral imperatives can use either 'Let... be' or 'should be helped'."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Did you hear the thunder?'",
       "options": [
+        "Is the thunder heard by you?",
         "Was the thunder heard by you?",
-        "Did the thunder heard by you?",
         "Had the thunder been heard?",
-        "Is the thunder heard by you?"
+        "Did the thunder heard by you?"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple past interrogative passive: 'Was + object + V3?'"
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They will inaugurate the metro line next month.'",
       "options": [
-        "The metro line will be inaugurated next month.",
         "The metro line would be inaugurated.",
-        "The metro line will have inaugurated.",
-        "The metro line is inaugurated."
+        "The metro line will be inaugurated next month.",
+        "The metro line is inaugurated.",
+        "The metro line will have inaugurated."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'will be inaugurated'."
     },
     {
@@ -1802,12 +1802,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'We expect good news.'",
       "options": [
-        "Good news is expected by us.",
         "Good news was expected.",
         "Good news has been expected.",
+        "Good news is expected by us.",
         "Good news are expected."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'News' is singular: 'Good news is expected.'"
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They say that honesty pays.'",
       "options": [
-        "It is said that honesty pays.",
-        "Honesty is said to pay.",
         "Both A and B are valid.",
-        "Honesty pays is said."
+        "Honesty pays is said.",
+        "Honesty is said to pay.",
+        "It is said that honesty pays."
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "Sentences with 'They say that...' transform to 'It is said that...' or personal passive."
     },
     {
@@ -1829,9 +1829,9 @@
       "question": "Change to Passive: 'The doctor advised him complete bed rest.'",
       "options": [
         "He was advised complete bed rest by the doctor.",
-        "Complete bed rest advised him.",
         "He was advising complete bed rest.",
-        "He has been advised bed rest."
+        "He has been advised bed rest.",
+        "Complete bed rest advised him."
       ],
       "answer": 0,
       "explanation": "Personal object 'him' becomes subject 'He was advised...'"
@@ -1842,9 +1842,9 @@
       "question": "Change to Passive: 'Switch off the lights.'",
       "options": [
         "Let the lights be switched off.",
+        "Lights are switched off.",
         "Lights must switch off.",
-        "Let switch off lights.",
-        "Lights are switched off."
+        "Let switch off lights."
       ],
       "answer": 0,
       "explanation": "'Let the lights be switched off.'"
@@ -1854,12 +1854,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Someone knocked at the door.'",
       "options": [
-        "The door was knocked at.",
-        "The door was knocked by someone.",
         "The door had been knocked at.",
+        "The door was knocked by someone.",
+        "The door was knocked at.",
         "Someone was knocked at door."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Preposition remains attached to the verb: 'knocked at'."
     },
     {
@@ -1867,12 +1867,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They laughed at the clown.'",
       "options": [
-        "The clown was laughed at by them.",
-        "The clown was laughed by them.",
         "The clown had laughed at.",
-        "The clown was being laughed."
+        "The clown was laughed at by them.",
+        "The clown was being laughed.",
+        "The clown was laughed by them."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Prepositional verb retains preposition: 'was laughed at'."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'You should look into the matter.'",
       "options": [
-        "The matter should be looked into by you.",
-        "The matter should be looked by you.",
         "The matter was looked into.",
-        "The matter should look into."
+        "The matter should look into.",
+        "The matter should be looked into by you.",
+        "The matter should be looked by you."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'should be looked into'."
     },
     {
@@ -1894,11 +1894,11 @@
       "question": "Change to Passive: 'She gave the orphan a warm coat.'",
       "options": [
         "The orphan was given a warm coat by her.",
-        "A warm coat was given to the orphan by her.",
         "Both A and B are correct.",
+        "A warm coat was given to the orphan by her.",
         "None of the above."
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Both passive transformations of ditransitive verb are correct."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'I saw him crossing the street.'",
       "options": [
-        "He was seen crossing the street.",
-        "Crossing the street he was seen.",
+        "He was seen to cross street.",
         "He saw crossing the street.",
-        "He was seen to cross street."
+        "Crossing the street he was seen.",
+        "He was seen crossing the street."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Participle clause in passive: 'He was seen crossing the street.'"
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'He heard her singing a song.'",
       "options": [
-        "She was heard singing a song by him.",
-        "A song was heard singing by her.",
         "She was heard to sing song.",
+        "A song was heard singing by her.",
+        "She was heard singing a song by him.",
         "She heard singing by him."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'She was heard singing a song.'"
     },
     {
@@ -1933,11 +1933,11 @@
       "question": "Change to Passive: 'Never tell a lie.'",
       "options": [
         "Let a lie never be told.",
-        "A lie should never be told.",
         "Both A and B are acceptable.",
+        "A lie should never be told.",
         "A lie is never told."
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Both forms are standard passive imperatives."
     },
     {
@@ -1946,8 +1946,8 @@
       "question": "Change to Passive: 'The committee rejected the proposal.'",
       "options": [
         "The proposal was rejected by the committee.",
-        "The proposal has been rejected.",
         "The proposal had been rejected.",
+        "The proposal has been rejected.",
         "The proposal was being rejected."
       ],
       "answer": 0,
@@ -1958,12 +1958,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'Did she invite you to the party?'",
       "options": [
+        "Was you invited by her?",
         "Were you invited to the party by her?",
-        "Did you invited by her?",
         "Had you been invited by her?",
-        "Was you invited by her?"
+        "Did you invited by her?"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Were you invited...?' ('you' takes 'were')."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'They are distributing relief packets.'",
       "options": [
-        "Relief packets are being distributed by them.",
-        "Relief packets were distributed.",
         "Relief packets have been distributed.",
+        "Relief packets were distributed.",
+        "Relief packets are being distributed by them.",
         "Relief packets are distributed."
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'are being distributed'."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'He wrote five novels.'",
       "options": [
-        "Five novels were written by him.",
-        "Five novels was written by him.",
+        "Five novels are written by him.",
         "Five novels had written by him.",
-        "Five novels are written by him."
+        "Five novels was written by him.",
+        "Five novels were written by him."
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Plural object 'five novels' takes plural auxiliary 'were written'."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "active_passive_voice",
       "question": "Change to Passive: 'The gardener waters the plants every evening.'",
       "options": [
+        "The plants have been watered.",
         "The plants are watered by the gardener every evening.",
         "The plants were watered by gardener.",
-        "The plants have been watered.",
         "The plants are being watered."
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Simple present passive: 'are watered'."
     }
   ]

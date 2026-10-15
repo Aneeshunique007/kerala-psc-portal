@@ -8,12 +8,12 @@
       "topic": "infinitives_gerunds",
       "question": "I look forward to ______ you soon.",
       "options": [
-        "meeting",
-        "meet",
+        "met",
         "to meet",
-        "met"
+        "meet",
+        "meeting"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Phrasal verb 'look forward to' is followed by a gerund (-ing form), not a bare infinitive."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "infinitives_gerunds",
       "question": "He is addicted to ______ gambling.",
       "options": [
-        "playing",
         "play",
-        "to play",
-        "played"
+        "played",
+        "playing",
+        "to play"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Addicted to' takes a gerund (-ing form)."
     },
     {
@@ -36,8 +36,8 @@
       "options": [
         "talking",
         "to talk",
-        "talk",
-        "talked"
+        "talked",
+        "talk"
       ],
       "answer": 0,
       "explanation": "The verb 'avoid' is followed by a gerund, not an infinitive."
@@ -47,12 +47,12 @@
       "topic": "infinitives_gerunds",
       "question": "He enjoyed ______ in the river.",
       "options": [
-        "swimming",
-        "to swim",
         "swim",
-        "swam"
+        "swimming",
+        "swam",
+        "to swim"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Enjoy' is followed by a gerund ('swimming')."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "infinitives_gerunds",
       "question": "Would you mind ______ the door?",
       "options": [
+        "closed",
         "closing",
         "to close",
-        "close",
-        "closed"
+        "close"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would you mind' is always followed by a gerund (-ing form)."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "infinitives_gerunds",
       "question": "He made me ______ for two hours.",
       "options": [
-        "wait",
-        "to wait",
         "waiting",
-        "waited"
+        "waited",
+        "wait",
+        "to wait"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The causative verb 'make' takes a bare infinitive (wait without 'to') in active voice."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "infinitives_gerunds",
       "question": "I saw him ______ the bicycle.",
       "options": [
-        "steal",
         "to steal",
         "stole",
-        "stolen"
+        "stolen",
+        "steal"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Verbs of perception (see, hear, watch) take bare infinitive or participle ('steal')."
     },
     {
@@ -100,9 +100,9 @@
       "question": "He prevented me from ______ the gate.",
       "options": [
         "entering",
+        "entered",
         "to enter",
-        "enter",
-        "entered"
+        "enter"
       ],
       "answer": 0,
       "explanation": "Prepositions are followed by gerunds: 'from entering'."
@@ -112,12 +112,12 @@
       "topic": "infinitives_gerunds",
       "question": "There is no harm in ______ the truth.",
       "options": [
-        "telling",
         "to tell",
+        "telling",
         "tell",
         "told"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Preposition 'in' takes a gerund: 'in telling'."
     },
     {
@@ -125,12 +125,12 @@
       "topic": "infinitives_gerunds",
       "question": "He gave up ______ after his illness.",
       "options": [
-        "smoking",
-        "to smoke",
+        "smoked",
         "smoke",
-        "smoked"
+        "to smoke",
+        "smoking"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Phrasal verb 'give up' takes a gerund: 'give up smoking'."
     },
     {
@@ -140,8 +140,8 @@
       "options": [
         "reading",
         "to read",
-        "read",
-        "reads"
+        "reads",
+        "read"
       ],
       "answer": 0,
       "explanation": "Preposition 'of' takes a gerund: 'fond of reading'."
@@ -152,9 +152,9 @@
       "question": "It is no use ______ over spilt milk.",
       "options": [
         "crying",
-        "to cry",
+        "cried",
         "cry",
-        "cried"
+        "to cry"
       ],
       "answer": 0,
       "explanation": "The idiomatic phrase 'It is no use' takes a gerund ('crying')."
@@ -164,12 +164,12 @@
       "topic": "infinitives_gerunds",
       "question": "It is worth ______ this exhibition.",
       "options": [
-        "visiting",
+        "visited",
         "to visit",
         "visit",
-        "visited"
+        "visiting"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Worth' is followed by a gerund ('worth visiting')."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "infinitives_gerunds",
       "question": "He is keen on ______ French.",
       "options": [
-        "learning",
-        "to learn",
         "learn",
+        "to learn",
+        "learning",
         "learnt"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Preposition 'on' takes a gerund: 'keen on learning'."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "infinitives_gerunds",
       "question": "She was accused of ______ money.",
       "options": [
-        "stealing",
-        "to steal",
         "steal",
-        "stolen"
+        "stolen",
+        "stealing",
+        "to steal"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Preposition 'of' takes a gerund: 'accused of stealing'."
     },
     {
@@ -203,12 +203,12 @@
       "topic": "infinitives_gerunds",
       "question": "I am tired of ______ to his excuses.",
       "options": [
-        "listening",
         "to listen",
+        "listening",
         "listen",
         "listened"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Preposition 'of' takes a gerund: 'tired of listening'."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "infinitives_gerunds",
       "question": "We are looking forward to ______ the exam results.",
       "options": [
-        "receiving",
+        "received",
         "receive",
         "to receive",
-        "received"
+        "receiving"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Looking forward to' takes a gerund ('receiving')."
     },
     {
@@ -229,12 +229,12 @@
       "topic": "infinitives_gerunds",
       "question": "With a view to ______ his English, he joined a course.",
       "options": [
-        "improving",
-        "improve",
         "to improve",
-        "improved"
+        "improving",
+        "improved",
+        "improve"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'With a view to' is always followed by a gerund ('improving')."
     },
     {
@@ -243,9 +243,9 @@
       "question": "He is used to ______ up late.",
       "options": [
         "staying",
-        "stay",
         "to stay",
-        "stayed"
+        "stayed",
+        "stay"
       ],
       "answer": 0,
       "explanation": "'Be used to' (accustomed to) takes a gerund ('staying')."
@@ -255,12 +255,12 @@
       "topic": "infinitives_gerunds",
       "question": "I remember ______ him at the conference last year.",
       "options": [
+        "met",
         "meeting",
         "to meet",
-        "meet",
-        "met"
+        "meet"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Remember + gerund' refers to recalling a past memory."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "infinitives_gerunds",
       "question": "Please remember ______ the front door before leaving.",
       "options": [
+        "locked",
         "to lock",
-        "locking",
         "lock",
-        "locked"
+        "locking"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Remember + infinitive' means not to forget a future duty/obligation."
     },
     {
@@ -281,12 +281,12 @@
       "topic": "infinitives_gerunds",
       "question": "He stopped ______ when the teacher entered the classroom.",
       "options": [
-        "talking",
-        "to talk",
         "talk",
-        "talked"
+        "talked",
+        "talking",
+        "to talk"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Stop + gerund' means to discontinue an action altogether."
     },
     {
@@ -294,12 +294,12 @@
       "topic": "infinitives_gerunds",
       "question": "On his way home, he stopped ______ some fruits.",
       "options": [
-        "to buy",
-        "buying",
         "buy",
-        "bought"
+        "to buy",
+        "bought",
+        "buying"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Stop + infinitive' means halting in order to do something."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "infinitives_gerunds",
       "question": "I regret ______ you that your application was rejected.",
       "options": [
-        "to inform",
-        "informing",
         "inform",
-        "informed"
+        "to inform",
+        "informed",
+        "informing"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Regret to inform' is used when giving bad news formally."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "infinitives_gerunds",
       "question": "He regretted ______ so much money on gambling.",
       "options": [
-        "spending",
-        "to spend",
         "spend",
-        "spent"
+        "to spend",
+        "spent",
+        "spending"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Regret + gerund' means feeling sorry about a past action."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "infinitives_gerunds",
       "question": "He postponed ______ the dentist.",
       "options": [
+        "visited",
         "visiting",
-        "to visit",
         "visit",
-        "visited"
+        "to visit"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Postpone' is followed by a gerund ('visiting')."
     },
     {
@@ -347,9 +347,9 @@
       "question": "They admitted ______ the mistake.",
       "options": [
         "making",
+        "made",
         "to make",
-        "make",
-        "made"
+        "make"
       ],
       "answer": 0,
       "explanation": "'Admit' is followed by a gerund ('making')."
@@ -360,9 +360,9 @@
       "question": "She denied ______ the confidential document.",
       "options": [
         "leaking",
+        "leaked",
         "to leak",
-        "leak",
-        "leaked"
+        "leak"
       ],
       "answer": 0,
       "explanation": "'Deny' is followed by a gerund ('leaking')."
@@ -372,12 +372,12 @@
       "topic": "infinitives_gerunds",
       "question": "He suggested ______ for a walk.",
       "options": [
-        "going",
-        "to go",
+        "went",
         "go",
-        "went"
+        "going",
+        "to go"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Suggest' takes a gerund ('suggested going')."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "infinitives_gerunds",
       "question": "She hates ______ lies.",
       "options": [
-        "telling",
-        "to tell",
+        "told",
         "tell",
-        "told"
+        "telling",
+        "to tell"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Hate' takes a gerund ('hates telling')."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "infinitives_gerunds",
       "question": "He cannot help ______ at the funny clown.",
       "options": [
-        "laughing",
         "to laugh",
-        "laugh",
-        "laughed"
+        "laughing",
+        "laughed",
+        "laugh"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Cannot help' is followed by a gerund ('laughing')."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "infinitives_gerunds",
       "question": "I cannot bear ______ him suffer like this.",
       "options": [
-        "seeing",
-        "to see",
+        "saw",
         "see",
-        "saw"
+        "seeing",
+        "to see"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cannot bear' takes a gerund ('seeing')."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "infinitives_gerunds",
       "question": "Let him ______ whatever he wants.",
       "options": [
-        "do",
+        "did",
         "to do",
-        "doing",
-        "did"
+        "do",
+        "doing"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Let' is followed by a bare infinitive ('do')."
     },
     {
@@ -438,9 +438,9 @@
       "question": "You had better ______ a doctor.",
       "options": [
         "see",
-        "to see",
+        "saw",
         "seeing",
-        "saw"
+        "to see"
       ],
       "answer": 0,
       "explanation": "'Had better' takes a bare infinitive ('see')."
@@ -450,12 +450,12 @@
       "topic": "infinitives_gerunds",
       "question": "I would rather ______ than surrender.",
       "options": [
-        "die",
+        "died",
         "to die",
-        "dying",
-        "died"
+        "die",
+        "dying"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Would rather' takes a bare infinitive ('die')."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "infinitives_gerunds",
       "question": "He did nothing but ______ all day.",
       "options": [
+        "sleeping",
         "sleep",
         "to sleep",
-        "sleeping",
         "slept"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "After 'did nothing but...', a bare infinitive is used ('sleep')."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "infinitives_gerunds",
       "question": "She bade him ______ the room.",
       "options": [
-        "leave",
-        "to leave",
+        "left",
         "leaving",
-        "left"
+        "leave",
+        "to leave"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bid' (bade) takes a bare infinitive ('leave')."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "infinitives_gerunds",
       "question": "I heard her ______ a sweet song.",
       "options": [
-        "sing",
-        "to sing",
         "sang",
-        "sung"
+        "sung",
+        "to sing",
+        "sing"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Verbs of perception like 'hear' take bare infinitive ('sing')."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "infinitives_gerunds",
       "question": "He was made ______ the speech.",
       "options": [
+        "delivered",
         "to deliver",
         "deliver",
-        "delivering",
-        "delivered"
+        "delivering"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "In passive voice, 'make' takes full infinitive with 'to' ('was made to deliver')."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "infinitives_gerunds",
       "question": "He was seen ______ the compound wall.",
       "options": [
-        "to scale",
-        "scale",
+        "scales",
         "scaled",
-        "scales"
+        "to scale",
+        "scale"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "In passive voice, 'see' takes full infinitive ('was seen to scale')."
     },
     {
@@ -529,9 +529,9 @@
       "question": "She refused ______ the bribe.",
       "options": [
         "to accept",
-        "accepting",
         "accept",
-        "accepted"
+        "accepted",
+        "accepting"
       ],
       "answer": 0,
       "explanation": "'Refuse' is followed by a full infinitive with 'to' ('to accept')."
@@ -541,12 +541,12 @@
       "topic": "infinitives_gerunds",
       "question": "He promised ______ me tomorrow.",
       "options": [
+        "helped",
         "to help",
         "helping",
-        "help",
-        "helped"
+        "help"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Promise' takes a full infinitive ('to help')."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "infinitives_gerunds",
       "question": "She decided ______ for the IAS exam.",
       "options": [
+        "prepare",
         "to prepare",
         "preparing",
-        "prepare",
         "prepared"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Decide' takes a full infinitive ('to prepare')."
     },
     {
@@ -580,12 +580,12 @@
       "topic": "infinitives_gerunds",
       "question": "He managed ______ the train just in time.",
       "options": [
-        "to catch",
         "catching",
+        "to catch",
         "catch",
         "caught"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Manage' takes a full infinitive ('to catch')."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "infinitives_gerunds",
       "question": "She hopes ______ the scholarship.",
       "options": [
-        "to win",
-        "winning",
+        "won",
         "win",
-        "won"
+        "winning",
+        "to win"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hope' takes a full infinitive ('to win')."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "infinitives_gerunds",
       "question": "He pretended ______ asleep.",
       "options": [
-        "to be",
-        "being",
         "be",
-        "been"
+        "being",
+        "been",
+        "to be"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Pretend' takes a full infinitive ('to be')."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "infinitives_gerunds",
       "question": "I want ______ English fluently.",
       "options": [
-        "to speak",
+        "spoke",
         "speaking",
         "speak",
-        "spoke"
+        "to speak"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Want' takes a full infinitive ('to speak')."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "infinitives_gerunds",
       "question": "He is too weak ______.",
       "options": [
-        "to walk",
-        "walking",
         "walk",
-        "walked"
+        "walking",
+        "walked",
+        "to walk"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'too... to + V1' ('too weak to walk')."
     },
     {
@@ -646,8 +646,8 @@
       "question": "He has enough sense ______ the danger.",
       "options": [
         "to realize",
-        "realizing",
         "realize",
+        "realizing",
         "realized"
       ],
       "answer": 0,
@@ -658,12 +658,12 @@
       "topic": "infinitives_gerunds",
       "question": "This mango is fit ______.",
       "options": [
+        "eaten",
         "to eat",
         "eating",
-        "eat",
-        "eaten"
+        "eat"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Adjective 'fit' takes infinitive of purpose/state ('to eat')."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "infinitives_gerunds",
       "question": "______ is believing.",
       "options": [
+        "See",
         "Seeing",
         "To see",
-        "See",
         "Saw"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Famous proverb: 'Seeing is believing' (subject and complement are gerunds)."
     },
     {
@@ -685,9 +685,9 @@
       "question": "______ is injurious to health.",
       "options": [
         "Smoking",
-        "To smoke",
         "Smoke",
-        "Smoked"
+        "Smoked",
+        "To smoke"
       ],
       "answer": 0,
       "explanation": "Gerund as subject of the sentence: 'Smoking is injurious to health.'"
@@ -697,12 +697,12 @@
       "topic": "infinitives_gerunds",
       "question": "______ is human; to forgive, divine.",
       "options": [
-        "To err",
         "Erring",
+        "Erred",
         "Err",
-        "Erred"
+        "To err"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Proverb: 'To err is human; to forgive, divine' (infinitive as subject)."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "infinitives_gerunds",
       "question": "He is afraid of ______ in the dark.",
       "options": [
+        "walked",
         "walking",
-        "to walk",
         "walk",
-        "walked"
+        "to walk"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Preposition 'of' takes a gerund: 'afraid of walking'."
     },
     {
@@ -724,8 +724,8 @@
       "question": "She is good at ______ portraits.",
       "options": [
         "drawing",
-        "to draw",
         "draw",
+        "to draw",
         "drawn"
       ],
       "answer": 0,
@@ -736,12 +736,12 @@
       "topic": "infinitives_gerunds",
       "question": "He insisted on ______ the bill.",
       "options": [
-        "paying",
         "to pay",
         "pay",
+        "paying",
         "paid"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Preposition 'on' takes a gerund: 'insisted on paying'."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "infinitives_gerunds",
       "question": "They succeeded in ______ the summit.",
       "options": [
-        "reaching",
         "to reach",
+        "reaching",
         "reach",
         "reached"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Preposition 'in' takes a gerund: 'succeeded in reaching'."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "infinitives_gerunds",
       "question": "She is capable of ______ the heavy load.",
       "options": [
-        "carrying",
-        "to carry",
         "carry",
+        "to carry",
+        "carrying",
         "carried"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Preposition 'of' takes a gerund: 'capable of carrying'."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "infinitives_gerunds",
       "question": "He desisted from ______ falsehoods.",
       "options": [
-        "speaking",
         "to speak",
-        "speak",
-        "spoke"
+        "speaking",
+        "spoke",
+        "speak"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Preposition 'from' takes a gerund: 'desisted from speaking'."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "infinitives_gerunds",
       "question": "They disqualified him for ______ late.",
       "options": [
-        "arriving",
         "to arrive",
         "arrive",
-        "arrived"
+        "arrived",
+        "arriving"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Preposition 'for' takes a gerund: 'for arriving'."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "infinitives_gerunds",
       "question": "I object to your ______ without asking.",
       "options": [
-        "leaving",
+        "left",
         "to leave",
         "leave",
-        "left"
+        "leaving"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Object to' takes a possessive adjective + gerund ('your leaving')."
     },
     {
@@ -828,9 +828,9 @@
       "question": "I dislike ______ interrupted while reading.",
       "options": [
         "being",
-        "to be",
         "be",
-        "been"
+        "been",
+        "to be"
       ],
       "answer": 0,
       "explanation": "'Dislike' takes a passive gerund ('being interrupted')."
@@ -840,12 +840,12 @@
       "topic": "infinitives_gerunds",
       "question": "He avoids ______ mistakes.",
       "options": [
-        "making",
-        "to make",
         "make",
-        "made"
+        "to make",
+        "made",
+        "making"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Avoid' takes a gerund ('making')."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "infinitives_gerunds",
       "question": "She finished ______ the novel.",
       "options": [
-        "reading",
-        "to read",
+        "reads",
         "read",
-        "reads"
+        "reading",
+        "to read"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Finish' takes a gerund ('finished reading')."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "infinitives_gerunds",
       "question": "He risked ______ his life to save the drowning child.",
       "options": [
+        "lost",
         "losing",
-        "to lose",
         "lose",
-        "lost"
+        "to lose"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Risk' takes a gerund ('risked losing')."
     },
     {
@@ -880,8 +880,8 @@
       "question": "I cannot resist ______ chocolates.",
       "options": [
         "eating",
-        "to eat",
         "eat",
+        "to eat",
         "ate"
       ],
       "answer": 0,
@@ -892,12 +892,12 @@
       "topic": "infinitives_gerunds",
       "question": "Would you mind ______ me your pen?",
       "options": [
+        "lend",
         "lending",
         "to lend",
-        "lend",
         "lent"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would you mind lending...'"
     },
     {
@@ -905,12 +905,12 @@
       "topic": "infinitives_gerunds",
       "question": "He admitted to ______ the crime.",
       "options": [
-        "committing",
         "commit",
         "to commit",
-        "committed"
+        "committed",
+        "committing"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Admitted to' takes a gerund ('committing')."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "infinitives_gerunds",
       "question": "She is averse to ______ risks.",
       "options": [
-        "taking",
+        "took",
         "take",
         "to take",
-        "took"
+        "taking"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Averse to' takes a gerund ('taking')."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "infinitives_gerunds",
       "question": "He is dedicated to ______ the poor.",
       "options": [
-        "helping",
-        "help",
+        "helped",
         "to help",
-        "helped"
+        "help",
+        "helping"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Dedicated to' takes a gerund ('helping')."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "infinitives_gerunds",
       "question": "She is prone to ______ silly errors.",
       "options": [
-        "making",
         "make",
+        "making",
         "to make",
         "made"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Prone to' takes a gerund ('making')."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "infinitives_gerunds",
       "question": "I look forward to ______ from you.",
       "options": [
-        "hearing",
         "hear",
         "to hear",
+        "hearing",
         "heard"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Look forward to hearing'."
     },
     {
@@ -971,8 +971,8 @@
       "question": "With an eye to ______ his business, he visited Dubai.",
       "options": [
         "expanding",
-        "expand",
         "to expand",
+        "expand",
         "expanded"
       ],
       "answer": 0,
@@ -983,12 +983,12 @@
       "topic": "infinitives_gerunds",
       "question": "He has a penchant for ______ stamps.",
       "options": [
-        "collecting",
         "to collect",
         "collect",
+        "collecting",
         "collected"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Preposition 'for' takes a gerund ('collecting')."
     },
     {
@@ -997,9 +997,9 @@
       "question": "She has a passion for ______ classical dance.",
       "options": [
         "performing",
-        "to perform",
+        "performed",
         "perform",
-        "performed"
+        "to perform"
       ],
       "answer": 0,
       "explanation": "Preposition 'for' takes a gerund ('performing')."
@@ -1009,12 +1009,12 @@
       "topic": "infinitives_gerunds",
       "question": "I heard him ______ the guitar.",
       "options": [
-        "play",
-        "to play",
+        "playing to",
         "played",
-        "playing to"
+        "play",
+        "to play"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Bare infinitive with perception verb 'hear' -> 'play'."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "infinitives_gerunds",
       "question": "We watched the plane ______ off.",
       "options": [
-        "take",
-        "to take",
         "took",
-        "taken"
+        "taken",
+        "take",
+        "to take"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Perception verb 'watch' takes bare infinitive 'take'."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "infinitives_gerunds",
       "question": "She felt the floor ______ during the earthquake.",
       "options": [
-        "shake",
         "to shake",
         "shook",
-        "shaken"
+        "shaken",
+        "shake"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Perception verb 'feel' takes bare infinitive 'shake'."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "infinitives_gerunds",
       "question": "I notice him ______ the gate quietly.",
       "options": [
+        "opens",
         "open",
         "to open",
-        "opened",
-        "opens"
+        "opened"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Perception verb 'notice' takes bare infinitive 'open'."
     },
     {
@@ -1061,12 +1061,12 @@
       "topic": "infinitives_gerunds",
       "question": "You need not ______ there alone.",
       "options": [
-        "go",
-        "to go",
         "going",
-        "went"
+        "to go",
+        "went",
+        "go"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Modal auxiliary 'need not' takes bare infinitive 'go'."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "infinitives_gerunds",
       "question": "How dare you ______ my letter?",
       "options": [
-        "open",
-        "to open",
         "opening",
-        "opened"
+        "opened",
+        "open",
+        "to open"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Modal auxiliary 'dare' takes bare infinitive 'open'."
     },
     {
@@ -1088,9 +1088,9 @@
       "question": "He had better ______ the matter right now.",
       "options": [
         "settle",
-        "to settle",
         "settling",
-        "settled"
+        "settled",
+        "to settle"
       ],
       "answer": 0,
       "explanation": "'Had better' takes bare infinitive 'settle'."
@@ -1100,12 +1100,12 @@
       "topic": "infinitives_gerunds",
       "question": "She would rather ______ tea than coffee.",
       "options": [
-        "drink",
-        "to drink",
         "drinking",
-        "drank"
+        "to drink",
+        "drank",
+        "drink"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Would rather' takes bare infinitive 'drink'."
     },
     {
@@ -1114,9 +1114,9 @@
       "question": "He did nothing except ______ comics.",
       "options": [
         "read",
+        "reads",
         "to read",
-        "reading",
-        "reads"
+        "reading"
       ],
       "answer": 0,
       "explanation": "Preposition 'except' after 'nothing' takes bare infinitive 'read'."
@@ -1126,12 +1126,12 @@
       "topic": "infinitives_gerunds",
       "question": "She was helped ______ the luggage.",
       "options": [
-        "to carry",
-        "carry",
         "carrying",
-        "carried"
+        "carried",
+        "carry",
+        "to carry"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Passive of 'help' takes full infinitive 'to carry'."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "infinitives_gerunds",
       "question": "He helped me ______ the problem.",
       "options": [
+        "to solving",
         "solve",
         "solving",
-        "solved",
-        "to solving"
+        "solved"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Active 'help' can take bare infinitive 'solve'."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "infinitives_gerunds",
       "question": "She was forbidden ______ the room.",
       "options": [
-        "to enter",
+        "entered",
         "entering",
         "enter",
-        "entered"
+        "to enter"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Passive 'forbidden' takes infinitive with 'to' ('to enter')."
     },
     {
@@ -1167,8 +1167,8 @@
       "options": [
         "to resign",
         "resigning",
-        "resign",
-        "resigned"
+        "resigned",
+        "resign"
       ],
       "answer": 0,
       "explanation": "'Compel' takes 'to + infinitive' ('to resign')."
@@ -1178,12 +1178,12 @@
       "topic": "infinitives_gerunds",
       "question": "He urged us ______ immediately.",
       "options": [
+        "left",
         "to leave",
-        "leaving",
         "leave",
-        "left"
+        "leaving"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Urge' takes 'to + infinitive' ('to leave')."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "infinitives_gerunds",
       "question": "She persuaded him ______ the job.",
       "options": [
-        "to accept",
         "accepting",
         "accept",
-        "accepted"
+        "accepted",
+        "to accept"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Persuade' takes 'to + infinitive' ('to accept')."
     },
     {
@@ -1232,8 +1232,8 @@
       "options": [
         "to ask",
         "asking",
-        "ask",
-        "asked"
+        "asked",
+        "ask"
       ],
       "answer": 0,
       "explanation": "'Hesitate' takes 'to + infinitive' ('to ask')."
@@ -1244,9 +1244,9 @@
       "question": "He resolved ______ his bad habits.",
       "options": [
         "to reform",
-        "reforming",
+        "reformed",
         "reform",
-        "reformed"
+        "reforming"
       ],
       "answer": 0,
       "explanation": "'Resolve' takes 'to + infinitive' ('to reform')."
@@ -1256,12 +1256,12 @@
       "topic": "infinitives_gerunds",
       "question": "I intend ______ the meeting.",
       "options": [
+        "attend",
         "to attend",
         "attending",
-        "attend",
         "attended"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Intend' takes 'to + infinitive' ('to attend')."
     },
     {
@@ -1270,9 +1270,9 @@
       "question": "They threatened ______ the building.",
       "options": [
         "to demolish",
-        "demolishing",
+        "demolished",
         "demolish",
-        "demolished"
+        "demolishing"
       ],
       "answer": 0,
       "explanation": "'Threaten' takes 'to + infinitive' ('to demolish')."
@@ -1282,12 +1282,12 @@
       "topic": "infinitives_gerunds",
       "question": "He offered ______ us in our work.",
       "options": [
-        "to assist",
-        "assisting",
+        "assisted",
         "assist",
-        "assisted"
+        "to assist",
+        "assisting"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Offer' takes 'to + infinitive' ('to assist')."
     },
     {
@@ -1295,12 +1295,12 @@
       "topic": "infinitives_gerunds",
       "question": "She arranged ______ him at 4 PM.",
       "options": [
-        "to meet",
-        "meeting",
         "meet",
-        "met"
+        "met",
+        "meeting",
+        "to meet"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Arrange' takes 'to + infinitive' ('to meet')."
     },
     {
@@ -1309,9 +1309,9 @@
       "question": "He volunteered ______ in the camp.",
       "options": [
         "to serve",
-        "serving",
+        "served",
         "serve",
-        "served"
+        "serving"
       ],
       "answer": 0,
       "explanation": "'Volunteer' takes 'to + infinitive' ('to serve')."
@@ -1321,12 +1321,12 @@
       "topic": "infinitives_gerunds",
       "question": "I can't afford ______ such a costly phone.",
       "options": [
-        "to buy",
-        "buying",
         "buy",
+        "buying",
+        "to buy",
         "bought"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Afford' takes 'to + infinitive' ('to buy')."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "infinitives_gerunds",
       "question": "He managed ______ the treasure.",
       "options": [
-        "to find",
         "finding",
-        "find",
-        "found"
+        "to find",
+        "found",
+        "find"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Manage' takes 'to + infinitive' ('to find')."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "infinitives_gerunds",
       "question": "She attempted ______ the world record.",
       "options": [
-        "to break",
         "breaking",
+        "broke",
         "break",
-        "broke"
+        "to break"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Attempt' takes 'to + infinitive' ('to break')."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "infinitives_gerunds",
       "question": "He yearns ______ his native village.",
       "options": [
+        "visited",
         "to visit",
         "visiting",
-        "visit",
-        "visited"
+        "visit"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Yearn' takes 'to + infinitive' ('to visit')."
     },
     {
@@ -1374,9 +1374,9 @@
       "question": "He is good at ______ portraits.",
       "options": [
         "drawing",
+        "drawn",
         "to draw",
-        "draw",
-        "drawn"
+        "draw"
       ],
       "answer": 0,
       "explanation": "Preposition 'at' is followed by a gerund ('drawing')."
@@ -1386,12 +1386,12 @@
       "topic": "infinitives_gerunds",
       "question": "She prevented me from ______ the gate.",
       "options": [
-        "opening",
-        "to open",
         "open",
-        "opened"
+        "to open",
+        "opened",
+        "opening"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Preposition 'from' takes a gerund ('opening')."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "infinitives_gerunds",
       "question": "He insisted on ______ the bill.",
       "options": [
+        "paid",
         "paying",
         "to pay",
-        "pay",
-        "paid"
+        "pay"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Preposition 'on' takes a gerund ('paying')."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "infinitives_gerunds",
       "question": "They succeeded in ______ the summit.",
       "options": [
-        "reaching",
-        "to reach",
         "reach",
-        "reached"
+        "reached",
+        "reaching",
+        "to reach"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Preposition 'in' takes a gerund ('reaching')."
     },
     {
@@ -1427,8 +1427,8 @@
       "options": [
         "seeing",
         "see",
-        "to see",
-        "seen"
+        "seen",
+        "to see"
       ],
       "answer": 0,
       "explanation": "'Look forward to' takes a gerund ('seeing')."
@@ -1438,12 +1438,12 @@
       "topic": "infinitives_gerunds",
       "question": "She is looking forward to ______ her degree.",
       "options": [
-        "receiving",
         "receive",
         "to receive",
+        "receiving",
         "received"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Look forward to' takes a gerund ('receiving')."
     },
     {
@@ -1451,12 +1451,12 @@
       "topic": "infinitives_gerunds",
       "question": "He is addicted to ______ video games.",
       "options": [
-        "playing",
-        "play",
         "to play",
+        "play",
+        "playing",
         "played"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Addicted to' takes a gerund ('playing')."
     },
     {
@@ -1465,9 +1465,9 @@
       "question": "He is accustomed to ______ hard in the sun.",
       "options": [
         "working",
+        "worked",
         "work",
-        "to work",
-        "worked"
+        "to work"
       ],
       "answer": 0,
       "explanation": "'Accustomed to' takes a gerund ('working')."
@@ -1477,12 +1477,12 @@
       "topic": "infinitives_gerunds",
       "question": "With a view to ______ his business, he traveled abroad.",
       "options": [
-        "expanding",
+        "expanded",
         "expand",
         "to expand",
-        "expanded"
+        "expanding"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'With a view to' takes a gerund ('expanding')."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "infinitives_gerunds",
       "question": "I object to your ______ during the lecture.",
       "options": [
-        "talking",
         "to talk",
-        "talk",
-        "talked"
+        "talking",
+        "talked",
+        "talk"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Object to' takes a possessive + gerund ('your talking')."
     },
     {
@@ -1504,9 +1504,9 @@
       "question": "Would you mind ______ the window?",
       "options": [
         "opening",
-        "to open",
+        "opened",
         "open",
-        "opened"
+        "to open"
       ],
       "answer": 0,
       "explanation": "'Would you mind' takes a gerund ('opening')."
@@ -1516,12 +1516,12 @@
       "topic": "infinitives_gerunds",
       "question": "It is no use ______ over lost opportunities.",
       "options": [
-        "crying",
         "to cry",
-        "cry",
-        "cried"
+        "cried",
+        "crying",
+        "cry"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'It is no use' takes a gerund ('crying')."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "infinitives_gerunds",
       "question": "This museum is well worth ______.",
       "options": [
-        "visiting",
+        "visited",
         "to visit",
-        "visit",
-        "visited"
+        "visiting",
+        "visit"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Worth' takes a gerund ('visiting')."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "infinitives_gerunds",
       "question": "He gave up ______ after his illness.",
       "options": [
-        "smoking",
         "to smoke",
+        "smoking",
         "smoke",
         "smoked"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Phrasal verb 'give up' takes a gerund ('smoking')."
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "infinitives_gerunds",
       "question": "She avoided ______ into his eyes.",
       "options": [
-        "looking",
         "to look",
         "look",
+        "looking",
         "looked"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Avoid' takes a gerund ('looking')."
     },
     {
@@ -1570,8 +1570,8 @@
       "options": [
         "listening",
         "to listen",
-        "listen",
-        "listened"
+        "listened",
+        "listen"
       ],
       "answer": 0,
       "explanation": "'Enjoy' takes a gerund ('listening')."
@@ -1581,12 +1581,12 @@
       "topic": "infinitives_gerunds",
       "question": "She postponed ______ to the dentist.",
       "options": [
-        "going",
-        "to go",
+        "went",
         "go",
-        "went"
+        "to go",
+        "going"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Postpone' takes a gerund ('going')."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "infinitives_gerunds",
       "question": "They admitted ______ the funds.",
       "options": [
-        "misappropriating",
-        "to misappropriate",
         "misappropriate",
-        "misappropriated"
+        "misappropriated",
+        "to misappropriate",
+        "misappropriating"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Admit' takes a gerund ('misappropriating')."
     },
     {
@@ -1608,9 +1608,9 @@
       "question": "He denied ______ the stolen watch.",
       "options": [
         "taking",
+        "taken",
         "to take",
-        "take",
-        "taken"
+        "take"
       ],
       "answer": 0,
       "explanation": "'Deny' takes a gerund ('taking')."
@@ -1621,9 +1621,9 @@
       "question": "I cannot help ______ at his silly mistakes.",
       "options": [
         "laughing",
-        "to laugh",
+        "laughed",
         "laugh",
-        "laughed"
+        "to laugh"
       ],
       "answer": 0,
       "explanation": "'Cannot help' takes a gerund ('laughing')."
@@ -1633,12 +1633,12 @@
       "topic": "infinitives_gerunds",
       "question": "She cannot resist ______ delicious pastries.",
       "options": [
-        "eating",
-        "to eat",
         "eat",
-        "ate"
+        "ate",
+        "eating",
+        "to eat"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cannot resist' takes a gerund ('eating')."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "infinitives_gerunds",
       "question": "I remember ______ this place when I was a child.",
       "options": [
-        "visiting",
         "to visit",
         "visit",
-        "visited"
+        "visited",
+        "visiting"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Remember + gerund' refers to a past memory ('visiting')."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "infinitives_gerunds",
       "question": "Please remember ______ the front door before leaving.",
       "options": [
-        "to lock",
         "locking",
+        "to lock",
         "lock",
         "locked"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Remember + infinitive' refers to a future obligation ('to lock')."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "infinitives_gerunds",
       "question": "He stopped ______ when the bell rang.",
       "options": [
-        "writing",
         "to write",
+        "writing",
         "write",
         "wrote"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Stop + gerund' means to discontinue an activity ('writing')."
     },
     {
@@ -1686,9 +1686,9 @@
       "question": "On his way to office, he stopped ______ a newspaper.",
       "options": [
         "to buy",
-        "buying",
         "buy",
-        "bought"
+        "bought",
+        "buying"
       ],
       "answer": 0,
       "explanation": "'Stop + infinitive' means halting in order to do something ('to buy')."
@@ -1698,12 +1698,12 @@
       "topic": "infinitives_gerunds",
       "question": "I regret ______ you that the flight has been cancelled.",
       "options": [
+        "informed",
         "to inform",
         "informing",
-        "inform",
-        "informed"
+        "inform"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Regret to inform' is used when giving formal bad news."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "infinitives_gerunds",
       "question": "He regretted ______ his valuable time on games.",
       "options": [
-        "wasting",
         "to waste",
+        "wasted",
         "waste",
-        "wasted"
+        "wasting"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Regret + gerund' expresses sorrow for a past action ('wasting')."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "infinitives_gerunds",
       "question": "Let him ______ whatever he wants.",
       "options": [
+        "did",
         "do",
-        "to do",
         "doing",
-        "did"
+        "to do"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Let' takes a bare infinitive ('do')."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "infinitives_gerunds",
       "question": "The teacher made him ______ on the bench.",
       "options": [
+        "standing",
         "stand",
         "to stand",
-        "standing",
         "stood"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Causative 'make' in active voice takes a bare infinitive ('stand')."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "infinitives_gerunds",
       "question": "He was made ______ the entire poem.",
       "options": [
-        "to recite",
-        "recite",
         "reciting",
-        "recited"
+        "recited",
+        "recite",
+        "to recite"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "In passive voice, 'make' takes full infinitive with 'to' ('to recite')."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "infinitives_gerunds",
       "question": "I saw the thief ______ the wall.",
       "options": [
-        "scale",
-        "to scale",
+        "scales",
         "scaled",
-        "scales"
+        "to scale",
+        "scale"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Verbs of perception take bare infinitive ('scale')."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "infinitives_gerunds",
       "question": "He was seen ______ the compound wall.",
       "options": [
-        "to scale",
-        "scale",
         "scaled",
-        "scales"
+        "scale",
+        "scales",
+        "to scale"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Passive perception verb takes full infinitive ('to scale')."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "infinitives_gerunds",
       "question": "We heard her ______ a sweet song.",
       "options": [
-        "sing",
+        "sung",
         "to sing",
         "sang",
-        "sung"
+        "sing"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Active 'hear' takes bare infinitive ('sing')."
     },
     {
@@ -1802,12 +1802,12 @@
       "topic": "infinitives_gerunds",
       "question": "She was heard ______ a sweet song.",
       "options": [
-        "to sing",
-        "sing",
         "sang",
-        "sung"
+        "to sing",
+        "sung",
+        "sing"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Passive 'hear' takes full infinitive ('to sing')."
     },
     {
@@ -1816,9 +1816,9 @@
       "question": "You had better ______ at once.",
       "options": [
         "leave",
-        "to leave",
         "leaving",
-        "left"
+        "left",
+        "to leave"
       ],
       "answer": 0,
       "explanation": "'Had better' takes a bare infinitive ('leave')."
@@ -1828,12 +1828,12 @@
       "topic": "infinitives_gerunds",
       "question": "I would rather ______ than beg.",
       "options": [
+        "starved",
         "starve",
         "to starve",
-        "starving",
-        "starved"
+        "starving"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would rather' takes a bare infinitive ('starve')."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "infinitives_gerunds",
       "question": "He did nothing but ______ all afternoon.",
       "options": [
-        "sleep",
         "to sleep",
-        "sleeping",
-        "slept"
+        "slept",
+        "sleep",
+        "sleeping"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "After 'did nothing but', use bare infinitive ('sleep')."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "infinitives_gerunds",
       "question": "You need not ______ for me.",
       "options": [
-        "wait",
         "to wait",
-        "waiting",
-        "waited"
+        "waited",
+        "wait",
+        "waiting"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Modal 'need not' takes bare infinitive ('wait')."
     },
     {
@@ -1867,12 +1867,12 @@
       "topic": "infinitives_gerunds",
       "question": "How dare you ______ my confidential files?",
       "options": [
-        "touch",
-        "to touch",
         "touching",
-        "touched"
+        "to touch",
+        "touched",
+        "touch"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Modal 'dare' takes bare infinitive ('touch')."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "infinitives_gerunds",
       "question": "He promised ______ me tomorrow.",
       "options": [
+        "met",
         "to meet",
         "meeting",
-        "meet",
-        "met"
+        "meet"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Promise' takes a full infinitive ('to meet')."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "infinitives_gerunds",
       "question": "She decided ______ for the civil services examination.",
       "options": [
-        "to prepare",
         "preparing",
-        "prepare",
-        "prepared"
+        "to prepare",
+        "prepared",
+        "prepare"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Decide' takes a full infinitive ('to prepare')."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "infinitives_gerunds",
       "question": "They agreed ______ the contract.",
       "options": [
-        "to sign",
-        "signing",
         "sign",
-        "signed"
+        "signed",
+        "to sign",
+        "signing"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Agree' takes a full infinitive ('to sign')."
     },
     {
@@ -1921,8 +1921,8 @@
       "options": [
         "to catch",
         "catching",
-        "catch",
-        "caught"
+        "caught",
+        "catch"
       ],
       "answer": 0,
       "explanation": "'Manage' takes a full infinitive ('to catch')."
@@ -1932,12 +1932,12 @@
       "topic": "infinitives_gerunds",
       "question": "She hopes ______ the gold medal.",
       "options": [
-        "to win",
         "winning",
         "win",
-        "won"
+        "won",
+        "to win"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hope' takes a full infinitive ('to win')."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "infinitives_gerunds",
       "question": "He refused ______ the bribe.",
       "options": [
-        "to accept",
         "accepting",
+        "to accept",
         "accept",
         "accepted"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Refuse' takes a full infinitive ('to accept')."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "infinitives_gerunds",
       "question": "He failed ______ the passing score.",
       "options": [
-        "to attain",
-        "attaining",
         "attain",
-        "attained"
+        "attained",
+        "attaining",
+        "to attain"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fail' takes a full infinitive ('to attain')."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "infinitives_gerunds",
       "question": "I want ______ English fluently.",
       "options": [
-        "to speak",
-        "speaking",
+        "spoke",
         "speak",
-        "spoke"
+        "speaking",
+        "to speak"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Want' takes a full infinitive ('to speak')."
     },
     {
@@ -1985,9 +1985,9 @@
       "question": "He is too proud ______ his mistake.",
       "options": [
         "to acknowledge",
-        "acknowledging",
+        "acknowledged",
         "acknowledge",
-        "acknowledged"
+        "acknowledging"
       ],
       "answer": 0,
       "explanation": "'too... to + V1' ('to acknowledge')."
@@ -1998,9 +1998,9 @@
       "question": "______ is believing.",
       "options": [
         "Seeing",
+        "Saw",
         "To see",
-        "See",
-        "Saw"
+        "See"
       ],
       "answer": 0,
       "explanation": "Proverb: 'Seeing is believing'."
@@ -2010,12 +2010,12 @@
       "topic": "infinitives_gerunds",
       "question": "______ is injurious to health.",
       "options": [
+        "Smoked",
         "Smoking",
-        "To smoke",
         "Smoke",
-        "Smoked"
+        "To smoke"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Gerund as subject: 'Smoking is injurious to health.'"
     }
   ]

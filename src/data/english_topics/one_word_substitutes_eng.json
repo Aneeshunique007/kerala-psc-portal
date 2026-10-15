@@ -8,12 +8,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who knows everything:",
       "options": [
+        "Polyglot",
         "Omniscient",
-        "Omnipotent",
         "Omnipresent",
-        "Polyglot"
+        "Omnipotent"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Omniscient' means knowing everything."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who is all-powerful:",
       "options": [
-        "Omnipotent",
-        "Omniscient",
         "Omnipresent",
-        "Almighty"
+        "Omniscient",
+        "Almighty",
+        "Omnipotent"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Omnipotent' means having unlimited or universal power."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who is present everywhere:",
       "options": [
-        "Omnipresent",
-        "Omniscient",
+        "Ubiquitous",
         "Omnipotent",
-        "Ubiquitous"
+        "Omnipresent",
+        "Omniscient"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Omnipresent' means present everywhere simultaneously."
     },
     {
@@ -48,8 +48,8 @@
       "question": "A person who loves mankind and works for their welfare:",
       "options": [
         "Philanthropist",
-        "Misanthrope",
         "Altruist",
+        "Misanthrope",
         "Philosopher"
       ],
       "answer": 0,
@@ -60,12 +60,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who hates mankind:",
       "options": [
-        "Misanthrope",
         "Philanthropist",
-        "Misogynist",
-        "Cannibal"
+        "Cannibal",
+        "Misanthrope",
+        "Misogynist"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Misanthrope' is a person who dislikes humankind and avoids human society."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who hates women:",
       "options": [
-        "Misogynist",
         "Misanthrope",
-        "Misogamist",
-        "Feminist"
+        "Feminist",
+        "Misogynist",
+        "Misogamist"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Misogynist' is a person who hates or is prejudiced against women."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who hates the institution of marriage:",
       "options": [
-        "Misogamist",
-        "Misogynist",
         "Bachelor",
-        "Celibate"
+        "Misogamist",
+        "Celibate",
+        "Misogynist"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Misogamist' is a person who hates marriage."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who speaks many languages:",
       "options": [
-        "Polyglot",
-        "Linguist",
         "Bilingual",
-        "Monoglot"
+        "Monoglot",
+        "Linguist",
+        "Polyglot"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Polyglot' is someone who knows and is able to use several languages."
     },
     {
@@ -112,12 +112,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who collects stamps:",
       "options": [
-        "Philatelist",
-        "Numismatist",
         "Bibliophile",
+        "Numismatist",
+        "Philatelist",
         "Cartographer"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Philatelist' is a person who collects or studies postage stamps."
     },
     {
@@ -125,12 +125,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who collects coins:",
       "options": [
-        "Numismatist",
-        "Philatelist",
         "Antiquarian",
-        "Archaeologist"
+        "Numismatist",
+        "Archaeologist",
+        "Philatelist"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Numismatist' is a collector or student of coins, tokens, and paper money."
     },
     {
@@ -138,12 +138,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A lover of books:",
       "options": [
-        "Bibliophile",
         "Bibliographer",
         "Bookworm",
-        "Librarian"
+        "Librarian",
+        "Bibliophile"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bibliophile' is a person who loves or collects books."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A life history of a person written by himself:",
       "options": [
-        "Autobiography",
         "Biography",
         "Memoir",
+        "Autobiography",
         "Chronicle"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Autobiography' is an account of a person's life written by that person."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A life history of a person written by another person:",
       "options": [
-        "Biography",
         "Autobiography",
         "Hagiography",
+        "Biography",
         "Monograph"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Biography' is the story of a person's life written by someone else."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who looks at the bright side of things:",
       "options": [
-        "Optimist",
         "Pessimist",
         "Realist",
-        "Pacifist"
+        "Pacifist",
+        "Optimist"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Optimist' is one who tends to be hopeful and confident about the future."
     },
     {
@@ -191,9 +191,9 @@
       "question": "A person who looks at the dark side of things:",
       "options": [
         "Pessimist",
+        "Skeptic",
         "Optimist",
-        "Cynic",
-        "Skeptic"
+        "Cynic"
       ],
       "answer": 0,
       "explanation": "'Pessimist' is a person who tends to see the worst aspect of things."
@@ -203,12 +203,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who does not believe in the existence of God:",
       "options": [
-        "Atheist",
-        "Theist",
+        "Deist",
         "Agnostic",
-        "Deist"
+        "Atheist",
+        "Theist"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Atheist' is a person who disbelieves or lacks belief in the existence of God."
     },
     {
@@ -218,8 +218,8 @@
       "options": [
         "Theist",
         "Atheist",
-        "Agnostic",
-        "Polytheist"
+        "Polytheist",
+        "Agnostic"
       ],
       "answer": 0,
       "explanation": "'Theist' is a person who believes in the existence of a god or gods."
@@ -229,12 +229,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who is not sure about the existence of God:",
       "options": [
-        "Agnostic",
         "Atheist",
         "Theist",
+        "Agnostic",
         "Fatalist"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Agnostic' believes nothing is known or can be known of the existence or nature of God."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who believes that all events are predetermined by fate:",
       "options": [
-        "Fatalist",
         "Fanatic",
+        "Stoic",
         "Pessimist",
-        "Stoic"
+        "Fatalist"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fatalist' is one who believes that all events are predetermined and inevitable."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who is indifferent to pleasure or pain:",
       "options": [
-        "Stoic",
         "Ascetic",
+        "Stoic",
         "Epicurean",
         "Hermit"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Stoic' is a person who can endure pain or hardship without showing feelings or complaining."
     },
     {
@@ -269,9 +269,9 @@
       "question": "A person who eats human flesh:",
       "options": [
         "Cannibal",
+        "Omnivore",
         "Carnivore",
-        "Herbivore",
-        "Omnivore"
+        "Herbivore"
       ],
       "answer": 0,
       "explanation": "'Cannibal' is an animal or human that feeds on flesh of its own species."
@@ -281,12 +281,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "An animal that eats only plants:",
       "options": [
-        "Herbivore",
         "Carnivore",
+        "Insectivore",
         "Omnivore",
-        "Insectivore"
+        "Herbivore"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Herbivore' feeds on plants."
     },
     {
@@ -294,12 +294,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "An animal that feeds on flesh:",
       "options": [
-        "Carnivore",
-        "Herbivore",
+        "Parasite",
         "Omnivore",
-        "Parasite"
+        "Carnivore",
+        "Herbivore"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Carnivore' feeds on flesh."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "An animal that feeds on both plants and flesh:",
       "options": [
-        "Omnivore",
         "Herbivore",
-        "Carnivore",
-        "Piscivore"
+        "Omnivore",
+        "Piscivore",
+        "Carnivore"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Omnivore' eats food of both plant and animal origin."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A medicine that counteracts the effects of poison:",
       "options": [
-        "Antidote",
         "Antibiotic",
+        "Antidote",
         "Antiseptic",
         "Analgesic"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Antidote' neutralizes or counteracts the effects of a poison."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A substance that prevents the growth of disease-causing microorganisms:",
       "options": [
-        "Antiseptic",
         "Antidote",
-        "Antibiotic",
-        "Sedative"
+        "Sedative",
+        "Antiseptic",
+        "Antibiotic"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Antiseptic' prevents the growth of disease-causing microorganisms on living tissue."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A medicine that relieves pain:",
       "options": [
-        "Analgesic",
-        "Antidote",
         "Antibiotic",
-        "Antipyretic"
+        "Antidote",
+        "Antipyretic",
+        "Analgesic"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Analgesic' acts to relieve pain."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A medicine that reduces fever:",
       "options": [
-        "Antipyretic",
         "Analgesic",
         "Antibiotic",
+        "Antipyretic",
         "Antidote"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Antipyretic' reduces fever."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of a human being:",
       "options": [
-        "Homicide",
-        "Suicide",
         "Regicide",
-        "Patricide"
+        "Suicide",
+        "Patricide",
+        "Homicide"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Homicide' is the killing of one person by another."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of one's father:",
       "options": [
-        "Patricide",
+        "Regicide",
         "Matricide",
-        "Fratricide",
-        "Regicide"
+        "Patricide",
+        "Fratricide"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Patricide' is the killing of one's father."
     },
     {
@@ -399,9 +399,9 @@
       "question": "Murder of one's mother:",
       "options": [
         "Matricide",
+        "Sororicide",
         "Patricide",
-        "Fratricide",
-        "Sororicide"
+        "Fratricide"
       ],
       "answer": 0,
       "explanation": "'Matricide' is the killing of one's mother."
@@ -411,12 +411,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of one's brother:",
       "options": [
-        "Fratricide",
         "Patricide",
         "Matricide",
-        "Homicide"
+        "Homicide",
+        "Fratricide"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fratricide' is the killing of one's brother."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of one's sister:",
       "options": [
-        "Sororicide",
-        "Fratricide",
+        "Uxoricide",
         "Matricide",
-        "Uxoricide"
+        "Sororicide",
+        "Fratricide"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Sororicide' is the killing of one's sister."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of a king or queen:",
       "options": [
-        "Regicide",
         "Homicide",
+        "Regicide",
         "Genocide",
         "Patricide"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Regicide' is the action of killing a king."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of one's wife:",
       "options": [
-        "Uxoricide",
-        "Homicide",
         "Regicide",
-        "Matricide"
+        "Homicide",
+        "Matricide",
+        "Uxoricide"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Uxoricide' is the killing of one's wife."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Killing of a whole race or ethnic group:",
       "options": [
+        "Fratricide",
         "Genocide",
         "Homicide",
-        "Regicide",
-        "Fratricide"
+        "Regicide"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Genocide' is the deliberate killing of a large group of people of a particular ethnic group."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "The act of intentionally killing oneself:",
       "options": [
-        "Suicide",
         "Homicide",
-        "Genocide",
-        "Regicide"
+        "Regicide",
+        "Suicide",
+        "Genocide"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Suicide' is the act of intentionally causing one's own death."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Killing of an infant:",
       "options": [
-        "Infanticide",
         "Foeticide",
-        "Homicide",
-        "Genocide"
+        "Genocide",
+        "Infanticide",
+        "Homicide"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Infanticide' is the intentional killing of infants."
     },
     {
@@ -503,9 +503,9 @@
       "question": "A person who compiles a dictionary:",
       "options": [
         "Lexicographer",
-        "Cartographer",
+        "Bibliographer",
         "Calligrapher",
-        "Bibliographer"
+        "Cartographer"
       ],
       "answer": 0,
       "explanation": "'Lexicographer' is a person who compiles dictionaries."
@@ -515,12 +515,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who draws maps:",
       "options": [
-        "Cartographer",
-        "Calligrapher",
         "Choreographer",
-        "Topographer"
+        "Cartographer",
+        "Topographer",
+        "Calligrapher"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Cartographer' is a person who draws or produces maps."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person skilled in beautiful handwriting:",
       "options": [
-        "Calligrapher",
-        "Cartographer",
+        "Typographer",
         "Stenographer",
-        "Typographer"
+        "Cartographer",
+        "Calligrapher"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Calligrapher' is a person skilled in the art of calligraphy."
     },
     {
@@ -541,12 +541,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Bad handwriting:",
       "options": [
-        "Cacography",
-        "Calligraphy",
         "Orthography",
-        "Stenography"
+        "Stenography",
+        "Calligraphy",
+        "Cacography"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cacography' means bad handwriting or incorrect spelling."
     },
     {
@@ -555,9 +555,9 @@
       "question": "A speech delivered without any prior preparation:",
       "options": [
         "Extempore (Impromptu)",
-        "Maiden speech",
+        "Oratory",
         "Eulogy",
-        "Oratory"
+        "Maiden speech"
       ],
       "answer": 0,
       "explanation": "'Extempore' (or impromptu) is spoken or done without preparation."
@@ -568,9 +568,9 @@
       "question": "The first public speech delivered by a person:",
       "options": [
         "Maiden speech",
-        "Extempore",
         "Valedictory",
-        "Keynote speech"
+        "Keynote speech",
+        "Extempore"
       ],
       "answer": 0,
       "explanation": "'Maiden speech' is the first speech delivered by a newly elected politician or speaker."
@@ -580,12 +580,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A speech praising someone who has died:",
       "options": [
-        "Eulogy",
-        "Elegy",
         "Epitaph",
-        "Ode"
+        "Eulogy",
+        "Ode",
+        "Elegy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Eulogy' is a speech or piece of writing that praises someone highly, typically after death."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "An inscription on a tombstone:",
       "options": [
+        "Epitome",
         "Epitaph",
         "Epigraph",
-        "Epistle",
-        "Epitome"
+        "Epistle"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Epitaph' is a phrase or statement written in memory of a person who has died, especially as on a tombstone."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A poem mourning the death of someone:",
       "options": [
-        "Elegy",
         "Eulogy",
-        "Sonnet",
-        "Ballad"
+        "Ballad",
+        "Elegy",
+        "Sonnet"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Elegy' is a poem of serious reflection, typically a lament for the dead."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by the people, of the people, and for the people:",
       "options": [
-        "Democracy",
-        "Autocracy",
         "Plutocracy",
-        "Oligarchy"
+        "Oligarchy",
+        "Autocracy",
+        "Democracy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Democracy' is government by the people."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by a king or queen:",
       "options": [
-        "Monarchy",
-        "Oligarchy",
+        "Democracy",
         "Anarchy",
-        "Democracy"
+        "Oligarchy",
+        "Monarchy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Monarchy' is a form of government with a monarch at the head."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by the wealthy:",
       "options": [
-        "Plutocracy",
-        "Aristocracy",
         "Autocracy",
+        "Aristocracy",
+        "Plutocracy",
         "Theocracy"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Plutocracy' is government by the wealthy class."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by religious leaders or divine guidance:",
       "options": [
-        "Theocracy",
-        "Autocracy",
         "Plutocracy",
-        "Oligarchy"
+        "Theocracy",
+        "Oligarchy",
+        "Autocracy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Theocracy' is a system of government in which priests rule in the name of God."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by a small privileged group:",
       "options": [
+        "Aristocracy",
         "Oligarchy",
-        "Autocracy",
         "Democracy",
-        "Aristocracy"
+        "Autocracy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Oligarchy' is a small group of people having control of a country."
     },
     {
@@ -684,12 +684,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by the nobility or privileged upper class:",
       "options": [
-        "Aristocracy",
-        "Plutocracy",
+        "Bureaucracy",
         "Oligarchy",
-        "Bureaucracy"
+        "Plutocracy",
+        "Aristocracy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Aristocracy' is government by the highest social class."
     },
     {
@@ -698,9 +698,9 @@
       "question": "Government by state officials and non-elected bureaucrats:",
       "options": [
         "Bureaucracy",
-        "Autocracy",
+        "Aristocracy",
         "Democracy",
-        "Aristocracy"
+        "Autocracy"
       ],
       "answer": 0,
       "explanation": "'Bureaucracy' is administration characterized by official procedure and hierarchy."
@@ -710,12 +710,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A state of disorder due to absence or non-recognition of authority:",
       "options": [
+        "Autocracy",
         "Anarchy",
         "Monarchy",
-        "Autocracy",
         "Oligarchy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Anarchy' is a state of disorder due to absence of government."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by a single ruler with absolute power:",
       "options": [
-        "Autocracy",
         "Democracy",
+        "Autocracy",
         "Oligarchy",
         "Plutocracy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Autocracy' is a system of government by one person with absolute power."
     },
     {
@@ -737,9 +737,9 @@
       "question": "Government by the inexperienced or worst citizens:",
       "options": [
         "Kakistocracy",
-        "Plutocracy",
         "Gerontocracy",
-        "Monarchy"
+        "Monarchy",
+        "Plutocracy"
       ],
       "answer": 0,
       "explanation": "'Kakistocracy' is government by the least suitable or worst citizens."
@@ -749,12 +749,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Government by old people:",
       "options": [
+        "Oligarchy",
         "Gerontocracy",
-        "Kakistocracy",
         "Plutocracy",
-        "Oligarchy"
+        "Kakistocracy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Gerontocracy' is a state ruled by elders."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who has excessive love or admiration for himself:",
       "options": [
-        "Narcissist",
-        "Egotist",
         "Altruist",
-        "Hedonist"
+        "Hedonist",
+        "Egotist",
+        "Narcissist"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Narcissist' is a person who has an excessive interest in or admiration of themselves."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who lives a solitary life and devotes himself to religious discipline:",
       "options": [
-        "Ascetic (Hermit)",
-        "Hedonist",
         "Epicurean",
-        "Cynic"
+        "Cynic",
+        "Hedonist",
+        "Ascetic (Hermit)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ascetic' practices severe self-discipline and abstention from all forms of indulgence."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who abstains completely from alcoholic drinks:",
       "options": [
-        "Teetotaler",
         "Somnambulist",
+        "Teetotaler",
         "Drunkard",
         "Gourmet"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Teetotaler' is a person who never drinks alcohol."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who walks in his sleep:",
       "options": [
+        "Noctambulist",
         "Somnambulist",
         "Somniloquist",
-        "Noctambulist",
         "Insomniac"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Somnambulist' is a sleepwalker."
     },
     {
@@ -827,12 +827,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who talks in his sleep:",
       "options": [
-        "Somniloquist",
         "Somnambulist",
+        "Orator",
         "Ventriloquist",
-        "Orator"
+        "Somniloquist"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Somniloquist' is one who talks while asleep."
     },
     {
@@ -840,12 +840,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who can make his voice appear to come from somewhere else:",
       "options": [
-        "Ventriloquist",
         "Somniloquist",
         "Orator",
+        "Ventriloquist",
         "Polyglot"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ventriloquist' can speak without moving his lips so that voice appears from elsewhere."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who cannot be corrected or reformed:",
       "options": [
+        "Infallible",
         "Incorrigible",
         "Invulnerable",
-        "Incredible",
-        "Infallible"
+        "Incredible"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Incorrigible' is not able to be corrected, improved, or reformed."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who makes no mistakes; incapable of making mistakes:",
       "options": [
-        "Infallible",
-        "Incorrigible",
         "Invincible",
-        "Indelible"
+        "Incorrigible",
+        "Indelible",
+        "Infallible"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Infallible' means incapable of making mistakes or being wrong."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "That which cannot be conquered or defeated:",
       "options": [
-        "Invincible",
+        "Invulnerable",
         "Invisible",
-        "Infallible",
-        "Invulnerable"
+        "Invincible",
+        "Infallible"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Invincible' means too powerful to be defeated or overcome."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "That which cannot be wounded or hurt:",
       "options": [
-        "Invulnerable",
-        "Invincible",
+        "Indelible",
         "Infallible",
-        "Indelible"
+        "Invincible",
+        "Invulnerable"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Invulnerable' means impossible to harm or damage."
     },
     {
@@ -906,9 +906,9 @@
       "question": "A mark that cannot be removed or erased:",
       "options": [
         "Indelible",
-        "Illegible",
+        "Inaudible",
         "Ineligible",
-        "Inaudible"
+        "Illegible"
       ],
       "answer": 0,
       "explanation": "'Indelible' ink or pen marks cannot be removed."
@@ -919,9 +919,9 @@
       "question": "Handwriting that is impossible or difficult to read:",
       "options": [
         "Illegible",
-        "Eligible",
         "Ineligible",
-        "Indelible"
+        "Indelible",
+        "Eligible"
       ],
       "answer": 0,
       "explanation": "'Illegible' means not clear enough to be read."
@@ -931,12 +931,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Sound that cannot be heard:",
       "options": [
-        "Inaudible",
         "Audible",
+        "Incredible",
         "Invisible",
-        "Incredible"
+        "Inaudible"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Inaudible' means unable to be heard."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who easily believes anything told to him:",
       "options": [
-        "Credulous",
-        "Incredible",
+        "Cynical",
         "Credible",
-        "Cynical"
+        "Incredible",
+        "Credulous"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Credulous' means showing too great a readiness to believe things; gullible."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who is qualified and fit to be chosen:",
       "options": [
-        "Eligible",
         "Illegible",
-        "Ineligible",
-        "Legal"
+        "Eligible",
+        "Legal",
+        "Ineligible"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Eligible' means having the right to do or obtain something; satisfying conditions."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A disease that is liable to be transmitted to people, organisms, etc. through the environment or contact:",
       "options": [
-        "Contagious / Infectious",
+        "Endemic",
         "Incurable",
         "Congenital",
-        "Endemic"
+        "Contagious / Infectious"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Contagious' disease is spread from one person or organism to another, typically by direct contact."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A disease that ends in death:",
       "options": [
-        "Fatal (Mortal)",
+        "Contagious",
         "Chronic",
         "Acute",
-        "Contagious"
+        "Fatal (Mortal)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fatal' means causing death."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A disease that is widespread throughout a region or the world:",
       "options": [
-        "Pandemic",
-        "Epidemic",
         "Endemic",
-        "Chronic"
+        "Epidemic",
+        "Chronic",
+        "Pandemic"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Pandemic' is prevalent over an entire country or the world."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "An epidemic disease found regularly among particular people or in a certain area:",
       "options": [
+        "Sporadic",
         "Endemic",
         "Epidemic",
-        "Pandemic",
-        "Sporadic"
+        "Pandemic"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Endemic' is regularly found and very common among a particular group or in a particular area."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where birds are kept:",
       "options": [
+        "Sanctuary",
         "Aviary",
         "Apiary",
-        "Aquarium",
-        "Sanctuary"
+        "Aquarium"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Aviary' is a large cage, building, or enclosure for keeping birds in."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where bees are kept:",
       "options": [
-        "Apiary",
         "Aviary",
+        "Orchard",
         "Aquarium",
-        "Orchard"
+        "Apiary"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Apiary' is a place where bees are kept; a collection of beehives."
     },
     {
@@ -1061,12 +1061,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where fish and water animals are kept:",
       "options": [
-        "Aquarium",
-        "Aviary",
         "Apiary",
-        "Museum"
+        "Aquarium",
+        "Museum",
+        "Aviary"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Aquarium' is a transparent tank in which fish and other water creatures are kept."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where animals are slaughtered for food:",
       "options": [
-        "Abattoir (Slaughterhouse)",
+        "Granary",
         "Apiary",
         "Aviary",
-        "Granary"
+        "Abattoir (Slaughterhouse)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Abattoir' is a slaughterhouse."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where dead human bodies are kept before burial or cremation:",
       "options": [
+        "Morgue",
         "Mortuary",
-        "Cemetery",
         "Crematorium",
-        "Morgue"
+        "Cemetery"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Mortuary' is a room or building in which dead bodies are kept."
     },
     {
@@ -1101,9 +1101,9 @@
       "question": "A place where bodies are kept for identification and autopsy:",
       "options": [
         "Morgue",
+        "Vault",
         "Mortuary",
-        "Cemetery",
-        "Vault"
+        "Cemetery"
       ],
       "answer": 0,
       "explanation": "'Morgue' is a place where bodies of deceased persons are kept for identification."
@@ -1113,12 +1113,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A burial ground where dead bodies are buried:",
       "options": [
+        "Crematorium",
         "Cemetery",
         "Mortuary",
-        "Crematorium",
         "Vault"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Cemetery' is a large burial ground."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where dead bodies are cremated:",
       "options": [
-        "Crematorium",
-        "Cemetery",
+        "Tomb",
         "Mortuary",
-        "Tomb"
+        "Cemetery",
+        "Crematorium"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Crematorium' is a place where a dead person's body is cremated."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where weapons and ammunition are stored:",
       "options": [
+        "Depot",
         "Arsenal",
         "Armory",
-        "Depot",
         "Barracks"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Arsenal' is a collection of weapons and military equipment or the place where they are stored."
     },
     {
@@ -1178,12 +1178,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A collection of wild animals kept in captivity for exhibition:",
       "options": [
-        "Menagerie",
-        "Zoo",
         "Sanctuary",
-        "Aviary"
+        "Zoo",
+        "Aviary",
+        "Menagerie"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Menagerie' is a collection of wild animals kept in captivity for exhibition."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A medicine that induces sleep:",
       "options": [
-        "Soporific",
-        "Sedative",
         "Analgesic",
-        "Narcotic"
+        "Sedative",
+        "Narcotic",
+        "Soporific"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Soporific' tends to induce drowsiness or sleep."
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Inability to sleep:",
       "options": [
-        "Insomnia",
-        "Amnesia",
         "Anemia",
-        "Somnambulism"
+        "Insomnia",
+        "Somnambulism",
+        "Amnesia"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Insomnia' is habitual sleeplessness; inability to sleep."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Partial or total loss of memory:",
       "options": [
-        "Amnesia",
-        "Insomnia",
         "Anemia",
-        "Dementia"
+        "Insomnia",
+        "Dementia",
+        "Amnesia"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Amnesia' is a partial or total loss of memory."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Loss of ability to feel pain while still conscious:",
       "options": [
-        "Analgesia",
         "Anesthesia",
+        "Aphasia",
         "Amnesia",
-        "Aphasia"
+        "Analgesia"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Analgesia' is the inability to feel pain."
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Loss of ability to understand or express speech:",
       "options": [
-        "Aphasia",
         "Amnesia",
         "Dyslexia",
+        "Aphasia",
         "Anemia"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Aphasia' is loss of ability to understand or express speech, caused by brain damage."
     },
     {
@@ -1256,12 +1256,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A cure for all diseases; a universal remedy:",
       "options": [
-        "Panacea",
-        "Elixir",
+        "Nostrum",
         "Antidote",
-        "Nostrum"
+        "Elixir",
+        "Panacea"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Panacea' is a solution or remedy for all difficulties or diseases."
     },
     {
@@ -1270,9 +1270,9 @@
       "question": "A person who leaves his own country to settle permanently in another:",
       "options": [
         "Emigrant",
-        "Immigrant",
         "Refugee",
-        "Expatriate"
+        "Expatriate",
+        "Immigrant"
       ],
       "answer": 0,
       "explanation": "'Emigrant' leaves their country (exit); 'Immigrant' enters a new country (in)."
@@ -1282,12 +1282,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who comes to live permanently in a foreign country:",
       "options": [
+        "Tourist",
         "Immigrant",
         "Emigrant",
-        "Tourist",
         "Alien"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Immigrant' comes to live permanently in a foreign country."
     },
     {
@@ -1295,12 +1295,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person without a home or job who moves from place to place:",
       "options": [
-        "Vagrant (Tramp)",
         "Nomad",
-        "Pilgrim",
-        "Immigrant"
+        "Immigrant",
+        "Vagrant (Tramp)",
+        "Pilgrim"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Vagrant' wanders from place to place without a home or job."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who has unusual or eccentric habits:",
       "options": [
-        "Eccentric",
-        "Lunatic",
         "Miser",
-        "Bohemian"
+        "Lunatic",
+        "Bohemian",
+        "Eccentric"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Eccentric' is a person of unconventional and slightly strange views or behavior."
     },
     {
@@ -1335,9 +1335,9 @@
       "question": "A person who is indifferent or hostile to culture, arts, and intellect:",
       "options": [
         "Philistine",
+        "Barbarian",
         "Bohemian",
-        "Vandal",
-        "Barbarian"
+        "Vandal"
       ],
       "answer": 0,
       "explanation": "'Philistine' is a person who is hostile or indifferent to culture and the arts."
@@ -1347,12 +1347,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who deliberately damages or destroys public property:",
       "options": [
+        "Thug",
         "Vandal",
         "Terrorist",
-        "Thug",
         "Anarchist"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Vandal' deliberately destroys or damages public or private property."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A decision on which all members agree completely:",
       "options": [
-        "Unanimous",
+        "Consensus",
         "Majority",
-        "Plurality",
-        "Consensus"
+        "Unanimous",
+        "Plurality"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Unanimous' means held or arrived at by the agreement of all members."
     },
     {
@@ -1374,9 +1374,9 @@
       "question": "One who looks at the bright side of things:",
       "options": [
         "Optimist",
-        "Pessimist",
         "Altruist",
-        "Egoist"
+        "Egoist",
+        "Pessimist"
       ],
       "answer": 0,
       "explanation": "An optimist always looks at the positive side."
@@ -1386,12 +1386,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who looks at the dark side of things:",
       "options": [
-        "Pessimist",
         "Optimist",
-        "Cynic",
-        "Fatalist"
+        "Fatalist",
+        "Pessimist",
+        "Cynic"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "A pessimist expects the worst."
     },
     {
@@ -1400,9 +1400,9 @@
       "question": "A person who believes that all events are predetermined by fate:",
       "options": [
         "Fatalist",
+        "Agnostic",
         "Stoic",
-        "Atheist",
-        "Agnostic"
+        "Atheist"
       ],
       "answer": 0,
       "explanation": "A fatalist believes fate governs everything."
@@ -1412,12 +1412,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who does not believe in the existence of God:",
       "options": [
+        "Deist",
         "Atheist",
-        "Theist",
         "Agnostic",
-        "Deist"
+        "Theist"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "An atheist rejects belief in deities."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who is doubtful about the existence of God:",
       "options": [
-        "Agnostic",
         "Atheist",
-        "Skeptic",
-        "Polytheist"
+        "Polytheist",
+        "Agnostic",
+        "Skeptic"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "An agnostic claims the existence of God is unknowable."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who loves and collects books:",
       "options": [
-        "Bibliophile",
-        "Bibliographer",
+        "Numismatist",
         "Philatelist",
-        "Numismatist"
+        "Bibliophile",
+        "Bibliographer"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bibliophile' is a lover and collector of books."
     },
     {
@@ -1451,12 +1451,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who collects postage stamps:",
       "options": [
-        "Philatelist",
-        "Numismatist",
         "Bibliophile",
-        "Cartographer"
+        "Numismatist",
+        "Cartographer",
+        "Philatelist"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "A 'Philatelist' studies and collects stamps."
     },
     {
@@ -1465,9 +1465,9 @@
       "question": "One who collects coins and medals:",
       "options": [
         "Numismatist",
-        "Philatelist",
         "Archaeologist",
-        "Archivist"
+        "Archivist",
+        "Philatelist"
       ],
       "answer": 0,
       "explanation": "A 'Numismatist' collects and studies currency and medals."
@@ -1477,12 +1477,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who draws or produces maps:",
       "options": [
-        "Cartographer",
         "Calligrapher",
-        "Choreographer",
-        "Stenographer"
+        "Stenographer",
+        "Cartographer",
+        "Choreographer"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "A 'Cartographer' makes geographical maps."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who writes beautiful handwriting:",
       "options": [
-        "Calligrapher",
+        "Epigrapher",
         "Cartographer",
         "Cacographer",
-        "Epigrapher"
+        "Calligrapher"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "A 'Calligrapher' specializes in artistic script."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who hates women:",
       "options": [
-        "Misogynist",
+        "Philogynist",
         "Misogamist",
-        "Misanthrope",
-        "Philogynist"
+        "Misogynist",
+        "Misanthrope"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Misogynist' is one who harbors hatred towards women."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who hates marriage:",
       "options": [
-        "Misogamist",
         "Misogynist",
+        "Misogamist",
         "Misanthrope",
         "Bachelor"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Misogamist' hates the institution of marriage."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who hates mankind:",
       "options": [
-        "Misanthrope",
         "Philanthropist",
-        "Misogynist",
-        "Egoist"
+        "Egoist",
+        "Misanthrope",
+        "Misogynist"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Misanthrope' dislikes humankind and society."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A lover of mankind who works for human welfare:",
       "options": [
+        "Altruist",
         "Philanthropist",
         "Misanthrope",
-        "Altruist",
         "Humanist"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Philanthropist' devotes wealth and care to human welfare."
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who eats human flesh:",
       "options": [
+        "Herbivore",
         "Cannibal",
         "Carnivore",
-        "Herbivore",
         "Omnivore"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "A 'Cannibal' consumes the flesh of its own species."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "An animal that feeds on plants:",
       "options": [
-        "Herbivore",
+        "Insectivore",
         "Carnivore",
         "Omnivore",
-        "Insectivore"
+        "Herbivore"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Herbivore' feeds strictly on vegetation."
     },
     {
@@ -1582,9 +1582,9 @@
       "question": "An animal that eats both plants and meat:",
       "options": [
         "Omnivore",
+        "Piscivore",
         "Herbivore",
-        "Carnivore",
-        "Piscivore"
+        "Carnivore"
       ],
       "answer": 0,
       "explanation": "'Omnivore' consumes both animal and plant matter."
@@ -1595,9 +1595,9 @@
       "question": "One who is indifferent to pain or pleasure:",
       "options": [
         "Stoic",
-        "Epicurean",
+        "Cynic",
         "Hedonist",
-        "Cynic"
+        "Epicurean"
       ],
       "answer": 0,
       "explanation": "A 'Stoic' endures hardship without complaint."
@@ -1607,12 +1607,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "One who lives for pleasure and sensory enjoyment:",
       "options": [
-        "Hedonist / Epicure",
         "Stoic",
-        "Ascetic",
-        "Hermit"
+        "Hedonist / Epicure",
+        "Hermit",
+        "Ascetic"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hedonist' believes pursuit of pleasure is the primary good."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who practices severe self-discipline and avoids all indulgence:",
       "options": [
-        "Ascetic",
         "Hedonist",
         "Stoic",
+        "Ascetic",
         "Epicure"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "An 'Ascetic' renounces worldly pleasures for spiritual goals."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A remedy for all diseases or difficulties:",
       "options": [
-        "Panacea",
-        "Placebo",
         "Elixir",
-        "Antidote"
+        "Antidote",
+        "Placebo",
+        "Panacea"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Panacea' is a universal cure-all."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A medicine that counteracts the effects of poison:",
       "options": [
-        "Antidote",
         "Antiseptic",
+        "Antidote",
         "Antibiotic",
         "Analgesic"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Antidote' neutralizes toxins."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of a king or queen:",
       "options": [
+        "Fratricide",
         "Regicide",
         "Patricide",
-        "Fratricide",
         "Homicide"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Regicide' is the assassination of a monarch."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of one's father:",
       "options": [
-        "Patricide",
         "Matricide",
-        "Fratricide",
-        "Parricide"
+        "Parricide",
+        "Patricide",
+        "Fratricide"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Patricide' is the killing of one's father."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of one's mother:",
       "options": [
-        "Matricide",
-        "Patricide",
         "Sororicide",
-        "Infanticide"
+        "Matricide",
+        "Infanticide",
+        "Patricide"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Matricide' is the murder of one's mother."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of one's brother:",
       "options": [
-        "Fratricide",
-        "Sororicide",
         "Patricide",
-        "Homicide"
+        "Sororicide",
+        "Homicide",
+        "Fratricide"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fratricide' is the killing of a brother."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Murder of an infant or newborn baby:",
       "options": [
-        "Infanticide",
+        "Suicide",
         "Foeticide",
         "Genocide",
-        "Suicide"
+        "Infanticide"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Infanticide' is the killing of an infant."
     },
     {
@@ -1725,9 +1725,9 @@
       "question": "Deliberate killing of a large group of people from a particular nation or ethnic group:",
       "options": [
         "Genocide",
-        "Homicide",
         "Regicide",
-        "Massacre"
+        "Massacre",
+        "Homicide"
       ],
       "answer": 0,
       "explanation": "'Genocide' is the systemic extermination of a people."
@@ -1737,12 +1737,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A post or office with high salary but no work:",
       "options": [
-        "Sinecure",
+        "Permanent",
         "Honorary",
         "Voluntary",
-        "Permanent"
+        "Sinecure"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Sinecure' is a remunerative position requiring little or no responsibility."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A position held without remuneration or salary:",
       "options": [
-        "Honorary",
-        "Sinecure",
         "Gratis",
+        "Sinecure",
+        "Honorary",
         "Pro bono"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Honorary' work is done without payment."
     },
     {
@@ -1764,9 +1764,9 @@
       "question": "A government ruled by a single person with absolute power:",
       "options": [
         "Autocracy / Dictatorship",
+        "Aristocracy",
         "Democracy",
-        "Oligarchy",
-        "Aristocracy"
+        "Oligarchy"
       ],
       "answer": 0,
       "explanation": "'Autocracy' is rule by one individual with supreme power."
@@ -1776,12 +1776,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A government by the wealthy class:",
       "options": [
-        "Plutocracy",
-        "Aristocracy",
+        "Oligarchy",
         "Theocracy",
-        "Oligarchy"
+        "Aristocracy",
+        "Plutocracy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Plutocracy' is governance by the rich."
     },
     {
@@ -1790,9 +1790,9 @@
       "question": "A government ruled by religious leaders or priests:",
       "options": [
         "Theocracy",
+        "Plutocracy",
         "Secular state",
-        "Monarchy",
-        "Plutocracy"
+        "Monarchy"
       ],
       "answer": 0,
       "explanation": "'Theocracy' is rule by clerics under divine authority."
@@ -1802,12 +1802,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A government ruled by a small group of powerful individuals:",
       "options": [
-        "Oligarchy",
-        "Monarchy",
         "Anarchy",
-        "Democracy"
+        "Monarchy",
+        "Democracy",
+        "Oligarchy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Oligarchy' is political power concentrated in a few individuals."
     },
     {
@@ -1816,8 +1816,8 @@
       "question": "A state of disorder due to the absence of government or authority:",
       "options": [
         "Anarchy",
-        "Monarchy",
         "Autocracy",
+        "Monarchy",
         "Democracy"
       ],
       "answer": 0,
@@ -1829,9 +1829,9 @@
       "question": "One who speaks many languages fluently:",
       "options": [
         "Polyglot / Multilingual",
-        "Linguist",
+        "Translator",
         "Monoglot",
-        "Translator"
+        "Linguist"
       ],
       "answer": 0,
       "explanation": "A 'Polyglot' speaks multiple languages."
@@ -1841,12 +1841,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "The first public speech delivered by an orator:",
       "options": [
-        "Maiden speech",
         "Oration",
         "Valedictory",
+        "Maiden speech",
         "Extempore"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Maiden speech' is a speaker's inaugural parliamentary or formal address."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A speech made without any prior preparation:",
       "options": [
-        "Extempore / Impromptu",
-        "Maiden",
         "Keynote",
-        "Debate"
+        "Debate",
+        "Extempore / Impromptu",
+        "Maiden"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Extempore' or 'Impromptu' is spoken offhand without advance preparation."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A life story written by oneself:",
       "options": [
-        "Autobiography",
+        "Chronicle",
         "Biography",
         "Memoir",
-        "Chronicle"
+        "Autobiography"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Autobiography' is self-written life history."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A life story written by another person:",
       "options": [
-        "Biography",
-        "Autobiography",
         "Hagiography",
-        "Monograph"
+        "Autobiography",
+        "Monograph",
+        "Biography"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Biography' is another person's account of a life."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where birds are kept:",
       "options": [
+        "Menagerie",
         "Aviary",
         "Apiary",
-        "Aquarium",
-        "Menagerie"
+        "Aquarium"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Aviary' is an enclosure for confining birds (cf. 'Apiary' for bees)."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where bees are kept:",
       "options": [
-        "Apiary",
         "Aviary",
+        "Apiary",
         "Hatchery",
         "Hive"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Apiary' is a bee yard or collection of beehives."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A place where weapons and ammunition are stored:",
       "options": [
-        "Arsenal",
-        "Armory",
         "Depot",
-        "Barracks"
+        "Barracks",
+        "Arsenal",
+        "Armory"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "An 'Arsenal' is a storehouse for arms."
     },
     {
@@ -1947,8 +1947,8 @@
       "options": [
         "Dermatologist",
         "Cardiologist",
-        "Neurologist",
-        "Ophthalmologist"
+        "Ophthalmologist",
+        "Neurologist"
       ],
       "answer": 0,
       "explanation": "'Dermatologist' specializes in treating skin disorders."
@@ -1958,12 +1958,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A doctor who specializes in heart ailments:",
       "options": [
-        "Cardiologist",
-        "Pathologist",
+        "Pediatrician",
         "Oncologist",
-        "Pediatrician"
+        "Pathologist",
+        "Cardiologist"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cardiologist' specializes in the cardiovascular system."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A doctor who specializes in eye disorders:",
       "options": [
-        "Ophthalmologist",
-        "Optician",
+        "Neurologist",
         "ENT specialist",
-        "Neurologist"
+        "Ophthalmologist",
+        "Optician"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ophthalmologist' specializes in ocular medicine."
     },
     {
@@ -1998,9 +1998,9 @@
       "question": "A person who walks in sleep:",
       "options": [
         "Somnambulist",
-        "Somniloquist",
         "Insomniac",
-        "Noctambulist"
+        "Noctambulist",
+        "Somniloquist"
       ],
       "answer": 0,
       "explanation": "'Somnambulist' is a sleepwalker."
@@ -2010,12 +2010,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "A person who talks in sleep:",
       "options": [
-        "Somniloquist",
-        "Somnambulist",
         "Ventriloquist",
+        "Somnambulist",
+        "Somniloquist",
         "Orator"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Somniloquist' talks while sleeping."
     },
     {
@@ -2023,12 +2023,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A secret or disguised way of writing'",
       "options": [
-        "Cypher",
-        "Philology",
         "Chronology",
+        "Philology",
+        "Cypher",
         "Topography"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cypher': A cypher or cipher is a secret code or cryptographic system."
     },
     {
@@ -2036,12 +2036,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The therapeutic use of sunlight for healing'",
       "options": [
-        "Heliotherapy",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Heliotherapy",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Heliotherapy': Heliotherapy uses sunlight exposure for medical treatments."
     },
     {
@@ -2049,12 +2049,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'One who studies elections and voting statistics'",
       "options": [
+        "Topography",
         "Psephologist",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Chronology"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Psephologist': A psephologist analyzes voting trends and election data."
     },
     {
@@ -2064,8 +2064,8 @@
       "options": [
         "Nomocracy",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Topography",
+        "Chronology"
       ],
       "answer": 0,
       "explanation": "'Nomocracy': Nomocracy is a political system governed by supreme rule of law."
@@ -2076,8 +2076,8 @@
       "question": "Give one word for: 'Safe and suitable for drinking'",
       "options": [
         "Potable",
-        "Philology",
         "Chronology",
+        "Philology",
         "Topography"
       ],
       "answer": 0,
@@ -2088,12 +2088,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'Using the exact same words as originally spoken or written'",
       "options": [
-        "Verbatim",
-        "Philology",
         "Chronology",
-        "Topography"
+        "Topography",
+        "Philology",
+        "Verbatim"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Verbatim': Verbatim means word-for-word replication."
     },
     {
@@ -2101,12 +2101,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The emblems, insignia, or dress of royalty'",
       "options": [
-        "Regalia",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Topography",
+        "Regalia",
+        "Chronology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Regalia': Regalia refers to royal crowns, scepters, and official coronation items."
     },
     {
@@ -2115,9 +2115,9 @@
       "question": "Give one word for: 'An imaginary ideal society where everything is perfect'",
       "options": [
         "Utopia",
-        "Philology",
         "Chronology",
-        "Topography"
+        "Topography",
+        "Philology"
       ],
       "answer": 0,
       "explanation": "'Utopia': Utopia (from Thomas More) is a visionary perfect society."
@@ -2127,12 +2127,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A thing kept as a reminder of a place, person, or event'",
       "options": [
-        "Souvenir",
-        "Philology",
         "Chronology",
-        "Topography"
+        "Souvenir",
+        "Topography",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Souvenir': A souvenir or memento is preserved as a memory."
     },
     {
@@ -2140,12 +2140,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A fortress commanding a city and serving as last retreat'",
       "options": [
-        "Citadel",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Philology",
+        "Citadel"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Citadel': A citadel is a fortified stronghold on elevated ground."
     },
     {
@@ -2166,12 +2166,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'Something absolutely necessary that cannot be done without'",
       "options": [
-        "Indispensable",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Philology",
+        "Indispensable"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Indispensable': Indispensable means essential and incapable of replacement."
     },
     {
@@ -2179,12 +2179,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The act of copying another author's language and claiming it as one's own'",
       "options": [
-        "Plagiarism",
         "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Plagiarism"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Plagiarism': Plagiarism is academic theft of intellectual material."
     },
     {
@@ -2192,12 +2192,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A person who cuts, polishes, or engraves precious gemstones'",
       "options": [
-        "Lapidary",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Lapidary",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Lapidary': A lapidary is a skilled craftsperson working with gems."
     },
     {
@@ -2206,9 +2206,9 @@
       "question": "Give one word for: 'A person made to bear blame or suffer for the sins of others'",
       "options": [
         "Scapegoat",
+        "Topography",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Chronology"
       ],
       "answer": 0,
       "explanation": "'Scapegoat': A scapegoat is made to carry collective guilt."
@@ -2220,8 +2220,8 @@
       "options": [
         "Credulous",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Topography",
+        "Chronology"
       ],
       "answer": 0,
       "explanation": "'Credulous': A credulous person is easily deceived due to over-trusting nature."
@@ -2231,12 +2231,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'Deliberate destruction or damage to impede an enemy or employer'",
       "options": [
-        "Sabotage",
+        "Topography",
         "Philology",
         "Chronology",
-        "Topography"
+        "Sabotage"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Sabotage': Sabotage involves subversive destruction of infrastructure."
     },
     {
@@ -2244,12 +2244,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A closed meeting of political party members to choose candidates'",
       "options": [
-        "Caucus",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Caucus",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Caucus': A caucus is an inner conference of party delegates."
     },
     {
@@ -2258,9 +2258,9 @@
       "question": "Give one word for: 'The legal right to vote in public political elections'",
       "options": [
         "Suffrage",
+        "Topography",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Chronology"
       ],
       "answer": 0,
       "explanation": "'Suffrage': Suffrage denotes the franchise or political voting rights."
@@ -2270,12 +2270,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A person who advocates for the social and political equality of all people'",
       "options": [
+        "Chronology",
         "Egalitarian",
         "Philology",
-        "Chronology",
         "Topography"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Egalitarian': Egalitarianism champions universal human equality."
     },
     {
@@ -2283,12 +2283,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'One who opposes war and believes all violence is unjustifiable'",
       "options": [
-        "Pacifist",
         "Philology",
         "Chronology",
-        "Topography"
+        "Topography",
+        "Pacifist"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Pacifist': A pacifist rejects armed conflict and military aggression."
     },
     {
@@ -2296,12 +2296,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The medieval forerunner of chemistry aimed at transmuting metals'",
       "options": [
-        "Alchemy",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Alchemy",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Alchemy': Alchemy sought the philosopher's stone to transmute lead into gold."
     },
     {
@@ -2309,12 +2309,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A man who has womanish habits, speech, or gestures'",
       "options": [
+        "Chronology",
         "Effeminate",
         "Philology",
-        "Chronology",
         "Topography"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Effeminate': Effeminate denotes unmanly traits in male behavior."
     },
     {
@@ -2322,12 +2322,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A book, document, or piece of music written by hand'",
       "options": [
-        "Manuscript",
         "Philology",
         "Chronology",
-        "Topography"
+        "Topography",
+        "Manuscript"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Manuscript': A manuscript (manu + scriptum) is handwritten text."
     },
     {
@@ -2336,8 +2336,8 @@
       "question": "Give one word for: 'A large building or shed designed for housing aircraft'",
       "options": [
         "Hangar",
-        "Philology",
         "Chronology",
+        "Philology",
         "Topography"
       ],
       "answer": 0,
@@ -2348,12 +2348,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The act of speaking irreverently or disrespectfully about God or sacred things'",
       "options": [
-        "Blasphemy",
+        "Topography",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Blasphemy",
+        "Chronology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Blasphemy': Blasphemy is profanity or sacrilege towards sacred matters."
     },
     {
@@ -2361,12 +2361,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The statistical study of human population and vital records'",
       "options": [
-        "Demography",
+        "Topography",
         "Philology",
-        "Chronology",
-        "Topography"
+        "Demography",
+        "Chronology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Demography': Demography charts population trends, birth rates, and migration."
     },
     {
@@ -2374,12 +2374,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'Possessing unlimited, absolute, and supreme power'",
       "options": [
-        "Omnipotent",
         "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Omnipotent"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Omnipotent': Omnipotent (all-powerful) is an attribute ascribed to God."
     },
     {
@@ -2387,12 +2387,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The scientific study or collection of coins, medals, and paper money'",
       "options": [
-        "Numismatics",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Numismatics",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Numismatics': Numismatics is the numismatic study of historic currency."
     },
     {
@@ -2400,12 +2400,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A small, exclusive clique of persons who associate closely'",
       "options": [
-        "Clique",
-        "Philology",
         "Chronology",
-        "Topography"
+        "Clique",
+        "Topography",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Clique': A clique excludes outsiders from its inner circle."
     },
     {
@@ -2413,12 +2413,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A repository where historical records and public documents are preserved'",
       "options": [
-        "Archive",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Archive",
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Archive': An archive stores archival historical state records."
     },
     {
@@ -2426,12 +2426,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The branch of medicine concerned with the diagnosis and treatment of skin diseases'",
       "options": [
-        "Dermatology",
         "Philology",
+        "Dermatology",
         "Chronology",
         "Topography"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Dermatology': Dermatology treats skin, hair, and nail disorders."
     },
     {
@@ -2439,12 +2439,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The killing of dogs'",
       "options": [
-        "Canicide",
-        "Philology",
         "Chronology",
-        "Topography"
+        "Philology",
+        "Topography",
+        "Canicide"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Canicide': Canicide denotes the act of destroying dogs."
     },
     {
@@ -2452,12 +2452,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The killing of wolves'",
       "options": [
-        "Lupicide",
         "Philology",
         "Chronology",
+        "Lupicide",
         "Topography"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Lupicide': Lupicide denotes the killing of wolves."
     },
     {
@@ -2465,12 +2465,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'The killing of bears'",
       "options": [
-        "Ursicide",
         "Philology",
         "Chronology",
-        "Topography"
+        "Topography",
+        "Ursicide"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ursicide': Ursicide denotes the destruction of bears."
     },
     {
@@ -2478,12 +2478,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'An irrational and intense fear of enclosed or confined spaces'",
       "options": [
-        "Claustrophobia",
-        "Philology",
         "Chronology",
+        "Philology",
+        "Claustrophobia",
         "Topography"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Claustrophobia': Claustrophobia is panic triggered by enclosed spaces."
     },
     {
@@ -2491,12 +2491,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'Intense dislike of or prejudice against people from other countries'",
       "options": [
-        "Xenophobia",
-        "Philology",
         "Chronology",
-        "Topography"
+        "Philology",
+        "Topography",
+        "Xenophobia"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Xenophobia': Xenophobia is fear or hatred of foreigners."
     },
     {
@@ -2504,12 +2504,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'An irrational and morbid fear of dogs'",
       "options": [
-        "Cynophobia",
         "Philology",
         "Chronology",
-        "Topography"
+        "Topography",
+        "Cynophobia"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cynophobia': Cynophobia is clinical phobia of dogs."
     },
     {
@@ -2517,12 +2517,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'An extreme or irrational fear of heights'",
       "options": [
+        "Topography",
         "Acrophobia",
-        "Philology",
         "Chronology",
-        "Topography"
+        "Philology"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Acrophobia': Acrophobia causes vertigo and terror at elevated altitudes."
     },
     {
@@ -2531,9 +2531,9 @@
       "question": "Give one word for: 'An obsessive impulse to set fire to buildings or objects'",
       "options": [
         "Pyromania",
-        "Philology",
+        "Topography",
         "Chronology",
-        "Topography"
+        "Philology"
       ],
       "answer": 0,
       "explanation": "'Pyromania': Pyromania is pathological fire-starting."
@@ -2543,12 +2543,12 @@
       "topic": "one_word_substitutes_eng",
       "question": "Give one word for: 'A recurrent, uncontrollable urge to steal items without economic motive'",
       "options": [
-        "Kleptomania",
         "Philology",
         "Chronology",
-        "Topography"
+        "Topography",
+        "Kleptomania"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Kleptomania': Kleptomania is compulsive stealing."
     }
   ]

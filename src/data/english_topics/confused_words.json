@@ -10,8 +10,8 @@
       "options": [
         "adopt",
         "adapt",
-        "adept",
-        "adopts"
+        "adopts",
+        "adept"
       ],
       "answer": 0,
       "explanation": "'Adopt' means to legally take or choose to follow; 'Adapt' means to adjust; 'Adept' means skilled."
@@ -22,9 +22,9 @@
       "question": "He is ______ at playing the violin.",
       "options": [
         "adept",
-        "adopt",
         "adapt",
-        "adaptable"
+        "adaptable",
+        "adopt"
       ],
       "answer": 0,
       "explanation": "'Adept' is an adjective meaning skilled or proficient."
@@ -36,8 +36,8 @@
       "options": [
         "adapt",
         "adopt",
-        "adept",
-        "adaptation"
+        "adaptation",
+        "adept"
       ],
       "answer": 0,
       "explanation": "'Adapt' means to adjust or modify oneself to new conditions."
@@ -47,12 +47,12 @@
       "topic": "confused_words",
       "question": "Please buy some paper and pens from the ______ shop.",
       "options": [
-        "stationery",
-        "stationary",
         "stationerry",
-        "stationer"
+        "stationary",
+        "stationer",
+        "stationery"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Stationery' (with 'e') refers to writing materials; 'Stationary' (with 'a') means motionless."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "confused_words",
       "question": "The vehicle collided with a ______ truck.",
       "options": [
-        "stationary",
-        "stationery",
         "stationarity",
-        "stationer"
+        "stationer",
+        "stationery",
+        "stationary"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Stationary' means not moving or staying in one place."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "confused_words",
       "question": "The school ______ addressed the morning assembly.",
       "options": [
-        "principal",
-        "principle",
+        "principally",
         "principality",
-        "principally"
+        "principal",
+        "principle"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Principal' refers to the head of a school or chief matter; 'Principle' is a fundamental rule or moral truth."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "confused_words",
       "question": "He is a man of high ______.",
       "options": [
-        "principles",
+        "principled",
         "principals",
-        "principalities",
-        "principled"
+        "principles",
+        "principalities"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Principles' are moral rules or codes of conduct."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "confused_words",
       "question": "She gave me a nice ______ on my new dress.",
       "options": [
-        "compliment",
-        "complement",
         "complimental",
+        "complement",
+        "compliment",
         "comply"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Compliment' is an expression of praise; 'Complement' is something that completes or brings to perfection."
     },
     {
@@ -113,8 +113,8 @@
       "question": "The husband and wife ______ each other well.",
       "options": [
         "complement",
-        "compliment",
         "complies",
+        "compliment",
         "complaisant"
       ],
       "answer": 0,
@@ -125,12 +125,12 @@
       "topic": "confused_words",
       "question": "The heavy rain will ______ the cricket match.",
       "options": [
-        "affect",
         "effect",
+        "affected",
         "effective",
-        "affected"
+        "affect"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Affect' is usually a verb meaning to influence or alter; 'Effect' is usually a noun meaning result."
     },
     {
@@ -152,9 +152,9 @@
       "question": "He gave me valuable ______ on preparing for exams.",
       "options": [
         "advice",
+        "adviced",
         "advise",
-        "advicing",
-        "adviced"
+        "advicing"
       ],
       "answer": 0,
       "explanation": "'Advice' (with 'c') is an uncountable noun; 'Advise' (with 's') is the verb."
@@ -164,12 +164,12 @@
       "topic": "confused_words",
       "question": "The doctor will ______ you on your diet.",
       "options": [
-        "advise",
         "advice",
-        "adviced",
-        "advicely"
+        "advise",
+        "advicely",
+        "adviced"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Advise' is the transitive verb meaning to give counsel."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "confused_words",
       "question": "Regular ______ makes a man perfect.",
       "options": [
-        "practice",
+        "practised",
         "practise",
         "practising",
-        "practised"
+        "practice"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "In British/Indian English, 'Practice' is the noun, while 'Practise' is the verb."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "confused_words",
       "question": "You must ______ the piano daily.",
       "options": [
-        "practise",
+        "practised",
         "practice",
-        "practising",
-        "practised"
+        "practise",
+        "practising"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Verb form in British English is 'Practise'."
     },
     {
@@ -203,12 +203,12 @@
       "topic": "confused_words",
       "question": "The jury delivered a unanimous ______ of not guilty.",
       "options": [
-        "verdict",
-        "sentence",
         "charge",
-        "bail"
+        "verdict",
+        "bail",
+        "sentence"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Verdict' is the formal finding or decision of a jury."
     },
     {
@@ -217,8 +217,8 @@
       "question": "The judge passed a harsh ______ of five years imprisonment.",
       "options": [
         "sentence",
-        "verdict",
         "plea",
+        "verdict",
         "decree"
       ],
       "answer": 0,
@@ -229,12 +229,12 @@
       "topic": "confused_words",
       "question": "The minister had easy ______ to the chief guest.",
       "options": [
+        "accent",
         "access",
         "excess",
-        "assess",
-        "accent"
+        "assess"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Access' means the means or opportunity to approach or enter."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "confused_words",
       "question": "Drinking alcohol in ______ is injurious to health.",
       "options": [
+        "assess",
         "excess",
         "access",
-        "assess",
         "axis"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Excess' means an amount greater than what is necessary or permitted."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "confused_words",
       "question": "The property has been ______ by the court.",
       "options": [
-        "attached",
-        "attacked",
         "attained",
-        "attracted"
+        "attacked",
+        "attracted",
+        "attached"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Attached' in law means seized by legal authority."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "confused_words",
       "question": "He walked barefoot along the sea ______.",
       "options": [
-        "shore",
         "bank",
         "coast",
-        "quay"
+        "quay",
+        "shore"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Land alongside the sea is a 'shore'; land alongside a river is a 'bank'."
     },
     {
@@ -281,12 +281,12 @@
       "topic": "confused_words",
       "question": "They sat on the grassy ______ of the river.",
       "options": [
+        "coast",
         "bank",
         "shore",
-        "coast",
         "beach"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bank' is the land bordering a river or stream."
     },
     {
@@ -294,12 +294,12 @@
       "topic": "confused_words",
       "question": "The ship sailed along the western ______ of India.",
       "options": [
-        "coast",
         "shore",
         "bank",
+        "coast",
         "beach"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Coast' is the outline where land meets the sea over an extended region."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "confused_words",
       "question": "She wrapped a beautiful woollen ______ around her shoulders.",
       "options": [
-        "shawl",
+        "pall",
         "veil",
-        "shroud",
-        "pall"
+        "shawl",
+        "shroud"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Shawl' is a piece of fabric worn over the shoulders."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "confused_words",
       "question": "The bride covered her face with a white ______.",
       "options": [
-        "veil",
+        "vail",
         "vale",
         "wail",
-        "vail"
+        "veil"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Veil' is a piece of fine material worn by women to conceal face."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "confused_words",
       "question": "The hikers camped in a fertile green ______.",
       "options": [
-        "vale",
+        "wale",
         "veil",
-        "wail",
-        "wale"
+        "vale",
+        "wail"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Vale' is a valley."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "confused_words",
       "question": "We heard the mourners ______ loudly in grief.",
       "options": [
-        "wail",
-        "veil",
         "vale",
-        "wale"
+        "wale",
+        "wail",
+        "veil"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Wail' means to cry out loudly in mourning or pain."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "confused_words",
       "question": "The scientist made an ______ discovery.",
       "options": [
-        "eminent",
         "imminent",
-        "emanant",
-        "eminent"
+        "eminent",
+        "eminent",
+        "emanant"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Eminent' means famous, respected, and distinguished."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "confused_words",
       "question": "Black clouds indicated that a storm was ______.",
       "options": [
-        "imminent",
         "eminent",
+        "imminent",
         "emanate",
         "immanent"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Imminent' means about to happen very soon."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "confused_words",
       "question": "The sun will ______ in the east.",
       "options": [
-        "rise",
         "raise",
         "raze",
-        "rose"
+        "rose",
+        "rise"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Rise' is an intransitive verb meaning to go up on one's own."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "confused_words",
       "question": "The student ______ his hand to ask a question.",
       "options": [
-        "raised",
         "rose",
         "risen",
+        "raised",
         "razed"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Raise' is a transitive verb requiring an object ('raised his hand')."
     },
     {
@@ -412,9 +412,9 @@
       "question": "The ancient monument was ______ to the ground by invaders.",
       "options": [
         "razed",
-        "raised",
+        "risen",
         "rose",
-        "risen"
+        "raised"
       ],
       "answer": 0,
       "explanation": "'Raze' means to completely destroy or level to the ground."
@@ -424,12 +424,12 @@
       "topic": "confused_words",
       "question": "A heavy metal is ______ to lift.",
       "options": [
-        "hard",
-        "scarcely",
         "hardly",
-        "difficultly"
+        "scarcely",
+        "difficultly",
+        "hard"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hard' functions as both adjective and adverb."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "confused_words",
       "question": "He ______ ever goes out without an umbrella.",
       "options": [
-        "hardly",
-        "hard",
         "harder",
-        "hardest"
+        "hardest",
+        "hard",
+        "hardly"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hardly' means scarcely or almost not at all."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "confused_words",
       "question": "I ______ you that your funds are safe.",
       "options": [
-        "assure",
         "ensure",
         "insure",
+        "assure",
         "sure"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Assure' means to remove doubt and give confidence to a person ('assure someone')."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "confused_words",
       "question": "Please ______ that all doors are locked before leaving.",
       "options": [
-        "ensure",
         "assure",
         "insure",
+        "ensure",
         "sure"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ensure' means to make sure or certain that something happens."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "confused_words",
       "question": "You should ______ your car against fire and theft.",
       "options": [
-        "insure",
-        "ensure",
+        "sure",
         "assure",
-        "sure"
+        "ensure",
+        "insure"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Insure' means to arrange for financial compensation in case of loss or damage."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "confused_words",
       "question": "He gave me a ______ of bread.",
       "options": [
-        "piece",
+        "pierce",
         "peace",
-        "peas",
-        "pierce"
+        "piece",
+        "peas"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Piece' is a portion or fragment; 'Peace' is freedom from war/disturbance."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "confused_words",
       "question": "After years of war, the nations finally agreed on ______.",
       "options": [
+        "peak",
         "peace",
-        "piece",
         "peas",
-        "peak"
+        "piece"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Peace' means tranquility and absence of conflict."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "confused_words",
       "question": "The teacher asked the students to remain ______.",
       "options": [
-        "quiet",
         "quite",
+        "quaint",
         "quit",
-        "quaint"
+        "quiet"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Quiet' means making little or no noise."
     },
     {
@@ -529,9 +529,9 @@
       "question": "I am ______ sure that he will pass the examination.",
       "options": [
         "quite",
-        "quiet",
         "quit",
-        "quote"
+        "quote",
+        "quiet"
       ],
       "answer": 0,
       "explanation": "'Quite' is an adverb meaning completely or fairly."
@@ -541,12 +541,12 @@
       "topic": "confused_words",
       "question": "He decided to ______ his stressful job.",
       "options": [
+        "quote",
         "quit",
-        "quiet",
         "quite",
-        "quote"
+        "quiet"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Quit' means to leave or resign."
     },
     {
@@ -567,12 +567,12 @@
       "topic": "confused_words",
       "question": "He wore a jacket made of ______ cotton fabric.",
       "options": [
-        "coarse",
-        "course",
+        "corpse",
         "curse",
-        "corpse"
+        "coarse",
+        "course"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Coarse' means rough or harsh in texture."
     },
     {
@@ -580,12 +580,12 @@
       "topic": "confused_words",
       "question": "The police found a dead ______ in the abandoned house.",
       "options": [
-        "corpse",
-        "corps",
         "core",
-        "crop"
+        "crop",
+        "corpse",
+        "corps"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Corpse' is a dead human body."
     },
     {
@@ -594,9 +594,9 @@
       "question": "He was an officer in the National Cadet ______.",
       "options": [
         "Corps",
+        "Crops",
         "Corpse",
-        "Cores",
-        "Crops"
+        "Cores"
       ],
       "answer": 0,
       "explanation": "'Corps' (pronounced 'core') is a specialized military/cadet branch."
@@ -606,12 +606,12 @@
       "topic": "confused_words",
       "question": "The apple was rotten at the ______.",
       "options": [
-        "core",
-        "corps",
         "corpse",
-        "crop"
+        "crop",
+        "core",
+        "corps"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Core' is the central or innermost part."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "confused_words",
       "question": "The company gave its ______ for the merger.",
       "options": [
-        "assent",
-        "ascent",
         "accent",
-        "ascention"
+        "ascent",
+        "ascention",
+        "assent"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Assent' means official agreement or approval."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "confused_words",
       "question": "The mountaineers began their steep ______ to Mount Everest.",
       "options": [
-        "ascent",
+        "ascention",
         "assent",
         "accent",
-        "ascention"
+        "ascent"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ascent' means the act of rising or climbing upwards."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "confused_words",
       "question": "He speaks English with a strong American ______.",
       "options": [
+        "ascention",
         "accent",
-        "assent",
         "ascent",
-        "ascention"
+        "assent"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Accent' is a distinctive mode of pronunciation."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "confused_words",
       "question": "The ______ of petrol has risen sharply.",
       "options": [
+        "praise",
         "price",
         "prize",
-        "praise",
         "pride"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Price' is the monetary amount paid; 'Prize' is an award given for victory."
     },
     {
@@ -672,9 +672,9 @@
       "question": "She won the first ______ in the essay competition.",
       "options": [
         "prize",
-        "price",
         "praise",
-        "prise"
+        "prise",
+        "price"
       ],
       "answer": 0,
       "explanation": "'Prize' is an award or reward for achievement."
@@ -684,12 +684,12 @@
       "topic": "confused_words",
       "question": "The bird soared high into the ______.",
       "options": [
-        "air",
-        "heir",
         "hair",
-        "hare"
+        "heir",
+        "hare",
+        "air"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Air' is the atmosphere around us."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "confused_words",
       "question": "He is the sole ______ to his grandfather's vast estate.",
       "options": [
-        "heir",
         "air",
+        "hare",
         "hair",
-        "hare"
+        "heir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Heir' (silent 'h') is a person legally entitled to inherit property."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "confused_words",
       "question": "She combed her long black ______.",
       "options": [
+        "air",
         "hair",
         "hare",
-        "heir",
-        "air"
+        "heir"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hair' grows on the head."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "confused_words",
       "question": "I could ______ the bell ringing in the distance.",
       "options": [
-        "hear",
         "here",
-        "hare",
-        "heir"
+        "hear",
+        "heir",
+        "hare"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hear' is the auditory sense; 'Here' is in this place."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "confused_words",
       "question": "Please come ______ and sit by my side.",
       "options": [
-        "here",
         "hear",
         "hare",
+        "here",
         "heir"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Here' denotes location."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "confused_words",
       "question": "The surgeon will ______ the deep wound.",
       "options": [
-        "heal",
-        "heel",
         "hill",
-        "hell"
+        "heel",
+        "hell",
+        "heal"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Heal' means to become sound or healthy again."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "confused_words",
       "question": "She twisted her ______ while running.",
       "options": [
-        "heel",
-        "heal",
+        "hale",
         "hill",
-        "hale"
+        "heel",
+        "heal"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Heel' is the back part of the foot below the ankle."
     },
     {
@@ -802,8 +802,8 @@
       "question": "What is the bus ______ from Thrissur to Kochi?",
       "options": [
         "fare",
-        "fair",
         "fear",
+        "fair",
         "four"
       ],
       "answer": 0,
@@ -814,12 +814,12 @@
       "topic": "confused_words",
       "question": "The judge was known for giving ______ and just verdicts.",
       "options": [
-        "fair",
         "fare",
+        "fur",
         "fear",
-        "fur"
+        "fair"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fair' means just, equitable, or attractive; also an exhibition/carnival."
     },
     {
@@ -827,12 +827,12 @@
       "topic": "confused_words",
       "question": "The wounded soldier let out a painful ______.",
       "options": [
-        "groan",
+        "groin",
         "grown",
-        "grain",
-        "groin"
+        "groan",
+        "grain"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Groan' is a deep inarticulate sound of pain or despair."
     },
     {
@@ -840,12 +840,12 @@
       "topic": "confused_words",
       "question": "The child has ______ several inches taller this year.",
       "options": [
-        "grown",
         "groan",
+        "growing",
         "growth",
-        "growing"
+        "grown"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Grown' is the past participle of 'grow'."
     },
     {
@@ -854,9 +854,9 @@
       "question": "The company will ______ fifty new engineers this quarter.",
       "options": [
         "hire",
-        "higher",
+        "heir",
         "hair",
-        "heir"
+        "higher"
       ],
       "answer": 0,
       "explanation": "'Hire' means to employ someone for wages."
@@ -866,12 +866,12 @@
       "topic": "confused_words",
       "question": "Mount Everest is ______ than Mount K2.",
       "options": [
-        "higher",
         "hire",
+        "higher",
         "hair",
         "heir"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Higher' is the comparative degree of 'high'."
     },
     {
@@ -881,8 +881,8 @@
       "options": [
         "yacht",
         "ferry",
-        "barge",
-        "canoe"
+        "canoe",
+        "barge"
       ],
       "answer": 0,
       "explanation": "'Yacht' is a medium-sized sailing boat used for cruising or racing."
@@ -892,12 +892,12 @@
       "topic": "confused_words",
       "question": "The thief tried to ______ into the crowded train.",
       "options": [
-        "board",
-        "bored",
+        "brood",
         "broad",
-        "brood"
+        "board",
+        "bored"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Board' means to get on or enter a ship, aircraft, or train."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "confused_words",
       "question": "The lecture was so dull that the students felt utterly ______.",
       "options": [
-        "bored",
-        "board",
         "broad",
-        "boredom"
+        "boredom",
+        "board",
+        "bored"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bored' means feeling weary and restless through lack of interest."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "confused_words",
       "question": "He jumped over a ______ ditch.",
       "options": [
-        "broad",
         "board",
+        "broad",
         "bored",
         "bread"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Broad' means having an ample distance from side to side; wide."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "confused_words",
       "question": "The mother hen sat on her eggs to ______ them.",
       "options": [
-        "brood",
         "broad",
-        "board",
-        "bored"
+        "brood",
+        "bored",
+        "board"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Brood' means to sit on eggs to hatch them; or meditate deeply on a trouble."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "confused_words",
       "question": "He went to ______ to pursue his higher studies.",
       "options": [
-        "abroad",
         "aboard",
         "broad",
-        "board"
+        "board",
+        "abroad"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Abroad' means in or to a foreign country."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "confused_words",
       "question": "Welcome ______ the flight to London!",
       "options": [
-        "aboard",
-        "abroad",
         "broad",
-        "board"
+        "abroad",
+        "board",
+        "aboard"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Aboard' means on or into a ship, aircraft, train, or other vehicle."
     },
     {
@@ -972,8 +972,8 @@
       "options": [
         "inn",
         "in",
-        "inning",
-        "inner"
+        "inner",
+        "inning"
       ],
       "answer": 0,
       "explanation": "'Inn' is a small hotel or pub providing lodging and food."
@@ -983,12 +983,12 @@
       "topic": "confused_words",
       "question": "She walked ______ the living room quietly.",
       "options": [
-        "into",
-        "in to",
         "inn",
-        "onto"
+        "into",
+        "onto",
+        "in to"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Into' expresses movement towards the interior."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "confused_words",
       "question": "The horse had a shiny black ______.",
       "options": [
-        "mane",
         "main",
-        "mein",
-        "mine"
+        "mane",
+        "mine",
+        "mein"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Mane' is the long hair growing on the neck of a horse or lion."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "confused_words",
       "question": "The ______ entrance of the building was locked.",
       "options": [
-        "main",
-        "mane",
+        "mean",
         "mein",
-        "mean"
+        "mane",
+        "main"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Main' means chief, principal, or primary."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "confused_words",
       "question": "He was asked to ______ the amount from his total income.",
       "options": [
-        "deduct",
         "deduce",
-        "deduction",
-        "deducing"
+        "deduct",
+        "deducing",
+        "deduction"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Deduct' means to subtract or take away an amount."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "confused_words",
       "question": "From the clues, the detective was able to ______ the truth.",
       "options": [
-        "deduce",
         "deduct",
-        "deduction",
-        "deducing"
+        "deduce",
+        "deducing",
+        "deduction"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Deduce' means to arrive at a logical fact or conclusion by reasoning."
     },
     {
@@ -1049,8 +1049,8 @@
       "question": "She was wearing a ______ gold necklace around her neck.",
       "options": [
         "delicate",
-        "diligent",
         "delegated",
+        "diligent",
         "defective"
       ],
       "answer": 0,
@@ -1061,12 +1061,12 @@
       "topic": "confused_words",
       "question": "The court issued a ______ ordering payment of debts.",
       "options": [
-        "decree",
-        "degree",
         "decrease",
-        "decry"
+        "decry",
+        "degree",
+        "decree"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Decree' is an official order issued by a legal authority."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "confused_words",
       "question": "He obtained a master's ______ in English literature.",
       "options": [
-        "degree",
+        "decreed",
         "decree",
-        "degrade",
-        "decreed"
+        "degree",
+        "degrade"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Degree' is an academic rank conferred by a college/university."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "confused_words",
       "question": "The medicine will help ______ your severe headache.",
       "options": [
-        "relieve",
         "relife",
+        "relay",
         "release",
-        "relay"
+        "relieve"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Relieve' is the verb meaning to alleviate pain."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "confused_words",
       "question": "To his great ______, all his family members were safe.",
       "options": [
+        "relife",
         "relief",
-        "relieve",
         "relieved",
-        "relife"
+        "relieve"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Relief' is the noun meaning a feeling of reassurance and relaxation."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "confused_words",
       "question": "He is ______ of heights and refuses to fly.",
       "options": [
-        "afraid",
         "scaredly",
         "fearly",
-        "fearful of"
+        "fearful of",
+        "afraid"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Afraid' takes preposition 'of': 'afraid of heights'."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "confused_words",
       "question": "The child was frightened ______ the loud thunder.",
       "options": [
-        "by",
-        "with",
+        "at",
         "from",
-        "at"
+        "with",
+        "by"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Frightened by' an external stimulus."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "confused_words",
       "question": "They decided to ______ their old differences and become friends.",
       "options": [
-        "bury",
         "berry",
         "barry",
+        "bury",
         "bear"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bury' means to inter or put out of mind."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "confused_words",
       "question": "Strawberries and blueberries are delicious kinds of ______.",
       "options": [
-        "berry",
+        "bear",
         "bury",
         "barry",
-        "bear"
+        "berry"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Berry' is a small pulpy fruit."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "confused_words",
       "question": "The knight was armed with a sharp sword and sturdy ______.",
       "options": [
-        "shield",
-        "sheath",
         "spear",
-        "dagger"
+        "shield",
+        "dagger",
+        "sheath"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Shield' is protective armor; 'Sheath' is the case for a blade."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "confused_words",
       "question": "The train had five ______ reserved for sleeper passengers.",
       "options": [
-        "coaches",
+        "bogies",
         "carriages",
-        "compartments",
-        "bogies"
+        "coaches",
+        "compartments"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Coaches' / 'Carriages' are railway passenger cars."
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "confused_words",
       "question": "The dog buried its ______ under the soil.",
       "options": [
-        "bone",
         "bough",
+        "boar",
         "bow",
-        "boar"
+        "bone"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bone' is hard skeletal tissue."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "confused_words",
       "question": "The bird perched on a thick tree ______.",
       "options": [
-        "bough",
-        "bow",
+        "bowl",
         "bowel",
-        "bowl"
+        "bough",
+        "bow"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bough' is a main branch of a tree."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "confused_words",
       "question": "He had to ______ his head in respect.",
       "options": [
-        "bow",
-        "bough",
         "bogh",
+        "bough",
+        "bow",
         "boar"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bow' means to bend the head or upper body as a sign of respect."
     },
     {
@@ -1244,9 +1244,9 @@
       "question": "The hunter aimed his ______ and arrow at the target.",
       "options": [
         "bow",
+        "bowl",
         "bough",
-        "boar",
-        "bowl"
+        "boar"
       ],
       "answer": 0,
       "explanation": "'Bow' (and arrow) is a weapon for shooting arrows."
@@ -1256,12 +1256,12 @@
       "topic": "confused_words",
       "question": "He drank hot tomato soup from a ceramic ______.",
       "options": [
-        "bowl",
+        "bowel",
         "bow",
         "bough",
-        "bowel"
+        "bowl"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bowl' is a round dish or basin."
     },
     {
@@ -1269,12 +1269,12 @@
       "topic": "confused_words",
       "question": "Regular exercise is essential for healthy ______ movements.",
       "options": [
-        "bowel",
-        "bowl",
         "bough",
-        "bow"
+        "bow",
+        "bowl",
+        "bowel"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bowel' refers to the intestine."
     },
     {
@@ -1284,8 +1284,8 @@
       "options": [
         "quay",
         "key",
-        "cue",
-        "queue"
+        "queue",
+        "cue"
       ],
       "answer": 0,
       "explanation": "'Quay' (pronounced 'key') is a concrete platform alongside water for loading ships."
@@ -1296,9 +1296,9 @@
       "question": "He locked the door and kept the ______ in his pocket.",
       "options": [
         "key",
-        "quay",
         "cue",
-        "queue"
+        "queue",
+        "quay"
       ],
       "answer": 0,
       "explanation": "'Key' opens locks."
@@ -1308,12 +1308,12 @@
       "topic": "confused_words",
       "question": "The director gave the actor his ______ to enter the stage.",
       "options": [
-        "cue",
         "queue",
         "quay",
+        "cue",
         "key"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cue' is a prompt or signal for action."
     },
     {
@@ -1321,12 +1321,12 @@
       "topic": "confused_words",
       "question": "The passengers stood patiently in a long ______.",
       "options": [
-        "queue",
-        "cue",
         "quay",
-        "key"
+        "key",
+        "queue",
+        "cue"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Queue' is a line or sequence of people awaiting their turn."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "confused_words",
       "question": "The politician made a ______ promise to win votes.",
       "options": [
-        "hollow",
-        "holy",
         "wholly",
-        "hole"
+        "holy",
+        "hole",
+        "hollow"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hollow' means having an empty space inside; insincere."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "confused_words",
       "question": "The Vatican is considered a ______ city by Roman Catholics.",
       "options": [
-        "holy",
-        "hollow",
         "wholly",
-        "hole"
+        "hole",
+        "hollow",
+        "holy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Holy' means sacred or dedicated to religious purpose."
     },
     {
@@ -1373,12 +1373,12 @@
       "topic": "confused_words",
       "question": "Smoking will adversely ______ your lungs.",
       "options": [
-        "affect",
         "effect",
         "infect",
-        "defect"
+        "defect",
+        "affect"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Affect' is typically a verb meaning to influence or alter."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "confused_words",
       "question": "The new taxation law will come into ______ next month.",
       "options": [
+        "affectation",
         "effect",
         "affect",
-        "affectation",
         "effectual"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Effect' is a noun meaning result or operational validity."
     },
     {
@@ -1400,9 +1400,9 @@
       "question": "Can you give me some sound ______ on career choices?",
       "options": [
         "advice",
-        "advise",
+        "adviced",
         "advising",
-        "adviced"
+        "advise"
       ],
       "answer": 0,
       "explanation": "'Advice' (with 'c') is the noun; 'advise' (with 's') is the verb."
@@ -1412,12 +1412,12 @@
       "topic": "confused_words",
       "question": "The lawyer will ______ his client on the legal proceedings.",
       "options": [
-        "advise",
         "advice",
         "advicer",
-        "advisedly"
+        "advisedly",
+        "advise"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Advise' is the verb meaning to offer recommendations."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "confused_words",
       "question": "He took medicine to ______ his severe headache.",
       "options": [
-        "relieve",
         "release",
+        "relieve",
         "relax",
         "relapse"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Relieve' means to alleviate pain or distress."
     },
     {
@@ -1451,12 +1451,12 @@
       "topic": "confused_words",
       "question": "Her moral ______ are beyond reproach.",
       "options": [
-        "principles",
         "principals",
+        "princelings",
         "prince",
-        "princelings"
+        "principles"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Principle' means a fundamental truth, rule, or moral standard."
     },
     {
@@ -1464,12 +1464,12 @@
       "topic": "confused_words",
       "question": "The ______ of the college addressed the assembly.",
       "options": [
-        "principal",
         "principle",
         "principality",
+        "principal",
         "principally"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Principal' refers to the head of a school or capital sum."
     },
     {
@@ -1477,12 +1477,12 @@
       "topic": "confused_words",
       "question": "The room was furnished with ______ furniture.",
       "options": [
-        "stationary",
         "stationery",
+        "stationary",
         "stationed",
         "stationing"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Stationary' (with 'a') means not moving; static."
     },
     {
@@ -1491,9 +1491,9 @@
       "question": "I bought notebooks and pens from the ______ store.",
       "options": [
         "stationery",
-        "stationary",
         "stationer",
-        "stations"
+        "stations",
+        "stationary"
       ],
       "answer": 0,
       "explanation": "'Stationery' (with 'e') refers to writing and office supplies."
@@ -1504,9 +1504,9 @@
       "question": "The judge acted with exemplary ______ throughout the trial.",
       "options": [
         "disinterest",
+        "interest",
         "uninterest",
-        "disinterestedness",
-        "interest"
+        "disinterestedness"
       ],
       "answer": 0,
       "explanation": "'Disinterested' means impartial and unbiased, not indifferent."
@@ -1517,9 +1517,9 @@
       "question": "He showed complete ______ in artistic paintings.",
       "options": [
         "uninterest / apathy",
+        "interest",
         "disinterest",
-        "uninterestedness",
-        "interest"
+        "uninterestedness"
       ],
       "answer": 0,
       "explanation": "'Uninterested' means having no interest; indifferent."
@@ -1529,12 +1529,12 @@
       "topic": "confused_words",
       "question": "The boat is tied to the wooden ______.",
       "options": [
-        "quay",
-        "key",
+        "queue",
         "cue",
-        "queue"
+        "quay",
+        "key"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Quay' (pronounced 'key') is a concrete/stone pier for loading ships."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "confused_words",
       "question": "Wait patiently in the ______ for your turn.",
       "options": [
+        "key",
         "queue",
-        "cue",
         "quay",
-        "key"
+        "cue"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Queue' is a line of waiting people."
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "confused_words",
       "question": "The director gave the actor his ______ to enter the stage.",
       "options": [
-        "cue",
-        "queue",
+        "key",
         "quay",
-        "key"
+        "cue",
+        "queue"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cue' is a signal prompting action."
     },
     {
@@ -1569,8 +1569,8 @@
       "question": "The bride walked gracefully down the ______.",
       "options": [
         "aisle",
-        "isle",
         "ill",
+        "isle",
         "isle of"
       ],
       "answer": 0,
@@ -1581,12 +1581,12 @@
       "topic": "confused_words",
       "question": "They spent their holiday on a tropical ______.",
       "options": [
-        "isle",
-        "aisle",
         "ail",
+        "aisle",
+        "isle",
         "isle's"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Isle' is an island."
     },
     {
@@ -1595,9 +1595,9 @@
       "question": "He paid a gracious ______ to her elegance.",
       "options": [
         "compliment",
-        "complement",
         "compliant",
-        "complaisance"
+        "complaisance",
+        "complement"
       ],
       "answer": 0,
       "explanation": "'Compliment' is an expression of praise."
@@ -1607,12 +1607,12 @@
       "topic": "confused_words",
       "question": "Rice and curry ______ each other perfectly.",
       "options": [
+        "complaisant",
         "complement",
         "compliment",
-        "complaisant",
         "comply"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Complement' means to complete or enhance each other."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "confused_words",
       "question": "He was an ______ scholar in the field of linguistics.",
       "options": [
-        "eminent",
-        "imminent",
         "emanate",
-        "elemental"
+        "imminent",
+        "elemental",
+        "eminent"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Eminent' means distinguished, famous, or renowned."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "confused_words",
       "question": "The meteorologist warned of ______ heavy rainfall.",
       "options": [
-        "imminent",
-        "eminent",
         "eminent danger",
-        "emanating"
+        "eminent",
+        "emanating",
+        "imminent"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Imminent' means about to happen very soon."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "confused_words",
       "question": "The police tried to ______ crucial information from him.",
       "options": [
-        "elicit",
-        "illicit",
+        "illusion",
         "elusion",
-        "illusion"
+        "elicit",
+        "illicit"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Elicit' is a verb meaning to draw out or evoke facts."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "confused_words",
       "question": "He was arrested for dealing in ______ liquor.",
       "options": [
+        "allusive",
         "illicit",
         "elicit",
-        "illusive",
-        "allusive"
+        "illusive"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Illicit' means illegal or prohibited by law."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "confused_words",
       "question": "The magician created a stunning optical ______.",
       "options": [
+        "elusion",
         "illusion",
         "allusion",
-        "delusion",
-        "elusion"
+        "delusion"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Illusion' is a deceptive appearance or impression."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "confused_words",
       "question": "The poet made an indirect ______ to Greek mythology.",
       "options": [
-        "allusion",
-        "illusion",
+        "collusion",
         "delusion",
-        "collusion"
+        "illusion",
+        "allusion"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Allusion' is an indirect passing reference."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "confused_words",
       "question": "He is suffering from a paranoid ______ of persecution.",
       "options": [
-        "delusion",
-        "illusion",
         "allusion",
-        "collusion"
+        "collusion",
+        "delusion",
+        "illusion"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Delusion' is a persistent false belief contrary to reality."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "confused_words",
       "question": "The two rival companies acted in corrupt ______.",
       "options": [
-        "collusion",
         "collision",
         "collection",
-        "allusion"
+        "allusion",
+        "collusion"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Collusion' means secret cooperation for fraudulent purposes."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "confused_words",
       "question": "A head-on ______ between two trucks blocked the road.",
       "options": [
-        "collision",
         "collusion",
         "collateral",
-        "collier"
+        "collier",
+        "collision"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Collision' is a violent crash."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "confused_words",
       "question": "She wore a dress made of ______ cotton fabric.",
       "options": [
-        "coarse",
-        "course",
         "corps",
-        "corpse"
+        "corpse",
+        "coarse",
+        "course"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Coarse' means rough in texture or vulgar."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "confused_words",
       "question": "He enrolled in a diploma ______ in computer science.",
       "options": [
-        "course",
         "coarse",
-        "corps",
-        "court"
+        "course",
+        "court",
+        "corps"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Course' is a program of study or direction."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "confused_words",
       "question": "The military ______ was deployed to maintain order.",
       "options": [
-        "corps",
         "corpse",
-        "core",
-        "coarse"
+        "coarse",
+        "corps",
+        "core"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Corps' is an organized military division."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "confused_words",
       "question": "The ______ of the victim was sent for autopsy.",
       "options": [
-        "corpse",
-        "corps",
         "core",
-        "crop"
+        "corps",
+        "crop",
+        "corpse"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Corpse' is a dead body."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "confused_words",
       "question": "He ______ the opportunity without second thought.",
       "options": [
-        "seized",
-        "ceased",
         "sieved",
-        "sized"
+        "sized",
+        "seized",
+        "ceased"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Seize' means to grasp eagerly or take by force."
     },
     {
@@ -1802,12 +1802,12 @@
       "topic": "confused_words",
       "question": "The heavy shelling ______ at sunrise.",
       "options": [
-        "ceased",
-        "seized",
         "seeded",
-        "ceded"
+        "seized",
+        "ceded",
+        "ceased"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cease' means to stop or discontinue."
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "confused_words",
       "question": "The king ______ his border territory to the invaders.",
       "options": [
-        "ceded",
-        "seeded",
         "ceased",
-        "seized"
+        "seeded",
+        "seized",
+        "ceded"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cede' means to formally give up or surrender territory."
     },
     {
@@ -1828,12 +1828,12 @@
       "topic": "confused_words",
       "question": "The sun cast its warm ______ across the lawn.",
       "options": [
+        "raise",
         "rays",
         "raze",
-        "raise",
         "rise"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ray' is a beam of light."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "confused_words",
       "question": "The management agreed to ______ workers' wages.",
       "options": [
-        "raise",
-        "raze",
         "rise",
-        "arise"
+        "raise",
+        "arise",
+        "raze"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Raise' is a transitive verb meaning to elevate or increase."
     },
     {
@@ -1868,9 +1868,9 @@
       "question": "Early to bed and early to ______ makes a man healthy.",
       "options": [
         "rise",
-        "raise",
         "raze",
-        "rays"
+        "rays",
+        "raise"
       ],
       "answer": 0,
       "explanation": "'Rise' is an intransitive verb meaning to get up."
@@ -1880,12 +1880,12 @@
       "topic": "confused_words",
       "question": "She has a delicate, slender ______.",
       "options": [
-        "waist",
         "waste",
         "wasteful",
+        "waist",
         "waisted"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Waist' is the part of human body between ribs and hips."
     },
     {
@@ -1894,9 +1894,9 @@
       "question": "Do not ______ your precious time and money.",
       "options": [
         "waste",
-        "waist",
+        "wasting",
         "waistline",
-        "wasting"
+        "waist"
       ],
       "answer": 0,
       "explanation": "'Waste' means to squander or misuse."
@@ -1907,8 +1907,8 @@
       "question": "They walked barefoot on the sandy ______.",
       "options": [
         "beach",
-        "beech",
         "bleach",
+        "beech",
         "breach"
       ],
       "answer": 0,
@@ -1919,12 +1919,12 @@
       "topic": "confused_words",
       "question": "A sturdy chair made of ______ wood.",
       "options": [
-        "beech",
-        "beach",
         "bleach",
-        "bench"
+        "beach",
+        "bench",
+        "beech"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Beech' is a variety of deciduous tree."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "confused_words",
       "question": "There was a serious ______ of security protocol.",
       "options": [
-        "breach",
-        "breech",
         "beach",
+        "breech",
+        "breach",
         "bleach"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Breach' means an infraction, violation, or gap."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "confused_words",
       "question": "The doctor gave him a sedative ______ to induce sleep.",
       "options": [
+        "drift",
         "draught",
-        "drought",
         "draft",
-        "drift"
+        "drought"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Draught' refers to a portion of liquid drank or dose of medicine."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "confused_words",
       "question": "The prolonged ______ ruined all the agricultural crops.",
       "options": [
-        "drought",
-        "draught",
+        "drift",
         "draft",
-        "drift"
+        "draught",
+        "drought"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Drought' is a prolonged period of abnormally low rainfall."
     },
     {
@@ -1986,8 +1986,8 @@
       "options": [
         "altar",
         "alter",
-        "alert",
-        "altogether"
+        "altogether",
+        "alert"
       ],
       "answer": 0,
       "explanation": "'Altar' (with 'a') is a raised religious table for offerings."
@@ -1997,12 +1997,12 @@
       "topic": "confused_words",
       "question": "You cannot ______ the laws of nature at will.",
       "options": [
+        "alert",
         "alter",
         "altar",
-        "alert",
         "alternate"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Alter' (with 'e') is a verb meaning to modify or change."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "confused_words",
       "question": "The thief managed to ______ the police dragnet.",
       "options": [
-        "elude",
-        "allude",
         "delude",
-        "illude"
+        "illude",
+        "allude",
+        "elude"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Elude' means to escape or evade deftly."
     }
   ]

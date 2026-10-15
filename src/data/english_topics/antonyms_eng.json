@@ -8,12 +8,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'OPTIMISTIC'?",
       "options": [
-        "Pessimistic",
         "Hopeful",
         "Cheerful",
+        "Pessimistic",
         "Positive"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Optimistic' means hopeful; its opposite is 'Pessimistic'."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ARTIFICIAL'?",
       "options": [
-        "Natural",
+        "False",
         "Synthetic",
-        "Man-made",
-        "False"
+        "Natural",
+        "Man-made"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Artificial' means made by humans; its opposite is 'Natural'."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ARROGANT'?",
       "options": [
-        "Humble",
+        "Conceited",
         "Haughty",
         "Proud",
-        "Conceited"
+        "Humble"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Arrogant' means having an exaggerated sense of one's own importance; opposite is 'Humble'."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'BARREN'?",
       "options": [
-        "Fertile",
         "Sterile",
+        "Dry",
         "Unproductive",
-        "Dry"
+        "Fertile"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Barren' means infertile or unable to produce; opposite is 'Fertile'."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'CHAOS'?",
       "options": [
-        "Order",
         "Disorder",
+        "Order",
         "Turmoil",
         "Confusion"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Chaos' means complete disorder; opposite is 'Order'."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'DEFICIT'?",
       "options": [
-        "Surplus",
-        "Shortage",
+        "Debt",
         "Loss",
-        "Debt"
+        "Shortage",
+        "Surplus"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Deficit' means the amount by which something is too small; opposite is 'Surplus'."
     },
     {
@@ -88,8 +88,8 @@
       "options": [
         "Active",
         "Sleeping",
-        "Latent",
-        "Inactive"
+        "Inactive",
+        "Latent"
       ],
       "answer": 0,
       "explanation": "'Dormant' means in a state of rest; opposite is 'Active'."
@@ -99,12 +99,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'EXPLICIT'?",
       "options": [
-        "Implicit",
-        "Clear",
+        "Plain",
         "Direct",
-        "Plain"
+        "Clear",
+        "Implicit"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Explicit' means stated clearly; opposite is 'Implicit' (implied)."
     },
     {
@@ -114,8 +114,8 @@
       "options": [
         "Impracticable",
         "Possible",
-        "Achievable",
-        "Viable"
+        "Viable",
+        "Achievable"
       ],
       "answer": 0,
       "explanation": "'Feasible' means possible and practical to do; opposite is 'Impracticable'."
@@ -125,12 +125,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'GENEROUS'?",
       "options": [
-        "Miserly",
         "Liberal",
+        "Magnanimous",
         "Kind",
-        "Magnanimous"
+        "Miserly"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Generous' means showing a readiness to give; opposite is 'Miserly'."
     },
     {
@@ -139,9 +139,9 @@
       "question": "What is the antonym of 'HARMONY'?",
       "options": [
         "Discord",
-        "Agreement",
+        "Accord",
         "Peace",
-        "Accord"
+        "Agreement"
       ],
       "answer": 0,
       "explanation": "'Harmony' means agreement or concord; opposite is 'Discord'."
@@ -151,12 +151,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'INNOCENT'?",
       "options": [
+        "Blameless",
         "Guilty",
-        "Naive",
         "Pure",
-        "Blameless"
+        "Naive"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Innocent' means not guilty of a crime; opposite is 'Guilty'."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'JUSTICE'?",
       "options": [
-        "Injustice",
         "Fairness",
         "Equity",
+        "Injustice",
         "Right"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Justice' means fair treatment; opposite is 'Injustice'."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'LAVISH'?",
       "options": [
-        "Frugal",
-        "Extravagant",
         "Abundant",
+        "Extravagant",
+        "Frugal",
         "Generous"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Lavish' means rich, elaborate, luxurious; opposite is 'Frugal'."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'MALICIOUS'?",
       "options": [
-        "Benevolent",
-        "Spiteful",
         "Hostile",
-        "Vindictive"
+        "Spiteful",
+        "Vindictive",
+        "Benevolent"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Malicious' means intending to do harm; opposite is 'Benevolent'."
     },
     {
@@ -203,12 +203,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'NADIR'?",
       "options": [
-        "Zenith",
-        "Bottom",
+        "Depth",
         "Base",
-        "Depth"
+        "Bottom",
+        "Zenith"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Nadir' is the lowest point; opposite is 'Zenith' (the highest point)."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'OBSOLETE'?",
       "options": [
+        "Archaic",
         "Modern",
         "Outdated",
-        "Antiquated",
-        "Archaic"
+        "Antiquated"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Obsolete' means no longer produced or used; opposite is 'Modern' / 'Contemporary'."
     },
     {
@@ -230,9 +230,9 @@
       "question": "What is the antonym of 'POVERTY'?",
       "options": [
         "Affluence",
-        "Destitution",
+        "Need",
         "Indigence",
-        "Need"
+        "Destitution"
       ],
       "answer": 0,
       "explanation": "'Poverty' means state of being extremely poor; opposite is 'Affluence'."
@@ -242,12 +242,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'QUELL'?",
       "options": [
-        "Incite",
-        "Suppress",
+        "Calm",
         "Subdue",
-        "Calm"
+        "Incite",
+        "Suppress"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Quell' means to put an end to disorder; opposite is 'Incite'."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'RIGID'?",
       "options": [
-        "Flexible",
+        "Inflexible",
         "Stiff",
         "Firm",
-        "Inflexible"
+        "Flexible"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Rigid' means unable to bend; opposite is 'Flexible'."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'SCARCITY'?",
       "options": [
-        "Abundance",
-        "Dearth",
         "Paucity",
-        "Shortage"
+        "Abundance",
+        "Shortage",
+        "Dearth"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Scarcity' means shortage; opposite is 'Abundance'."
     },
     {
@@ -282,9 +282,9 @@
       "question": "What is the antonym of 'TRANSPARENT'?",
       "options": [
         "Opaque",
-        "Clear",
         "Lucid",
-        "Translucent"
+        "Translucent",
+        "Clear"
       ],
       "answer": 0,
       "explanation": "'Transparent' means allowing light to pass through; opposite is 'Opaque'."
@@ -294,12 +294,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'URBAN'?",
       "options": [
+        "Civic",
         "Rural",
         "Metropolitan",
-        "Civic",
         "Town"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Urban' relates to a town or city; opposite is 'Rural' (countryside)."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'VANITY'?",
       "options": [
+        "Conceit",
         "Modesty",
         "Pride",
-        "Conceit",
         "Arrogance"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Vanity' means excessive pride in one's appearance or achievements; opposite is 'Modesty'."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'WANTON'?",
       "options": [
-        "Disciplined",
-        "Reckless",
+        "Unrestrained",
         "Malicious",
-        "Unrestrained"
+        "Reckless",
+        "Disciplined"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Wanton' means deliberate and unprovoked; unrestrained; opposite is 'Disciplined'."
     },
     {
@@ -335,8 +335,8 @@
       "options": [
         "Apathy",
         "Passion",
-        "Enthusiasm",
-        "Eagerness"
+        "Eagerness",
+        "Enthusiasm"
       ],
       "answer": 0,
       "explanation": "'Zeal' means great energy or enthusiasm; opposite is 'Apathy'."
@@ -347,9 +347,9 @@
       "question": "What is the antonym of 'ANCIENT'?",
       "options": [
         "Modern",
+        "Old",
         "Antique",
-        "Historic",
-        "Old"
+        "Historic"
       ],
       "answer": 0,
       "explanation": "'Ancient' means belonging to the very distant past; opposite is 'Modern'."
@@ -360,9 +360,9 @@
       "question": "What is the antonym of 'BOLD'?",
       "options": [
         "Timid",
-        "Courageous",
         "Brave",
-        "Daring"
+        "Daring",
+        "Courageous"
       ],
       "answer": 0,
       "explanation": "'Bold' means showing a willingness to take risks; opposite is 'Timid'."
@@ -372,12 +372,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'CAPTIVITY'?",
       "options": [
-        "Freedom",
-        "Imprisonment",
         "Bondage",
-        "Confinement"
+        "Imprisonment",
+        "Confinement",
+        "Freedom"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Captivity' means condition of being imprisoned; opposite is 'Freedom'."
     },
     {
@@ -387,8 +387,8 @@
       "options": [
         "Hope",
         "Gloom",
-        "Depression",
-        "Misery"
+        "Misery",
+        "Depression"
       ],
       "answer": 0,
       "explanation": "'Despair' means complete loss or absence of hope; opposite is 'Hope'."
@@ -398,12 +398,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ELEVATE'?",
       "options": [
-        "Degrade",
+        "Exalt",
         "Raise",
-        "Promote",
-        "Exalt"
+        "Degrade",
+        "Promote"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Elevate' means raise to a more important or higher level; opposite is 'Degrade' / 'Lower'."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'FAMOUS'?",
       "options": [
-        "Obscure",
         "Renowned",
-        "Celebrated",
-        "Eminent"
+        "Eminent",
+        "Obscure",
+        "Celebrated"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Famous' means known about by many people; opposite is 'Obscure'."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'GUILTY'?",
       "options": [
+        "Blameworthy",
         "Innocent",
         "Culpable",
-        "Blameworthy",
         "Responsible"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Guilty' means culpable of a crime; opposite is 'Innocent'."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'HONOR'?",
       "options": [
-        "Disgrace",
         "Praise",
-        "Respect",
-        "Glory"
+        "Glory",
+        "Disgrace",
+        "Respect"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Honor' means high respect; opposite is 'Disgrace'."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'IMMORTAL'?",
       "options": [
-        "Mortal",
         "Eternal",
-        "Perpetual",
-        "Everlasting"
+        "Mortal",
+        "Everlasting",
+        "Perpetual"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Immortal' means living forever; opposite is 'Mortal'."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'JOY'?",
       "options": [
-        "Sorrow",
         "Bliss",
+        "Happiness",
         "Delight",
-        "Happiness"
+        "Sorrow"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Joy' means feeling of great pleasure; opposite is 'Sorrow'."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'KIND'?",
       "options": [
+        "Gentle",
         "Cruel",
         "Benevolent",
-        "Compassionate",
-        "Gentle"
+        "Compassionate"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Kind' means having or showing a friendly nature; opposite is 'Cruel'."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'LAMENT'?",
       "options": [
-        "Rejoice",
         "Mourn",
-        "Grieve",
-        "Weep"
+        "Rejoice",
+        "Weep",
+        "Grieve"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lament' means express grief or sorrow; opposite is 'Rejoice'."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'MASTER'?",
       "options": [
-        "Servant",
-        "Owner",
+        "Ruler",
         "Boss",
-        "Ruler"
+        "Owner",
+        "Servant"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Master' means a person who has control; opposite is 'Servant'."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'NOBLE'?",
       "options": [
-        "Ignoble",
         "Grand",
         "Magnificent",
+        "Ignoble",
         "Exalted"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Noble' means having high moral qualities; opposite is 'Ignoble' / 'Base'."
     },
     {
@@ -529,9 +529,9 @@
       "question": "What is the antonym of 'OPTIMIST'?",
       "options": [
         "Pessimist",
-        "Idealist",
+        "Realist",
         "Visionary",
-        "Realist"
+        "Idealist"
       ],
       "answer": 0,
       "explanation": "'Optimist' expects the best; 'Pessimist' expects the worst."
@@ -541,12 +541,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'PERMANENT'?",
       "options": [
-        "Temporary",
+        "Lasting",
         "Perpetual",
-        "Enduring",
-        "Lasting"
+        "Temporary",
+        "Enduring"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Permanent' means lasting indefinitely; opposite is 'Temporary'."
     },
     {
@@ -555,8 +555,8 @@
       "question": "What is the antonym of 'QUICK'?",
       "options": [
         "Slow",
-        "Fast",
         "Rapid",
+        "Fast",
         "Swift"
       ],
       "answer": 0,
@@ -567,12 +567,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ROUGH'?",
       "options": [
-        "Smooth",
-        "Coarse",
         "Harsh",
-        "Uneven"
+        "Uneven",
+        "Coarse",
+        "Smooth"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Rough' means having an uneven surface; opposite is 'Smooth'."
     },
     {
@@ -580,12 +580,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'SAVAGE'?",
       "options": [
-        "Civilized",
-        "Wild",
         "Fierce",
-        "Barbaric"
+        "Barbaric",
+        "Civilized",
+        "Wild"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Savage' means fierce, uncontrolled; opposite is 'Civilized'."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'TRAGEDY'?",
       "options": [
-        "Comedy",
+        "Catastrophe",
         "Disaster",
-        "Calamity",
-        "Catastrophe"
+        "Comedy",
+        "Calamity"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Tragedy' is a serious sorrowful play/event; opposite is 'Comedy'."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'UNIQUE'?",
       "options": [
-        "Common",
-        "Exclusive",
         "Rare",
-        "Single"
+        "Single",
+        "Exclusive",
+        "Common"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Unique' means being the only one of its kind; opposite is 'Common'."
     },
     {
@@ -620,8 +620,8 @@
       "question": "What is the antonym of 'VICTORY'?",
       "options": [
         "Defeat",
-        "Triumph",
         "Success",
+        "Triumph",
         "Conquest"
       ],
       "answer": 0,
@@ -645,12 +645,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ABOLISH'?",
       "options": [
-        "Establish",
         "Destroy",
+        "Eradicate",
         "Cancel",
-        "Eradicate"
+        "Establish"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Abolish' means formally put an end to; opposite is 'Establish'."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'BENEFICIAL'?",
       "options": [
-        "Harmful",
-        "Advantageous",
         "Favorable",
+        "Advantageous",
+        "Harmful",
         "Useful"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Beneficial' means resulting in good; opposite is 'Harmful'."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'CONCEAL'?",
       "options": [
+        "Disguise",
         "Reveal",
-        "Hide",
         "Cover",
-        "Disguise"
+        "Hide"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Conceal' means keep from sight; hide; opposite is 'Reveal'."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'EXPAND'?",
       "options": [
-        "Contract",
         "Enlarge",
         "Widen",
+        "Contract",
         "Grow"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Expand' means become larger; opposite is 'Contract'."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'FICTITIOUS'?",
       "options": [
-        "Real",
-        "Imaginary",
         "Invented",
-        "False"
+        "Imaginary",
+        "False",
+        "Real"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fictitious' means not real or true; opposite is 'Real'."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'GUILT'?",
       "options": [
-        "Innocence",
         "Crime",
         "Sin",
+        "Innocence",
         "Fault"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Guilt' means fact of having committed an offense; opposite is 'Innocence'."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'HOPE'?",
       "options": [
+        "Belief",
         "Despair",
-        "Expectation",
         "Faith",
-        "Belief"
+        "Expectation"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hope' means feeling of expectation; opposite is 'Despair'."
     },
     {
@@ -750,8 +750,8 @@
       "question": "What is the antonym of 'INCREASE'?",
       "options": [
         "Decrease",
-        "Expand",
         "Multiply",
+        "Expand",
         "Enlarge"
       ],
       "answer": 0,
@@ -762,12 +762,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'JUST'?",
       "options": [
-        "Unjust",
         "Fair",
+        "Unjust",
         "Equitable",
         "Righteous"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Just' means morally right and fair; opposite is 'Unjust'."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'KEEN'?",
       "options": [
-        "Blunt",
         "Sharp",
+        "Blunt",
         "Eager",
         "Intense"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Keen' (sharp edge/mind); opposite is 'Blunt'."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'MAJORITY'?",
       "options": [
-        "Minority",
+        "Bulk",
         "Plurality",
-        "Mass",
-        "Bulk"
+        "Minority",
+        "Mass"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Majority' means the greater number; opposite is 'Minority'."
     },
     {
@@ -815,9 +815,9 @@
       "question": "What is the antonym of 'NATURAL'?",
       "options": [
         "Artificial",
-        "Normal",
         "Native",
-        "Inborn"
+        "Inborn",
+        "Normal"
       ],
       "answer": 0,
       "explanation": "'Natural' opposite is 'Artificial'."
@@ -827,12 +827,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'OBEDIENT'?",
       "options": [
-        "Disobedient",
-        "Compliant",
         "Docile",
-        "Submissive"
+        "Disobedient",
+        "Submissive",
+        "Compliant"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Obedient' complies with orders; opposite is 'Disobedient'."
     },
     {
@@ -842,8 +842,8 @@
       "options": [
         "War",
         "Calm",
-        "Quiet",
-        "Tranquility"
+        "Tranquility",
+        "Quiet"
       ],
       "answer": 0,
       "explanation": "'Peace' freedom from disturbance/hostility; opposite is 'War'."
@@ -853,12 +853,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'QUALIFIED'?",
       "options": [
-        "Disqualified",
-        "Competent",
+        "Capable",
         "Eligible",
-        "Capable"
+        "Competent",
+        "Disqualified"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Qualified' meets requirements; opposite is 'Disqualified'."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'REMEMBER'?",
       "options": [
-        "Forget",
-        "Recall",
         "Recollect",
-        "Retain"
+        "Retain",
+        "Forget",
+        "Recall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Remember' have in memory; opposite is 'Forget'."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'SHARP'?",
       "options": [
-        "Blunt",
         "Keen",
+        "Piercing",
         "Acute",
-        "Piercing"
+        "Blunt"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Sharp' having a thin edge; opposite is 'Blunt'."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'THRIFTY'?",
       "options": [
-        "Extravagant",
-        "Frugal",
         "Economical",
-        "Spacious"
+        "Frugal",
+        "Spacious",
+        "Extravagant"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Thrifty' careful with money; opposite is 'Extravagant'."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'UNITE'?",
       "options": [
-        "Divide",
-        "Combine",
+        "Merge",
         "Join",
-        "Merge"
+        "Divide",
+        "Combine"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Unite' come or bring together; opposite is 'Divide'."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'VACANT'?",
       "options": [
-        "Occupied",
         "Empty",
+        "Void",
         "Blank",
-        "Void"
+        "Occupied"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Vacant' not occupied; opposite is 'Occupied'."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'WILD'?",
       "options": [
-        "Tame",
-        "Untamed",
         "Favage",
-        "Feral"
+        "Feral",
+        "Tame",
+        "Untamed"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Wild' living in a natural state; opposite is 'Tame' / 'Domesticated'."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'YIELDING'?",
       "options": [
+        "Submissive",
         "Resistant",
-        "Compliant",
         "Flexible",
-        "Submissive"
+        "Compliant"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Yielding' giving way; opposite is 'Resistant' / 'Unyielding'."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ACCEPT'?",
       "options": [
-        "Reject",
         "Receive",
-        "Take",
-        "Adopt"
+        "Adopt",
+        "Reject",
+        "Take"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Accept' consent to receive; opposite is 'Reject'."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'BRAVERY'?",
       "options": [
-        "Cowardice",
         "Courage",
-        "Valor",
-        "Heroism"
+        "Heroism",
+        "Cowardice",
+        "Valor"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bravery' courage; opposite is 'Cowardice'."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'CREATE'?",
       "options": [
-        "Destroy",
         "Produce",
         "Invent",
-        "Form"
+        "Form",
+        "Destroy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Create' bring into existence; opposite is 'Destroy'."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'DEPARTURE'?",
       "options": [
-        "Arrival",
+        "Farewell",
         "Exit",
-        "Leaving",
-        "Farewell"
+        "Arrival",
+        "Leaving"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Departure' action of leaving; opposite is 'Arrival'."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ENTHUSIASM'?",
       "options": [
-        "Apathy",
-        "Eagerness",
         "Passion",
-        "Excitement"
+        "Eagerness",
+        "Excitement",
+        "Apathy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Enthusiasm' intense enjoyment; opposite is 'Apathy'."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'FORWARD'?",
       "options": [
-        "Backward",
-        "Ahead",
         "Onward",
-        "Advance"
+        "Ahead",
+        "Advance",
+        "Backward"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Forward' direction ahead; opposite is 'Backward'."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'GENTLE'?",
       "options": [
-        "Harsh",
         "Mild",
+        "Soft",
         "Kind",
-        "Soft"
+        "Harsh"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Gentle' mild in manner; opposite is 'Harsh'."
     },
     {
@@ -1049,8 +1049,8 @@
       "question": "What is the antonym of 'HEAVY'?",
       "options": [
         "Light",
-        "Massive",
         "Weighty",
+        "Massive",
         "Ponderous"
       ],
       "answer": 0,
@@ -1061,12 +1061,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'INCLUDE'?",
       "options": [
-        "Exclude",
-        "Contain",
         "Incorporate",
-        "Comprise"
+        "Comprise",
+        "Contain",
+        "Exclude"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Include' comprise or contain; opposite is 'Exclude'."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'JUNIOR'?",
       "options": [
-        "Senior",
+        "Inferior",
         "Minor",
         "Younger",
-        "Inferior"
+        "Senior"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Junior' lower in standing; opposite is 'Senior'."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'KNOWLEDGE'?",
       "options": [
-        "Ignorance",
         "Wisdom",
+        "Ignorance",
         "Learning",
         "Information"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Knowledge' facts and skills acquired; opposite is 'Ignorance'."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'LEGAL'?",
       "options": [
-        "Illegal",
-        "Lawful",
+        "Statutory",
         "Legitimate",
-        "Statutory"
+        "Lawful",
+        "Illegal"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Legal' permitted by law; opposite is 'Illegal'."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'MORTAL'?",
       "options": [
-        "Immortal",
         "Deadly",
+        "Immortal",
         "Fatal",
         "Lethal"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Mortal' subject to death; opposite is 'Immortal'."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'ORDER'?",
       "options": [
-        "Chaos",
-        "System",
         "Sequence",
-        "Method"
+        "System",
+        "Method",
+        "Chaos"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Order' arrangement according to a pattern; opposite is 'Chaos'."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'PUBLIC'?",
       "options": [
-        "Private",
-        "Common",
+        "Civic",
         "National",
-        "Civic"
+        "Private",
+        "Common"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Public' of or concerning the people; opposite is 'Private'."
     },
     {
@@ -1167,8 +1167,8 @@
       "options": [
         "Noisy",
         "Silent",
-        "Peaceful",
-        "Still"
+        "Still",
+        "Peaceful"
       ],
       "answer": 0,
       "explanation": "'Quiet' making little noise; opposite is 'Noisy'."
@@ -1204,12 +1204,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'TRUTH'?",
       "options": [
-        "Falsehood",
         "Fact",
+        "Veracity",
         "Reality",
-        "Veracity"
+        "Falsehood"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Truth' state of being true; opposite is 'Falsehood'."
     },
     {
@@ -1218,9 +1218,9 @@
       "question": "What is the antonym of 'UPWARD'?",
       "options": [
         "Downward",
-        "Skyward",
         "Ascending",
-        "Rising"
+        "Rising",
+        "Skyward"
       ],
       "answer": 0,
       "explanation": "'Upward' towards a higher place; opposite is 'Downward'."
@@ -1231,9 +1231,9 @@
       "question": "What is the antonym of 'VIRTUE'?",
       "options": [
         "Vice",
-        "Goodness",
         "Morality",
-        "Integrity"
+        "Integrity",
+        "Goodness"
       ],
       "answer": 0,
       "explanation": "'Virtue' behavior showing high moral standards; opposite is 'Vice'."
@@ -1244,8 +1244,8 @@
       "question": "What is the antonym of 'WARM'?",
       "options": [
         "Cool",
-        "Hot",
         "Tepid",
+        "Hot",
         "Heated"
       ],
       "answer": 0,
@@ -1256,12 +1256,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'YOUNG'?",
       "options": [
-        "Old",
-        "Youthful",
+        "Adolescent",
         "Juvenile",
-        "Adolescent"
+        "Youthful",
+        "Old"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Young' having lived for only a short time; opposite is 'Old'."
     },
     {
@@ -1271,8 +1271,8 @@
       "options": [
         "Repel",
         "Draw",
-        "Charm",
-        "Fascinate"
+        "Fascinate",
+        "Charm"
       ],
       "answer": 0,
       "explanation": "'Attract' draw to oneself; opposite is 'Repel'."
@@ -1282,12 +1282,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'BLESSING'?",
       "options": [
-        "Curse",
+        "Gift",
         "Boon",
-        "Grace",
-        "Gift"
+        "Curse",
+        "Grace"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Blessing' God's favor; opposite is 'Curse'."
     },
     {
@@ -1295,12 +1295,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'CAUTIOUS'?",
       "options": [
-        "Rash",
         "Careful",
         "Wary",
-        "Prudent"
+        "Prudent",
+        "Rash"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cautious' careful to avoid potential danger; opposite is 'Rash'."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'DAWN'?",
       "options": [
-        "Dusk",
-        "Sunrise",
         "Morning",
-        "Daybreak"
+        "Daybreak",
+        "Sunrise",
+        "Dusk"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Dawn' first appearance of light in morning; opposite is 'Dusk'."
     },
     {
@@ -1321,12 +1321,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'EMPTY'?",
       "options": [
-        "Full",
         "Vacant",
-        "Hollow",
-        "Bare"
+        "Bare",
+        "Full",
+        "Hollow"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Empty' containing nothing; opposite is 'Full'."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "antonyms_eng",
       "question": "What is the antonym of 'FREQUENT'?",
       "options": [
-        "Rare",
         "Common",
-        "Usual",
-        "Repeated"
+        "Rare",
+        "Repeated",
+        "Usual"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Frequent' occurring often; opposite is 'Rare' / 'Infrequent'."
     },
     {
@@ -1348,8 +1348,8 @@
       "question": "What is the antonym of 'GAIN'?",
       "options": [
         "Loss",
-        "Profit",
         "Benefit",
+        "Profit",
         "Acquisition"
       ],
       "answer": 0,
@@ -1360,12 +1360,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Advance':",
       "options": [
-        "Retreat",
-        "Progress",
+        "Forward",
         "Proceed",
-        "Forward"
+        "Progress",
+        "Retreat"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Advance' (move forward) has the opposite 'Retreat' (withdraw)."
     },
     {
@@ -1373,12 +1373,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Artificial':",
       "options": [
-        "Natural",
         "Synthetic",
-        "Man-made",
-        "Bogus"
+        "Bogus",
+        "Natural",
+        "Man-made"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opposite of 'Artificial' is 'Natural'."
     },
     {
@@ -1387,9 +1387,9 @@
       "question": "Antonym of 'Bravery':",
       "options": [
         "Cowardice",
-        "Courage",
+        "Valour",
         "Heroism",
-        "Valour"
+        "Courage"
       ],
       "answer": 0,
       "explanation": "Opposite of 'Bravery' is 'Cowardice'."
@@ -1399,12 +1399,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Barren':",
       "options": [
-        "Fertile",
-        "Sterile",
         "Arid",
-        "Desolate"
+        "Desolate",
+        "Fertile",
+        "Sterile"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Barren' (unable to produce) contrasts with 'Fertile' (rich in production)."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Caution':",
       "options": [
-        "Recklessness",
+        "Discretion",
         "Prudence",
-        "Care",
-        "Discretion"
+        "Recklessness",
+        "Care"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Caution' has the opposite 'Recklessness' or 'Rashness'."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Despair':",
       "options": [
-        "Hope",
-        "Sorrow",
         "Misery",
-        "Anguish"
+        "Hope",
+        "Anguish",
+        "Sorrow"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Opposite of 'Despair' is 'Hope'."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Eminent':",
       "options": [
-        "Unknown / Obscure",
         "Renowned",
-        "Famous",
-        "Distinguished"
+        "Distinguished",
+        "Unknown / Obscure",
+        "Famous"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Eminent' (distinguished/prominent) contrasts with 'Obscure' or 'Unknown'."
     },
     {
@@ -1453,8 +1453,8 @@
       "options": [
         "Rigid / Inflexible",
         "Pliable",
-        "Supple",
-        "Elastic"
+        "Elastic",
+        "Supple"
       ],
       "answer": 0,
       "explanation": "Opposite of 'Flexible' is 'Rigid'."
@@ -1464,12 +1464,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Grave' (serious):",
       "options": [
+        "Crucial",
         "Frivolous / Trivial",
         "Solemn",
-        "Somber",
-        "Crucial"
+        "Somber"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Grave' (serious) contrasts with 'Frivolous' (carefree/trivial)."
     },
     {
@@ -1477,12 +1477,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Harmonious':",
       "options": [
-        "Discordant",
-        "Agreeable",
         "Melodious",
-        "Consonant"
+        "Consonant",
+        "Discordant",
+        "Agreeable"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Harmonious' has the antonym 'Discordant'."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Innocent':",
       "options": [
-        "Guilty",
         "Sinless",
         "Blameless",
-        "Pure"
+        "Pure",
+        "Guilty"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Innocent' is 'Guilty'."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Joyous':",
       "options": [
-        "Mournful / Sad",
         "Cheerful",
+        "Ecstatic",
         "Jubilant",
-        "Ecstatic"
+        "Mournful / Sad"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Joyous' is 'Mournful'."
     },
     {
@@ -1517,8 +1517,8 @@
       "question": "Antonym of 'Kindle':",
       "options": [
         "Extinguish / Smother",
-        "Ignite",
         "Arouse",
+        "Ignite",
         "Inflame"
       ],
       "answer": 0,
@@ -1529,12 +1529,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Lenient':",
       "options": [
-        "Strict / Severe",
+        "Gentle",
         "Tolerant",
-        "Permissive",
-        "Gentle"
+        "Strict / Severe",
+        "Permissive"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Lenient' (indulgent/merciful) contrasts with 'Strict'."
     },
     {
@@ -1544,8 +1544,8 @@
       "options": [
         "Immortal",
         "Fatal",
-        "Perishable",
-        "Lethal"
+        "Lethal",
+        "Perishable"
       ],
       "answer": 0,
       "explanation": "Opposite of 'Mortal' is 'Immortal'."
@@ -1555,12 +1555,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Noble':",
       "options": [
-        "Ignoble / Base",
         "Aristocratic",
         "Honorable",
-        "Stately"
+        "Stately",
+        "Ignoble / Base"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Noble' is 'Ignoble'."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Obscure':",
       "options": [
+        "Vague",
         "Clear / Renowned",
-        "Dim",
         "Murky",
-        "Vague"
+        "Dim"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Obscure' (unclear/unknown) has the antonym 'Clear' or 'Famous'."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Permanent':",
       "options": [
-        "Temporary / Ephemeral",
-        "Enduring",
+        "Constant",
         "Eternal",
-        "Constant"
+        "Enduring",
+        "Temporary / Ephemeral"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Permanent' is 'Temporary'."
     },
     {
@@ -1595,8 +1595,8 @@
       "question": "Antonym of 'Quench':",
       "options": [
         "Ignite / Incite",
-        "Satisfy",
         "Slake",
+        "Satisfy",
         "Douse"
       ],
       "answer": 0,
@@ -1607,12 +1607,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Reluctant':",
       "options": [
+        "Averse",
         "Willing / Eager",
         "Hesitant",
-        "Averse",
         "Loath"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Reluctant' (unwilling) contrasts with 'Willing' or 'Eager'."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Scarce':",
       "options": [
-        "Abundant / Plentiful",
-        "Rare",
+        "Deficient",
         "Meager",
-        "Deficient"
+        "Rare",
+        "Abundant / Plentiful"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Scarce' is 'Abundant'."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Transparent':",
       "options": [
-        "Opaque",
-        "Clear",
+        "Lucid",
         "Translucent",
-        "Lucid"
+        "Clear",
+        "Opaque"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Transparent' (allowing light to pass) has the direct opposite 'Opaque'."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Urgent':",
       "options": [
-        "Trivial / Unimportant",
         "Pressing",
-        "Crucial",
-        "Vital"
+        "Vital",
+        "Trivial / Unimportant",
+        "Crucial"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Urgent' contrasts with 'Trivial' or 'Deferrable'."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Vacant':",
       "options": [
-        "Occupied / Full",
         "Empty",
+        "Occupied / Full",
         "Bare",
         "Void"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Opposite of 'Vacant' is 'Occupied'."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Wisdom':",
       "options": [
-        "Folly / Stupidity",
-        "Knowledge",
         "Insight",
-        "Prudence"
+        "Knowledge",
+        "Prudence",
+        "Folly / Stupidity"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Wisdom' is 'Folly'."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Zenith':",
       "options": [
-        "Nadir",
-        "Peak",
         "Apex",
-        "Summit"
+        "Summit",
+        "Nadir",
+        "Peak"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Zenith' (highest point) has the exact antonym 'Nadir' (lowest point)."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Acquitted':",
       "options": [
+        "Absolved",
         "Convicted",
         "Cleared",
-        "Exonerated",
-        "Absolved"
+        "Exonerated"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Acquitted' (found not guilty) contrasts with 'Convicted'."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Bold':",
       "options": [
-        "Timid / Cowardly",
-        "Audacious",
+        "Daring",
         "Brave",
-        "Daring"
+        "Audacious",
+        "Timid / Cowardly"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Bold' is 'Timid'."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Courteous':",
       "options": [
-        "Rude / Impolite",
-        "Polite",
         "Gracious",
-        "Civil"
+        "Civil",
+        "Rude / Impolite",
+        "Polite"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opposite of 'Courteous' is 'Rude'."
     },
     {
@@ -1738,9 +1738,9 @@
       "question": "Antonym of 'Deficit':",
       "options": [
         "Surplus",
-        "Shortage",
+        "Deficiency",
         "Lack",
-        "Deficiency"
+        "Shortage"
       ],
       "answer": 0,
       "explanation": "'Deficit' (shortfall) has the antonym 'Surplus' (excess)."
@@ -1750,12 +1750,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Extravagant':",
       "options": [
-        "Frugal / Economical",
-        "Prodigal",
         "Wasteful",
-        "Spendthrift"
+        "Spendthrift",
+        "Prodigal",
+        "Frugal / Economical"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Extravagant' is 'Frugal'."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Feasible':",
       "options": [
-        "Impracticable / Impossible",
-        "Viable",
         "Workable",
+        "Viable",
+        "Impracticable / Impossible",
         "Achievable"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opposite of 'Feasible' (workable) is 'Impracticable'."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Gloomy':",
       "options": [
-        "Cheerful / Radiant",
-        "Dismal",
+        "Dreary",
         "Somber",
-        "Dreary"
+        "Dismal",
+        "Cheerful / Radiant"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Gloomy' is 'Cheerful'."
     },
     {
@@ -1802,12 +1802,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Ignorance':",
       "options": [
-        "Knowledge",
+        "Folly",
         "Illiteracy",
-        "Blindness",
-        "Folly"
+        "Knowledge",
+        "Blindness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opposite of 'Ignorance' is 'Knowledge'."
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Juvenile':",
       "options": [
-        "Adult / Mature",
-        "Childish",
         "Youthful",
-        "Infantile"
+        "Infantile",
+        "Childish",
+        "Adult / Mature"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Juvenile' (youthful/childish) contrasts with 'Adult' or 'Mature'."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Loyal':",
       "options": [
-        "Treacherous / Disloyal",
-        "Faithful",
         "True",
-        "Devoted"
+        "Devoted",
+        "Faithful",
+        "Treacherous / Disloyal"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opposite of 'Loyal' is 'Treacherous'."
     },
     {
@@ -1855,9 +1855,9 @@
       "question": "Antonym of 'Miserly':",
       "options": [
         "Generous / Extravagant",
-        "Stingy",
         "Parsimonious",
-        "Greedy"
+        "Greedy",
+        "Stingy"
       ],
       "answer": 0,
       "explanation": "'Miserly' (stingy) contrasts with 'Generous'."
@@ -1867,12 +1867,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Nadir':",
       "options": [
-        "Zenith / Apex",
-        "Base",
+        "Depth",
         "Bottom",
-        "Depth"
+        "Base",
+        "Zenith / Apex"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Nadir' (lowest point) has the antonym 'Zenith'."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Optimist':",
       "options": [
-        "Pessimist",
+        "Cynic",
         "Idealist",
-        "Realist",
-        "Cynic"
+        "Pessimist",
+        "Realist"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Optimist' (sees positive) contrasts with 'Pessimist' (sees negative)."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Prosperity':",
       "options": [
-        "Adversity / Poverty",
-        "Wealth",
+        "Success",
         "Affluence",
-        "Success"
+        "Adversity / Poverty",
+        "Wealth"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opposite of 'Prosperity' is 'Adversity'."
     },
     {
@@ -1907,9 +1907,9 @@
       "question": "Antonym of 'Queer':",
       "options": [
         "Normal / Conventional",
-        "Odd",
         "Strange",
-        "Bizarre"
+        "Bizarre",
+        "Odd"
       ],
       "answer": 0,
       "explanation": "'Queer' (strange) contrasts with 'Normal'."
@@ -1919,12 +1919,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Reverence':",
       "options": [
-        "Disrespect / Contempt",
-        "Awe",
+        "Honor",
         "Adoration",
-        "Honor"
+        "Disrespect / Contempt",
+        "Awe"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opposite of 'Reverence' is 'Disrespect' or 'Contempt'."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Solemn':",
       "options": [
-        "Light-hearted / Gay",
-        "Serious",
         "Grave",
-        "Sincere"
+        "Light-hearted / Gay",
+        "Sincere",
+        "Serious"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Solemn' (serious) contrasts with 'Light-hearted'."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Treachery':",
       "options": [
+        "Treason",
         "Loyalty / Fidelity",
-        "Betrayal",
         "Perfidy",
-        "Treason"
+        "Betrayal"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Opposite of 'Treachery' is 'Loyalty'."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Unanimous':",
       "options": [
-        "Divided / Discordant",
-        "Agreed",
         "Harmonious",
-        "United"
+        "Agreed",
+        "United",
+        "Divided / Discordant"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Unanimous' (all in agreement) contrasts with 'Divided'."
     },
     {
@@ -1986,8 +1986,8 @@
       "options": [
         "Virtuous / Righteous",
         "Evil",
-        "Sinful",
-        "Vicious"
+        "Vicious",
+        "Sinful"
       ],
       "answer": 0,
       "explanation": "Opposite of 'Wicked' is 'Virtuous'."
@@ -1997,12 +1997,12 @@
       "topic": "antonyms_eng",
       "question": "Antonym of 'Yielding':",
       "options": [
-        "Stubborn / Resistant",
-        "Docile",
         "Submissive",
-        "Pliant"
+        "Stubborn / Resistant",
+        "Pliant",
+        "Docile"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Yielding' (giving way) contrasts with 'Resistant' or 'Stubborn'."
     }
   ]

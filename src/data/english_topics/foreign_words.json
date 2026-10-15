@@ -8,12 +8,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'DE FACTO'?",
       "options": [
-        "In reality or practice",
         "According to law",
         "For the time being",
-        "By itself"
+        "By itself",
+        "In reality or practice"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'De facto' means existing in fact or reality, whether legally recognized or not."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'DE JURE'?",
       "options": [
-        "According to rightful law",
         "In reality",
         "From the beginning",
-        "Against the law"
+        "Against the law",
+        "According to rightful law"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'De jure' means according to rightful legal entitlement or law."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'BONA FIDE'?",
       "options": [
-        "Genuine and in good faith",
         "Counterfeit",
         "Illegal",
+        "Genuine and in good faith",
         "Without proof"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bona fide' means genuine, real, or with good intentions."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'MALA FIDE'?",
       "options": [
-        "In bad faith or with intent to deceive",
         "In good faith",
+        "In bad faith or with intent to deceive",
         "Lawfully",
         "Accidentally"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Mala fide' means in bad faith or with fraudulent intent."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'STATUS QUO'?",
       "options": [
-        "The existing state of affairs",
-        "A new development",
         "The previous law",
-        "An agreement"
+        "An agreement",
+        "The existing state of affairs",
+        "A new development"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Status quo' means the existing state of affairs, especially regarding social or political issues."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'PER SE'?",
       "options": [
-        "By or in itself",
         "For example",
-        "In other words",
-        "Without cause"
+        "Without cause",
+        "By or in itself",
+        "In other words"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Per se' means by, of, or in itself intrinsically."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'AD HOC'?",
       "options": [
-        "Created for a particular purpose only",
         "Permanent",
         "Traditional",
-        "Unlawful"
+        "Unlawful",
+        "Created for a particular purpose only"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ad hoc' means formed or arranged for a particular purpose only; non-permanent."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'PRIMA FACIE'?",
       "options": [
-        "At first sight / based on first impression",
         "Final decision",
-        "Secretly",
-        "Without evidence"
+        "At first sight / based on first impression",
+        "Without evidence",
+        "Secretly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Prima facie' means based on the first impression; accepted as correct until proved otherwise."
     },
     {
@@ -113,9 +113,9 @@
       "question": "What is the meaning of the Latin phrase 'ULTRA VIRES'?",
       "options": [
         "Beyond legal power or authority",
-        "Within legal power",
         "Strict law",
-        "Under arrest"
+        "Under arrest",
+        "Within legal power"
       ],
       "answer": 0,
       "explanation": "'Ultra vires' means beyond one's legal power or authority."
@@ -126,8 +126,8 @@
       "question": "What is the meaning of the Latin phrase 'INTRA VIRES'?",
       "options": [
         "Within legal power or authority",
-        "Beyond legal power",
         "Unconstitutional",
+        "Beyond legal power",
         "Illegal"
       ],
       "answer": 0,
@@ -138,12 +138,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'IPSO FACTO'?",
       "options": [
+        "In bad faith",
         "By that very fact or act",
         "According to law",
-        "In bad faith",
         "For instance"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ipso facto' means by that very fact or act."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'EX PARTE'?",
       "options": [
-        "Decided by one party in the absence of the other",
         "Bipartisan",
+        "Decided by one party in the absence of the other",
         "Unanimous",
         "Under trial"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ex parte' means with respect to or in the interests of one side only."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'MODUS OPERANDI'?",
       "options": [
-        "Particular way or method of working",
         "Reason for murder",
+        "Written confession",
         "Guilty mind",
-        "Written confession"
+        "Particular way or method of working"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Modus operandi' (M.O.) is a particular way or method of doing something, especially criminal activity."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'MODUS VIVENDI'?",
       "options": [
-        "An arrangement allowing conflicting parties to coexist peacefully",
         "Method of execution",
+        "A medical condition",
         "A way of dying",
-        "A medical condition"
+        "An arrangement allowing conflicting parties to coexist peacefully"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Modus vivendi' is an arrangement allowing conflicting parties to coexist peacefully."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'MENS REA'?",
       "options": [
-        "A guilty mind or criminal intent",
         "The physical crime",
-        "Forgiveness",
-        "A legal defense"
+        "A guilty mind or criminal intent",
+        "A legal defense",
+        "Forgiveness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Mens rea' is the intention or knowledge of wrongdoing that constitutes part of a crime."
     },
     {
@@ -205,8 +205,8 @@
       "options": [
         "The guilty physical act of a crime",
         "The guilty mind",
-        "A police officer",
-        "The court verdict"
+        "The court verdict",
+        "A police officer"
       ],
       "answer": 0,
       "explanation": "'Actus reus' is the physical act of committing a crime."
@@ -216,12 +216,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'SUO MOTU'?",
       "options": [
-        "On its own motion / spontaneously without petition",
-        "By public demand",
+        "On appeal",
         "Under police pressure",
-        "On appeal"
+        "By public demand",
+        "On its own motion / spontaneously without petition"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Suo motu' means on its own initiative (said of a court taking up a case)."
     },
     {
@@ -229,12 +229,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'HABEAS CORPUS'?",
       "options": [
+        "To seize property",
         "You shall produce the body (unlawful detention remedy)",
         "To punish a criminal",
-        "To seize property",
         "To award capital punishment"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Habeas corpus' is a writ requiring a detained person to be brought before a court."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'MANDAMUS'?",
       "options": [
-        "We command (public duty order)",
         "We forbid",
         "To produce the body",
+        "We command (public duty order)",
         "Under what authority"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Mandamus' is a judicial writ issued as a command to an inferior court or official."
     },
     {
@@ -256,9 +256,9 @@
       "question": "What is the meaning of the Latin phrase 'QUO WARRANTO'?",
       "options": [
         "By what authority / warrant",
-        "We command",
+        "To be informed",
         "We forbid",
-        "To be informed"
+        "We command"
       ],
       "answer": 0,
       "explanation": "'Quo warranto' asks by what authority a person holds a public office."
@@ -268,12 +268,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'CERTIORARI'?",
       "options": [
-        "To be certified or informed (quashing lower order)",
         "We command",
-        "Produce the body",
-        "Stay order"
+        "To be certified or informed (quashing lower order)",
+        "Stay order",
+        "Produce the body"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Certiorari' is a writ by which a higher court reviews a case tried in a lower court."
     },
     {
@@ -283,8 +283,8 @@
       "options": [
         "The right or capacity to bring an action in court",
         "A place of residence",
-        "Standing position",
-        "A witness box"
+        "A witness box",
+        "Standing position"
       ],
       "answer": 0,
       "explanation": "'Locus standi' is the right of a party to appear and be heard by a court."
@@ -294,12 +294,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'SUB JUDICE'?",
       "options": [
-        "Under judicial consideration / currently before a court",
         "Decided by a judge",
+        "Legal precedent",
         "Out of court settlement",
-        "Legal precedent"
+        "Under judicial consideration / currently before a court"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Sub judice' means currently under judicial consideration and therefore prohibited from public discussion."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'SINE DIE'?",
       "options": [
-        "Without appointing a day for resumption / indefinitely",
         "With fixed date",
         "Every day",
-        "In memory of"
+        "In memory of",
+        "Without appointing a day for resumption / indefinitely"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Sine die' means with no reference to a future date for resumption; adjourned indefinitely."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'SINE QUA NON'?",
       "options": [
-        "An indispensable condition or prerequisite",
         "A minor detail",
+        "An indispensable condition or prerequisite",
         "An unnecessary delay",
         "Without consequence"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Sine qua non' is an essential condition; something that is absolutely necessary."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'QUID PRO QUO'?",
       "options": [
-        "A favor or advantage given in return for something",
+        "A legal summons",
         "Free gift",
-        "Charity",
-        "A legal summons"
+        "A favor or advantage given in return for something",
+        "Charity"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Quid pro quo' means something given or received for something else."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'PRO BONO'?",
       "options": [
-        "Done for the public good without charge / free legal aid",
-        "For high profit",
         "Commercial work",
-        "Government service"
+        "Done for the public good without charge / free legal aid",
+        "Government service",
+        "For high profit"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Pro bono' (pro bono publico) means for the public good, undertaken without fee."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'IN TOTO'?",
       "options": [
-        "Completely / in total / as a whole",
-        "In part",
+        "Temporarily",
         "Partially",
-        "Temporarily"
+        "Completely / in total / as a whole",
+        "In part"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'In toto' means as a whole; completely."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'VICE VERSA'?",
       "options": [
-        "The other way round / converse is true",
         "Similarly",
-        "Oppositely completely",
-        "In bad faith"
+        "In bad faith",
+        "The other way round / converse is true",
+        "Oppositely completely"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Vice versa' means with the order reversed."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'INTER ALIA'?",
       "options": [
+        "At the end",
         "Among other things",
-        "Between two persons",
         "In secret",
-        "At the end"
+        "Between two persons"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Inter alia' means among other things."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'EX OFFICIO'?",
       "options": [
-        "By virtue of one's position or office",
         "Retired from office",
+        "By virtue of one's position or office",
         "Without an office",
         "Elected officially"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ex officio' means by virtue of holding a particular office."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'EX GRATIA'?",
       "options": [
-        "Done as a favor without legal obligation",
         "According to law",
-        "By court order",
-        "Compulsory payment"
+        "Done as a favor without legal obligation",
+        "Compulsory payment",
+        "By court order"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ex gratia' payment is given as a favor or gift rather than because of legal requirement."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'POST MORTEM'?",
       "options": [
-        "Examination of a dead body; occurring after death",
         "Before death",
-        "During surgery",
-        "At birth"
+        "At birth",
+        "Examination of a dead body; occurring after death",
+        "During surgery"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Post mortem' means an examination of a dead body or occurring after death."
     },
     {
@@ -438,8 +438,8 @@
       "question": "What is the meaning of the Latin phrase 'ANTE MERIDIEM (A.M.)'?",
       "options": [
         "Before noon",
-        "After noon",
         "Midnight",
+        "After noon",
         "Sunrise"
       ],
       "answer": 0,
@@ -450,12 +450,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'POST MERIDIEM (P.M.)'?",
       "options": [
+        "Dawn",
         "After noon",
-        "Before noon",
         "Morning",
-        "Dawn"
+        "Before noon"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Post meridiem' means after midday/noon."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'PER CAPITA'?",
       "options": [
-        "Per person / for each individual",
-        "Per family",
         "Per nation",
-        "Per annum"
+        "Per annum",
+        "Per family",
+        "Per person / for each individual"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Per capita' means for each person; in relation to people taken individually."
     },
     {
@@ -477,9 +477,9 @@
       "question": "What is the meaning of the Latin phrase 'PER ANNUM'?",
       "options": [
         "For each year / annually",
-        "Per month",
         "Per person",
-        "Once in lifetime"
+        "Once in lifetime",
+        "Per month"
       ],
       "answer": 0,
       "explanation": "'Per annum' means for each year."
@@ -490,8 +490,8 @@
       "question": "What is the meaning of the Latin phrase 'ALMA MATER'?",
       "options": [
         "The school, college, or university one attended",
-        "Mother language",
         "Mother tongue",
+        "Mother language",
         "Religious teacher"
       ],
       "answer": 0,
@@ -503,9 +503,9 @@
       "question": "What is the meaning of the Latin phrase 'MAGNUM OPUS'?",
       "options": [
         "A great work of art, music, or literature",
-        "A small mistake",
+        "An official title",
         "A heavy burden",
-        "An official title"
+        "A small mistake"
       ],
       "answer": 0,
       "explanation": "'Magnum opus' is a large and important work of art, music, or literature, especially an artist's masterpiece."
@@ -515,12 +515,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'LINGUA FRANCA'?",
       "options": [
+        "Sign language",
         "A common language used between speakers of different languages",
         "French language",
-        "Ancient Latin",
-        "Sign language"
+        "Ancient Latin"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lingua franca' is a bridge language used for communication between different language speakers."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'BON VOYAGE'?",
       "options": [
-        "Have a pleasant and safe journey",
-        "Welcome home",
         "Congratulations",
-        "Good night"
+        "Good night",
+        "Welcome home",
+        "Have a pleasant and safe journey"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bon voyage' expresses good wishes to someone about to go on a journey."
     },
     {
@@ -542,9 +542,9 @@
       "question": "What is the meaning of the French phrase 'BON APPÉTIT'?",
       "options": [
         "Enjoy your meal",
-        "Drink water",
+        "Sleep well",
         "Have a good trip",
-        "Sleep well"
+        "Drink water"
       ],
       "answer": 0,
       "explanation": "'Bon appétit' is an expression wishing someone a good appetite / meal."
@@ -554,12 +554,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'CARTE BLANCHE'?",
       "options": [
+        "A resignation letter",
         "Full discretionary power / unconditional freedom of action",
         "White playing card",
-        "Blank cheque without money",
-        "A resignation letter"
+        "Blank cheque without money"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Carte blanche' means complete freedom to act as one wishes or thinks best."
     },
     {
@@ -568,9 +568,9 @@
       "question": "What is the meaning of the French phrase 'DÉJÀ VU'?",
       "options": [
         "The feeling of having already experienced a situation",
+        "A premonition",
         "A pleasant dream",
-        "A nightmare",
-        "A premonition"
+        "A nightmare"
       ],
       "answer": 0,
       "explanation": "'Déjà vu' is a feeling of having already experienced the present situation."
@@ -581,8 +581,8 @@
       "question": "What is the meaning of the French phrase 'FAUX PAS'?",
       "options": [
         "An embarrassing or tactless social mistake",
-        "A graceful dance step",
         "A triumph",
+        "A graceful dance step",
         "A formal apology"
       ],
       "answer": 0,
@@ -593,12 +593,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'PAR EXCELLENCE'?",
       "options": [
-        "Better or more typical than all others of the same kind",
         "Average standard",
+        "Better or more typical than all others of the same kind",
         "Below standard",
         "Mediocre"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Par excellence' means better or more than all others of the same kind; quintessential."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'VIS-À-VIS'?",
       "options": [
+        "Directly opposite",
         "In relation to / face to face with",
-        "Secretly",
         "Without looking",
-        "Directly opposite"
+        "Secretly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Vis-à-vis' means in relation to; in comparison with; face to face."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'TÊTE-À-TÊTE'?",
       "options": [
-        "A private conversation between two people",
         "A large meeting",
-        "A shouting match",
-        "A telephone conference"
+        "A telephone conference",
+        "A private conversation between two people",
+        "A shouting match"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Tête-à-tête' is a private conversation between two people."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'EN ROUTE'?",
       "options": [
-        "On the way / during the journey",
         "At the destination",
-        "Departing late",
-        "Cancelled trip"
+        "On the way / during the journey",
+        "Cancelled trip",
+        "Departing late"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'En route' means on the way; in the course of a journey."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'CUL-DE-SAC'?",
       "options": [
-        "A dead-end street / blind alley",
         "A wide highway",
         "A traffic roundabout",
-        "A tunnel"
+        "A tunnel",
+        "A dead-end street / blind alley"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cul-de-sac' is a street or passage closed at one end; a dead end."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'IN CAMERA'?",
       "options": [
-        "In private / in a judge's private chambers",
         "Recorded on film",
+        "In private / in a judge's private chambers",
         "In public court",
         "In presence of media"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'In camera' means in private room or chamber of a judge, with public and press excluded."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'IN SITU'?",
       "options": [
-        "In its original or natural place",
+        "Buried underground",
         "In an artificial lab",
         "Moved to a museum",
-        "Buried underground"
+        "In its original or natural place"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'In situ' means in its original place or appropriate position."
     },
     {
@@ -684,12 +684,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'DE NOVO'?",
       "options": [
-        "Starting afresh / anew from the beginning",
         "At the conclusion",
+        "Starting afresh / anew from the beginning",
         "In secret",
         "Without changes"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'De novo' means starting afresh or anew."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'AB INITIO'?",
       "options": [
+        "Immediately",
         "From the beginning",
         "From the end",
-        "In between",
-        "Immediately"
+        "In between"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ab initio' means from the beginning."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'AD INFINITUM'?",
       "options": [
-        "Continuing indefinitely / without end",
+        "In brief",
         "For a short time",
-        "To a limited extent",
-        "In brief"
+        "Continuing indefinitely / without end",
+        "To a limited extent"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ad infinitum' means again and again in the same way; forever without limit."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'AD VALOREM'?",
       "options": [
-        "According to the value (used of taxes)",
-        "According to weight",
+        "Free of tax",
         "Fixed price",
-        "Free of tax"
+        "According to weight",
+        "According to the value (used of taxes)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ad valorem' means according to value; levied in proportion to the estimated value of the goods taxed."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'ET CETERA (ETC.)'?",
       "options": [
-        "And other similar things / and so on",
         "For instance",
+        "In summary",
         "That is to say",
-        "In summary"
+        "And other similar things / and so on"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Et cetera' means and other similar things; and so forth."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'EXEMPLI GRATIA (E.G.)'?",
       "options": [
+        "Note well",
         "For example",
-        "That is to say",
         "In other words",
-        "Note well"
+        "That is to say"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Exempli gratia' means for example."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'ID EST (I.E.)'?",
       "options": [
-        "That is / in other words",
         "For example",
         "And others",
+        "That is / in other words",
         "Note well"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Id est' means that is to say; in other words."
     },
     {
@@ -776,9 +776,9 @@
       "question": "What is the meaning of the Latin phrase 'NOTA BENE (N.B.)'?",
       "options": [
         "Note well / observe carefully",
-        "No boundary",
+        "New book",
         "Not bad",
-        "New book"
+        "No boundary"
       ],
       "answer": 0,
       "explanation": "'Nota bene' means note well; observe carefully."
@@ -788,12 +788,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'POSTSCRIPT (P.S.)'?",
       "options": [
-        "An additional remark added after the signature of a letter",
         "A preliminary note",
-        "A title",
-        "An apology"
+        "An apology",
+        "An additional remark added after the signature of a letter",
+        "A title"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Postscript' is an additional remark written at the end of a letter."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'CURRICULUM VITAE (C.V.)'?",
       "options": [
-        "The course of one's life / a biographical resume",
         "A university degree",
         "A graduation certificate",
+        "The course of one's life / a biographical resume",
         "A birth chart"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Curriculum vitae' is a brief summary of a person's education, qualifications, and previous jobs."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'TABULA RASA'?",
       "options": [
+        "A legal treaty",
         "A clean slate / an erased tablet",
         "A round table",
-        "A carved stone",
-        "A legal treaty"
+        "A carved stone"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Tabula rasa' refers to the human mind before ideas have been imprinted on it by experience; a clean slate."
     },
     {
@@ -827,12 +827,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'CARPE DIEM'?",
       "options": [
-        "Seize the day / enjoy the present moment",
         "Beware of dogs",
+        "Fear death",
         "Live forever",
-        "Fear death"
+        "Seize the day / enjoy the present moment"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Carpe diem' means seize the day; make the most of the present time."
     },
     {
@@ -841,9 +841,9 @@
       "question": "What is the meaning of the Latin phrase 'CAVEAT EMPTOR'?",
       "options": [
         "Let the buyer beware",
+        "Fixed price",
         "Let the seller beware",
-        "Cash on delivery",
-        "Fixed price"
+        "Cash on delivery"
       ],
       "answer": 0,
       "explanation": "'Caveat emptor' is the principle that the buyer alone is responsible for checking the quality of goods before purchasing."
@@ -853,12 +853,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'CORPUS DELICTI'?",
       "options": [
-        "The facts and circumstances constituting a crime (body of the crime)",
         "A dead human corpse",
         "A coroner's verdict",
+        "The facts and circumstances constituting a crime (body of the crime)",
         "A prison term"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Corpus delicti' means the substantial fact that a crime has actually been committed."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'AMICUS CURIAE'?",
       "options": [
-        "A friend of the court / an impartial adviser",
+        "A court clerk",
         "A defence lawyer",
-        "A chief judge",
-        "A court clerk"
+        "A friend of the court / an impartial adviser",
+        "A chief judge"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Amicus curiae' is an impartial adviser to a court of law in a particular case."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'IPSO JURE'?",
       "options": [
-        "By the operation of law itself",
         "By police order",
-        "By executive fiat",
-        "Without legal force"
+        "By the operation of law itself",
+        "Without legal force",
+        "By executive fiat"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ipso jure' means by the law itself; automatically by operation of law."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'RATIO DECIDENDI'?",
       "options": [
-        "The legal rationale or ground for a judicial decision",
         "Incidental remark",
-        "A dissenting vote",
-        "Court fees"
+        "The legal rationale or ground for a judicial decision",
+        "Court fees",
+        "A dissenting vote"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ratio decidendi' is the rule of law on which a judicial decision is founded; binding precedent."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'AVANT-GARDE'?",
       "options": [
+        "Behind the times",
         "Pioneering and innovative in art, literature, or music",
         "Traditional and old-fashioned",
-        "Military guard",
-        "Behind the times"
+        "Military guard"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Avant-garde' refers to new and experimental ideas and methods in art, music, or literature."
     },
     {
@@ -932,8 +932,8 @@
       "question": "What is the meaning of the French phrase 'CLICHÉ'?",
       "options": [
         "An overused phrase or idea lacking original thought",
-        "A clever proverb",
         "A foreign idiom",
+        "A clever proverb",
         "A witty pun"
       ],
       "answer": 0,
@@ -944,12 +944,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'COUP D'ÉTAT'?",
       "options": [
+        "A peaceful protest",
         "A sudden, violent overthrow of a government by force",
         "A democratic election",
-        "A peaceful protest",
         "A declaration of war"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Coup d'état' is a sudden, violent, and illegal seizure of power from a government."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'DEBACLE'?",
       "options": [
-        "A sudden and complete failure; a fiasco",
-        "A grand victory",
         "A political debate",
-        "An opening ceremony"
+        "A sudden and complete failure; a fiasco",
+        "An opening ceremony",
+        "A grand victory"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Debacle' is a sudden and ignominious failure; a fiasco."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'ELITE'?",
       "options": [
-        "A select group that is superior in abilities or qualities",
-        "The common masses",
         "Untrained workers",
-        "Poor citizens"
+        "Poor citizens",
+        "A select group that is superior in abilities or qualities",
+        "The common masses"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Elite' refers to a select group that is superior in status, wealth, or ability."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'FAIT ACCOMPLI'?",
       "options": [
-        "A thing that has already been done and cannot be altered",
-        "A promise for the future",
+        "An uncompleted task",
         "A draft proposal",
-        "An uncompleted task"
+        "A thing that has already been done and cannot be altered",
+        "A promise for the future"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Fait accompli' is a thing that has already happened or been decided before those affected hear about it, leaving no option but to accept it."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'GOURMET'?",
       "options": [
-        "A connoisseur of good food and drink",
-        "A glutton who eats excessively",
         "A hotel chef",
-        "A street vendor"
+        "A connoisseur of good food and drink",
+        "A street vendor",
+        "A glutton who eats excessively"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Gourmet' is a connoisseur of good food and drink; epicure."
     },
     {
@@ -1010,9 +1010,9 @@
       "question": "What is the meaning of the French phrase 'LAISSEZ-FAIRE'?",
       "options": [
         "Policy of non-interference by the government in economics",
-        "Strict government control",
         "Military rule",
-        "Tax collection"
+        "Tax collection",
+        "Strict government control"
       ],
       "answer": 0,
       "explanation": "'Laissez-faire' is a policy of minimum governmental interference in the economic affairs of individuals and society."
@@ -1022,12 +1022,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'RÉSUMÉ'?",
       "options": [
-        "A brief summary of one's career and qualifications",
-        "A long novel",
+        "A court judgment",
         "An official receipt",
-        "A court judgment"
+        "A long novel",
+        "A brief summary of one's career and qualifications"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Résumé' is a brief account of a person's education, qualifications, and previous experience, typically sent with a job application."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'SOIRÉE'?",
       "options": [
-        "An evening party or social gathering",
         "A morning prayer",
         "A lunch buffet",
+        "An evening party or social gathering",
         "A sporting event"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Soirée' is an evening party or gathering, typically in a private house."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the German phrase 'WANDERLUST'?",
       "options": [
-        "A strong desire to travel and explore the world",
         "Fear of heights",
         "Homesickness",
+        "A strong desire to travel and explore the world",
         "Hatred of strangers"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Wanderlust' is a strong desire to travel."
     },
     {
@@ -1061,12 +1061,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the German phrase 'ZEITGEIST'?",
       "options": [
-        "The defining spirit or mood of a particular period of history",
         "A holy ghost",
         "A stormy wind",
-        "A military uniform"
+        "A military uniform",
+        "The defining spirit or mood of a particular period of history"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Zeitgeist' is the defining spirit or mood of a particular period of history as shown by the ideas and beliefs of the time."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Italian phrase 'AL DENTE'?",
       "options": [
+        "Frozen food",
         "Cooked so as to be still firm when bitten (especially pasta)",
-        "Overcooked and soft",
         "Sweet dessert",
-        "Frozen food"
+        "Overcooked and soft"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Al dente' describes food (especially pasta) cooked so as to be still firm when bitten."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Italian phrase 'GRAFFITI'?",
       "options": [
-        "Writing or drawings scribbled or sprayed on a public wall",
-        "Italian cheese",
+        "Marble statues",
         "Classical opera",
-        "Marble statues"
+        "Writing or drawings scribbled or sprayed on a public wall",
+        "Italian cheese"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Graffiti' refers to writing or drawings illicitly sprayed on walls or public surfaces."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Greek phrase 'EUREKA'?",
       "options": [
-        "I have found it! (cry of triumph at discovery)",
+        "Farewell",
         "I have lost it",
-        "Help me",
-        "Farewell"
+        "I have found it! (cry of triumph at discovery)",
+        "Help me"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Eureka' is a cry of joy or satisfaction when one finds or discovers something."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'MEA CULPA'?",
       "options": [
-        "Through my own fault / an acknowledgment of one's error",
+        "Forgive me",
         "It is not my fault",
         "By court verdict",
-        "Forgive me"
+        "Through my own fault / an acknowledgment of one's error"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Mea culpa' is an acknowledgment of one's fault or error."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'NON SEQUITUR'?",
       "options": [
-        "A conclusion that does not logically follow from the premise",
-        "A sound argument",
         "A legal contract",
-        "A famous quotation"
+        "A sound argument",
+        "A famous quotation",
+        "A conclusion that does not logically follow from the premise"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Non sequitur' is a conclusion or statement that does not logically follow from the previous argument."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'PERSONA NON GRATA'?",
       "options": [
+        "A close friend",
         "An unacceptable or unwelcome person",
         "A celebrity",
-        "A close friend",
         "A court witness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Persona non grata' is an unacceptable or unwelcome person, especially a diplomat."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'POST FACTO'?",
       "options": [
-        "Done or occurring after the fact; retroactive",
-        "Before the fact",
         "During the event",
-        "Never executed"
+        "Done or occurring after the fact; retroactive",
+        "Never executed",
+        "Before the fact"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Post facto' means after the event; having retrospective effect."
     },
     {
@@ -1166,9 +1166,9 @@
       "question": "What is the meaning of the Latin phrase 'SUI GENERIS'?",
       "options": [
         "Unique; in a class by itself",
-        "Common and ordinary",
+        "Belonging to a group",
         "Of foreign origin",
-        "Belonging to a group"
+        "Common and ordinary"
       ],
       "answer": 0,
       "explanation": "'Sui generis' means unique; of its own kind."
@@ -1179,9 +1179,9 @@
       "question": "What is the meaning of the Latin phrase 'TERRA INCOGNITA'?",
       "options": [
         "An unknown or unexplored land/territory",
-        "Familiar ground",
+        "A holy land",
         "Fertile soil",
-        "A holy land"
+        "Familiar ground"
       ],
       "answer": 0,
       "explanation": "'Terra incognita' is unknown or unexplored territory."
@@ -1191,12 +1191,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'VERBATIM'?",
       "options": [
-        "Word for word; in exactly the same words",
         "Summarized briefly",
+        "Word for word; in exactly the same words",
         "Translated freely",
         "Orally delivered"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Verbatim' means in exactly the same words as were used originally; word for word."
     },
     {
@@ -1205,9 +1205,9 @@
       "question": "What is the meaning of the Latin phrase 'VOX POPULI'?",
       "options": [
         "The voice of the people / public opinion",
-        "The voice of God",
         "A royal decree",
-        "A military command"
+        "A military command",
+        "The voice of God"
       ],
       "answer": 0,
       "explanation": "'Vox populi' means the voice of the people; popular opinion."
@@ -1217,12 +1217,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'EN MASSE'?",
       "options": [
-        "In a group; all together",
-        "Individually",
+        "In secret",
         "One by one",
-        "In secret"
+        "In a group; all together",
+        "Individually"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'En masse' means in a group; all together as a whole."
     },
     {
@@ -1231,9 +1231,9 @@
       "question": "What is the meaning of the French phrase 'EN ROUTE'?",
       "options": [
         "On the way",
-        "Arrived",
+        "Cancelled",
         "Delayed",
-        "Cancelled"
+        "Arrived"
       ],
       "answer": 0,
       "explanation": "'En route' means on the way."
@@ -1243,12 +1243,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'RAPPORTEUR'?",
       "options": [
+        "A translator",
         "A person appointed by an organization to report on its proceedings",
-        "A journalist",
         "A judge",
-        "A translator"
+        "A journalist"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Rapporteur' is an official appointed to report on the proceedings of a committee."
     },
     {
@@ -1256,12 +1256,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the French phrase 'CHEF-D'ŒUVRE'?",
       "options": [
-        "A masterpiece; an artist's best work",
-        "A kitchen recipe",
         "A food critic",
-        "A pastry chef"
+        "A masterpiece; an artist's best work",
+        "A pastry chef",
+        "A kitchen recipe"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Chef-d'œuvre' is a masterpiece or greatest work of art."
     },
     {
@@ -1269,12 +1269,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'DE FACTO' government?",
       "options": [
-        "A government exercising real power without formal legal sanction",
-        "A legally elected government",
         "A foreign embassy",
-        "A constitutional monarchy"
+        "A legally elected government",
+        "A constitutional monarchy",
+        "A government exercising real power without formal legal sanction"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'De facto government' is in actual control though not legally established."
     },
     {
@@ -1282,12 +1282,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'EX PARTE' hearing?",
       "options": [
+        "An arbitration",
         "A court hearing with only one party represented",
-        "A full bench hearing",
         "A public trial",
-        "An arbitration"
+        "A full bench hearing"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ex parte' hearing takes place in the presence of one party only."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'INTER VIVOS'?",
       "options": [
-        "Between living persons (especially of a transfer of property)",
+        "By heritage",
         "After death",
-        "Through a will",
-        "By heritage"
+        "Between living persons (especially of a transfer of property)",
+        "Through a will"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Inter vivos' means between living persons (e.g. an inter vivos gift)."
     },
     {
@@ -1322,9 +1322,9 @@
       "question": "What is the meaning of the Latin phrase 'ONUS PROBANDI'?",
       "options": [
         "The burden of proof",
-        "A court fine",
         "The testimony of a witness",
-        "A confession"
+        "A confession",
+        "A court fine"
       ],
       "answer": 0,
       "explanation": "'Onus probandi' is the burden of proof in legal proceedings."
@@ -1334,12 +1334,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'VOLENTI NON FIT INJURIA'?",
       "options": [
-        "To a willing person, injury is not done (consent excludes claim)",
         "Negligence brings punishment",
-        "Strict liability",
-        "An eye for an eye"
+        "To a willing person, injury is not done (consent excludes claim)",
+        "An eye for an eye",
+        "Strict liability"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Volenti non fit injuria' is a legal doctrine stating no harm is done to one who consents."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'UBI JUS IBI REMEDIUM'?",
       "options": [
-        "Where there is a right, there is a remedy",
-        "Ignorance of law is no excuse",
         "Justice delayed is justice denied",
+        "Ignorance of law is no excuse",
+        "Where there is a right, there is a remedy",
         "Law helps the vigilant"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ubi jus ibi remedium' means where there is a legal right, there is a legal remedy."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the Latin phrase 'IGNORANTIA JURIS NON EXCUSAT'?",
       "options": [
-        "Ignorance of the law excuses no one",
         "The law protects everyone",
         "A judge knows the law",
+        "Ignorance of the law excuses no one",
         "Law is supreme"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ignorantia juris non excusat' is the legal principle that ignorance of the law is no excuse."
     },
     {
@@ -1375,8 +1375,8 @@
       "options": [
         "Attacking someone's personal character rather than argument",
         "According to value",
-        "For a specified purpose",
-        "From the beginning"
+        "From the beginning",
+        "For a specified purpose"
       ],
       "answer": 0,
       "explanation": "Latin 'Ad hominem' means appealing to personal feelings or attacking character rather than intellect."
@@ -1386,12 +1386,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Ad hoc':",
       "options": [
-        "Formed or done for a specific, immediate purpose",
         "Forever",
-        "In good faith",
-        "From origin"
+        "From origin",
+        "Formed or done for a specific, immediate purpose",
+        "In good faith"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Latin 'Ad hoc' means for a particular purpose or task only."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Ab initio':",
       "options": [
-        "From the very beginning",
         "From the end",
+        "From memory",
         "From outside",
-        "From memory"
+        "From the very beginning"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin 'Ab initio' means from the inception/beginning."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Avant-garde':",
       "options": [
-        "New and experimental ideas in art, music, or literature",
-        "Traditional style",
         "Military retreat",
-        "Ancient craft"
+        "Ancient craft",
+        "Traditional style",
+        "New and experimental ideas in art, music, or literature"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "French 'Avant-garde' refers to cutting-edge or experimental pioneers."
     },
     {
@@ -1426,9 +1426,9 @@
       "question": "Meaning of 'Al fresco':",
       "options": [
         "In the open air / outdoors",
+        "Cold food",
         "Inside the palace",
-        "In secret",
-        "Cold food"
+        "In secret"
       ],
       "answer": 0,
       "explanation": "Italian 'Al fresco' means in the fresh, open air."
@@ -1438,12 +1438,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Aficionado':",
       "options": [
-        "An ardent admirer or passionate fan",
-        "A fierce opponent",
         "A wealthy merchant",
-        "A novice player"
+        "A fierce opponent",
+        "A novice player",
+        "An ardent admirer or passionate fan"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Spanish 'Aficionado' means an enthusiast or devotee."
     },
     {
@@ -1452,9 +1452,9 @@
       "question": "Meaning of 'Ad valorem':",
       "options": [
         "According to value",
+        "At pleasure",
         "Without limit",
-        "To the point",
-        "At pleasure"
+        "To the point"
       ],
       "answer": 0,
       "explanation": "Latin 'Ad valorem' means levied in proportion to the estimated value of goods."
@@ -1466,8 +1466,8 @@
       "options": [
         "Without limit / endlessly",
         "To completion",
-        "In finite steps",
-        "In reverse"
+        "In reverse",
+        "In finite steps"
       ],
       "answer": 0,
       "explanation": "Latin 'Ad infinitum' means again and again in identical fashion; to infinity."
@@ -1477,12 +1477,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Aide-de-camp':",
       "options": [
-        "A military assistant or confidential aide",
-        "The commander-in-chief",
         "A campsite guard",
+        "The commander-in-chief",
+        "A military assistant or confidential aide",
         "A medical orderly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "French 'Aide-de-camp' is an officer acting as confidential assistant to a superior."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Alma mater':",
       "options": [
-        "The school/university that one formerly attended",
-        "Motherland",
         "Primary school",
+        "Motherland",
+        "The school/university that one formerly attended",
         "Library"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Latin 'Alma mater' (bounteous mother) refers to one's former educational institution."
     },
     {
@@ -1504,8 +1504,8 @@
       "question": "Meaning of 'Au fond':",
       "options": [
         "At the bottom / basically",
-        "At the top",
         "In the ocean",
+        "At the top",
         "Far away"
       ],
       "answer": 0,
@@ -1518,8 +1518,8 @@
       "options": [
         "Good-bye / until we meet again",
         "Welcome",
-        "Good morning",
-        "Congratulations"
+        "Congratulations",
+        "Good morning"
       ],
       "answer": 0,
       "explanation": "French 'Au revoir' means goodbye until seeing each other again."
@@ -1529,12 +1529,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Anno mundi':",
       "options": [
+        "Year of Christ",
         "In the year of the world's creation",
-        "In the modern era",
         "After destruction",
-        "Year of Christ"
+        "In the modern era"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Latin 'Anno mundi' denotes year of the world."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'A la':",
       "options": [
-        "In the style or manner of",
-        "Against",
         "Beside",
-        "Beyond"
+        "In the style or manner of",
+        "Beyond",
+        "Against"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "French 'A la' means in the manner of or prepared like."
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Ad rem':",
       "options": [
-        "To the point / relevant",
-        "Irrelevant",
         "At pleasure",
-        "Without words"
+        "Irrelevant",
+        "Without words",
+        "To the point / relevant"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin 'Ad rem' means strictly pertinent to the matter in hand."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Ad libitum':",
       "options": [
-        "At pleasure / as much as one desires",
         "Strictly timed",
-        "Mandatory",
-        "Without voice"
+        "At pleasure / as much as one desires",
+        "Without voice",
+        "Mandatory"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Latin 'Ad libitum' (ad lib) means at one's discretion or pleasure."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'A tempo':",
       "options": [
-        "In time / return to original tempo",
-        "Accelerating",
         "Stopping",
-        "Slowly"
+        "In time / return to original tempo",
+        "Slowly",
+        "Accelerating"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Italian musical phrase meaning return to standard tempo."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Ante meridiem':",
       "options": [
-        "Before noon (a.m.)",
-        "After noon",
         "Midnight",
-        "Dawn"
+        "After noon",
+        "Dawn",
+        "Before noon (a.m.)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin 'Ante meridiem' means before midday."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Affaire d'amour':",
       "options": [
-        "A love affair",
         "A business deal",
         "A court trial",
+        "A love affair",
         "A duel"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "French for a romantic affair."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Ad lib':",
       "options": [
-        "Without preparation / improvised",
+        "Written down",
         "Well rehearsed",
-        "Memorized",
-        "Written down"
+        "Without preparation / improvised",
+        "Memorized"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "To speak or perform without notes or preparation."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Alibi':",
       "options": [
-        "A plea of having been elsewhere during a crime",
         "A witness statement",
+        "A forged stamp",
         "A confession",
-        "A forged stamp"
+        "A plea of having been elsewhere during a crime"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin 'Alibi' means elsewhere."
     },
     {
@@ -1647,8 +1647,8 @@
       "question": "Meaning of 'A cappella':",
       "options": [
         "Sung without instrumental accompaniment",
-        "With loud drums",
         "Solo instrument",
+        "With loud drums",
         "Orchestral overture"
       ],
       "answer": 0,
@@ -1659,12 +1659,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Angst':",
       "options": [
-        "A feeling of deep anxiety or dread",
-        "Intense joy",
         "Severe anger",
-        "Boredom"
+        "Intense joy",
+        "Boredom",
+        "A feeling of deep anxiety or dread"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "German word for existential dread, dread, or chronic anxiety."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Beau monde':",
       "options": [
-        "Fashionable society / high society",
         "Underworld",
         "Working class",
+        "Fashionable society / high society",
         "Ancient tribe"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "French 'Beau monde' literally means the beautiful world / fashionable elite."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Bona fide':",
       "options": [
-        "In good faith / genuine",
         "Deceptive",
-        "Illegal",
-        "Void"
+        "Void",
+        "In good faith / genuine",
+        "Illegal"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Latin 'Bona fide' means authentic, genuine, or with pure intentions."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Beau geste':",
       "options": [
+        "A military salute",
         "A noble and generous gesture",
-        "A cowardly retreat",
         "A hostile threat",
-        "A military salute"
+        "A cowardly retreat"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "French for a gracious, noble gesture."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Bete noire':",
       "options": [
-        "An object of intense dislike or dread",
-        "A beloved pet",
         "A lucky charm",
-        "A black suit"
+        "A black suit",
+        "A beloved pet",
+        "An object of intense dislike or dread"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "French 'Bete noire' (black beast) means a pet peeve or hated entity."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Bons mots':",
       "options": [
-        "Witty remarks / clever sayings",
         "Harsh insults",
         "Long speeches",
-        "False rumors"
+        "False rumors",
+        "Witty remarks / clever sayings"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "French 'Bon mot' means a clever, witty observation."
     },
     {
@@ -1738,9 +1738,9 @@
       "question": "Meaning of 'Bon vivant':",
       "options": [
         "A person who enjoys luxury, fine food, and drink",
+        "A hard laborer",
         "A hermit",
-        "A strict ascetic",
-        "A hard laborer"
+        "A strict ascetic"
       ],
       "answer": 0,
       "explanation": "French for someone who lives well and enjoys culinary delights."
@@ -1750,12 +1750,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Bourgeoisie':",
       "options": [
+        "The peasant farmers",
         "The middle class",
         "The aristocracy",
-        "The peasant farmers",
         "The armed guards"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "French sociological term for the merchant/middle class."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Carte blanche':",
       "options": [
-        "Complete freedom to act as one chooses",
         "A blank checkbook",
+        "A dismissal letter",
         "A strict warning",
-        "A dismissal letter"
+        "Complete freedom to act as one chooses"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "French for white card, meaning unconditional discretionary authority."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Carpe diem':",
       "options": [
-        "Seize the day / enjoy present moment",
+        "Fear death",
         "Beware of dogs",
         "Live forever",
-        "Fear death"
+        "Seize the day / enjoy present moment"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin phrase by Horace urging one to seize the present opportunity."
     },
     {
@@ -1790,9 +1790,9 @@
       "question": "Meaning of 'Causa celebre':",
       "options": [
         "A famous controversy or trial",
+        "A holiday party",
         "A secret conspiracy",
-        "A minor dispute",
-        "A holiday party"
+        "A minor dispute"
       ],
       "answer": 0,
       "explanation": "French for a celebrated case or issue attracting wide public excitement."
@@ -1802,12 +1802,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Caveat emptor':",
       "options": [
+        "Seller assumes all risk",
         "Let the buyer beware",
-        "Buyer gets a refund",
         "Guaranteed quality",
-        "Seller assumes all risk"
+        "Buyer gets a refund"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Commercial law principle: the buyer takes the risk of goods' quality."
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Coup d'etat':",
       "options": [
+        "A royal banquet",
         "Sudden violent overthrow of a government",
         "A diplomatic truce",
-        "A royal banquet",
         "A military parade"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "French for a sudden, decisive political stroke / regime overthrow."
     },
     {
@@ -1828,12 +1828,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'De facto':",
       "options": [
-        "In fact / in reality, whether legal or not",
+        "Temporarily",
         "By law",
-        "By divine right",
-        "Temporarily"
+        "In fact / in reality, whether legal or not",
+        "By divine right"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Latin 'De facto' contrasts with 'De jure' (by legal right)."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'De jure':",
       "options": [
-        "By legal right / according to law",
         "In reality",
+        "By power",
         "By custom",
-        "By power"
+        "By legal right / according to law"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin 'De jure' means lawful or recognized by law."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'En route':",
       "options": [
+        "Stationary",
         "On the way / during the journey",
         "At the destination",
-        "Returning back",
-        "Stationary"
+        "Returning back"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "French for on the path or underway."
     },
     {
@@ -1869,8 +1869,8 @@
       "options": [
         "By virtue of one's office or position",
         "Former officer",
-        "Retired person",
-        "Honorary guest"
+        "Honorary guest",
+        "Retired person"
       ],
       "answer": 0,
       "explanation": "Latin for holding a seat automatically due to an official role."
@@ -1881,8 +1881,8 @@
       "question": "Meaning of 'Faux pas':",
       "options": [
         "A tactless social blunder or mistake",
-        "A royal ceremony",
         "A false name",
+        "A royal ceremony",
         "A grand entrance"
       ],
       "answer": 0,
@@ -1894,9 +1894,9 @@
       "question": "Meaning of 'In camera':",
       "options": [
         "In secret / in a judge's private chambers",
-        "Broadcast on television",
         "Photographed publicly",
-        "In open court"
+        "In open court",
+        "Broadcast on television"
       ],
       "answer": 0,
       "explanation": "Legal Latin meaning held privately, not open to public or press."
@@ -1906,12 +1906,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'In toto':",
       "options": [
-        "In total / entirely / completely",
         "Partially",
+        "In total / entirely / completely",
         "In summary",
         "In reverse"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Latin 'In toto' means entirely or as a whole."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Lingua franca':",
       "options": [
-        "A common language used between speakers of different native tongues",
-        "Dead language",
         "Sign language",
+        "Dead language",
+        "A common language used between speakers of different native tongues",
         "Secret dialect"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "A bridge language utilized for commerce and interaction."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Magnum opus':",
       "options": [
-        "A great work / an artist's masterpiece",
-        "A minor sketch",
         "A joint venture",
-        "A failed attempt"
+        "A failed attempt",
+        "A minor sketch",
+        "A great work / an artist's masterpiece"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin 'Magnum opus' is an author or artist's greatest artistic achievement."
     },
     {
@@ -1946,9 +1946,9 @@
       "question": "Meaning of 'Modus operandi':",
       "options": [
         "A particular way or method of working",
-        "Reason for fighting",
         "Daily schedule",
-        "Code of honor"
+        "Code of honor",
+        "Reason for fighting"
       ],
       "answer": 0,
       "explanation": "Latin (M.O.) denoting a criminal's or practitioner's distinctive pattern of operation."
@@ -1958,12 +1958,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Per capita':",
       "options": [
-        "For each person / per head",
         "Per household",
-        "Per year",
-        "Per square mile"
+        "For each person / per head",
+        "Per square mile",
+        "Per year"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Latin meaning per head or individual."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Prima facie':",
       "options": [
-        "At first glance / based on first impression",
+        "After trial",
         "Conclusive proof",
-        "Hidden evidence",
-        "After trial"
+        "At first glance / based on first impression",
+        "Hidden evidence"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Legal Latin meaning accepted as correct until proven otherwise."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Quid pro quo':",
       "options": [
-        "Something given in return for something else",
-        "A deadlock",
+        "A refusal",
         "A sudden gift",
-        "A refusal"
+        "A deadlock",
+        "Something given in return for something else"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin for an equal exchange or mutual concession."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "foreign_words",
       "question": "Meaning of 'Status quo':",
       "options": [
-        "The existing state of affairs",
         "A drastic reform",
+        "Future outlook",
         "Past tradition",
-        "Future outlook"
+        "The existing state of affairs"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Latin for the current, unchanged condition of matters."
     },
     {
@@ -2011,8 +2011,8 @@
       "question": "Meaning of 'Vice versa':",
       "options": [
         "With the order reversed / the other way around",
-        "Similarly",
         "In opposition",
+        "Similarly",
         "Unexpectedly"
       ],
       "answer": 0,
@@ -2024,9 +2024,9 @@
       "question": "What is the meaning of the foreign phrase 'Billet doux'?",
       "options": [
         "A love letter",
-        "A formal military decoration",
+        "A written confession in court",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A formal military decoration"
       ],
       "answer": 0,
       "explanation": "'Billet doux' is a foreign expression meaning 'A love letter'. French phrase referring to an intimate romantic letter."
@@ -2036,12 +2036,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Coup de foudre'?",
       "options": [
+        "A written confession in court",
         "Love at first sight",
-        "A formal military decoration",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A formal military decoration"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Coup de foudre' is a foreign expression meaning 'Love at first sight'. French expression literally meaning 'lightning strike' / love at first sight."
     },
     {
@@ -2049,12 +2049,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Coup de main'?",
       "options": [
-        "A sudden surprise attack",
         "A formal military decoration",
+        "A sudden surprise attack",
         "A secret diplomatic treaty",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Coup de main' is a foreign expression meaning 'A sudden surprise attack'. French military phrase for a rapid, surprise offensive."
     },
     {
@@ -2062,12 +2062,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Coup de grace'?",
       "options": [
+        "A written confession in court",
         "A finishing blow or final stroke",
-        "A formal military decoration",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A formal military decoration"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Coup de grace' is a foreign expression meaning 'A finishing blow or final stroke'. French for a death blow administered to end suffering or settle an issue."
     },
     {
@@ -2075,12 +2075,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Casus belli'?",
       "options": [
-        "An act or event justifying war",
         "A formal military decoration",
-        "A secret diplomatic treaty",
-        "A written confession in court"
+        "A written confession in court",
+        "An act or event justifying war",
+        "A secret diplomatic treaty"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Casus belli' is a foreign expression meaning 'An act or event justifying war'. Latin legal/political term for an event that triggers or justifies war."
     },
     {
@@ -2088,12 +2088,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Compos mentis'?",
       "options": [
-        "In full control of one's mind / of sound mind",
-        "A formal military decoration",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A written confession in court",
+        "In full control of one's mind / of sound mind",
+        "A formal military decoration"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Compos mentis' is a foreign expression meaning 'In full control of one's mind / of sound mind'. Latin legal term: of sound mind, memory, and understanding (not insane)."
     },
     {
@@ -2101,12 +2101,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Corrigendum'?",
       "options": [
-        "A correction of an error in a printed book",
-        "A formal military decoration",
+        "A written confession in court",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A correction of an error in a printed book",
+        "A formal military decoration"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Corrigendum' is a foreign expression meaning 'A correction of an error in a printed book'. Latin for an error to be corrected published as an addendum."
     },
     {
@@ -2114,12 +2114,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'En bloc'?",
       "options": [
-        "All together / as a whole group",
+        "A written confession in court",
         "A formal military decoration",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "All together / as a whole group"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'En bloc' is a foreign expression meaning 'All together / as a whole group'. French meaning in a lump sum or all at once."
     },
     {
@@ -2127,12 +2127,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Felo de se'?",
       "options": [
-        "An act of suicide / a self-murderer",
         "A formal military decoration",
+        "A written confession in court",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "An act of suicide / a self-murderer"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Felo de se' is a foreign expression meaning 'An act of suicide / a self-murderer'. Anglo-Latin legal phrase for a felon against oneself (suicide)."
     },
     {
@@ -2141,8 +2141,8 @@
       "question": "What is the meaning of the foreign phrase 'Ipso facto'?",
       "options": [
         "By that very fact or act itself",
-        "A formal military decoration",
         "A secret diplomatic treaty",
+        "A formal military decoration",
         "A written confession in court"
       ],
       "answer": 0,
@@ -2166,12 +2166,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Joie de vivre'?",
       "options": [
-        "Exuberant enjoyment of life",
-        "A formal military decoration",
         "A secret diplomatic treaty",
+        "A formal military decoration",
+        "Exuberant enjoyment of life",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Joie de vivre' is a foreign expression meaning 'Exuberant enjoyment of life'. French phrase describing keen, lively zest for life."
     },
     {
@@ -2179,12 +2179,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Ne plus ultra'?",
       "options": [
-        "The highest point of excellence / the ultimate",
         "A formal military decoration",
         "A secret diplomatic treaty",
+        "The highest point of excellence / the ultimate",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ne plus ultra' is a foreign expression meaning 'The highest point of excellence / the ultimate'. Latin phrase meaning 'no further beyond'; the acme of perfection."
     },
     {
@@ -2192,12 +2192,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Noblesse oblige'?",
       "options": [
-        "The obligation of noble birth or wealth to be generous",
+        "A written confession in court",
         "A formal military decoration",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "The obligation of noble birth or wealth to be generous"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Noblesse oblige' is a foreign expression meaning 'The obligation of noble birth or wealth to be generous'. French concept that privilege entails social responsibility."
     },
     {
@@ -2205,12 +2205,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Videlicet'?",
       "options": [
-        "Namely / that is to say (abbreviated as viz.)",
         "A formal military decoration",
+        "Namely / that is to say (abbreviated as viz.)",
         "A secret diplomatic treaty",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Videlicet' is a foreign expression meaning 'Namely / that is to say (abbreviated as viz.)'. Latin for 'it is permissible to see'; used to specify particulars."
     },
     {
@@ -2218,12 +2218,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Bandolero'?",
       "options": [
+        "A written confession in court",
         "A bandit, brigand, or highway outlaw",
         "A formal military decoration",
-        "A secret diplomatic treaty",
-        "A written confession in court"
+        "A secret diplomatic treaty"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bandolero' is a foreign expression meaning 'A bandit, brigand, or highway outlaw'. Spanish word for an outlaw operating in mountainous regions."
     },
     {
@@ -2231,12 +2231,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'De novo'?",
       "options": [
-        "Starting afresh / from the beginning",
-        "A formal military decoration",
         "A secret diplomatic treaty",
+        "A formal military decoration",
+        "Starting afresh / from the beginning",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'De novo' is a foreign expression meaning 'Starting afresh / from the beginning'. Latin legal term for beginning a trial or hearing anew."
     },
     {
@@ -2244,12 +2244,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'In absentia'?",
       "options": [
-        "While absent / in the absence of the person",
         "A formal military decoration",
-        "A secret diplomatic treaty",
-        "A written confession in court"
+        "While absent / in the absence of the person",
+        "A written confession in court",
+        "A secret diplomatic treaty"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'In absentia' is a foreign expression meaning 'While absent / in the absence of the person'. Latin meaning proceedings held in the defendant's absence."
     },
     {
@@ -2257,12 +2257,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Pro rata'?",
       "options": [
-        "Proportionately / according to an exact calculated share",
         "A formal military decoration",
+        "A written confession in court",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "Proportionately / according to an exact calculated share"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Pro rata' is a foreign expression meaning 'Proportionately / according to an exact calculated share'. Latin commercial term for proportionate distribution."
     },
     {
@@ -2270,12 +2270,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Sub judice'?",
       "options": [
-        "Under judicial consideration / awaiting verdict",
         "A formal military decoration",
+        "Under judicial consideration / awaiting verdict",
         "A secret diplomatic treaty",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Sub judice' is a foreign expression meaning 'Under judicial consideration / awaiting verdict'. Latin legal term for a case currently before a judge, preventing public comment."
     },
     {
@@ -2284,9 +2284,9 @@
       "question": "What is the meaning of the foreign phrase 'Tabula rasa'?",
       "options": [
         "A clean slate / a mind without innate ideas",
+        "A written confession in court",
         "A formal military decoration",
-        "A secret diplomatic treaty",
-        "A written confession in court"
+        "A secret diplomatic treaty"
       ],
       "answer": 0,
       "explanation": "'Tabula rasa' is a foreign expression meaning 'A clean slate / a mind without innate ideas'. Latin for an erased tablet; Locke's blank slate theory."
@@ -2297,9 +2297,9 @@
       "question": "What is the meaning of the foreign phrase 'Modus vivendi'?",
       "options": [
         "An arrangement allowing conflicting parties to coexist peacefully",
-        "A formal military decoration",
+        "A written confession in court",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A formal military decoration"
       ],
       "answer": 0,
       "explanation": "'Modus vivendi' is a foreign expression meaning 'An arrangement allowing conflicting parties to coexist peacefully'. Latin for 'way of living'; a temporary peaceful compromise."
@@ -2310,9 +2310,9 @@
       "question": "What is the meaning of the foreign phrase 'Inter alia'?",
       "options": [
         "Among other things",
-        "A formal military decoration",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A written confession in court",
+        "A formal military decoration"
       ],
       "answer": 0,
       "explanation": "'Inter alia' is a foreign expression meaning 'Among other things'. Latin phrase used when citing examples from a larger collection."
@@ -2322,12 +2322,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Mutatis mutandis'?",
       "options": [
+        "A written confession in court",
         "With the necessary changes having been made",
         "A formal military decoration",
-        "A secret diplomatic treaty",
-        "A written confession in court"
+        "A secret diplomatic treaty"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Mutatis mutandis' is a foreign expression meaning 'With the necessary changes having been made'. Latin legal/academic phrase denoting adapting terms to new circumstances."
     },
     {
@@ -2335,12 +2335,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Per se'?",
       "options": [
+        "A secret diplomatic treaty",
         "By or in itself / intrinsically",
         "A formal military decoration",
-        "A secret diplomatic treaty",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Per se' is a foreign expression meaning 'By or in itself / intrinsically'. Latin expression meaning intrinsically or considered alone."
     },
     {
@@ -2362,9 +2362,9 @@
       "question": "What is the meaning of the foreign phrase 'Sine die'?",
       "options": [
         "Adjourned without fixing a future date for resumption",
+        "A written confession in court",
         "A formal military decoration",
-        "A secret diplomatic treaty",
-        "A written confession in court"
+        "A secret diplomatic treaty"
       ],
       "answer": 0,
       "explanation": "'Sine die' is a foreign expression meaning 'Adjourned without fixing a future date for resumption'. Latin parliamentary/legal term: adjourned indefinitely."
@@ -2374,12 +2374,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'Vox populi'?",
       "options": [
-        "The voice of the people",
         "A formal military decoration",
         "A secret diplomatic treaty",
+        "The voice of the people",
         "A written confession in court"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Vox populi' is a foreign expression meaning 'The voice of the people'. Latin proverb: Vox populi, vox Dei (the voice of the people is the voice of God)."
     },
     {
@@ -2387,12 +2387,12 @@
       "topic": "foreign_words",
       "question": "What is the meaning of the foreign phrase 'De jure'?",
       "options": [
-        "According to rightful law",
-        "A formal military decoration",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A written confession in court",
+        "According to rightful law",
+        "A formal military decoration"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'De jure' is a foreign expression meaning 'According to rightful law'. Latin term contrasting with 'de facto' (in actual fact)."
     },
     {
@@ -2401,9 +2401,9 @@
       "question": "What is the meaning of the foreign phrase 'Bona fide'?",
       "options": [
         "Made or done in good faith / authentic",
-        "A formal military decoration",
+        "A written confession in court",
         "A secret diplomatic treaty",
-        "A written confession in court"
+        "A formal military decoration"
       ],
       "answer": 0,
       "explanation": "'Bona fide' is a foreign expression meaning 'Made or done in good faith / authentic'. Latin phrase meaning genuine, real, or without fraud."

@@ -8,12 +8,12 @@
       "topic": "correlatives",
       "question": "Neither Rahul ______ Rohit was present in the meeting.",
       "options": [
-        "nor",
-        "or",
         "and",
-        "but"
+        "but",
+        "or",
+        "nor"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Neither' is always paired with 'nor'."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "correlatives",
       "question": "He is not only intelligent ______ hardworking.",
       "options": [
-        "but also",
-        "and also",
+        "too",
         "as well as",
-        "too"
+        "but also",
+        "and also"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Not only' is paired with 'but also'."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "correlatives",
       "question": "Both Mohan ______ Sohan were invited.",
       "options": [
+        "with",
         "and",
-        "as well as",
         "or",
-        "with"
+        "as well as"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Both' is paired with 'and', never with 'as well as'."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "correlatives",
       "question": "Hardly had I reached the station ______ the train left.",
       "options": [
-        "when",
         "than",
-        "then",
-        "before"
+        "when",
+        "before",
+        "then"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hardly had...' is always paired with 'when'."
     },
     {
@@ -74,9 +74,9 @@
       "question": "Scarcely had she begun her speech ______ the audience started cheering.",
       "options": [
         "when",
-        "than",
+        "until",
         "then",
-        "until"
+        "than"
       ],
       "answer": 0,
       "explanation": "'Scarcely had...' is paired with 'when'."
@@ -86,12 +86,12 @@
       "topic": "correlatives",
       "question": "No sooner did the bell ring ______ the students left.",
       "options": [
-        "than",
         "when",
-        "then",
-        "before"
+        "before",
+        "than",
+        "then"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'No sooner did/had...' is always paired with 'than'."
     },
     {
@@ -100,9 +100,9 @@
       "question": "Barely had the plane touched down ______ it started raining.",
       "options": [
         "when",
-        "than",
+        "before",
         "then",
-        "before"
+        "than"
       ],
       "answer": 0,
       "explanation": "'Barely had...' is paired with 'when'."
@@ -112,12 +112,12 @@
       "topic": "correlatives",
       "question": "Although he is very rich, ______ he is humble.",
       "options": [
-        "yet",
         "but",
-        "and",
-        "so"
+        "yet",
+        "so",
+        "and"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Although/Though' is paired with 'yet' (or a comma), never with 'but'."
     },
     {
@@ -125,12 +125,12 @@
       "topic": "correlatives",
       "question": "Though he worked hard, ______ he failed.",
       "options": [
-        "yet",
         "but",
-        "so",
-        "and"
+        "yet",
+        "and",
+        "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Though' is paired with 'yet', not 'but'."
     },
     {
@@ -139,9 +139,9 @@
       "question": "Walk carefully lest you ______ fall.",
       "options": [
         "should",
-        "would",
         "could",
-        "might"
+        "might",
+        "would"
       ],
       "answer": 0,
       "explanation": "'Lest' is followed by 'should'."
@@ -151,12 +151,12 @@
       "topic": "correlatives",
       "question": "Run fast lest you ______ miss the train.",
       "options": [
-        "should",
-        "would",
         "could",
-        "must"
+        "should",
+        "must",
+        "would"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lest' is paired with 'should'."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "correlatives",
       "question": "The problem was so difficult ______ nobody could solve it.",
       "options": [
-        "that",
         "as",
         "than",
-        "so"
+        "so",
+        "that"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'so + adjective + that' expresses consequence."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "correlatives",
       "question": "He is such a polite gentleman ______ everyone likes him.",
       "options": [
-        "that",
-        "as",
         "than",
-        "so"
+        "so",
+        "that",
+        "as"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'such... that' expresses consequence."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "correlatives",
       "question": "He is not such a fool ______ he looks.",
       "options": [
-        "as",
-        "that",
         "than",
-        "so"
+        "so",
+        "that",
+        "as"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'such... as' expresses comparison of manner/degree."
     },
     {
@@ -203,12 +203,12 @@
       "topic": "correlatives",
       "question": "She is as sweet ______ honey.",
       "options": [
-        "as",
-        "so",
         "than",
-        "like"
+        "as",
+        "like",
+        "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Affirmative positive comparison takes 'as... as'."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "correlatives",
       "question": "He is not so tall ______ his brother.",
       "options": [
-        "as",
         "that",
-        "than",
-        "so"
+        "so",
+        "as",
+        "than"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Negative positive comparison takes 'not so... as' or 'not as... as'."
     },
     {
@@ -229,12 +229,12 @@
       "topic": "correlatives",
       "question": "The meeting will be held between 10 AM ______ 12 PM.",
       "options": [
+        "with",
         "and",
-        "to",
         "or",
-        "with"
+        "to"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Between' is always paired with 'and', never with 'to'."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "correlatives",
       "question": "The office remains open from 10 AM ______ 5 PM.",
       "options": [
-        "to",
+        "till",
         "and",
         "until",
-        "till"
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'From' is paired with 'to' or 'till'."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "correlatives",
       "question": "He would rather starve ______ steal.",
       "options": [
-        "than",
-        "to",
+        "or",
         "then",
-        "or"
+        "to",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Would rather' is paired with 'than'."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "correlatives",
       "question": "I had rather die ______ betray my friends.",
       "options": [
-        "than",
-        "to",
+        "or",
         "then",
-        "or"
+        "to",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Had rather' is paired with 'than'."
     },
     {
@@ -281,12 +281,12 @@
       "topic": "correlatives",
       "question": "I prefer tea ______ coffee.",
       "options": [
-        "to",
         "than",
-        "over",
-        "more than"
+        "more than",
+        "to",
+        "over"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Prefer' takes preposition 'to'."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "correlatives",
       "question": "He is whether coming ______ not.",
       "options": [
-        "or",
+        "but",
         "nor",
-        "and",
-        "but"
+        "or",
+        "and"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Whether' is paired with 'or'."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "correlatives",
       "question": "I do not know whether he will come ______ stay.",
       "options": [
+        "but",
         "or",
-        "nor",
         "and",
-        "but"
+        "nor"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Whether... or'."
     },
     {
@@ -334,8 +334,8 @@
       "question": "The higher you climb, ______ colder it gets.",
       "options": [
         "the",
-        "a",
         "an",
+        "a",
         "more"
       ],
       "answer": 0,
@@ -346,12 +346,12 @@
       "topic": "correlatives",
       "question": "The more you earn, ______ more you spend.",
       "options": [
-        "the",
-        "a",
+        "so",
         "an",
-        "so"
+        "the",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'The more... the more...'"
     },
     {
@@ -359,12 +359,12 @@
       "topic": "correlatives",
       "question": "No sooner had he entered the room ______ the lights went out.",
       "options": [
-        "than",
         "when",
+        "than",
         "then",
         "before"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'No sooner had... than...'"
     },
     {
@@ -373,9 +373,9 @@
       "question": "Hardly had the teacher arrived ______ the bell rang.",
       "options": [
         "when",
-        "than",
+        "before",
         "then",
-        "before"
+        "than"
       ],
       "answer": 0,
       "explanation": "'Hardly had... when...'"
@@ -385,12 +385,12 @@
       "topic": "correlatives",
       "question": "Scarcely had I stepped outside ______ it began to hail.",
       "options": [
+        "before",
         "when",
-        "than",
         "then",
-        "before"
+        "than"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Scarcely had... when...'"
     },
     {
@@ -398,12 +398,12 @@
       "topic": "correlatives",
       "question": "He not only lost his ticket ______ his luggage.",
       "options": [
-        "but also",
-        "and also",
         "as well as",
+        "and also",
+        "but also",
         "too"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Not only... but also'."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "correlatives",
       "question": "She is both talented ______ hardworking.",
       "options": [
-        "and",
-        "as well as",
         "or",
-        "with"
+        "as well as",
+        "with",
+        "and"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Both... and'."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "correlatives",
       "question": "Neither praise ______ blame affects him.",
       "options": [
-        "nor",
         "or",
-        "and",
-        "but"
+        "but",
+        "nor",
+        "and"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Neither... nor'."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "correlatives",
       "question": "You can have either juice ______ milk.",
       "options": [
+        "but",
         "or",
         "nor",
-        "and",
-        "but"
+        "and"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Either... or'."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "correlatives",
       "question": "Although it was raining, ______ we went out for a walk.",
       "options": [
-        "yet",
         "but",
-        "and",
-        "so"
+        "so",
+        "yet",
+        "and"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Although... yet'."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "correlatives",
       "question": "Take care lest you ______ slip on the wet floor.",
       "options": [
-        "should",
-        "would",
+        "might",
         "could",
-        "might"
+        "would",
+        "should"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Lest... should'."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "correlatives",
       "question": "Between Rahul ______ Rohit, who is taller?",
       "options": [
-        "and",
         "or",
+        "with",
         "to",
-        "with"
+        "and"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Between... and'."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "correlatives",
       "question": "From Monday ______ Friday, the school operates normally.",
       "options": [
-        "to",
-        "and",
+        "till",
         "with",
-        "till"
+        "and",
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'From... to'."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "correlatives",
       "question": "I would rather resign ______ accept such humiliation.",
       "options": [
-        "than",
-        "to",
         "then",
+        "to",
+        "than",
         "or"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Would rather... than'."
     },
     {
@@ -516,8 +516,8 @@
       "question": "He is as clever ______ a fox.",
       "options": [
         "as",
-        "so",
         "than",
+        "so",
         "like"
       ],
       "answer": 0,
@@ -528,12 +528,12 @@
       "topic": "correlatives",
       "question": "She is not so proud ______ her sister.",
       "options": [
-        "as",
-        "that",
         "than",
+        "that",
+        "as",
         "so"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'not so... as'."
     },
     {
@@ -541,12 +541,12 @@
       "topic": "correlatives",
       "question": "The sun is so hot ______ we cannot walk barefoot.",
       "options": [
-        "that",
-        "as",
         "than",
-        "so"
+        "so",
+        "that",
+        "as"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'so... that'."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "correlatives",
       "question": "It was such a noisy party ______ I got a headache.",
       "options": [
-        "that",
-        "as",
         "than",
-        "so"
+        "as",
+        "so",
+        "that"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'such... that'."
     },
     {
@@ -567,12 +567,12 @@
       "topic": "correlatives",
       "question": "He is so weak ______ he cannot even sit up.",
       "options": [
-        "that",
-        "as",
+        "so",
         "than",
-        "so"
+        "as",
+        "that"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'so... that'."
     },
     {
@@ -580,12 +580,12 @@
       "topic": "correlatives",
       "question": "No sooner did she hear the tragic news ______ she burst into tears.",
       "options": [
-        "than",
-        "when",
         "then",
-        "before"
+        "when",
+        "before",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'No sooner did... than'."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "correlatives",
       "question": "Hardly had we started the journey ______ our car broke down.",
       "options": [
-        "when",
-        "than",
         "then",
-        "before"
+        "when",
+        "before",
+        "than"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hardly had... when'."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "correlatives",
       "question": "Scarcely had the match begun ______ rain stopped the play.",
       "options": [
-        "when",
         "than",
+        "before",
         "then",
-        "before"
+        "when"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Scarcely had... when'."
     },
     {
@@ -621,8 +621,8 @@
       "options": [
         "but also",
         "and also",
-        "as well as",
-        "too"
+        "too",
+        "as well as"
       ],
       "answer": 0,
       "explanation": "'Not only... but also'."
@@ -632,12 +632,12 @@
       "topic": "correlatives",
       "question": "She is both intelligent ______ beautiful.",
       "options": [
-        "and",
-        "as well as",
         "or",
-        "with"
+        "with",
+        "as well as",
+        "and"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Both... and'."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "correlatives",
       "question": "Neither the teacher ______ the students were present.",
       "options": [
-        "nor",
         "or",
         "and",
+        "nor",
         "but"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Neither... nor'."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "correlatives",
       "question": "Either you must apologize ______ pay the penalty.",
       "options": [
-        "or",
-        "nor",
         "and",
-        "but"
+        "but",
+        "nor",
+        "or"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Either... or'."
     },
     {
@@ -672,9 +672,9 @@
       "question": "Though he was injured, ______ he finished the marathon.",
       "options": [
         "yet",
-        "but",
         "and",
-        "so"
+        "so",
+        "but"
       ],
       "answer": 0,
       "explanation": "'Though... yet'."
@@ -684,12 +684,12 @@
       "topic": "correlatives",
       "question": "Work hard lest you ______ regret later.",
       "options": [
+        "might",
         "should",
         "would",
-        "could",
-        "might"
+        "could"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lest... should'."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "correlatives",
       "question": "The train runs between Mumbai ______ Pune.",
       "options": [
-        "and",
-        "to",
         "or",
-        "with"
+        "to",
+        "with",
+        "and"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Between... and'."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "correlatives",
       "question": "The bank is open from 10 AM ______ 4 PM.",
       "options": [
-        "to",
         "and",
         "till",
+        "to",
         "until"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'From... to'."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "correlatives",
       "question": "He would rather sleep on the floor ______ in that bed.",
       "options": [
-        "than",
+        "or",
         "to",
-        "then",
-        "or"
+        "than",
+        "then"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Would rather... than'."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "correlatives",
       "question": "He is not such an idiot ______ you believe.",
       "options": [
-        "as",
-        "that",
+        "so",
         "than",
-        "so"
+        "that",
+        "as"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'such... as' for comparison."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "correlatives",
       "question": "The deeper you dig, ______ cooler the water you find.",
       "options": [
-        "the",
-        "a",
+        "so",
         "an",
-        "so"
+        "the",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'The... the...'"
     },
     {
@@ -762,12 +762,12 @@
       "topic": "correlatives",
       "question": "The older he grew, ______ wiser he became.",
       "options": [
-        "the",
-        "a",
         "an",
-        "so"
+        "so",
+        "the",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'The older... the wiser'."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "correlatives",
       "question": "No sooner did the thief see the policeman ______ he took to his heels.",
       "options": [
-        "than",
-        "when",
         "then",
-        "before"
+        "before",
+        "when",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'No sooner did... than'."
     },
     {
@@ -789,9 +789,9 @@
       "question": "Hardly had I shut my eyes ______ the alarm rang.",
       "options": [
         "when",
+        "before",
         "than",
-        "then",
-        "before"
+        "then"
       ],
       "answer": 0,
       "explanation": "'Hardly had... when'."
@@ -814,12 +814,12 @@
       "topic": "correlatives",
       "question": "The exhibition is not only educative ______ entertaining.",
       "options": [
-        "but also",
+        "too",
         "and also",
         "as well as",
-        "too"
+        "but also"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Not only... but also'."
     },
     {
@@ -828,9 +828,9 @@
       "question": "Both science ______ arts are necessary for progress.",
       "options": [
         "and",
-        "as well as",
         "or",
-        "with"
+        "with",
+        "as well as"
       ],
       "answer": 0,
       "explanation": "'Both... and'."
@@ -840,12 +840,12 @@
       "topic": "correlatives",
       "question": "Neither poverty ______ riches can change his character.",
       "options": [
-        "nor",
+        "but",
         "or",
-        "and",
-        "but"
+        "nor",
+        "and"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Neither... nor'."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "correlatives",
       "question": "Either come on time ______ stay at home.",
       "options": [
-        "or",
-        "nor",
+        "but",
         "and",
-        "but"
+        "nor",
+        "or"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Either... or'."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "correlatives",
       "question": "Although he is old, ______ his mind is sharp.",
       "options": [
+        "and",
         "yet",
         "but",
-        "and",
         "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Although... yet'."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "correlatives",
       "question": "Fasten your seatbelt lest you ______ be injured.",
       "options": [
-        "should",
         "would",
-        "could",
-        "might"
+        "should",
+        "might",
+        "could"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lest... should'."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "correlatives",
       "question": "Choose between red ______ blue.",
       "options": [
+        "with",
         "and",
-        "or",
         "to",
-        "with"
+        "or"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Between... and'."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "correlatives",
       "question": "From dawn ______ dusk, the farmers toiled.",
       "options": [
-        "to",
+        "until",
         "and",
         "till",
-        "until"
+        "to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'From... to'."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "correlatives",
       "question": "He would rather walk five miles ______ travel in that crowded bus.",
       "options": [
-        "than",
         "to",
+        "than",
         "then",
         "or"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would rather... than'."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "correlatives",
       "question": "The tea was so hot ______ he could not drink it.",
       "options": [
-        "that",
-        "as",
+        "so",
         "than",
-        "so"
+        "as",
+        "that"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'so... that'."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "correlatives",
       "question": "It was such an inspiring lecture ______ everyone clapped.",
       "options": [
-        "that",
         "as",
+        "that",
         "than",
         "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'such... that'."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "correlatives",
       "question": "She is as gentle ______ a lamb.",
       "options": [
+        "than",
         "as",
         "so",
-        "than",
         "like"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'as... as'."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "correlatives",
       "question": "He is not so cunning ______ his partner.",
       "options": [
-        "as",
         "that",
+        "as",
         "than",
         "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'not so... as'."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "correlatives",
       "question": "The more you give, ______ more you receive.",
       "options": [
-        "the",
-        "a",
         "an",
-        "so"
+        "so",
+        "the",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'The more... the more'."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "correlatives",
       "question": "The earlier you wake up, ______ better you feel.",
       "options": [
-        "the",
-        "a",
+        "so",
         "an",
-        "so"
+        "the",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'The earlier... the better'."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "correlatives",
       "question": "No sooner had she finished cooking ______ the guests arrived.",
       "options": [
-        "than",
-        "when",
+        "before",
         "then",
-        "before"
+        "than",
+        "when"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'No sooner had... than'."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "correlatives",
       "question": "Hardly had the meeting started ______ the power went off.",
       "options": [
-        "when",
-        "than",
         "then",
+        "than",
+        "when",
         "before"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Hardly had... when'."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "correlatives",
       "question": "Scarcely had the doctor left ______ the patient relapsed.",
       "options": [
+        "before",
         "when",
-        "than",
         "then",
-        "before"
+        "than"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Scarcely had... when'."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "correlatives",
       "question": "He bought not only a house ______ a luxury car.",
       "options": [
+        "too",
         "but also",
         "and also",
-        "as well as",
-        "too"
+        "as well as"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Not only... but also'."
     },
     {
@@ -1061,12 +1061,12 @@
       "topic": "correlatives",
       "question": "She is both loved ______ respected by all.",
       "options": [
-        "and",
-        "as well as",
+        "with",
         "or",
-        "with"
+        "as well as",
+        "and"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Both... and'."
     },
     {
@@ -1075,9 +1075,9 @@
       "question": "Neither your money ______ your influence can save you.",
       "options": [
         "nor",
+        "but",
         "or",
-        "and",
-        "but"
+        "and"
       ],
       "answer": 0,
       "explanation": "'Neither... nor'."
@@ -1087,12 +1087,12 @@
       "topic": "correlatives",
       "question": "Either you clear your dues ______ face legal action.",
       "options": [
-        "or",
+        "but",
         "nor",
         "and",
-        "but"
+        "or"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Either... or'."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "correlatives",
       "question": "Though it was midnight, ______ the streets were crowded.",
       "options": [
-        "yet",
-        "but",
         "and",
-        "so"
+        "so",
+        "but",
+        "yet"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Though... yet'."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "correlatives",
       "question": "Save money regularly lest you ______ suffer in old age.",
       "options": [
+        "might",
         "should",
-        "would",
         "could",
-        "might"
+        "would"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lest... should'."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "correlatives",
       "question": "There is a vast difference between truth ______ falsehood.",
       "options": [
-        "and",
         "or",
+        "with",
         "to",
-        "with"
+        "and"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Between... and'."
     },
     {
@@ -1141,8 +1141,8 @@
       "options": [
         "to",
         "and",
-        "till",
-        "until"
+        "until",
+        "till"
       ],
       "answer": 0,
       "explanation": "'From... to'."
@@ -1153,8 +1153,8 @@
       "question": "She would rather remain unmarried ______ marry that greedy man.",
       "options": [
         "than",
-        "to",
         "then",
+        "to",
         "or"
       ],
       "answer": 0,
@@ -1178,12 +1178,12 @@
       "topic": "correlatives",
       "question": "He is not such a genius ______ he claims to be.",
       "options": [
-        "as",
-        "that",
         "than",
-        "so"
+        "that",
+        "so",
+        "as"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'such... as'."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "correlatives",
       "question": "The harder you practice, ______ better you perform.",
       "options": [
-        "the",
-        "a",
         "an",
+        "a",
+        "the",
         "so"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'The... the...'"
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "correlatives",
       "question": "No sooner did the curtain rise ______ the spectators clapped.",
       "options": [
-        "than",
-        "when",
+        "before",
         "then",
-        "before"
+        "when",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'No sooner did... than'."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "correlatives",
       "question": "Hardly had he uttered the words ______ he regretted them.",
       "options": [
-        "when",
-        "than",
         "then",
-        "before"
+        "before",
+        "when",
+        "than"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Hardly had... when'."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "correlatives",
       "question": "Scarcely had they entered the jungle ______ they heard a roar.",
       "options": [
+        "before",
         "when",
         "than",
-        "then",
-        "before"
+        "then"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Scarcely had... when'."
     },
     {
@@ -1244,9 +1244,9 @@
       "question": "He is not only an author ______ a publisher.",
       "options": [
         "but also",
+        "too",
         "and also",
-        "as well as",
-        "too"
+        "as well as"
       ],
       "answer": 0,
       "explanation": "'Not only... but also'."
@@ -1256,12 +1256,12 @@
       "topic": "correlatives",
       "question": "Both the manager ______ the staff were held responsible.",
       "options": [
+        "with",
         "and",
         "as well as",
-        "or",
-        "with"
+        "or"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Both... and'."
     },
     {
@@ -1269,12 +1269,12 @@
       "topic": "correlatives",
       "question": "Neither tea ______ coffee was available at the station.",
       "options": [
-        "nor",
-        "or",
         "and",
-        "but"
+        "but",
+        "nor",
+        "or"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Neither... nor'."
     },
     {
@@ -1283,8 +1283,8 @@
       "question": "Either obey the rules ______ leave the hostel.",
       "options": [
         "or",
-        "nor",
         "and",
+        "nor",
         "but"
       ],
       "answer": 0,
@@ -1295,12 +1295,12 @@
       "topic": "correlatives",
       "question": "Although he had little money, ______ he donated generously.",
       "options": [
-        "yet",
         "but",
+        "yet",
         "and",
         "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Although... yet'."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "correlatives",
       "question": "Speak softly lest someone ______ overhear us.",
       "options": [
-        "should",
-        "would",
         "could",
-        "might"
+        "should",
+        "might",
+        "would"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lest... should'."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "correlatives",
       "question": "From head ______ toe, he was covered in mud.",
       "options": [
-        "to",
         "and",
-        "till",
-        "until"
+        "until",
+        "to",
+        "till"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'From... to'."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "correlatives",
       "question": "I had rather starve ______ beg for food.",
       "options": [
-        "than",
-        "to",
+        "or",
         "then",
-        "or"
+        "to",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Had rather... than'."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "correlatives",
       "question": "The higher the mountain, ______ thinner the air.",
       "options": [
+        "so",
         "the",
-        "a",
         "an",
-        "so"
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'The higher... the thinner'"
     },
     {
@@ -1373,12 +1373,12 @@
       "topic": "correlatives",
       "question": "No sooner did the bell ring ______ the students left the hall.",
       "options": [
-        "than",
-        "then",
+        "as",
         "when",
-        "as"
+        "than",
+        "then"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'No sooner... than' is the mandatory correlative pair."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "correlatives",
       "question": "Hardly had he stepped outside ______ it began to rain.",
       "options": [
-        "when",
         "than",
         "then",
-        "before"
+        "before",
+        "when"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hardly / Scarcely... when' is the correct correlative pair."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "correlatives",
       "question": "Scarcely had the plane landed ______ the engine caught fire.",
       "options": [
-        "when",
-        "than",
         "then",
+        "than",
+        "when",
         "while"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Scarcely... when' is the correlative conjunction."
     },
     {
@@ -1413,9 +1413,9 @@
       "question": "He is not only an orator ______ a prolific writer.",
       "options": [
         "but also",
-        "and also",
         "as well as",
-        "yet"
+        "yet",
+        "and also"
       ],
       "answer": 0,
       "explanation": "'Not only' pairs with 'but also'."
@@ -1438,12 +1438,12 @@
       "topic": "correlatives",
       "question": "Either you apologize ______ you face suspension.",
       "options": [
-        "or",
         "nor",
+        "otherwise",
         "and",
-        "otherwise"
+        "or"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Either' pairs with 'or'."
     },
     {
@@ -1452,9 +1452,9 @@
       "question": "Both Raju ______ his brother attended the ceremony.",
       "options": [
         "and",
-        "as well as",
         "or",
-        "along with"
+        "along with",
+        "as well as"
       ],
       "answer": 0,
       "explanation": "'Both' is strictly followed by 'and'."
@@ -1464,12 +1464,12 @@
       "topic": "correlatives",
       "question": "He had scarcely spoken ______ the crowd interrupted him.",
       "options": [
-        "when",
-        "than",
         "then",
+        "than",
+        "when",
         "while"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Scarcely... when' is the rule."
     },
     {
@@ -1477,12 +1477,12 @@
       "topic": "correlatives",
       "question": "No sooner had the thief seen the police ______ he ran away.",
       "options": [
+        "as",
         "than",
         "when",
-        "then",
-        "as"
+        "then"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'No sooner... than'."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "correlatives",
       "question": "Though he is poor, ______ he is honest.",
       "options": [
-        "yet",
         "but",
-        "so",
-        "and"
+        "yet",
+        "and",
+        "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Though / Although' is paired with 'yet' (or a simple comma, never 'but')."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "correlatives",
       "question": "Although she was tired, ______ she finished the assignment.",
       "options": [
-        "yet",
+        "so",
         "still",
-        "but",
-        "so"
+        "yet",
+        "but"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Although... yet' is the standard correlative."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "correlatives",
       "question": "Whether he stays ______ leaves is of no concern to me.",
       "options": [
-        "or",
         "nor",
         "and",
-        "if"
+        "if",
+        "or"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Whether' pairs with 'or'."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "correlatives",
       "question": "She is as gentle ______ a lamb.",
       "options": [
+        "than",
         "as",
-        "so",
         "like",
-        "than"
+        "so"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Positive comparison uses 'as... as'."
     },
     {
@@ -1543,9 +1543,9 @@
       "question": "He is not so foolish ______ to believe your false story.",
       "options": [
         "as",
-        "that",
         "than",
-        "to"
+        "to",
+        "that"
       ],
       "answer": 0,
       "explanation": "'So... as' used in negative comparisons or with infinitives."
@@ -1555,12 +1555,12 @@
       "topic": "correlatives",
       "question": "The tea was so hot ______ I could not drink it.",
       "options": [
-        "that",
         "as",
+        "to",
         "than",
-        "to"
+        "that"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'So... that' introduces an adverb clause of result."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "correlatives",
       "question": "The box was too heavy ______ him to lift.",
       "options": [
-        "for",
         "to",
         "with",
+        "for",
         "that"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Too... to' or 'too... for somebody to lift'."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "correlatives",
       "question": "Such was his generosity ______ everyone praised him.",
       "options": [
-        "that",
-        "as",
         "than",
-        "which"
+        "as",
+        "which",
+        "that"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Such... that' expresses degree leading to a result."
     },
     {
@@ -1596,8 +1596,8 @@
       "options": [
         "as",
         "that",
-        "which",
-        "who"
+        "who",
+        "which"
       ],
       "answer": 0,
       "explanation": "'Such... as' is used when pointing out category/quality."
@@ -1608,8 +1608,8 @@
       "question": "He behaved in such a manner ______ all were offended.",
       "options": [
         "that",
-        "as",
         "so",
+        "as",
         "than"
       ],
       "answer": 0,
@@ -1620,12 +1620,12 @@
       "topic": "correlatives",
       "question": "I would rather starve ______ beg for food.",
       "options": [
+        "to",
         "than",
         "then",
-        "to",
         "or"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Rather... than' is the correlative for preference."
     },
     {
@@ -1634,8 +1634,8 @@
       "question": "Other people ______ your family may not support you.",
       "options": [
         "than",
-        "then",
         "but",
+        "then",
         "except"
       ],
       "answer": 0,
@@ -1646,12 +1646,12 @@
       "topic": "correlatives",
       "question": "He had no other option ______ to surrender.",
       "options": [
-        "than",
-        "but",
         "except",
-        "besides"
+        "but",
+        "besides",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'No other... than' is standard formal English."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "correlatives",
       "question": "The car is not only economical ______ highly comfortable.",
       "options": [
+        "yet",
         "but also",
         "and",
-        "or",
-        "yet"
+        "or"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Not only... but also'."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "correlatives",
       "question": "Neither praises ______ criticisms could sway his decision.",
       "options": [
-        "nor",
-        "or",
         "and",
+        "or",
+        "nor",
         "but"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Neither... nor'."
     },
     {
@@ -1687,8 +1687,8 @@
       "options": [
         "when",
         "than",
-        "then",
-        "while"
+        "while",
+        "then"
       ],
       "answer": 0,
       "explanation": "'Barely... when' behaves identical to 'Hardly... when'."
@@ -1699,9 +1699,9 @@
       "question": "No sooner did the curtain rise ______ the audience applauded.",
       "options": [
         "than",
+        "after",
         "when",
-        "then",
-        "after"
+        "then"
       ],
       "answer": 0,
       "explanation": "'No sooner... than'."
@@ -1711,12 +1711,12 @@
       "topic": "correlatives",
       "question": "He is neither intelligent ______ diligent.",
       "options": [
-        "nor",
-        "or",
+        "neither",
         "and",
-        "neither"
+        "nor",
+        "or"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Neither... nor'."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "correlatives",
       "question": "I do not know whether she will come ______ not.",
       "options": [
-        "or",
+        "if",
         "nor",
         "and",
-        "if"
+        "or"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Whether... or not'."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "correlatives",
       "question": "As you sow, ______ shall you reap.",
       "options": [
-        "so",
         "as",
-        "than",
-        "like"
+        "so",
+        "like",
+        "than"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Proverbial correlative: 'As... so'."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "correlatives",
       "question": "The higher you climb, ______ colder it becomes.",
       "options": [
-        "the",
+        "so",
         "more",
         "than",
-        "so"
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Parallel increase uses 'The + comparative... the + comparative'."
     },
     {
@@ -1764,9 +1764,9 @@
       "question": "The sooner you finish, ______ better it will be.",
       "options": [
         "the",
+        "more",
         "a",
-        "so",
-        "more"
+        "so"
       ],
       "answer": 0,
       "explanation": "'The sooner... the better'."
@@ -1776,12 +1776,12 @@
       "topic": "correlatives",
       "question": "He is both a painter ______ a musician.",
       "options": [
+        "along with",
         "and",
         "as well as",
-        "along with",
         "also"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Both... and'."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "correlatives",
       "question": "Between 9 a.m. ______ 5 p.m. the bank remains open.",
       "options": [
-        "and",
-        "to",
         "till",
-        "until"
+        "and",
+        "until",
+        "to"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Between' is paired with 'and' (not 'to')."
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "correlatives",
       "question": "Hardly had I closed my eyes ______ the telephone rang.",
       "options": [
-        "when",
         "than",
-        "then",
-        "before"
+        "before",
+        "when",
+        "then"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Hardly... when'."
     },
     {
@@ -1828,12 +1828,12 @@
       "topic": "correlatives",
       "question": "No sooner had the news spread ______ tension mounted.",
       "options": [
-        "than",
+        "while",
         "when",
-        "then",
-        "while"
+        "than",
+        "then"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'No sooner... than'."
     },
     {
@@ -1842,9 +1842,9 @@
       "question": "Scarcely had he reached the bus stop ______ the bus drove away.",
       "options": [
         "when",
-        "than",
+        "as",
         "then",
-        "as"
+        "than"
       ],
       "answer": 0,
       "explanation": "'Scarcely... when'."
@@ -1855,9 +1855,9 @@
       "question": "She was so exhausted ______ she fell asleep on the couch.",
       "options": [
         "that",
-        "as",
+        "so",
         "than",
-        "so"
+        "as"
       ],
       "answer": 0,
       "explanation": "'So... that' shows result."
@@ -1867,12 +1867,12 @@
       "topic": "correlatives",
       "question": "He has not only wealth ______ great fame.",
       "options": [
-        "but also",
-        "and",
         "or",
-        "with"
+        "and",
+        "with",
+        "but also"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Not only... but also'."
     },
     {
@@ -1881,9 +1881,9 @@
       "question": "Would you rather drink coffee ______ tea?",
       "options": [
         "or",
-        "than",
+        "to",
         "and",
-        "to"
+        "than"
       ],
       "answer": 0,
       "explanation": "Alternative query uses 'rather... or'."
@@ -1894,8 +1894,8 @@
       "question": "He would rather die ______ dishonour his country.",
       "options": [
         "than",
-        "then",
         "to",
+        "then",
         "or"
       ],
       "answer": 0,
@@ -1908,8 +1908,8 @@
       "options": [
         "but also",
         "and",
-        "also",
-        "yet"
+        "yet",
+        "also"
       ],
       "answer": 0,
       "explanation": "'Not only... but also'."
@@ -1919,12 +1919,12 @@
       "topic": "correlatives",
       "question": "Neither the chairman nor the directors ______ present yesterday.",
       "options": [
-        "were",
-        "was",
         "is",
+        "was",
+        "were",
         "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "In 'Neither... nor', the verb agrees with the nearer subject ('directors' -> 'were')."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "correlatives",
       "question": "Neither the players nor the coach ______ present.",
       "options": [
-        "was",
         "were",
+        "have been",
         "are",
-        "have been"
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Verb agrees with the nearer subject 'the coach' (singular -> 'was')."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "correlatives",
       "question": "Either my sister or I ______ to be blamed.",
       "options": [
-        "am",
         "is",
         "are",
+        "am",
         "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Verb agrees with the nearer subject 'I' -> 'am'."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "correlatives",
       "question": "Hardly had the meeting commenced ______ an argument broke out.",
       "options": [
-        "when",
         "than",
         "then",
+        "when",
         "while"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Hardly... when'."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "correlatives",
       "question": "Though she was injured, ______ she finished the marathon.",
       "options": [
-        "yet",
-        "but",
         "so",
-        "and"
+        "and",
+        "yet",
+        "but"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Though... yet'."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "correlatives",
       "question": "Such was the intensity of the storm ______ trees were uprooted.",
       "options": [
-        "that",
-        "as",
         "than",
-        "which"
+        "that",
+        "which",
+        "as"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Such... that' expresses degree and consequence."
     }
   ]

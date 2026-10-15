@@ -8,12 +8,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To cry over spilt milk'?",
       "options": [
-        "To regret what cannot be undone",
         "To waste money",
         "To spill milk on the floor",
+        "To regret what cannot be undone",
         "To weep loudly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cry over spilt milk' means to dwell unhappily on past misfortunes that cannot be changed."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A blessing in disguise'?",
       "options": [
-        "A good thing that seemed bad at first",
-        "A curse from God",
         "A secret gift",
-        "A pleasant surprise"
+        "A good thing that seemed bad at first",
+        "A pleasant surprise",
+        "A curse from God"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'A blessing in disguise' is an apparent misfortune that eventually has good results."
     },
     {
@@ -35,9 +35,9 @@
       "question": "What is the meaning of 'Burn the midnight oil'?",
       "options": [
         "To work or study late into the night",
-        "To waste oil",
         "To cause an accident",
-        "To burn candles"
+        "To burn candles",
+        "To waste oil"
       ],
       "answer": 0,
       "explanation": "'Burn the midnight oil' means to read or work late into the night."
@@ -48,9 +48,9 @@
       "question": "What is the meaning of 'Break the ice'?",
       "options": [
         "To initiate a conversation in a tense atmosphere",
-        "To break physical ice",
+        "To quarrel",
         "To serve cold drinks",
-        "To quarrel"
+        "To break physical ice"
       ],
       "answer": 0,
       "explanation": "'Break the ice' means to do or say something that relieves tension in a social situation."
@@ -61,8 +61,8 @@
       "question": "What is the meaning of 'A wild goose chase'?",
       "options": [
         "A foolish, hopeless search or pursuit",
-        "Hunting wild birds",
         "A successful expedition",
+        "Hunting wild birds",
         "A quick race"
       ],
       "answer": 0,
@@ -73,12 +73,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Once in a blue moon'?",
       "options": [
-        "Very rarely",
-        "Every full moon",
         "Frequently",
-        "Never"
+        "Never",
+        "Every full moon",
+        "Very rarely"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Once in a blue moon' means very rarely or almost never."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'At the eleventh hour'?",
       "options": [
-        "At the last possible moment",
-        "At 11:00 AM",
+        "In the morning",
         "Too early",
-        "In the morning"
+        "At the last possible moment",
+        "At 11:00 AM"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'At the eleventh hour' means at the very last moment before a deadline."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Bite the bullet'?",
       "options": [
+        "To lose temper",
         "To face a difficult situation with courage",
         "To get shot in battle",
-        "To eat fast food",
-        "To lose temper"
+        "To eat fast food"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bite the bullet' means to endure a painful or difficult situation that cannot be avoided."
     },
     {
@@ -126,9 +126,9 @@
       "question": "What is the meaning of 'To call a spade a spade'?",
       "options": [
         "To speak frankly and plainly",
+        "To tell a lie",
         "To dig with a spade",
-        "To praise someone falsely",
-        "To tell a lie"
+        "To praise someone falsely"
       ],
       "answer": 0,
       "explanation": "'Call a spade a spade' means to speak plainly and directly about something, even if unpleasant."
@@ -138,12 +138,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To nip in the bud'?",
       "options": [
+        "To encourage growth",
         "To destroy something at an early stage",
         "To pluck flowers",
-        "To water plants",
-        "To encourage growth"
+        "To water plants"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Nip in the bud' means to stop something at an early stage before it can develop into a problem."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Turn a deaf ear'?",
       "options": [
-        "To ignore or refuse to listen",
-        "To suffer hearing loss",
         "To listen eagerly",
+        "To suffer hearing loss",
+        "To ignore or refuse to listen",
         "To consult a doctor"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Turn a deaf ear' means to deliberately refuse to listen or pay attention."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A bone of contention'?",
       "options": [
+        "A peaceful agreement",
         "A subject or issue over which there is dispute",
-        "A dog's bone",
         "A piece of skeleton",
-        "A peaceful agreement"
+        "A dog's bone"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'A bone of contention' is a subject or issue over which there is continuing disagreement."
     },
     {
@@ -178,9 +178,9 @@
       "question": "What is the meaning of 'Spill the beans'?",
       "options": [
         "To reveal a secret carelessly",
+        "To waste money",
         "To drop vegetables",
-        "To cook food",
-        "To waste money"
+        "To cook food"
       ],
       "answer": 0,
       "explanation": "'Spill the beans' means to disclose a secret prematurely or untruthfully."
@@ -203,12 +203,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To leave no stone unturned'?",
       "options": [
-        "To try every possible means to achieve something",
-        "To move heavy rocks",
+        "To build a wall",
         "To dig the ground",
-        "To build a wall"
+        "To move heavy rocks",
+        "To try every possible means to achieve something"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Leave no stone unturned' means to try every possible course of action in order to achieve something."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Through thick and thin'?",
       "options": [
-        "Under all conditions, both good and bad",
         "Through fat and lean",
+        "Under all conditions, both good and bad",
         "In difficult terrain",
         "Through forests and rivers"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Through thick and thin' means under all circumstances, no matter how difficult."
     },
     {
@@ -230,9 +230,9 @@
       "question": "What is the meaning of 'Add insult to injury'?",
       "options": [
         "To make a bad situation even worse",
-        "To treat a wound",
+        "To fight physically",
         "To apologize sincerely",
-        "To fight physically"
+        "To treat a wound"
       ],
       "answer": 0,
       "explanation": "'Add insult to injury' means to act in a way that worsens an already bad situation."
@@ -255,12 +255,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'By fits and starts'?",
       "options": [
-        "Irregularly and spasmodically",
         "Quickly and steadily",
         "Very enthusiastically",
-        "Without stopping"
+        "Without stopping",
+        "Irregularly and spasmodically"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'By fits and starts' means occurring with irregular intervals and stop-start motions."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A white elephant'?",
       "options": [
-        "A costly possession useless to the owner",
+        "An auspicious omen",
         "A rare animal in Thailand",
-        "A holy temple beast",
-        "An auspicious omen"
+        "A costly possession useless to the owner",
+        "A holy temple beast"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'A white elephant' is an expensive possession that is burdensome and difficult to maintain."
     },
     {
@@ -283,8 +283,8 @@
       "options": [
         "To discourage someone's enthusiasm",
         "To take a cold bath",
-        "To quench a fire",
-        "To clean the floor"
+        "To clean the floor",
+        "To quench a fire"
       ],
       "answer": 0,
       "explanation": "'Throw cold water on' means to be unenthusiastic and discourage a plan or idea."
@@ -296,8 +296,8 @@
       "options": [
         "To understand the hidden meaning",
         "To read carefully",
-        "To skip lines while reading",
-        "To read tiny print"
+        "To read tiny print",
+        "To skip lines while reading"
       ],
       "answer": 0,
       "explanation": "'Read between the lines' means to perceive a deeper, unexpressed meaning."
@@ -308,9 +308,9 @@
       "question": "What is the meaning of 'To blow one's own trumpet'?",
       "options": [
         "To praise oneself excessively",
+        "To criticize others",
         "To play musical instruments",
-        "To make loud noise",
-        "To criticize others"
+        "To make loud noise"
       ],
       "answer": 0,
       "explanation": "'Blow one's own trumpet' means to boast or talk proudly about one's achievements."
@@ -320,12 +320,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A fish out of water'?",
       "options": [
+        "A thirsty person",
         "A person out of his usual environment",
         "A dying animal",
-        "A thirsty person",
         "An experienced swimmer"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'A fish out of water' is a person who is uncomfortable in unfamiliar surroundings."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To smell a rat'?",
       "options": [
-        "To suspect a trick or deception",
-        "To catch a rodent",
+        "To clean the kitchen",
         "To smell a foul odor",
-        "To clean the kitchen"
+        "To suspect a trick or deception",
+        "To catch a rodent"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Smell a rat' means to suspect foul play or deceit."
     },
     {
@@ -347,9 +347,9 @@
       "question": "What is the meaning of 'In the nick of time'?",
       "options": [
         "Just in time, before it's too late",
-        "Too late",
+        "At an improper time",
         "Early in the morning",
-        "At an improper time"
+        "Too late"
       ],
       "answer": 0,
       "explanation": "'In the nick of time' means only just in time; at the last possible moment."
@@ -359,12 +359,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To bury the hatchet'?",
       "options": [
-        "To end a quarrel and make peace",
         "To dig a grave",
         "To hide weapons",
-        "To prepare for war"
+        "To prepare for war",
+        "To end a quarrel and make peace"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bury the hatchet' means to make peace and end conflict."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'An axe to grind'?",
       "options": [
-        "A selfish or private motive to serve",
         "To sharpen tools",
         "To chop firewood",
+        "A selfish or private motive to serve",
         "To be helpful"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'An axe to grind' means to have a private reason for being involved in something or doing something."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To hit the nail on the head'?",
       "options": [
-        "To state something with exact accuracy",
-        "To hammer a nail",
         "To injure one's finger",
-        "To make a big blunder"
+        "To make a big blunder",
+        "To hammer a nail",
+        "To state something with exact accuracy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hit the nail on the head' means to describe exactly what is causing a situation or problem."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To burn the candle at both ends'?",
       "options": [
-        "To exhaust one's energy by working too hard",
-        "To save wax",
         "To illuminate a room",
-        "To celebrate a festival"
+        "To celebrate a festival",
+        "To save wax",
+        "To exhaust one's energy by working too hard"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Burn the candle at both ends' means to overwork and exhaust oneself."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Face the music'?",
       "options": [
-        "To accept the unpleasant consequences of one's actions",
-        "To listen to an orchestra",
         "To sing a song",
-        "To play guitar"
+        "To play guitar",
+        "To listen to an orchestra",
+        "To accept the unpleasant consequences of one's actions"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Face the music' means to confront reality and accept unpleasant consequences."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A dark horse'?",
       "options": [
-        "A candidate who wins unexpectedly",
+        "A night rider",
         "A black stallion",
         "An evil person",
-        "A night rider"
+        "A candidate who wins unexpectedly"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'A dark horse' is a candidate or competitor about whom little is known but who unexpectedly wins."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To tooth and nail'?",
       "options": [
-        "With all one's strength and fierceness",
         "Using teeth to bite",
-        "Without any weapons",
-        "Slowly and steadily"
+        "Slowly and steadily",
+        "With all one's strength and fierceness",
+        "Without any weapons"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Fight tooth and nail' means to fight with great ferocity and every resource available."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Gift of the gab'?",
       "options": [
+        "Ability to sing",
         "Talent for speaking eloquently and persuasively",
         "A valuable present",
-        "Gossip among friends",
-        "Ability to sing"
+        "Gossip among friends"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Gift of the gab' is the ability to speak easily and confidently in a way that makes people listen."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To turn over a new leaf'?",
       "options": [
+        "To become a vegetarian",
         "To change one's behavior for the better",
-        "To turn pages of a book",
         "To plant new trees",
-        "To become a vegetarian"
+        "To turn pages of a book"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Turn over a new leaf' means to start behaving in a better and more responsible way."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To make both ends meet'?",
       "options": [
-        "To live within one's income",
-        "To tie two ropes together",
         "To finish a marathon",
-        "To join two pipes"
+        "To tie two ropes together",
+        "To join two pipes",
+        "To live within one's income"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Make both ends meet' means to earn just enough money to cover essential expenses."
     },
     {
@@ -490,9 +490,9 @@
       "question": "What is the meaning of 'Under the weather'?",
       "options": [
         "Slightly unwell or sick",
+        "Predicting climate",
         "Caught in rain",
-        "Flying an airplane",
-        "Predicting climate"
+        "Flying an airplane"
       ],
       "answer": 0,
       "explanation": "'Under the weather' means slightly ill or unwell."
@@ -504,8 +504,8 @@
       "options": [
         "Unfriendly or dismissive treatment",
         "Cold meat",
-        "Frozen joints",
-        "Shivering with cold"
+        "Shivering with cold",
+        "Frozen joints"
       ],
       "answer": 0,
       "explanation": "'Give someone the cold shoulder' means to intentionally ignore or treat someone coldly."
@@ -515,12 +515,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Cost an arm and a leg'?",
       "options": [
+        "Hospital bill",
         "Extremely expensive",
-        "Physical amputation",
         "Military casualty",
-        "Hospital bill"
+        "Physical amputation"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Cost an arm and a leg' means to be very expensive."
     },
     {
@@ -542,9 +542,9 @@
       "question": "What is the meaning of 'To shed crocodile tears'?",
       "options": [
         "To display insincere or false sorrow",
+        "To be truly heartbroken",
         "Tears of a reptile",
-        "To weep bitterly",
-        "To be truly heartbroken"
+        "To weep bitterly"
       ],
       "answer": 0,
       "explanation": "'Crocodile tears' are tears or expressions of sorrow that are insincere."
@@ -554,12 +554,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A fair-weather friend'?",
       "options": [
-        "A friend who supports only during good times",
-        "A friend who loves rainy days",
         "A lifelong loyal companion",
-        "A weather forecaster"
+        "A weather forecaster",
+        "A friend who supports only during good times",
+        "A friend who loves rainy days"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'A fair-weather friend' is someone who stops being friendly when troubles arise."
     },
     {
@@ -568,9 +568,9 @@
       "question": "What is the meaning of 'Barking up the wrong tree'?",
       "options": [
         "Pursuing a mistaken line of thought or action",
+        "Shouting loudly",
         "A dog chasing a cat",
-        "Cutting down trees",
-        "Shouting loudly"
+        "Cutting down trees"
       ],
       "answer": 0,
       "explanation": "'Barking up the wrong tree' means pursuing a mistaken direction or accusing the wrong person."
@@ -580,12 +580,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To take with a grain of salt'?",
       "options": [
-        "To accept with skepticism or doubt",
+        "To buy groceries",
         "To season food",
-        "To believe wholeheartedly",
-        "To buy groceries"
+        "To accept with skepticism or doubt",
+        "To believe wholeheartedly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Take with a grain of salt' means to maintain a degree of skepticism about information."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To grease someone's palm'?",
       "options": [
-        "To bribe someone",
         "To massage hands",
         "To shake hands",
-        "To clean grease"
+        "To clean grease",
+        "To bribe someone"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Grease someone's palm' means to bribe someone."
     },
     {
@@ -607,9 +607,9 @@
       "question": "What is the meaning of 'Kicking the bucket'?",
       "options": [
         "To die",
+        "To wash clothes",
         "To play football",
-        "To drop a vessel",
-        "To wash clothes"
+        "To drop a vessel"
       ],
       "answer": 0,
       "explanation": "'Kick the bucket' is an informal idiom meaning to die."
@@ -619,12 +619,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To see red'?",
       "options": [
-        "To become extremely angry",
+        "To suffer eye disease",
         "To wear red clothes",
         "To stop at traffic lights",
-        "To suffer eye disease"
+        "To become extremely angry"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'See red' means to suddenly become very angry."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'In black and white'?",
       "options": [
+        "Good and evil",
         "In written or printed form",
         "A monochrome photograph",
-        "Good and evil",
         "Chess board pattern"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'In black and white' means written down or printed as official documentation."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To weather the storm'?",
       "options": [
+        "To sail in rough seas",
         "To survive a difficult period successfully",
         "To forecast bad weather",
-        "To sail in rough seas",
         "To cancel an outdoor trip"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Weather the storm' means to successfully handle a crisis or difficult situation."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Penny wise and pound foolish'?",
       "options": [
-        "Careful with small amounts but wasteful with large sums",
+        "A foolish beggar",
         "A wealthy businessman",
         "A wise banker",
-        "A foolish beggar"
+        "Careful with small amounts but wasteful with large sums"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Penny wise and pound foolish' means prudent in small matters but reckless in large ones."
     },
     {
@@ -672,9 +672,9 @@
       "question": "What is the meaning of 'To let the cat out of the bag'?",
       "options": [
         "To disclose a secret, often unintentionally",
-        "To free a captured pet",
         "To adopt a kitten",
-        "To play a practical joke"
+        "To play a practical joke",
+        "To free a captured pet"
       ],
       "answer": 0,
       "explanation": "'Let the cat out of the bag' means to reveal a secret accidentally."
@@ -684,12 +684,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'By hook or by crook'?",
       "options": [
-        "By any means possible, fair or foul",
         "Using fishing tools",
         "With a shepherd's staff",
+        "By any means possible, fair or foul",
         "Honestly and legally"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'By hook or by crook' means by any method possible, whether legal or illegal."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To take French leave'?",
       "options": [
+        "To speak French fluently",
         "To leave without permission or notice",
         "To visit France on holiday",
-        "To speak French fluently",
         "To arrive late"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'French leave' is absence from work or a gathering without asking for permission."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To pay lip service'?",
       "options": [
-        "To express verbal approval without taking action",
+        "To sing a hymn",
         "To kiss someone",
-        "To speak softly",
-        "To sing a hymn"
+        "To express verbal approval without taking action",
+        "To speak softly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Pay lip service' means to say that you agree with something but do nothing to support it."
     },
     {
@@ -724,9 +724,9 @@
       "question": "What is the meaning of 'To wash dirty linen in public'?",
       "options": [
         "To discuss private unpleasant matters openly",
-        "To wash clothes outside",
+        "To display garments",
         "To operate a laundry",
-        "To display garments"
+        "To wash clothes outside"
       ],
       "answer": 0,
       "explanation": "'Wash dirty linen in public' means to discuss personal or domestic quarrels openly."
@@ -738,8 +738,8 @@
       "options": [
         "To take advantage of a chaotic situation for personal gain",
         "To catch fish during storms",
-        "To swim in rough seas",
-        "To clean muddy ponds"
+        "To clean muddy ponds",
+        "To swim in rough seas"
       ],
       "answer": 0,
       "explanation": "'Fish in troubled waters' means to make profit or gain out of other people's troubles."
@@ -749,12 +749,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To kill two birds with one stone'?",
       "options": [
-        "To accomplish two different things with a single action",
         "Hunting with catapult",
         "Wasting stones",
+        "To accomplish two different things with a single action",
         "Double murder"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Kill two birds with one stone' means to achieve two goals with one action."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Out of the frying pan into the fire'?",
       "options": [
-        "From a bad situation to an even worse one",
-        "Cooking food",
         "Extinguishing a kitchen blaze",
-        "Escaping unharmed"
+        "Escaping unharmed",
+        "From a bad situation to an even worse one",
+        "Cooking food"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Out of the frying pan into the fire' means moving from a bad situation to one that is much worse."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To build castles in the air'?",
       "options": [
-        "To make unrealistic or daydreaming plans",
+        "To build sandcastles",
         "To design skyscrapers",
         "To fly airplanes",
-        "To build sandcastles"
+        "To make unrealistic or daydreaming plans"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Build castles in the air' means to create daydream schemes that have no chance of success."
     },
     {
@@ -789,8 +789,8 @@
       "question": "What is the meaning of 'To cast pearls before swine'?",
       "options": [
         "To offer valuable things to people who cannot appreciate them",
-        "To feed pigs jewelry",
         "To buy expensive pearls",
+        "To feed pigs jewelry",
         "To clean animal sheds"
       ],
       "answer": 0,
@@ -801,12 +801,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To burn one's boats'?",
       "options": [
-        "To take an action that leaves no possibility of retreat",
-        "To cause shipwreck",
         "To set fire to timber",
-        "To purchase ships"
+        "To take an action that leaves no possibility of retreat",
+        "To purchase ships",
+        "To cause shipwreck"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Burn one's boats / bridges' means to eliminate any possibility of returning to a previous state."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A wolf in sheep's clothing'?",
       "options": [
-        "A dangerous enemy disguised as a harmless friend",
-        "A predator animal",
+        "A cowardly person",
         "A disguised shepherd",
-        "A cowardly person"
+        "A dangerous enemy disguised as a harmless friend",
+        "A predator animal"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'A wolf in sheep's clothing' is a dangerous person who pretends to be harmless."
     },
     {
@@ -827,12 +827,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To hold water'?",
       "options": [
-        "To be valid, sound, and reasonable",
-        "To fill a bucket",
         "To swim well",
-        "To retain moisture"
+        "To retain moisture",
+        "To be valid, sound, and reasonable",
+        "To fill a bucket"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "An argument that 'holds water' is logical, tenable, and factually sound."
     },
     {
@@ -840,12 +840,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A bed of roses'?",
       "options": [
-        "A state of easy and comfortable life",
+        "A luxury mattress",
         "A florist's garden",
-        "A fragrant blanket",
-        "A luxury mattress"
+        "A state of easy and comfortable life",
+        "A fragrant blanket"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'A bed of roses' is a situation or activity that is comfortable or easy."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'Not a bed of roses'?",
       "options": [
-        "Difficult and full of hardships",
         "A thorny garden",
         "Uncomfortable furniture",
-        "Lack of sleep"
+        "Lack of sleep",
+        "Difficult and full of hardships"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Not a bed of roses' means full of difficulties and unpleasant struggles."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To cry wolf'?",
       "options": [
-        "To raise false alarms repeatedly",
-        "To howl at midnight",
         "To be attacked by wolves",
-        "To weep loudly"
+        "To weep loudly",
+        "To raise false alarms repeatedly",
+        "To howl at midnight"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cry wolf' means to ask for help when it is not needed, so that people don't believe you when you do."
     },
     {
@@ -880,9 +880,9 @@
       "question": "What is the meaning of 'To leave in the lurch'?",
       "options": [
         "To abandon someone in a difficult situation",
-        "To assist in emergency",
         "To accompany a friend",
-        "To guide safely"
+        "To guide safely",
+        "To assist in emergency"
       ],
       "answer": 0,
       "explanation": "'Leave in the lurch' means to desert someone in trouble or distress."
@@ -893,9 +893,9 @@
       "question": "What is the meaning of 'To keep at arm's length'?",
       "options": [
         "To maintain distance and avoid intimacy",
+        "To push someone away",
         "To measure cloth",
-        "To exercise arms",
-        "To push someone away"
+        "To exercise arms"
       ],
       "answer": 0,
       "explanation": "'Keep at arm's length' means to avoid becoming too friendly with someone."
@@ -905,12 +905,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A red-letter day'?",
       "options": [
-        "A memorable and joyful day",
         "A holiday on calendar",
+        "A memorable and joyful day",
         "A day of danger",
         "A blood donation day"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'A red-letter day' is a pleasantly notable or memorable day."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To spill ink'?",
       "options": [
-        "To write frequently or author books",
         "To drop stationery",
-        "To stain garments",
-        "To sign a contract"
+        "To sign a contract",
+        "To write frequently or author books",
+        "To stain garments"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Spill ink' idiomatically refers to writing extensively."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To have cold feet'?",
       "options": [
-        "To lose courage or become nervous",
-        "To suffer frostbite",
+        "To run quickly",
         "To walk barefoot",
-        "To run quickly"
+        "To suffer frostbite",
+        "To lose courage or become nervous"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Have cold feet' means to experience sudden loss of nerve or courage."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To let sleeping dogs lie'?",
       "options": [
-        "To avoid restarting an old dispute",
+        "To guard the house",
         "To put pets to sleep",
         "To walk quietly",
-        "To guard the house"
+        "To avoid restarting an old dispute"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Let sleeping dogs lie' means to leave a situation undisturbed to avoid causing problems."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To jump out of one's skin'?",
       "options": [
-        "To be extremely startled or frightened",
-        "To shed body skin",
         "To undergo surgery",
-        "To jump over hurdles"
+        "To jump over hurdles",
+        "To be extremely startled or frightened",
+        "To shed body skin"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Jump out of one's skin' means to be very shocked or terrified."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To put the cart before the horse'?",
       "options": [
-        "To do things in the wrong or reverse order",
         "To drive a carriage",
         "To ride backwards",
+        "To do things in the wrong or reverse order",
         "To overload an animal"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Put the cart before the horse' means to reverse the proper order of things."
     },
     {
@@ -984,9 +984,9 @@
       "question": "What is the meaning of 'A storm in a teacup'?",
       "options": [
         "Great excitement or worry over a trivial matter",
-        "Boiling tea",
         "A broken cup",
-        "A cyclone at sea"
+        "A cyclone at sea",
+        "Boiling tea"
       ],
       "answer": 0,
       "explanation": "'A storm in a teacup' is great outrage or excitement about a trivial matter."
@@ -996,12 +996,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To pay someone in his own coin'?",
       "options": [
+        "To exchange currency",
         "To retaliate in the exact same manner",
-        "To repay a debt with money",
         "To award prizes",
-        "To exchange currency"
+        "To repay a debt with money"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Pay in one's own coin' means to treat someone in the same bad way they treated you."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To play with fire'?",
       "options": [
-        "To take foolish and dangerous risks",
-        "To ignite fireworks",
         "To cook meals",
-        "To extinguish flames"
+        "To take foolish and dangerous risks",
+        "To extinguish flames",
+        "To ignite fireworks"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Play with fire' means to take foolish risks that could lead to disaster."
     },
     {
@@ -1023,9 +1023,9 @@
       "question": "What is the meaning of 'To keep the wolf from the door'?",
       "options": [
         "To ward off starvation and poverty",
-        "To hunt wild wolves",
         "To lock the entrance",
-        "To protect livestock"
+        "To protect livestock",
+        "To hunt wild wolves"
       ],
       "answer": 0,
       "explanation": "'Keep the wolf from the door' means to have enough money to avoid starvation."
@@ -1035,12 +1035,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To make hay while the sun shines'?",
       "options": [
+        "To dry clothes",
         "To take advantage of an opportunity while conditions are favorable",
         "To harvest crops in fields",
-        "To work in the afternoon",
-        "To dry clothes"
+        "To work in the afternoon"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Make hay while the sun shines' means to seize good opportunities."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To take the bull by the horns'?",
       "options": [
-        "To face a difficult danger directly and boldly",
         "To wrestle a bull",
+        "To catch cattle",
         "To run away from danger",
-        "To catch cattle"
+        "To face a difficult danger directly and boldly"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Take the bull by the horns' means to deal with a difficult situation directly and courageously."
     },
     {
@@ -1062,9 +1062,9 @@
       "question": "What is the meaning of 'A thorn in the flesh'?",
       "options": [
         "A persistent source of annoyance or trouble",
+        "A painful splinter",
         "A physical injury",
-        "A rose plant stem",
-        "A painful splinter"
+        "A rose plant stem"
       ],
       "answer": 0,
       "explanation": "'A thorn in the flesh' is a continual cause of trouble or irritation."
@@ -1074,12 +1074,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To be in hot water'?",
       "options": [
-        "To be in serious trouble",
-        "To take a warm bath",
         "To drink boiling water",
-        "To sweat in summer"
+        "To be in serious trouble",
+        "To sweat in summer",
+        "To take a warm bath"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Be in hot water' means to be in a difficult or disgraceful situation."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'At the drop of a hat'?",
       "options": [
-        "Instantly and without hesitation",
-        "When someone loses a cap",
+        "Accidentally",
         "After careful planning",
-        "Accidentally"
+        "Instantly and without hesitation",
+        "When someone loses a cap"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'At the drop of a hat' means immediately, without hesitation."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To grease the wheels'?",
       "options": [
+        "To repair engines",
         "To facilitate smooth progress of an affair",
         "To lubricate vehicle machinery",
-        "To repair engines",
         "To drive fast"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Grease the wheels' means to help things run smoothly or make things happen faster."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To beat the clock'?",
       "options": [
-        "To finish before the allotted time runs out",
-        "To break a clock",
         "To stop an alarm",
-        "To wake up early"
+        "To finish before the allotted time runs out",
+        "To wake up early",
+        "To break a clock"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Beat the clock' means to finish something before the deadline."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To hit below the belt'?",
       "options": [
-        "To act in an unfair or unsporting manner",
         "A boxing foul",
         "To wear clothes loosely",
+        "To act in an unfair or unsporting manner",
         "To fall down"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Hit below the belt' means to say or do something unfair and cruel."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To rule the roost'?",
       "options": [
-        "To be the dominant person in a group",
+        "To live on a farm",
         "To keep domestic hens",
         "To build a nest",
-        "To live on a farm"
+        "To be the dominant person in a group"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Rule the roost' means to be in complete control or dominate a household/group."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To paddle one's own canoe'?",
       "options": [
-        "To be independent and self-reliant",
-        "To row boats on a river",
         "To travel by water",
-        "To buy sports equipment"
+        "To be independent and self-reliant",
+        "To buy sports equipment",
+        "To row boats on a river"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Paddle one's own canoe' means to act independently and rely on oneself."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To see through someone'?",
       "options": [
-        "To realize someone's true motives or trickery",
-        "To look through glass",
         "To use an X-ray",
-        "To examine closely"
+        "To examine closely",
+        "To realize someone's true motives or trickery",
+        "To look through glass"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'See through someone' means to recognize someone's deception."
     },
     {
@@ -1178,12 +1178,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To give up the ghost'?",
       "options": [
-        "To die or cease functioning",
+        "To surrender in battle",
         "To exorcise evil spirits",
         "To be frightened of ghosts",
-        "To surrender in battle"
+        "To die or cease functioning"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Give up the ghost' means to die, or for a machine to stop working."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To smell like a rose'?",
       "options": [
-        "To come out of a bad situation with one's reputation intact",
-        "To wear perfume",
         "To cultivate flowers",
-        "To bathe frequently"
+        "To wear perfume",
+        "To bathe frequently",
+        "To come out of a bad situation with one's reputation intact"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Smell like a rose' means to look good or untainted after an ordeal."
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To have bigger fish to fry'?",
       "options": [
+        "To be very hungry",
         "To have more important matters to attend to",
-        "To cook large seafood",
         "To catch a big fish",
-        "To be very hungry"
+        "To cook large seafood"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bigger fish to fry' means to have more important or interesting things to do."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To pour oil on troubled waters'?",
       "options": [
-        "To soothe a quarrel and calm anger",
-        "To cause marine pollution",
         "To light lamps",
-        "To clean water tanks"
+        "To soothe a quarrel and calm anger",
+        "To clean water tanks",
+        "To cause marine pollution"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Pour oil on troubled waters' means to try to settle a dispute calmly."
     },
     {
@@ -1232,8 +1232,8 @@
       "options": [
         "To argue over petty, insignificant details",
         "To cut one's hair",
-        "To comb roughly",
-        "To suffer hair fall"
+        "To suffer hair fall",
+        "To comb roughly"
       ],
       "answer": 0,
       "explanation": "'Split hairs' means to make fine, petty, and trivial distinctions."
@@ -1243,12 +1243,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To tie the knot'?",
       "options": [
-        "To get married",
         "To tie a rope",
+        "To get married",
         "To finish weaving",
         "To solve a puzzle"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Tie the knot' means to get married."
     },
     {
@@ -1256,12 +1256,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To burn the bridges'?",
       "options": [
-        "To destroy all chances of returning or reconciling",
+        "To build crossings",
         "To demolish structures",
         "To set fire to timber",
-        "To build crossings"
+        "To destroy all chances of returning or reconciling"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Burn bridges' means to permanently eliminate the path to return or reconcile."
     },
     {
@@ -1269,12 +1269,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To wash one's hands of'?",
       "options": [
-        "To refuse to have any further involvement with",
         "To clean hands with soap",
-        "To finish meals",
-        "To perform surgery"
+        "To refuse to have any further involvement with",
+        "To perform surgery",
+        "To finish meals"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Wash one's hands of' means to disclaim any responsibility for someone or something."
     },
     {
@@ -1282,12 +1282,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To go to the dogs'?",
       "options": [
-        "To deteriorate or be completely ruined",
+        "To run with animals",
         "To breed pets",
-        "To visit a kennel",
-        "To run with animals"
+        "To deteriorate or be completely ruined",
+        "To visit a kennel"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Go to the dogs' means to deteriorate into ruin or bad state."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To blow hot and cold'?",
       "options": [
-        "To vacillate and change one's opinions constantly",
         "To suffer seasonal fever",
         "To drink warm water",
+        "To vacillate and change one's opinions constantly",
         "To operate air conditioner"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Blow hot and cold' means to alternate constantly between opposing attitudes."
     },
     {
@@ -1322,9 +1322,9 @@
       "question": "What is the meaning of 'To lose one's head'?",
       "options": [
         "To lose one's composure or self-control",
+        "To forget one's name",
         "To suffer beheading",
-        "To lose one's hat",
-        "To forget one's name"
+        "To lose one's hat"
       ],
       "answer": 0,
       "explanation": "'Lose one's head' means to panic or become so upset that one acts foolishly."
@@ -1334,12 +1334,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'A laughing stock'?",
       "options": [
-        "An object of general ridicule and mockery",
         "A funny comedy show",
-        "A smiling person",
-        "A cattle market"
+        "An object of general ridicule and mockery",
+        "A cattle market",
+        "A smiling person"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'A laughing stock' is an object of common ridicule."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of 'To have an itching palm'?",
       "options": [
-        "To be greedy for money and bribes",
         "To suffer skin rash",
+        "To shake hands",
         "To count coins",
-        "To shake hands"
+        "To be greedy for money and bribes"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'An itching palm' is a desire for bribes or money."
     },
     {
@@ -1361,8 +1361,8 @@
       "question": "What is the meaning of 'At sea'?",
       "options": [
         "Perplexed, confused, and bewildered",
-        "Sailing on an ocean",
         "Drowning in water",
+        "Sailing on an ocean",
         "Visiting beaches"
       ],
       "answer": 0,
@@ -1373,12 +1373,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Pyrrhic victory':",
       "options": [
+        "A dishonorable retreat",
         "A victory gained at too great a cost",
         "A decisive triumph",
-        "An easy win",
-        "A dishonorable retreat"
+        "An easy win"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Pyrrhic victory' refers to a success gained with devastating losses."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Wipe the nose':",
       "options": [
-        "To cheat or defraud someone",
         "To clean up a mess",
+        "To cheat or defraud someone",
         "To apologize sincerely",
         "To catch a cold"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kerala PSC idiom meaning to swindle or cheat someone."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'At beck and call':",
       "options": [
-        "Ready to obey someone's orders immediately",
+        "In high spirits",
         "At a great distance",
         "In a desperate state",
-        "In high spirits"
+        "Ready to obey someone's orders immediately"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'At beck and call' means completely at someone's service."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'To take with a grain of salt':",
       "options": [
-        "To accept with skepticism or doubt",
-        "To season food carefully",
         "To reject completely",
-        "To believe wholeheartedly"
+        "To accept with skepticism or doubt",
+        "To believe wholeheartedly",
+        "To season food carefully"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "To view a claim with healthy reservation or skepticism."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Salad days':",
       "options": [
-        "The days of one's youthful inexperience",
-        "Retirement years",
         "Times of great famine",
+        "Retirement years",
+        "The days of one's youthful inexperience",
         "Healthy lifestyle"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Salad days' refers to youthful, inexperienced times."
     },
     {
@@ -1439,9 +1439,9 @@
       "question": "Meaning of the idiom 'To foot the bill':",
       "options": [
         "To pay the entire expense",
-        "To kick away a bill",
+        "To refuse payment",
         "To calculate interest",
-        "To refuse payment"
+        "To kick away a bill"
       ],
       "answer": 0,
       "explanation": "'Foot the bill' means to bear the financial cost."
@@ -1452,9 +1452,9 @@
       "question": "Meaning of the idiom 'Start from scratch':",
       "options": [
         "To begin from the very beginning with no advantage",
+        "To join a race",
         "To rub an itch",
-        "To rebuild a ruin",
-        "To join a race"
+        "To rebuild a ruin"
       ],
       "answer": 0,
       "explanation": "'From scratch' means from zero or ground level."
@@ -1464,12 +1464,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Once in a blue moon':",
       "options": [
-        "Very rarely / almost never",
         "Every month",
         "On full moon nights",
-        "Frequently"
+        "Frequently",
+        "Very rarely / almost never"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Once in a blue moon' denotes an extremely rare event."
     },
     {
@@ -1477,12 +1477,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Break a leg':",
       "options": [
-        "Good luck! (theatrical wish)",
         "To suffer an accident",
         "To lose a competition",
-        "To stop running"
+        "To stop running",
+        "Good luck! (theatrical wish)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Traditional wish of good luck given to performers."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Jump the gun':",
       "options": [
-        "To act too hastily or prematurely",
         "To shoot in panic",
         "To escape from jail",
-        "To disobey an officer"
+        "To disobey an officer",
+        "To act too hastily or prematurely"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Jump the gun' means to start before the signal or before time."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Hit the roof':",
       "options": [
-        "To become intensely angry",
         "To fix a ceiling",
         "To win a big prize",
+        "To become intensely angry",
         "To jump high"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Hit the roof' means to lose one's temper violently."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'To get under one's skin':",
       "options": [
-        "To irritate or annoy someone persistently",
+        "To flatter excessively",
         "To infect with a rash",
         "To comfort deeply",
-        "To flatter excessively"
+        "To irritate or annoy someone persistently"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "To bother or irritate someone continually."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'At a low ebb':",
       "options": [
-        "In a depressed, declining, or weak state",
-        "During high tide",
         "At the height of success",
-        "In deep water"
+        "In deep water",
+        "During high tide",
+        "In a depressed, declining, or weak state"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'At a low ebb' describes a weakened, declining condition."
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Draw a longbow':",
       "options": [
-        "To make exaggerated or far-fetched claims",
         "To hunt with an arrow",
         "To challenge an opponent",
-        "To aim with precision"
+        "To aim with precision",
+        "To make exaggerated or far-fetched claims"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Draw a longbow' means to exaggerate wildly."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Eat like a bird':",
       "options": [
-        "To eat very little food",
-        "To eat seeds only",
         "To eat fast",
+        "To eat seeds only",
+        "To eat very little food",
         "To steal food"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Eat like a bird' denotes consuming tiny portions."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Pull the strings':",
       "options": [
-        "To secretly manipulate or control behind the scenes",
-        "To play a violin",
+        "To operate a kite",
         "To open a parcel",
-        "To operate a kite"
+        "To play a violin",
+        "To secretly manipulate or control behind the scenes"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Pull the strings' means exercising covert control."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Call the shots':",
       "options": [
-        "To be in charge and make key decisions",
         "To aim a rifle",
-        "To shout orders in battle",
-        "To predict the future"
+        "To be in charge and make key decisions",
+        "To predict the future",
+        "To shout orders in battle"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Call the shots' means being the chief decision-maker."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Know the ropes':",
       "options": [
-        "To know the ins and outs of a job",
         "To tie secure knots",
-        "To be in bondage",
-        "To walk on a tightrope"
+        "To know the ins and outs of a job",
+        "To walk on a tightrope",
+        "To be in bondage"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Know the ropes' means having complete practical knowledge."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Walk the talk':",
       "options": [
-        "To put one's words and promises into action",
-        "To talk while walking",
         "To give a speech",
-        "To march in silence"
+        "To march in silence",
+        "To talk while walking",
+        "To put one's words and promises into action"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Walk the talk' means practicing what one preaches."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'See the light of day':",
       "options": [
+        "To recover sight",
         "To become known, revealed, or born",
-        "To wake up early",
         "To see sunrise",
-        "To recover sight"
+        "To wake up early"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'See the light of day' means to come into public knowledge or existence."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Bite the bullet':",
       "options": [
-        "To face a painful situation with fortitude",
         "To swallow a pellet",
+        "To surrender weapons",
         "To fight fiercely",
-        "To surrender weapons"
+        "To face a painful situation with fortitude"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Bite the bullet' means accepting unavoidable hardship bravely."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'A piece of cake':",
       "options": [
-        "Something extremely easy to do",
         "A delicious treat",
         "A birthday celebration",
+        "Something extremely easy to do",
         "A small portion"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'A piece of cake' signifies a very simple task."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Walk the tightrope':",
       "options": [
+        "To commit suicide",
         "To act with extreme caution in a delicate situation",
-        "To be an acrobat",
         "To take wild risks",
-        "To commit suicide"
+        "To be an acrobat"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Walk the tightrope' means balancing precarious conflicting demands."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'God's ape':",
       "options": [
-        "A born fool or simpleton",
         "A holy monkey",
+        "A born fool or simpleton",
         "A wise saint",
         "An obedient worshipper"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Classical Kerala PSC idiom for a natural fool or simpleton."
     },
     {
@@ -1700,8 +1700,8 @@
       "options": [
         "An overly optimistic, unrealistic view of things",
         "Fashionable spectacles",
-        "Reading glasses",
-        "A blurred perspective"
+        "A blurred perspective",
+        "Reading glasses"
       ],
       "answer": 0,
       "explanation": "Viewing situations through naive optimism."
@@ -1711,12 +1711,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Every trick in the book':",
       "options": [
-        "Every possible method or strategy available",
         "Cheating in exams",
         "A magician's handbook",
+        "Every possible method or strategy available",
         "A printed manual"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Every trick in the book' means trying every available method."
     },
     {
@@ -1725,9 +1725,9 @@
       "question": "Meaning of the idiom 'Feather one's nest':",
       "options": [
         "To enrich oneself unlawfully or selfishly",
-        "To build a cozy house",
+        "To help one's family",
         "To raise birds",
-        "To help one's family"
+        "To build a cozy house"
       ],
       "answer": 0,
       "explanation": "'Feather one's nest' means making money selfishly at others' expense."
@@ -1737,12 +1737,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Bright as a button':",
       "options": [
-        "Highly intelligent, lively, and energetic",
         "Shining metal",
-        "Sewn securely",
-        "Polished jewelry"
+        "Highly intelligent, lively, and energetic",
+        "Polished jewelry",
+        "Sewn securely"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bright as a button' denotes energetic intelligence."
     },
     {
@@ -1751,8 +1751,8 @@
       "question": "Meaning of the idiom 'Burn the midnight oil':",
       "options": [
         "To study or work late into the night",
-        "To waste kerosene",
         "To cause a house fire",
+        "To waste kerosene",
         "To light candles"
       ],
       "answer": 0,
@@ -1764,9 +1764,9 @@
       "question": "Meaning of the idiom 'Apple of one's eye':",
       "options": [
         "Someone cherished above all others",
+        "A corneal defect",
         "A sweet red fruit",
-        "A sharp vision",
-        "A corneal defect"
+        "A sharp vision"
       ],
       "answer": 0,
       "explanation": "'Apple of eye' means an immensely adored person."
@@ -1789,12 +1789,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Bury the hatchet':",
       "options": [
+        "To declare a truce temporarily",
         "To make peace and forget past hostilities",
-        "To dig a ditch",
         "To hide a weapon",
-        "To declare a truce temporarily"
+        "To dig a ditch"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bury the hatchet' means to settle feuds and establish friendship."
     },
     {
@@ -1816,9 +1816,9 @@
       "question": "Meaning of the idiom 'Fair-weather friend':",
       "options": [
         "A friend who deserts you in times of difficulty",
+        "A pleasant neighbor",
         "A friend who loves monsoons",
-        "A lifelong comrade",
-        "A pleasant neighbor"
+        "A lifelong comrade"
       ],
       "answer": 0,
       "explanation": "A companion loyal only during prosperous times."
@@ -1828,12 +1828,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Hear on the grapevine':",
       "options": [
-        "To hear via rumor or unofficial gossip",
         "To pick grapes",
         "To listen to radio",
+        "To hear via rumor or unofficial gossip",
         "To read official news"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Grapevine' is informal word-of-mouth gossip."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Leave no stone unturned':",
       "options": [
-        "To try every possible effort to accomplish something",
         "To dig up a quarry",
-        "To build a stone wall",
-        "To search for gemstones"
+        "To try every possible effort to accomplish something",
+        "To search for gemstones",
+        "To build a stone wall"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Spared no effort whatsoever."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Let sleeping dogs lie':",
       "options": [
-        "To avoid stirring up an old resolved dispute",
-        "To put pets to sleep",
         "To act quietly",
-        "To guard a gate"
+        "To avoid stirring up an old resolved dispute",
+        "To guard a gate",
+        "To put pets to sleep"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Leaving dormant troubles alone."
     },
     {
@@ -1867,12 +1867,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Spill the beans':",
       "options": [
-        "To reveal a secret prematurely",
         "To drop groceries",
-        "To cook food",
-        "To spread seeds"
+        "To spread seeds",
+        "To reveal a secret prematurely",
+        "To cook food"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Spill the beans' means blurting out confidential information."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Through thick and thin':",
       "options": [
-        "Through good times and bad times alike",
+        "In deep water",
         "Through dense forests",
-        "In fat and lean years",
-        "In deep water"
+        "Through good times and bad times alike",
+        "In fat and lean years"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Remaining steadfast through all circumstances."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Turn a deaf ear':",
       "options": [
-        "To refuse to listen or ignore advice",
-        "To suffer hearing loss",
+        "To listen carefully",
         "To turn one's head",
-        "To listen carefully"
+        "To refuse to listen or ignore advice",
+        "To suffer hearing loss"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Disregarding or ignoring deliberately."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Wild goose chase':",
       "options": [
+        "A successful expedition",
         "A hopeless and foolish search",
         "Hunting wild waterfowl",
-        "A successful expedition",
         "A sports marathon"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "A pointless, unachievable pursuit."
     },
     {
@@ -1920,9 +1920,9 @@
       "question": "Meaning of the idiom 'A blessing in disguise':",
       "options": [
         "A misfortune that ultimately turns out to be beneficial",
-        "A secret gift",
         "A priest's blessing",
-        "A hidden danger"
+        "A hidden danger",
+        "A secret gift"
       ],
       "answer": 0,
       "explanation": "An apparent calamity that produces positive results."
@@ -1932,12 +1932,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Beat around the bush':",
       "options": [
-        "To avoid talking directly about the main topic",
-        "To clear a path",
         "To hunt animals in bushes",
-        "To speak loudly"
+        "To speak loudly",
+        "To avoid talking directly about the main topic",
+        "To clear a path"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Avoiding the essential point with evasive speech."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Cost an arm and a leg':",
       "options": [
-        "Extremely expensive",
+        "To pay installments",
         "To suffer physical injury",
-        "A medical surgery",
-        "To pay installments"
+        "Extremely expensive",
+        "A medical surgery"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Having an exorbitantly high price."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Give the benefit of the doubt':",
       "options": [
+        "To interrogate deeply",
         "To believe someone in the absence of conclusive proof",
-        "To acquit a criminal",
         "To express disbelief",
-        "To interrogate deeply"
+        "To acquit a criminal"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Treating someone as honest when facts are uncertain."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Keep at arm's length':",
       "options": [
+        "To hug tightly",
         "To maintain distance and avoid intimacy",
         "To measure accurately",
-        "To stretch one's limbs",
-        "To hug tightly"
+        "To stretch one's limbs"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Keeping someone at a cautious distance."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Make ends meet':",
       "options": [
-        "To manage one's expenses within limited income",
         "To tie two ropes",
+        "To manage one's expenses within limited income",
         "To travel from pole to pole",
         "To settle debts fully"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Balancing income and expenditure."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Penny wise and pound foolish':",
       "options": [
-        "Careful in small trivial amounts, reckless in large sums",
+        "Stingy always",
         "A wise banker",
-        "A British investor",
-        "Stingy always"
+        "Careful in small trivial amounts, reckless in large sums",
+        "A British investor"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Saving small coins while wasting large wealth."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "idioms_meanings",
       "question": "Meaning of the idiom 'Throw in the towel':",
       "options": [
-        "To admit defeat and surrender",
-        "To dry oneself",
         "To clean up a room",
-        "To start a wrestling match"
+        "To dry oneself",
+        "To start a wrestling match",
+        "To admit defeat and surrender"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Boxing idiom meaning acknowledging defeat."
     },
     {
@@ -2024,9 +2024,9 @@
       "question": "What is the meaning of the idiom 'Out of question'?",
       "options": [
         "Impossible or unthinkable",
+        "To travel across foreign countries",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To take unnecessary legal action"
       ],
       "answer": 0,
       "explanation": "The idiom 'Out of question' means 'Impossible or unthinkable'. 'Out of the question' denotes something entirely unacceptable or unfeasible."
@@ -2036,12 +2036,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Needle in a haystack'?",
       "options": [
-        "Something virtually impossible to find",
         "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "Something virtually impossible to find"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Needle in a haystack' means 'Something virtually impossible to find'. Searching for something minute within an immense space."
     },
     {
@@ -2049,12 +2049,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'As the crow flies'?",
       "options": [
-        "In a straight line / the shortest direct route",
-        "To spend money recklessly",
         "To take unnecessary legal action",
+        "To spend money recklessly",
+        "In a straight line / the shortest direct route",
         "To travel across foreign countries"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'As the crow flies' means 'In a straight line / the shortest direct route'. Measuring direct geographic distance irrespective of roads."
     },
     {
@@ -2062,12 +2062,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Cudgel one's brain'?",
       "options": [
-        "To think hard or struggle intensely to find a solution",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To spend money recklessly",
+        "To think hard or struggle intensely to find a solution"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Cudgel one's brain' means 'To think hard or struggle intensely to find a solution'. Mental exertion to recall or solve a perplexing riddle."
     },
     {
@@ -2075,12 +2075,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Upset the apple-cart'?",
       "options": [
-        "To ruin or disrupt carefully made plans",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To ruin or disrupt carefully made plans",
+        "To travel across foreign countries",
+        "To take unnecessary legal action"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'Upset the apple-cart' means 'To ruin or disrupt carefully made plans'. Causing unforeseen disorder to an established scheme."
     },
     {
@@ -2088,12 +2088,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Down the tubes'?",
       "options": [
-        "Failing completely or irretrievably wasted",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "Failing completely or irretrievably wasted",
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Down the tubes' means 'Failing completely or irretrievably wasted'. Collapsing into complete ruin or wastage."
     },
     {
@@ -2101,12 +2101,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'A thorn in the flesh'?",
       "options": [
-        "A source of continual annoyance or affliction",
         "To spend money recklessly",
+        "A source of continual annoyance or affliction",
         "To take unnecessary legal action",
         "To travel across foreign countries"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'A thorn in the flesh' means 'A source of continual annoyance or affliction'. A persistent irritation that cannot be easily removed."
     },
     {
@@ -2115,9 +2115,9 @@
       "question": "What is the meaning of the idiom 'Cut to the chase'?",
       "options": [
         "To come to the point without wasting time",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To spend money recklessly"
       ],
       "answer": 0,
       "explanation": "The idiom 'Cut to the chase' means 'To come to the point without wasting time'. Film editing origin: skipping dialogue to get to the action scene."
@@ -2127,12 +2127,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Baker's dozen'?",
       "options": [
-        "A group of thirteen items",
         "To spend money recklessly",
         "To take unnecessary legal action",
+        "A group of thirteen items",
         "To travel across foreign countries"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Baker's dozen' means 'A group of thirteen items'. Historical British baker tradition of adding an extra 13th loaf to avoid short-measure penalties."
     },
     {
@@ -2140,12 +2140,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Call a spade a spade'?",
       "options": [
-        "To speak frankly, plainly, and bluntly",
+        "To travel across foreign countries",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To speak frankly, plainly, and bluntly",
+        "To take unnecessary legal action"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Call a spade a spade' means 'To speak frankly, plainly, and bluntly'. Calling things by their direct names without euphemism."
     },
     {
@@ -2153,12 +2153,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Go back to the drawing board'?",
       "options": [
-        "To start planning all over again after a failure",
+        "To travel across foreign countries",
         "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To start planning all over again after a failure"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Go back to the drawing board' means 'To start planning all over again after a failure'. Commencing an enterprise afresh from the schematic stage."
     },
     {
@@ -2166,12 +2166,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'A penny for your thoughts'?",
       "options": [
-        "An invitation to tell what one is thinking about",
+        "To travel across foreign countries",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "An invitation to tell what one is thinking about",
+        "To take unnecessary legal action"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'A penny for your thoughts' means 'An invitation to tell what one is thinking about'. A friendly way of asking a quiet person to share their thoughts."
     },
     {
@@ -2179,12 +2179,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Cut corners'?",
       "options": [
-        "To do something in the easiest, cheapest, or careless way",
         "To spend money recklessly",
+        "To do something in the easiest, cheapest, or careless way",
         "To take unnecessary legal action",
         "To travel across foreign countries"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'Cut corners' means 'To do something in the easiest, cheapest, or careless way'. Taking shortcuts that compromise safety or quality."
     },
     {
@@ -2192,12 +2192,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Let the cat out of the bag'?",
       "options": [
-        "To reveal a secret carelessly or prematurely",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To reveal a secret carelessly or prematurely",
+        "To travel across foreign countries",
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'Let the cat out of the bag' means 'To reveal a secret carelessly or prematurely'. Disclosing confidential information unintentionally."
     },
     {
@@ -2205,12 +2205,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Jump on the bandwagon'?",
       "options": [
+        "To take unnecessary legal action",
         "To join a popular activity or trend to share success",
         "To spend money recklessly",
-        "To take unnecessary legal action",
         "To travel across foreign countries"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'Jump on the bandwagon' means 'To join a popular activity or trend to share success'. Following the multitude when an idea becomes fashionable."
     },
     {
@@ -2218,12 +2218,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Pull someone's leg'?",
       "options": [
-        "To tease or deceive someone in a playful manner",
-        "To spend money recklessly",
+        "To travel across foreign countries",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To tease or deceive someone in a playful manner",
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Pull someone's leg' means 'To tease or deceive someone in a playful manner'. Making a friendly joke by telling an untruth."
     },
     {
@@ -2232,9 +2232,9 @@
       "question": "What is the meaning of the idiom 'Under the weather'?",
       "options": [
         "Slightly unwell or indisposed",
+        "To travel across foreign countries",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To take unnecessary legal action"
       ],
       "answer": 0,
       "explanation": "The idiom 'Under the weather' means 'Slightly unwell or indisposed'. Feeling mildly ill, fatigued, or depressed."
@@ -2244,12 +2244,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Storm in a teacup'?",
       "options": [
-        "Great excitement or anger over an insignificant matter",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To spend money recklessly",
+        "To travel across foreign countries",
+        "Great excitement or anger over an insignificant matter"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Storm in a teacup' means 'Great excitement or anger over an insignificant matter'. A huge fuss over a trivial occurrence."
     },
     {
@@ -2258,8 +2258,8 @@
       "question": "What is the meaning of the idiom 'Spill the beans'?",
       "options": [
         "To disclose confidential information or secrets",
-        "To spend money recklessly",
         "To take unnecessary legal action",
+        "To spend money recklessly",
         "To travel across foreign countries"
       ],
       "answer": 0,
@@ -2271,9 +2271,9 @@
       "question": "What is the meaning of the idiom 'Through thick and thin'?",
       "options": [
         "Through all circumstances, favorable or difficult",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To spend money recklessly"
       ],
       "answer": 0,
       "explanation": "The idiom 'Through thick and thin' means 'Through all circumstances, favorable or difficult'. Remaining loyal and steadfast across adversity and prosperity."
@@ -2283,12 +2283,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Rust bucket'?",
       "options": [
-        "An old, dilapidated vehicle or person",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To spend money recklessly",
+        "An old, dilapidated vehicle or person"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Rust bucket' means 'An old, dilapidated vehicle or person'. Informal/colloquial idiom denoting a decrepit machine or aged person."
     },
     {
@@ -2298,8 +2298,8 @@
       "options": [
         "In a weakened, declining, or depressed state",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To take unnecessary legal action"
       ],
       "answer": 0,
       "explanation": "The idiom 'At a low ebb' means 'In a weakened, declining, or depressed state'. Referring to maritime ebb tide: low spirits or reduced fortunes."
@@ -2309,12 +2309,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Draw a longbow'?",
       "options": [
-        "To make exaggerated or incredible statements",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To make exaggerated or incredible statements",
+        "To travel across foreign countries",
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'Draw a longbow' means 'To make exaggerated or incredible statements'. Archer metaphor: exaggerating one's prowess or story."
     },
     {
@@ -2322,12 +2322,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Eat like a bird'?",
       "options": [
-        "To eat very little food",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To eat very little food",
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Eat like a bird' means 'To eat very little food'. Consuming minuscule portions of food."
     },
     {
@@ -2335,12 +2335,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Pull the strings'?",
       "options": [
+        "To travel across foreign countries",
         "To exercise covert, behind-the-scenes control",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'Pull the strings' means 'To exercise covert, behind-the-scenes control'. Puppetry metaphor: controlling people or events invisibly."
     },
     {
@@ -2348,12 +2348,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Call the shots'?",
       "options": [
-        "To make the crucial decisions and be in command",
         "To spend money recklessly",
+        "To travel across foreign countries",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To make the crucial decisions and be in command"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Call the shots' means 'To make the crucial decisions and be in command'. Sports/military metaphor: directing the course of action."
     },
     {
@@ -2361,12 +2361,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Know the ropes'?",
       "options": [
+        "To travel across foreign countries",
         "To be experienced and understand the details of a job",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'Know the ropes' means 'To be experienced and understand the details of a job'. Nautical metaphor: sailors mastering rigging ropes."
     },
     {
@@ -2374,12 +2374,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Walk the talk'?",
       "options": [
-        "To practice what one preaches through concrete actions",
+        "To travel across foreign countries",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To practice what one preaches through concrete actions",
+        "To take unnecessary legal action"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Walk the talk' means 'To practice what one preaches through concrete actions'. Backing up lofty assertions with faithful execution."
     },
     {
@@ -2387,12 +2387,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'See the light of day'?",
       "options": [
-        "To become publicly known, published, or born",
-        "To spend money recklessly",
+        "To travel across foreign countries",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To spend money recklessly",
+        "To become publicly known, published, or born"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'See the light of day' means 'To become publicly known, published, or born'. Emerging from obscurity into public awareness."
     },
     {
@@ -2400,12 +2400,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Bite the bullet'?",
       "options": [
-        "To endure a painful situation with bravery and fortitude",
-        "To spend money recklessly",
         "To take unnecessary legal action",
+        "To spend money recklessly",
+        "To endure a painful situation with bravery and fortitude",
         "To travel across foreign countries"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Bite the bullet' means 'To endure a painful situation with bravery and fortitude'. Biting a lead bullet during surgery before anesthesia."
     },
     {
@@ -2413,12 +2413,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'A piece of cake'?",
       "options": [
+        "To travel across foreign countries",
         "Something exceptionally easy to do",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To spend money recklessly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'A piece of cake' means 'Something exceptionally easy to do'. A task accomplished effortlessly."
     },
     {
@@ -2427,9 +2427,9 @@
       "question": "What is the meaning of the idiom 'Walk the tightrope'?",
       "options": [
         "To navigate a precarious or delicate situation with caution",
-        "To spend money recklessly",
+        "To travel across foreign countries",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To spend money recklessly"
       ],
       "answer": 0,
       "explanation": "The idiom 'Walk the tightrope' means 'To navigate a precarious or delicate situation with caution'. Acrobatic balance between opposing dangers."
@@ -2439,12 +2439,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'God's ape'?",
       "options": [
-        "A natural fool or born simpleton",
         "To spend money recklessly",
+        "A natural fool or born simpleton",
         "To take unnecessary legal action",
         "To travel across foreign countries"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The idiom 'God's ape' means 'A natural fool or born simpleton'. Classical PSC idiom designating an innate simpleton."
     },
     {
@@ -2452,12 +2452,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Rose-coloured glasses'?",
       "options": [
-        "An overly optimistic, naive view of reality",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To spend money recklessly",
+        "An overly optimistic, naive view of reality"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Rose-coloured glasses' means 'An overly optimistic, naive view of reality'. Perceiving life through unrealistically cheerful distortion."
     },
     {
@@ -2465,12 +2465,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Every trick in the book'?",
       "options": [
-        "Every available method or technique conceivable",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "Every available method or technique conceivable",
+        "To take unnecessary legal action"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Every trick in the book' means 'Every available method or technique conceivable'. Exhausting all possible strategies to attain a goal."
     },
     {
@@ -2478,12 +2478,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Feather one's nest'?",
       "options": [
-        "To amass wealth selfishly or improperly",
+        "To travel across foreign countries",
         "To spend money recklessly",
-        "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To amass wealth selfishly or improperly",
+        "To take unnecessary legal action"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The idiom 'Feather one's nest' means 'To amass wealth selfishly or improperly'. Enriching oneself by abusing one's official position."
     },
     {
@@ -2491,12 +2491,12 @@
       "topic": "idioms_meanings",
       "question": "What is the meaning of the idiom 'Bright as a button'?",
       "options": [
-        "Alert, intelligent, and cheerful",
-        "To spend money recklessly",
         "To take unnecessary legal action",
-        "To travel across foreign countries"
+        "To travel across foreign countries",
+        "To spend money recklessly",
+        "Alert, intelligent, and cheerful"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The idiom 'Bright as a button' means 'Alert, intelligent, and cheerful'. Characterized by quick intellect and buoyant energy."
     }
   ]

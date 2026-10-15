@@ -8,12 +8,12 @@
       "topic": "subject_verb_agreement",
       "question": "Neither Rahul nor his friends ______ present.",
       "options": [
-        "was",
-        "were",
+        "has been",
         "is",
-        "has been"
+        "were",
+        "was"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "When two subjects are joined by 'neither...nor', the verb agrees with the nearer subject ('friends' -> 'were')."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "subject_verb_agreement",
       "question": "Either the teacher or the students ______ responsible.",
       "options": [
-        "is",
         "was",
-        "are",
-        "has been"
+        "has been",
+        "is",
+        "are"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "When subjects are joined by 'either...or', the verb agrees with the nearer subject ('students' -> 'are')."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "subject_verb_agreement",
       "question": "The Minister, as well as his secretaries, ______ arrived.",
       "options": [
-        "has",
-        "have",
         "are",
-        "were"
+        "has",
+        "were",
+        "have"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "When two nouns are connected by 'as well as', 'along with', or 'together with', the verb agrees with the first subject ('The Minister' -> 'has')."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "subject_verb_agreement",
       "question": "The captain, along with the players, ______ given a warm welcome.",
       "options": [
-        "was",
-        "were",
         "are",
+        "were",
+        "was",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Subjects joined by 'along with' take a verb agreeing with the first subject ('captain' -> 'was')."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "subject_verb_agreement",
       "question": "Neither of the two candidates ______ suitable for the job.",
       "options": [
-        "is",
         "are",
+        "have been",
         "were",
-        "have been"
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Neither of' refers to none of the two individually, taking a singular verb ('is')."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "subject_verb_agreement",
       "question": "One of my friends ______ a doctor.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'One of' + plural noun takes a singular verb ('is')."
     },
     {
@@ -112,12 +112,12 @@
       "topic": "subject_verb_agreement",
       "question": "He is one of the players who ______ selected for the team.",
       "options": [
-        "have been",
         "has been",
         "is",
-        "was"
+        "was",
+        "have been"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "In 'one of the [plural noun] who/which/that', the relative pronoun refers to the plural antecedent ('players'), taking plural verb ('have been')."
     },
     {
@@ -125,12 +125,12 @@
       "topic": "subject_verb_agreement",
       "question": "This is the only one of his novels that ______ interesting.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "is",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When 'the only one of' is used, the relative pronoun refers to 'the only one' (singular), taking a singular verb ('is')."
     },
     {
@@ -138,12 +138,12 @@
       "topic": "subject_verb_agreement",
       "question": "More than one person ______ involved in the scam.",
       "options": [
-        "was",
-        "were",
         "are",
-        "have been"
+        "have been",
+        "were",
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'More than one' followed by a singular countable noun takes a singular verb ('was')."
     },
     {
@@ -152,8 +152,8 @@
       "question": "More students than one ______ absent today.",
       "options": [
         "were",
-        "was",
         "is",
+        "was",
         "has been"
       ],
       "answer": 0,
@@ -164,12 +164,12 @@
       "topic": "subject_verb_agreement",
       "question": "A number of students ______ participating in the event.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "is",
+        "has been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'A number of' takes a plural verb ('are'), whereas 'The number of' takes a singular verb."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "subject_verb_agreement",
       "question": "The number of accidents ______ increasing day by day.",
       "options": [
-        "is",
         "are",
         "were",
+        "is",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'The number of' expresses a specific statistical figure, taking a singular verb ('is')."
     },
     {
@@ -191,9 +191,9 @@
       "question": "Ten miles ______ a long distance to walk.",
       "options": [
         "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "are"
       ],
       "answer": 0,
       "explanation": "A plural unit of measurement/distance considered as a single quantity takes a singular verb ('is')."
@@ -203,12 +203,12 @@
       "topic": "subject_verb_agreement",
       "question": "Fifty thousand rupees ______ a large amount.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "is",
+        "have been",
+        "were"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "A specific sum of money viewed as a whole takes a singular verb ('is')."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "subject_verb_agreement",
       "question": "Mathematics ______ an interesting subject.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "are",
+        "have been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of subjects/disciplines ending in '-s' (Mathematics, Physics, Civics) take a singular verb ('is')."
     },
     {
@@ -229,12 +229,12 @@
       "topic": "subject_verb_agreement",
       "question": "His mathematics ______ very weak.",
       "options": [
-        "are",
         "is",
-        "was",
-        "has been"
+        "are",
+        "has been",
+        "was"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "When 'mathematics' refers to calculation skills/arithmetic, it takes a plural verb ('are')."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "subject_verb_agreement",
       "question": "The news ______ true.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "is",
+        "have been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'News' is an uncountable noun and always takes a singular verb ('is')."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "subject_verb_agreement",
       "question": "The jury ______ divided in their opinion.",
       "options": [
-        "were",
-        "was",
         "is",
-        "has been"
+        "has been",
+        "were",
+        "was"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When members of a collective noun (jury, committee) act individually or hold differing opinions, it takes a plural verb ('were')."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "subject_verb_agreement",
       "question": "The jury ______ given its verdict.",
       "options": [
-        "has",
         "have",
         "are",
+        "has",
         "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When a collective noun acts as a unified single body (indicated by pronoun 'its'), it takes a singular verb ('has')."
     },
     {
@@ -282,8 +282,8 @@
       "question": "The committee ______ unanimous on this issue.",
       "options": [
         "was",
-        "were",
         "are",
+        "were",
         "have been"
       ],
       "answer": 0,
@@ -294,12 +294,12 @@
       "topic": "subject_verb_agreement",
       "question": "The police ______ investigating the robbery.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "is",
+        "has been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Police' is a plural noun in English, requiring a plural verb ('are')."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "subject_verb_agreement",
       "question": "Cattle ______ grazing in the meadow.",
       "options": [
-        "are",
         "is",
         "was",
-        "has been"
+        "has been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cattle' is always plural without an '-s', requiring a plural verb ('are')."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "subject_verb_agreement",
       "question": "Poultry ______ sold here.",
       "options": [
+        "has been",
         "are",
         "is",
-        "was",
-        "has been"
+        "was"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Poultry' is a collective plural noun taking a plural verb ('are')."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "subject_verb_agreement",
       "question": "Gulliver's Travels ______ written by Jonathan Swift.",
       "options": [
-        "was",
-        "were",
         "are",
+        "were",
+        "was",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The title of a book/novel takes a singular verb even if it ends in '-s' ('was')."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "subject_verb_agreement",
       "question": "The Arabian Nights ______ an evergreen collection of stories.",
       "options": [
-        "is",
         "are",
         "were",
-        "have been"
+        "have been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Book titles take a singular verb ('is')."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "subject_verb_agreement",
       "question": "The United States ______ a powerful nation.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "is",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The name of a country takes a singular verb ('is')."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "subject_verb_agreement",
       "question": "Every man, woman, and child ______ rescued.",
       "options": [
-        "was",
-        "were",
+        "have been",
         "are",
-        "have been"
+        "was",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Singular nouns preceded by 'every' take a singular verb ('was')."
     },
     {
@@ -387,8 +387,8 @@
       "options": [
         "was",
         "were",
-        "are",
-        "have been"
+        "have been",
+        "are"
       ],
       "answer": 0,
       "explanation": "'Many a' is followed by a singular countable noun and takes a singular verb ('was')."
@@ -399,8 +399,8 @@
       "question": "A good deal of time ______ wasted.",
       "options": [
         "was",
-        "were",
         "are",
+        "were",
         "have been"
       ],
       "answer": 0,
@@ -413,8 +413,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "'A lot of' with uncountable noun ('work') takes a singular verb ('is')."
@@ -425,9 +425,9 @@
       "question": "A lot of books ______ donated to the library.",
       "options": [
         "were",
+        "has been",
         "was",
-        "is",
-        "has been"
+        "is"
       ],
       "answer": 0,
       "explanation": "'A lot of' with countable plural noun ('books') takes a plural verb ('were')."
@@ -437,12 +437,12 @@
       "topic": "subject_verb_agreement",
       "question": "None of the information ______ accurate.",
       "options": [
-        "was",
-        "were",
+        "have been",
         "are",
-        "have been"
+        "were",
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'None of' + uncountable noun takes a singular verb ('was')."
     },
     {
@@ -452,8 +452,8 @@
       "options": [
         "were",
         "was",
-        "is",
-        "has been"
+        "has been",
+        "is"
       ],
       "answer": 0,
       "explanation": "'None of' + plural countable noun takes a plural verb in standard PSC usage ('were')."
@@ -463,12 +463,12 @@
       "topic": "subject_verb_agreement",
       "question": "The quality of these mangoes ______ not good.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The subject is the singular noun 'The quality' (not 'mangoes'), so it takes 'is'."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "subject_verb_agreement",
       "question": "The cost of essential commodities ______ gone up.",
       "options": [
-        "has",
-        "have",
         "are",
-        "were"
+        "has",
+        "were",
+        "have"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The true subject is singular 'The cost', taking 'has'."
     },
     {
@@ -490,9 +490,9 @@
       "question": "Slow and steady ______ the race.",
       "options": [
         "wins",
-        "win",
         "winning",
-        "are winning"
+        "are winning",
+        "win"
       ],
       "answer": 0,
       "explanation": "Proverbial pair representing a single concept takes a singular verb ('wins')."
@@ -502,12 +502,12 @@
       "topic": "subject_verb_agreement",
       "question": "Time and tide ______ for no man.",
       "options": [
-        "wait",
-        "waits",
         "waiting",
-        "is waiting"
+        "waits",
+        "is waiting",
+        "wait"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "In standard English and Kerala PSC convention, 'Time and tide' takes plural verb 'wait'."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "subject_verb_agreement",
       "question": "No news ______ good news.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "is",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'News' is uncountable singular, taking 'is'."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "subject_verb_agreement",
       "question": "The scissors ______ sharp.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "are",
+        "has been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Tools/clothing with two parts (scissors, trousers, spectacles) take a plural verb ('are')."
     },
     {
@@ -543,8 +543,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "When preceded by 'A pair of', the subject is singular ('A pair'), taking 'is'."
@@ -555,9 +555,9 @@
       "question": "My spectacles ______ missing.",
       "options": [
         "are",
-        "is",
         "was",
-        "has been"
+        "has been",
+        "is"
       ],
       "answer": 0,
       "explanation": "'Spectacles' takes a plural verb ('are')."
@@ -568,9 +568,9 @@
       "question": "A pair of shoes ______ bought yesterday.",
       "options": [
         "was",
+        "have been",
         "were",
-        "are",
-        "have been"
+        "are"
       ],
       "answer": 0,
       "explanation": "'A pair of shoes' takes singular verb ('was')."
@@ -580,12 +580,12 @@
       "topic": "subject_verb_agreement",
       "question": "Two and two ______ four.",
       "options": [
+        "are making",
         "makes",
         "make",
-        "making",
-        "are making"
+        "making"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Mathematical facts can take singular 'makes' or 'is' in PSC questions."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "subject_verb_agreement",
       "question": "Physics ______ my favourite subject.",
       "options": [
-        "is",
+        "have been",
         "are",
         "were",
-        "have been"
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Academic discipline ending in '-s' takes singular 'is'."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "subject_verb_agreement",
       "question": "The clergy ______ invited to the ceremony.",
       "options": [
-        "were",
-        "was",
+        "has been",
         "is",
-        "has been"
+        "was",
+        "were"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Clergy' is a group noun treated as plural ('were')."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "subject_verb_agreement",
       "question": "The poor ______ suffering during the flood.",
       "options": [
+        "has been",
         "are",
         "is",
-        "was",
-        "has been"
+        "was"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'The + adjective' (The poor, the rich) refers to the entire class of people and takes a plural verb ('are')."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "subject_verb_agreement",
       "question": "The rich ______ not always happy.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "has been",
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'The rich' represents all wealthy people, taking plural 'are'."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "subject_verb_agreement",
       "question": "The blind ______ guided safely.",
       "options": [
-        "were",
         "was",
+        "were",
         "is",
         "has been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'The blind' refers to blind people collectively, taking plural verb 'were'."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "subject_verb_agreement",
       "question": "Neither praise nor blame ______ to affect him.",
       "options": [
-        "seems",
         "seem",
-        "seeming",
-        "have seemed"
+        "seems",
+        "have seemed",
+        "seeming"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "When subjects joined by 'neither...nor' are both singular ('praise', 'blame'), the verb is singular ('seems')."
     },
     {
@@ -672,9 +672,9 @@
       "question": "Either you or he ______ mistaken.",
       "options": [
         "is",
+        "have been",
         "are",
-        "were",
-        "have been"
+        "were"
       ],
       "answer": 0,
       "explanation": "With 'either...or', verb agrees with nearer subject ('he' -> 'is')."
@@ -684,12 +684,12 @@
       "topic": "subject_verb_agreement",
       "question": "Neither he nor I ______ guilty.",
       "options": [
-        "am",
-        "is",
         "are",
-        "were"
+        "were",
+        "is",
+        "am"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Nearer subject to verb is 'I', taking 'am'."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "subject_verb_agreement",
       "question": "He and I ______ good friends.",
       "options": [
-        "are",
         "is",
         "am",
+        "are",
         "was"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Two pronouns joined by 'and' form a plural compound subject, taking 'are'."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "subject_verb_agreement",
       "question": "Fire and water ______ not agree.",
       "options": [
-        "do",
         "does",
-        "is",
-        "are"
+        "do",
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Two distinct elements joined by 'and' take plural verb 'do'."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "subject_verb_agreement",
       "question": "Gold and silver ______ precious metals.",
       "options": [
-        "are",
-        "is",
+        "has been",
         "was",
-        "has been"
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Two distinct subjects joined by 'and' take plural 'are'."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "subject_verb_agreement",
       "question": "The poet and philosopher ______ dead.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "When one article ('The') precedes the first noun only, both nouns refer to the same person, taking singular 'is'."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "subject_verb_agreement",
       "question": "The poet and the philosopher ______ dead.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "is",
+        "has been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "When articles precede both nouns ('The poet and the philosopher'), two distinct persons are meant, taking plural 'are'."
     },
     {
@@ -763,9 +763,9 @@
       "question": "The collector and district magistrate ______ on leave.",
       "options": [
         "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "are"
       ],
       "answer": 0,
       "explanation": "Single article 'The' indicates one person holding both offices, taking singular 'is'."
@@ -775,12 +775,12 @@
       "topic": "subject_verb_agreement",
       "question": "A black and white cow ______ grazing in the field.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Single article 'A' indicates one cow with two colors, taking singular 'is'."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "subject_verb_agreement",
       "question": "A black and a white cow ______ grazing.",
       "options": [
+        "has been",
         "are",
-        "is",
         "was",
-        "has been"
+        "is"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Two articles ('A black and a white cow') indicate two separate cows, taking plural 'are'."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "subject_verb_agreement",
       "question": "Not only the principal but also the teachers ______ present.",
       "options": [
-        "were",
         "was",
+        "were",
         "is",
         "has been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Not only...but also' agrees with the nearer subject ('teachers' -> 'were')."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "subject_verb_agreement",
       "question": "Not only the students but also the teacher ______ present.",
       "options": [
-        "was",
         "were",
-        "are",
-        "have been"
+        "have been",
+        "was",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Not only...but also' agrees with the nearer subject ('teacher' -> 'was')."
     },
     {
@@ -827,12 +827,12 @@
       "topic": "subject_verb_agreement",
       "question": "Drinking and driving ______ a punishable offence.",
       "options": [
+        "were",
         "is",
         "are",
-        "were",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Compound gerund phrase viewed as a single act takes singular 'is'."
     },
     {
@@ -841,8 +841,8 @@
       "question": "Early to bed and early to rise ______ a man healthy.",
       "options": [
         "makes",
-        "make",
         "are making",
+        "make",
         "were making"
       ],
       "answer": 0,
@@ -853,12 +853,12 @@
       "topic": "subject_verb_agreement",
       "question": "The majority of students ______ passed the exam.",
       "options": [
-        "have",
-        "has",
+        "was",
         "is",
-        "was"
+        "has",
+        "have"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'The majority of' + plural noun takes a plural verb ('have')."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "subject_verb_agreement",
       "question": "The majority ______ in favor of the proposal.",
       "options": [
-        "was",
+        "have been",
         "were",
-        "are",
-        "have been"
+        "was",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When 'the majority' is used alone as a single voting block, it takes singular verb 'was'."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "subject_verb_agreement",
       "question": "Two-thirds of the book ______ interesting.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "is",
+        "have been",
+        "were"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fractions of a singular entity ('the book') take a singular verb ('is')."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "subject_verb_agreement",
       "question": "Two-thirds of the books ______ sold.",
       "options": [
-        "were",
-        "was",
         "is",
-        "has been"
+        "were",
+        "has been",
+        "was"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fractions of plural countable entities ('the books') take a plural verb ('were')."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "subject_verb_agreement",
       "question": "Half of the milk ______ spoiled.",
       "options": [
-        "was",
         "were",
+        "was",
         "are",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Half of' + uncountable noun ('milk') takes singular verb ('was')."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "subject_verb_agreement",
       "question": "Half of the students ______ absent.",
       "options": [
+        "has been",
         "were",
         "was",
-        "is",
-        "has been"
+        "is"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Half of' + plural noun takes plural verb ('were')."
     },
     {
@@ -933,8 +933,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "Indefinite pronoun 'Everyone' always takes a singular verb ('is')."
@@ -945,9 +945,9 @@
       "question": "Somebody ______ left their umbrella.",
       "options": [
         "has",
-        "have",
         "are",
-        "were"
+        "were",
+        "have"
       ],
       "answer": 0,
       "explanation": "'Somebody' takes a singular verb ('has')."
@@ -957,12 +957,12 @@
       "topic": "subject_verb_agreement",
       "question": "Anybody ______ welcome to join.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "are",
+        "have been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Anybody' takes a singular verb ('is')."
     },
     {
@@ -972,8 +972,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "'Nobody' takes a singular verb ('is')."
@@ -984,8 +984,8 @@
       "question": "Everything ______ in its place.",
       "options": [
         "is",
-        "are",
         "were",
+        "are",
         "have been"
       ],
       "answer": 0,
@@ -997,8 +997,8 @@
       "question": "Something ______ burning in the kitchen.",
       "options": [
         "is",
-        "are",
         "were",
+        "are",
         "have been"
       ],
       "answer": 0,
@@ -1009,12 +1009,12 @@
       "topic": "subject_verb_agreement",
       "question": "Nothing ______ impossible for a willing heart.",
       "options": [
-        "is",
         "are",
         "were",
+        "is",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Nothing' takes a singular verb ('is')."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "subject_verb_agreement",
       "question": "Each boy and each girl ______ given a certificate.",
       "options": [
-        "was",
         "were",
         "are",
+        "was",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Nouns qualified by 'each' take a singular verb ('was') even when joined by 'and'."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "subject_verb_agreement",
       "question": "Every student and every teacher ______ present.",
       "options": [
-        "was",
+        "have been",
         "were",
-        "are",
-        "have been"
+        "was",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Nouns qualified by 'every' take a singular verb ('was')."
     },
     {
@@ -1049,9 +1049,9 @@
       "question": "No boy and no girl ______ absent.",
       "options": [
         "was",
-        "were",
+        "have been",
         "are",
-        "have been"
+        "were"
       ],
       "answer": 0,
       "explanation": "Singular nouns joined by 'and' and qualified by 'no' take a singular verb ('was')."
@@ -1061,12 +1061,12 @@
       "topic": "subject_verb_agreement",
       "question": "The Prime Minister, accompanied by his ministers, ______ arriving today.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Accompanied by' follows the first subject ('The Prime Minister' -> 'is')."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "subject_verb_agreement",
       "question": "The ship, with its crew, ______ lost at sea.",
       "options": [
-        "was",
         "were",
+        "was",
         "are",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'with' follows the primary subject ('The ship' -> 'was')."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "subject_verb_agreement",
       "question": "Honesty, as well as diligence, ______ rewarded.",
       "options": [
-        "is",
         "are",
         "were",
-        "have been"
+        "have been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'as well as' agrees with the first subject ('Honesty' -> 'is')."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "subject_verb_agreement",
       "question": "The house, in addition to the furniture, ______ insured.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "is",
+        "have been",
+        "were"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'in addition to' agrees with the main subject ('The house' -> 'is')."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "subject_verb_agreement",
       "question": "All that glitters ______ not gold.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "is",
+        "have been",
+        "were"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Proverbial idiom 'All that glitters' takes singular 'is'."
     },
     {
@@ -1141,8 +1141,8 @@
       "options": [
         "was",
         "were",
-        "are",
-        "have been"
+        "have been",
+        "are"
       ],
       "answer": 0,
       "explanation": "'All' referring to an uncountable quantity ('money') takes singular 'was'."
@@ -1152,12 +1152,12 @@
       "topic": "subject_verb_agreement",
       "question": "All the passengers ______ safe.",
       "options": [
-        "were",
         "was",
-        "is",
-        "has been"
+        "has been",
+        "were",
+        "is"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'All' referring to countable plural entities ('passengers') takes plural 'were'."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "subject_verb_agreement",
       "question": "Some of the pie ______ eaten.",
       "options": [
-        "was",
         "were",
+        "have been",
         "are",
-        "have been"
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Some of' + singular noun takes singular verb 'was'."
     },
     {
@@ -1179,9 +1179,9 @@
       "question": "Some of the pies ______ eaten.",
       "options": [
         "were",
-        "was",
+        "has been",
         "is",
-        "has been"
+        "was"
       ],
       "answer": 0,
       "explanation": "'Some of' + plural noun takes plural verb 'were'."
@@ -1191,12 +1191,12 @@
       "topic": "subject_verb_agreement",
       "question": "Measles ______ an infectious disease.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Names of diseases ending in '-s' (Measles, Mumps, Rickets) take a singular verb ('is')."
     },
     {
@@ -1206,8 +1206,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "Names of games ending in '-s' (Billiards, Darts, Dominoes) take a singular verb ('is')."
@@ -1217,12 +1217,12 @@
       "topic": "subject_verb_agreement",
       "question": "Darts ______ a popular pub game in England.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Name of the game 'Darts' takes singular 'is'."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "subject_verb_agreement",
       "question": "The United Nations ______ founded in 1945.",
       "options": [
-        "was",
         "were",
         "are",
-        "have been"
+        "have been",
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of organizations take a singular verb ('was')."
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "subject_verb_agreement",
       "question": "Twenty kilograms of rice ______ enough for our family.",
       "options": [
+        "have been",
         "is",
-        "are",
         "were",
-        "have been"
+        "are"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Quantities expressing a single weight or measure take singular 'is'."
     },
     {
@@ -1256,12 +1256,12 @@
       "topic": "subject_verb_agreement",
       "question": "Five years ______ a long time to wait.",
       "options": [
-        "is",
         "are",
         "were",
-        "have been"
+        "have been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Periods of time treated as a single duration take singular 'is'."
     },
     {
@@ -1269,12 +1269,12 @@
       "topic": "subject_verb_agreement",
       "question": "The staff ______ unhappy with the new decision.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "has been",
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Collective noun referring to employees as individuals takes plural 'are'."
     },
     {
@@ -1282,12 +1282,12 @@
       "topic": "subject_verb_agreement",
       "question": "A group of tourists ______ visiting the palace.",
       "options": [
+        "were",
         "is",
         "are",
-        "were",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'A group of' takes a singular verb focusing on the single unit ('is')."
     },
     {
@@ -1295,12 +1295,12 @@
       "topic": "subject_verb_agreement",
       "question": "A fleet of ships ______ sailing in the harbor.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'A fleet of' is a singular collective noun, taking 'is'."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "subject_verb_agreement",
       "question": "A pack of wolves ______ spotted in the forest.",
       "options": [
-        "was",
         "were",
         "are",
+        "was",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'A pack of' takes a singular verb ('was')."
     },
     {
@@ -1323,8 +1323,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "'Luggage' is uncountable and takes singular 'is'."
@@ -1334,12 +1334,12 @@
       "topic": "subject_verb_agreement",
       "question": "His advice ______ always helpful.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Advice' is an uncountable noun taking singular verb 'is'."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "subject_verb_agreement",
       "question": "The furniture in our house ______ made of teak.",
       "options": [
-        "is",
         "are",
         "were",
-        "have been"
+        "have been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Furniture' is an uncountable noun taking singular verb 'is'."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "subject_verb_agreement",
       "question": "Information ______ power.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Information' is uncountable, taking singular 'is'."
     },
     {
@@ -1374,8 +1374,8 @@
       "question": "The majority of students ______ passed the examination.",
       "options": [
         "have",
-        "has",
         "is",
+        "has",
         "was"
       ],
       "answer": 0,
@@ -1386,12 +1386,12 @@
       "topic": "subject_verb_agreement",
       "question": "A number of soldiers ______ injured in the combat.",
       "options": [
-        "were",
         "was",
-        "is",
-        "has been"
+        "were",
+        "has been",
+        "is"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'A number of' is followed by a plural verb ('were')."
     },
     {
@@ -1400,8 +1400,8 @@
       "question": "The number of road accidents ______ decreasing this year.",
       "options": [
         "is",
-        "are",
         "were",
+        "are",
         "have been"
       ],
       "answer": 0,
@@ -1412,12 +1412,12 @@
       "topic": "subject_verb_agreement",
       "question": "Not only Rahul but also his friends ______ coming to the party.",
       "options": [
+        "was",
         "are",
         "is",
-        "was",
         "has been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "With 'not only... but also', the verb agrees with the nearer subject ('friends' -> 'are')."
     },
     {
@@ -1426,8 +1426,8 @@
       "question": "Neither the teacher nor the principal ______ present at the meeting.",
       "options": [
         "was",
-        "were",
         "are",
+        "were",
         "have been"
       ],
       "answer": 0,
@@ -1438,12 +1438,12 @@
       "topic": "subject_verb_agreement",
       "question": "Neither the students nor the teacher ______ happy with the results.",
       "options": [
-        "was",
-        "were",
         "are",
-        "have been"
+        "have been",
+        "was",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Verb agrees with the closer subject ('teacher' -> 'was')."
     },
     {
@@ -1451,12 +1451,12 @@
       "topic": "subject_verb_agreement",
       "question": "Either Mohan or his brothers ______ to be blamed.",
       "options": [
-        "are",
-        "is",
         "was",
+        "is",
+        "are",
         "has been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Verb agrees with closer plural subject ('brothers' -> 'are')."
     },
     {
@@ -1464,12 +1464,12 @@
       "topic": "subject_verb_agreement",
       "question": "Fifty thousand rupees ______ paid to the contractor yesterday.",
       "options": [
-        "were",
+        "has been",
         "was",
         "is",
-        "has been"
+        "were"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "When money is disbursed in individual transactions/payments, it can take plural verb ('were paid')."
     },
     {
@@ -1477,12 +1477,12 @@
       "topic": "subject_verb_agreement",
       "question": "Five thousand rupees ______ a large amount fifty years ago.",
       "options": [
-        "was",
+        "have been",
         "were",
         "are",
-        "have been"
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Considered as a single lump-sum figure, it takes a singular verb ('was')."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "subject_verb_agreement",
       "question": "Mathematics ______ an interesting subject.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Subject name ending in '-s' takes singular verb ('is')."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "subject_verb_agreement",
       "question": "Politics ______ a dirty game.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "is",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Name of discipline/field takes singular verb ('is')."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "subject_verb_agreement",
       "question": "His politics ______ conservative.",
       "options": [
-        "are",
         "is",
-        "was",
-        "has been"
+        "are",
+        "has been",
+        "was"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "When 'politics' refers to personal political beliefs, it takes plural verb ('are')."
     },
     {
@@ -1544,8 +1544,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "Academic discipline takes singular verb ('is')."
@@ -1555,12 +1555,12 @@
       "topic": "subject_verb_agreement",
       "question": "The acoustics of this auditorium ______ excellent.",
       "options": [
-        "are",
         "is",
         "was",
-        "has been"
+        "has been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Acoustics' referring to physical sound properties takes plural verb ('are')."
     },
     {
@@ -1570,8 +1570,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "Name of a disease ending in '-s' takes singular verb ('is')."
@@ -1581,12 +1581,12 @@
       "topic": "subject_verb_agreement",
       "question": "Mumps ______ common among children.",
       "options": [
-        "is",
         "are",
+        "is",
         "were",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Name of disease takes singular verb ('is')."
     },
     {
@@ -1596,8 +1596,8 @@
       "options": [
         "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "Disease name takes singular verb ('is')."
@@ -1607,12 +1607,12 @@
       "topic": "subject_verb_agreement",
       "question": "Billiards ______ played across the world.",
       "options": [
-        "is",
-        "are",
         "were",
+        "are",
+        "is",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Name of a game ending in '-s' takes singular verb ('is')."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "subject_verb_agreement",
       "question": "Darts ______ his favourite indoor sport.",
       "options": [
+        "were",
         "is",
         "are",
-        "were",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Game name takes singular verb ('is')."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "subject_verb_agreement",
       "question": "Gymnastics ______ included in the Olympic Games.",
       "options": [
-        "is",
+        "have been",
         "are",
-        "were",
-        "have been"
+        "is",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Sport name ending in '-ics' takes singular verb ('is')."
     },
     {
@@ -1648,8 +1648,8 @@
       "options": [
         "has",
         "have",
-        "are",
-        "were"
+        "were",
+        "are"
       ],
       "answer": 0,
       "explanation": "Name of a single international body takes singular verb ('has')."
@@ -1659,12 +1659,12 @@
       "topic": "subject_verb_agreement",
       "question": "Great Expectations ______ written by Charles Dickens.",
       "options": [
-        "was",
         "were",
         "are",
-        "have been"
+        "have been",
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Book title takes singular verb ('was')."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "subject_verb_agreement",
       "question": "The Three Musketeers ______ a thrilling adventure novel.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Book title takes singular verb ('is')."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "subject_verb_agreement",
       "question": "Ten kilometres ______ a long walk for an elderly person.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Distance considered as a single unit takes singular verb ('is')."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "subject_verb_agreement",
       "question": "Six months ______ a long period to wait.",
       "options": [
-        "is",
         "are",
-        "were",
-        "have been"
+        "have been",
+        "is",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Time interval considered as a whole takes singular verb ('is')."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "subject_verb_agreement",
       "question": "Three-fourths of the wall ______ completed.",
       "options": [
-        "was",
-        "were",
         "are",
-        "have been"
+        "were",
+        "have been",
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Fraction of a singular object takes singular verb ('was')."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "subject_verb_agreement",
       "question": "Two-thirds of the students ______ absent.",
       "options": [
-        "were",
         "was",
         "is",
+        "were",
         "has been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fraction of a countable plural noun takes plural verb ('were')."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "subject_verb_agreement",
       "question": "A quarter of the money ______ wasted.",
       "options": [
-        "was",
         "were",
-        "are",
-        "have been"
+        "have been",
+        "was",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fraction of uncountable 'money' takes singular verb ('was')."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "subject_verb_agreement",
       "question": "Most of the milk ______ turned sour.",
       "options": [
-        "has",
-        "have",
+        "were",
         "are",
-        "were"
+        "have",
+        "has"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Most of' + uncountable noun takes singular verb ('has')."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "subject_verb_agreement",
       "question": "Most of the mangoes ______ ripe.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "is",
+        "has been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Most of' + plural countable noun takes plural verb ('are')."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "subject_verb_agreement",
       "question": "Some of the water ______ leaked out.",
       "options": [
-        "has",
+        "were",
         "have",
         "are",
-        "were"
+        "has"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Some of' + uncountable noun takes singular verb ('has')."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "subject_verb_agreement",
       "question": "Some of the apples ______ rotten.",
       "options": [
-        "are",
         "is",
         "was",
+        "are",
         "has been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Some of' + plural countable noun takes plural verb ('are')."
     },
     {
@@ -1803,9 +1803,9 @@
       "question": "All the machinery ______ imported from Germany.",
       "options": [
         "was",
-        "were",
         "are",
-        "have been"
+        "have been",
+        "were"
       ],
       "answer": 0,
       "explanation": "'Machinery' is an uncountable noun taking singular verb ('was')."
@@ -1828,12 +1828,12 @@
       "topic": "subject_verb_agreement",
       "question": "The news ______ broadcast at 9 PM.",
       "options": [
-        "was",
-        "were",
+        "have been",
         "are",
-        "have been"
+        "was",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'News' is uncountable singular, taking 'was'."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "subject_verb_agreement",
       "question": "His baggage ______ checked at the airport counter.",
       "options": [
-        "was",
         "were",
+        "was",
         "are",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Baggage' is uncountable singular, taking 'was'."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "subject_verb_agreement",
       "question": "The luggage ______ kept in the cloakroom.",
       "options": [
-        "is",
         "are",
+        "have been",
         "were",
-        "have been"
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Luggage' takes singular verb ('is')."
     },
     {
@@ -1867,12 +1867,12 @@
       "topic": "subject_verb_agreement",
       "question": "Her advice ______ always proved helpful.",
       "options": [
-        "has",
         "have",
         "are",
-        "were"
+        "were",
+        "has"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Advice' takes singular verb ('has')."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "subject_verb_agreement",
       "question": "The information provided by him ______ false.",
       "options": [
-        "was",
-        "were",
         "are",
-        "have been"
+        "have been",
+        "was",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Information' takes singular verb ('was')."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "subject_verb_agreement",
       "question": "The crew of the ship ______ rescued safely.",
       "options": [
-        "was",
         "were",
+        "was",
         "are",
         "have been"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Crew acting as a single collective unit takes singular verb ('was')."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "subject_verb_agreement",
       "question": "The crew ______ quarrelling among themselves.",
       "options": [
-        "were",
+        "has been",
         "was",
-        "is",
-        "has been"
+        "were",
+        "is"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When members of a collective noun act individually, it takes plural verb ('were')."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "subject_verb_agreement",
       "question": "The audience ______ requesting an encore.",
       "options": [
-        "was",
-        "were",
         "are",
-        "have been"
+        "have been",
+        "was",
+        "were"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Audience as a collective unit takes singular verb ('was')."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "subject_verb_agreement",
       "question": "The audience ______ taking their seats in the auditorium.",
       "options": [
+        "has been",
         "were",
         "was",
-        "is",
-        "has been"
+        "is"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Taking their seats' shows individual members acting, taking plural verb ('were')."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "subject_verb_agreement",
       "question": "Neither of the girls ______ good at dancing.",
       "options": [
-        "is",
-        "are",
+        "have been",
         "were",
-        "have been"
+        "are",
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Neither of' takes a singular verb ('is')."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "subject_verb_agreement",
       "question": "Either of these two books ______ worth reading.",
       "options": [
-        "is",
         "are",
         "were",
+        "is",
         "have been"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Either of' takes a singular verb ('is')."
     },
     {
@@ -1972,9 +1972,9 @@
       "question": "Each of the candidates ______ interviewed by the panel.",
       "options": [
         "was",
-        "were",
+        "have been",
         "are",
-        "have been"
+        "were"
       ],
       "answer": 0,
       "explanation": "'Each of' takes a singular verb ('was')."
@@ -1984,12 +1984,12 @@
       "topic": "subject_verb_agreement",
       "question": "Every one of the houses ______ painted white.",
       "options": [
-        "was",
-        "were",
         "are",
-        "have been"
+        "were",
+        "have been",
+        "was"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Every one of' takes a singular verb ('was')."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "subject_verb_agreement",
       "question": "One of my friends ______ a doctor.",
       "options": [
-        "is",
-        "are",
         "were",
-        "have been"
+        "have been",
+        "is",
+        "are"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'One of my friends' takes a singular verb ('is')."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "subject_verb_agreement",
       "question": "He is one of those men who ______ always ready to help.",
       "options": [
-        "are",
-        "is",
         "was",
-        "has been"
+        "is",
+        "has been",
+        "are"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Relative pronoun 'who' refers to plural antecedent 'those men', requiring plural verb ('are')."
     }
   ]

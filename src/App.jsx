@@ -186,34 +186,68 @@ export default function App() {
     let nextQ = null;
     let isRepeat = false;
 
-    // Check if an upcoming repeat question for this subject is due
-    const subjectUpcoming = userUpcomingRepeats.filter(q => {
-      return activeSubject === 'english'
-        ? ENGLISH_QUESTION_BANK.some(eq => eq.id === q.id)
-        : QUESTION_BANK.some(mq => mq.id === q.id);
-    });
-
-    if (subjectUpcoming.length > 0 && Math.random() > 0.35) {
-      nextQ = subjectUpcoming[0];
-      const updatedUpcoming = userUpcomingRepeats.filter(q => q.id !== nextQ.id);
-      const updated = users.map(u => u.id === activeUserId ? { ...u, upcomingRepeats: updatedUpcoming } : u);
-      persistUsers(updated);
+    if (isRepeatOnlyMode) {
+      // In Mistake Queue mode: pick from currentSubjectRepeatQueue without immediate repeats
+      const candidates = currentSubjectRepeatQueue.length > 1
+        ? currentSubjectRepeatQueue.filter(q => q.id !== currentQuestion?.id)
+        : currentSubjectRepeatQueue;
+      const randIndex = Math.floor(Math.random() * candidates.length);
+      nextQ = candidates[randIndex];
       isRepeat = true;
-      soundFX.playRepeatAlert();
     } else {
-      // Pick random question from topic pool
-      const unasked = pool.filter(q => resetHistory ? true : !userHistory.includes(q.id));
-      const selectionPool = unasked.length > 0 ? unasked : pool;
-      const randIndex = Math.floor(Math.random() * selectionPool.length);
-      nextQ = selectionPool[randIndex];
+      // Regular mode: check if an upcoming repeat question for this subject is due
+      // Must NOT be the question just answered or in the last 3 questions (spaced repetition)
+      const eligibleUpcoming = userUpcomingRepeats.filter(q => {
+        const isCurrentSubject = activeSubject === 'english'
+          ? ENGLISH_QUESTION_BANK.some(eq => eq.id === q.id)
+          : QUESTION_BANK.some(mq => mq.id === q.id);
+        const wasRecentlyAsked = userHistory.slice(-3).includes(q.id);
+        return isCurrentSubject && !wasRecentlyAsked;
+      });
+
+      if (eligibleUpcoming.length > 0 && Math.random() > 0.4) {
+        nextQ = eligibleUpcoming[0];
+        const updatedUpcoming = userUpcomingRepeats.filter(q => q.id !== nextQ.id);
+        const updated = users.map(u => u.id === activeUserId ? { ...u, upcomingRepeats: updatedUpcoming } : u);
+        persistUsers(updated);
+        isRepeat = true;
+        soundFX.playRepeatAlert();
+      } else {
+        // Pick question from topic pool, avoiding recent history and the current question
+        const unasked = pool.filter(q => (resetHistory ? true : !userHistory.includes(q.id)) && q.id !== currentQuestion?.id);
+        const fallback = pool.filter(q => q.id !== currentQuestion?.id);
+        const selectionPool = unasked.length > 0 ? unasked : (fallback.length > 0 ? fallback : pool);
+        const randIndex = Math.floor(Math.random() * selectionPool.length);
+        nextQ = selectionPool[randIndex];
+      }
     }
 
-    setCurrentQuestion({ ...nextQ, isRepeat });
+    if (nextQ) {
+      // Randomize option order dynamically so correct answer position is always unpredictable
+      const originalOptions = [...nextQ.options];
+      const correctText = originalOptions[nextQ.answer];
 
-    if (nextQ && currentUser) {
-      const updatedHistory = [...userHistory.slice(-20), nextQ.id];
-      const updated = users.map(u => u.id === activeUserId ? { ...u, questionHistory: updatedHistory } : u);
-      persistUsers(updated);
+      const shuffledOptions = [...originalOptions];
+      for (let i = shuffledOptions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+      }
+      const newAnswerIndex = shuffledOptions.indexOf(correctText);
+
+      setCurrentQuestion({
+        ...nextQ,
+        options: shuffledOptions,
+        answer: newAnswerIndex,
+        isRepeat
+      });
+
+      if (currentUser) {
+        const updatedHistory = [...userHistory.slice(-20), nextQ.id];
+        const updated = users.map(u => u.id === activeUserId ? { ...u, questionHistory: updatedHistory } : u);
+        persistUsers(updated);
+      }
+    } else {
+      setCurrentQuestion(null);
     }
   };
 
@@ -257,6 +291,7 @@ export default function App() {
       }
 
       const updatedRepeatQueue = userRepeatQueue.filter(q => q.id !== currentQuestion.id);
+      const updatedUpcoming = userUpcomingRepeats.filter(q => q.id !== currentQuestion.id);
 
       const updated = users.map(u => {
         if (u.id === activeUserId) {
@@ -269,7 +304,8 @@ export default function App() {
               maxStreak: Math.max(u.stats.maxStreak || 0, newStreak),
               topicStats: newTopicStats
             },
-            repeatQueue: updatedRepeatQueue
+            repeatQueue: updatedRepeatQueue,
+            upcomingRepeats: updatedUpcoming
           };
         }
         return u;
@@ -280,7 +316,8 @@ export default function App() {
 
       const existsInRepeat = userRepeatQueue.some(q => q.id === currentQuestion.id);
       const updatedRepeatQueue = existsInRepeat ? userRepeatQueue : [...userRepeatQueue, currentQuestion];
-      const updatedUpcoming = [...userUpcomingRepeats, currentQuestion];
+      const existsInUpcoming = userUpcomingRepeats.some(q => q.id === currentQuestion.id);
+      const updatedUpcoming = existsInUpcoming ? userUpcomingRepeats : [...userUpcomingRepeats, currentQuestion];
 
       const updated = users.map(u => {
         if (u.id === activeUserId) {

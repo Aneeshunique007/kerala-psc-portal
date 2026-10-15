@@ -9,8 +9,8 @@
       "question": "He is ______ honest man.",
       "options": [
         "an",
-        "a",
         "the",
+        "a",
         "no article"
       ],
       "answer": 0,
@@ -21,12 +21,12 @@
       "topic": "articles",
       "question": "She is ______ European citizen.",
       "options": [
-        "a",
         "an",
-        "the",
-        "no article"
+        "a",
+        "no article",
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'European' begins with consonant sound /j/ (yoo-ro-pean), taking article 'a'."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "articles",
       "question": "Copper is ______ useful metal.",
       "options": [
-        "a",
         "an",
-        "the",
-        "no article"
+        "a",
+        "no article",
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Useful' begins with consonant sound /j/, taking article 'a'."
     },
     {
@@ -48,9 +48,9 @@
       "question": "He graduated from ______ university in London.",
       "options": [
         "a",
+        "no article",
         "an",
-        "the",
-        "no article"
+        "the"
       ],
       "answer": 0,
       "explanation": "'University' starts with consonant glide /j/, taking 'a'."
@@ -60,12 +60,12 @@
       "topic": "articles",
       "question": "It was ______ one-man show.",
       "options": [
-        "a",
-        "an",
         "the",
-        "no article"
+        "an",
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'One' begins with consonant sound /w/ (wun), taking article 'a'."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "articles",
       "question": "He is ______ M.A. in English.",
       "options": [
-        "an",
         "a",
-        "the",
-        "no article"
+        "no article",
+        "an",
+        "the"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Abbreviation 'M.A.' begins with vowel sound /em/, taking article 'an'."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "articles",
       "question": "His father is ______ M.L.A.",
       "options": [
+        "the",
         "an",
         "a",
-        "the",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'M.L.A.' starts with vowel sound /em/, taking article 'an'."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "articles",
       "question": "She lodged ______ F.I.R. with the police.",
       "options": [
-        "an",
         "a",
+        "an",
         "the",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'F.I.R.' begins with vowel sound /ef/, taking article 'an'."
     },
     {
@@ -114,8 +114,8 @@
       "options": [
         "an",
         "a",
-        "the",
-        "no article"
+        "no article",
+        "the"
       ],
       "answer": 0,
       "explanation": "'S.P.' starts with vowel sound /es/, taking article 'an'."
@@ -125,12 +125,12 @@
       "topic": "articles",
       "question": "The patient was admitted to ______ ICU.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "no article",
+        "an",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'ICU' begins with vowel sound /aɪ/, taking article 'an'."
     },
     {
@@ -138,12 +138,12 @@
       "topic": "articles",
       "question": "______ Ganga is a sacred river.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "No article",
+        "A",
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of holy/major rivers always take the definite article 'The'."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "articles",
       "question": "______ Himalayas are situated in the north of India.",
       "options": [
-        "The",
-        "A",
+        "No article",
         "An",
-        "No article"
+        "The",
+        "A"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Mountain ranges take the definite article 'The' ('The Himalayas')."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "articles",
       "question": "Mount Everest is ______ highest peak in the world.",
       "options": [
+        "an",
         "the",
         "a",
-        "an",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Superlative adjectives ('highest') always take definite article 'the'."
     },
     {
@@ -178,9 +178,9 @@
       "question": "______ Mount Everest is located in Nepal.",
       "options": [
         "No article",
+        "An",
         "The",
-        "A",
-        "An"
+        "A"
       ],
       "answer": 0,
       "explanation": "Individual mountain peaks (Mount Everest, Mount Abu) do NOT take 'The'."
@@ -191,8 +191,8 @@
       "question": "He plays ______ flute very well.",
       "options": [
         "the",
-        "a",
         "an",
+        "a",
         "no article"
       ],
       "answer": 0,
@@ -203,12 +203,12 @@
       "topic": "articles",
       "question": "Can you play ______ guitar?",
       "options": [
-        "the",
+        "no article",
         "a",
         "an",
-        "no article"
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Musical instruments take 'the' ('play the guitar')."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "articles",
       "question": "______ Pacific Ocean is the largest ocean on Earth.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "No article",
+        "A",
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of oceans always take 'The' ('The Pacific Ocean')."
     },
     {
@@ -230,8 +230,8 @@
       "question": "______ Sahara is a vast desert.",
       "options": [
         "The",
-        "A",
         "An",
+        "A",
         "No article"
       ],
       "answer": 0,
@@ -242,12 +242,12 @@
       "topic": "articles",
       "question": "He reads ______ Hindu newspaper daily.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "The",
+        "No article",
+        "A"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Names of newspapers take definite article 'The' ('The Hindu')."
     },
     {
@@ -256,9 +256,9 @@
       "question": "______ Bible is the holy book of Christians.",
       "options": [
         "The",
-        "A",
         "An",
-        "No article"
+        "No article",
+        "A"
       ],
       "answer": 0,
       "explanation": "Names of sacred scriptures take 'The' ('The Bible', 'The Quran', 'The Gita')."
@@ -268,12 +268,12 @@
       "topic": "articles",
       "question": "The train runs at sixty miles ______ hour.",
       "options": [
-        "an",
         "a",
         "the",
+        "an",
         "no article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Expressions of rate/speed take indefinite article: 'sixty miles an hour'."
     },
     {
@@ -283,8 +283,8 @@
       "options": [
         "a",
         "an",
-        "the",
-        "no article"
+        "no article",
+        "the"
       ],
       "answer": 0,
       "explanation": "Expressions of price per unit take 'a kilo'."
@@ -294,12 +294,12 @@
       "topic": "articles",
       "question": "Kalidasa is ______ Shakespeare of India.",
       "options": [
-        "the",
         "a",
-        "an",
-        "no article"
+        "no article",
+        "the",
+        "an"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When a proper noun is used as a standard of comparison, it takes definite article 'the'."
     },
     {
@@ -320,12 +320,12 @@
       "topic": "articles",
       "question": "He is ______ honorary secretary of the club.",
       "options": [
-        "an",
-        "a",
+        "no article",
         "the",
-        "no article"
+        "a",
+        "an"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Honorary' has silent 'h' and vowel sound /ɒ/, taking 'an'."
     },
     {
@@ -333,12 +333,12 @@
       "topic": "articles",
       "question": "She bought ______ umbrella yesterday.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "no article",
+        "an",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Umbrella' begins with short vowel sound /ʌ/, taking 'an'."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "articles",
       "question": "This is ______ heir to the vast estate.",
       "options": [
-        "an",
         "a",
         "the",
+        "an",
         "no article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Heir' has a silent 'h' and is pronounced /eə/, taking 'an'."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "articles",
       "question": "She is ______ heiress of a royal family.",
       "options": [
-        "an",
-        "a",
+        "no article",
         "the",
-        "no article"
+        "an",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Heiress' begins with silent 'h', taking 'an'."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "articles",
       "question": "Gold is ______ precious metal.",
       "options": [
-        "a",
         "an",
-        "the",
-        "no article"
+        "no article",
+        "a",
+        "the"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Material nouns ('Gold') take no article in general sense, but predicate complement takes 'a precious metal'."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "articles",
       "question": "______ gold mined in Kolar is of high quality.",
       "options": [
-        "The",
         "A",
-        "An",
-        "No article"
+        "The",
+        "No article",
+        "An"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "When an uncountable/material noun is particularized by a clause ('mined in Kolar'), it takes 'The'."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "articles",
       "question": "Honesty is ______ best policy.",
       "options": [
-        "the",
         "a",
         "an",
+        "the",
         "no article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Superlative degree 'best' requires 'the'."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "articles",
       "question": "______ honesty of the clerk was praised by all.",
       "options": [
+        "No article",
         "The",
-        "A",
         "An",
-        "No article"
+        "A"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Abstract noun particularized by a modifying phrase takes 'The'."
     },
     {
@@ -424,12 +424,12 @@
       "topic": "articles",
       "question": "He goes to ______ church every Sunday to pray.",
       "options": [
-        "no article",
-        "the",
         "a",
+        "the",
+        "no article",
         "an"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Institutions (church, school, hospital, prison) take NO article when visited for primary purpose."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "articles",
       "question": "The carpenter went to ______ church to repair the door.",
       "options": [
-        "the",
         "a",
-        "an",
-        "no article"
+        "the",
+        "no article",
+        "an"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "When visited for secondary purposes other than prayer, 'church' takes 'the'."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "articles",
       "question": "His brother went to ______ prison to meet him.",
       "options": [
-        "the",
         "a",
         "an",
+        "the",
         "no article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Visiting prison for meeting takes 'the'."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "articles",
       "question": "Breakfast is ______ first meal of the day.",
       "options": [
+        "no article",
         "the",
         "a",
-        "an",
-        "no article"
+        "an"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ordinal numbers ('first', 'second', 'third') take definite article 'the'."
     },
     {
@@ -491,8 +491,8 @@
       "options": [
         "a",
         "an",
-        "the",
-        "no article"
+        "no article",
+        "the"
       ],
       "answer": 0,
       "explanation": "Names of meals take article 'a' when preceded by an adjective ('a delicious breakfast')."
@@ -503,8 +503,8 @@
       "question": "I usually take ______ dinner at 8 PM.",
       "options": [
         "no article",
-        "the",
         "a",
+        "the",
         "an"
       ],
       "answer": 0,
@@ -515,12 +515,12 @@
       "topic": "articles",
       "question": "______ dog is a faithful animal.",
       "options": [
-        "The",
         "A",
         "An",
+        "The",
         "No article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "A singular countable noun representing the entire species takes 'The' (or 'A')."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "articles",
       "question": "______ cow is a sacred animal.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "The",
+        "No article",
+        "A"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'The cow' represents the whole class of cows."
     },
     {
@@ -541,12 +541,12 @@
       "topic": "articles",
       "question": "Man is ______ mortal.",
       "options": [
+        "an",
         "no article",
         "a",
-        "an",
         "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Man' used in general sense for mankind takes NO article."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "articles",
       "question": "He was elected ______ President of the committee.",
       "options": [
-        "no article",
-        "the",
         "a",
-        "an"
+        "an",
+        "the",
+        "no article"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Titles of unique public offices following verbs like 'elect', 'appoint', 'make' take no article."
     },
     {
@@ -568,9 +568,9 @@
       "question": "They appointed him ______ chairman.",
       "options": [
         "no article",
-        "the",
         "a",
-        "an"
+        "an",
+        "the"
       ],
       "answer": 0,
       "explanation": "Complement of 'appoint' takes no article."
@@ -580,12 +580,12 @@
       "topic": "articles",
       "question": "______ sun rises in the east.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "The",
+        "No article",
+        "A"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Unique celestial bodies take 'The' ('The sun', 'the moon', 'the earth')."
     },
     {
@@ -594,9 +594,9 @@
       "question": "The earth revolves around ______ sun.",
       "options": [
         "the",
-        "a",
         "an",
-        "no article"
+        "no article",
+        "a"
       ],
       "answer": 0,
       "explanation": "Unique celestial bodies take 'the'."
@@ -606,12 +606,12 @@
       "topic": "articles",
       "question": "He is ______ taller of the two brothers.",
       "options": [
-        "the",
-        "a",
         "an",
-        "no article"
+        "no article",
+        "a",
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Comparative degree with 'of the two' takes definite article 'the'."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "articles",
       "question": "______ richer you become, the more you desire.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "The",
+        "No article",
+        "A"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Double comparative construction requires 'The'."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "articles",
       "question": "He is ______ Newton of modern physics.",
       "options": [
-        "the",
         "a",
-        "an",
-        "no article"
+        "no article",
+        "the",
+        "an"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Proper noun used as an epithet/comparative metaphor takes 'the'."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "articles",
       "question": "I saw ______ one-eyed beggar on the road.",
       "options": [
-        "a",
+        "no article",
         "an",
-        "the",
-        "no article"
+        "a",
+        "the"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'One-eyed' starts with consonant glide /w/, taking 'a'."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "articles",
       "question": "She holds ______ university degree.",
       "options": [
-        "a",
-        "an",
+        "no article",
         "the",
-        "no article"
+        "a",
+        "an"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'University' starts with consonant sound /j/, taking 'a'."
     },
     {
@@ -684,12 +684,12 @@
       "topic": "articles",
       "question": "It is ______ unique opportunity.",
       "options": [
+        "no article",
         "a",
         "an",
-        "the",
-        "no article"
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Unique' begins with consonant sound /j/, taking 'a'."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "articles",
       "question": "We stayed at ______ hotel in the city.",
       "options": [
+        "the",
         "a",
         "an",
-        "the",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hotel' begins with voiced consonant /h/, taking 'a' in modern English."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "articles",
       "question": "It was ______ historical event.",
       "options": [
-        "a",
-        "an",
         "the",
-        "no article"
+        "an",
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "In modern standard English, 'historical' takes 'a'."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "articles",
       "question": "He is ______ NCC cadet.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "no article",
+        "an",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'NCC' begins with vowel sound /en/, taking 'an'."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "articles",
       "question": "She is ______ X-ray technician.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "no article",
+        "a",
+        "an"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'X-ray' begins with vowel sound /eks/, taking 'an'."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "articles",
       "question": "He received ______ SOS message.",
       "options": [
-        "an",
         "a",
-        "the",
-        "no article"
+        "no article",
+        "an",
+        "the"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'SOS' begins with vowel sound /es/, taking 'an'."
     },
     {
@@ -763,9 +763,9 @@
       "question": "This is ______ uniform dress.",
       "options": [
         "a",
-        "an",
         "the",
-        "no article"
+        "no article",
+        "an"
       ],
       "answer": 0,
       "explanation": "'Uniform' begins with consonant sound /j/, taking 'a'."
@@ -775,12 +775,12 @@
       "topic": "articles",
       "question": "It was ______ unanimous decision.",
       "options": [
-        "a",
-        "an",
         "the",
-        "no article"
+        "an",
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Unanimous' begins with consonant sound /j/, taking 'a'."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "articles",
       "question": "English is ______ universal language.",
       "options": [
-        "a",
         "an",
+        "no article",
         "the",
-        "no article"
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Universal' begins with consonant sound /j/, taking 'a'."
     },
     {
@@ -802,9 +802,9 @@
       "question": "He returned after ______ hour.",
       "options": [
         "an",
-        "a",
         "the",
-        "no article"
+        "no article",
+        "a"
       ],
       "answer": 0,
       "explanation": "'Hour' has silent 'h', taking 'an'."
@@ -814,12 +814,12 @@
       "topic": "articles",
       "question": "He bought ______ ewe from the farm.",
       "options": [
-        "a",
+        "no article",
         "an",
         "the",
-        "no article"
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ewe' (female sheep) is pronounced /juː/ (like 'you'), taking 'a'."
     },
     {
@@ -828,9 +828,9 @@
       "question": "She is ______ untidy girl.",
       "options": [
         "an",
-        "a",
+        "no article",
         "the",
-        "no article"
+        "a"
       ],
       "answer": 0,
       "explanation": "'Untidy' begins with vowel sound /ʌn/, taking 'an'."
@@ -840,12 +840,12 @@
       "topic": "articles",
       "question": "He gave me ______ useful piece of advice.",
       "options": [
+        "no article",
         "a",
-        "an",
         "the",
-        "no article"
+        "an"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Useful' begins with consonant glide /j/, taking 'a'."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "articles",
       "question": "______ Arabian Sea lies to the west of India.",
       "options": [
-        "The",
         "A",
-        "An",
-        "No article"
+        "No article",
+        "The",
+        "An"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Names of seas take 'The' ('The Arabian Sea')."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "articles",
       "question": "______ Indian Ocean is named after India.",
       "options": [
+        "An",
         "The",
         "A",
-        "An",
         "No article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Names of oceans take 'The'."
     },
     {
@@ -880,8 +880,8 @@
       "question": "______ Red Sea connects the Mediterranean to the Indian Ocean.",
       "options": [
         "The",
-        "A",
         "An",
+        "A",
         "No article"
       ],
       "answer": 0,
@@ -892,12 +892,12 @@
       "topic": "articles",
       "question": "______ Persian Gulf is rich in oil.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "No article",
+        "A",
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of gulfs take 'The' ('The Persian Gulf')."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "articles",
       "question": "He traveled across ______ Bay of Bengal.",
       "options": [
-        "the",
         "a",
-        "an",
-        "no article"
+        "no article",
+        "the",
+        "an"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Names of bays take 'the' ('the Bay of Bengal')."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "articles",
       "question": "The ship sailed through ______ Suez Canal.",
       "options": [
-        "the",
         "a",
-        "an",
-        "no article"
+        "no article",
+        "the",
+        "an"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Canals take definite article 'the' ('the Suez Canal')."
     },
     {
@@ -933,8 +933,8 @@
       "options": [
         "The",
         "A",
-        "An",
-        "No article"
+        "No article",
+        "An"
       ],
       "answer": 0,
       "explanation": "Canals take 'The'."
@@ -945,9 +945,9 @@
       "question": "______ Times of India is widely circulated.",
       "options": [
         "The",
-        "A",
+        "No article",
         "An",
-        "No article"
+        "A"
       ],
       "answer": 0,
       "explanation": "Newspapers take definite article 'The'."
@@ -957,12 +957,12 @@
       "topic": "articles",
       "question": "I saw ______ moon shining brightly.",
       "options": [
-        "the",
         "a",
+        "the",
         "an",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The moon is a unique celestial body, taking 'the'."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "articles",
       "question": "Look at ______ sky above.",
       "options": [
-        "the",
-        "a",
         "an",
-        "no article"
+        "no article",
+        "the",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Sky' takes definite article 'the'."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "articles",
       "question": "He was ______ first man to land on the moon.",
       "options": [
-        "the",
-        "a",
         "an",
-        "no article"
+        "no article",
+        "a",
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ordinal numbers take 'the' ('the first man')."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "articles",
       "question": "Who is ______ second boy in the row?",
       "options": [
-        "the",
         "a",
         "an",
-        "no article"
+        "no article",
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ordinal numbers take 'the'."
     },
     {
@@ -1010,9 +1010,9 @@
       "question": "He lives on ______ third floor.",
       "options": [
         "the",
+        "no article",
         "a",
-        "an",
-        "no article"
+        "an"
       ],
       "answer": 0,
       "explanation": "Ordinal numbers take 'the'."
@@ -1022,12 +1022,12 @@
       "topic": "articles",
       "question": "This is ______ same pen that I lost.",
       "options": [
+        "an",
         "the",
         "a",
-        "an",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Same' is preceded by 'the' ('the same pen')."
     },
     {
@@ -1036,9 +1036,9 @@
       "question": "______ Titanic sank in 1912.",
       "options": [
         "The",
-        "A",
         "An",
-        "No article"
+        "No article",
+        "A"
       ],
       "answer": 0,
       "explanation": "Names of famous ships take 'The' ('The Titanic')."
@@ -1048,12 +1048,12 @@
       "topic": "articles",
       "question": "______ Rajdhani Express is a fast train.",
       "options": [
-        "The",
+        "No article",
         "A",
         "An",
-        "No article"
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of trains take 'The' ('The Rajdhani Express')."
     },
     {
@@ -1061,12 +1061,12 @@
       "topic": "articles",
       "question": "He can speak ______ French fluently.",
       "options": [
-        "no article",
+        "an",
         "the",
-        "a",
-        "an"
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Names of languages take NO article ('speak French')."
     },
     {
@@ -1075,8 +1075,8 @@
       "question": "______ French defeated the Germans.",
       "options": [
         "The",
-        "A",
         "An",
+        "A",
         "No article"
       ],
       "answer": 0,
@@ -1087,12 +1087,12 @@
       "topic": "articles",
       "question": "He is learning ______ English.",
       "options": [
+        "a",
         "no article",
         "the",
-        "a",
         "an"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Languages take no article."
     },
     {
@@ -1115,8 +1115,8 @@
       "options": [
         "a",
         "an",
-        "the",
-        "no article"
+        "no article",
+        "the"
       ],
       "answer": 0,
       "explanation": "Countable descriptor takes 'a rare metal'."
@@ -1126,12 +1126,12 @@
       "topic": "articles",
       "question": "______ water in this well is contaminated.",
       "options": [
-        "The",
+        "No article",
         "A",
         "An",
-        "No article"
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Particularized uncountable noun takes 'The'."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "articles",
       "question": "He died of ______ cholera.",
       "options": [
-        "no article",
-        "the",
         "a",
-        "an"
+        "an",
+        "the",
+        "no article"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of diseases take no article ('died of cholera')."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "articles",
       "question": "She plays ______ cricket every evening.",
       "options": [
+        "an",
         "no article",
         "the",
-        "a",
-        "an"
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Names of sports take no article ('plays cricket')."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "articles",
       "question": "He is fond of ______ football.",
       "options": [
-        "no article",
-        "the",
+        "an",
         "a",
-        "an"
+        "the",
+        "no article"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Sports take no article."
     },
     {
@@ -1179,9 +1179,9 @@
       "question": "______ gold of South Africa is famous.",
       "options": [
         "The",
+        "No article",
         "A",
-        "An",
-        "No article"
+        "An"
       ],
       "answer": 0,
       "explanation": "Particularized material noun takes 'The'."
@@ -1192,9 +1192,9 @@
       "question": "______ wisdom of Solomon is legendary.",
       "options": [
         "The",
-        "A",
+        "No article",
         "An",
-        "No article"
+        "A"
       ],
       "answer": 0,
       "explanation": "Particularized abstract noun takes 'The'."
@@ -1204,12 +1204,12 @@
       "topic": "articles",
       "question": "He is ______ MLA representing our constituency.",
       "options": [
+        "no article",
         "an",
         "a",
-        "the",
-        "no article"
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'MLA' starts with vowel sound /em/, taking 'an'."
     },
     {
@@ -1219,8 +1219,8 @@
       "options": [
         "a",
         "an",
-        "the",
-        "no article"
+        "no article",
+        "the"
       ],
       "answer": 0,
       "explanation": "'One-rupee' starts with consonant sound /w/, taking 'a'."
@@ -1230,12 +1230,12 @@
       "topic": "articles",
       "question": "He is ______ European professor.",
       "options": [
-        "a",
         "an",
-        "the",
-        "no article"
+        "a",
+        "no article",
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'European' starts with consonant sound /j/, taking 'a'."
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "articles",
       "question": "I met ______ university lecturer.",
       "options": [
-        "a",
+        "no article",
         "an",
         "the",
-        "no article"
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'University' starts with consonant sound /j/, taking 'a'."
     },
     {
@@ -1256,12 +1256,12 @@
       "topic": "articles",
       "question": "It was ______ unanimous resolution.",
       "options": [
-        "a",
         "an",
-        "the",
-        "no article"
+        "a",
+        "no article",
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Unanimous' takes 'a'."
     },
     {
@@ -1269,12 +1269,12 @@
       "topic": "articles",
       "question": "He is ______ honest police officer.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "a",
+        "no article",
+        "an"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Honest' has silent 'h', taking 'an'."
     },
     {
@@ -1282,12 +1282,12 @@
       "topic": "articles",
       "question": "She joined ______ union of workers.",
       "options": [
-        "a",
         "an",
         "the",
-        "no article"
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Union' starts with consonant sound /j/, taking 'a'."
     },
     {
@@ -1296,9 +1296,9 @@
       "question": "He is ______ honorary member.",
       "options": [
         "an",
-        "a",
+        "no article",
         "the",
-        "no article"
+        "a"
       ],
       "answer": 0,
       "explanation": "'Honorary' has silent 'h', taking 'an'."
@@ -1308,12 +1308,12 @@
       "topic": "articles",
       "question": "The thief was sent to ______ prison.",
       "options": [
+        "an",
         "no article",
         "the",
-        "a",
-        "an"
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Prison for punishment takes no article."
     },
     {
@@ -1322,9 +1322,9 @@
       "question": "He went to ______ hospital to visit a sick friend.",
       "options": [
         "the",
-        "a",
+        "no article",
         "an",
-        "no article"
+        "a"
       ],
       "answer": 0,
       "explanation": "Secondary visit takes 'the'."
@@ -1335,9 +1335,9 @@
       "question": "Children should go to ______ school regularly.",
       "options": [
         "no article",
+        "an",
         "the",
-        "a",
-        "an"
+        "a"
       ],
       "answer": 0,
       "explanation": "Primary educational purpose takes no article."
@@ -1347,12 +1347,12 @@
       "topic": "articles",
       "question": "The parent went to ______ school to meet the headmaster.",
       "options": [
-        "the",
         "a",
+        "no article",
         "an",
-        "no article"
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Secondary purpose takes 'the'."
     },
     {
@@ -1361,9 +1361,9 @@
       "question": "We should help ______ needy.",
       "options": [
         "the",
+        "no article",
         "a",
-        "an",
-        "no article"
+        "an"
       ],
       "answer": 0,
       "explanation": "'The + adjective' indicates the whole group ('the needy' = all needy people)."
@@ -1373,12 +1373,12 @@
       "topic": "articles",
       "question": "He is ______ university student.",
       "options": [
-        "a",
         "an",
-        "the",
-        "no article"
+        "no article",
+        "a",
+        "the"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'University' begins with a consonant sound /juː/, requiring article 'a'."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "articles",
       "question": "She is ______ European citizen.",
       "options": [
-        "a",
         "an",
+        "no article",
         "the",
-        "no article"
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'European' begins with consonant sound /juː/, taking 'a'."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "articles",
       "question": "He has ______ unique talent for painting.",
       "options": [
-        "a",
-        "an",
+        "no article",
         "the",
-        "no article"
+        "an",
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Unique' begins with consonant sound /juː/, taking 'a'."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "articles",
       "question": "They formed ______ union of workers.",
       "options": [
-        "a",
-        "an",
         "the",
+        "an",
+        "a",
         "no article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Union' begins with consonant sound /juː/, taking 'a'."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "articles",
       "question": "He is ______ heir to a vast fortune.",
       "options": [
-        "an",
         "a",
         "the",
+        "an",
         "no article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Heir' has a silent 'h' and begins with vowel sound /ɛə/, taking 'an'."
     },
     {
@@ -1451,12 +1451,12 @@
       "topic": "articles",
       "question": "She is ______ honorable woman.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "no article",
+        "an",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Honorable' has a silent 'h', taking 'an'."
     },
     {
@@ -1465,9 +1465,9 @@
       "question": "He waited for ______ hour.",
       "options": [
         "an",
-        "a",
+        "no article",
         "the",
-        "no article"
+        "a"
       ],
       "answer": 0,
       "explanation": "'Hour' has silent 'h', taking 'an'."
@@ -1477,12 +1477,12 @@
       "topic": "articles",
       "question": "It was ______ historic occasion.",
       "options": [
-        "a",
+        "no article",
         "an",
         "the",
-        "no article"
+        "a"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "In modern standard English, 'historic' takes 'a'."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "articles",
       "question": "He is ______ honest man.",
       "options": [
-        "an",
         "a",
-        "the",
-        "no article"
+        "an",
+        "no article",
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Honest' has silent 'h', taking 'an'."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "articles",
       "question": "He is ______ MLA from our constituency.",
       "options": [
+        "no article",
         "an",
         "a",
-        "the",
-        "no article"
+        "the"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Initial letter 'M' is pronounced with vowel sound /ɛm/, taking 'an MLA'."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "articles",
       "question": "She is ______ MP representing Wayanad.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "an",
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Letter 'M' begins with vowel sound, taking 'an MP'."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "articles",
       "question": "He filed ______ FIR at the police station.",
       "options": [
-        "an",
         "a",
         "the",
-        "no article"
+        "no article",
+        "an"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Letter 'F' is pronounced /ɛf/, taking 'an FIR'."
     },
     {
@@ -1542,12 +1542,12 @@
       "topic": "articles",
       "question": "He is ______ IAS officer.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "an",
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Letter 'I' begins with vowel sound, taking 'an IAS officer'."
     },
     {
@@ -1557,8 +1557,8 @@
       "options": [
         "an",
         "a",
-        "the",
-        "no article"
+        "no article",
+        "the"
       ],
       "answer": 0,
       "explanation": "Letter 'X' is pronounced /ɛks/, taking 'an X-ray'."
@@ -1568,12 +1568,12 @@
       "topic": "articles",
       "question": "He is ______ NCC cadet.",
       "options": [
-        "an",
         "a",
+        "an",
         "the",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Letter 'N' is pronounced /ɛn/, taking 'an NCC cadet'."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "articles",
       "question": "She sent ______ SOS message during the storm.",
       "options": [
-        "an",
-        "a",
         "the",
-        "no article"
+        "a",
+        "no article",
+        "an"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Letter 'S' is pronounced /ɛs/, taking 'an SOS'."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "articles",
       "question": "Mount Everest is ______ highest peak in the world.",
       "options": [
+        "an",
         "the",
         "a",
-        "an",
         "no article"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Superlative adjectives take definite article 'the'."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "articles",
       "question": "Pacific Ocean is ______ deepest ocean.",
       "options": [
-        "The",
-        "A",
         "An",
-        "no article"
+        "The",
+        "no article",
+        "A"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Names of oceans take 'The'."
     },
     {
@@ -1634,8 +1634,8 @@
       "question": "______ Nile is the longest river in the world.",
       "options": [
         "The",
-        "A",
         "An",
+        "A",
         "no article"
       ],
       "answer": 0,
@@ -1646,12 +1646,12 @@
       "topic": "articles",
       "question": "______ Himalayas protect India from cold winds.",
       "options": [
+        "no article",
         "The",
-        "A",
         "An",
-        "no article"
+        "A"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Mountain ranges in plural take 'The'."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "articles",
       "question": "Mount Abu is ______ sacred hill in Rajasthan.",
       "options": [
-        "a",
-        "an",
         "the",
-        "no article"
+        "a",
+        "no article",
+        "an"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Individual peaks (not ranges) do not take 'the'; here 'a sacred hill'."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "articles",
       "question": "We stayed at ______ Taj Hotel in Mumbai.",
       "options": [
-        "the",
         "a",
+        "no article",
         "an",
-        "no article"
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of famous hotels take 'the'."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "articles",
       "question": "______ French is a beautiful language.",
       "options": [
-        "No article",
         "The",
-        "A",
-        "An"
+        "An",
+        "No article",
+        "A"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Names of languages without the word 'language' take no article."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "articles",
       "question": "______ French defeated the Germans.",
       "options": [
-        "The",
         "A",
-        "An",
-        "No article"
+        "The",
+        "No article",
+        "An"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'The French' refers to the people/nation of France, requiring 'The'."
     },
     {
@@ -1713,8 +1713,8 @@
       "options": [
         "no article",
         "the",
-        "a",
-        "an"
+        "an",
+        "a"
       ],
       "answer": 0,
       "explanation": "Language names take no article: 'speaks English'."
@@ -1724,12 +1724,12 @@
       "topic": "articles",
       "question": "______ English ruled India for centuries.",
       "options": [
-        "The",
-        "A",
         "An",
-        "No article"
+        "No article",
+        "A",
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'The English' refers to the British people."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "articles",
       "question": "Gold is ______ precious metal.",
       "options": [
-        "a",
+        "no article",
         "an",
-        "the",
-        "no article"
+        "a",
+        "the"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Uncountable material noun 'Gold' takes no article in general sense; 'a precious metal'."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "articles",
       "question": "______ gold of Kolar is famous.",
       "options": [
-        "The",
         "A",
+        "No article",
         "An",
-        "No article"
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Specific material noun defined by phrase 'of Kolar' takes 'The'."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "articles",
       "question": "Man is ______ mortal.",
       "options": [
-        "no article",
-        "a",
         "an",
-        "the"
+        "the",
+        "no article",
+        "a"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Man' representing all humanity takes no article."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "articles",
       "question": "______ dog is a faithful animal.",
       "options": [
-        "The",
         "A",
         "An",
-        "No article"
+        "No article",
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Singular countable noun used to represent the whole species takes 'The'."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "articles",
       "question": "He plays ______ violin every evening.",
       "options": [
-        "the",
+        "no article",
         "a",
         "an",
-        "no article"
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of musical instruments take definite article 'the'."
     },
     {
@@ -1803,9 +1803,9 @@
       "question": "She is fond of playing ______ flute.",
       "options": [
         "the",
-        "a",
+        "no article",
         "an",
-        "no article"
+        "a"
       ],
       "answer": 0,
       "explanation": "Musical instruments take 'the'."
@@ -1815,12 +1815,12 @@
       "topic": "articles",
       "question": "He plays ______ cricket very well.",
       "options": [
-        "no article",
-        "the",
+        "an",
         "a",
-        "an"
+        "the",
+        "no article"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Names of games and sports take no article."
     },
     {
@@ -1828,12 +1828,12 @@
       "topic": "articles",
       "question": "They had ______ lunch at 1 PM.",
       "options": [
+        "an",
         "no article",
         "the",
-        "a",
-        "an"
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Regular meals take no article in general sense."
     },
     {
@@ -1842,8 +1842,8 @@
       "question": "We attended ______ grand dinner hosted by the Mayor.",
       "options": [
         "a",
-        "an",
         "the",
+        "an",
         "no article"
       ],
       "answer": 0,
@@ -1854,12 +1854,12 @@
       "topic": "articles",
       "question": "He goes to ______ church every Sunday to pray.",
       "options": [
-        "no article",
         "the",
+        "an",
         "a",
-        "an"
+        "no article"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Places like school, church, hospital visited for primary purpose take no article."
     },
     {
@@ -1868,9 +1868,9 @@
       "question": "The bishop visited ______ church to inspect repairs.",
       "options": [
         "the",
-        "a",
         "an",
-        "no article"
+        "no article",
+        "a"
       ],
       "answer": 0,
       "explanation": "Visited for secondary purpose other than worship takes 'the'."
@@ -1880,12 +1880,12 @@
       "topic": "articles",
       "question": "The injured were rushed to ______ hospital.",
       "options": [
+        "a",
         "no article",
         "the",
-        "a",
         "an"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Hospital for treatment takes no article."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "articles",
       "question": "He went to ______ hospital to visit his sick friend.",
       "options": [
-        "the",
         "a",
-        "an",
-        "no article"
+        "the",
+        "no article",
+        "an"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Hospital for visiting takes 'the'."
     },
     {
@@ -1908,8 +1908,8 @@
       "options": [
         "no article",
         "the",
-        "a",
-        "an"
+        "an",
+        "a"
       ],
       "answer": 0,
       "explanation": "Prison for punishment takes no article."
@@ -1919,12 +1919,12 @@
       "topic": "articles",
       "question": "He was appointed ______ Chairman of the committee.",
       "options": [
+        "an",
         "no article",
         "the",
-        "a",
-        "an"
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Factitive object/unique post titles after 'appointed/elected' take no article."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "articles",
       "question": "They elected him ______ President.",
       "options": [
-        "no article",
         "the",
-        "a",
-        "an"
+        "no article",
+        "an",
+        "a"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Unique public office following 'elected' takes no article."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "articles",
       "question": "He reads ______ Hindu newspaper every morning.",
       "options": [
-        "The",
+        "No article",
         "A",
-        "An",
-        "No article"
+        "The",
+        "An"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Names of newspapers take definite article 'The'."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "articles",
       "question": "______ Ramayana is an ancient Indian epic.",
       "options": [
-        "The",
-        "A",
+        "No article",
         "An",
-        "No article"
+        "A",
+        "The"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Holy scriptures take definite article 'The'."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "articles",
       "question": "Valmiki's ______ Ramayana is a literary masterpiece.",
       "options": [
-        "no article",
-        "the",
+        "an",
         "a",
-        "an"
+        "no article",
+        "the"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When author's name in genitive case precedes the scripture, 'the' is omitted."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "articles",
       "question": "Kalidasa is ______ Shakespeare of India.",
       "options": [
-        "the",
-        "a",
+        "no article",
         "an",
-        "no article"
+        "a",
+        "the"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Proper noun used as a metaphor/standard of comparison takes 'the'."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "articles",
       "question": "Ahmedabad is ______ Manchester of India.",
       "options": [
-        "the",
         "a",
         "an",
+        "the",
         "no article"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Comparative proper noun takes 'the'."
     },
     {
@@ -2012,8 +2012,8 @@
       "options": [
         "the",
         "a",
-        "an",
-        "no article"
+        "no article",
+        "an"
       ],
       "answer": 0,
       "explanation": "Proper noun used as a comparative standard takes 'the'."

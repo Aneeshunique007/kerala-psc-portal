@@ -8,12 +8,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'DECIDE'?",
       "options": [
+        "Decider",
         "Decision",
-        "Decisiveness",
         "Deciding",
-        "Decider"
+        "Decisiveness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Decision' is the abstract noun derived from the verb 'decide'."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the noun 'COURAGE'?",
       "options": [
-        "Courageous",
-        "Encourage",
         "Courageously",
+        "Encourage",
+        "Courageous",
         "Couraging"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Adding suffix '-ous' forms the adjective 'Courageous'."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'RICH'?",
       "options": [
-        "Enrich",
-        "Riches",
         "Richly",
-        "Enrichment"
+        "Enrichment",
+        "Enrich",
+        "Riches"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 'en-' with adjective 'rich' forms the transitive verb 'Enrich'."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the noun 'COURAGE'?",
       "options": [
-        "Encourage",
-        "Courageous",
         "Encouragement",
-        "Couraging"
+        "Couraging",
+        "Courageous",
+        "Encourage"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prefix 'en-' with 'courage' forms the verb 'Encourage'."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'ABLE'?",
       "options": [
-        "Ability",
         "Enable",
+        "Ability",
         "Ably",
         "Ableness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ity' forms the abstract noun 'Ability'."
     },
     {
@@ -74,9 +74,9 @@
       "question": "What is the verb form of the adjective 'ABLE'?",
       "options": [
         "Enable",
-        "Ability",
         "Ably",
-        "Disabled"
+        "Disabled",
+        "Ability"
       ],
       "answer": 0,
       "explanation": "Prefix 'en-' forms the verb 'Enable'."
@@ -86,12 +86,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'DESTROY'?",
       "options": [
-        "Destruction",
-        "Destructive",
         "Destroyer",
-        "Destroying"
+        "Destroying",
+        "Destruction",
+        "Destructive"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The noun form derived from 'destroy' is 'Destruction'."
     },
     {
@@ -99,12 +99,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the verb 'DESTROY'?",
       "options": [
-        "Destructive",
-        "Destruction",
         "Destructible",
-        "Destroyed"
+        "Destructive",
+        "Destroyed",
+        "Destruction"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ive' forms the adjective 'Destructive'."
     },
     {
@@ -112,12 +112,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'DEEP'?",
       "options": [
-        "Depth",
         "Deepen",
-        "Deeply",
-        "Deepness"
+        "Deepness",
+        "Depth",
+        "Deeply"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Internal vowel change with suffix '-th' forms 'Depth'."
     },
     {
@@ -126,9 +126,9 @@
       "question": "What is the verb form of the adjective 'DEEP'?",
       "options": [
         "Deepen",
-        "Depth",
+        "Deepness",
         "Deeply",
-        "Deepness"
+        "Depth"
       ],
       "answer": 0,
       "explanation": "Suffix '-en' forms the verb 'Deepen'."
@@ -138,12 +138,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'WIDE'?",
       "options": [
-        "Width",
-        "Widen",
         "Widely",
+        "Widen",
+        "Width",
         "Wideness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-th' forms the noun 'Width'."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'WIDE'?",
       "options": [
-        "Widen",
-        "Width",
         "Widely",
-        "Wideness"
+        "Wideness",
+        "Widen",
+        "Width"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-en' forms the verb 'Widen'."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'LONG'?",
       "options": [
-        "Length",
+        "Longly",
         "Lengthen",
         "Longness",
-        "Longly"
+        "Length"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Vowel mutation with '-th' forms the noun 'Length'."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the noun 'LENGTH'?",
       "options": [
-        "Lengthen",
-        "Long",
         "Lengthy",
-        "Longer"
+        "Longer",
+        "Lengthen",
+        "Long"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-en' forms the verb 'Lengthen'."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'STRONG'?",
       "options": [
-        "Strength",
         "Strengthen",
         "Strongness",
-        "Strongly"
+        "Strongly",
+        "Strength"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Vowel mutation with '-th' forms the noun 'Strength'."
     },
     {
@@ -216,12 +216,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'SUCCEED'?",
       "options": [
-        "Success",
-        "Successful",
         "Successfully",
+        "Successful",
+        "Success",
         "Succeeding"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Success' is the abstract noun derived from 'succeed'."
     },
     {
@@ -229,12 +229,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the noun 'SUCCESS'?",
       "options": [
-        "Successful",
         "Succeed",
-        "Successfully",
-        "Successive"
+        "Successful",
+        "Successive",
+        "Successfully"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ful' forms the adjective 'Successful'."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'DIE'?",
       "options": [
-        "Death",
-        "Dead",
+        "Dying",
         "Deadly",
-        "Dying"
+        "Dead",
+        "Death"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Death' is the noun form of 'die'."
     },
     {
@@ -255,12 +255,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the verb 'DIE'?",
       "options": [
-        "Dead",
-        "Death",
+        "Dying",
         "Deadly",
-        "Dying"
+        "Death",
+        "Dead"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Dead' is the adjective describing the state of having died."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'BELIEVE'?",
       "options": [
-        "Belief",
-        "Believable",
+        "Believing",
         "Believer",
-        "Believing"
+        "Believable",
+        "Belief"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Voicing alternation 'v' -> 'f' forms the noun 'Belief'."
     },
     {
@@ -281,12 +281,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'RELIEVE'?",
       "options": [
+        "Relieving",
         "Relief",
         "Relieved",
-        "Relieving",
         "Reliever"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Noun form is 'Relief'."
     },
     {
@@ -294,12 +294,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'PROVE'?",
       "options": [
-        "Proof",
-        "Proved",
         "Provable",
-        "Proving"
+        "Proved",
+        "Proving",
+        "Proof"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Noun form is 'Proof'."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'CHOOSE'?",
       "options": [
-        "Choice",
         "Chosen",
+        "Choosing",
         "Choosy",
-        "Choosing"
+        "Choice"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Noun form is 'Choice'."
     },
     {
@@ -321,9 +321,9 @@
       "question": "What is the noun form of the verb 'GROW'?",
       "options": [
         "Growth",
+        "Grower",
         "Grown",
-        "Growing",
-        "Grower"
+        "Growing"
       ],
       "answer": 0,
       "explanation": "Suffix '-th' forms the noun 'Growth'."
@@ -333,12 +333,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'FLY'?",
       "options": [
-        "Flight",
-        "Flying",
         "Flier",
-        "Flew"
+        "Flew",
+        "Flight",
+        "Flying"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Noun form is 'Flight'."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'GIVE'?",
       "options": [
-        "Gift",
-        "Given",
         "Giver",
-        "Giving"
+        "Gift",
+        "Giving",
+        "Given"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Noun form is 'Gift'."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'SEE'?",
       "options": [
-        "Sight",
         "Seen",
-        "Seer",
-        "Seeing"
+        "Sight",
+        "Seeing",
+        "Seer"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Noun form is 'Sight'."
     },
     {
@@ -386,9 +386,9 @@
       "question": "What is the noun form of the verb 'SPEAK'?",
       "options": [
         "Speech",
-        "Spoken",
         "Speaker",
-        "Speaking"
+        "Speaking",
+        "Spoken"
       ],
       "answer": 0,
       "explanation": "Consonant alternation forms the noun 'Speech'."
@@ -400,8 +400,8 @@
       "options": [
         "Im-",
         "In-",
-        "Un-",
-        "Dis-"
+        "Dis-",
+        "Un-"
       ],
       "answer": 0,
       "explanation": "Words beginning with 'p' or 'm' commonly take prefix 'im-': 'Impossible'."
@@ -412,9 +412,9 @@
       "question": "Which negative prefix is added to 'PATIENT'?",
       "options": [
         "Im-",
+        "Dis-",
         "In-",
-        "Un-",
-        "Dis-"
+        "Un-"
       ],
       "answer": 0,
       "explanation": "'Impatient'."
@@ -424,12 +424,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'MORTAL'?",
       "options": [
-        "Im-",
         "In-",
-        "Un-",
-        "Dis-"
+        "Im-",
+        "Dis-",
+        "Un-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Immortal'."
     },
     {
@@ -437,12 +437,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'PURE'?",
       "options": [
-        "Im-",
-        "In-",
         "Un-",
-        "Dis-"
+        "Dis-",
+        "Im-",
+        "In-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Impure'."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'LEGAL'?",
       "options": [
-        "Il-",
-        "Im-",
         "In-",
-        "Un-"
+        "Im-",
+        "Un-",
+        "Il-"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Words beginning with 'l' commonly take prefix 'il-': 'Illegal'."
     },
     {
@@ -465,8 +465,8 @@
       "options": [
         "Il-",
         "In-",
-        "Un-",
-        "Dis-"
+        "Dis-",
+        "Un-"
       ],
       "answer": 0,
       "explanation": "'Illegible'."
@@ -476,12 +476,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'LITERATE'?",
       "options": [
-        "Il-",
         "In-",
-        "Un-",
-        "Dis-"
+        "Il-",
+        "Dis-",
+        "Un-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Illiterate'."
     },
     {
@@ -490,9 +490,9 @@
       "question": "Which negative prefix is added to 'LOGICAL'?",
       "options": [
         "Il-",
+        "Dis-",
         "In-",
-        "Un-",
-        "Dis-"
+        "Un-"
       ],
       "answer": 0,
       "explanation": "'Illogical'."
@@ -502,12 +502,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'REGULAR'?",
       "options": [
-        "Ir-",
         "Il-",
-        "In-",
-        "Un-"
+        "Un-",
+        "Ir-",
+        "In-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Words beginning with 'r' commonly take prefix 'ir-': 'Irregular'."
     },
     {
@@ -516,9 +516,9 @@
       "question": "Which negative prefix is added to 'RESPONSIBLE'?",
       "options": [
         "Ir-",
-        "Il-",
+        "Dis-",
         "In-",
-        "Dis-"
+        "Il-"
       ],
       "answer": 0,
       "explanation": "'Irresponsible'."
@@ -528,12 +528,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'RELEVANT'?",
       "options": [
+        "Un-",
         "Ir-",
         "In-",
-        "Un-",
         "Dis-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Irrelevant'."
     },
     {
@@ -541,12 +541,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'RATIONAL'?",
       "options": [
-        "Ir-",
-        "In-",
         "Un-",
-        "Dis-"
+        "In-",
+        "Dis-",
+        "Ir-"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Irrational'."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'HONEST'?",
       "options": [
+        "Mis-",
         "Dis-",
-        "Un-",
         "In-",
-        "Mis-"
+        "Un-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Dishonest' takes prefix 'dis-'."
     },
     {
@@ -568,9 +568,9 @@
       "question": "Which negative prefix is added to 'OBEDIENT'?",
       "options": [
         "Dis-",
+        "Mis-",
         "Un-",
-        "In-",
-        "Mis-"
+        "In-"
       ],
       "answer": 0,
       "explanation": "'Disobedient'."
@@ -580,12 +580,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'APPEAR'?",
       "options": [
-        "Dis-",
         "Un-",
+        "Dis-",
         "In-",
         "Mis-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Disappear'."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "word_formation_affixes",
       "question": "Which negative prefix is added to 'COMFORT'?",
       "options": [
-        "Dis-",
         "Un-",
-        "In-",
-        "Mis-"
+        "Dis-",
+        "Mis-",
+        "In-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Discomfort'."
     },
     {
@@ -608,8 +608,8 @@
       "options": [
         "Mis-",
         "Dis-",
-        "Un-",
-        "In-"
+        "In-",
+        "Un-"
       ],
       "answer": 0,
       "explanation": "'Misunderstand' means to understand wrongly."
@@ -619,12 +619,12 @@
       "topic": "word_formation_affixes",
       "question": "Which prefix meaning 'wrongly' is added to 'LEAD'?",
       "options": [
+        "Un-",
         "Mis-",
         "Dis-",
-        "Un-",
         "De-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Mislead' means to lead astray."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "word_formation_affixes",
       "question": "Which prefix meaning 'wrongly' is added to 'CALCULATE'?",
       "options": [
-        "Mis-",
-        "Dis-",
         "Un-",
+        "Dis-",
+        "Mis-",
         "De-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Miscalculate' means to calculate incorrectly."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "word_formation_affixes",
       "question": "Which prefix meaning 'wrongly' is added to 'PRONOUNCE'?",
       "options": [
-        "Mis-",
         "Dis-",
         "In-",
+        "Mis-",
         "De-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Mispronounce' means to pronounce incorrectly."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'SUB-' mean in 'Subterranean'?",
       "options": [
-        "Under or below",
+        "Inside",
         "Above",
-        "Across",
-        "Inside"
+        "Under or below",
+        "Across"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Sub-' is a Latin prefix meaning under or below."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'TRANS-' mean in 'Transatlantic'?",
       "options": [
-        "Across or beyond",
-        "Under",
+        "After",
         "Before",
-        "After"
+        "Across or beyond",
+        "Under"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Trans-' means across or on the other side of."
     },
     {
@@ -684,12 +684,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'POST-' mean in 'Post-war'?",
       "options": [
-        "After",
         "Before",
-        "During",
-        "Against"
+        "After",
+        "Against",
+        "During"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Post-' means after."
     },
     {
@@ -698,9 +698,9 @@
       "question": "What does the prefix 'PRE-' mean in 'Prehistoric'?",
       "options": [
         "Before",
-        "After",
         "During",
-        "Beyond"
+        "Beyond",
+        "After"
       ],
       "answer": 0,
       "explanation": "'Pre-' means before."
@@ -710,12 +710,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'INTER-' mean in 'International'?",
       "options": [
-        "Between or among",
         "Within",
+        "Between or among",
         "Across",
         "Beyond"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Inter-' means between or among."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'INTRA-' mean in 'Intramural'?",
       "options": [
+        "Beyond",
         "Within or inside",
-        "Between",
         "Outside",
-        "Beyond"
+        "Between"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Intra-' means within or on the inside."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'ANTI-' mean in 'Antisocial'?",
       "options": [
-        "Against or opposing",
         "Favoring",
-        "Inside",
-        "Before"
+        "Against or opposing",
+        "Before",
+        "Inside"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Anti-' means against or opposing."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'AUTO-' mean in 'Autobiography'?",
       "options": [
-        "Self",
         "Other",
+        "Self",
         "God",
         "Life"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Auto-' means self."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'BI-' mean in 'Bilingual'?",
       "options": [
-        "Two",
         "Three",
-        "One",
-        "Many"
+        "Two",
+        "Many",
+        "One"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Bi-' means two or twice."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "word_formation_affixes",
       "question": "What does the prefix 'POLY-' mean in 'Polygon'?",
       "options": [
-        "Many",
         "Two",
-        "Few",
-        "Single"
+        "Many",
+        "Single",
+        "Few"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Poly-' means many."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'ADMIT'?",
       "options": [
-        "Admission",
-        "Admittance",
         "Admitting",
-        "Admissible"
+        "Admissible",
+        "Admittance",
+        "Admission"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-sion' forms 'Admission'."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'PERMIT'?",
       "options": [
-        "Permission",
-        "Permittance",
         "Permitting",
-        "Permissible"
+        "Permission",
+        "Permissible",
+        "Permittance"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Noun form is 'Permission'."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'SUBMIT'?",
       "options": [
-        "Submission",
-        "Submittance",
         "Submitting",
-        "Submissive"
+        "Submissive",
+        "Submission",
+        "Submittance"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Noun form is 'Submission'."
     },
     {
@@ -827,12 +827,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'EXPEL'?",
       "options": [
-        "Expulsion",
-        "Expelling",
         "Expellant",
-        "Expeller"
+        "Expeller",
+        "Expulsion",
+        "Expelling"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Noun form is 'Expulsion'."
     },
     {
@@ -840,12 +840,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'REPEL'?",
       "options": [
-        "Repulsion",
         "Repelling",
-        "Repellant",
-        "Repulsive"
+        "Repulsive",
+        "Repulsion",
+        "Repellant"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Noun form is 'Repulsion'."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'PUNISH'?",
       "options": [
-        "Punishment",
-        "Punishing",
         "Punishable",
-        "Punitive"
+        "Punishing",
+        "Punitive",
+        "Punishment"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-ment' forms 'Punishment'."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'JUDGE'?",
       "options": [
-        "Judgment",
         "Judging",
         "Judiciary",
-        "Judicial"
+        "Judicial",
+        "Judgment"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-ment' forms 'Judgment'."
     },
     {
@@ -880,9 +880,9 @@
       "question": "What is the noun form of the verb 'MANAGE'?",
       "options": [
         "Management",
-        "Managing",
+        "Manageable",
         "Manager",
-        "Manageable"
+        "Managing"
       ],
       "answer": 0,
       "explanation": "Suffix '-ment' forms 'Management'."
@@ -892,12 +892,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'DEVELOP'?",
       "options": [
-        "Development",
         "Developing",
         "Developer",
+        "Development",
         "Developable"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ment' forms 'Development'."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'CURIOUS'?",
       "options": [
-        "Curiosity",
         "Curiousness",
-        "Curiously",
-        "Curation"
+        "Curiosity",
+        "Curation",
+        "Curiously"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ity' forms 'Curiosity'."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'GENEROUS'?",
       "options": [
-        "Generosity",
-        "Generousness",
         "Generously",
-        "Generation"
+        "Generosity",
+        "Generation",
+        "Generousness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ity' forms 'Generosity'."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'FERTILE'?",
       "options": [
-        "Fertility",
-        "Fertilize",
         "Fertilizer",
+        "Fertilize",
+        "Fertility",
         "Fertileness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ity' forms 'Fertility'."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'FERTILE'?",
       "options": [
-        "Fertilize",
-        "Fertility",
+        "Fertilizer",
         "Fertileness",
-        "Fertilizer"
+        "Fertilize",
+        "Fertility"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ize' forms the verb 'Fertilize'."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'MODERN'?",
       "options": [
+        "Modernism",
         "Modernize",
         "Modernity",
-        "Modernism",
         "Modernly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ize' forms the verb 'Modernize'."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'POPULAR'?",
       "options": [
-        "Popularize",
-        "Popularity",
         "Populate",
+        "Popularity",
+        "Popularize",
         "Popularly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ize' forms the verb 'Popularize'."
     },
     {
@@ -984,9 +984,9 @@
       "question": "What is the verb form of the noun 'CRITIC'?",
       "options": [
         "Criticize",
-        "Criticism",
+        "Critique",
         "Critical",
-        "Critique"
+        "Criticism"
       ],
       "answer": 0,
       "explanation": "Suffix '-ize' forms the verb 'Criticize'."
@@ -996,12 +996,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'PURE'?",
       "options": [
-        "Purity",
-        "Purify",
+        "Purification",
         "Pureness",
-        "Purification"
+        "Purify",
+        "Purity"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-ity' forms the abstract noun 'Purity'."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'PURE'?",
       "options": [
+        "Purification",
         "Purify",
         "Purity",
-        "Pureness",
-        "Purification"
+        "Pureness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ify' forms the verb 'Purify'."
     },
     {
@@ -1024,8 +1024,8 @@
       "options": [
         "Simplify",
         "Simplicity",
-        "Simpleness",
-        "Simplification"
+        "Simplification",
+        "Simpleness"
       ],
       "answer": 0,
       "explanation": "Suffix '-ify' forms the verb 'Simplify'."
@@ -1037,8 +1037,8 @@
       "options": [
         "Simplicity",
         "Simplify",
-        "Simpleness",
-        "Simplification"
+        "Simplification",
+        "Simpleness"
       ],
       "answer": 0,
       "explanation": "Suffix '-ity' forms the noun 'Simplicity'."
@@ -1048,12 +1048,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'CLEAR'?",
       "options": [
-        "Clarify",
         "Clarity",
-        "Clearness",
-        "Clearly"
+        "Clarify",
+        "Clearly",
+        "Clearness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ify' forms the verb 'Clarify'."
     },
     {
@@ -1062,9 +1062,9 @@
       "question": "What is the noun form of the adjective 'CLEAR'?",
       "options": [
         "Clarity",
+        "Clearance",
         "Clarify",
-        "Clearness",
-        "Clearance"
+        "Clearness"
       ],
       "answer": 0,
       "explanation": "Noun form is 'Clarity'."
@@ -1074,12 +1074,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the noun 'BEAUTY'?",
       "options": [
-        "Beautiful",
         "Beautify",
         "Beautifully",
+        "Beautiful",
         "Beautician"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ful' forms the adjective 'Beautiful'."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the noun 'BEAUTY'?",
       "options": [
-        "Beautify",
-        "Beautiful",
         "Beautification",
+        "Beautiful",
+        "Beautify",
         "Beautifully"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ify' forms the verb 'Beautify'."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'BRAVE'?",
       "options": [
+        "Braveness",
         "Bravery",
         "Bravely",
-        "Braveness",
         "Bravado"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ery' forms the noun 'Bravery'."
     },
     {
@@ -1113,12 +1113,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'POOR'?",
       "options": [
-        "Poverty",
-        "Poorness",
         "Poorly",
-        "Impoverish"
+        "Impoverish",
+        "Poverty",
+        "Poorness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Irregular derivation forms the noun 'Poverty'."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the verb form of the adjective 'POOR'?",
       "options": [
-        "Impoverish",
+        "Pooren",
         "Poverty",
-        "Poorness",
-        "Pooren"
+        "Impoverish",
+        "Poorness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 'im-' forms the verb 'Impoverish'."
     },
     {
@@ -1139,12 +1139,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the verb 'OBEY'?",
       "options": [
-        "Obedience",
         "Obedient",
-        "Obediently",
-        "Obeying"
+        "Obedience",
+        "Obeying",
+        "Obediently"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ence' forms the noun 'Obedience'."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the verb 'OBEY'?",
       "options": [
-        "Obedient",
-        "Obedience",
+        "Obeying",
         "Obediently",
-        "Obeying"
+        "Obedient",
+        "Obedience"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ent' forms the adjective 'Obedient'."
     },
     {
@@ -1166,9 +1166,9 @@
       "question": "What is the noun form of the adjective 'SILENT'?",
       "options": [
         "Silence",
-        "Silently",
         "Silencer",
-        "Silencing"
+        "Silencing",
+        "Silently"
       ],
       "answer": 0,
       "explanation": "Suffix '-ce' forms the noun 'Silence'."
@@ -1180,8 +1180,8 @@
       "options": [
         "Patience",
         "Patiently",
-        "Patiency",
-        "Patientness"
+        "Patientness",
+        "Patiency"
       ],
       "answer": 0,
       "explanation": "Suffix '-ce' forms the noun 'Patience'."
@@ -1191,12 +1191,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'BRILLIANT'?",
       "options": [
-        "Brilliance",
+        "Brilliancey",
         "Brilliantly",
         "Brilliantness",
-        "Brilliancey"
+        "Brilliance"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-ance' forms the noun 'Brilliance'."
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'IGNORANT'?",
       "options": [
+        "Ignorancy",
         "Ignorance",
-        "Ignorantly",
         "Ignorantness",
-        "Ignorancy"
+        "Ignorantly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ance' forms the noun 'Ignorance'."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'IMPORTANT'?",
       "options": [
-        "Importance",
         "Importantly",
-        "Importantness",
-        "Importancy"
+        "Importancy",
+        "Importance",
+        "Importantness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ance' forms the noun 'Importance'."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the noun 'CHILD' meaning immature and silly?",
       "options": [
-        "Childish",
         "Childlike",
         "Childly",
+        "Childish",
         "Childless"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ish' gives a negative sense meaning silly: 'Childish'."
     },
     {
@@ -1244,9 +1244,9 @@
       "question": "What is the adjective form of the noun 'CHILD' meaning innocent and pure?",
       "options": [
         "Childlike",
-        "Childish",
         "Childly",
-        "Children"
+        "Children",
+        "Childish"
       ],
       "answer": 0,
       "explanation": "Suffix '-like' gives a positive sense of innocence: 'Childlike'."
@@ -1270,9 +1270,9 @@
       "question": "What is the adjective form of the noun 'MAN'?",
       "options": [
         "Manly",
-        "Manhood",
         "Mankind",
-        "Mannish"
+        "Mannish",
+        "Manhood"
       ],
       "answer": 0,
       "explanation": "Suffix '-ly' forms the adjective 'Manly'."
@@ -1282,12 +1282,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the adjective form of the noun 'BROTHER'?",
       "options": [
+        "Brethren",
         "Brotherly",
         "Brotherhood",
-        "Brotherliness",
-        "Brethren"
+        "Brotherliness"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ly' forms the adjective 'Brotherly'."
     },
     {
@@ -1296,9 +1296,9 @@
       "question": "What is the noun form of the noun 'CHILD' denoting state of being a child?",
       "options": [
         "Childhood",
+        "Childness",
         "Childish",
-        "Childlike",
-        "Childness"
+        "Childlike"
       ],
       "answer": 0,
       "explanation": "Suffix '-hood' denotes state or period: 'Childhood'."
@@ -1309,9 +1309,9 @@
       "question": "What is the noun form denoting the state of being a mother?",
       "options": [
         "Motherhood",
+        "Maternal",
         "Motherly",
-        "Motherliness",
-        "Maternal"
+        "Motherliness"
       ],
       "answer": 0,
       "explanation": "Suffix '-hood' forms 'Motherhood'."
@@ -1334,12 +1334,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form denoting the state of being a citizen?",
       "options": [
-        "Citizenship",
-        "Citizenhood",
         "Citizenly",
+        "Citizenhood",
+        "Citizenship",
         "Civic"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ship' forms 'Citizenship'."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "word_formation_affixes",
       "question": "What is the noun form of the adjective 'HAPPY'?",
       "options": [
-        "Happiness",
-        "Happily",
+        "Happyship",
         "Happyhood",
-        "Happyship"
+        "Happily",
+        "Happiness"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-ness' forms the abstract noun 'Happiness'."
     },
     {
@@ -1361,9 +1361,9 @@
       "question": "What is the noun form of the adjective 'KIND'?",
       "options": [
         "Kindness",
-        "Kindly",
         "Kindhood",
-        "Kindship"
+        "Kindship",
+        "Kindly"
       ],
       "answer": 0,
       "explanation": "Suffix '-ness' forms the abstract noun 'Kindness'."
@@ -1373,12 +1373,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'spell' meaning 'to spell incorrectly':",
       "options": [
-        "mis- (misspell)",
         "dis-",
+        "in-",
         "un-",
-        "in-"
+        "mis- (misspell)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "The negative prefix 'mis-' signifies wrongly/badly ('misspell')."
     },
     {
@@ -1387,9 +1387,9 @@
       "question": "Add prefix to 'fortune' meaning 'bad luck':",
       "options": [
         "mis- (misfortune)",
-        "dis-",
+        "il-",
         "un-",
-        "il-"
+        "dis-"
       ],
       "answer": 0,
       "explanation": "'Misfortune' denotes bad luck or adversity."
@@ -1399,12 +1399,12 @@
       "topic": "word_formation_affixes",
       "question": "Add negative prefix to 'legible':",
       "options": [
+        "in-",
         "il- (illegible)",
         "un-",
-        "dis-",
-        "in-"
+        "dis-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Words beginning with 'l' typically take 'il-' for negation ('illegible')."
     },
     {
@@ -1413,9 +1413,9 @@
       "question": "Add negative prefix to 'literate':",
       "options": [
         "il- (illiterate)",
+        "dis-",
         "un-",
-        "in-",
-        "dis-"
+        "in-"
       ],
       "answer": 0,
       "explanation": "'Illiterate' denotes unable to read or write."
@@ -1425,12 +1425,12 @@
       "topic": "word_formation_affixes",
       "question": "Add negative prefix to 'moral':",
       "options": [
-        "im- (immoral)",
         "un-",
-        "dis-",
-        "il-"
+        "im- (immoral)",
+        "il-",
+        "dis-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Words beginning with 'm' or 'p' take 'im-' ('immoral', 'impossible')."
     },
     {
@@ -1439,9 +1439,9 @@
       "question": "Add negative prefix to 'mortal':",
       "options": [
         "im- (immortal)",
-        "un-",
+        "non-",
         "in-",
-        "non-"
+        "un-"
       ],
       "answer": 0,
       "explanation": "'Immortal' means living forever."
@@ -1451,12 +1451,12 @@
       "topic": "word_formation_affixes",
       "question": "Add negative prefix to 'patient':",
       "options": [
-        "im- (impatient)",
         "un-",
-        "in-",
-        "dis-"
+        "dis-",
+        "im- (impatient)",
+        "in-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Impatient' means not willing to wait."
     },
     {
@@ -1464,12 +1464,12 @@
       "topic": "word_formation_affixes",
       "question": "Add negative prefix to 'pure':",
       "options": [
-        "im- (impure)",
-        "un-",
         "dis-",
-        "il-"
+        "il-",
+        "im- (impure)",
+        "un-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Impure' means not clean or contaminated."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "word_formation_affixes",
       "question": "Add negative prefix to 'regular':",
       "options": [
-        "ir- (irregular)",
+        "in-",
         "un-",
         "dis-",
-        "in-"
+        "ir- (irregular)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Irregular' means not conforming to rules."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "word_formation_affixes",
       "question": "Add negative prefix to 'relevant':",
       "options": [
-        "ir- (irrelevant)",
-        "un-",
         "dis-",
+        "un-",
+        "ir- (irrelevant)",
         "il-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Irrelevant' means not connected or applicable."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "word_formation_affixes",
       "question": "Add negative prefix to 'responsible':",
       "options": [
-        "ir- (irresponsible)",
         "un-",
         "in-",
+        "ir- (irresponsible)",
         "dis-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Irresponsible' means not showing responsibility."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'child' to form an adjective meaning 'silly/immature':",
       "options": [
-        "-ish (childish)",
+        "-less",
         "-like",
         "-hood",
-        "-less"
+        "-ish (childish)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Childish' has a pejorative sense (immature); 'childlike' is positive (innocent)."
     },
     {
@@ -1544,8 +1544,8 @@
       "options": [
         "-hood (childhood)",
         "-ship",
-        "-dom",
-        "-ment"
+        "-ment",
+        "-dom"
       ],
       "answer": 0,
       "explanation": "Suffix '-hood' denotes state or period ('childhood', 'brotherhood')."
@@ -1555,12 +1555,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'king' to denote jurisdiction/realm:",
       "options": [
+        "-ship",
         "-dom (kingdom)",
         "-hood",
-        "-ship",
         "-ment"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-dom' forms nouns denoting domain or state ('kingdom', 'freedom')."
     },
     {
@@ -1568,12 +1568,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'friend' to denote a state or relationship:",
       "options": [
-        "-ship (friendship)",
         "-hood",
         "-dom",
+        "-ship (friendship)",
         "-ness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ship' denotes relationship or condition ('friendship', 'leadership')."
     },
     {
@@ -1583,8 +1583,8 @@
       "options": [
         "-ry (bravery)",
         "-ness",
-        "-ment",
-        "-hood"
+        "-hood",
+        "-ment"
       ],
       "answer": 0,
       "explanation": "Suffix '-ry' forms nouns of quality or behavior ('bravery', 'slavery')."
@@ -1594,12 +1594,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'dark' to form an abstract noun:",
       "options": [
-        "-ness (darkness)",
-        "-ment",
         "-hood",
-        "-ship"
+        "-ship",
+        "-ness (darkness)",
+        "-ment"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ness' forms abstract nouns from adjectives ('darkness', 'kindness')."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'govern' to form a noun denoting the system of ruling:",
       "options": [
+        "-hood",
         "-ment (government)",
-        "-ance",
         "-tion",
-        "-hood"
+        "-ance"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ment' forms nouns of action or entity ('government')."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'perform' to form an action noun:",
       "options": [
-        "-ance (performance)",
-        "-ment",
         "-tion",
+        "-ment",
+        "-ance (performance)",
         "-ness"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-ance' forms nouns from verbs ('performance', 'guidance')."
     },
     {
@@ -1635,8 +1635,8 @@
       "options": [
         "-tion (hesitation)",
         "-ment",
-        "-ance",
-        "-ness"
+        "-ness",
+        "-ance"
       ],
       "answer": 0,
       "explanation": "Suffix '-tion' / '-ation' forms abstract nouns from Latinate verbs ('hesitation')."
@@ -1646,12 +1646,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'structure' meaning 'below / beneath':",
       "options": [
-        "infra- (infrastructure)",
         "sub-",
         "super-",
-        "inter-"
+        "inter-",
+        "infra- (infrastructure)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prefix 'infra-' means below or beneath ('infrastructure')."
     },
     {
@@ -1660,9 +1660,9 @@
       "question": "Add prefix to 'national' meaning 'between nations':",
       "options": [
         "inter- (international)",
+        "trans-",
         "intra-",
-        "sub-",
-        "trans-"
+        "sub-"
       ],
       "answer": 0,
       "explanation": "Prefix 'inter-' means between/among ('international')."
@@ -1672,12 +1672,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'cellular' meaning 'within a cell':",
       "options": [
-        "intra- (intracellular)",
-        "inter-",
         "extra-",
-        "sub-"
+        "sub-",
+        "intra- (intracellular)",
+        "inter-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 'intra-' means within or inside ('intramural', 'intracellular')."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'terrestrial' meaning 'beyond Earth':",
       "options": [
-        "extra- (extraterrestrial)",
-        "ultra-",
         "super-",
+        "ultra-",
+        "extra- (extraterrestrial)",
         "inter-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 'extra-' means outside or beyond ('extraordinary', 'extraterrestrial')."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'violet' meaning 'beyond visible spectrum':",
       "options": [
+        "hyper-",
         "ultra- (ultraviolet)",
         "super-",
-        "infra-",
-        "hyper-"
+        "infra-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Prefix 'ultra-' means beyond or extreme ('ultrasound', 'ultraviolet')."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'critical' meaning 'excessively critical':",
       "options": [
+        "ultra-",
         "hyper- (hypercritical)",
         "hypo-",
-        "super-",
-        "ultra-"
+        "super-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Prefix 'hyper-' means excessively or above normal ('hypertension', 'hypercritical')."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'tension' meaning 'abnormally low blood pressure':",
       "options": [
-        "hypo- (hypotension)",
-        "hyper-",
         "sub-",
-        "under-"
+        "under-",
+        "hypo- (hypotension)",
+        "hyper-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 'hypo-' means under or below normal ('hypotension', 'hypothermia')."
     },
     {
@@ -1738,8 +1738,8 @@
       "question": "Add prefix to 'meridian' meaning 'before noon':",
       "options": [
         "ante- (ante-meridiem / a.m.)",
-        "post-",
         "anti-",
+        "post-",
         "pre-"
       ],
       "answer": 0,
@@ -1750,12 +1750,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'meridian' meaning 'after noon':",
       "options": [
-        "post- (post-meridiem / p.m.)",
         "ante-",
+        "pro-",
         "pre-",
-        "pro-"
+        "post- (post-meridiem / p.m.)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prefix 'post-' means after ('post-mortem', 'post-meridiem')."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'biotic' meaning 'against living microorganisms':",
       "options": [
-        "anti- (antibiotic)",
+        "pro-",
         "ante-",
-        "auto-",
-        "pro-"
+        "anti- (antibiotic)",
+        "auto-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 'anti-' means against or opposing ('antibiotic', 'antivirus')."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'biography' meaning 'life written by oneself':",
       "options": [
-        "auto- (autobiography)",
+        "mono-",
         "bio-",
         "self-",
-        "mono-"
+        "auto- (autobiography)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prefix 'auto-' means self ('autograph', 'autobiography')."
     },
     {
@@ -1790,8 +1790,8 @@
       "question": "Add prefix to 'poly' meaning 'single / one':",
       "options": [
         "mono- (monopoly)",
-        "uni-",
         "bi-",
+        "uni-",
         "tri-"
       ],
       "answer": 0,
@@ -1802,12 +1802,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'lateral' meaning 'three-sided':",
       "options": [
-        "tri- (trilateral)",
         "bi-",
+        "poly-",
         "multi-",
-        "poly-"
+        "tri- (trilateral)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prefix 'tri-' means three ('triangle', 'trilateral')."
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'lingual' meaning 'speaking many languages':",
       "options": [
-        "poly- / multi- (multilingual)",
         "mono-",
+        "tri-",
         "bi-",
-        "tri-"
+        "poly- / multi- (multilingual)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prefix 'multi-' or 'poly-' means many ('multilingual', 'polyglot')."
     },
     {
@@ -1828,12 +1828,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'care' to mean 'without care':",
       "options": [
+        "-ly",
         "-less (careless)",
-        "-ful",
         "-free",
-        "-ly"
+        "-ful"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-less' means without ('careless', 'hopeless')."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'beauty' to form an adjective:",
       "options": [
-        "-ful (beautiful)",
         "-less",
+        "-ful (beautiful)",
         "-ous",
         "-ly"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ful' means full of ('beautiful', 'wonderful')."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'courage' to form an adjective:",
       "options": [
-        "-ous (courageous)",
+        "-ish",
         "-ful",
         "-less",
-        "-ish"
+        "-ous (courageous)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-ous' forms adjectives ('courageous', 'perilous')."
     },
     {
@@ -1868,9 +1868,9 @@
       "question": "Add suffix to 'danger' to form an adjective:",
       "options": [
         "-ous (dangerous)",
+        "-able",
         "-ful",
-        "-ly",
-        "-able"
+        "-ly"
       ],
       "answer": 0,
       "explanation": "Suffix '-ous' forms adjectives ('dangerous')."
@@ -1881,9 +1881,9 @@
       "question": "Add suffix to 'glory' to form an adjective:",
       "options": [
         "-ous (glorious)",
-        "-ful",
+        "-able",
         "-ly",
-        "-able"
+        "-ful"
       ],
       "answer": 0,
       "explanation": "'Glory' changes to 'glorious'."
@@ -1893,12 +1893,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'comfort' to mean 'capable of being comforted':",
       "options": [
-        "-able (comfortable)",
-        "-ible",
         "-ful",
-        "-ous"
+        "-ible",
+        "-ous",
+        "-able (comfortable)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-able' denotes capability ('comfortable', 'readable')."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'aud' to mean 'able to be heard':",
       "options": [
-        "-ible (audible)",
-        "-able",
+        "-ous",
         "-al",
-        "-ous"
+        "-able",
+        "-ible (audible)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Audible' means capable of being heard."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'sense' to mean 'having good sense/practical':",
       "options": [
-        "-ible (sensible)",
+        "-ful",
         "-able",
         "-less",
-        "-ful"
+        "-ible (sensible)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Sensible' means showing sound judgment."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'quick' to form an adverb of manner:",
       "options": [
-        "-ly (quickly)",
         "-ward",
         "-wise",
-        "-ous"
+        "-ous",
+        "-ly (quickly)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Suffix '-ly' forms adverbs of manner from adjectives ('quickly', 'slowly')."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'home' to mean 'towards home':",
       "options": [
+        "-less",
         "-ward (homeward)",
         "-ly",
-        "-wise",
-        "-less"
+        "-wise"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Suffix '-ward' forms adjectives/adverbs of direction ('homeward', 'backward')."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "word_formation_affixes",
       "question": "Add suffix to 'clock' to mean 'in the direction of clock hands':",
       "options": [
-        "-wise (clockwise)",
+        "-like",
         "-ward",
-        "-ly",
-        "-like"
+        "-wise (clockwise)",
+        "-ly"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Suffix '-wise' indicates manner or direction ('clockwise', 'otherwise')."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'active' meaning 'initiating action in anticipation':",
       "options": [
-        "pro- (proactive)",
         "re-",
+        "pro- (proactive)",
         "de-",
         "in-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Prefix 'pro-' denotes forward or in anticipation ('proactive')."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'frost' meaning 'to remove frost':",
       "options": [
-        "de- (defrost)",
         "un-",
-        "dis-",
-        "re-"
+        "de- (defrost)",
+        "re-",
+        "dis-"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Prefix 'de-' indicates removal or reversal ('defrost', 'deforest')."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "word_formation_affixes",
       "question": "Add prefix to 'generate' meaning 'to produce again':",
       "options": [
-        "re- (regenerate)",
-        "de-",
+        "dis-",
         "un-",
-        "dis-"
+        "re- (regenerate)",
+        "de-"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 're-' indicates repetition or restoration ('regenerate', 'rebuild')."
     }
   ]

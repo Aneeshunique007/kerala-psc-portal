@@ -8,12 +8,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Accommodation",
-        "Accomodation",
         "Acommodation",
-        "Acomodation"
+        "Accommodation",
+        "Acomodation",
+        "Accomodation"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Accommodation' has double 'c' and double 'm'."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Committee",
-        "Comittee",
         "Committe",
+        "Comittee",
+        "Committee",
         "Comite"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Committee' has double 'm', double 't', and double 'e'."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Embarrassment",
-        "Embarassment",
+        "Embarasment",
         "Embarrasment",
-        "Embarasment"
+        "Embarrassment",
+        "Embarassment"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Embarrassment' has double 'r' and double 's'."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Occurance",
         "Occurrence",
         "Occurence",
-        "Ocurrence",
-        "Occurance"
+        "Ocurrence"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Occurrence' has double 'c', double 'r', and ends with '-ence'."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Lutenant",
         "Lieutenant",
         "Leutenant",
-        "Lieutennant",
-        "Lutenant"
+        "Lieutennant"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lieutenant' is spelt L-I-E-U-T-E-N-A-N-T."
     },
     {
@@ -87,8 +87,8 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Queue",
-        "Que",
         "Quene",
+        "Que",
         "Qeue"
       ],
       "answer": 0,
@@ -101,8 +101,8 @@
       "options": [
         "Bureaucracy",
         "Beurocracy",
-        "Bureaucrasy",
-        "Burocracy"
+        "Burocracy",
+        "Bureaucrasy"
       ],
       "answer": 0,
       "explanation": "'Bureaucracy' comes from 'bureau' + 'cracy'."
@@ -112,12 +112,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Pronunciation",
         "Pronounciation",
-        "Pronuntiation",
-        "Pronounsiation"
+        "Pronounsiation",
+        "Pronunciation",
+        "Pronuntiation"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "While the verb is 'pronounce', the noun is spelt 'pronunciation' without 'o'."
     },
     {
@@ -126,8 +126,8 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Privilege",
-        "Privelege",
         "Priviledge",
+        "Privelege",
         "Privelidge"
       ],
       "answer": 0,
@@ -138,12 +138,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Maintenanse",
         "Maintenance",
-        "Maintainance",
         "Maintenence",
-        "Maintenanse"
+        "Maintainance"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Verb 'maintain' changes to noun 'maintenance' (m-a-i-n-t-e-n-a-n-c-e)."
     },
     {
@@ -152,8 +152,8 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Necessary",
-        "Neccessary",
         "Necesary",
+        "Neccessary",
         "Necessery"
       ],
       "answer": 0,
@@ -177,12 +177,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Separate",
         "Seperate",
         "Sepparate",
-        "Seprate"
+        "Seprate",
+        "Separate"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Separate' has 'a' after 'p': S-E-P-A-R-A-T-E."
     },
     {
@@ -190,12 +190,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Diarrhoea",
         "Diarrhea",
+        "Diarhoea",
         "Diarroea",
-        "Diarhoea"
+        "Diarrhoea"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "British/Indian standard: 'Diarrhoea' (D-I-A-R-R-H-O-E-A)."
     },
     {
@@ -203,9 +203,9 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Hemorrhage",
-        "Hemorrage",
         "Haemorhage",
+        "Hemorrage",
+        "Hemorrhage",
         "Haemorrhage"
       ],
       "answer": 3,
@@ -216,12 +216,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Restaurant",
+        "Restaraunt",
         "Restarant",
         "Resturant",
-        "Restaraunt"
+        "Restaurant"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Restaurant' is spelt R-E-S-T-A-U-R-A-N-T."
     },
     {
@@ -229,12 +229,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Colleague",
+        "Collegue",
         "Coleague",
         "Collegue",
-        "Collegue"
+        "Colleague"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Colleague' (coworker) is spelt C-O-L-L-E-A-G-U-E."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Bouquet",
         "Boquet",
         "Bouqet",
+        "Bouquet",
         "Bowquet"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bouquet' (bunch of flowers) is spelt B-O-U-Q-U-E-T."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Pneumonia",
-        "Neumonia",
         "Pneumonea",
-        "Pnumonia"
+        "Neumonia",
+        "Pnumonia",
+        "Pneumonia"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Pneumonia' begins with silent 'P': P-N-E-U-M-O-N-I-A."
     },
     {
@@ -281,12 +281,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Grammar",
-        "Grammer",
+        "Gramerr",
         "Gramar",
-        "Gramerr"
+        "Grammer",
+        "Grammar"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Grammar' ends in '-ar', never '-er'."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Parallel",
-        "Paralell",
         "Parrallel",
-        "Parralell"
+        "Parralell",
+        "Paralell",
+        "Parallel"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Parallel' has double 'l' in the middle and single 'l' at the end."
     },
     {
@@ -321,9 +321,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Noticeable",
+        "Notisable",
         "Noticable",
-        "Noticeble",
-        "Notisable"
+        "Noticeble"
       ],
       "answer": 0,
       "explanation": "Words ending in silent 'e' preceded by 'c' or 'g' keep 'e' before '-able': 'Noticeable'."
@@ -333,12 +333,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Changible",
         "Changeable",
         "Changable",
-        "Changeble",
-        "Changible"
+        "Changeble"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Changeable' retains the 'e'."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Courageous",
-        "Couragous",
         "Couragious",
-        "Courageus"
+        "Courageus",
+        "Couragous",
+        "Courageous"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Courageous' retains the 'e'."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Truly",
         "Truely",
         "Truelly",
-        "Trueley"
+        "Trueley",
+        "Truly"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Truly' drops the silent 'e'."
     },
     {
@@ -374,8 +374,8 @@
       "options": [
         "Argument",
         "Arguement",
-        "Argumant",
-        "Argumend"
+        "Argumend",
+        "Argumant"
       ],
       "answer": 0,
       "explanation": "'Argument' drops the 'e' from 'argue'."
@@ -385,12 +385,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Judgment",
+        "Judgemant",
         "Judgement",
-        "Judgmant",
-        "Judgemant"
+        "Judgment",
+        "Judgmant"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Both are valid, but standard legal spelling in India is 'Judgment'."
     },
     {
@@ -399,9 +399,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Vacuum",
-        "Vaccuum",
+        "Vaccume",
         "Vacume",
-        "Vaccume"
+        "Vaccuum"
       ],
       "answer": 0,
       "explanation": "'Vacuum' has one 'c' and double 'u'."
@@ -412,9 +412,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Twelfth",
-        "Twelth",
+        "Twelfth",
         "Twelveth",
-        "Twelfth"
+        "Twelth"
       ],
       "answer": 0,
       "explanation": "'Twelfth' retains the 'f' from five/twelve -> twel-f-t-h."
@@ -424,12 +424,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Ninth",
+        "Nyneth",
         "Nineth",
         "Nintt",
-        "Nyneth"
+        "Ninth"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ninth' drops the 'e' from 'nine'."
     },
     {
@@ -438,9 +438,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Forty",
-        "Fourty",
+        "Fowrty",
         "Fortie",
-        "Fowrty"
+        "Fourty"
       ],
       "answer": 0,
       "explanation": "The number 40 is spelt 'Forty', unlike 'Four' or 'Fourteen'."
@@ -451,9 +451,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Conscientious",
-        "Consciensious",
         "Conscientus",
-        "Concientious"
+        "Concientious",
+        "Consciensious"
       ],
       "answer": 0,
       "explanation": "'Conscientious' is spelt C-O-N-S-C-I-E-N-T-I-O-U-S."
@@ -463,12 +463,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Hierarchy",
-        "Heirarchy",
         "Hierarcy",
-        "Hierachy"
+        "Hierarchy",
+        "Hierachy",
+        "Heirarchy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Hierarchy' starts with H-I-E, not H-E-I."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Surveillance",
         "Surveilance",
+        "Surveillence",
         "Survalience",
-        "Surveillence"
+        "Surveillance"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Surveillance' is spelt S-U-R-V-E-I-L-L-A-N-C-E."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Liaison",
+        "Liaissn",
         "Liason",
         "Liasion",
-        "Liaissn"
+        "Liaison"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Liaison' has two 'i's: L-I-A-I-S-O-N."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Manoeuvre",
         "Maneuvre",
-        "Maneuver",
-        "Manoeuver"
+        "Manoeuvre",
+        "Manoeuver",
+        "Maneuver"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Standard British/PSC spelling is 'Manoeuvre'."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Connoisseur",
         "Connoiseur",
-        "Connoisuer",
-        "Connoissur"
+        "Connoissur",
+        "Connoisseur",
+        "Connoisuer"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Connoisseur' has double 'n' and double 's'."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Rendezvous",
-        "Randezvous",
         "Rendezvou",
-        "Randevoo"
+        "Randezvous",
+        "Randevoo",
+        "Rendezvous"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Rendezvous' retains French spelling R-E-N-D-E-Z-V-O-U-S."
     },
     {
@@ -541,12 +541,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Guillotine",
         "Gullotine",
+        "Guillotene",
         "Guilotene",
-        "Guillotene"
+        "Guillotine"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Guillotine' is spelt G-U-I-L-L-O-T-I-N-E."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Sovereignty",
         "Sovereigntie",
+        "Sovereinty",
         "Soverignty",
-        "Sovereinty"
+        "Sovereignty"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Sovereignty' is spelt S-O-V-E-R-E-I-G-N-T-Y."
     },
     {
@@ -567,12 +567,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Gaggle",
         "Gagle",
         "Gaggel",
+        "Gaggle",
         "Gagell"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Gaggle' (flock of geese) has double 'g'."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Cigarette",
-        "Cigarrette",
+        "Cigaret",
         "Cigarete",
-        "Cigaret"
+        "Cigarette",
+        "Cigarrette"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cigarette' has single 'g', single 'r', and double 't'."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Possession",
         "Posession",
-        "Possesion",
-        "Possession"
+        "Possession",
+        "Possession",
+        "Possesion"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Possession' has double 's' in two places."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Succesion",
         "Succession",
         "Sucession",
-        "Succesion",
         "Succsession"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Succession' has double 'c' and double 's'."
     },
     {
@@ -632,12 +632,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Assassination",
         "Asassination",
-        "Assasination",
-        "Asasination"
+        "Asasination",
+        "Assassination",
+        "Assasination"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Assassination' has two sets of double 's'."
     },
     {
@@ -645,12 +645,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Harassment",
         "Harrassment",
+        "Harasment",
         "Harrassmant",
-        "Harasment"
+        "Harassment"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Harassment' has single 'r' and double 's' in standard British English."
     },
     {
@@ -658,12 +658,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Exaggerate",
-        "Exagerate",
         "Exagerrate",
-        "Exaggerrate"
+        "Exaggerrate",
+        "Exagerate",
+        "Exaggerate"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Exaggerate' has double 'g' and single 'r'."
     },
     {
@@ -671,12 +671,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Personnel",
-        "Personel",
         "Personell",
-        "Personelle"
+        "Personel",
+        "Personelle",
+        "Personnel"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Personnel' (staff) has double 'n' and double 'l'."
     },
     {
@@ -684,12 +684,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Stationery",
         "Stationary",
-        "Stationry",
-        "Stationerry"
+        "Stationerry",
+        "Stationery",
+        "Stationry"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Stationery' (pens, paper) has 'e' for envelope."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Stationary",
-        "Stationery",
+        "Stationerry",
         "Stationry",
-        "Stationerry"
+        "Stationery",
+        "Stationary"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Stationary' (motionless) has 'a' for anchor."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Discipline",
-        "Dicipline",
         "Disipline",
-        "Disciplene"
+        "Discipline",
+        "Disciplene",
+        "Dicipline"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Discipline' has 'sc': D-I-S-C-I-P-L-I-N-E."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Miscellaneous",
-        "Miscelaneous",
         "Miscellanous",
+        "Miscelaneous",
+        "Miscellaneous",
         "Miscelleneous"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Miscellaneous' is spelt M-I-S-C-E-L-L-A-N-E-O-U-S."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Fascinating",
-        "Fasinating",
         "Facsinating",
-        "Fascenating"
+        "Fascenating",
+        "Fasinating",
+        "Fascinating"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Fascinating' has 'sc': F-A-S-C-I-N-A-T-I-N-G."
     },
     {
@@ -750,9 +750,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Humorous",
-        "Humourous",
+        "Humourus",
         "Humerous",
-        "Humourus"
+        "Humourous"
       ],
       "answer": 0,
       "explanation": "'Humorous' drops the 'u' from 'humour'."
@@ -763,8 +763,8 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Glamorous",
-        "Glamourous",
         "Glaamourous",
+        "Glamourous",
         "Glamorus"
       ],
       "answer": 0,
@@ -775,12 +775,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Vigorous",
-        "Vigourous",
         "Vigerous",
-        "Vigorus"
+        "Vigorus",
+        "Vigorous",
+        "Vigourous"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Vigorous' drops the 'u' from 'vigour'."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Privilege",
         "Privelege",
         "Privilige",
-        "Privelige"
+        "Privelige",
+        "Privilege"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Privilege' has two 'i's and two 'e's."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Reconnaissance",
-        "Reconnoisance",
+        "Reconnassance",
         "Reconnaisance",
-        "Reconnassance"
+        "Reconnoisance",
+        "Reconnaissance"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Reconnaissance' is spelt R-E-C-O-N-N-A-I-S-S-A-N-C-E."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Sycophant",
         "Sycophunt",
+        "Sycophant",
         "Sicophant",
         "Psychophant"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Sycophant' starts with S-Y, not P-S."
     },
     {
@@ -828,9 +828,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Idiosyncrasy",
-        "Idiosyncracy",
+        "Idiosincrasy",
         "Ideosyncrasy",
-        "Idiosincrasy"
+        "Idiosyncracy"
       ],
       "answer": 0,
       "explanation": "'Idiosyncrasy' ends in '-asy', not '-acy'."
@@ -840,12 +840,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Ecstasy",
         "Ecstacy",
         "Extasy",
-        "Extacy"
+        "Extacy",
+        "Ecstasy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ecstasy' ends in '-asy', not '-acy'."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Hypocrisy",
         "Hypocrasy",
+        "Hypocrosy",
         "Hipocrisy",
-        "Hypocrosy"
+        "Hypocrisy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hypocrisy' ends in '-isy'."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Democracy",
-        "Democrasy",
         "Democrisy",
-        "Democresy"
+        "Democracy",
+        "Democresy",
+        "Democrasy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Democracy' ends in '-acy'."
     },
     {
@@ -879,12 +879,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Bureau",
-        "Beuro",
         "Buro",
-        "Buerau"
+        "Buerau",
+        "Bureau",
+        "Beuro"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Bureau' is spelt B-U-R-E-A-U."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Chauffeur",
-        "Chauffer",
+        "Chaffeur",
         "Chaufeur",
-        "Chaffeur"
+        "Chauffeur",
+        "Chauffer"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Chauffeur' is spelt C-H-A-U-F-F-E-U-R."
     },
     {
@@ -906,9 +906,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Renaissance",
-        "Renaisance",
         "Rennaissance",
-        "Rennassance"
+        "Rennassance",
+        "Renaisance"
       ],
       "answer": 0,
       "explanation": "'Renaissance' has single 'n' and double 's'."
@@ -918,12 +918,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Archaeology",
         "Archeology",
         "Archaelogy",
+        "Archaeology",
         "Archology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Standard British: 'Archaeology' (A-R-C-H-A-E-O-L-O-G-Y)."
     },
     {
@@ -933,8 +933,8 @@
       "options": [
         "Encyclopaedia",
         "Encyclopedia",
-        "Encyclopedea",
-        "Encyclopaedea"
+        "Encyclopaedea",
+        "Encyclopedea"
       ],
       "answer": 0,
       "explanation": "Traditional spelling: 'Encyclopaedia'."
@@ -970,12 +970,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Foreign",
-        "Foriegn",
         "Forein",
-        "Forren"
+        "Foreign",
+        "Forren",
+        "Foriegn"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Foreign' is spelt F-O-R-E-I-G-N."
     },
     {
@@ -984,9 +984,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Neighbour",
-        "Nieghbour",
+        "Neighber",
         "Naybour",
-        "Neighber"
+        "Nieghbour"
       ],
       "answer": 0,
       "explanation": "'Neighbour' has 'eigh' pattern."
@@ -996,12 +996,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Weight",
-        "Wieght",
         "Waght",
+        "Wieght",
+        "Weight",
         "Weght"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Weight' is spelt W-E-I-G-H-T."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Receive",
-        "Recieve",
         "Receve",
-        "Receeve"
+        "Receeve",
+        "Receive",
+        "Recieve"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Rule: 'i' before 'e' except after 'c': 'Receive'."
     },
     {
@@ -1023,8 +1023,8 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Deceive",
-        "Decieve",
         "Deceve",
+        "Decieve",
         "Deceeve"
       ],
       "answer": 0,
@@ -1035,12 +1035,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Perceeve",
         "Perceive",
         "Percieve",
-        "Perceve",
-        "Perceeve"
+        "Perceve"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "After 'c', use 'ei': 'Perceive'."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Ceeling",
         "Ceiling",
         "Cieling",
-        "Ceeling",
         "Celing"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "After 'c', use 'ei': 'Ceiling'."
     },
     {
@@ -1061,12 +1061,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Beleve",
         "Believe",
         "Beleive",
-        "Beleeve",
-        "Beleve"
+        "Beleeve"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Not after 'c', use 'ie': 'Believe'."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Relieve",
         "Releive",
         "Releeve",
+        "Relieve",
         "Releve"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Use 'ie': 'Relieve'."
     },
     {
@@ -1089,8 +1089,8 @@
       "options": [
         "Siege",
         "Seige",
-        "Seege",
-        "Sege"
+        "Sege",
+        "Seege"
       ],
       "answer": 0,
       "explanation": "Use 'ie': 'Siege'."
@@ -1102,8 +1102,8 @@
       "options": [
         "Grief",
         "Greif",
-        "Greef",
-        "Gref"
+        "Gref",
+        "Greef"
       ],
       "answer": 0,
       "explanation": "Use 'ie': 'Grief'."
@@ -1113,12 +1113,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Thief",
         "Theif",
         "Theef",
+        "Thief",
         "Thefe"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Use 'ie': 'Thief'."
     },
     {
@@ -1127,9 +1127,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Weird",
-        "Wierd",
         "Weerd",
-        "Werd"
+        "Werd",
+        "Wierd"
       ],
       "answer": 0,
       "explanation": "Exception to rule: 'Weird' is spelt W-E-I-R-D."
@@ -1139,12 +1139,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Seize",
-        "Sieze",
         "Seeze",
-        "Seze"
+        "Seize",
+        "Seze",
+        "Sieze"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Exception to rule: 'Seize' is spelt S-E-I-Z-E."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Leisure",
-        "Liesure",
         "Leasure",
-        "Leeshure"
+        "Liesure",
+        "Leeshure",
+        "Leisure"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Exception: 'Leisure' is spelt L-E-I-S-U-R-E."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Neither",
+        "Neather",
         "Niether",
-        "Neether",
-        "Neather"
+        "Neither",
+        "Neether"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Spelt N-E-I-T-H-E-R."
     },
     {
@@ -1178,12 +1178,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Conceit",
-        "Conciet",
         "Conceet",
-        "Consete"
+        "Conciet",
+        "Consete",
+        "Conceit"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "After 'c', use 'ei': 'Conceit'."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Receipt",
+        "Receite",
         "Reciept",
         "Receit",
-        "Receite"
+        "Receipt"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Receipt' has silent 'p': R-E-C-E-I-P-T."
     },
     {
@@ -1205,9 +1205,9 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Conscience",
-        "Conience",
         "Consciense",
-        "Consience"
+        "Consience",
+        "Conience"
       ],
       "answer": 0,
       "explanation": "'Conscience' has 'sc': C-O-N-S-C-I-E-N-C-E."
@@ -1217,12 +1217,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Conceous",
         "Conscious",
-        "Concious",
         "Consious",
-        "Conceous"
+        "Concious"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Conscious' is spelt C-O-N-S-C-I-O-U-S."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Omniscent",
         "Omniscient",
         "Omnicient",
-        "Omniscent",
         "Omnisent"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Omniscient' is spelt O-M-N-I-S-C-I-E-N-T."
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Fahrenheit",
-        "Farenheit",
         "Fahrenhiet",
-        "Farenhiet"
+        "Farenhiet",
+        "Fahrenheit",
+        "Farenheit"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Fahrenheit' is spelt F-A-H-R-E-N-H-E-I-T."
     },
     {
@@ -1256,12 +1256,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Millennium",
+        "Milennium",
         "Millenium",
         "Milenium",
-        "Milennium"
+        "Millennium"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Millennium' has double 'l' and double 'n'."
     },
     {
@@ -1270,8 +1270,8 @@
       "question": "Choose the correctly spelt word:",
       "options": [
         "Colossal",
-        "Collosal",
         "Collossal",
+        "Collosal",
         "Colosel"
       ],
       "answer": 0,
@@ -1282,12 +1282,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Supersede",
-        "Supercede",
+        "Superseed",
         "Superceed",
-        "Superseed"
+        "Supersede",
+        "Supercede"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Supersede' is the only English word ending in '-sede'."
     },
     {
@@ -1295,12 +1295,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Exseed",
         "Exceed",
         "Excede",
-        "Exseed",
         "Excead"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Exceed', 'Proceed', and 'Succeed' end in '-ceed'."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Procead",
         "Proceed",
         "Procede",
-        "Proseed",
-        "Procead"
+        "Proseed"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Proceed' ends in '-ceed'."
     },
     {
@@ -1321,12 +1321,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Precede",
-        "Preceed",
         "Preseed",
-        "Presede"
+        "Presede",
+        "Preceed",
+        "Precede"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Precede' ends in '-cede'."
     },
     {
@@ -1336,8 +1336,8 @@
       "options": [
         "Concede",
         "Conceed",
-        "Consede",
-        "Consead"
+        "Consead",
+        "Consede"
       ],
       "answer": 0,
       "explanation": "'Concede' ends in '-cede'."
@@ -1347,12 +1347,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
+        "Recead",
         "Recede",
-        "Receed",
         "Resede",
-        "Recead"
+        "Receed"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Recede' ends in '-cede'."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "spelling_test_eng",
       "question": "Choose the correctly spelt word:",
       "options": [
-        "Intercede",
         "Interceed",
-        "Intersede",
-        "Intersead"
+        "Intersead",
+        "Intercede",
+        "Intersede"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Intercede' ends in '-cede'."
     },
     {
@@ -1373,12 +1373,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Accomodate",
         "Accommodate",
         "Acommodate",
-        "Accomodate",
         "Acomodate"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Correct spelling has double 'c' and double 'm': ACCOMMODATE."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Bureaucracy",
         "Beurocracy",
         "Burocracy",
+        "Bureaucracy",
         "Bureaucrasy"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Correct spelling is BUREAUCRACY (bureau + cracy)."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Committee",
         "Comitee",
-        "Committe",
-        "Commitee"
+        "Committee",
+        "Commitee",
+        "Committe"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Correct spelling has double 'm', double 't', double 'e': COMMITTEE."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Embarrassment",
-        "Embarassment",
         "Embarasment",
-        "Emberrassment"
+        "Emberrassment",
+        "Embarassment",
+        "Embarrassment"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Correct spelling has double 'r' and double 's': EMBARRASSMENT."
     },
     {
@@ -1439,9 +1439,9 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Millennium",
+        "Milenium",
         "Millenium",
-        "Milennium",
-        "Milenium"
+        "Milennium"
       ],
       "answer": 0,
       "explanation": "Correct spelling has double 'l' and double 'n': MILLENNIUM."
@@ -1451,12 +1451,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Misspell",
-        "Mispell",
         "Mis-spell",
+        "Mispell",
+        "Misspell",
         "Misspel"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prefix 'mis-' + 'spell' keeps both 's' letters: MISSPELL."
     },
     {
@@ -1464,12 +1464,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Occurrence",
         "Occurence",
+        "Occurrence",
         "Ocurrence",
         "Occurance"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Double 'c', double 'r', and ending '-ence': OCCURRENCE."
     },
     {
@@ -1478,8 +1478,8 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Privilege",
-        "Privelege",
         "Priviledge",
+        "Privelege",
         "Privlege"
       ],
       "answer": 0,
@@ -1490,12 +1490,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Pronunciation",
         "Pronounciation",
+        "Pronunciation",
         "Pronunsation",
         "Pronunsiation"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Noun drops the 'o' from 'noun': PRONUNCIATION."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Questionnaire",
         "Questionaire",
-        "Questionnare",
-        "Questionnair"
+        "Questionnaire",
+        "Questionnair",
+        "Questionnare"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Double 'n' and ending '-aire': QUESTIONNAIRE."
     },
     {
@@ -1516,12 +1516,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Receive",
         "Recieve",
         "Receve",
-        "Receave"
+        "Receave",
+        "Receive"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Rule 'i before e except after c': RECEIVE."
     },
     {
@@ -1529,12 +1529,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Lieutenant",
         "Leutenant",
         "Lieutenaunt",
-        "Lientenant"
+        "Lientenant",
+        "Lieutenant"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Historic spelling: LIEUTENANT (pronounced 'leftenant')."
     },
     {
@@ -1544,8 +1544,8 @@
       "options": [
         "Mischievous",
         "Mischievious",
-        "Mischevous",
-        "Mischivous"
+        "Mischivous",
+        "Mischevous"
       ],
       "answer": 0,
       "explanation": "Three syllables only: MISCHIEVOUS (no extra 'i' after 'v')."
@@ -1555,12 +1555,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Superintendent",
-        "Superintendant",
+        "Superintendentt",
         "Superentendent",
-        "Superintendentt"
+        "Superintendent",
+        "Superintendant"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Ends in '-ent': SUPERINTENDENT."
     },
     {
@@ -1569,9 +1569,9 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Garrulous",
-        "Garulous",
+        "Garilous",
         "Garrulouse",
-        "Garilous"
+        "Garulous"
       ],
       "answer": 0,
       "explanation": "Double 'r': GARRULOUS (talkative)."
@@ -1581,12 +1581,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Diarrhoea",
         "Diarrhea",
+        "Diarhea",
         "Diarhoea",
-        "Diarhea"
+        "Diarrhoea"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "British/PSC standard is DIARRHOEA (US: diarrhea)."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Pneumonia",
         "Pneumonea",
-        "Neumonia",
-        "Pneumania"
+        "Pneumania",
+        "Pneumonia",
+        "Neumonia"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Silent initial 'P': PNEUMONIA."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Hygienic",
-        "Hygenic",
         "Hygeneic",
-        "Higeinic"
+        "Higeinic",
+        "Hygenic",
+        "Hygienic"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Spelt with 'ie': HYGIENIC."
     },
     {
@@ -1621,9 +1621,9 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Conscientious",
+        "Conscentious",
         "Conscienious",
-        "Consciensious",
-        "Conscentious"
+        "Consciensious"
       ],
       "answer": 0,
       "explanation": "C-O-N-S-C-I-E-N-T-I-O-U-S."
@@ -1633,12 +1633,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Grammar",
         "Grammer",
-        "Gramor",
-        "Grammr"
+        "Grammar",
+        "Grammr",
+        "Gramor"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ends in '-ar', never '-er': GRAMMAR."
     },
     {
@@ -1647,9 +1647,9 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Calendar",
-        "Calender",
+        "Calendur",
         "Calandar",
-        "Calendur"
+        "Calender"
       ],
       "answer": 0,
       "explanation": "System of days ends in '-ar': CALENDAR."
@@ -1659,12 +1659,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Separate",
-        "Seperate",
         "Seprate",
-        "Sepparate"
+        "Seperate",
+        "Sepparate",
+        "Separate"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Mnemonic 'there is a rat in separate': SEPARATE."
     },
     {
@@ -1673,9 +1673,9 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Colleague",
-        "Coleague",
+        "Colleage",
         "Collegue",
-        "Colleage"
+        "Coleague"
       ],
       "answer": 0,
       "explanation": "Co-worker is COLLEAGUE."
@@ -1685,12 +1685,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Vacuum",
         "Vaccuum",
+        "Vacuum",
         "Vacume",
         "Vacum"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Single 'c', double 'u': VACUUM."
     },
     {
@@ -1699,9 +1699,9 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Surveillance",
-        "Surveilance",
+        "Survaillance",
         "Survalience",
-        "Survaillance"
+        "Surveilance"
       ],
       "answer": 0,
       "explanation": "French spelling: SURVEILLANCE."
@@ -1712,8 +1712,8 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Queue",
-        "Que",
         "Quene",
+        "Que",
         "Qeue"
       ],
       "answer": 0,
@@ -1724,12 +1724,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Jewellery",
         "Jewelery",
         "Jewellry",
+        "Jewellery",
         "Jewlery"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "British standard spelling: JEWELLERY."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Manuvre",
         "Manoeuvre",
         "Maneuver",
-        "Maneouvre",
-        "Manuvre"
+        "Maneouvre"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "British/PSC spelling: MANOEUVRE (US: maneuver)."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Liaison",
         "Liason",
-        "Liasion",
-        "Liaisone"
+        "Liaison",
+        "Liaisone",
+        "Liasion"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Double 'i': L-I-A-I-S-O-N."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Conosieur",
         "Connoisseur",
-        "Connoiseur",
         "Connoisuer",
-        "Conosieur"
+        "Connoiseur"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Double 'n' and double 's': CONNOISSEUR."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Bourgeoisie",
-        "Bourgeoise",
         "Burgeoisie",
-        "Bourgeoisy"
+        "Bourgeoisy",
+        "Bourgeoise",
+        "Bourgeoisie"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "French middle-class: BOURGEOISIE."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Cigarette",
-        "Cigaret",
+        "Cigarrette",
         "Cigarrete",
-        "Cigarrette"
+        "Cigarette",
+        "Cigaret"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Single 'r', double 't': CIGARETTE."
     },
     {
@@ -1802,12 +1802,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Restaraunt",
         "Restaurant",
         "Resturant",
-        "Restaraunt",
         "Restaurent"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "R-E-S-T-A-U-R-A-N-T."
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Bouquet",
-        "Boquet",
         "Bouquett",
+        "Boquet",
+        "Bouquet",
         "Bauquet"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Bunch of flowers: BOUQUET."
     },
     {
@@ -1829,9 +1829,9 @@
       "question": "Find the correctly spelt word:",
       "options": [
         "Catastrophe",
-        "Catastrophi",
+        "Catestrophe",
         "Catastrophy",
-        "Catestrophe"
+        "Catastrophi"
       ],
       "answer": 0,
       "explanation": "Disaster ending in '-e': CATASTROPHE."
@@ -1843,8 +1843,8 @@
       "options": [
         "Etiquette",
         "Etiquete",
-        "Etiqette",
-        "Etequette"
+        "Etequette",
+        "Etiqette"
       ],
       "answer": 0,
       "explanation": "Social manners: ETIQUETTE."
@@ -1854,12 +1854,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Farenhiet",
         "Fahrenheit",
-        "Farenheit",
         "Fahrenhiet",
-        "Farenhiet"
+        "Farenheit"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Temperature scale: FAHRENHEIT."
     },
     {
@@ -1867,12 +1867,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Gauge",
-        "Guage",
         "Gauze",
-        "Gague"
+        "Gague",
+        "Gauge",
+        "Guage"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Measurement instrument: GAUGE."
     },
     {
@@ -1880,12 +1880,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Hierarcy",
         "Hierarchy",
         "Heirarchy",
-        "Hierarcy",
         "Hierachy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ranked order: HIERARCHY ('i' before 'e')."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Inoculate",
         "Innoculate",
         "Inocculate",
+        "Inoculate",
         "Inocullate"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Single 'n', single 'c': INOCULATE."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Leasure",
         "Leisure",
         "Liesure",
-        "Lesure",
-        "Leasure"
+        "Lesure"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Exception to rule: LEISURE ('e' before 'i')."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Medieval",
         "Medeival",
-        "Medievil",
-        "Midieval"
+        "Medieval",
+        "Midieval",
+        "Medievil"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Middle ages: MEDIEVAL."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Neighbor / Neighbour",
-        "Nieghbor",
         "Neighber",
-        "Nieghbour"
+        "Neighbor / Neighbour",
+        "Nieghbour",
+        "Nieghbor"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "N-E-I-G-H-B-O-U-R."
     },
     {
@@ -1945,13 +1945,13 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Parround / Parallel",
-        "Parallel",
         "Paralel",
         "Parrallel",
-        "Parralel"
+        "Parralel",
+        "Parallel",
+        "Parround / Parallel"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "P-A-R-A-L-L-E-L (single 'r', double 'l')."
     },
     {
@@ -1959,12 +1959,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Rhythm",
-        "Rythm",
         "Rhithm",
-        "Rhythim"
+        "Rhythm",
+        "Rhythim",
+        "Rythm"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "R-H-Y-T-H-M."
     },
     {
@@ -1985,12 +1985,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
+        "Tyranney",
         "Tyranny",
         "Tyrany",
-        "Tiranny",
-        "Tyranney"
+        "Tiranny"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Cruel rule: TYRANNY (single 'r', double 'n')."
     },
     {
@@ -1998,12 +1998,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Ubiquitous",
-        "Ubiquitus",
+        "Ubiqutous",
         "Ubiquatious",
-        "Ubiqutous"
+        "Ubiquitus",
+        "Ubiquitous"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Omnipresent: UBIQUITOUS."
     },
     {
@@ -2011,12 +2011,12 @@
       "topic": "spelling_test_eng",
       "question": "Find the correctly spelt word:",
       "options": [
-        "Veterinary",
-        "Veternary",
         "Vetirinary",
-        "Veterinery"
+        "Veterinery",
+        "Veterinary",
+        "Veternary"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Animal medical science: VETERINARY."
     },
     {

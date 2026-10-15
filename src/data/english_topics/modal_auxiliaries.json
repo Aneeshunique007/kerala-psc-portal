@@ -8,12 +8,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not enter without permission.",
       "options": [
-        "must",
         "can",
+        "must",
         "may",
         "ought"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Must not' expresses strong prohibition."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ I come in, Sir?",
       "options": [
-        "May",
+        "Might",
         "Can",
         "Could",
-        "Might"
+        "May"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'May' is the formal modal auxiliary for seeking permission."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ speak five languages fluently.",
       "options": [
-        "can",
-        "may",
+        "might",
         "must",
-        "might"
+        "may",
+        "can"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Can' denotes general ability in the present."
     },
     {
@@ -47,12 +47,12 @@
       "topic": "modal_auxiliaries",
       "question": "We ______ respect our national flag.",
       "options": [
+        "may",
         "ought to",
         "can",
-        "may",
         "might"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ought to' expresses moral obligation or duty."
     },
     {
@@ -60,12 +60,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ see a doctor immediately; you look very sick.",
       "options": [
-        "should",
-        "could",
         "may",
-        "might"
+        "might",
+        "should",
+        "could"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Should' expresses advice or recommendation."
     },
     {
@@ -73,12 +73,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ have missed the train; that's why he is late.",
       "options": [
+        "ought",
         "must",
         "can",
-        "shall",
-        "ought"
+        "shall"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Must have + V3' expresses a strong logical deduction about a past event."
     },
     {
@@ -87,9 +87,9 @@
       "question": "You ______ not smoke in public places.",
       "options": [
         "must",
+        "shall",
         "will",
-        "would",
-        "shall"
+        "would"
       ],
       "answer": 0,
       "explanation": "'Must not' expresses legal or strict prohibition."
@@ -99,12 +99,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ you please lend me your pen?",
       "options": [
-        "Could",
         "May",
         "Should",
+        "Could",
         "Shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Could you please...' expresses a polite request."
     },
     {
@@ -112,12 +112,12 @@
       "topic": "modal_auxiliaries",
       "question": "Would you mind ______ the window?",
       "options": [
-        "opening",
-        "to open",
         "open",
+        "to open",
+        "opening",
         "opened"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The phrase 'Would you mind' is followed by a gerund (-ing form)."
     },
     {
@@ -125,12 +125,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ rather starve than beg.",
       "options": [
+        "should",
         "would",
         "had",
-        "should",
         "could"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would rather... than' expresses preference."
     },
     {
@@ -138,12 +138,12 @@
       "topic": "modal_auxiliaries",
       "question": "You had better ______ at once.",
       "options": [
+        "left",
         "leave",
         "to leave",
-        "leaving",
-        "left"
+        "leaving"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Had better' is followed by a bare infinitive (V1 without 'to')."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ play cricket when he was young.",
       "options": [
-        "used to",
-        "is used to",
         "use to",
-        "was used to"
+        "was used to",
+        "is used to",
+        "used to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Used to' expresses a discontinued past habit."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "modal_auxiliaries",
       "question": "She is used to ______ up early in the morning.",
       "options": [
-        "waking",
         "wake",
-        "woke",
-        "woken"
+        "waking",
+        "woken",
+        "woke"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Be used to' (accustomed to) takes a gerund (-ing form)."
     },
     {
@@ -179,8 +179,8 @@
       "options": [
         "dare",
         "need",
-        "can",
-        "ought"
+        "ought",
+        "can"
       ],
       "answer": 0,
       "explanation": "'How dare you...' expresses indignation or anger."
@@ -203,12 +203,12 @@
       "topic": "modal_auxiliaries",
       "question": "Walk carefully lest you ______ stumble.",
       "options": [
+        "might",
         "should",
-        "would",
         "could",
-        "might"
+        "would"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The conjunction 'lest' is always followed by the modal auxiliary 'should'."
     },
     {
@@ -217,9 +217,9 @@
       "question": "______ God bless you with good health!",
       "options": [
         "May",
-        "Can",
         "Should",
-        "Must"
+        "Must",
+        "Can"
       ],
       "answer": 0,
       "explanation": "'May' expresses wishes, prayers, and blessings in optative sentences."
@@ -229,12 +229,12 @@
       "topic": "modal_auxiliaries",
       "question": "It ______ rain this evening; look at the dark clouds.",
       "options": [
-        "may",
-        "can",
         "must",
-        "shall"
+        "shall",
+        "can",
+        "may"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'May' expresses strong possibility based on present evidence."
     },
     {
@@ -243,8 +243,8 @@
       "question": "Take an umbrella; it ______ rain later.",
       "options": [
         "might",
-        "must",
         "should",
+        "must",
         "shall"
       ],
       "answer": 0,
@@ -255,12 +255,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ like to invite the chief guest to speak.",
       "options": [
-        "would",
-        "should",
+        "might",
         "could",
-        "might"
+        "would",
+        "should"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Would like to' is a polite expression for expressing desire or intent."
     },
     {
@@ -268,12 +268,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ we start the meeting now?",
       "options": [
-        "Shall",
-        "Will",
         "Would",
+        "Will",
+        "Shall",
         "Might"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Shall we...?' is used with 1st person plural for suggestions or offers."
     },
     {
@@ -281,12 +281,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ have informed me earlier; now it is too late.",
       "options": [
-        "should",
         "must",
-        "can",
-        "may"
+        "should",
+        "may",
+        "can"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Should have + V3' expresses past obligation or regret about an unfulfilled action."
     },
     {
@@ -294,12 +294,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ swim across the river when he was twenty.",
       "options": [
-        "could",
-        "can",
         "may",
+        "can",
+        "could",
         "might"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Could' expresses general ability in the past."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ not do such a thing; she is too kind.",
       "options": [
-        "could",
         "may",
         "might",
+        "could",
         "shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Could not' expresses past impossibility or disbelief."
     },
     {
@@ -321,8 +321,8 @@
       "question": "Candidates ______ answer any five questions.",
       "options": [
         "must",
-        "can",
         "ought",
+        "can",
         "need"
       ],
       "answer": 0,
@@ -333,12 +333,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not worry about the finances; I will manage.",
       "options": [
-        "need",
         "dare",
         "must",
-        "ought"
+        "ought",
+        "need"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Need not' expresses lack of necessity."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ you have another cup of tea?",
       "options": [
+        "May",
         "Will",
-        "Shall",
         "Must",
-        "May"
+        "Shall"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Will you have...?' is used for polite offers and invitations."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "modal_auxiliaries",
       "question": "We ______ obey the traffic regulations.",
       "options": [
+        "might",
         "must",
-        "can",
         "may",
-        "might"
+        "can"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Must' indicates legal necessity and compulsory compliance."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "modal_auxiliaries",
       "question": "If I had money, I ______ buy that car.",
       "options": [
-        "would",
-        "will",
         "shall",
-        "can"
+        "can",
+        "would",
+        "will"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Type 2 conditional takes 'would + V1'."
     },
     {
@@ -413,8 +413,8 @@
       "options": [
         "ought",
         "should",
-        "must",
-        "can"
+        "can",
+        "must"
       ],
       "answer": 0,
       "explanation": "'Ought' is followed by 'to' to express moral duty."
@@ -437,12 +437,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ be over sixty; he looks so young.",
       "options": [
-        "cannot",
         "must not",
+        "should not",
         "may not",
-        "should not"
+        "cannot"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Cannot be' expresses strong logical impossibility in the present."
     },
     {
@@ -450,12 +450,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ be at home; the lights are on.",
       "options": [
-        "must",
-        "can",
         "may",
+        "can",
+        "must",
         "should"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Must be' expresses strong logical deduction in the present."
     },
     {
@@ -463,12 +463,12 @@
       "topic": "modal_auxiliaries",
       "question": "They ______ have reached Delhi by now.",
       "options": [
-        "must",
-        "can",
         "shall",
-        "ought"
+        "ought",
+        "can",
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Must have' indicates probable certainty about the past."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ leave now if you have finished your work.",
       "options": [
-        "may",
+        "ought",
         "must",
         "shall",
-        "ought"
+        "may"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'May' expresses granting permission."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "modal_auxiliaries",
       "question": "Children ______ obey their parents.",
       "options": [
-        "should",
-        "can",
         "may",
-        "might"
+        "might",
+        "can",
+        "should"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Should' indicates general moral duty."
     },
     {
@@ -503,9 +503,9 @@
       "question": "We ______ rather walk than take a taxi.",
       "options": [
         "would",
-        "had",
         "should",
-        "could"
+        "could",
+        "had"
       ],
       "answer": 0,
       "explanation": "'Would rather' indicates preference."
@@ -517,8 +517,8 @@
       "options": [
         "wear",
         "to wear",
-        "wearing",
-        "wore"
+        "wore",
+        "wearing"
       ],
       "answer": 0,
       "explanation": "'Had better' takes bare infinitive ('wear')."
@@ -529,8 +529,8 @@
       "question": "He ______ not dare to oppose his boss.",
       "options": [
         "does",
-        "is",
         "has",
+        "is",
         "can"
       ],
       "answer": 0,
@@ -541,12 +541,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not have bought so much food; half of it was wasted.",
       "options": [
+        "could",
         "need",
-        "dare",
         "must",
-        "could"
+        "dare"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Need not have + V3' means an action was performed but was unnecessary."
     },
     {
@@ -554,12 +554,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ sing like an angel.",
       "options": [
-        "can",
         "may",
         "must",
+        "can",
         "shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Can' denotes natural talent and ability."
     },
     {
@@ -568,8 +568,8 @@
       "question": "If it rains, we ______ cancel the trip.",
       "options": [
         "will",
-        "would",
         "could",
+        "would",
         "might"
       ],
       "answer": 0,
@@ -580,12 +580,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ rather die than betray his country.",
       "options": [
-        "would",
-        "had",
         "should",
-        "could"
+        "would",
+        "could",
+        "had"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would rather... than' expresses decisive preference."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "modal_auxiliaries",
       "question": "Work hard lest you ______ fail.",
       "options": [
-        "should",
-        "would",
+        "might",
         "could",
-        "might"
+        "should",
+        "would"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Lest' takes 'should'."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ peace be upon you!",
       "options": [
-        "May",
-        "Can",
         "Will",
-        "Shall"
+        "Can",
+        "Shall",
+        "May"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Optative sentence takes 'May'."
     },
     {
@@ -619,12 +619,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not drive without a valid driving license.",
       "options": [
-        "must",
         "can",
         "may",
+        "must",
         "might"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Prohibition by law requires 'must not'."
     },
     {
@@ -633,9 +633,9 @@
       "question": "I ______ rather drink tea than coffee.",
       "options": [
         "would",
-        "had",
+        "should",
         "could",
-        "should"
+        "had"
       ],
       "answer": 0,
       "explanation": "'Would rather' denotes personal preference."
@@ -659,9 +659,9 @@
       "question": "The principal ______ to address the students tomorrow.",
       "options": [
         "is",
-        "has",
         "must",
-        "can"
+        "can",
+        "has"
       ],
       "answer": 0,
       "explanation": "'is to address' indicates a planned official arrangement."
@@ -672,8 +672,8 @@
       "question": "I ______ have helped him if I had known his trouble.",
       "options": [
         "would",
-        "will",
         "can",
+        "will",
         "shall"
       ],
       "answer": 0,
@@ -684,12 +684,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ pay your taxes on time.",
       "options": [
-        "must",
-        "can",
         "may",
-        "might"
+        "might",
+        "must",
+        "can"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Civic legal obligation requires 'must'."
     },
     {
@@ -697,12 +697,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ I open the door for you?",
       "options": [
-        "Shall",
+        "Must",
         "Will",
         "Would",
-        "Must"
+        "Shall"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Shall I...?' is an offer of help."
     },
     {
@@ -711,9 +711,9 @@
       "question": "You ______ have locked the car; someone could steal it.",
       "options": [
         "ought to",
-        "must",
+        "may",
         "can",
-        "may"
+        "must"
       ],
       "answer": 0,
       "explanation": "'Ought to have + V3' indicates past moral/sensible duty."
@@ -736,12 +736,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ to work late hours during tax season.",
       "options": [
-        "has",
-        "must",
         "can",
-        "may"
+        "must",
+        "may",
+        "has"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Has to' expresses external necessity."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "modal_auxiliaries",
       "question": "We ______ protect our environment.",
       "options": [
-        "must",
+        "might",
         "can",
-        "may",
-        "might"
+        "must",
+        "may"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Universal moral and survival imperative -> 'must'."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not have shouted at the child.",
       "options": [
-        "should",
-        "must",
         "can",
-        "may"
+        "must",
+        "may",
+        "should"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Should not have' expresses regret/criticism of past action."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "modal_auxiliaries",
       "question": "The train ______ arrive at 10 AM as per the schedule.",
       "options": [
-        "should",
         "could",
+        "should",
         "may",
         "might"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Should' expresses expected probability based on schedule."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ you have some more dessert?",
       "options": [
-        "Would",
-        "May",
         "Shall",
-        "Must"
+        "May",
+        "Must",
+        "Would"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Would you have...?' is a polite invitation."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ not enter the room without knocking.",
       "options": [
-        "dared",
+        "can",
         "needs",
         "must",
-        "can"
+        "dared"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Dared not enter' (past negative modal)."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ rather stay at home tonight.",
       "options": [
-        "would",
-        "had",
         "should",
-        "could"
+        "could",
+        "had",
+        "would"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Would rather stay' denotes preference."
     },
     {
@@ -828,8 +828,8 @@
       "question": "You had better ______ a doctor before it worsens.",
       "options": [
         "consult",
-        "to consult",
         "consulting",
+        "to consult",
         "consulted"
       ],
       "answer": 0,
@@ -841,9 +841,9 @@
       "question": "She ______ have forgotten about the appointment.",
       "options": [
         "might",
+        "will",
         "shall",
-        "ought",
-        "will"
+        "ought"
       ],
       "answer": 0,
       "explanation": "'Might have' expresses a possible past explanation."
@@ -853,12 +853,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ I borrow your camera for the weekend?",
       "options": [
+        "Shall",
         "Could",
         "Must",
-        "Should",
-        "Shall"
+        "Should"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Could I borrow...?' is a polite informal/formal request."
     },
     {
@@ -866,12 +866,12 @@
       "topic": "modal_auxiliaries",
       "question": "Every citizen ______ abide by the Constitution.",
       "options": [
-        "must",
+        "might",
         "may",
         "can",
-        "might"
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Must' denotes legal mandate."
     },
     {
@@ -879,10 +879,10 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not have spent all your savings.",
       "options": [
-        "ought",
+        "can",
         "should",
-        "must",
-        "can"
+        "ought",
+        "must"
       ],
       "answer": 1,
       "explanation": "'Should not have spent' expresses criticism of unwise past action."
@@ -892,12 +892,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ be asleep; he worked night shift.",
       "options": [
+        "ought",
         "must",
-        "can",
         "shall",
-        "ought"
+        "can"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Logical deduction -> 'must be'."
     },
     {
@@ -905,12 +905,12 @@
       "topic": "modal_auxiliaries",
       "question": "We ______ to respect all religions.",
       "options": [
-        "ought",
         "should",
-        "must",
-        "can"
+        "ought",
+        "can",
+        "must"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ought to' indicates moral virtue."
     },
     {
@@ -918,12 +918,12 @@
       "topic": "modal_auxiliaries",
       "question": "He said that he ______ solve the riddle.",
       "options": [
+        "may",
         "could",
         "can",
-        "will",
-        "may"
+        "will"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Past reported ability -> 'could'."
     },
     {
@@ -931,12 +931,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ that I were a billionaire!",
       "options": [
+        "Might",
         "Would",
-        "Should",
         "Could",
-        "Might"
+        "Should"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would that...' is an archaic/literary idiom expressing strong wish."
     },
     {
@@ -944,12 +944,12 @@
       "topic": "modal_auxiliaries",
       "question": "Run fast lest you ______ miss the train.",
       "options": [
+        "might",
         "should",
         "would",
-        "could",
-        "might"
+        "could"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lest... should'."
     },
     {
@@ -958,9 +958,9 @@
       "question": "You ______ not bring your own food into the cinema hall.",
       "options": [
         "must",
+        "shall",
         "can",
-        "will",
-        "shall"
+        "will"
       ],
       "answer": 0,
       "explanation": "Strict prohibition -> 'must not'."
@@ -970,12 +970,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ speak Tamil, but I cannot write it.",
       "options": [
-        "can",
         "may",
+        "shall",
         "must",
-        "shall"
+        "can"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Can' expresses present language ability."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ rather resign than accept a bribe.",
       "options": [
+        "could",
         "would",
-        "had",
         "should",
-        "could"
+        "had"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would rather... than'."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "modal_auxiliaries",
       "question": "You had better ______ an umbrella; the sky is overcast.",
       "options": [
+        "taking",
         "take",
         "to take",
-        "taking",
         "took"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Had better' takes bare infinitive 'take'."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "modal_auxiliaries",
       "question": "Nobody ______ dare to question his authority.",
       "options": [
-        "can",
         "may",
-        "must",
-        "shall"
+        "can",
+        "shall",
+        "must"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'can dare to question'."
     },
     {
@@ -1022,12 +1022,12 @@
       "topic": "modal_auxiliaries",
       "question": "We ______ to be kind to animals.",
       "options": [
-        "ought",
         "should",
         "must",
+        "ought",
         "can"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Ought to' expresses moral obligation."
     },
     {
@@ -1035,12 +1035,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not worry; everything will be fine.",
       "options": [
-        "need",
         "dare",
-        "must",
-        "shall"
+        "shall",
+        "need",
+        "must"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Need not worry'."
     },
     {
@@ -1049,9 +1049,9 @@
       "question": "______ long live the King!",
       "options": [
         "May",
-        "Can",
         "Will",
-        "Shall"
+        "Shall",
+        "Can"
       ],
       "answer": 0,
       "explanation": "'May long live the King!' (optative blessing)."
@@ -1061,12 +1061,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ have reached by now if the flight was on time.",
       "options": [
-        "would",
-        "will",
         "can",
+        "will",
+        "would",
         "shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Past conditional deduction -> 'would have reached'."
     },
     {
@@ -1074,12 +1074,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not copy answers in the exam hall.",
       "options": [
-        "must",
-        "can",
         "will",
-        "may"
+        "may",
+        "must",
+        "can"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Exam regulation prohibition -> 'must not'."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ rather fail with honor than cheat.",
       "options": [
-        "would",
+        "should",
         "had",
         "could",
-        "should"
+        "would"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Would rather'."
     },
     {
@@ -1100,12 +1100,12 @@
       "topic": "modal_auxiliaries",
       "question": "He had better ______ the truth to the police.",
       "options": [
-        "tell",
         "to tell",
         "telling",
-        "told"
+        "told",
+        "tell"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Had better' takes bare infinitive 'tell'."
     },
     {
@@ -1114,8 +1114,8 @@
       "question": "They ______ to have arrived two hours ago.",
       "options": [
         "ought",
-        "should",
         "must",
+        "should",
         "can"
       ],
       "answer": 0,
@@ -1126,12 +1126,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ play the violin beautifully.",
       "options": [
+        "might",
         "can",
         "may",
-        "must",
-        "might"
+        "must"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Musical ability -> 'can'."
     },
     {
@@ -1152,12 +1152,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not have bought that expensive watch.",
       "options": [
+        "can",
         "should",
         "must",
-        "can",
         "may"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Should not have bought' expresses disapproval."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "modal_auxiliaries",
       "question": "It ______ be true; I can't believe it!",
       "options": [
-        "cannot",
-        "must not",
         "may not",
+        "must not",
+        "cannot",
         "should not"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cannot be true' expresses utter disbelief."
     },
     {
@@ -1179,8 +1179,8 @@
       "question": "He ______ be at his desk; his computer is logged in.",
       "options": [
         "must",
-        "can",
         "may",
+        "can",
         "shall"
       ],
       "answer": 0,
@@ -1191,12 +1191,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ carry your ID card during the exam.",
       "options": [
-        "must",
-        "can",
         "may",
-        "might"
+        "can",
+        "might",
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Compulsory requirement -> 'must'."
     },
     {
@@ -1218,9 +1218,9 @@
       "question": "He ______ swim five miles when he was in the navy.",
       "options": [
         "could",
+        "might",
         "can",
-        "may",
-        "might"
+        "may"
       ],
       "answer": 0,
       "explanation": "Past physical ability -> 'could'."
@@ -1230,12 +1230,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ you have some fresh orange juice?",
       "options": [
-        "Will",
-        "Shall",
+        "May",
         "Must",
-        "May"
+        "Shall",
+        "Will"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Polite offer -> 'Will you have...'"
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ rather sleep on the floor than in that dirty bed.",
       "options": [
-        "would",
         "had",
+        "would",
         "should",
         "could"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would rather'."
     },
     {
@@ -1257,9 +1257,9 @@
       "question": "He had better ______ his doctor's advice.",
       "options": [
         "follow",
-        "to follow",
+        "followed",
         "following",
-        "followed"
+        "to follow"
       ],
       "answer": 0,
       "explanation": "'Had better follow'."
@@ -1269,12 +1269,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ God give you courage to face this tragedy!",
       "options": [
-        "May",
-        "Can",
         "Shall",
-        "Must"
+        "May",
+        "Must",
+        "Can"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Optative blessing -> 'May'."
     },
     {
@@ -1282,12 +1282,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not pay for this; it is completely free.",
       "options": [
-        "need",
         "dare",
         "must",
-        "shall"
+        "shall",
+        "need"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Need not pay' expresses absence of necessity."
     },
     {
@@ -1295,12 +1295,12 @@
       "topic": "modal_auxiliaries",
       "question": "Drive slowly lest an accident ______ happen.",
       "options": [
-        "should",
         "would",
         "could",
+        "should",
         "might"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Lest... should'."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ have reached the summit by this time.",
       "options": [
+        "shall",
         "must",
         "can",
-        "shall",
         "ought"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Strong inference -> 'must have reached'."
     },
     {
@@ -1321,12 +1321,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ not enter the dark forest alone.",
       "options": [
+        "can",
         "dared",
         "needs",
-        "must",
-        "can"
+        "must"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Dared not enter'."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not park your vehicle in front of the gate.",
       "options": [
-        "must",
         "can",
         "may",
-        "shall"
+        "shall",
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prohibition -> 'must not'."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ rather learn Malayalam than any other language.",
       "options": [
-        "would",
         "had",
+        "could",
         "should",
-        "could"
+        "would"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Would rather'."
     },
     {
@@ -1360,12 +1360,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ respect your elders and teachers.",
       "options": [
-        "ought to",
         "can",
+        "might",
         "may",
-        "might"
+        "ought to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Moral responsibility -> 'ought to'."
     },
     {
@@ -1373,12 +1373,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ you have a safe flight!",
       "options": [
-        "May",
         "Can",
+        "Shall",
         "Will",
-        "Shall"
+        "May"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Optative wish takes 'May'."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "modal_auxiliaries",
       "question": "Candidates ______ write on both sides of the paper.",
       "options": [
-        "may",
         "must",
+        "may",
         "shall",
         "ought"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'May' is used for giving permission."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not smoke inside the petrol pump.",
       "options": [
-        "must",
         "can",
+        "might",
         "will",
-        "might"
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Must not' expresses strong safety prohibition."
     },
     {
@@ -1413,9 +1413,9 @@
       "question": "We ______ help those who are in distress.",
       "options": [
         "ought to",
+        "might",
         "can",
-        "may",
-        "might"
+        "may"
       ],
       "answer": 0,
       "explanation": "'Ought to' expresses moral duty."
@@ -1425,12 +1425,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ speak four languages fluently.",
       "options": [
-        "can",
+        "shall",
         "may",
         "must",
-        "shall"
+        "can"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Can' denotes linguistic ability."
     },
     {
@@ -1439,9 +1439,9 @@
       "question": "When I was young, I ______ run ten miles without stopping.",
       "options": [
         "could",
+        "might",
         "can",
-        "may",
-        "might"
+        "may"
       ],
       "answer": 0,
       "explanation": "'Could' expresses past physical capacity."
@@ -1451,12 +1451,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ I use your mobile phone for an urgent call?",
       "options": [
-        "May",
         "Must",
-        "Should",
-        "Shall"
+        "Shall",
+        "May",
+        "Should"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'May I...' is formal request for permission."
     },
     {
@@ -1464,12 +1464,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ leave the hall after submitting the answer sheet.",
       "options": [
-        "may",
+        "ought",
         "must",
-        "shall",
-        "ought"
+        "may",
+        "shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'May' denotes grant of permission."
     },
     {
@@ -1477,12 +1477,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ have reached home by now.",
       "options": [
+        "shall",
         "must",
         "can",
-        "shall",
         "ought"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Must have' expresses strong probability."
     },
     {
@@ -1490,12 +1490,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ be at the library; he always studies there on Saturdays.",
       "options": [
+        "shall",
         "should",
         "could",
-        "would",
-        "shall"
+        "would"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Should be' expresses reasonable expectation."
     },
     {
@@ -1503,12 +1503,12 @@
       "topic": "modal_auxiliaries",
       "question": "Take an umbrella; it ______ rain later in the afternoon.",
       "options": [
-        "might",
-        "must",
         "should",
+        "must",
+        "might",
         "shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Might' expresses a remote possibility."
     },
     {
@@ -1517,9 +1517,9 @@
       "question": "The clouds are very dark; it ______ rain heavily soon.",
       "options": [
         "may",
-        "can",
+        "shall",
         "must",
-        "shall"
+        "can"
       ],
       "answer": 0,
       "explanation": "'May' expresses strong possibility based on visible evidence."
@@ -1530,9 +1530,9 @@
       "question": "You had better ______ the truth to the police.",
       "options": [
         "tell",
-        "to tell",
+        "told",
         "telling",
-        "told"
+        "to tell"
       ],
       "answer": 0,
       "explanation": "'Had better' takes bare infinitive 'tell'."
@@ -1542,12 +1542,12 @@
       "topic": "modal_auxiliaries",
       "question": "He would rather ______ than tell a lie.",
       "options": [
-        "starve",
-        "to starve",
         "starving",
-        "starved"
+        "to starve",
+        "starved",
+        "starve"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Would rather' takes bare infinitive 'starve'."
     },
     {
@@ -1555,12 +1555,12 @@
       "topic": "modal_auxiliaries",
       "question": "Work hard lest you ______ fail the exam.",
       "options": [
+        "might",
         "should",
-        "would",
         "could",
-        "might"
+        "would"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Lest' takes 'should'."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not have spoken to your mother so rudely.",
       "options": [
-        "should",
         "must",
         "can",
-        "may"
+        "may",
+        "should"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Should not have + V3' expresses criticism of past action."
     },
     {
@@ -1594,12 +1594,12 @@
       "topic": "modal_auxiliaries",
       "question": "They ______ to have informed us about the delay.",
       "options": [
-        "ought",
+        "can",
         "should",
         "must",
-        "can"
+        "ought"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ought to have informed'."
     },
     {
@@ -1607,12 +1607,12 @@
       "topic": "modal_auxiliaries",
       "question": "How ______ you enter my room without knocking?",
       "options": [
-        "dare",
-        "need",
         "can",
+        "need",
+        "dare",
         "ought"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'How dare you...' expresses indignation."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not buy tickets; entry is completely free.",
       "options": [
+        "shall",
         "need",
-        "dare",
         "must",
-        "shall"
+        "dare"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Need not' denotes lack of necessity."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "modal_auxiliaries",
       "question": "We ______ obey the traffic rules.",
       "options": [
-        "must",
+        "might",
         "may",
         "can",
-        "might"
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Must' denotes legal mandate."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ you please pass the water jug?",
       "options": [
-        "Could",
+        "Shall",
         "May",
-        "Should",
-        "Shall"
+        "Could",
+        "Should"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Could you please...' is a polite request."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "modal_auxiliaries",
       "question": "Would you mind ______ the window?",
       "options": [
-        "opening",
         "to open",
+        "opening",
         "open",
         "opened"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would you mind' takes gerund 'opening'."
     },
     {
@@ -1673,8 +1673,8 @@
       "question": "He ______ play football every evening when he was at school.",
       "options": [
         "used to",
-        "is used to",
         "use to",
+        "is used to",
         "was used to"
       ],
       "answer": 0,
@@ -1685,12 +1685,12 @@
       "topic": "modal_auxiliaries",
       "question": "She is used to ______ in noisy environments.",
       "options": [
-        "working",
         "work",
+        "working",
         "to work",
         "worked"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Be used to' takes gerund 'working'."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "modal_auxiliaries",
       "question": "He said that he ______ attend the meeting the next day.",
       "options": [
-        "would",
-        "will",
         "shall",
-        "can"
+        "can",
+        "would",
+        "will"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Would' is the past modal of 'will' in reported speech."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "modal_auxiliaries",
       "question": "If I had wings, I ______ fly across the oceans.",
       "options": [
-        "would",
-        "will",
         "shall",
+        "will",
+        "would",
         "can"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Type 2 conditional takes 'would + V1'."
     },
     {
@@ -1726,8 +1726,8 @@
       "options": [
         "would have",
         "will have",
-        "would",
-        "should"
+        "should",
+        "would"
       ],
       "answer": 0,
       "explanation": "Type 3 conditional takes 'would have + V3'."
@@ -1737,12 +1737,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ not dare to challenge his father's decision.",
       "options": [
-        "does",
         "is",
         "has",
+        "does",
         "can"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Ordinary verb 'dare' takes auxiliary 'does not dare'."
     },
     {
@@ -1752,8 +1752,8 @@
       "options": [
         "need not",
         "must not",
-        "cannot",
-        "shall not"
+        "shall not",
+        "cannot"
       ],
       "answer": 0,
       "explanation": "'Need not have + V3' indicates an unnecessary past action."
@@ -1763,12 +1763,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ be over seventy; he walks with great difficulty.",
       "options": [
-        "must",
-        "can",
+        "ought",
         "shall",
-        "ought"
+        "can",
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Logical deduction -> 'must be'."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "modal_auxiliaries",
       "question": "That news ______ be true; I spoke to him just five minutes ago.",
       "options": [
-        "cannot",
-        "must not",
+        "might not",
         "should not",
-        "might not"
+        "cannot",
+        "must not"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Cannot be' expresses strong logical impossibility."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ I carry this heavy suitcase for you?",
       "options": [
-        "Shall",
         "Will",
+        "Shall",
         "Would",
         "Must"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Shall I...?' is an offer of help."
     },
     {
@@ -1804,8 +1804,8 @@
       "options": [
         "Shall",
         "Will",
-        "Would",
-        "Must"
+        "Must",
+        "Would"
       ],
       "answer": 0,
       "explanation": "'Shall we...?' is a suggestion."
@@ -1815,12 +1815,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not park your vehicle in front of the gate.",
       "options": [
-        "must",
+        "shall",
         "can",
         "may",
-        "shall"
+        "must"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Prohibition -> 'must not'."
     },
     {
@@ -1828,12 +1828,12 @@
       "topic": "modal_auxiliaries",
       "question": "We ______ rather die on our feet than live on our knees.",
       "options": [
-        "would",
-        "had",
         "could",
+        "had",
+        "would",
         "should"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Would rather... than'."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "modal_auxiliaries",
       "question": "You had better ______ the medicines on time.",
       "options": [
-        "take",
-        "to take",
+        "took",
         "taking",
-        "took"
+        "take",
+        "to take"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Had better' takes bare infinitive 'take'."
     },
     {
@@ -1854,12 +1854,12 @@
       "topic": "modal_auxiliaries",
       "question": "Every citizen ______ respect the national anthem.",
       "options": [
-        "must",
-        "can",
+        "might",
         "may",
-        "might"
+        "must",
+        "can"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Civic requirement -> 'must'."
     },
     {
@@ -1867,12 +1867,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ sing melodiously.",
       "options": [
+        "must",
         "can",
         "may",
-        "must",
         "shall"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Natural talent -> 'can'."
     },
     {
@@ -1881,9 +1881,9 @@
       "question": "______ that I were a bird!",
       "options": [
         "Would",
+        "Might",
         "Should",
-        "Could",
-        "Might"
+        "Could"
       ],
       "answer": 0,
       "explanation": "'Would that...' expresses strong wish."
@@ -1893,12 +1893,12 @@
       "topic": "modal_auxiliaries",
       "question": "He ______ have forgotten his wallet at home.",
       "options": [
-        "might",
-        "shall",
         "ought",
-        "will"
+        "shall",
+        "will",
+        "might"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Possible past explanation -> 'might have'."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "modal_auxiliaries",
       "question": "Children ______ obey their elders.",
       "options": [
-        "should",
-        "can",
         "may",
-        "might"
+        "might",
+        "can",
+        "should"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Moral guidance -> 'should'."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "modal_auxiliaries",
       "question": "______ peace prevail across the world!",
       "options": [
-        "May",
         "Can",
         "Will",
+        "May",
         "Shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Optative wish -> 'May'."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "modal_auxiliaries",
       "question": "I ______ rather sleep on the floor than in that damp bed.",
       "options": [
-        "would",
         "had",
+        "would",
         "should",
         "could"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Would rather'."
     },
     {
@@ -1945,12 +1945,12 @@
       "topic": "modal_auxiliaries",
       "question": "He had better ______ his coat; the wind is icy.",
       "options": [
-        "button",
-        "to button",
+        "buttoned",
         "buttoning",
-        "buttoned"
+        "button",
+        "to button"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Had better button'."
     },
     {
@@ -1958,12 +1958,12 @@
       "topic": "modal_auxiliaries",
       "question": "They ______ to have completed the assignment yesterday.",
       "options": [
-        "ought",
-        "should",
         "must",
-        "can"
+        "ought",
+        "can",
+        "should"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ought to have completed'."
     },
     {
@@ -1971,12 +1971,12 @@
       "topic": "modal_auxiliaries",
       "question": "She ______ play the piano when she was just six.",
       "options": [
-        "could",
         "can",
+        "could",
         "may",
         "might"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Past capability -> 'could'."
     },
     {
@@ -1984,12 +1984,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ not have wasted all that food.",
       "options": [
+        "may",
         "should",
-        "must",
         "can",
-        "may"
+        "must"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Should not have wasted'."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "modal_auxiliaries",
       "question": "It ______ be a mistake; let me check again.",
       "options": [
-        "might",
         "must",
         "can",
-        "shall"
+        "shall",
+        "might"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Tentative possibility -> 'might be'."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "modal_auxiliaries",
       "question": "You ______ always stand by the truth.",
       "options": [
-        "ought to",
+        "might",
         "can",
-        "may",
-        "might"
+        "ought to",
+        "may"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Moral imperative -> 'ought to'."
     }
   ]

@@ -8,12 +8,12 @@
       "topic": "tenses",
       "question": "She ______ here since 2015.",
       "options": [
-        "has been living",
-        "is living",
         "lived",
-        "was living"
+        "was living",
+        "is living",
+        "has been living"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Actions beginning in the past and continuing up to the present with 'since' take Present Perfect Continuous ('has been living')."
     },
     {
@@ -21,12 +21,12 @@
       "topic": "tenses",
       "question": "I ______ the Taj Mahal last year.",
       "options": [
-        "visited",
         "have visited",
+        "visited",
         "had visited",
         "was visiting"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Past time markers like 'last year', 'yesterday', 'in 1947' require Simple Past tense ('visited')."
     },
     {
@@ -34,12 +34,12 @@
       "topic": "tenses",
       "question": "The train ______ before we reached the station.",
       "options": [
-        "had left",
-        "left",
         "has left",
-        "was leaving"
+        "was leaving",
+        "had left",
+        "left"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "When two actions happened in the past, the earlier past action takes Past Perfect ('had left')."
     },
     {
@@ -49,8 +49,8 @@
       "options": [
         "rises",
         "is rising",
-        "rose",
-        "has risen"
+        "has risen",
+        "rose"
       ],
       "answer": 0,
       "explanation": "Universal truths and natural laws are always stated in Simple Present tense ('rises')."
@@ -61,9 +61,9 @@
       "question": "Water ______ at 100 degrees Celsius.",
       "options": [
         "boils",
-        "is boiling",
+        "will boil",
         "boiled",
-        "will boil"
+        "is boiling"
       ],
       "answer": 0,
       "explanation": "Scientific facts take Simple Present tense ('boils')."
@@ -73,12 +73,12 @@
       "topic": "tenses",
       "question": "By next June, he ______ his degree course.",
       "options": [
-        "will have completed",
         "will complete",
+        "will have completed",
         "completes",
         "would complete"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Time expressions like 'by next June' denoting completion by a future date require Future Perfect ('will have completed')."
     },
     {
@@ -86,12 +86,12 @@
       "topic": "tenses",
       "question": "Look! The bus ______.",
       "options": [
-        "is coming",
+        "has come",
         "comes",
-        "came",
-        "has come"
+        "is coming",
+        "came"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Imperatives like 'Look!' or 'Listen!' indicate an action happening right now -> Present Continuous ('is coming')."
     },
     {
@@ -100,8 +100,8 @@
       "question": "He usually ______ to school by bicycle.",
       "options": [
         "goes",
-        "is going",
         "went",
+        "is going",
         "has gone"
       ],
       "answer": 0,
@@ -114,8 +114,8 @@
       "options": [
         "heard",
         "have heard",
-        "am hearing",
-        "hear"
+        "hear",
+        "am hearing"
       ],
       "answer": 0,
       "explanation": "'Just now' takes Simple Past tense ('heard') in PSC questions."
@@ -125,12 +125,12 @@
       "topic": "tenses",
       "question": "He ______ just arrived.",
       "options": [
-        "has",
         "had",
-        "is",
-        "was"
+        "was",
+        "has",
+        "is"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Just' signaling recent completion takes Present Perfect ('has just arrived')."
     },
     {
@@ -138,12 +138,12 @@
       "topic": "tenses",
       "question": "When I saw him, he ______ cricket.",
       "options": [
-        "was playing",
-        "played",
+        "had played",
         "is playing",
-        "had played"
+        "played",
+        "was playing"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "An ongoing past action interrupted by another past action takes Past Continuous ('was playing')."
     },
     {
@@ -151,12 +151,12 @@
       "topic": "tenses",
       "question": "They ______ in this house for ten years.",
       "options": [
+        "lived",
         "have been living",
         "are living",
-        "lived",
         "were living"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Duration with 'for ten years' up to now requires Present Perfect Continuous ('have been living')."
     },
     {
@@ -164,12 +164,12 @@
       "topic": "tenses",
       "question": "He ______ not finished his work yet.",
       "options": [
-        "has",
         "had",
         "is",
+        "has",
         "did"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Yet' is commonly used with negative Present Perfect ('has not finished')."
     },
     {
@@ -177,12 +177,12 @@
       "topic": "tenses",
       "question": "The bell ______ before I entered the hall.",
       "options": [
+        "has rung",
         "had rung",
         "rang",
-        "has rung",
         "was ringing"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Past action preceding another past event requires Past Perfect ('had rung')."
     },
     {
@@ -192,8 +192,8 @@
       "options": [
         "has been raining",
         "is raining",
-        "rained",
-        "was raining"
+        "was raining",
+        "rained"
       ],
       "answer": 0,
       "explanation": "Action continuing from morning till now takes Present Perfect Continuous ('has been raining')."
@@ -204,9 +204,9 @@
       "question": "My father ______ a newspaper every morning.",
       "options": [
         "reads",
-        "is reading",
         "read",
-        "has read"
+        "has read",
+        "is reading"
       ],
       "answer": 0,
       "explanation": "Regular habitual routine requires Simple Present ('reads')."
@@ -216,12 +216,12 @@
       "topic": "tenses",
       "question": "Babies ______ when they are hungry.",
       "options": [
-        "cry",
         "cries",
+        "cry",
         "are crying",
         "crying"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "General fact about babies in plural takes base form Simple Present ('cry')."
     },
     {
@@ -229,12 +229,12 @@
       "topic": "tenses",
       "question": "I ______ him yesterday.",
       "options": [
-        "met",
-        "have met",
+        "meet",
         "had met",
-        "meet"
+        "have met",
+        "met"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Specific past time 'yesterday' requires Simple Past ('met')."
     },
     {
@@ -242,12 +242,12 @@
       "topic": "tenses",
       "question": "We ______ to Delhi five years ago.",
       "options": [
-        "moved",
-        "have moved",
         "had moved",
-        "were moving"
+        "moved",
+        "were moving",
+        "have moved"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ago' always takes Simple Past tense ('moved')."
     },
     {
@@ -256,9 +256,9 @@
       "question": "She said that she ______ ill.",
       "options": [
         "was",
+        "will be",
         "is",
-        "has been",
-        "will be"
+        "has been"
       ],
       "answer": 0,
       "explanation": "Sequence of tenses: past principal clause ('said') requires past subordinate clause ('was')."
@@ -269,8 +269,8 @@
       "question": "By the time the doctor arrived, the patient ______.",
       "options": [
         "had died",
-        "died",
         "has died",
+        "died",
         "was dying"
       ],
       "answer": 0,
@@ -282,8 +282,8 @@
       "question": "I ______ English for the last five years.",
       "options": [
         "have been learning",
-        "am learning",
         "learnt",
+        "am learning",
         "was learning"
       ],
       "answer": 0,
@@ -294,12 +294,12 @@
       "topic": "tenses",
       "question": "Fortune ______ the brave.",
       "options": [
-        "favours",
-        "favoured",
+        "favour",
         "is favouring",
-        "favour"
+        "favoured",
+        "favours"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Proverbs are expressed in Simple Present tense ('favours')."
     },
     {
@@ -307,12 +307,12 @@
       "topic": "tenses",
       "question": "As soon as he saw the tiger, he ______ away.",
       "options": [
-        "ran",
-        "runs",
         "had run",
-        "has run"
+        "ran",
+        "has run",
+        "runs"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Consecutive past actions joined by 'as soon as' both take Simple Past ('ran')."
     },
     {
@@ -321,9 +321,9 @@
       "question": "Hardly had he arrived ______ the lights went out.",
       "options": [
         "when",
+        "since",
         "than",
-        "then",
-        "since"
+        "then"
       ],
       "answer": 0,
       "explanation": "Correlative 'Hardly... when' connects past perfect with simple past."
@@ -333,12 +333,12 @@
       "topic": "tenses",
       "question": "No sooner did the bell ring ______ the students left.",
       "options": [
+        "before",
         "than",
-        "when",
         "then",
-        "before"
+        "when"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'No sooner did / had... than' is the correct correlative structure."
     },
     {
@@ -346,12 +346,12 @@
       "topic": "tenses",
       "question": "He talked as if he ______ everything.",
       "options": [
+        "know",
         "knew",
-        "knows",
         "has known",
-        "know"
+        "knows"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'As if' expressing hypothetical unreal situation takes past subjunctive ('knew')."
     },
     {
@@ -359,12 +359,12 @@
       "topic": "tenses",
       "question": "It is high time we ______ the work.",
       "options": [
-        "started",
         "start",
-        "should start",
-        "have started"
+        "have started",
+        "started",
+        "should start"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "After 'It is high time' or 'It is time', a past tense verb ('started') indicates urgent current action."
     },
     {
@@ -372,12 +372,12 @@
       "topic": "tenses",
       "question": "It is time they ______ home.",
       "options": [
-        "went",
-        "go",
         "will go",
-        "should go"
+        "should go",
+        "go",
+        "went"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'It is time' followed by a subject clause requires Simple Past tense ('went')."
     },
     {
@@ -385,12 +385,12 @@
       "topic": "tenses",
       "question": "I wish I ______ a king.",
       "options": [
+        "have been",
         "were",
         "was",
-        "am",
-        "have been"
+        "am"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Unreal wish takes subjunctive 'were' for all persons."
     },
     {
@@ -398,12 +398,12 @@
       "topic": "tenses",
       "question": "He behaved as though he ______ mad.",
       "options": [
-        "were",
         "was",
+        "has been",
         "is",
-        "has been"
+        "were"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'As though' expressing imaginary state takes subjunctive 'were'."
     },
     {
@@ -411,12 +411,12 @@
       "topic": "tenses",
       "question": "The match ______ at 4 PM tomorrow.",
       "options": [
-        "starts",
         "is starting",
-        "started",
-        "has started"
+        "starts",
+        "has started",
+        "started"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed schedule/timetable in the future is expressed using Simple Present ('starts')."
     },
     {
@@ -425,9 +425,9 @@
       "question": "Prime Minister ______ Kerala next Monday.",
       "options": [
         "visits",
-        "visited",
+        "was visiting",
         "has visited",
-        "was visiting"
+        "visited"
       ],
       "answer": 0,
       "explanation": "Official planned future schedule can be stated in Simple Present ('visits')."
@@ -437,12 +437,12 @@
       "topic": "tenses",
       "question": "I ______ the letter before you came.",
       "options": [
-        "had written",
-        "wrote",
         "have written",
-        "was writing"
+        "had written",
+        "was writing",
+        "wrote"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Past action completed before another past action takes Past Perfect ('had written')."
     },
     {
@@ -451,9 +451,9 @@
       "question": "She ______ from fever for three days.",
       "options": [
         "has been suffering",
+        "was suffering",
         "is suffering",
-        "suffered",
-        "was suffering"
+        "suffered"
       ],
       "answer": 0,
       "explanation": "Duration 'for three days' continuing now takes Present Perfect Continuous ('has been suffering')."
@@ -463,12 +463,12 @@
       "topic": "tenses",
       "question": "Oil ______ on water.",
       "options": [
+        "floated",
         "floats",
-        "float",
         "is floating",
-        "floated"
+        "float"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Scientific fact takes Simple Present ('floats')."
     },
     {
@@ -476,12 +476,12 @@
       "topic": "tenses",
       "question": "He ______ twenty cigarettes a day before he quit.",
       "options": [
-        "smoked",
         "has smoked",
         "smokes",
-        "is smoking"
+        "is smoking",
+        "smoked"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past habit that ended takes Simple Past ('smoked')."
     },
     {
@@ -489,12 +489,12 @@
       "topic": "tenses",
       "question": "I ______ this car since 2018.",
       "options": [
-        "have had",
+        "had have",
         "have",
         "am having",
-        "had have"
+        "have had"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "State verb 'have' (possession) cannot be continuous; takes Present Perfect ('have had')."
     },
     {
@@ -502,12 +502,12 @@
       "topic": "tenses",
       "question": "She ______ in the garden when the phone rang.",
       "options": [
-        "was working",
         "worked",
         "is working",
+        "was working",
         "has worked"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Past ongoing action interrupted by a phone call takes Past Continuous ('was working')."
     },
     {
@@ -515,12 +515,12 @@
       "topic": "tenses",
       "question": "While they were playing, it ______ to rain.",
       "options": [
+        "had started",
         "started",
         "was starting",
-        "starts",
-        "had started"
+        "starts"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Sudden event interrupting an ongoing action takes Simple Past ('started')."
     },
     {
@@ -528,12 +528,12 @@
       "topic": "tenses",
       "question": "The light went out while I ______ dinner.",
       "options": [
+        "have had",
         "was having",
-        "had",
         "am having",
-        "have had"
+        "had"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ongoing past activity takes Past Continuous ('was having')."
     },
     {
@@ -541,12 +541,12 @@
       "topic": "tenses",
       "question": "He always ______ foolish mistakes.",
       "options": [
-        "makes",
-        "is making",
         "made",
-        "make"
+        "make",
+        "is making",
+        "makes"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Habitual regular tendency takes Simple Present ('makes')."
     },
     {
@@ -568,9 +568,9 @@
       "question": "She ______ Paris three times.",
       "options": [
         "has visited",
-        "is visiting",
+        "visits",
         "visited",
-        "visits"
+        "is visiting"
       ],
       "answer": 0,
       "explanation": "Life experience up to present takes Present Perfect ('has visited')."
@@ -580,12 +580,12 @@
       "topic": "tenses",
       "question": "I ______ my lunch just 10 minutes ago.",
       "options": [
-        "finished",
         "have finished",
         "had finished",
-        "finish"
+        "finish",
+        "finished"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'10 minutes ago' specifies past time -> Simple Past ('finished')."
     },
     {
@@ -593,12 +593,12 @@
       "topic": "tenses",
       "question": "The museum ______ at 9:00 AM every day.",
       "options": [
-        "opens",
         "is opening",
         "opened",
+        "opens",
         "will open"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Daily scheduled time takes Simple Present ('opens')."
     },
     {
@@ -606,12 +606,12 @@
       "topic": "tenses",
       "question": "Earth ______ round the Sun.",
       "options": [
-        "revolves",
-        "revolved",
         "is revolving",
-        "has revolved"
+        "has revolved",
+        "revolves",
+        "revolved"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Universal law takes Simple Present ('revolves')."
     },
     {
@@ -620,9 +620,9 @@
       "question": "Honey ______ sweet.",
       "options": [
         "tastes",
-        "is tasting",
+        "has tasted",
         "tasted",
-        "has tasted"
+        "is tasting"
       ],
       "answer": 0,
       "explanation": "Sensory stative verb expressing a property takes Simple Present ('tastes')."
@@ -632,12 +632,12 @@
       "topic": "tenses",
       "question": "I ______ the assignment by tomorrow evening.",
       "options": [
+        "was completing",
         "will have completed",
         "completed",
-        "complete",
-        "was completing"
+        "complete"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'By tomorrow evening' indicates completion before a future point -> Future Perfect."
     },
     {
@@ -646,9 +646,9 @@
       "question": "Don't disturb him, he ______ his homework.",
       "options": [
         "is doing",
+        "has done",
         "does",
-        "did",
-        "has done"
+        "did"
       ],
       "answer": 0,
       "explanation": "Action taking place right at the moment of speaking -> Present Continuous ('is doing')."
@@ -658,12 +658,12 @@
       "topic": "tenses",
       "question": "I ______ any letter from him so far.",
       "options": [
-        "have not received",
-        "did not receive",
         "had not received",
-        "do not receive"
+        "do not receive",
+        "have not received",
+        "did not receive"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'So far' is used with Present Perfect ('have not received')."
     },
     {
@@ -672,8 +672,8 @@
       "question": "This is the best film I ______ ever seen.",
       "options": [
         "have",
-        "had",
         "did",
+        "had",
         "was"
       ],
       "answer": 0,
@@ -684,12 +684,12 @@
       "topic": "tenses",
       "question": "Scarcely had the match started ______ the rain came down.",
       "options": [
-        "when",
         "than",
         "then",
+        "when",
         "until"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Scarcely had...' is followed by 'when'."
     },
     {
@@ -710,12 +710,12 @@
       "topic": "tenses",
       "question": "They ______ each other for twenty years.",
       "options": [
+        "know",
         "have known",
         "are knowing",
-        "know",
         "were knowing"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Stative verb 'know' with duration takes Present Perfect ('have known')."
     },
     {
@@ -723,12 +723,12 @@
       "topic": "tenses",
       "question": "My brother ______ to London next week.",
       "options": [
-        "is going",
-        "went",
         "has gone",
+        "went",
+        "is going",
         "goes"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Personal arrangement in the near future takes Present Continuous ('is going')."
     },
     {
@@ -736,12 +736,12 @@
       "topic": "tenses",
       "question": "I ______ never seen such a magnificent sight.",
       "options": [
+        "was",
         "have",
         "had",
-        "was",
         "did"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Present life experience up to now takes Present Perfect ('have never seen')."
     },
     {
@@ -749,12 +749,12 @@
       "topic": "tenses",
       "question": "When did you ______ this pen?",
       "options": [
-        "buy",
         "bought",
         "buying",
+        "buy",
         "buys"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "After auxiliary 'did', the base form of the verb (V1) is used: 'buy'."
     },
     {
@@ -762,12 +762,12 @@
       "topic": "tenses",
       "question": "He did not ______ to the meeting.",
       "options": [
-        "come",
-        "came",
         "coming",
+        "came",
+        "come",
         "comes"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Did not' is always followed by V1 base form ('come')."
     },
     {
@@ -775,12 +775,12 @@
       "topic": "tenses",
       "question": "By the end of this year, we ______ here for a decade.",
       "options": [
+        "lived",
         "will have lived",
         "will live",
-        "are living",
-        "lived"
+        "are living"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Duration continuing up to a future point takes Future Perfect ('will have lived')."
     },
     {
@@ -788,12 +788,12 @@
       "topic": "tenses",
       "question": "She ______ her finger while cutting onions.",
       "options": [
+        "is cutting",
         "cut",
         "was cutting",
-        "has cut",
-        "is cutting"
+        "has cut"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Past punctiliar action takes Simple Past ('cut', where V2 of cut is cut)."
     },
     {
@@ -801,12 +801,12 @@
       "topic": "tenses",
       "question": "The dog ______ since morning.",
       "options": [
-        "has been barking",
         "is barking",
         "barked",
-        "was barking"
+        "was barking",
+        "has been barking"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Since morning' requires Present Perfect Continuous ('has been barking')."
     },
     {
@@ -814,12 +814,12 @@
       "topic": "tenses",
       "question": "I ______ the book already.",
       "options": [
-        "have read",
-        "had read",
         "read",
-        "am reading"
+        "have read",
+        "am reading",
+        "had read"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Already' signaling completion takes Present Perfect ('have read')."
     },
     {
@@ -827,12 +827,12 @@
       "topic": "tenses",
       "question": "He ______ abroad last month.",
       "options": [
-        "went",
-        "has gone",
         "had gone",
-        "goes"
+        "has gone",
+        "goes",
+        "went"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Last month' takes Simple Past ('went')."
     },
     {
@@ -840,12 +840,12 @@
       "topic": "tenses",
       "question": "I ______ when the bell rang.",
       "options": [
-        "was sleeping",
         "slept",
+        "was sleeping",
         "have slept",
         "am sleeping"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Past ongoing background action interrupted by the bell -> Past Continuous ('was sleeping')."
     },
     {
@@ -853,12 +853,12 @@
       "topic": "tenses",
       "question": "Many centuries ago, people ______ that the earth was flat.",
       "options": [
-        "believed",
-        "have believed",
+        "believe",
         "had believed",
-        "believe"
+        "have believed",
+        "believed"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Historic past fact takes Simple Past ('believed')."
     },
     {
@@ -867,8 +867,8 @@
       "question": "Listen! Someone ______ at the door.",
       "options": [
         "is knocking",
-        "knocks",
         "knocked",
+        "knocks",
         "has knocked"
       ],
       "answer": 0,
@@ -879,12 +879,12 @@
       "topic": "tenses",
       "question": "The plane ______ off at 6:30 AM tomorrow.",
       "options": [
-        "takes",
-        "took",
         "has taken",
-        "taking"
+        "taking",
+        "takes",
+        "took"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Fixed travel schedule takes Simple Present ('takes')."
     },
     {
@@ -892,12 +892,12 @@
       "topic": "tenses",
       "question": "I ______ him twice this week.",
       "options": [
-        "have seen",
-        "saw",
         "had seen",
+        "saw",
+        "have seen",
         "see"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Unfinished time period ('this week') takes Present Perfect ('have seen')."
     },
     {
@@ -906,9 +906,9 @@
       "question": "He died after he ______ ill for a long time.",
       "options": [
         "had been",
-        "was",
+        "is",
         "has been",
-        "is"
+        "was"
       ],
       "answer": 0,
       "explanation": "Illness preceded death; earlier past action takes Past Perfect ('had been')."
@@ -918,12 +918,12 @@
       "topic": "tenses",
       "question": "The patient had died before the doctor ______.",
       "options": [
+        "comes",
         "came",
         "had come",
-        "comes",
         "will come"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Later past action takes Simple Past ('came')."
     },
     {
@@ -932,9 +932,9 @@
       "question": "We ______ our homework before 8 PM yesterday.",
       "options": [
         "had finished",
+        "finish",
         "finished",
-        "have finished",
-        "finish"
+        "have finished"
       ],
       "answer": 0,
       "explanation": "Completion before a specific past point takes Past Perfect ('had finished')."
@@ -944,12 +944,12 @@
       "topic": "tenses",
       "question": "They ______ married for twenty-five years.",
       "options": [
-        "have been",
-        "are",
         "were",
-        "had been"
+        "are",
+        "had been",
+        "have been"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "State continuing from past to present takes Present Perfect ('have been')."
     },
     {
@@ -957,12 +957,12 @@
       "topic": "tenses",
       "question": "He ______ down while running.",
       "options": [
-        "fell",
-        "fall",
         "has fallen",
-        "was falling"
+        "was falling",
+        "fall",
+        "fell"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Instantaneous past event takes Simple Past ('fell')."
     },
     {
@@ -970,12 +970,12 @@
       "topic": "tenses",
       "question": "The sun ______ brightly today.",
       "options": [
-        "is shining",
         "shines",
         "shone",
-        "has shone"
+        "has shone",
+        "is shining"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Temporary ongoing state today takes Present Continuous ('is shining')."
     },
     {
@@ -983,12 +983,12 @@
       "topic": "tenses",
       "question": "She ______ three novels so far.",
       "options": [
-        "has written",
-        "wrote",
         "had written",
-        "writes"
+        "writes",
+        "has written",
+        "wrote"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'So far' indicates action up to present -> Present Perfect ('has written')."
     },
     {
@@ -996,12 +996,12 @@
       "topic": "tenses",
       "question": "I ______ to Goa last winter.",
       "options": [
-        "went",
-        "have gone",
         "had gone",
-        "was going"
+        "have gone",
+        "was going",
+        "went"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past point of time 'last winter' requires Simple Past ('went')."
     },
     {
@@ -1009,12 +1009,12 @@
       "topic": "tenses",
       "question": "They ______ badminton every Sunday.",
       "options": [
-        "play",
-        "plays",
         "are playing",
+        "plays",
+        "play",
         "played"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Habitual regular routine takes Simple Present ('play')."
     },
     {
@@ -1023,9 +1023,9 @@
       "question": "Neither of them ______ yet.",
       "options": [
         "has arrived",
-        "have arrived",
+        "arriving",
         "arrived",
-        "arriving"
+        "have arrived"
       ],
       "answer": 0,
       "explanation": "'Neither' is singular; 'yet' takes Present Perfect -> 'has arrived'."
@@ -1035,12 +1035,12 @@
       "topic": "tenses",
       "question": "The child ______ because it lost its toy.",
       "options": [
-        "is crying",
-        "cries",
         "cried",
+        "cries",
+        "is crying",
         "has cried"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Ongoing reaction in the present takes Present Continuous ('is crying')."
     },
     {
@@ -1048,12 +1048,12 @@
       "topic": "tenses",
       "question": "He ______ a bath when the phone rang.",
       "options": [
-        "was taking",
-        "took",
+        "has taken",
         "had taken",
-        "has taken"
+        "took",
+        "was taking"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past continuous action interrupted by phone -> 'was taking'."
     },
     {
@@ -1063,8 +1063,8 @@
       "options": [
         "have been waiting",
         "am waiting",
-        "waited",
-        "was waiting"
+        "was waiting",
+        "waited"
       ],
       "answer": 0,
       "explanation": "Duration continuing up to now -> Present Perfect Continuous ('have been waiting')."
@@ -1074,12 +1074,12 @@
       "topic": "tenses",
       "question": "Two years ago, he ______ his first business.",
       "options": [
-        "started",
         "has started",
-        "had started",
-        "starts"
+        "started",
+        "starts",
+        "had started"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Ago' requires Simple Past ('started')."
     },
     {
@@ -1087,12 +1087,12 @@
       "topic": "tenses",
       "question": "The teacher found that the boy ______ a mistake.",
       "options": [
-        "had made",
-        "made",
         "has made",
-        "makes"
+        "had made",
+        "makes",
+        "made"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Mistake made prior to the teacher's finding -> Past Perfect ('had made')."
     },
     {
@@ -1102,8 +1102,8 @@
       "options": [
         "invented",
         "has invented",
-        "invent",
-        "had invented"
+        "had invented",
+        "invent"
       ],
       "answer": 0,
       "explanation": "Historic invention in past takes Simple Past ('invented')."
@@ -1113,12 +1113,12 @@
       "topic": "tenses",
       "question": "It is ten years since I ______ him.",
       "options": [
+        "had seen",
         "saw",
         "have seen",
-        "had seen",
         "see"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "In the construction 'It is [time] since...', the 'since' clause takes Simple Past ('saw')."
     },
     {
@@ -1126,12 +1126,12 @@
       "topic": "tenses",
       "question": "It has been two weeks since she ______.",
       "options": [
-        "left",
         "has left",
-        "had left",
-        "leaves"
+        "left",
+        "leaves",
+        "had left"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Clause following 'since' denoting starting point takes Simple Past ('left')."
     },
     {
@@ -1140,9 +1140,9 @@
       "question": "By this time tomorrow, I ______ in London.",
       "options": [
         "will be",
-        "am",
+        "have been",
         "was",
-        "have been"
+        "am"
       ],
       "answer": 0,
       "explanation": "Future point of time state takes Future Continuous/Simple ('will be')."
@@ -1152,12 +1152,12 @@
       "topic": "tenses",
       "question": "Look at those dark clouds! It ______ rain.",
       "options": [
-        "is going to",
-        "will",
+        "may",
         "shall",
-        "may"
+        "will",
+        "is going to"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Going to' is used when present evidence indicates an imminent future event."
     },
     {
@@ -1165,12 +1165,12 @@
       "topic": "tenses",
       "question": "I ______ this mobile phone for three years.",
       "options": [
-        "have had",
-        "have",
         "am having",
-        "had had"
+        "had had",
+        "have had",
+        "have"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Possession over a duration up to now takes Present Perfect ('have had')."
     },
     {
@@ -1178,12 +1178,12 @@
       "topic": "tenses",
       "question": "He ______ in the office when the earthquake occurred.",
       "options": [
-        "was working",
-        "worked",
         "has worked",
-        "works"
+        "worked",
+        "works",
+        "was working"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Action in progress during past event -> Past Continuous ('was working')."
     },
     {
@@ -1191,12 +1191,12 @@
       "topic": "tenses",
       "question": "Wood always ______ on water.",
       "options": [
-        "floats",
-        "float",
+        "is floating",
         "floated",
-        "is floating"
+        "floats",
+        "float"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Scientific constant fact takes Simple Present ('floats')."
     },
     {
@@ -1204,12 +1204,12 @@
       "topic": "tenses",
       "question": "The soup ______ delicious.",
       "options": [
+        "tasted",
         "tastes",
         "is tasting",
-        "tasted",
         "has tasted"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Stative verb of sense takes Simple Present ('tastes')."
     },
     {
@@ -1217,12 +1217,12 @@
       "topic": "tenses",
       "question": "I ______ him yesterday evening.",
       "options": [
-        "visited",
+        "visit",
         "have visited",
         "had visited",
-        "visit"
+        "visited"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past time marker 'yesterday evening' takes Simple Past ('visited')."
     },
     {
@@ -1230,12 +1230,12 @@
       "topic": "tenses",
       "question": "By the end of this month, she ______ the syllabus.",
       "options": [
-        "will have covered",
-        "will cover",
         "covers",
-        "covered"
+        "covered",
+        "will have covered",
+        "will cover"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Completion by a future deadline -> Future Perfect ('will have covered')."
     },
     {
@@ -1243,12 +1243,12 @@
       "topic": "tenses",
       "question": "When did India ______ independence?",
       "options": [
-        "attain",
-        "attained",
         "attains",
-        "attaining"
+        "attain",
+        "attaining",
+        "attained"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Interrogative 'did' takes base form V1 ('attain')."
     },
     {
@@ -1257,9 +1257,9 @@
       "question": "He ______ coffee every morning.",
       "options": [
         "drinks",
-        "drink",
         "is drinking",
-        "drank"
+        "drank",
+        "drink"
       ],
       "answer": 0,
       "explanation": "Habitual regular routine takes Simple Present ('drinks')."
@@ -1284,8 +1284,8 @@
       "options": [
         "have / been learning",
         "are / learning",
-        "did / learn",
-        "do / learn"
+        "do / learn",
+        "did / learn"
       ],
       "answer": 0,
       "explanation": "'How long' asking about ongoing duration takes Present Perfect Continuous ('have you been learning')."
@@ -1295,12 +1295,12 @@
       "topic": "tenses",
       "question": "I rarely ______ tea in the evening.",
       "options": [
-        "have",
         "am having",
-        "had",
-        "has"
+        "have",
+        "has",
+        "had"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Habitual frequency 'rarely' takes Simple Present ('have')."
     },
     {
@@ -1308,12 +1308,12 @@
       "topic": "tenses",
       "question": "He ______ from high fever since yesterday.",
       "options": [
-        "has been suffering",
         "is suffering",
+        "was suffering",
         "suffered",
-        "was suffering"
+        "has been suffering"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ongoing illness starting yesterday -> Present Perfect Continuous ('has been suffering')."
     },
     {
@@ -1321,12 +1321,12 @@
       "topic": "tenses",
       "question": "The ship ______ before help could arrive.",
       "options": [
-        "had sunk",
         "sank",
+        "was sinking",
         "has sunk",
-        "was sinking"
+        "had sunk"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Earlier past event before help arrived -> Past Perfect ('had sunk')."
     },
     {
@@ -1334,12 +1334,12 @@
       "topic": "tenses",
       "question": "No sooner had the teacher entered the class ______ the students stood up.",
       "options": [
-        "than",
+        "before",
         "when",
-        "then",
-        "before"
+        "than",
+        "then"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'No sooner had...' correlative takes 'than'."
     },
     {
@@ -1347,12 +1347,12 @@
       "topic": "tenses",
       "question": "Hardly had she begun to speak ______ the crowd cheered.",
       "options": [
-        "when",
-        "than",
         "then",
-        "since"
+        "than",
+        "since",
+        "when"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hardly had...' correlative takes 'when'."
     },
     {
@@ -1362,8 +1362,8 @@
       "options": [
         "got",
         "get",
-        "gotten",
-        "have got"
+        "have got",
+        "gotten"
       ],
       "answer": 0,
       "explanation": "'It is high time' takes Simple Past subjunctive ('got')."
@@ -1373,12 +1373,12 @@
       "topic": "tenses",
       "question": "She ______ in this school since 2018.",
       "options": [
-        "has been teaching",
         "is teaching",
         "taught",
+        "has been teaching",
         "was teaching"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Duration with 'since 2018' continuing to present requires Present Perfect Continuous ('has been teaching')."
     },
     {
@@ -1386,12 +1386,12 @@
       "topic": "tenses",
       "question": "He ______ here for five years.",
       "options": [
-        "has lived",
         "is living",
         "lived",
-        "was living"
+        "was living",
+        "has lived"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Duration continuing up to now takes Present Perfect ('has lived')."
     },
     {
@@ -1399,12 +1399,12 @@
       "topic": "tenses",
       "question": "I ______ the President last week.",
       "options": [
-        "met",
         "have met",
+        "meet",
         "had met",
-        "meet"
+        "met"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past time marker 'last week' takes Simple Past ('met')."
     },
     {
@@ -1412,12 +1412,12 @@
       "topic": "tenses",
       "question": "India ______ independence in 1947.",
       "options": [
-        "attained",
-        "has attained",
         "had attained",
-        "attains"
+        "attains",
+        "attained",
+        "has attained"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Specific historic past year takes Simple Past ('attained')."
     },
     {
@@ -1425,12 +1425,12 @@
       "topic": "tenses",
       "question": "The bell ______ before the teacher entered the classroom.",
       "options": [
-        "had rung",
-        "rang",
         "has rung",
-        "was ringing"
+        "was ringing",
+        "rang",
+        "had rung"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Earlier past action takes Past Perfect ('had rung')."
     },
     {
@@ -1438,12 +1438,12 @@
       "topic": "tenses",
       "question": "The train had departed before we ______ the station.",
       "options": [
-        "reached",
-        "had reached",
         "reach",
-        "were reaching"
+        "had reached",
+        "were reaching",
+        "reached"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Later past action takes Simple Past ('reached')."
     },
     {
@@ -1464,12 +1464,12 @@
       "topic": "tenses",
       "question": "Look! The child ______ down the slide.",
       "options": [
+        "has slipped",
         "is slipping",
         "slips",
-        "slipped",
-        "has slipped"
+        "slipped"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Look!' indicates an action occurring right now -> Present Continuous ('is slipping')."
     },
     {
@@ -1478,9 +1478,9 @@
       "question": "Listen! Someone ______ the violin.",
       "options": [
         "is playing",
-        "plays",
+        "has played",
         "played",
-        "has played"
+        "plays"
       ],
       "answer": 0,
       "explanation": "'Listen!' indicates action in progress -> Present Continuous ('is playing')."
@@ -1491,8 +1491,8 @@
       "question": "Water ______ into ice at zero degrees Celsius.",
       "options": [
         "freezes",
-        "is freezing",
         "froze",
+        "is freezing",
         "will freeze"
       ],
       "answer": 0,
@@ -1504,9 +1504,9 @@
       "question": "The earth ______ around the sun.",
       "options": [
         "revolves",
+        "has revolved",
         "revolved",
-        "is revolving",
-        "has revolved"
+        "is revolving"
       ],
       "answer": 0,
       "explanation": "Universal truth takes Simple Present ('revolves')."
@@ -1516,12 +1516,12 @@
       "topic": "tenses",
       "question": "Honesty ______ the best policy.",
       "options": [
-        "is",
         "was",
+        "will be",
         "has been",
-        "will be"
+        "is"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Proverbs are stated in Simple Present ('is')."
     },
     {
@@ -1530,9 +1530,9 @@
       "question": "My uncle usually ______ coffee in the morning.",
       "options": [
         "drinks",
-        "is drinking",
+        "has drunk",
         "drank",
-        "has drunk"
+        "is drinking"
       ],
       "answer": 0,
       "explanation": "Habitual frequency 'usually' takes Simple Present ('drinks')."
@@ -1543,9 +1543,9 @@
       "question": "I ______ just received your letter.",
       "options": [
         "have",
-        "had",
         "am",
-        "was"
+        "was",
+        "had"
       ],
       "answer": 0,
       "explanation": "'Just' signaling recent completion takes Present Perfect ('have just received')."
@@ -1568,12 +1568,12 @@
       "topic": "tenses",
       "question": "When I visited his home, he ______ a novel.",
       "options": [
-        "was reading",
+        "had read",
         "read",
         "is reading",
-        "had read"
+        "was reading"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Past continuous action in progress -> 'was reading'."
     },
     {
@@ -1581,12 +1581,12 @@
       "topic": "tenses",
       "question": "While she was cooking, the milk ______ over.",
       "options": [
-        "boiled",
         "was boiling",
-        "boils",
-        "had boiled"
+        "had boiled",
+        "boiled",
+        "boils"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Sudden interrupting past action takes Simple Past ('boiled')."
     },
     {
@@ -1595,9 +1595,9 @@
       "question": "The power went out while I ______ dinner.",
       "options": [
         "was having",
+        "have had",
         "had",
-        "am having",
-        "have had"
+        "am having"
       ],
       "answer": 0,
       "explanation": "Ongoing past activity takes Past Continuous ('was having')."
@@ -1607,12 +1607,12 @@
       "topic": "tenses",
       "question": "It ______ heavily since last night.",
       "options": [
-        "has been raining",
         "is raining",
         "rained",
+        "has been raining",
         "was raining"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Since last night' takes Present Perfect Continuous ('has been raining')."
     },
     {
@@ -1620,12 +1620,12 @@
       "topic": "tenses",
       "question": "How long ______ you ______ here?",
       "options": [
+        "did / wait",
         "have / been waiting",
         "are / waiting",
-        "did / wait",
         "do / wait"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'How long' with ongoing duration takes Present Perfect Continuous ('have you been waiting')."
     },
     {
@@ -1633,12 +1633,12 @@
       "topic": "tenses",
       "question": "I ______ him for more than twenty years.",
       "options": [
-        "have known",
-        "am knowing",
         "know",
-        "knew"
+        "am knowing",
+        "knew",
+        "have known"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Stative verb 'know' with duration takes Present Perfect ('have known')."
     },
     {
@@ -1646,12 +1646,12 @@
       "topic": "tenses",
       "question": "This is the first time I ______ tasted caviar.",
       "options": [
-        "have",
         "had",
-        "did",
-        "was"
+        "have",
+        "was",
+        "did"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'This is the first time...' takes Present Perfect ('have tasted')."
     },
     {
@@ -1659,12 +1659,12 @@
       "topic": "tenses",
       "question": "Hardly had he arrived ______ the lights went out.",
       "options": [
-        "when",
+        "before",
         "than",
         "then",
-        "before"
+        "when"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Hardly had...' correlative takes 'when'."
     },
     {
@@ -1672,12 +1672,12 @@
       "topic": "tenses",
       "question": "Scarcely had the match started ______ it began to pour.",
       "options": [
-        "when",
+        "until",
         "than",
-        "then",
-        "until"
+        "when",
+        "then"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Scarcely had...' takes 'when'."
     },
     {
@@ -1685,12 +1685,12 @@
       "topic": "tenses",
       "question": "No sooner did the bell ring ______ the students rushed out.",
       "options": [
-        "than",
         "when",
-        "then",
-        "before"
+        "than",
+        "before",
+        "then"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'No sooner did...' takes 'than'."
     },
     {
@@ -1698,12 +1698,12 @@
       "topic": "tenses",
       "question": "It is high time we ______ to work.",
       "options": [
-        "got",
+        "have got",
         "get",
-        "gotten",
-        "have got"
+        "got",
+        "gotten"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'It is high time' followed by subject clause takes Simple Past ('got')."
     },
     {
@@ -1711,12 +1711,12 @@
       "topic": "tenses",
       "question": "It is time they ______ home.",
       "options": [
+        "will go",
         "went",
         "go",
-        "will go",
         "should go"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'It is time' takes Simple Past ('went')."
     },
     {
@@ -1724,12 +1724,12 @@
       "topic": "tenses",
       "question": "I wish I ______ a bird.",
       "options": [
+        "have been",
         "were",
         "was",
-        "am",
-        "have been"
+        "am"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Subjunctive wish takes 'were'."
     },
     {
@@ -1737,12 +1737,12 @@
       "topic": "tenses",
       "question": "He talks as if he ______ the owner of the company.",
       "options": [
-        "were",
+        "has been",
         "was",
         "is",
-        "has been"
+        "were"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'As if' expressing imaginary situation takes past subjunctive 'were'."
     },
     {
@@ -1750,12 +1750,12 @@
       "topic": "tenses",
       "question": "The Prime Minister ______ Kerala next Tuesday.",
       "options": [
+        "has visited",
         "visits",
         "visited",
-        "has visited",
         "was visiting"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Official planned future schedule is expressed in Simple Present ('visits')."
     },
     {
@@ -1763,12 +1763,12 @@
       "topic": "tenses",
       "question": "The train ______ at 7:30 AM tomorrow.",
       "options": [
-        "leaves",
         "left",
+        "leaves",
         "has left",
         "leaving"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Fixed timetable takes Simple Present ('leaves')."
     },
     {
@@ -1776,12 +1776,12 @@
       "topic": "tenses",
       "question": "I ______ my lunch ten minutes ago.",
       "options": [
-        "finished",
-        "have finished",
         "had finished",
-        "finish"
+        "finish",
+        "have finished",
+        "finished"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Ago' takes Simple Past ('finished')."
     },
     {
@@ -1789,12 +1789,12 @@
       "topic": "tenses",
       "question": "She ______ three medals in the competition yesterday.",
       "options": [
+        "wins",
         "won",
-        "has won",
         "had won",
-        "wins"
+        "has won"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'Yesterday' takes Simple Past ('won')."
     },
     {
@@ -1802,12 +1802,12 @@
       "topic": "tenses",
       "question": "They ______ each other since childhood.",
       "options": [
-        "have known",
-        "are knowing",
         "know",
-        "were knowing"
+        "were knowing",
+        "have known",
+        "are knowing"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Since childhood' takes Present Perfect ('have known')."
     },
     {
@@ -1815,12 +1815,12 @@
       "topic": "tenses",
       "question": "Oil ______ on water.",
       "options": [
-        "floats",
-        "float",
         "is floating",
-        "floated"
+        "float",
+        "floated",
+        "floats"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Scientific fact takes Simple Present ('floats')."
     },
     {
@@ -1828,12 +1828,12 @@
       "topic": "tenses",
       "question": "When did you ______ this car?",
       "options": [
-        "buy",
-        "bought",
         "buying",
-        "buys"
+        "buys",
+        "bought",
+        "buy"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Auxiliary 'did' takes base form V1 ('buy')."
     },
     {
@@ -1841,12 +1841,12 @@
       "topic": "tenses",
       "question": "He did not ______ to the function.",
       "options": [
-        "come",
         "came",
-        "coming",
-        "comes"
+        "comes",
+        "come",
+        "coming"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Did not' takes base form V1 ('come')."
     },
     {
@@ -1856,8 +1856,8 @@
       "options": [
         "will have discovered",
         "will discover",
-        "discover",
-        "discovered"
+        "discovered",
+        "discover"
       ],
       "answer": 0,
       "explanation": "'By 2030' indicates future point of completion -> Future Perfect ('will have discovered')."
@@ -1868,9 +1868,9 @@
       "question": "She cut her finger while she ______ vegetables.",
       "options": [
         "was chopping",
-        "chopped",
+        "chops",
         "has chopped",
-        "chops"
+        "chopped"
       ],
       "answer": 0,
       "explanation": "Past continuous background activity -> 'was chopping'."
@@ -1880,12 +1880,12 @@
       "topic": "tenses",
       "question": "He ______ from high fever since yesterday.",
       "options": [
-        "has been suffering",
+        "was suffering",
         "is suffering",
         "suffered",
-        "was suffering"
+        "has been suffering"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'Since yesterday' takes Present Perfect Continuous ('has been suffering')."
     },
     {
@@ -1893,12 +1893,12 @@
       "topic": "tenses",
       "question": "The patient ______ before the doctor arrived.",
       "options": [
-        "had died",
         "died",
+        "had died",
         "has died",
         "was dying"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Earlier past event takes Past Perfect ('had died')."
     },
     {
@@ -1906,12 +1906,12 @@
       "topic": "tenses",
       "question": "After he ______ his dinner, he went for a walk.",
       "options": [
-        "had eaten",
         "ate",
         "has eaten",
-        "was eating"
+        "was eating",
+        "had eaten"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Action completed prior to walking takes Past Perfect ('had eaten')."
     },
     {
@@ -1919,12 +1919,12 @@
       "topic": "tenses",
       "question": "It is ten years since I ______ my village.",
       "options": [
-        "visited",
         "have visited",
-        "had visited",
-        "visit"
+        "visit",
+        "visited",
+        "had visited"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'It is [time] since...' clause takes Simple Past ('visited')."
     },
     {
@@ -1932,12 +1932,12 @@
       "topic": "tenses",
       "question": "Look at those dark clouds! It ______ rain.",
       "options": [
-        "is going to",
-        "will",
         "shall",
+        "will",
+        "is going to",
         "may"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'Going to' expresses imminent future based on present evidence."
     },
     {
@@ -1946,9 +1946,9 @@
       "question": "I ______ this laptop for four years.",
       "options": [
         "have had",
-        "have",
+        "had had",
         "am having",
-        "had had"
+        "have"
       ],
       "answer": 0,
       "explanation": "Possession over duration takes Present Perfect ('have had')."
@@ -1958,12 +1958,12 @@
       "topic": "tenses",
       "question": "Who ______ the telephone?",
       "options": [
+        "had invented",
         "invented",
-        "has invented",
         "invent",
-        "had invented"
+        "has invented"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Historic event takes Simple Past ('invented')."
     },
     {
@@ -1972,9 +1972,9 @@
       "question": "The sun ______ brightly in the sky right now.",
       "options": [
         "is shining",
+        "has shone",
         "shines",
-        "shone",
-        "has shone"
+        "shone"
       ],
       "answer": 0,
       "explanation": "Action right now takes Present Continuous ('is shining')."
@@ -1984,12 +1984,12 @@
       "topic": "tenses",
       "question": "He always ______ foolish mistakes.",
       "options": [
-        "makes",
-        "is making",
+        "make",
         "made",
-        "make"
+        "is making",
+        "makes"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Habitual regular tendency takes Simple Present ('makes')."
     },
     {
@@ -1997,12 +1997,12 @@
       "topic": "tenses",
       "question": "I ______ here for over two hours.",
       "options": [
-        "have been waiting",
+        "was waiting",
         "am waiting",
         "waited",
-        "was waiting"
+        "have been waiting"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Duration continuing up to now takes Present Perfect Continuous ('have been waiting')."
     },
     {
@@ -2010,12 +2010,12 @@
       "topic": "tenses",
       "question": "No sooner had she entered the hall ______ the audience cheered.",
       "options": [
-        "than",
         "when",
         "then",
-        "before"
+        "before",
+        "than"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'No sooner had... than'."
     }
   ]

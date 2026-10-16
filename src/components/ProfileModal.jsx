@@ -1,68 +1,23 @@
 import React, { useState } from 'react';
-import { SYLLABUS_TOPICS, QUESTION_BANK } from '../data/questions';
-import { ENGLISH_SYLLABUS_TOPICS, ENGLISH_QUESTION_BANK } from '../data/english_questions';
-
-const TOPIC_ALIASES = {
-  ottapadam: ['ottapadam', 'ഒറ്റപ്പദം'],
-  viparitham: ['viparitham', 'വിപരീതപദം'],
-  samanapadham: ['samanapadham', 'ശബ്ദാർത്ഥം', 'അർത്ഥവ്യത്യാസം', 'പര്യായം', 'പര്യായപദം', 'paryayam'],
-  shaylikal: ['shaylikal', 'shailikal', 'ശൈലികൾ'],
-  pirichezhuthal: ['pirichezhuthal', 'പിരിച്ചെഴുത്ത്', 'സന്ധി'],
-  padashuddhi: ['padashuddhi', 'പദശുദ്ധി'],
-  vakyashuddhi: ['vakyashuddhi'],
-  lingam: ['lingam', 'ethirlingam', 'എതിർലിംഗം'],
-  vachanam: ['vachanam'],
-  krithikal: ['krithikal', 'varikal', 'sahithyam', 'കാവ്യവരികളും കവികളും', 'കൃതികളും കഥാപാത്രങ്ങളും'],
-  paribhasha: ['paribhasha'],
-  ghadakapadam: ['ghadakapadam'],
-  cherkkayzhuthuka: ['cherkkayzhuthuka']
-};
-
-const matchesTopic = (qTopic, targetTopicId, subject) => {
-  if (targetTopicId === 'all') return true;
-  if (subject === 'english') {
-    return qTopic === targetTopicId;
-  }
-  const aliases = TOPIC_ALIASES[targetTopicId] || [targetTopicId];
-  return aliases.includes(qTopic);
-};
+import { QUESTION_BANK } from '../data/questions';
+import { ENGLISH_QUESTION_BANK } from '../data/english_questions';
 
 export default function ProfileModal({
   user,
-  activeSubject = 'malayalam',
   onClose,
   onSwitchAccount,
   onResetProgress,
   onDeleteAccount,
   onUpdateUser
 }) {
-  const [modalSubject, setModalSubject] = useState(activeSubject);
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user.name);
 
   const stats = user.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} };
-  const topicStats = stats.topicStats || {};
   const total = stats.total || 0;
   const correct = stats.correct || 0;
   const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
   const repeatCount = user.repeatQueue?.length || 0;
-
-  // Active Subject Data in Modal
-  const isEnglish = modalSubject === 'english';
-  const currentTopics = isEnglish ? ENGLISH_SYLLABUS_TOPICS : SYLLABUS_TOPICS;
-  const currentBank = isEnglish ? ENGLISH_QUESTION_BANK : QUESTION_BANK;
-  const totalInBank = currentBank.length;
-
-  // Calculate subject-specific solved count
-  const subjectCorrect = currentTopics
-    .filter(t => t.id !== 'all')
-    .reduce((acc, t) => acc + (topicStats[t.id]?.correct || 0), 0);
-
-  const subjectAttempted = currentTopics
-    .filter(t => t.id !== 'all')
-    .reduce((acc, t) => acc + (topicStats[t.id]?.total || 0), 0);
-
-  const subjectCompletion = totalInBank > 0 ? ((subjectCorrect / totalInBank) * 100).toFixed(1) : '0.0';
 
   const handleSaveEdit = (e) => {
     e.preventDefault();
@@ -75,15 +30,11 @@ export default function ProfileModal({
   };
 
   const handleResetConfirm = () => {
-    if (window.confirm('Are you sure you want to reset your score and mistake queue for this profile?')) {
-      onResetProgress(user.id);
-    }
+    onResetProgress(user.id);
   };
 
   const handleDeleteConfirm = () => {
-    if (window.confirm(`Are you sure you want to permanently delete profile "${user.name}"?`)) {
-      onDeleteAccount(user.id);
-    }
+    onDeleteAccount(user.id);
   };
 
   return (
@@ -94,10 +45,37 @@ export default function ProfileModal({
           <div className="profile-header-title">
             <span className="profile-avatar-large">{user.avatar || '🎓'}</span>
             <div>
-              <h2 className="modal-title" style={{ margin: 0 }}>
-                {user.name}
-              </h2>
-              <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>
+              {isEditing ? (
+                <form onSubmit={handleSaveEdit} className="profile-name-edit-form">
+                  <input
+                    type="text"
+                    className="profile-name-edit-input"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    autoFocus
+                  />
+                  <button type="submit" className="profile-name-save-btn" title="Save name">✓</button>
+                  <button type="button" className="profile-name-cancel-btn" onClick={() => setIsEditing(false)} title="Cancel">✕</button>
+                </form>
+              ) : (
+                <div className="profile-name-row">
+                  <h2 className="profile-name-text">{user.name}</h2>
+                  <button
+                    type="button"
+                    className="profile-name-edit-icon-btn"
+                    onClick={() => {
+                      setName(user.name);
+                      setIsEditing(true);
+                    }}
+                    title="Edit Name"
+                    aria-label="Edit Name"
+                  >
+                    ✏️
+                  </button>
+                </div>
+              )}
+              <span className="profile-exam-tag">Kerala PSC Aspirant</span>
+              <span style={{ fontSize: '0.8rem', color: '#94a3b8', display: 'block', marginTop: '0.2rem' }}>
                 Overall Progress: {correct} Solved Across All Subjects
               </span>
             </div>
@@ -140,130 +118,39 @@ export default function ProfileModal({
             </div>
           </div>
 
-          {/* Edit Name Form */}
-          {isEditing ? (
-            <form onSubmit={handleSaveEdit} className="profile-edit-box">
-              <label style={{ fontSize: '0.85rem', color: '#94a3b8', display: 'block', marginBottom: '0.35rem' }}>
-                Edit Your Name
-              </label>
-              <input
-                type="text"
-                className="auth-input"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                autoFocus
-              />
-              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
-                <button type="submit" className="save-btn">Save Changes</button>
-                <button type="button" className="cancel-btn" onClick={() => setIsEditing(false)}>Cancel</button>
-              </div>
-            </form>
-          ) : (
-            <button
-              className="profile-edit-toggle-btn"
-              onClick={() => setIsEditing(true)}
-            >
-              ✏️ Edit Name
-            </button>
-          )}
-
-          {/* Subject Tab Selector in Profile Modal */}
-          <div className="modal-subject-tabs">
-            <button
-              type="button"
-              className={`modal-subject-tab ${modalSubject === 'malayalam' ? 'active' : ''}`}
-              onClick={() => setModalSubject('malayalam')}
-            >
-              <span>📚 Malayalam (10 Marks)</span>
-              <span className="tab-badge">{QUESTION_BANK.length} Qns</span>
-            </button>
-            <button
-              type="button"
-              className={`modal-subject-tab ${modalSubject === 'english' ? 'active' : ''}`}
-              onClick={() => setModalSubject('english')}
-            >
-              <span>🇬🇧 General English (10 Marks)</span>
-              <span className="tab-badge">{ENGLISH_QUESTION_BANK.length} Qns</span>
-            </button>
-          </div>
-
-          {/* Topic-wise Breakdown Header */}
-          <div className="profile-section-title" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>📊 {isEnglish ? 'General English' : 'Malayalam'} Topic Mastery</span>
-            <span style={{ fontSize: '0.8rem', color: '#38bdf8' }}>
-              {subjectCorrect} / {totalInBank} ({subjectCompletion}%)
-            </span>
-          </div>
-
-          <div className="topic-mastery-list">
-            {currentTopics.filter(t => t.id !== 'all').map((topic) => {
-              const totalInTopic = currentBank.filter(q => matchesTopic(q.topic, topic.id, modalSubject)).length;
-              const tData = topicStats[topic.id] || { correct: 0, total: 0 };
-              const tAttempted = tData.total || 0;
-              const tCorrect = tData.correct || 0;
-              const tAccuracy = tAttempted > 0 ? Math.round((tCorrect / tAttempted) * 100) : 0;
-              const completionPercent = totalInTopic > 0 ? ((tCorrect / totalInTopic) * 100).toFixed(1) : '0.0';
-              const fillWidth = totalInTopic > 0 ? Math.min(100, Math.max(tCorrect > 0 ? 3 : 0, (tCorrect / totalInTopic) * 100)) : 0;
-
-              return (
-                <div key={topic.id} className="topic-mastery-item">
-                  <div className="topic-mastery-header">
-                    <span className="topic-mastery-name">
-                      {topic.icon} {topic.name}
-                    </span>
-                    <span className="topic-mastery-count">
-                      {tAttempted > 0 ? (
-                        <>
-                          <strong style={{ color: '#38bdf8' }}>{tCorrect} / {totalInTopic}</strong>
-                          <span style={{ color: '#94a3b8', marginLeft: '0.35rem', fontSize: '0.78rem' }}>
-                            ({completionPercent}% completed • {tAccuracy}% acc)
-                          </span>
-                        </>
-                      ) : (
-                        <span style={{ color: '#64748b', fontSize: '0.78rem' }}>
-                          0 / {totalInTopic} (Not Started)
-                        </span>
-                      )}
-                    </span>
-                  </div>
-
-                  <div className="topic-mastery-bar">
-                    <div
-                      className="topic-mastery-fill"
-                      style={{
-                        width: `${fillWidth}%`,
-                        background: topic.color || '#38bdf8'
-                      }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
 
           {/* Account Actions */}
-          <div className="profile-section-title" style={{ marginTop: '1.5rem' }}>
+          <div className="profile-section-title" style={{ marginTop: '1.75rem' }}>
             ⚙️ Account Management
           </div>
 
           <div className="profile-actions-grid">
             <button
+              type="button"
               className="action-btn switch-btn"
               onClick={onSwitchAccount}
+              title="Switch to another user or create a new aspirant profile"
             >
-              👥 Switch Aspirant Profile
+              <span className="action-btn-icon">👥</span>
+              <span>Switch Profile</span>
             </button>
             <button
+              type="button"
               className="action-btn reset-btn"
               onClick={handleResetConfirm}
+              title="Reset all scores, topics, and mistake queues across all subjects"
             >
-              🔄 Reset Practice Progress
+              <span className="action-btn-icon">🔄</span>
+              <span>Reset All Progress</span>
             </button>
             <button
+              type="button"
               className="action-btn delete-btn"
               onClick={handleDeleteConfirm}
+              title="Permanently remove this aspirant profile and its data"
             >
-              🗑️ Delete Profile
+              <span className="action-btn-icon">🗑️</span>
+              <span>Delete Profile</span>
             </button>
           </div>
         </div>

@@ -5,7 +5,24 @@ import { ENGLISH_SYLLABUS_TOPICS, ENGLISH_QUESTION_BANK } from './data/english_q
 import { soundFX } from './utils/soundEffects';
 import AuthModal from './components/AuthModal';
 import ProfileModal from './components/ProfileModal';
+import ConfirmModal from './components/ConfirmModal';
 import './App.css';
+
+const MALAYALAM_TOPIC_ALIASES = {
+  ottapadam: ['ottapadam', 'ഒറ്റപ്പദം'],
+  viparitham: ['viparitham', 'വിപരീതപദം'],
+  samanapadham: ['samanapadham', 'ശബ്ദാർത്ഥം', 'അർത്ഥവ്യത്യാസം', 'പര്യായം', 'പര്യായപദം', 'paryayam'],
+  shaylikal: ['shaylikal', 'shailikal', 'ശൈലികൾ'],
+  pirichezhuthal: ['pirichezhuthal', 'പിരിച്ചെഴുത്ത്', 'സന്ധി'],
+  padashuddhi: ['padashuddhi', 'പദശുദ്ധി'],
+  vakyashuddhi: ['vakyashuddhi'],
+  lingam: ['lingam', 'ethirlingam', 'എതിർലിംഗം'],
+  vachanam: ['vachanam'],
+  krithikal: ['krithikal', 'varikal', 'sahithyam', 'കാവ്യവരികളും കവികളും', 'കൃതികളും കഥാപാത്രങ്ങളും'],
+  paribhasha: ['paribhasha'],
+  ghadakapadam: ['ghadakapadam'],
+  cherkkayzhuthuka: ['cherkkayzhuthuka']
+};
 
 export default function App() {
   // Users and Auth State
@@ -36,6 +53,24 @@ export default function App() {
   const [isRepeatOnlyMode, setIsRepeatOnlyMode] = useState(false);
   const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+
+  // Themed Confirmation Modal State
+  const [confirmDialog, setConfirmDialog] = useState({
+    isOpen: false,
+    title: '',
+    highlight: '',
+    message: '',
+    details: '',
+    confirmText: 'Confirm',
+    cancelText: 'Cancel',
+    icon: '⚠️',
+    variant: 'warning',
+    onConfirm: () => {}
+  });
+
+  const closeConfirmDialog = () => {
+    setConfirmDialog(prev => ({ ...prev, isOpen: false }));
+  };
 
   // Subject-specific lists
   const currentSyllabusTopics = activeSubject === 'english' ? ENGLISH_SYLLABUS_TOPICS : SYLLABUS_TOPICS;
@@ -91,6 +126,47 @@ export default function App() {
     persistUsers(updated);
   };
 
+  const handleResetTopicProgress = (userId, topicId, subject) => {
+    const updated = users.map(u => {
+      if (u.id === userId) {
+        const tStat = u.stats?.topicStats?.[topicId] || { correct: 0, total: 0 };
+        const newCorrect = Math.max(0, (u.stats?.correct || 0) - (tStat.correct || 0));
+        const newTotal = Math.max(0, (u.stats?.total || 0) - (tStat.total || 0));
+
+        const newTopicStats = { ...(u.stats?.topicStats || {}) };
+        delete newTopicStats[topicId];
+
+        const isTopicMatch = (q) => {
+          if (!q) return false;
+          if (subject === 'english') {
+            return q.topic === topicId;
+          }
+          const aliases = MALAYALAM_TOPIC_ALIASES[topicId] || [topicId];
+          return aliases.includes(q.topic);
+        };
+
+        const newRepeatQueue = (u.repeatQueue || []).filter(q => !isTopicMatch(q));
+        const newUpcoming = (u.upcomingRepeats || []).filter(item => !isTopicMatch(item?.question));
+        const newHistory = (u.questionHistory || []).filter(item => !isTopicMatch(item));
+
+        return {
+          ...u,
+          stats: {
+            ...u.stats,
+            correct: newCorrect,
+            total: newTotal,
+            topicStats: newTopicStats
+          },
+          repeatQueue: newRepeatQueue,
+          upcomingRepeats: newUpcoming,
+          questionHistory: newHistory
+        };
+      }
+      return u;
+    });
+    persistUsers(updated);
+  };
+
   const handleDeleteAccount = (userId) => {
     const updated = users.filter(u => u.id !== userId);
     persistUsers(updated);
@@ -105,6 +181,63 @@ export default function App() {
       }
     }
     setShowProfileModal(false);
+  };
+
+  // Request Confirmation Handlers using custom themed popup
+  const handleRequestResetTopic = (topic) => {
+    const { solved } = getTopicCounts(topic.id);
+    setConfirmDialog({
+      isOpen: true,
+      title: 'Reset Topic Progress',
+      highlight: `${topic.icon} ${topic.name}`,
+      message: 'Are you sure you want to reset your progress for this topic?',
+      details: solved > 0 
+        ? `This will clear your ${solved} solved questions for this topic and reset progress back to 0.`
+        : 'This will reset this topic\'s progress and mistake history back to 0.',
+      confirmText: 'Reset Topic',
+      cancelText: 'Cancel',
+      icon: '↺',
+      variant: 'warning',
+      onConfirm: () => {
+        handleResetTopicProgress(activeUserId, topic.id, activeSubject);
+      }
+    });
+  };
+
+  const handleRequestResetAllProgress = (userId) => {
+    const targetUser = users.find(u => u.id === userId) || currentUser;
+    setConfirmDialog({
+      isOpen: true,
+      title: 'Reset All Practice Progress',
+      highlight: `Aspirant: ${targetUser?.name || 'Aspirant'}`,
+      message: 'Are you sure you want to reset ALL practice progress across all topics and subjects?',
+      details: 'This will reset your overall score to 0, clear all topic progress bars, and empty your mistake repeat queues.',
+      confirmText: 'Reset All Progress',
+      cancelText: 'Cancel',
+      icon: '🔄',
+      variant: 'danger',
+      onConfirm: () => {
+        handleResetProgress(userId);
+      }
+    });
+  };
+
+  const handleRequestDeleteAccount = (userId) => {
+    const targetUser = users.find(u => u.id === userId) || currentUser;
+    setConfirmDialog({
+      isOpen: true,
+      title: 'Delete Aspirant Profile',
+      highlight: `Profile: ${targetUser?.name || 'Aspirant'}`,
+      message: `Are you sure you want to permanently delete profile "${targetUser?.name || 'Aspirant'}"?`,
+      details: 'All practice statistics, accuracy history, and saved data will be permanently removed.',
+      confirmText: 'Delete Profile',
+      cancelText: 'Cancel',
+      icon: '🗑️',
+      variant: 'danger',
+      onConfirm: () => {
+        handleDeleteAccount(userId);
+      }
+    });
   };
 
   const handleSwitchAccount = () => {
@@ -160,6 +293,16 @@ export default function App() {
     }
     const aliases = MALAYALAM_TOPIC_ALIASES[targetTopicId] || [targetTopicId];
     return aliases.includes(qTopic);
+  };
+
+  const getTopicCounts = (topicId) => {
+    const total = topicId === 'all'
+      ? currentQuestionBank.length
+      : currentQuestionBank.filter(q => matchesTopic(q.topic, topicId)).length;
+    const solved = topicId === 'all'
+      ? currentSyllabusTopics.filter(t => t.id !== 'all').reduce((acc, t) => acc + (userStats?.topicStats?.[t.id]?.correct || 0), 0)
+      : (userStats?.topicStats?.[topicId]?.correct || 0);
+    return { solved, total };
   };
 
   const getFilteredPool = () => {
@@ -352,15 +495,14 @@ export default function App() {
         />
       )}
 
-      {/* User Profile & Topic Mastery Modal */}
+      {/* User Profile Modal */}
       {showProfileModal && currentUser && (
         <ProfileModal
           user={currentUser}
-          activeSubject={activeSubject}
           onClose={() => setShowProfileModal(false)}
           onSwitchAccount={handleSwitchAccount}
-          onResetProgress={handleResetProgress}
-          onDeleteAccount={handleDeleteAccount}
+          onResetProgress={handleRequestResetAllProgress}
+          onDeleteAccount={handleRequestDeleteAccount}
           onUpdateUser={handleUpdateUser}
         />
       )}
@@ -424,27 +566,61 @@ export default function App() {
         {/* Topics List */}
         <div className="topics-list">
           {currentSyllabusTopics.map(topic => {
-            const count = topic.id === 'all'
-              ? currentQuestionBank.length
-              : currentQuestionBank.filter(q => matchesTopic(q.topic, topic.id)).length;
+            const { solved, total } = getTopicCounts(topic.id);
             const isActive = selectedTopic === topic.id && !isRepeatOnlyMode;
+            const progressPercent = total > 0 ? Math.min(100, Math.max(solved > 0 ? 3 : 0, (solved / total) * 100)) : 0;
 
             return (
-              <button
+              <div
                 key={topic.id}
+                role="button"
+                tabIndex={0}
                 className={`topic-item ${isActive ? 'active' : ''}`}
                 onClick={() => {
                   setIsRepeatOnlyMode(false);
                   setSelectedTopic(topic.id);
                   setMobileSidebarOpen(false);
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    setIsRepeatOnlyMode(false);
+                    setSelectedTopic(topic.id);
+                    setMobileSidebarOpen(false);
+                  }
+                }}
               >
                 <span className="topic-icon">{topic.icon}</span>
                 <div className="topic-details">
                   <div className="topic-name">{topic.name}</div>
-                  <div className="topic-count">{count} Questions</div>
+                  <div className="topic-count">
+                    <span style={{ color: solved > 0 ? '#38bdf8' : '#94a3b8', fontWeight: 600 }}>
+                      {solved} / {total}
+                    </span>
+                  </div>
+                  <div className="topic-progress-mini-bar">
+                    <div
+                      className="topic-progress-mini-fill"
+                      style={{
+                        width: `${progressPercent}%`,
+                        background: topic.color || '#38bdf8'
+                      }}
+                    />
+                  </div>
                 </div>
-              </button>
+                {topic.id !== 'all' && (
+                  <button
+                    type="button"
+                    className="topic-reset-btn"
+                    title={`Reset progress for ${topic.name}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleRequestResetTopic(topic);
+                    }}
+                  >
+                    ↺
+                  </button>
+                )}
+              </div>
             );
           })}
         </div>
@@ -551,21 +727,37 @@ export default function App() {
 
                   <div className="dropdown-options-list">
                     {/* All Topics */}
-                    <div
-                      className={`custom-dropdown-option ${selectedTopic === 'all' && !isRepeatOnlyMode ? 'selected' : ''}`}
-                      onClick={() => {
-                        setIsRepeatOnlyMode(false);
-                        setSelectedTopic('all');
-                        setTopicDropdownOpen(false);
-                      }}
-                    >
-                      <span className="opt-icon">🎯</span>
-                      <div className="opt-details">
-                        <div className="opt-title">All Topics (Full Mock)</div>
-                        <div className="opt-count">{currentQuestionBank.length} Questions</div>
-                      </div>
-                      {selectedTopic === 'all' && !isRepeatOnlyMode && <span className="opt-check">✓</span>}
-                    </div>
+                    {(() => {
+                      const { solved, total } = getTopicCounts('all');
+                      const progressPercent = total > 0 ? Math.min(100, Math.max(solved > 0 ? 3 : 0, (solved / total) * 100)) : 0;
+                      return (
+                        <div
+                          className={`custom-dropdown-option ${selectedTopic === 'all' && !isRepeatOnlyMode ? 'selected' : ''}`}
+                          onClick={() => {
+                            setIsRepeatOnlyMode(false);
+                            setSelectedTopic('all');
+                            setTopicDropdownOpen(false);
+                          }}
+                        >
+                          <span className="opt-icon">🎯</span>
+                          <div className="opt-details">
+                            <div className="opt-title">All Topics (Full Mock)</div>
+                            <div className="opt-count">
+                              <span style={{ color: solved > 0 ? '#38bdf8' : '#94a3b8', fontWeight: 600 }}>
+                                {solved} / {total}
+                              </span>
+                            </div>
+                            <div className="topic-progress-mini-bar">
+                              <div
+                                className="topic-progress-mini-fill"
+                                style={{ width: `${progressPercent}%`, background: '#6366f1' }}
+                              />
+                            </div>
+                          </div>
+                          {selectedTopic === 'all' && !isRepeatOnlyMode && <span className="opt-check">✓</span>}
+                        </div>
+                      );
+                    })()}
 
                     {/* Mistake Queue Option */}
                     {currentSubjectRepeatQueue.length > 0 && (
@@ -579,7 +771,9 @@ export default function App() {
                         <span className="opt-icon">🔁</span>
                         <div className="opt-details">
                           <div className="opt-title">Mistake Queue</div>
-                          <div className="opt-count">{currentSubjectRepeatQueue.length} Questions</div>
+                          <div className="opt-count" style={{ color: '#fbbf24', fontWeight: 600 }}>
+                            {currentSubjectRepeatQueue.length} to review
+                          </div>
                         </div>
                         {isRepeatOnlyMode && <span className="opt-check">✓</span>}
                       </div>
@@ -591,8 +785,9 @@ export default function App() {
 
                     {/* All Subject Topics */}
                     {currentSyllabusTopics.filter(t => t.id !== 'all').map(topic => {
-                      const count = currentQuestionBank.filter(q => matchesTopic(q.topic, topic.id)).length;
+                      const { solved, total } = getTopicCounts(topic.id);
                       const isSelected = selectedTopic === topic.id && !isRepeatOnlyMode;
+                      const progressPercent = total > 0 ? Math.min(100, Math.max(solved > 0 ? 3 : 0, (solved / total) * 100)) : 0;
 
                       return (
                         <div
@@ -607,9 +802,35 @@ export default function App() {
                           <span className="opt-icon">{topic.icon}</span>
                           <div className="opt-details">
                             <div className="opt-title">{topic.name}</div>
-                            <div className="opt-count">{count} Questions</div>
+                            <div className="opt-count">
+                              <span style={{ color: solved > 0 ? '#38bdf8' : '#94a3b8', fontWeight: 600 }}>
+                                {solved} / {total}
+                              </span>
+                            </div>
+                            <div className="topic-progress-mini-bar">
+                              <div
+                                className="topic-progress-mini-fill"
+                                style={{
+                                  width: `${progressPercent}%`,
+                                  background: topic.color || '#38bdf8'
+                                }}
+                              />
+                            </div>
                           </div>
-                          {isSelected && <span className="opt-check">✓</span>}
+                          <div className="opt-right-actions">
+                            <button
+                              type="button"
+                              className="topic-reset-btn"
+                              title={`Reset progress for ${topic.name}`}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleRequestResetTopic(topic);
+                              }}
+                            >
+                              ↺
+                            </button>
+                            {isSelected && <span className="opt-check">✓</span>}
+                          </div>
                         </div>
                       );
                     })}
@@ -793,6 +1014,12 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* Themed Confirmation Modal */}
+      <ConfirmModal
+        {...confirmDialog}
+        onCancel={closeConfirmDialog}
+      />
     </div>
   );
 }

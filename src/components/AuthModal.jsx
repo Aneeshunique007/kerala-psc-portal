@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import {
+  BookOpenIcon,
+  UserIcon,
+  UserPlusIcon,
+  RotateIcon,
+  ArrowRightIcon,
+  AlertTriangleIcon
+} from './Icons';
 
 export default function AuthModal({ users, onSelectUser, onCreateUser }) {
   const [activeTab, setActiveTab] = useState(users && users.length > 0 ? 'select' : 'create');
@@ -16,7 +24,7 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
     const newUser = {
       id: `user_${Date.now()}`,
       name: name.trim(),
-      avatar: '🎓',
+      avatar: 'U',
       createdAt: Date.now(),
       stats: {
         correct: 0,
@@ -33,16 +41,25 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
     onCreateUser(newUser);
   };
 
+  const getInitials = (n) => {
+    if (!n) return 'U';
+    const parts = n.trim().split(/\s+/);
+    if (parts.length >= 2) {
+      return (parts[0][0] + parts[1][0]).toUpperCase();
+    }
+    return n.slice(0, 2).toUpperCase();
+  };
+
   return (
     <div className="modal-overlay auth-overlay">
       <div className="modal-content auth-modal-content" onClick={(e) => e.stopPropagation()}>
         {/* Header */}
         <div className="auth-header">
           <div className="auth-brand-badge">
-            <span className="auth-logo-icon">📚</span>
+            <span className="auth-logo-icon"><BookOpenIcon size={24} /></span>
             <div>
-              <h2 className="auth-title">Kerala PSC Malayalam Master</h2>
-              <p className="auth-subtitle">Personal Aspirant Account & Practice Portal</p>
+              <h2 className="auth-title">Kerala PSC Aspirant Portal</h2>
+              <p className="auth-subtitle">Official Syllabus Practice & Analytics</p>
             </div>
           </div>
         </div>
@@ -58,7 +75,8 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
                 setError('');
               }}
             >
-              👤 Select Profile ({users.length})
+              <UserIcon size={15} />
+              <span>Select Profile ({users.length})</span>
             </button>
             <button
               type="button"
@@ -68,7 +86,8 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
                 setError('');
               }}
             >
-              ➕ Create New Profile
+              <UserPlusIcon size={15} />
+              <span>Create New Profile</span>
             </button>
           </div>
         )}
@@ -92,19 +111,25 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
                       className="user-profile-card"
                       onClick={() => onSelectUser(u.id)}
                     >
-                      <div className="user-card-avatar">{u.avatar || '🎓'}</div>
+                      <div className="user-card-avatar user-nav-avatar-initials" style={{ width: 40, height: 40, fontSize: '0.85rem' }}>
+                        {getInitials(u.name)}
+                      </div>
                       <div className="user-card-info">
                         <div className="user-card-name">{u.name}</div>
                         <div className="user-card-stats">
-                          <span>🎯 {total} Solved</span>
-                          <span>⚡ {accuracy}% Accuracy</span>
+                          <span>{total} Solved</span>
+                          <span>•</span>
+                          <span>{accuracy}% Accuracy</span>
                           {repeatCount > 0 && (
-                            <span className="user-card-mistakes">🔁 {repeatCount} In Mistake Queue</span>
+                            <span className="user-card-mistakes" style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                              <RotateIcon size={12} /> {repeatCount} Review
+                            </span>
                           )}
                         </div>
                       </div>
-                      <button className="user-enter-btn" title="Continue practice">
-                        Start ➔
+                      <button className="user-enter-btn" title="Continue practice" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        <span>Start</span>
+                        <ArrowRightIcon size={14} />
                       </button>
                     </div>
                   );
@@ -127,7 +152,12 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
                 Enter your name to start practicing. Your scores, mistake repeats, and topic mastery will be saved under your name.
               </p>
 
-              {error && <div className="auth-error-banner">⚠️ {error}</div>}
+              {error && (
+                <div className="auth-error-banner" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <AlertTriangleIcon size={16} />
+                  <span>{error}</span>
+                </div>
+              )}
 
               {/* Name only */}
               <div className="form-group">
@@ -148,7 +178,7 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
 
               <div className="auth-form-actions" style={{ marginTop: '0.75rem' }}>
                 <button type="submit" className="auth-submit-btn">
-                  🚀 Start Practicing
+                  Start Practicing
                 </button>
 
                 {users && users.length > 0 && (

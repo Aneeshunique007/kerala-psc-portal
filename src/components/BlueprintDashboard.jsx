@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ArrowRightIcon } from './Icons';
 
 export default function BlueprintDashboard({
   currentUser,
@@ -234,22 +235,22 @@ export default function BlueprintDashboard({
               className="btn btn-primary blueprint-cta-btn"
               onClick={() => onStartMock('pyq', 'all')}
             >
-              <span>🎯 Start Full 100-Mark PYQ Mock Exam</span>
-              <span className="cta-arrow">➔</span>
+              <span>Start Full 100-Mark Mock Exam</span>
+              <ArrowRightIcon size={16} />
             </button>
             <button
               type="button"
               className="btn btn-secondary blueprint-secondary-btn"
               onClick={() => onStartPractice('malayalam', 'all')}
             >
-              <span>📚 Practice 10-Mark Malayalam</span>
+              <span>Practice Malayalam (10 Marks)</span>
             </button>
             <button
               type="button"
               className="btn btn-secondary blueprint-secondary-btn"
               onClick={() => onStartPractice('english', 'all')}
             >
-              <span>🇬🇧 Practice 10-Mark English</span>
+              <span>Practice General English (10 Marks)</span>
             </button>
           </div>
         </div>
@@ -384,7 +385,7 @@ export default function BlueprintDashboard({
                   <div key={idx} className="bp-topic-card">
                     <div className="bp-topic-top">
                       <div className="bp-topic-identity">
-                        <span className="bp-topic-icon">{t.icon}</span>
+                        <span className="bp-topic-num-badge">{t.num}</span>
                         <div>
                           <div className="bp-topic-subtag">Topic {t.num}</div>
                           <h3 className="bp-topic-title">{t.name}</h3>
@@ -406,7 +407,7 @@ export default function BlueprintDashboard({
                         title={`Start practicing ${t.name}`}
                       >
                         <span>Practice</span>
-                        <span>⚡</span>
+                        <ArrowRightIcon size={13} />
                       </button>
                     </div>
                   </div>

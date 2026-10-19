@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import {
+  BookOpenIcon,
+  XIcon,
+  ArrowRightIcon,
+  InfoIcon
+} from './Icons';
 
 export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic }) {
   const [activeTab, setActiveTab] = useState('all');
@@ -183,7 +189,7 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
         {/* Header */}
         <div className="syllabus-modal-header">
           <div className="syllabus-header-left">
-            <span className="syllabus-icon">📋</span>
+            <span className="syllabus-icon"><BookOpenIcon size={22} /></span>
             <div>
               <h2 className="syllabus-modal-title">Kerala PSC LD Clerk (LDC) Official Syllabus</h2>
               <div className="syllabus-modal-subtitle">
@@ -192,7 +198,7 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
             </div>
           </div>
           <button type="button" className="modal-close-btn" onClick={onClose} aria-label="Close">
-            ✕
+            <XIcon size={18} />
           </button>
         </div>
 
@@ -300,7 +306,8 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
                             }}
                             title={`Practice questions for ${t.name}`}
                           >
-                            Practice ⚡
+                            <span>Practice</span>
+                            <ArrowRightIcon size={14} />
                           </button>
                         )}
                       </div>
@@ -315,8 +322,9 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
 
         {/* Footer */}
         <div className="syllabus-modal-footer">
-          <div className="syllabus-footer-note">
-            💡 Refer to <strong>L D Clerks.pdf</strong> for the official Kerala Public Service Commission detailed syllabus.
+          <div className="syllabus-footer-note" style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+            <InfoIcon size={16} />
+            <span>Refer to <strong>L D Clerks.pdf</strong> for the official Kerala Public Service Commission detailed syllabus.</span>
           </div>
           <button type="button" className="btn btn-primary" onClick={onClose}>
             Close Blueprint

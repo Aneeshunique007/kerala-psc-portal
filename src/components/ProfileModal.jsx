@@ -4,6 +4,14 @@ import {
   ENGLISH_QUESTION_BANK,
   PYQ_QUESTION_BANK
 } from '../data/questions';
+import {
+  TargetIcon,
+  CheckIcon,
+  RotateIcon,
+  BookOpenIcon,
+  TrashIcon,
+  XIcon
+} from './Icons';
 
 export default function ProfileModal({
   user,
@@ -46,7 +54,9 @@ export default function ProfileModal({
         {/* Header */}
         <div className="modal-header">
           <div className="profile-header-title">
-            <span className="profile-avatar-large">{user.avatar || '🎓'}</span>
+            <span className="profile-avatar-large profile-avatar-initials">
+              {(user.name || 'U')[0].toUpperCase()}
+            </span>
             <div>
               {isEditing ? (
                 <form onSubmit={handleSaveEdit} className="profile-name-edit-form">
@@ -73,7 +83,7 @@ export default function ProfileModal({
                     title="Edit Name"
                     aria-label="Edit Name"
                   >
-                    ✏️
+                    Edit
                   </button>
                 </div>
               )}
@@ -83,48 +93,49 @@ export default function ProfileModal({
               </span>
             </div>
           </div>
-          <button className="close-btn" onClick={onClose} aria-label="Close">✕</button>
+          <button className="close-btn" onClick={onClose} aria-label="Close">
+            <XIcon size={18} />
+          </button>
         </div>
 
         <div className="modal-body profile-modal-body">
           {/* Quick Metrics */}
           <div className="profile-metrics-grid">
             <div className="profile-metric-card">
-              <span className="metric-icon">🎯</span>
+              <span className="metric-icon"><TargetIcon size={18} /></span>
               <div className="metric-val">{total}</div>
               <div className="metric-lbl">Total Attempted</div>
             </div>
             <div className="profile-metric-card">
-              <span className="metric-icon">✅</span>
+              <span className="metric-icon"><CheckIcon size={18} /></span>
               <div className="metric-val">{correct}</div>
               <div className="metric-lbl">Correct Solved</div>
             </div>
             <div className="profile-metric-card">
-              <span className="metric-icon">📈</span>
+              <span className="metric-icon"><TargetIcon size={18} /></span>
               <div className="metric-val">{accuracy}%</div>
               <div className="metric-lbl">Accuracy</div>
             </div>
             <div className="profile-metric-card">
-              <span className="metric-icon">🔥</span>
+              <span className="metric-icon"><CheckIcon size={18} /></span>
               <div className="metric-val">{stats.maxStreak || 0}</div>
               <div className="metric-lbl">Best Streak</div>
             </div>
             <div className="profile-metric-card">
-              <span className="metric-icon">🔁</span>
+              <span className="metric-icon"><RotateIcon size={18} /></span>
               <div className="metric-val">{repeatCount}</div>
-              <div className="metric-lbl">Mistake Queue</div>
+              <div className="metric-lbl">Review Queue</div>
             </div>
             <div className="profile-metric-card">
-              <span className="metric-icon">📚</span>
+              <span className="metric-icon"><BookOpenIcon size={18} /></span>
               <div className="metric-val">{QUESTION_BANK.length + ENGLISH_QUESTION_BANK.length + PYQ_QUESTION_BANK.length}</div>
               <div className="metric-lbl">Total Question Bank</div>
             </div>
           </div>
 
-
           {/* Account Actions */}
           <div className="profile-section-title" style={{ marginTop: '1.75rem' }}>
-            ⚙️ Account Management
+            Account Management
           </div>
 
           <div className="profile-actions-grid">
@@ -134,7 +145,6 @@ export default function ProfileModal({
               onClick={onSwitchAccount}
               title="Switch to another user or create a new aspirant profile"
             >
-              <span className="action-btn-icon">👥</span>
               <span>Switch Profile</span>
             </button>
             <button
@@ -143,7 +153,7 @@ export default function ProfileModal({
               onClick={handleResetConfirm}
               title="Reset all scores, topics, and mistake queues across all subjects"
             >
-              <span className="action-btn-icon">🔄</span>
+              <RotateIcon size={15} />
               <span>Reset All Progress</span>
             </button>
             <button
@@ -152,7 +162,7 @@ export default function ProfileModal({
               onClick={handleDeleteConfirm}
               title="Permanently remove this aspirant profile and its data"
             >
-              <span className="action-btn-icon">🗑️</span>
+              <TrashIcon size={15} />
               <span>Delete Profile</span>
             </button>
           </div>

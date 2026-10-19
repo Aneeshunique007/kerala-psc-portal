@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { AlertTriangleIcon } from './Icons';
 
 export default function ConfirmModal({
   isOpen,
@@ -8,7 +9,7 @@ export default function ConfirmModal({
   details = '',
   confirmText = 'Confirm',
   cancelText = 'Cancel',
-  icon = '⚠️',
+  icon = null,
   variant = 'warning', // 'warning' | 'danger'
   onConfirm,
   onCancel
@@ -41,7 +42,7 @@ export default function ConfirmModal({
       >
         <div className="confirm-modal-header">
           <div className={`confirm-icon-badge ${isDanger ? 'badge-danger' : 'badge-warning'}`}>
-            {icon}
+            {icon || <AlertTriangleIcon size={22} />}
           </div>
           <button 
             type="button" 

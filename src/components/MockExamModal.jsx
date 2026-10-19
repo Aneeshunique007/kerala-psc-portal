@@ -6,28 +6,47 @@ import {
   PYQ_YEARS,
 } from '../data/questions';
 import FormattedQuestion from './FormattedQuestion';
+import {
+  ClockIcon,
+  FlameIcon,
+  TrophyIcon,
+  FlagIcon,
+  ClipboardListIcon,
+  BarChartIcon,
+  CheckCircleIcon,
+  XCircleIcon,
+  CalendarIcon,
+  LightbulbIcon,
+  ArrowRightIcon,
+  CheckIcon,
+  XIcon,
+  AlertTriangleIcon,
+  RotateIcon,
+  TargetIcon
+} from './Icons';
 
 // Exact Mark distribution for Kerala PSC LDC 100-mark syllabus
 const DISTRIBUTION = [
   // Part I: GK (50 Marks)
-  { label: 'ചരിത്രം (History)',        topicId: 'pq_history',          marks: 5,  part: 'Part I: GK', icon: '🏛️' },
-  { label: 'ഭൂമിശാസ്ത്രം (Geography)',  topicId: 'pq_geography',        marks: 5,  part: 'Part I: GK', icon: '🌍' },
-  { label: 'ധനതത്വം (Economics)',       topicId: 'pq_economics',        marks: 5,  part: 'Part I: GK', icon: '📈' },
-  { label: 'ഭരണഘടന (Constitution)',    topicId: 'pq_constitution',     marks: 5,  part: 'Part I: GK', icon: '⚖️' },
-  { label: 'കേരള ഭരണം (Governance)',   topicId: 'pq_kerala_governance',marks: 5,  part: 'Part I: GK', icon: '🏢' },
-  { label: 'ജനറൽ സയൻസ് (Science)',    topicId: 'pq_science',          marks: 12, part: 'Part I: GK', icon: '🔬' },
-  { label: 'കല, കായികം (Arts & Sports)',topicId: 'pq_arts_sports',     marks: 5,  part: 'Part I: GK', icon: '🎨' },
-  { label: 'കമ്പ്യൂട്ടർ (Computer)',    topicId: 'pq_computer',         marks: 3,  part: 'Part I: GK', icon: '💻' },
-  { label: 'നിയമങ്ങൾ (Acts & Laws)',    topicId: 'pq_acts_laws',        marks: 5,  part: 'Part I: GK', icon: '📜' },
+  { label: 'ചരിത്രം (History)',        topicId: 'pq_history',          marks: 5,  part: 'Part I: GK', code: '01' },
+  { label: 'ഭൂമിശാസ്ത്രം (Geography)',  topicId: 'pq_geography',        marks: 5,  part: 'Part I: GK', code: '02' },
+  { label: 'ധനതത്വം (Economics)',       topicId: 'pq_economics',        marks: 5,  part: 'Part I: GK', code: '03' },
+  { label: 'ഭരണഘടന (Constitution)',    topicId: 'pq_constitution',     marks: 5,  part: 'Part I: GK', code: '04' },
+  { label: 'കേരള ഭരണം (Governance)',   topicId: 'pq_kerala_governance',marks: 5,  part: 'Part I: GK', code: '05' },
+  { label: 'ജനറൽ സയൻസ് (Science)',    topicId: 'pq_science',          marks: 12, part: 'Part I: GK', code: '06' },
+  { label: 'കല, കായികം (Arts & Sports)',topicId: 'pq_arts_sports',     marks: 5,  part: 'Part I: GK', code: '07' },
+  { label: 'കമ്പ്യൂട്ടർ (Computer)',    topicId: 'pq_computer',         marks: 3,  part: 'Part I: GK', code: '08' },
+  { label: 'നിയമങ്ങൾ (Acts & Laws)',    topicId: 'pq_acts_laws',        marks: 5,  part: 'Part I: GK', code: '09' },
   // Part II: Current Affairs (20 Marks)
-  { label: 'Current Affairs',           topicId: 'pq_current_affairs',  marks: 20, part: 'Part II: Current Affairs', icon: '📰' },
+  { label: 'Current Affairs',           topicId: 'pq_current_affairs',  marks: 20, part: 'Part II: Current Affairs', code: '10' },
   // Part III: Arithmetic & Mental Ability (10 Marks)
-  { label: 'Simple Arithmetic & Mental Ability', topicId: 'pq_maths',   marks: 10, part: 'Part III: Maths & Reasoning', icon: '🔢' },
+  { label: 'Simple Arithmetic & Mental Ability', topicId: 'pq_maths',   marks: 10, part: 'Part III: Maths & Reasoning', code: '11' },
   // Part IV: General English (10 Marks)
-  { label: 'General English',           topicId: 'english',             marks: 10, part: 'Part IV: English', icon: '🇬🇧' },
+  { label: 'General English',           topicId: 'english',             marks: 10, part: 'Part IV: English', code: '12' },
   // Part V: Malayalam Language (10 Marks)
-  { label: 'Malayalam Language',        topicId: 'malayalam',           marks: 10, part: 'Part V: Malayalam', icon: '📚' },
+  { label: 'Malayalam Language',        topicId: 'malayalam',           marks: 10, part: 'Part V: Malayalam', code: '13' },
 ];
+
 
 const TOTAL_TIME = 75 * 60; // 1 hour 15 minutes = 4500 seconds
 
@@ -119,7 +138,7 @@ function buildPaper(selectedYear) {
         answer: ans,
         qNum: qNum++,
         segLabel: seg.label,
-        segIcon: seg.icon,
+        segCode: seg.code,
         part: seg.part,
       });
     });
@@ -243,7 +262,9 @@ export default function MockExamModal({ year = '2024', onClose }) {
            ═══════════════════════════════════════════════════════ */}
         {phase === 'ready' && (
           <div className="mock-ready-screen">
-            <button className="mock-close-btn" onClick={onClose} aria-label="Close">✕</button>
+            <button className="mock-close-btn" onClick={onClose} aria-label="Close">
+              <XIcon size={18} />
+            </button>
 
             <div className="mock-ready-header">
               <div className="mock-ready-logo-wrap">
@@ -262,7 +283,10 @@ export default function MockExamModal({ year = '2024', onClose }) {
             {/* Year Selector */}
             <div className="mock-year-selector-card">
               <div className="mock-selector-title">
-                <span>📅 <strong>Step 1:</strong> Select Question Paper Year</span>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                  <CalendarIcon size={16} />
+                  <strong>Step 1:</strong> Select Question Paper Year
+                </span>
                 <span className="mock-selector-hint">Questions will be randomized from this year's PYQs</span>
               </div>
               <div className="mock-year-btn-grid">
@@ -284,22 +308,22 @@ export default function MockExamModal({ year = '2024', onClose }) {
             {/* Key Exam Rules & Stats */}
             <div className="mock-ready-stats-row">
               <div className="mock-stat-card">
-                <span className="mstat-icon">📋</span>
+                <span className="mstat-icon"><ClipboardListIcon size={20} /></span>
                 <strong className="mstat-val">100 Qs</strong>
                 <span className="mstat-lbl">Total Questions</span>
               </div>
               <div className="mock-stat-card">
-                <span className="mstat-icon">⏱️</span>
+                <span className="mstat-icon"><ClockIcon size={20} /></span>
                 <strong className="mstat-val">75 Mins</strong>
                 <span className="mstat-lbl">1 Hr 15 Mins</span>
               </div>
               <div className="mock-stat-card">
-                <span className="mstat-icon">✅</span>
+                <span className="mstat-icon"><CheckCircleIcon size={20} /></span>
                 <strong className="mstat-val">+1.00</strong>
                 <span className="mstat-lbl">Per Correct</span>
               </div>
               <div className="mock-stat-card">
-                <span className="mstat-icon">❌</span>
+                <span className="mstat-icon"><XCircleIcon size={20} /></span>
                 <strong className="mstat-val">−0.33</strong>
                 <span className="mstat-lbl">Negative Penalty</span>
               </div>
@@ -308,7 +332,10 @@ export default function MockExamModal({ year = '2024', onClose }) {
             {/* Mark Distribution Accordion / Grid */}
             <div className="mock-distribution-section">
               <div className="mock-dist-header">
-                <h3>📊 Official 100-Mark Syllabus Weightage</h3>
+                <h3 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                  <BarChartIcon size={18} />
+                  <span>Official 100-Mark Syllabus Weightage</span>
+                </h3>
                 <span className="mock-dist-sum">Total: 100 Marks</span>
               </div>
               <div className="mock-dist-chips">
@@ -321,7 +348,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
               <div className="mock-distribution-grid">
                 {DISTRIBUTION.map((seg, i) => (
                   <div key={i} className="mock-dist-item">
-                    <span className="mock-dist-icon">{seg.icon}</span>
+                    <span className="bp-topic-num-badge">{seg.code}</span>
                     <div className="mock-dist-info">
                       <span className="mock-dist-name">{seg.label}</span>
                       <span className="mock-dist-sub">{seg.part}</span>
@@ -334,7 +361,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
 
             {/* Ready to Start Confirmation Box */}
             <div className="mock-confirm-box">
-              <div className="mock-confirm-icon">🚀</div>
+              <div className="mock-confirm-icon"><TargetIcon size={24} /></div>
               <div className="mock-confirm-text">
                 <h4>Ready to Start?</h4>
                 <p>
@@ -347,7 +374,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
                 onClick={handleStartExam}
               >
                 <span>Yes, Ready to Start ({activeYear})</span>
-                <span className="launch-arrow">➔</span>
+                <span className="launch-arrow"><ArrowRightIcon size={16} /></span>
               </button>
             </div>
           </div>
@@ -372,7 +399,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
 
               {/* Countdown Timer */}
               <div className={`mock-countdown-timer ${timerUrgent ? 'urgent' : ''}`}>
-                <span className="timer-icon">{timerUrgent ? '🔥' : '⏱️'}</span>
+                <span className="timer-icon">{timerUrgent ? <FlameIcon size={18} /> : <ClockIcon size={18} />}</span>
                 <span className="timer-digits">{formatTime(timeLeft)}</span>
               </div>
 
@@ -389,8 +416,10 @@ export default function MockExamModal({ year = '2024', onClose }) {
                   className="mock-exit-trigger-btn"
                   onClick={() => setShowExitConfirm(true)}
                   title="Exit exam"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                 >
-                  ✕ Exit Exam
+                  <XIcon size={14} />
+                  <span>Exit Exam</span>
                 </button>
               </div>
             </header>
@@ -410,7 +439,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
                 {/* Meta row */}
                 <div className="mock-q-meta-row">
                   <div className="mock-q-meta-left">
-                    <span className="mock-q-tag">{q.segIcon} {q.segLabel}</span>
+                    <span className="mock-q-tag">{q.segLabel}</span>
                     <span className="mock-part-pill">{q.part}</span>
                   </div>
                   <div className="mock-q-meta-right">
@@ -420,7 +449,8 @@ export default function MockExamModal({ year = '2024', onClose }) {
                       onClick={() => toggleFlag(currentIdx)}
                       title="Flag question for review"
                     >
-                      <span>{flagged[currentIdx] ? '🚩 Flagged' : '🏳️ Flag for review'}</span>
+                      <FlagIcon size={14} filled={!!flagged[currentIdx]} />
+                      <span>{flagged[currentIdx] ? 'Flagged' : 'Flag for review'}</span>
                     </button>
                   </div>
                 </div>
@@ -446,7 +476,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
                       >
                         <span className="mock-opt-bubble">{optLetters[idx]}</span>
                         <span className="mock-opt-label">{opt}</span>
-                        {isSelected && <span className="mock-opt-check">✓</span>}
+                        {isSelected && <span className="mock-opt-check"><CheckIcon size={14} /></span>}
                       </button>
                     );
                   })}
@@ -493,8 +523,10 @@ export default function MockExamModal({ year = '2024', onClose }) {
                 type="button"
                 className="mock-footer-nav-btn next-primary"
                 onClick={handleNext}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
-                {currentIdx === totalQuestions - 1 ? 'Review & Submit ➔' : 'Next Question →'}
+                <span>{currentIdx === totalQuestions - 1 ? 'Review & Submit' : 'Next Question'}</span>
+                <ArrowRightIcon size={15} />
               </button>
             </footer>
 
@@ -502,7 +534,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
             {showSubmitConfirm && (
               <div className="mock-confirm-overlay" onClick={() => setShowSubmitConfirm(false)}>
                 <div className="mock-confirm-modal" onClick={e => e.stopPropagation()}>
-                  <div className="mcm-icon">⚠️</div>
+                  <div className="mcm-icon"><AlertTriangleIcon size={26} /></div>
                   <h3>Submit Examination?</h3>
                   <p>
                     You have answered <strong>{Object.keys(answers).length}</strong> out of <strong>{totalQuestions}</strong> questions.
@@ -534,7 +566,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
             {showExitConfirm && (
               <div className="mock-confirm-overlay" onClick={() => setShowExitConfirm(false)}>
                 <div className="mock-confirm-modal" onClick={e => e.stopPropagation()}>
-                  <div className="mcm-icon">⚠️</div>
+                  <div className="mcm-icon"><AlertTriangleIcon size={26} /></div>
                   <h3>Exit Examination?</h3>
                   <p>
                     Are you sure you want to exit? <strong>You will lose all your exam progress and answered questions.</strong>
@@ -573,15 +605,18 @@ export default function MockExamModal({ year = '2024', onClose }) {
            ═══════════════════════════════════════════════════════ */}
         {phase === 'result' && (
           <div className="mock-result-screen">
-            <button className="mock-close-btn" onClick={onClose} aria-label="Close">✕</button>
+            <button className="mock-close-btn" onClick={onClose} aria-label="Close">
+              <XIcon size={18} />
+            </button>
 
             {/* Hero Result Banner */}
             <div className="mock-result-hero">
-              <div className="mrh-badge">
-                📅 {activeYear === 'all' ? 'All Years Mixed' : `${activeYear} Exam Pattern`}
+              <div className="mrh-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                <CalendarIcon size={14} />
+                <span>{activeYear === 'all' ? 'All Years Mixed' : `${activeYear} Exam Pattern`}</span>
               </div>
               <div className="mrh-trophy">
-                {percentage >= 65 ? '🏆' : percentage >= 45 ? '🎯' : '📚'}
+                <TrophyIcon size={42} />
               </div>
               <h2 className="mrh-title">
                 {percentage >= 65 ? 'Outstanding Performance!' : percentage >= 45 ? 'Good Effort!' : 'Keep Practicing!'}
@@ -606,28 +641,31 @@ export default function MockExamModal({ year = '2024', onClose }) {
             <div className="mock-result-stats-row">
               <div className="mres-stat-card green">
                 <span className="mres-val">{correctCount}</span>
-                <span className="mres-lbl">✅ Correct (+{correctCount})</span>
+                <span className="mres-lbl">Correct (+{correctCount})</span>
               </div>
               <div className="mres-stat-card red">
                 <span className="mres-val">{wrongCount}</span>
-                <span className="mres-lbl">❌ Wrong (−{(wrongCount * 0.3333).toFixed(2)})</span>
+                <span className="mres-lbl">Wrong (−{(wrongCount * 0.3333).toFixed(2)})</span>
               </div>
               <div className="mres-stat-card gray">
                 <span className="mres-val">{unansweredCount}</span>
-                <span className="mres-lbl">⊘ Unanswered (0)</span>
+                <span className="mres-lbl">Unanswered (0)</span>
               </div>
               <div className="mres-stat-card blue">
                 <span className="mres-val">
                   {Object.keys(answers).length > 0 ? `${Math.round((correctCount / Object.keys(answers).length) * 100)}%` : '0%'}
                 </span>
-                <span className="mres-lbl">🎯 Accuracy Rate</span>
+                <span className="mres-lbl">Accuracy Rate</span>
               </div>
             </div>
 
             {/* Section-Wise Syllabus Performance Breakdown */}
             <div className="mock-section-breakdown-card">
               <div className="msbc-title">
-                <h3>📊 Section-Wise Syllabus Breakdown</h3>
+                <h3 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                  <BarChartIcon size={18} />
+                  <span>Section-Wise Syllabus Breakdown</span>
+                </h3>
                 <span className="msbc-subtitle">Target 70%+ across all sections</span>
               </div>
               <div className="msbc-list">
@@ -647,7 +685,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
                   return (
                     <div key={idx} className="msbc-row">
                       <div className="msbc-row-header">
-                        <span className="msbc-icon">{seg.icon}</span>
+                        <span className="bp-topic-num-badge">{seg.code}</span>
                         <div className="msbc-name-wrap">
                           <span className="msbc-name">{seg.label}</span>
                           <span className="msbc-part-tag">{seg.part}</span>
@@ -674,7 +712,10 @@ export default function MockExamModal({ year = '2024', onClose }) {
             {/* Detailed Question Review List */}
             <div className="mock-review-section">
               <div className="mrs-header">
-                <h3>📝 Review Questions & Solutions</h3>
+                <h3 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                  <ClipboardListIcon size={18} />
+                  <span>Review Questions & Solutions</span>
+                </h3>
                 <div className="mrs-filter-chips">
                   <button
                     type="button"
@@ -725,9 +766,9 @@ export default function MockExamModal({ year = '2024', onClose }) {
                     >
                       <div className="mrs-item-top">
                         <span className="mrs-item-num">Q{i + 1}</span>
-                        <span className="mrs-item-topic">{item.segIcon} {item.segLabel}</span>
+                        <span className="mrs-item-topic">{item.segLabel}</span>
                         <span className={`mrs-item-badge ${isCorrect ? 'correct' : isWrong ? 'wrong' : 'unanswered'}`}>
-                          {isCorrect ? '✓ Correct (+1.00)' : isWrong ? '✗ Wrong (−0.33)' : '⊘ Unanswered (0)'}
+                          {isCorrect ? 'Correct (+1.00)' : isWrong ? 'Wrong (−0.33)' : 'Unanswered (0)'}
                         </span>
                       </div>
                       <div className="mrs-item-text">
@@ -744,7 +785,7 @@ export default function MockExamModal({ year = '2024', onClose }) {
                             <div key={oIdx} className={optCls}>
                               <span className="mrs-opt-letter">{optLetters[oIdx]}</span>
                               <span className="mrs-opt-content">{opt}</span>
-                              {isKey && <span className="mrs-opt-tag">✓ Correct Answer</span>}
+                              {isKey && <span className="mrs-opt-tag"><CheckIcon size={12} /> Correct Answer</span>}
                               {isChosen && !isKey && <span className="mrs-opt-tag wrong">Your Answer</span>}
                             </div>
                           );
@@ -752,7 +793,11 @@ export default function MockExamModal({ year = '2024', onClose }) {
                       </div>
                       {item.explanation && (
                         <div className="mrs-explanation-box">
-                          <strong>💡 Explanation:</strong> {item.explanation}
+                          <strong style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                            <LightbulbIcon size={14} />
+                            <span>Explanation:</span>
+                          </strong>{' '}
+                          {item.explanation}
                         </div>
                       )}
                     </div>
@@ -767,15 +812,19 @@ export default function MockExamModal({ year = '2024', onClose }) {
                 type="button"
                 className="btn btn-primary mrf-btn"
                 onClick={() => setPhase('ready')}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
-                🔄 Create Another Mock Exam (Pick Year)
+                <RotateIcon size={15} />
+                <span>Create Another Mock Exam (Pick Year)</span>
               </button>
               <button
                 type="button"
                 className="btn btn-secondary mrf-close"
                 onClick={onClose}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
-                ✕ Close Exam Portal
+                <XIcon size={15} />
+                <span>Close Exam Portal</span>
               </button>
             </div>
           </div>

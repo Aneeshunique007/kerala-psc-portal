@@ -17,6 +17,22 @@ import SyllabusModal from './components/SyllabusModal';
 import BlueprintDashboard from './components/BlueprintDashboard';
 import MockExamModal from './components/MockExamModal';
 import FormattedQuestion from './components/FormattedQuestion';
+import BookmarksPage from './components/BookmarksPage';
+import {
+  BookmarkIcon,
+  RotateIcon,
+  CheckIcon,
+  XIcon,
+  SearchIcon,
+  ChevronDownIcon,
+  LayoutDashboardIcon,
+  FileTextIcon,
+  TargetIcon,
+  ArrowRightIcon,
+  AlertTriangleIcon,
+  TrophyIcon,
+  CheckCircleIcon
+} from './components/Icons';
 import './App.css';
 
 const MALAYALAM_TOPIC_ALIASES = {
@@ -86,7 +102,8 @@ export default function App() {
   const currentUser = users.find(u => u.id === activeUserId) || null;
 
   // Selected Topic & Practice State
-  const [viewMode, setViewMode] = useState('blueprint'); // 'blueprint' (homepage) or 'quiz'
+  const [viewMode, setViewMode] = useState('blueprint'); // 'blueprint' (homepage), 'quiz', or 'bookmarks'
+  const [previousViewMode, setPreviousViewMode] = useState('blueprint');
   const [selectedTopic, setSelectedTopic] = useState('all');
   const [selectedYear, setSelectedYear] = useState('2026');
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -97,8 +114,6 @@ export default function App() {
   const [showMockExam, setShowMockExam] = useState(false);
   const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-  const [showBookmarkDropdown, setShowBookmarkDropdown] = useState(false);
-  const bookmarkDropdownRef = React.useRef(null);
   const [sidebarYearDropdownOpen, setSidebarYearDropdownOpen] = useState(false);
   const sidebarYearDropdownRef = React.useRef(null);
 
@@ -383,34 +398,55 @@ export default function App() {
     persistUsers(updated);
   };
 
+  const handleClearAllBookmarks = () => {
+    if (!currentUser) return;
+    const updated = users.map(u => {
+      if (u.id === activeUserId) {
+        return {
+          ...u,
+          bookmarkedQuestions: []
+        };
+      }
+      return u;
+    });
+    persistUsers(updated);
+  };
+
+  const handleOpenBookmarks = () => {
+    if (viewMode === 'bookmarks') {
+      setViewMode(previousViewMode || 'blueprint');
+    } else {
+      setPreviousViewMode(viewMode === 'bookmarks' ? 'blueprint' : viewMode);
+      setViewMode('bookmarks');
+    }
+  };
+
   const getBookmarkedQuestionsList = () => {
     return userBookmarks.map(id => {
-      return (
-        QUESTION_BANK.find(q => q.id === id) ||
-        ENGLISH_QUESTION_BANK.find(q => q.id === id) ||
-        PYQ_QUESTION_BANK.find(q => q.id === id) ||
-        null
-      );
+      const qMal = QUESTION_BANK.find(q => q.id === id);
+      if (qMal) return { ...qMal, subject: qMal.subject || 'malayalam' };
+      const qEng = ENGLISH_QUESTION_BANK.find(q => q.id === id);
+      if (qEng) return { ...qEng, subject: qEng.subject || 'english' };
+      const qPyq = PYQ_QUESTION_BANK.find(q => q.id === id);
+      if (qPyq) return { ...qPyq, subject: qPyq.subject || 'pyq' };
+      return null;
     }).filter(Boolean);
   };
 
   const bookmarkedList = getBookmarkedQuestionsList();
 
-  // Close dropdowns on click outside
+  // Close year dropdown on click outside
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (bookmarkDropdownRef.current && !bookmarkDropdownRef.current.contains(e.target)) {
-        setShowBookmarkDropdown(false);
-      }
       if (sidebarYearDropdownRef.current && !sidebarYearDropdownRef.current.contains(e.target)) {
         setSidebarYearDropdownOpen(false);
       }
     };
-    if (showBookmarkDropdown || sidebarYearDropdownOpen) {
+    if (sidebarYearDropdownOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showBookmarkDropdown, sidebarYearDropdownOpen]);
+  }, [sidebarYearDropdownOpen]);
 
   // Filter mistake queue by current subject
   const currentSubjectRepeatQueue = userRepeatQueue.filter(q => {
@@ -451,7 +487,7 @@ export default function App() {
 
   const getTopicCounts = (topicId) => {
     const bank = activeSubject === 'pyq'
-      ? currentQuestionBank.filter(q => q.year === selectedYear || q.id.includes(`_${selectedYear}_`))
+      ? currentQuestionBank.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`))
       : currentQuestionBank;
     const total = topicId === 'all'
       ? bank.length
@@ -474,7 +510,7 @@ export default function App() {
     }
 
     if (activeSubject === 'pyq') {
-      pool = pool.filter(q => q.year === selectedYear || q.id.includes(`_${selectedYear}_`));
+      pool = pool.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`));
     }
     return pool;
   };
@@ -514,7 +550,7 @@ export default function App() {
           ? PYQ_QUESTION_BANK.some(pq => pq.id === freshQ.id)
           : QUESTION_BANK.some(mq => mq.id === freshQ.id);
         const matchesCurrentTopic = selectedTopic === 'all' || matchesTopic(freshQ.topic, selectedTopic);
-        const matchesYear = activeSubject !== 'pyq' || freshQ.year === selectedYear || freshQ.id.includes(`_${selectedYear}_`);
+        const matchesYear = activeSubject !== 'pyq' || freshQ.year === selectedYear || String(freshQ.id || '').includes(`_${selectedYear}_`);
         const passedMinGap = !rep.minAvailableAt || currentTotal >= rep.minAvailableAt;
         const notInRecentHistory = !userHistory.slice(-5).includes(freshQ.id);
         const notCurrent = freshQ.id !== currentQuestion?.id;
@@ -893,7 +929,7 @@ export default function App() {
               className={`subject-switch-btn ${activeSubject === 'malayalam' ? 'active' : ''}`}
               onClick={() => handleSwitchSubject('malayalam')}
             >
-              <span className="subject-btn-label">📚 Malayalam</span>
+              <span className="subject-btn-label">Malayalam</span>
               <span className="subject-qcount">{QUESTION_BANK.length.toLocaleString()} Qs</span>
             </button>
             <button
@@ -901,7 +937,7 @@ export default function App() {
               className={`subject-switch-btn ${activeSubject === 'english' ? 'active' : ''}`}
               onClick={() => handleSwitchSubject('english')}
             >
-              <span className="subject-btn-label">🇬🇧 English</span>
+              <span className="subject-btn-label">General English</span>
               <span className="subject-qcount">{ENGLISH_QUESTION_BANK.length.toLocaleString()} Qs</span>
             </button>
           </div>
@@ -912,7 +948,7 @@ export default function App() {
               className="pyq-switch-btn-left"
               onClick={() => handleSwitchSubject('pyq')}
             >
-              <span className="pyq-btn-title">📜 PYQ Papers</span>
+              <span className="pyq-btn-title">Previous Year Papers</span>
               <span className="subject-qcount">
                 {`${(PYQ_YEARS.find(y => y.id === selectedYear) || PYQ_YEARS[0]).count.toLocaleString()} Qs`}
               </span>
@@ -928,14 +964,14 @@ export default function App() {
                 }}
                 title="Select Exam Year"
               >
-                <span>📅 {selectedYear}</span>
-                <span className={`sidebar-year-chevron ${sidebarYearDropdownOpen ? 'open' : ''}`}>▾</span>
+                <span>{selectedYear}</span>
+                <ChevronDownIcon size={14} className={`sidebar-year-chevron ${sidebarYearDropdownOpen ? 'open' : ''}`} />
               </button>
 
               {sidebarYearDropdownOpen && (
                 <div className="sidebar-year-dropdown-menu">
                   <div className="sidebar-year-dropdown-header">
-                    <span>📅 Select Exam Year</span>
+                    <span>Select Exam Year</span>
                   </div>
                   <div className="sidebar-year-list">
                     {PYQ_YEARS.map(yr => {
@@ -1008,7 +1044,13 @@ export default function App() {
                     }
                   }}
                 >
-                  <span className="topic-icon">{topic.icon}</span>
+                  <span className="topic-icon">
+                    {topic.id === 'all' ? (
+                      <TargetIcon size={16} />
+                    ) : (
+                      <span className="topic-accent-dot" style={{ background: topic.color || '#38bdf8' }} />
+                    )}
+                  </span>
                   <div className="topic-details">
                     <div className="topic-name-row">
                       <div className="topic-name">{topic.name}</div>
@@ -1083,121 +1125,54 @@ export default function App() {
                   className={`mob-subj-btn ${activeSubject === 'malayalam' ? 'active' : ''}`}
                   onClick={() => handleSwitchSubject('malayalam')}
                 >
-                  📚 Mal
+                  MAL
                 </button>
                 <button
                   type="button"
                   className={`mob-subj-btn ${activeSubject === 'english' ? 'active' : ''}`}
                   onClick={() => handleSwitchSubject('english')}
                 >
-                  🇬🇧 Eng
+                  ENG
                 </button>
                 <button
                   type="button"
                   className={`mob-subj-btn ${activeSubject === 'pyq' ? 'active' : ''}`}
                   onClick={() => handleSwitchSubject('pyq')}
                 >
-                  📜 PYQ
+                  PYQ
                 </button>
               </div>
 
               {/* Desktop View: Active Topic Pill */}
               {viewMode === 'blueprint' ? (
                 <div className="current-topic-pill desktop-only blueprint-nav-pill">
-                  <span>📋</span>
+                  <LayoutDashboardIcon size={15} />
                   <strong>LDC 100-Mark Blueprint Dashboard</strong>
+                </div>
+              ) : viewMode === 'bookmarks' ? (
+                <div className="current-topic-pill desktop-only">
+                  <BookmarkIcon size={15} />
+                  <strong>Bookmarks Library</strong>
                 </div>
               ) : (
                 <div className="current-topic-pill desktop-only">
-                  <span>{currentTopicData.icon}</span>
-                  <strong>{isRepeatOnlyMode ? '🔁 Spaced Review Queue' : currentTopicData.name}</strong>
+                  {isRepeatOnlyMode ? <RotateIcon size={15} /> : <TargetIcon size={15} />}
+                  <strong>{isRepeatOnlyMode ? 'Review Queue' : currentTopicData.name}</strong>
                 </div>
               )}
             </div>
 
             <div className="nav-right">
-              {/* Bookmarks Dropdown Button on Navbar */}
-              <div className="nav-bookmark-wrapper" ref={bookmarkDropdownRef}>
-                <button
-                  type="button"
-                  className={`nav-bookmark-btn ${showBookmarkDropdown ? 'active' : ''}`}
-                  onClick={() => setShowBookmarkDropdown(!showBookmarkDropdown)}
-                  title="View Saved Questions & Answers"
-                  aria-expanded={showBookmarkDropdown}
-                >
-                  <span className="nav-bookmark-icon">{userBookmarks.length > 0 ? '❤️' : '🤍'}</span>
-                  <span className="nav-bookmark-label desktop-only">Saved Qns</span>
-                  {userBookmarks.length > 0 && (
-                    <span className="nav-bookmark-badge">{userBookmarks.length}</span>
-                  )}
-                </button>
-
-                {/* Bookmark Scrollable Dropdown Menu */}
-                {showBookmarkDropdown && (
-                  <div className="bookmark-dropdown-menu">
-                    <div className="bookmark-dropdown-header">
-                      <div className="bmark-header-title">
-                        <span>❤️ Saved Questions</span>
-                        <span className="bmark-count-tag">{userBookmarks.length} Saved</span>
-                      </div>
-                      <button
-                        type="button"
-                        className="bmark-close-btn"
-                        onClick={() => setShowBookmarkDropdown(false)}
-                      >
-                        ✕
-                      </button>
-                    </div>
-
-                    <div className="bookmark-scroll-list">
-                      {bookmarkedList.length === 0 ? (
-                        <div className="bookmark-empty-state">
-                          <div style={{ fontSize: '3rem', marginBottom: '0.75rem' }}>❤️</div>
-                          <h4>No Saved Questions Yet</h4>
-                          <p>Click the <strong>❤️ Heart</strong> on any question while practicing to save it here for fast revision.</p>
-                        </div>
-                      ) : (
-                        bookmarkedList.map((item, idx) => (
-                          <div key={item.id || idx} className="bookmark-item-card">
-                            <div className="bmark-item-meta">
-                              <span className="bmark-item-num">Q{idx + 1}</span>
-                              <span className="bmark-item-topic">
-                                {item.qp_code ? `QP: ${item.qp_code}` : (item.year ? `${item.year} PYQ` : 'Saved Question')}
-                              </span>
-                              <button
-                                type="button"
-                                className="bmark-remove-btn"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  handleToggleBookmark(item.id);
-                                }}
-                                title="Remove Bookmark"
-                              >
-                                ✕
-                              </button>
-                            </div>
-
-                            <div className="bmark-item-question">
-                              <QuestionDisplay text={item.question} />
-                            </div>
-
-                            <div className="bmark-item-answer">
-                              <span className="bmark-ans-label">✓ Answer:</span>
-                              <strong>{item.options[item.answer]}</strong>
-                            </div>
-
-                            {item.explanation && (
-                              <div className="bmark-item-explanation">
-                                <strong>Explanation:</strong> {item.explanation}
-                              </div>
-                            )}
-                          </div>
-                        ))
-                      )}
-                    </div>
-                  </div>
-                )}
-              </div>
+              {/* Bookmarks Navbar Button (Opens Full Page Library) */}
+              <button
+                type="button"
+                className={`nav-bookmark-btn ${viewMode === 'bookmarks' ? 'active' : ''}`}
+                onClick={handleOpenBookmarks}
+                title="View Bookmarks (Full Page Library)"
+              >
+                <BookmarkIcon size={16} className="nav-bookmark-icon" />
+                <span className="nav-bookmark-label desktop-only">Bookmark</span>
+              </button>
 
               {/* Spaced Review Queue Pill on Navbar - shown only when not empty */}
               {currentSubjectRepeatQueue.length > 0 && (
@@ -1207,7 +1182,7 @@ export default function App() {
                   onClick={() => setShowRepeatModal(true)}
                   title={`Open Spaced Review Queue (${currentSubjectRepeatQueue.length} questions waiting)`}
                 >
-                  <span className="queue-pill-icon">🔁</span>
+                  <RotateIcon size={15} className="queue-pill-icon" />
                   <span className="queue-pill-label desktop-only">Review Queue</span>
                   <span className="queue-pill-badge">{currentSubjectRepeatQueue.length}</span>
                 </button>
@@ -1220,7 +1195,9 @@ export default function App() {
                   onClick={() => setShowProfileModal(true)}
                   title="View Profile and Topic Mastery Analytics"
                 >
-                  <span className="user-nav-avatar">{currentUser.avatar || '🎓'}</span>
+                  <span className="user-nav-avatar-initials">
+                    {currentUser.name ? currentUser.name[0].toUpperCase() : 'U'}
+                  </span>
                   <span className="user-nav-name desktop-only">{currentUser.name}</span>
                 </button>
               )}
@@ -1236,10 +1213,10 @@ export default function App() {
               aria-expanded={topicDropdownOpen}
             >
               <div className="trigger-left">
-                <span className="trigger-icon">{isRepeatOnlyMode ? '🔁' : currentTopicData.icon}</span>
-                <span className="trigger-name">{isRepeatOnlyMode ? 'Mistake Queue Practice' : currentTopicData.name}</span>
+                <span className="trigger-icon">{isRepeatOnlyMode ? <RotateIcon size={15} /> : <TargetIcon size={15} />}</span>
+                <span className="trigger-name">{isRepeatOnlyMode ? 'Review Queue Practice' : currentTopicData.name}</span>
               </div>
-              <span className={`trigger-chevron ${topicDropdownOpen ? 'open' : ''}`}>▾</span>
+              <ChevronDownIcon size={15} className={`trigger-chevron ${topicDropdownOpen ? 'open' : ''}`} />
             </button>
 
             {/* Custom Themed Dropdown Menu */}
@@ -1265,7 +1242,7 @@ export default function App() {
                   {/* PYQ Year Switcher Tabs inside dropdown */}
                   {activeSubject === 'pyq' && (
                     <div className="dropdown-year-switcher">
-                      <span className="dropdown-year-title">📅 Exam Year:</span>
+                      <span className="dropdown-year-title">Exam Year:</span>
                       <div className="dropdown-year-chips">
                         {PYQ_YEARS.map(yr => (
                           <button
@@ -1296,7 +1273,7 @@ export default function App() {
                             setViewMode('quiz');
                           }}
                         >
-                          <span className="opt-icon">🎯</span>
+                          <span className="opt-icon"><TargetIcon size={16} /></span>
                           <div className="opt-details">
                             <div className="opt-title">All Topics (Full Mock)</div>
                             <div className="opt-count">
@@ -1337,7 +1314,9 @@ export default function App() {
                             setViewMode('quiz');
                           }}
                         >
-                          <span className="opt-icon">{topic.icon}</span>
+                          <span className="opt-icon">
+                            <span className="topic-accent-dot" style={{ background: topic.color || '#38bdf8' }} />
+                          </span>
                           <div className="opt-details">
                             <div className="opt-title">{topic.name}</div>
                             <div className="opt-count">
@@ -1388,6 +1367,19 @@ export default function App() {
               onStartMock={handleStartMockFromBlueprint}
               questionCounts={questionCountsMap}
             />
+          ) : viewMode === 'bookmarks' ? (
+            <BookmarksPage
+              bookmarkedQuestions={bookmarkedList}
+              onRemoveBookmark={handleToggleBookmark}
+              onClearAll={handleClearAllBookmarks}
+              onBack={() => setViewMode(previousViewMode || 'blueprint')}
+              onPracticeTopic={(subject, topicId) => {
+                handleSelectSubjectTopic(subject, topicId);
+              }}
+              syllabusTopics={SYLLABUS_TOPICS}
+              englishTopics={ENGLISH_SYLLABUS_TOPICS}
+              pyqTopics={PYQ_TOPICS}
+            />
           ) : currentQuestion ? (
             <div className="question-card">
               {/* Question Header & Badges */}
@@ -1398,12 +1390,13 @@ export default function App() {
                   </span>
                   {activeSubject === 'pyq' && (currentQuestion.year || currentQuestion.id) && (
                     <span className="pyq-year-badge">
-                      {currentQuestion.year || currentQuestion.id.match(/20\d\d/)?.[0] || 'PYQ'} Exam
+                      {currentQuestion.year || String(currentQuestion.id || '').match(/20\d\d/)?.[0] || 'PYQ'} Exam
                     </span>
                   )}
                   {activeSubject === 'pyq' && currentQuestion.qp_code && (
                     <span className="pyq-paper-code-badge" title="Original Kerala PSC Question Paper Code">
-                      📜 QP: <strong>{currentQuestion.qp_code}</strong>
+                      <FileTextIcon size={12} />
+                      <span>QP: <strong>{currentQuestion.qp_code}</strong></span>
                     </span>
                   )}
                 </div>
@@ -1411,24 +1404,25 @@ export default function App() {
                 <div className="card-top-bar-right">
                   {currentQuestion.isRepeat && (
                     <div className="repeat-alert-banner">
-                      🔁 Spaced Repetition {currentQuestion.repeatDifficulty ? `• Level: ${currentQuestion.repeatDifficulty.toUpperCase()}` : ''} {currentQuestion.remainingRepeats ? (
+                      <RotateIcon size={13} />
+                      <span>Review Queue {currentQuestion.repeatDifficulty ? `• Level: ${currentQuestion.repeatDifficulty.toUpperCase()}` : ''} {currentQuestion.remainingRepeats ? (
                         isAnswered && selectedOption === currentQuestion.answer
                           ? `(${Math.max(0, currentQuestion.remainingRepeats - 1)} repeat${Math.max(0, currentQuestion.remainingRepeats - 1) === 1 ? '' : 's'} left)`
                           : `(${currentQuestion.remainingRepeats} repeat${currentQuestion.remainingRepeats > 1 ? 's' : ''} left)`
-                      ) : ''} — Practice until mastered!
+                      ) : ''} — Practice until mastered</span>
                     </div>
                   )}
 
-                  {/* Bookmark / Heart Button */}
+                  {/* Bookmark Button */}
                   <button
                     type="button"
                     className={`card-bookmark-btn ${isCurrentBookmarked ? 'bookmarked' : ''}`}
                     onClick={() => handleToggleBookmark(currentQuestion.id)}
-                    title={isCurrentBookmarked ? "Remove from Favorites" : "Save this question to Favorites"}
-                    aria-label="Save question"
+                    title={isCurrentBookmarked ? "Remove Bookmark" : "Bookmark this question"}
+                    aria-label="Bookmark question"
                   >
-                    <span className="heart-icon">{isCurrentBookmarked ? '❤️' : '🤍'}</span>
-                    <span className="bookmark-btn-text">{isCurrentBookmarked ? 'Saved' : 'Save'}</span>
+                    <BookmarkIcon size={15} />
+                    <span className="bookmark-btn-text">{isCurrentBookmarked ? 'Bookmarked' : 'Bookmark'}</span>
                   </button>
                 </div>
               </div>
@@ -1473,11 +1467,17 @@ export default function App() {
                 <div className={`feedback-card ${selectedOption === currentQuestion.answer ? 'correct' : 'wrong'}`}>
                   {selectedOption === currentQuestion.answer ? (
                     <div className="feedback-title">
-                      <span>🎉 Correct Answer!</span>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+                        <CheckIcon size={18} />
+                        <span>Correct Answer</span>
+                      </span>
                     </div>
                   ) : (
                     <div className="feedback-title">
-                      <span>❌ Incorrect</span>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+                        <XIcon size={18} />
+                        <span>Incorrect</span>
+                      </span>
                     </div>
                   )}
 
@@ -1507,7 +1507,7 @@ export default function App() {
                           onClick={() => handleDifficultySelect('hard')}
                           title="Will repeat 3 times (minimum 5 question gap)"
                         >
-                          <span className="diff-btn-icon">🔴</span>
+                          <span className="diff-indicator diff-hard" />
                           <div className="diff-btn-content">
                             <span className="diff-btn-name">Hard</span>
                             <span className="diff-btn-desc">Repeats 3 times</span>
@@ -1520,7 +1520,7 @@ export default function App() {
                           onClick={() => handleDifficultySelect('easy')}
                           title="Mark as learned (will not repeat)"
                         >
-                          <span className="diff-btn-icon">🟢</span>
+                          <span className="diff-indicator diff-easy" />
                           <div className="diff-btn-content">
                             <span className="diff-btn-name">Easy</span>
                             <span className="diff-btn-desc">Mark as Learned</span>
@@ -1529,11 +1529,11 @@ export default function App() {
                       </div>
                     </div>
                   ) : selectedOption === currentQuestion.answer && currentQuestion.isRepeat ? (
-                    /* FOR REPEAT QUESTION ANSWERED CORRECTLY: Automatic countdown progress -> Next Question button */
+                    /* FOR REPEAT QUESTION ANSWERED CORRECTLY */
                     <div className="difficulty-prompt-container repeat-correct-prompt">
                       <div className="auto-queue-banner repeat-success-banner">
                         <span className="auto-queue-icon">
-                          {(currentQuestion.remainingRepeats ?? 3) <= 1 ? '🏆' : '🔁'}
+                          {(currentQuestion.remainingRepeats ?? 3) <= 1 ? <CheckIcon size={18} /> : <RotateIcon size={18} />}
                         </span>
                         <div className="auto-queue-text">
                           <strong>
@@ -1557,7 +1557,7 @@ export default function App() {
                           title="Advance to next question (Enter / Space)"
                         >
                           <span>Next Question</span>
-                          <span>➔</span>
+                          <ArrowRightIcon size={15} />
                         </button>
                       </div>
 
@@ -1575,10 +1575,12 @@ export default function App() {
                       )}
                     </div>
                   ) : (
-                    /* FOR INCORRECT ANSWER: Auto-queued for 3 repeats (min 5 gap) -> Next Question button */
+                    /* FOR INCORRECT ANSWER: Auto-queued for 3 repeats (min 5 gap) */
                     <div className="difficulty-prompt-container incorrect-prompt">
                       <div className="auto-queue-banner">
-                        <span className="auto-queue-icon">🔁</span>
+                        <span className="auto-queue-icon">
+                          <RotateIcon size={18} />
+                        </span>
                         <div className="auto-queue-text">
                           <strong>
                             {currentQuestion.isRepeat
@@ -1597,7 +1599,7 @@ export default function App() {
                           title="Proceed to next question (Enter / Space)"
                         >
                           <span>Next Question</span>
-                          <span>➔</span>
+                          <ArrowRightIcon size={15} />
                         </button>
                       </div>
 
@@ -1617,7 +1619,9 @@ export default function App() {
             </div>
           ) : (
             <div className="empty-state-card">
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎉</div>
+              <div style={{ marginBottom: '1rem', color: '#10b981', display: 'flex', justifyContent: 'center' }}>
+                <TrophyIcon size={44} />
+              </div>
               <h3>Topic Completely Mastered!</h3>
               <p>No questions remaining in this filter. Switch topics or practice another syllabus section.</p>
               <button
@@ -1639,17 +1643,22 @@ export default function App() {
         <div className="modal-overlay" onClick={() => setShowRepeatModal(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <div className="modal-header">
-              <h2 className="modal-title">
-                <span>🔁 Spaced Review & Repeat Queue ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? 'PYQ' : 'Malayalam'})</span>
+              <h2 className="modal-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <RotateIcon size={18} />
+                <span>Spaced Review & Repeat Queue ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? 'PYQ' : 'Malayalam'})</span>
                 <span className="repeat-badge-count">{currentSubjectRepeatQueue.length}</span>
               </h2>
-              <button className="close-btn" onClick={() => setShowRepeatModal(false)}>✕</button>
+              <button className="close-btn" onClick={() => setShowRepeatModal(false)} aria-label="Close">
+                <XIcon size={18} />
+              </button>
             </div>
 
             <div className="modal-body">
               {currentSubjectRepeatQueue.length === 0 ? (
                 <div style={{ textAlign: 'center', padding: '2.5rem', color: '#94a3b8' }}>
-                  <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✨</div>
+                  <div style={{ marginBottom: '1rem', color: '#38bdf8', display: 'flex', justifyContent: 'center' }}>
+                    <CheckCircleIcon size={44} />
+                  </div>
                   <h3 style={{ color: '#fff', marginBottom: '0.5rem' }}>No Missed Questions in Queue!</h3>
                   <p>You have mastered all attempted questions in this subject. Any missed questions will automatically appear here for spaced repetition.</p>
                 </div>
@@ -1661,13 +1670,14 @@ export default function App() {
                     </p>
                     <button
                       className="next-btn"
-                      style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.85rem' }}
+                      style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                       onClick={() => {
                         setShowRepeatModal(false);
                         setIsRepeatOnlyMode(true);
                       }}
                     >
-                      Practice Missed Questions Only ➔
+                      <span>Practice Missed Questions Only</span>
+                      <ArrowRightIcon size={14} />
                     </button>
                   </div>
 

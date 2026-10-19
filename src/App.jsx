@@ -15,6 +15,8 @@ import ProfileModal from './components/ProfileModal';
 import ConfirmModal from './components/ConfirmModal';
 import SyllabusModal from './components/SyllabusModal';
 import BlueprintDashboard from './components/BlueprintDashboard';
+import MockExamModal from './components/MockExamModal';
+import FormattedQuestion from './components/FormattedQuestion';
 import './App.css';
 
 const MALAYALAM_TOPIC_ALIASES = {
@@ -38,79 +40,7 @@ const MALAYALAM_TOPIC_ALIASES = {
 };
 
 function QuestionDisplay({ text }) {
-  if (!text) return null;
-
-  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
-
-  // Check for markdown table (at least 2 lines starting and ending with '|')
-  const tableLines = lines.filter(l => l.startsWith('|') && l.endsWith('|'));
-  if (tableLines.length >= 2) {
-    const introLines = lines.filter(l => !l.startsWith('|'));
-    const headerLine = tableLines[0];
-    const headers = headerLine.split('|').map(c => c.trim()).filter(Boolean);
-    const rowLines = tableLines.slice(1).filter(l => !l.includes('---'));
-    const rows = rowLines.map(r => r.split('|').map(c => c.trim()).filter(Boolean));
-
-    return (
-      <div className="pyq-rendered-question">
-        {introLines.length > 0 && (
-          <div className="pyq-question-intro">{introLines.join('\n')}</div>
-        )}
-        <div className="pyq-table-container">
-          <table className="pyq-table">
-            <thead>
-              <tr>
-                {headers.map((h, i) => (
-                  <th key={i}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, rIdx) => (
-                <tr key={rIdx}>
-                  {row.map((cell, cIdx) => (
-                    <td key={cIdx}>{cell}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    );
-  }
-
-  // Check for statement list lines: (i), (ii), (iii), (iv) or (a), (b) or 1., 2.
-  const statementLines = [];
-  const introLines = [];
-  lines.forEach(l => {
-    const match = l.match(/^(\([ivx0-9a-z]+\)|[ivx0-9a-z]+\.)\s*(.+)$/i);
-    if (match) {
-      statementLines.push({ badge: match[1], body: match[2] });
-    } else {
-      introLines.push(l);
-    }
-  });
-
-  if (statementLines.length > 0) {
-    return (
-      <div className="pyq-rendered-question">
-        {introLines.length > 0 && (
-          <div className="pyq-question-intro">{introLines.join('\n')}</div>
-        )}
-        <div className="pyq-statements-list">
-          {statementLines.map((st, idx) => (
-            <div key={idx} className="pyq-statement-item">
-              <span className="pyq-statement-badge">{st.badge}</span>
-              <span className="pyq-statement-body">{st.body}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  return <span>{text}</span>;
+  return <FormattedQuestion text={text} />;
 }
 
 const getFreshQuestion = (q) => {
@@ -164,6 +94,7 @@ export default function App() {
   const [isAnswered, setIsAnswered] = useState(false);
   const [showRepeatModal, setShowRepeatModal] = useState(false);
   const [isRepeatOnlyMode, setIsRepeatOnlyMode] = useState(false);
+  const [showMockExam, setShowMockExam] = useState(false);
   const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [showBookmarkDropdown, setShowBookmarkDropdown] = useState(false);
@@ -401,14 +332,8 @@ export default function App() {
     setMobileSidebarOpen(false);
   };
 
-  const handleStartMockFromBlueprint = (subject = 'pyq', topicId = 'all') => {
-    setActiveSubject(subject);
-    localStorage.setItem('psc_active_subject', subject);
-    setSelectedTopic(topicId);
-    setViewMode('quiz');
-    setIsRepeatOnlyMode(false);
-    setTopicDropdownOpen(false);
-    setMobileSidebarOpen(false);
+  const handleStartMockFromBlueprint = () => {
+    setShowMockExam(true);
   };
 
   const questionCountsMap = {
@@ -1662,6 +1587,14 @@ export default function App() {
           isOpen={showSyllabusModal}
           onClose={() => setShowSyllabusModal(false)}
           onSelectSubjectTopic={handleSelectSubjectTopic}
+        />
+      )}
+
+      {/* Mock Exam Modal */}
+      {showMockExam && (
+        <MockExamModal
+          year={selectedYear}
+          onClose={() => setShowMockExam(false)}
         />
       )}
 

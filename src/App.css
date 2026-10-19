@@ -6418,54 +6418,406 @@
   color: #1d4ed8;
 }
 
-/* Responsive adjustments */
+/* ═══════════════════════════════════════════════
+   COMPREHENSIVE MOBILE RESPONSIVE SUITE
+   ═══════════════════════════════════════════════ */
+
+/* Mobile viewports up to 768px (Tablets & Phones) */
 @media (max-width: 768px) {
   .mock-modal-overlay {
     padding: 0;
   }
+
   .mock-modal-box {
     max-height: 100vh;
+    max-height: 100dvh;
     height: 100vh;
+    height: 100dvh;
     border-radius: 0;
+    border: none;
   }
+
+  .mock-modal-box.exam-mode {
+    max-width: 100%;
+    height: 100vh;
+    height: 100dvh;
+  }
+
   .mock-ready-screen,
   .mock-result-screen {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 0.95rem;
+    gap: 1.15rem;
   }
+
+  .mock-ready-title {
+    font-size: 1.35rem;
+  }
+
+  .mock-ready-sub {
+    font-size: 0.82rem;
+  }
+
+  .mock-year-btn-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.45rem;
+  }
+
+  .mock-year-chip {
+    padding: 0.55rem 0.35rem;
+  }
+
+  .my-year-num {
+    font-size: 1rem;
+  }
+
+  .my-year-label {
+    font-size: 0.68rem;
+  }
+
+  .my-year-tag {
+    font-size: 0.62rem;
+  }
+
   .mock-ready-stats-row,
   .mock-result-stats-row {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
   }
-  .mock-q-card {
-    padding: 1.25rem 1rem;
+
+  .mock-stat-card {
+    padding: 0.65rem 0.4rem;
   }
-  .mock-q-text-mal {
-    font-size: 1.05rem;
+
+  .mstat-val {
+    font-size: 0.98rem;
   }
-  .mock-options-container {
-    gap: 0.55rem;
+
+  .mstat-lbl {
+    font-size: 0.68rem;
   }
-  .mock-option-row {
-    padding: 0.75rem 0.95rem;
+
+  .mock-distribution-grid {
+    grid-template-columns: 1fr;
+    max-height: 160px;
   }
+
+  .mock-dist-item {
+    padding: 0.45rem 0.6rem;
+  }
+
   .mock-confirm-box {
     flex-direction: column;
     text-align: center;
     gap: 0.85rem;
+    padding: 1rem;
   }
+
   .mock-launch-btn {
     width: 100%;
     justify-content: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.9rem;
   }
-  .mock-palette-sidebar {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 50;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
+
+  /* Exam Active Screen */
+  .mock-exam-topbar {
+    padding: 0.6rem 0.85rem;
+    gap: 0.45rem;
+    flex-wrap: wrap;
   }
+
+  .mock-topbar-left {
+    gap: 0.45rem;
+  }
+
+  .mock-exam-badge {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .mock-qnum-indicator {
+    font-size: 0.82rem;
+  }
+
+  .mock-countdown-timer {
+    padding: 0.3rem 0.75rem;
+  }
+
+  .mock-countdown-timer .timer-digits {
+    font-size: 1rem;
+  }
+
+  .mock-topbar-actions {
+    gap: 0.4rem;
+    margin-left: auto;
+  }
+
+  .mock-submit-trigger-btn,
+  .mock-exit-trigger-btn {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.74rem;
+  }
+
+  .mock-q-card {
+    padding: 1rem 0.9rem 2.5rem;
+    gap: 1rem;
+  }
+
+  .mock-q-meta-row {
+    gap: 0.4rem;
+  }
+
+  .mock-q-tag {
+    font-size: 0.76rem;
+    padding: 0.25rem 0.55rem;
+  }
+
+  .mock-part-pill {
+    font-size: 0.66rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .mock-flag-btn {
+    padding: 0.25rem 0.55rem;
+    font-size: 0.72rem;
+  }
+
+  .mock-q-num-label {
+    font-size: 1.1rem;
+  }
+
+  .mock-q-statement-body .pyq-question-intro {
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  .mock-q-statement-body .pyq-statement-item {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.95rem;
+    gap: 0.5rem;
+  }
+
+  .mock-q-statement-body .pyq-statement-badge {
+    font-size: 0.92rem;
+    min-width: 1.8rem;
+  }
+
+  .mock-options-container {
+    gap: 0.6rem;
+  }
+
+  .mock-option-row {
+    padding: 0.75rem 0.9rem;
+    gap: 0.75rem;
+  }
+
+  .mock-opt-bubble {
+    width: 28px;
+    height: 28px;
+    font-size: 0.78rem;
+  }
+
+  .mock-opt-label {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* Exam Footer */
+  .mock-exam-footer {
+    padding: 0.65rem 0.85rem;
+    gap: 0.5rem;
+  }
+
+  .mock-footer-nav-btn {
+    padding: 0.55rem 0.95rem;
+    font-size: 0.82rem;
+  }
+
+  .mock-footer-stats {
+    font-size: 0.74rem;
+    gap: 0.6rem;
+  }
+
+  /* Results Screen */
+  .mrh-title {
+    font-size: 1.4rem;
+  }
+
+  .mrh-trophy {
+    font-size: 2.5rem;
+  }
+
+  .mrh-score-num {
+    font-size: 2.6rem;
+  }
+
+  .mrh-score-max {
+    font-size: 1.2rem;
+  }
+
+  .mres-val {
+    font-size: 1.25rem;
+  }
+
+  .mres-lbl {
+    font-size: 0.7rem;
+  }
+
   .mrs-options-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mock-result-footer {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .mrf-btn,
+  .mrf-close {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Blueprint Hero & Strips on Mobile */
+  .blueprint-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .blueprint-cta-btn,
+  .blueprint-secondary-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .blueprint-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .blueprint-strip-item {
+    padding: 0.75rem 0.65rem;
+  }
+
+  .strip-part {
+    font-size: 0.78rem;
+  }
+
+  .strip-marks {
+    font-size: 1rem;
+  }
+
+  .strip-sub {
+    font-size: 0.68rem;
+  }
+
+  .blueprint-hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* Extra small mobile screens (under 480px: Galaxy, iPhone SE, standard Androids) */
+@media (max-width: 480px) {
+  .mock-ready-screen,
+  .mock-result-screen {
+    padding: 1rem 0.75rem;
+  }
+
+  .mock-ready-title {
+    font-size: 1.2rem;
+  }
+
+  .mock-exam-topbar {
+    padding: 0.5rem 0.65rem;
+  }
+
+  .mock-qnum-indicator strong {
+    font-size: 0.95rem;
+  }
+
+  .mock-countdown-timer .timer-digits {
+    font-size: 0.9rem;
+  }
+
+  .mock-submit-trigger-btn,
+  .mock-exit-trigger-btn {
+    padding: 0.3rem 0.55rem;
+    font-size: 0.7rem;
+  }
+
+  .mock-q-card {
+    padding: 0.85rem 0.7rem 2.5rem;
+  }
+
+  .mock-q-statement-body .pyq-question-intro {
+    font-size: 0.98rem;
+  }
+
+  .mock-q-statement-body .pyq-statement-item {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .mock-option-row {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .mock-opt-label {
+    font-size: 0.88rem;
+  }
+
+  .mock-exam-footer {
+    padding: 0.55rem 0.65rem;
+  }
+
+  .mock-footer-nav-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.78rem;
+  }
+
+  .mock-footer-stats {
+    display: none; /* Hide verbose stats on ultra-compact screens so buttons have maximum room */
+  }
+
+  .mock-confirm-modal {
+    padding: 1.25rem 1rem;
+    max-width: 92%;
+  }
+
+  .mock-confirm-modal h3 {
+    font-size: 1.05rem;
+  }
+
+  .mock-confirm-modal p {
+    font-size: 0.82rem;
+  }
+
+  .mcm-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .mcm-cancel-btn,
+  .mcm-submit-btn,
+  .mcm-exit-btn {
+    width: 100%;
+  }
+
+  .blueprint-strip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bp-section-card {
+    padding: 0.95rem 0.85rem;
+  }
+
+  .bp-topic-card {
+    padding: 0.95rem 0.85rem;
+  }
+
+  .bp-topic-title {
+    font-size: 0.9rem;
   }
 }

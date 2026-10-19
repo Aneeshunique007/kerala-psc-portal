@@ -635,13 +635,43 @@ export default function App() {
     } else {
       soundFX.playWrong();
 
+      const currentTotal = (userStats.total || 0) + 1;
+      const qId = currentQuestion.id;
+      const freshQ = getFreshQuestion(currentQuestion);
+      const existingRepeat = userUpcomingRepeats.find(item => item.id === qId);
+      const prevRemaining = existingRepeat?.remainingRepeats;
+      const nextRemaining = (existingRepeat && prevRemaining > 1) ? prevRemaining - 1 : 3;
+
+      const repeatItem = {
+        ...freshQ,
+        id: qId,
+        difficulty: 'hard',
+        remainingRepeats: nextRemaining,
+        minAvailableAt: currentTotal + 5
+      };
+
+      const updatedUpcoming = [
+        ...userUpcomingRepeats.filter(item => item.id !== qId),
+        repeatItem
+      ];
+      let updatedRepeatQueue = [...userRepeatQueue];
+      if (!updatedRepeatQueue.some(item => item.id === qId)) {
+        updatedRepeatQueue.push(repeatItem);
+      } else {
+        updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
+      }
+      const updatedLearned = (currentUser?.learnedQuestions || []).filter(id => id !== qId);
+
       const updated = users.map(u => {
         if (u.id === activeUserId) {
           return {
             ...u,
+            repeatQueue: updatedRepeatQueue,
+            upcomingRepeats: updatedUpcoming,
+            learnedQuestions: updatedLearned,
             stats: {
               ...u.stats,
-              total: u.stats.total + 1,
+              total: currentTotal,
               streak: 0,
               topicStats: newTopicStats
             }
@@ -698,9 +728,9 @@ export default function App() {
       }
       updatedLearned = updatedLearned.filter(id => id !== qId);
     } else if (difficulty === 'hard') {
-      // Repeats 5 times with min 5 question gap
+      // Repeats 3 times with min 5 question gap
       const prevRemaining = existingRepeat?.remainingRepeats;
-      const nextRemaining = (existingRepeat && prevRemaining > 1) ? prevRemaining - 1 : 5;
+      const nextRemaining = (existingRepeat && prevRemaining > 1) ? prevRemaining - 1 : 3;
 
       const repeatItem = {
         ...freshQ,
@@ -738,7 +768,7 @@ export default function App() {
     loadNextQuestion();
   };
 
-  // Keyboard shortcut listener for Easy (1/e), Medium (2/m), Hard (3/h)
+  // Keyboard shortcut listener for Easy (1/e) & Hard (2/h) when correct, or Next (Enter/Space/1) when incorrect
   useEffect(() => {
     if (!isAnswered || !currentQuestion) return;
 
@@ -747,24 +777,17 @@ export default function App() {
       const isCorrect = selectedOption === currentQuestion.answer;
 
       if (isCorrect) {
-        if (e.key === '1' || e.key.toLowerCase() === 'e') {
+        if (e.key === '1' || e.key.toLowerCase() === 'h') {
+          e.preventDefault();
+          handleDifficultySelect('hard');
+        } else if (e.key === '2' || e.key.toLowerCase() === 'e') {
           e.preventDefault();
           handleDifficultySelect('easy');
-        } else if (e.key === '2' || e.key.toLowerCase() === 'm') {
-          e.preventDefault();
-          handleDifficultySelect('medium');
-        } else if (e.key === '3' || e.key.toLowerCase() === 'h') {
-          e.preventDefault();
-          handleDifficultySelect('hard');
         }
       } else {
-        // When incorrect, 1 and 2 map to Medium (2x), 3 maps to Hard (5x)
-        if (e.key === '1' || e.key === '2' || e.key.toLowerCase() === 'm') {
+        if (e.key === 'Enter' || e.key === ' ' || e.key === '1' || e.key === 'ArrowRight') {
           e.preventDefault();
-          handleDifficultySelect('medium');
-        } else if (e.key === '3' || e.key.toLowerCase() === 'h') {
-          e.preventDefault();
-          handleDifficultySelect('hard');
+          loadNextQuestion();
         }
       }
     };
@@ -1424,30 +1447,35 @@ export default function App() {
                     <strong>Explanation:</strong> {currentQuestion.explanation}
                   </div>
 
-                  {currentQuestion.isRepeat && (
+                  {currentQuestion.isRepeat && selectedOption === currentQuestion.answer && (
                     <div className="repeat-info-subtext">
                       🔁 Scheduled Repeat ({currentQuestion.repeatDifficulty || 'spaced'} • {currentQuestion.remainingRepeats || 1} left). Choose <strong>Easy</strong> to complete & mark as learned!
                     </div>
                   )}
 
-                  <div className="difficulty-prompt-container">
-                    <div className="difficulty-prompt-header">
-                      <span className="difficulty-prompt-title">
-                        {selectedOption === currentQuestion.answer
-                          ? 'Rate recall to continue:'
-                          : 'Schedule practice to master this question:'}
-                      </span>
-                      <span className="difficulty-shortcut-hint">
-                        {selectedOption === currentQuestion.answer ? (
-                          <>Keyboard: <kbd>1</kbd> Easy &bull; <kbd>2</kbd> Med &bull; <kbd>3</kbd> Hard</>
-                        ) : (
-                          <>Keyboard: <kbd>1</kbd> or <kbd>2</kbd> Med &bull; <kbd>3</kbd> Hard</>
-                        )}
-                      </span>
-                    </div>
+                  {selectedOption === currentQuestion.answer ? (
+                    /* FOR RIGHT ANSWER: Show Easy and Hard (3 times) */
+                    <div className="difficulty-prompt-container">
+                      <div className="difficulty-prompt-header">
+                        <span className="difficulty-prompt-title">
+                          Rate recall to continue:
+                        </span>
+                      </div>
 
-                    <div className={`difficulty-buttons-grid ${selectedOption !== currentQuestion.answer ? 'two-options' : ''}`}>
-                      {selectedOption === currentQuestion.answer && (
+                      <div className="difficulty-buttons-grid two-options">
+                        <button
+                          type="button"
+                          className="diff-btn diff-btn-hard"
+                          onClick={() => handleDifficultySelect('hard')}
+                          title="Will repeat 3 times (minimum 5 question gap)"
+                        >
+                          <span className="diff-btn-icon">🔴</span>
+                          <div className="diff-btn-content">
+                            <span className="diff-btn-name">Hard</span>
+                            <span className="diff-btn-desc">Repeats 3 times</span>
+                          </div>
+                        </button>
+
                         <button
                           type="button"
                           className="diff-btn diff-btn-easy"
@@ -1460,36 +1488,35 @@ export default function App() {
                             <span className="diff-btn-desc">Mark as Learned</span>
                           </div>
                         </button>
-                      )}
-
-                      <button
-                        type="button"
-                        className="diff-btn diff-btn-medium"
-                        onClick={() => handleDifficultySelect('medium')}
-                        title="Will repeat 2 more times (minimum 5 question gap)"
-                      >
-                        <span className="diff-btn-icon">🟡</span>
-                        <div className="diff-btn-content">
-                          <span className="diff-btn-name">Medium</span>
-                          <span className="diff-btn-desc">Repeats 2 times</span>
-                        </div>
-                      </button>
-
-                      <button
-                        type="button"
-                        className="diff-btn diff-btn-hard"
-                        onClick={() => handleDifficultySelect('hard')}
-                        title="Will repeat 5 times (minimum 5 question gap)"
-                      >
-                        <span className="diff-btn-icon">🔴</span>
-                        <div className="diff-btn-content">
-                          <span className="diff-btn-name">Hard</span>
-                          <span className="diff-btn-desc">Repeats 5 times</span>
-                        </div>
-                      </button>
+                      </div>
                     </div>
+                  ) : (
+                    /* FOR INCORRECT ANSWER: Auto-queued for 3 repeats (min 5 gap) -> Next Question button */
+                    <div className="difficulty-prompt-container incorrect-prompt">
+                      <div className="auto-queue-banner">
+                        <span className="auto-queue-icon">🔁</span>
+                        <div className="auto-queue-text">
+                          <strong>
+                            {currentQuestion.isRepeat
+                              ? `Scheduled repeat (${(currentQuestion.remainingRepeats && currentQuestion.remainingRepeats > 1) ? currentQuestion.remainingRepeats - 1 : 3} left)`
+                              : 'Scheduled to repeat 3 times'}
+                          </strong>
+                          <span>Will reappear after at least 5 questions</span>
+                        </div>
+                      </div>
 
-                    {selectedOption !== currentQuestion.answer && (
+                      <div className="action-row" style={{ marginTop: '0.85rem' }}>
+                        <button
+                          type="button"
+                          className="next-btn"
+                          onClick={loadNextQuestion}
+                          title="Proceed to next question (Enter / Space)"
+                        >
+                          <span>Next Question</span>
+                          <span>➔</span>
+                        </button>
+                      </div>
+
                       <div className="misclick-escape-row">
                         <button
                           type="button"
@@ -1499,8 +1526,8 @@ export default function App() {
                           Accidental misclick? Skip repeats & mark as learned
                         </button>
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { QUESTION_BANK } from '../data/questions';
-import { ENGLISH_QUESTION_BANK } from '../data/english_questions';
+import {
+  QUESTION_BANK,
+  ENGLISH_QUESTION_BANK,
+  PYQ_QUESTION_BANK
+} from '../data/questions';
 
 export default function ProfileModal({
   user,
@@ -113,7 +116,7 @@ export default function ProfileModal({
             </div>
             <div className="profile-metric-card">
               <span className="metric-icon">📚</span>
-              <div className="metric-val">{QUESTION_BANK.length + ENGLISH_QUESTION_BANK.length}</div>
+              <div className="metric-val">{QUESTION_BANK.length + ENGLISH_QUESTION_BANK.length + PYQ_QUESTION_BANK.length}</div>
               <div className="metric-lbl">Total Question Bank</div>
             </div>
           </div>

@@ -1,5 +1,11 @@
-import { SYLLABUS_TOPICS, QUESTION_BANK } from './src/data/questions.js';
-import { ENGLISH_SYLLABUS_TOPICS, ENGLISH_QUESTION_BANK } from './src/data/english_questions.js';
+import {
+  SYLLABUS_TOPICS,
+  QUESTION_BANK,
+  ENGLISH_SYLLABUS_TOPICS,
+  ENGLISH_QUESTION_BANK,
+  PYQ_TOPICS,
+  PYQ_QUESTION_BANK
+} from './src/data/questions.js';
 
 let passed = 0;
 let failed = 0;
@@ -20,13 +26,18 @@ console.log('====================================================\n');
 
 // 1. Malayalam Bank Verification
 console.log('1. MALAYALAM SYLLABUS & QUESTION BANK (10 Marks):');
-assert(SYLLABUS_TOPICS.length === 14, `Expected 14 topic items (1 all + 13 topics), found ${SYLLABUS_TOPICS.length}`);
+assert(SYLLABUS_TOPICS.length === 18, `Expected 18 topic items (1 all + 17 topics), found ${SYLLABUS_TOPICS.length}`);
 assert(QUESTION_BANK.length >= 2700, `Expected at least 2700 Malayalam questions, found ${QUESTION_BANK.length}`);
 
 // 2. English Bank Verification
 console.log('\n2. GENERAL ENGLISH SYLLABUS & QUESTION BANK (10 Marks):');
 assert(ENGLISH_SYLLABUS_TOPICS.length === 28, `Expected 28 topic items (1 all + 27 topics), found ${ENGLISH_SYLLABUS_TOPICS.length}`);
 assert(ENGLISH_QUESTION_BANK.length >= 4100, `Expected at least 4100 English questions, found ${ENGLISH_QUESTION_BANK.length}`);
+
+// 3. PYQ Bank Verification
+console.log('\n3. PYQ (2020-2026) TOPICS & QUESTION BANK:');
+assert(PYQ_TOPICS.length === 14, `Expected 14 PYQ topic items (1 all + 13 subject topics), found ${PYQ_TOPICS.length}`);
+assert(PYQ_QUESTION_BANK.length >= 10, `Expected at least 10 PYQ questions in bank, found ${PYQ_QUESTION_BANK.length}`);
 
 // 3. Verify min 150 questions per topic for all 27 English topics
 console.log('\n3. VERIFY MIN 150 QUESTIONS FOR EVERY ENGLISH TOPIC:');

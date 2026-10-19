@@ -63,8 +63,8 @@ export default function App() {
       const parsed = JSON.parse(saved);
       return parsed.map(u => ({
         ...u,
-        repeatQueue: (u.repeatQueue || []).map(getFreshQuestion),
-        upcomingRepeats: (u.upcomingRepeats || []).map(getFreshQuestion)
+        repeatQueue: (u.repeatQueue || []).map(rep => ({ ...getFreshQuestion(rep), ...rep })),
+        upcomingRepeats: (u.upcomingRepeats || []).map(rep => ({ ...getFreshQuestion(rep), ...rep }))
       }));
     } catch {
       return [];
@@ -638,15 +638,12 @@ export default function App() {
       const currentTotal = (userStats.total || 0) + 1;
       const qId = currentQuestion.id;
       const freshQ = getFreshQuestion(currentQuestion);
-      const existingRepeat = userUpcomingRepeats.find(item => item.id === qId);
-      const prevRemaining = existingRepeat?.remainingRepeats;
-      const nextRemaining = (existingRepeat && prevRemaining > 1) ? prevRemaining - 1 : 3;
 
       const repeatItem = {
         ...freshQ,
         id: qId,
         difficulty: 'hard',
-        remainingRepeats: nextRemaining,
+        remainingRepeats: 3,
         minAvailableAt: currentTotal + 5
       };
 
@@ -730,26 +727,38 @@ export default function App() {
     } else if (difficulty === 'hard') {
       // Repeats 3 times with min 5 question gap
       const prevRemaining = existingRepeat?.remainingRepeats;
-      const nextRemaining = (existingRepeat && prevRemaining > 1) ? prevRemaining - 1 : 3;
 
-      const repeatItem = {
-        ...freshQ,
-        id: qId,
-        difficulty: 'hard',
-        remainingRepeats: nextRemaining,
-        minAvailableAt: currentTotal + 5
-      };
-
-      updatedUpcoming = [
-        ...updatedUpcoming.filter(item => item.id !== qId),
-        repeatItem
-      ];
-      if (!updatedRepeatQueue.some(item => item.id === qId)) {
-        updatedRepeatQueue.push(repeatItem);
+      if (existingRepeat && prevRemaining !== undefined && prevRemaining <= 1) {
+        // Completed all 3 repeats! Remove from repeat queues and mark as learned
+        updatedUpcoming = updatedUpcoming.filter(item => item.id !== qId);
+        updatedRepeatQueue = updatedRepeatQueue.filter(item => item.id !== qId);
+        if (!updatedLearned.includes(qId)) {
+          updatedLearned.push(qId);
+        }
       } else {
-        updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
+        const nextRemaining = (existingRepeat && prevRemaining && prevRemaining > 1)
+          ? prevRemaining - 1
+          : 3;
+
+        const repeatItem = {
+          ...freshQ,
+          id: qId,
+          difficulty: 'hard',
+          remainingRepeats: nextRemaining,
+          minAvailableAt: currentTotal + 5
+        };
+
+        updatedUpcoming = [
+          ...updatedUpcoming.filter(item => item.id !== qId),
+          repeatItem
+        ];
+        if (!updatedRepeatQueue.some(item => item.id === qId)) {
+          updatedRepeatQueue.push(repeatItem);
+        } else {
+          updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
+        }
+        updatedLearned = updatedLearned.filter(id => id !== qId);
       }
-      updatedLearned = updatedLearned.filter(id => id !== qId);
     }
 
     const updated = users.map(u => {

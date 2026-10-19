@@ -1097,6 +1097,19 @@
   color: #e9d5ff;
 }
 
+.auto-queue-banner.repeat-success-banner {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.auto-queue-banner.repeat-success-banner strong {
+  color: #34d399;
+}
+
+.auto-queue-banner.repeat-success-banner span {
+  color: #a7f3d0;
+}
+
 .action-row {
   margin-top: 1.25rem;
   display: flex;

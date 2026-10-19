@@ -479,7 +479,7 @@ export default function App() {
     return pool;
   };
 
-  const loadNextQuestion = (resetHistory = false) => {
+  const loadNextQuestion = (resetHistory = false, overrideUpcoming = null) => {
     setIsAnswered(false);
     setSelectedOption(null);
 
@@ -492,6 +492,7 @@ export default function App() {
 
     let nextQ = null;
     let isRepeat = false;
+    const upcomingList = overrideUpcoming || userUpcomingRepeats;
 
     if (isRepeatOnlyMode) {
       // In Mistake Queue mode: pick from currentSubjectRepeatQueue without immediate repeats
@@ -505,7 +506,7 @@ export default function App() {
       // Regular mode: check if an upcoming repeat question for this subject & topic is due
       // Must NOT be the question just answered or in the last 5 questions (min 5 gap)
       const currentTotal = userStats.total || 0;
-      const eligibleUpcoming = userUpcomingRepeats.filter(rep => {
+      const eligibleUpcoming = upcomingList.filter(rep => {
         const freshQ = getFreshQuestion(rep);
         const isCurrentSubject = activeSubject === 'english'
           ? ENGLISH_QUESTION_BANK.some(eq => eq.id === freshQ.id)
@@ -556,7 +557,7 @@ export default function App() {
         finalOptions = shuffledOptions;
       }
 
-      const activeRep = userUpcomingRepeats.find(r => r.id === nextQ.id);
+      const activeRep = upcomingList.find(r => r.id === nextQ.id);
 
       setCurrentQuestion({
         ...nextQ,
@@ -616,13 +617,56 @@ export default function App() {
         });
       }
 
+      const qId = currentQuestion.id;
+      const currentTotal = (userStats.total || 0) + 1;
+      let updatedUpcoming = [...userUpcomingRepeats];
+      let updatedRepeatQueue = [...userRepeatQueue];
+      let updatedLearned = [...(currentUser?.learnedQuestions || [])];
+
+      if (currentQuestion.isRepeat) {
+        // When an active repeat question is answered correctly: automatically advance repeat countdown!
+        const existingRepeat = userUpcomingRepeats.find(item => item.id === qId);
+        const prevRemaining = currentQuestion.remainingRepeats ?? existingRepeat?.remainingRepeats ?? 3;
+        const nextRemaining = prevRemaining > 1 ? prevRemaining - 1 : 0;
+
+        if (nextRemaining === 0) {
+          // Completed all 3 repeats! Mastered and graduated
+          updatedUpcoming = updatedUpcoming.filter(item => item.id !== qId);
+          updatedRepeatQueue = updatedRepeatQueue.filter(item => item.id !== qId);
+          if (!updatedLearned.includes(qId)) {
+            updatedLearned.push(qId);
+          }
+        } else {
+          const freshQ = getFreshQuestion(currentQuestion);
+          const repeatItem = {
+            ...freshQ,
+            id: qId,
+            difficulty: 'hard',
+            remainingRepeats: nextRemaining,
+            minAvailableAt: currentTotal + 5
+          };
+          updatedUpcoming = [
+            ...updatedUpcoming.filter(item => item.id !== qId),
+            repeatItem
+          ];
+          if (!updatedRepeatQueue.some(item => item.id === qId)) {
+            updatedRepeatQueue.push(repeatItem);
+          } else {
+            updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
+          }
+        }
+      }
+
       const updated = users.map(u => {
         if (u.id === activeUserId) {
           return {
             ...u,
+            repeatQueue: updatedRepeatQueue,
+            upcomingRepeats: updatedUpcoming,
+            learnedQuestions: updatedLearned,
             stats: {
               correct: u.stats.correct + 1,
-              total: u.stats.total + 1,
+              total: currentTotal,
               streak: newStreak,
               maxStreak: Math.max(u.stats.maxStreak || 0, newStreak),
               topicStats: newTopicStats
@@ -725,40 +769,25 @@ export default function App() {
       }
       updatedLearned = updatedLearned.filter(id => id !== qId);
     } else if (difficulty === 'hard') {
-      // Repeats 3 times with min 5 question gap
-      const prevRemaining = existingRepeat?.remainingRepeats;
+      // Fresh question marked Hard: schedules for 3 repeats with min 5 question gap
+      const repeatItem = {
+        ...freshQ,
+        id: qId,
+        difficulty: 'hard',
+        remainingRepeats: 3,
+        minAvailableAt: currentTotal + 5
+      };
 
-      if (existingRepeat && prevRemaining !== undefined && prevRemaining <= 1) {
-        // Completed all 3 repeats! Remove from repeat queues and mark as learned
-        updatedUpcoming = updatedUpcoming.filter(item => item.id !== qId);
-        updatedRepeatQueue = updatedRepeatQueue.filter(item => item.id !== qId);
-        if (!updatedLearned.includes(qId)) {
-          updatedLearned.push(qId);
-        }
+      updatedUpcoming = [
+        ...updatedUpcoming.filter(item => item.id !== qId),
+        repeatItem
+      ];
+      if (!updatedRepeatQueue.some(item => item.id === qId)) {
+        updatedRepeatQueue.push(repeatItem);
       } else {
-        const nextRemaining = (existingRepeat && prevRemaining && prevRemaining > 1)
-          ? prevRemaining - 1
-          : 3;
-
-        const repeatItem = {
-          ...freshQ,
-          id: qId,
-          difficulty: 'hard',
-          remainingRepeats: nextRemaining,
-          minAvailableAt: currentTotal + 5
-        };
-
-        updatedUpcoming = [
-          ...updatedUpcoming.filter(item => item.id !== qId),
-          repeatItem
-        ];
-        if (!updatedRepeatQueue.some(item => item.id === qId)) {
-          updatedRepeatQueue.push(repeatItem);
-        } else {
-          updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
-        }
-        updatedLearned = updatedLearned.filter(id => id !== qId);
+        updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
       }
+      updatedLearned = updatedLearned.filter(id => id !== qId);
     }
 
     const updated = users.map(u => {
@@ -774,7 +803,7 @@ export default function App() {
     });
 
     persistUsers(updated);
-    loadNextQuestion();
+    loadNextQuestion(false, updatedUpcoming);
   };
 
   // Keyboard shortcut listener for Easy (1/e) & Hard (2/h) when correct, or Next (Enter/Space/1) when incorrect
@@ -785,7 +814,8 @@ export default function App() {
       if (['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName)) return;
       const isCorrect = selectedOption === currentQuestion.answer;
 
-      if (isCorrect) {
+      if (isCorrect && !currentQuestion.isRepeat) {
+        // Fresh question answered correctly: 1/h for Hard, 2/e for Easy
         if (e.key === '1' || e.key.toLowerCase() === 'h') {
           e.preventDefault();
           handleDifficultySelect('hard');
@@ -794,6 +824,7 @@ export default function App() {
           handleDifficultySelect('easy');
         }
       } else {
+        // Repeat question answered correctly OR incorrect answer: Enter/Space/1/ArrowRight advances!
         if (e.key === 'Enter' || e.key === ' ' || e.key === '1' || e.key === 'ArrowRight') {
           e.preventDefault();
           loadNextQuestion();
@@ -1380,7 +1411,11 @@ export default function App() {
                 <div className="card-top-bar-right">
                   {currentQuestion.isRepeat && (
                     <div className="repeat-alert-banner">
-                      🔁 Spaced Repetition {currentQuestion.repeatDifficulty ? `• Level: ${currentQuestion.repeatDifficulty.toUpperCase()}` : ''} {currentQuestion.remainingRepeats ? `(${currentQuestion.remainingRepeats} repeat${currentQuestion.remainingRepeats > 1 ? 's' : ''} left)` : ''} — Practice until mastered!
+                      🔁 Spaced Repetition {currentQuestion.repeatDifficulty ? `• Level: ${currentQuestion.repeatDifficulty.toUpperCase()}` : ''} {currentQuestion.remainingRepeats ? (
+                        isAnswered && selectedOption === currentQuestion.answer
+                          ? `(${Math.max(0, currentQuestion.remainingRepeats - 1)} repeat${Math.max(0, currentQuestion.remainingRepeats - 1) === 1 ? '' : 's'} left)`
+                          : `(${currentQuestion.remainingRepeats} repeat${currentQuestion.remainingRepeats > 1 ? 's' : ''} left)`
+                      ) : ''} — Practice until mastered!
                     </div>
                   )}
 
@@ -1456,14 +1491,8 @@ export default function App() {
                     <strong>Explanation:</strong> {currentQuestion.explanation}
                   </div>
 
-                  {currentQuestion.isRepeat && selectedOption === currentQuestion.answer && (
-                    <div className="repeat-info-subtext">
-                      🔁 Scheduled Repeat ({currentQuestion.repeatDifficulty || 'spaced'} • {currentQuestion.remainingRepeats || 1} left). Choose <strong>Easy</strong> to complete & mark as learned!
-                    </div>
-                  )}
-
-                  {selectedOption === currentQuestion.answer ? (
-                    /* FOR RIGHT ANSWER: Show Easy and Hard (3 times) */
+                  {/* FOR FRESH RIGHT ANSWER: Show Hard (repeat 3x) and Easy (mark learned) */}
+                  {selectedOption === currentQuestion.answer && !currentQuestion.isRepeat ? (
                     <div className="difficulty-prompt-container">
                       <div className="difficulty-prompt-header">
                         <span className="difficulty-prompt-title">
@@ -1498,6 +1527,52 @@ export default function App() {
                           </div>
                         </button>
                       </div>
+                    </div>
+                  ) : selectedOption === currentQuestion.answer && currentQuestion.isRepeat ? (
+                    /* FOR REPEAT QUESTION ANSWERED CORRECTLY: Automatic countdown progress -> Next Question button */
+                    <div className="difficulty-prompt-container repeat-correct-prompt">
+                      <div className="auto-queue-banner repeat-success-banner">
+                        <span className="auto-queue-icon">
+                          {(currentQuestion.remainingRepeats ?? 3) <= 1 ? '🏆' : '🔁'}
+                        </span>
+                        <div className="auto-queue-text">
+                          <strong>
+                            {(currentQuestion.remainingRepeats ?? 3) <= 1
+                              ? 'Mastered! All 3 repeats completed'
+                              : `Repeat completed! (${(currentQuestion.remainingRepeats ?? 3) - 1} left)`}
+                          </strong>
+                          <span>
+                            {(currentQuestion.remainingRepeats ?? 3) <= 1
+                              ? 'Question successfully mastered and marked as learned!'
+                              : 'Will reappear after at least 5 questions'}
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="action-row" style={{ marginTop: '0.85rem' }}>
+                        <button
+                          type="button"
+                          className="next-btn"
+                          onClick={() => loadNextQuestion()}
+                          title="Advance to next question (Enter / Space)"
+                        >
+                          <span>Next Question</span>
+                          <span>➔</span>
+                        </button>
+                      </div>
+
+                      {(currentQuestion.remainingRepeats ?? 3) > 1 && (
+                        <div className="misclick-escape-row">
+                          <button
+                            type="button"
+                            className="misclick-escape-btn"
+                            onClick={() => handleDifficultySelect('easy')}
+                            title="Mark as fully learned immediately without waiting for remaining repeats"
+                          >
+                            Fully confident? Skip remaining repeats &amp; mark as learned
+                          </button>
+                        </div>
+                      )}
                     </div>
                   ) : (
                     /* FOR INCORRECT ANSWER: Auto-queued for 3 repeats (min 5 gap) -> Next Question button */

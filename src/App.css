@@ -4,8 +4,8 @@
   height: 100vh;
   width: 100vw;
   background: radial-gradient(circle at 10% 20%, rgba(30, 58, 138, 0.15) 0%, transparent 40%),
-              radial-gradient(circle at 90% 80%, rgba(13, 148, 136, 0.12) 0%, transparent 40%),
-              var(--bg-primary);
+    radial-gradient(circle at 90% 80%, rgba(13, 148, 136, 0.12) 0%, transparent 40%),
+    var(--bg-primary);
   overflow: hidden;
 }
 
@@ -22,8 +22,79 @@
 }
 
 .sidebar-header {
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.25rem;
   border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Sidebar Kerala PSC Seal Brand Button */
+.sidebar-brand-seal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.35rem 0.5rem;
+  margin: -0.35rem -0.5rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+  outline: none;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar-brand-seal-btn:hover {
+  background: rgba(245, 158, 11, 0.08);
+  transform: scale(1.03);
+}
+
+.sidebar-brand-seal-btn:active {
+  transform: scale(1.0);
+}
+
+.sidebar-brand-seal {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 10px rgba(245, 158, 11, 0.5));
+}
+
+.sidebar-brand-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.nav-brand-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.sidebar-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.sidebar-brand-title {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.sidebar-brand-sub {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-weight: 400;
+  margin-top: 1px;
 }
 
 .brand-badge {
@@ -211,6 +282,51 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+/* Navbar Kerala PSC Logo Button */
+.nav-brand-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.35rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.nav-brand-btn:hover {
+  transform: scale(1.06);
+}
+
+.nav-brand-seal {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px rgba(245, 158, 11, 0.45));
+}
+
+.nav-brand-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nav-brand-title {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #ffffff;
 }
 
 .nav-right {
@@ -893,6 +1009,7 @@
 }
 
 @media (max-width: 680px) {
+
   .difficulty-buttons-grid,
   .difficulty-buttons-grid.two-options {
     grid-template-columns: 1fr;
@@ -1048,6 +1165,7 @@
     opacity: 0;
     transform: translateY(16px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1059,6 +1177,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1066,9 +1185,21 @@
 }
 
 @keyframes shakeX {
-  0%, 100% { transform: translateX(0); }
-  20%, 60% { transform: translateX(-6px); }
-  40%, 80% { transform: translateX(6px); }
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(-6px);
+  }
+
+  40%,
+  80% {
+    transform: translateX(6px);
+  }
 }
 
 /* Responsive Utilities */
@@ -1323,6 +1454,30 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .nav-left {
+    gap: 0.45rem;
+  }
+
+  .nav-brand-seal {
+    width: 28px;
+    height: 28px;
+  }
+
+  .user-nav-badge {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+  }
+
+  .user-nav-avatar {
+    font-size: 1.2rem;
+    line-height: 1;
   }
 
   .mobile-topic-bar {
@@ -2445,6 +2600,7 @@
   .profile-metrics-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .profile-actions-grid,
   .profile-danger-zone {
     grid-template-columns: 1fr;
@@ -2801,8 +2957,13 @@
 }
 
 @keyframes confirmOverlayFade {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .confirm-modal-card {
@@ -2825,6 +2986,7 @@
     opacity: 0;
     transform: scale(0.92) translateY(8px);
   }
+
   100% {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -3651,7 +3813,7 @@
 /* Hero */
 .blueprint-hero {
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85)),
-              radial-gradient(ellipse at top left, rgba(56, 189, 248, 0.15), transparent 70%);
+    radial-gradient(ellipse at top left, rgba(56, 189, 248, 0.15), transparent 70%);
   border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: var(--radius-xl);
   padding: 2rem 2.25rem;
@@ -4200,9 +4362,17 @@
 }
 
 @keyframes heartPulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.35); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.35);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Navbar Bookmark Wrapper & Button */
@@ -4334,14 +4504,17 @@
 .bookmark-scroll-list::-webkit-scrollbar {
   width: 8px;
 }
+
 .bookmark-scroll-list::-webkit-scrollbar-track {
   background: rgba(15, 23, 42, 0.6);
   border-radius: 4px;
 }
+
 .bookmark-scroll-list::-webkit-scrollbar-thumb {
   background: rgba(244, 63, 94, 0.35);
   border-radius: 4px;
 }
+
 .bookmark-scroll-list::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 63, 94, 0.65);
 }
@@ -4536,4 +4709,3 @@
   background: rgba(0, 0, 0, 0.06);
   color: #475569;
 }
-

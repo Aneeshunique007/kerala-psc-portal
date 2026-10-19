@@ -372,13 +372,13 @@ export default function App() {
   };
 
   const handleSwitchSubject = (subject) => {
-    if (subject === activeSubject) return;
     setActiveSubject(subject);
     localStorage.setItem('psc_active_subject', subject);
     setSelectedTopic('all');
     setIsRepeatOnlyMode(false);
     setTopicDropdownOpen(false);
     setMobileSidebarOpen(false);
+    setViewMode('quiz');
   };
 
   const handleSelectSubjectTopic = (subject, topicId) => {
@@ -876,32 +876,25 @@ export default function App() {
       {/* Sidebar: Syllabus Topics */}
       <aside className={`sidebar ${mobileSidebarOpen ? 'mobile-open' : ''}`}>
         <div className="sidebar-header">
-          <div
-            className="brand-badge clickable"
+          <button
+            type="button"
+            className="sidebar-brand-seal-btn"
             onClick={() => {
               setViewMode('blueprint');
               setIsRepeatOnlyMode(false);
               setMobileSidebarOpen(false);
             }}
-            title="Click to go to Blueprint Home Dashboard"
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                setViewMode('blueprint');
-                setIsRepeatOnlyMode(false);
-                setMobileSidebarOpen(false);
-              }
-            }}
+            title="Go to Blueprint Home Dashboard"
           >
-            <div className="brand-icon">{activeSubject === 'english' ? '🇬🇧' : activeSubject === 'pyq' ? '📜' : '📚'}</div>
-            <div>
-              <h1 className="brand-title">
-                {activeSubject === 'english' ? 'General English' : activeSubject === 'pyq' ? 'PSC PYQs (2020-2026)' : 'PSC Malayalam'}
-              </h1>
-              <div className="brand-subtitle">{activeSubject === 'pyq' ? 'Original Exam Papers' : 'Official 10-Mark Syllabus Prep'}</div>
+            {/* Kerala PSC Logo Image */}
+            <div className="sidebar-brand-seal">
+              <img src="/kerala-psc-logo.jpg" alt="Kerala PSC Logo" className="sidebar-brand-img" />
             </div>
-          </div>
+            <div className="sidebar-brand-text">
+              <span className="sidebar-brand-title">Kerala PSC</span>
+              <span className="sidebar-brand-sub">LDC Practice Portal</span>
+            </div>
+          </button>
         </div>
 
         {/* Subject Switcher Tabs: Malayalam & English side-by-side, PYQ with Year Dropdown below */}
@@ -1083,6 +1076,18 @@ export default function App() {
         <header className="top-nav">
           <div className="top-nav-row-main">
             <div className="nav-left">
+              {/* Navbar Kerala PSC Logo — Mobile Only (sidebar hidden on mobile) */}
+              <button
+                type="button"
+                className="nav-brand-btn mobile-only"
+                onClick={() => setViewMode('blueprint')}
+                title="Go to Homescreen"
+              >
+                <div className="nav-brand-seal">
+                  <img src="/kerala-psc-logo.jpg" alt="Kerala PSC Logo" className="nav-brand-img" />
+                </div>
+              </button>
+
               {/* Mobile Subject Toggle */}
               <div className="mobile-subject-nav-toggle mobile-only">
                 <button
@@ -1228,7 +1233,7 @@ export default function App() {
                   title="View Profile and Topic Mastery Analytics"
                 >
                   <span className="user-nav-avatar">{currentUser.avatar || '🎓'}</span>
-                  <span className="user-nav-name">{currentUser.name}</span>
+                  <span className="user-nav-name desktop-only">{currentUser.name}</span>
                 </button>
               )}
             </div>
@@ -1300,6 +1305,7 @@ export default function App() {
                             setIsRepeatOnlyMode(false);
                             setSelectedTopic('all');
                             setTopicDropdownOpen(false);
+                            setViewMode('quiz');
                           }}
                         >
                           <span className="opt-icon">🎯</span>
@@ -1340,6 +1346,7 @@ export default function App() {
                             setIsRepeatOnlyMode(false);
                             setSelectedTopic(topic.id);
                             setTopicDropdownOpen(false);
+                            setViewMode('quiz');
                           }}
                         >
                           <span className="opt-icon">{topic.icon}</span>

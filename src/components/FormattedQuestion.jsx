@@ -5,7 +5,7 @@ const STATEMENT_BADGE_REGEX = /^(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e
 const INLINE_STATEMENT_REGEX = /([^\n])\s+(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e]\.)\s+/gi;
 const BADGE_FINDER_REGEX = /(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e]\.)\s+/gi;
 
-export default function FormattedQuestion({ text, className = '' }) {
+export default function FormattedQuestion({ text, className = '', showQpBadge = false }) {
   if (!text) return null;
 
   // Extract [QP: ...] code if present
@@ -38,7 +38,7 @@ export default function FormattedQuestion({ text, className = '' }) {
         {introLines.length > 0 && (
           <div className="pyq-question-intro">
             {introLines.join('\n')}
-            {qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
+            {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
           </div>
         )}
         <div className="pyq-table-container">
@@ -84,7 +84,7 @@ export default function FormattedQuestion({ text, className = '' }) {
         {introLines.length > 0 && (
           <div className="pyq-question-intro">
             <span>{introLines.join(' ')}</span>
-            {qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
+            {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
           </div>
         )}
         <div className="pyq-statements-list">
@@ -104,7 +104,7 @@ export default function FormattedQuestion({ text, className = '' }) {
     <div className={`pyq-rendered-question ${className}`}>
       <span className="pyq-question-intro">
         {clean}
-        {qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
+        {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
       </span>
     </div>
   );

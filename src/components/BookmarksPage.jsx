@@ -422,10 +422,10 @@ export default function BookmarksPage({
 
       {/* Confirmation Modal for Clearing All */}
       {showClearConfirm && (
-        <div className="bmark-modal-overlay">
-          <div className="bmark-modal-card">
+        <div className="bmark-modal-overlay" onClick={() => setShowClearConfirm(false)}>
+          <div className="bmark-modal-card" onClick={(e) => e.stopPropagation()}>
             <div className="bmark-modal-icon">
-              <AlertTriangleIcon size={32} />
+              <AlertTriangleIcon size={28} />
             </div>
             <h3>Clear All Bookmarks?</h3>
             <p>
@@ -434,14 +434,14 @@ export default function BookmarksPage({
             <div className="bmark-modal-actions">
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="bmark-modal-btn-cancel"
                 onClick={() => setShowClearConfirm(false)}
               >
                 Cancel
               </button>
               <button
                 type="button"
-                className="btn btn-danger"
+                className="bmark-modal-btn-confirm"
                 onClick={() => {
                   onClearAll();
                   setShowClearConfirm(false);
@@ -532,6 +532,15 @@ export default function BookmarksPage({
               {paginatedQuestions.map((q, idx) => {
                 const globalIndex = startIndex + idx + 1;
                 const isRevealed = !selfTestMode || revealedIds.has(q.id);
+                const options = getNormalizedOptions(q);
+                const correctOption = options.find((opt) => opt.isCorrect);
+                const answerText = correctOption
+                  ? correctOption.text
+                  : (typeof q.answer === 'string'
+                      ? q.answer
+                      : (Array.isArray(q.options) && typeof q.answer === 'number'
+                          ? q.options[q.answer]
+                          : ''));
 
                 return (
                   <article key={q.id || globalIndex} className="bmark-sheet-item">
@@ -560,17 +569,6 @@ export default function BookmarksPage({
                       </div>
 
                       <div className="bmark-item-actions">
-                        {onPracticeTopic && (
-                          <button
-                            type="button"
-                            className="bmark-action-practice"
-                            onClick={() => onPracticeTopic(q.subject || 'malayalam', q.topic || 'all', q)}
-                            title="Practice this topic in quiz mode"
-                          >
-                            <span>Practice Topic</span>
-                            <ArrowRightIcon size={12} />
-                          </button>
-                        )}
                         <button
                           type="button"
                           className="bmark-action-remove"
@@ -588,27 +586,18 @@ export default function BookmarksPage({
                       <FormattedQuestion text={q.question} />
                     </div>
 
-                    {/* Compact Options List (Clean, non-card typography) */}
-                    <div className="bmark-sheet-options">
-                      {getNormalizedOptions(q).map((opt) => {
-                        const isCorrectAnswer = isRevealed && opt.isCorrect;
-                        return (
-                          <div
-                            key={opt.letter}
-                            className={`bmark-sheet-opt ${isCorrectAnswer ? 'correct' : ''}`}
-                          >
-                            <span className="bmark-opt-prefix">({opt.letter})</span>
-                            <span className="bmark-opt-body">{opt.text}</span>
-                            {isCorrectAnswer && (
-                              <span className="bmark-opt-correct-tag">
-                                <CheckIcon size={12} />
-                                <span>Correct Answer</span>
-                              </span>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </div>
+                    {/* Correct Answer Display (Options removed for clean revision sheet) */}
+                    {isRevealed && answerText && (
+                      <div className="bmark-sheet-answer-row">
+                        <span className="bmark-answer-badge">
+                          <CheckIcon size={12} />
+                          <span>ഉത്തരം:</span>
+                        </span>
+                        <span className="bmark-answer-text">
+                          {answerText}
+                        </span>
+                      </div>
+                    )}
 
                     {/* Self Test Reveal Toggle */}
                     {selfTestMode && !isRevealed && (

@@ -10,7 +10,8 @@ import {
   RotateIcon,
   BookOpenIcon,
   TrashIcon,
-  XIcon
+  XIcon,
+  EditIcon
 } from './Icons';
 
 export default function ProfileModal({
@@ -83,7 +84,8 @@ export default function ProfileModal({
                     title="Edit Name"
                     aria-label="Edit Name"
                   >
-                    Edit
+                    <EditIcon size={12} />
+                    <span>Edit</span>
                   </button>
                 </div>
               )}

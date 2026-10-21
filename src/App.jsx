@@ -1323,21 +1323,6 @@ export default function App() {
                   <span className="user-nav-name desktop-only">{currentUser.name}</span>
                 </button>
               )}
-
-              {/* Secret Admin Button — tiny shield icon, only visible to admin */}
-              <button
-                className="nav-admin-btn"
-                title="Admin Panel"
-                onClick={() => {
-                  if (adminUnlocked) {
-                    setShowAdminPanel(true);
-                  } else {
-                    setShowAdminLogin(true);
-                  }
-                }}
-              >
-                <ShieldIcon size={15} />
-              </button>
             </div>
           </div>
 

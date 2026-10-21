@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BookOpenIcon,
   UserIcon,
@@ -6,60 +6,155 @@ import {
   RotateIcon,
   ArrowRightIcon,
   AlertTriangleIcon,
-  KeyIcon
+  CheckIcon,
+  LockIcon
 } from './Icons';
+import { registerUser, loginUser, checkUserStatus } from '../utils/supabaseClient';
 
 export default function AuthModal({
   users,
   onSelectUser,
-  onCreateUser,
-  onNeedInviteCode,
-  pendingInviteCode
+  onUserAuthenticated,
 }) {
-  const [activeTab, setActiveTab] = useState(users && users.length > 0 ? 'select' : 'create');
+  const [mode, setMode] = useState('login'); // 'login' | 'signup' | 'pending_notice'
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [pendingInfo, setPendingInfo] = useState(null);
+  const [statusChecking, setStatusChecking] = useState(false);
+  const [statusMessage, setStatusMessage] = useState('');
 
-  const handleCreateSubmit = (e) => {
+  // Check saved pending email from localStorage on mount
+  useEffect(() => {
+    const savedPendingEmail = localStorage.getItem('psc_pending_verification_email');
+    const savedPendingName = localStorage.getItem('psc_pending_verification_name');
+    if (savedPendingEmail) {
+      setPendingInfo({ email: savedPendingEmail, name: savedPendingName || 'Aspirant' });
+      setMode('pending_notice');
+    }
+  }, []);
+
+  // Handle User Registration
+  const handleRegister = async (e) => {
     e.preventDefault();
-    // If no invite code pending and no existing users → redirect to invite gate
-    if (onNeedInviteCode && !pendingInviteCode) {
-      onNeedInviteCode();
-      return;
-    }
-    if (!name.trim()) {
-      setError('Please enter your name');
-      return;
-    }
     setError('');
+    setStatusMessage('');
 
-    const newUser = {
-      id: `user_${Date.now()}`,
-      name: name.trim(),
-      avatar: 'U',
-      createdAt: Date.now(),
-      stats: {
-        correct: 0,
-        total: 0,
-        streak: 0,
-        maxStreak: 0,
-        topicStats: {}
-      },
-      repeatQueue: [],
-      upcomingRepeats: [],
-      questionHistory: []
-    };
+    if (!name.trim()) {
+      setError('Please enter your full name');
+      return;
+    }
+    if (!email.trim() || !email.includes('@')) {
+      setError('Please enter a valid email address');
+      return;
+    }
+    if (!password || password.length < 4) {
+      setError('Password must be at least 4 characters');
+      return;
+    }
 
-    onCreateUser(newUser);
+    setLoading(true);
+    try {
+      const res = await registerUser({ name, email, password });
+      setLoading(false);
+
+      if (!res.success) {
+        if (res.alreadyExists && res.status === 'pending') {
+          setPendingInfo({ email: email.trim().toLowerCase(), name: name.trim() });
+          localStorage.setItem('psc_pending_verification_email', email.trim().toLowerCase());
+          localStorage.setItem('psc_pending_verification_name', name.trim());
+          setMode('pending_notice');
+          return;
+        }
+        setError(res.message || res.error || 'Failed to submit registration request');
+        return;
+      }
+
+      // Success! Request submitted for admin verification
+      setPendingInfo({ email: email.trim().toLowerCase(), name: name.trim() });
+      localStorage.setItem('psc_pending_verification_email', email.trim().toLowerCase());
+      localStorage.setItem('psc_pending_verification_name', name.trim());
+      setMode('pending_notice');
+    } catch (err) {
+      setLoading(false);
+      setError('Connection error. Please try again.');
+    }
   };
 
-  const getInitials = (n) => {
-    if (!n) return 'U';
-    const parts = n.trim().split(/\s+/);
-    if (parts.length >= 2) {
-      return (parts[0][0] + parts[1][0]).toUpperCase();
+  // Handle User Login
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setError('');
+    setStatusMessage('');
+
+    if (!email.trim() || !email.includes('@')) {
+      setError('Please enter your registered email');
+      return;
     }
-    return n.slice(0, 2).toUpperCase();
+    if (!password) {
+      setError('Please enter your password');
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const res = await loginUser({ email, password });
+      setLoading(false);
+
+      if (!res.success) {
+        if (res.isPending) {
+          setPendingInfo({ email: email.trim().toLowerCase(), name: res.user?.name || 'Aspirant' });
+          localStorage.setItem('psc_pending_verification_email', email.trim().toLowerCase());
+          setMode('pending_notice');
+          return;
+        }
+        setError(res.error || 'Login failed. Please check your credentials.');
+        return;
+      }
+
+      // Approved & Logged In!
+      localStorage.removeItem('psc_pending_verification_email');
+      localStorage.removeItem('psc_pending_verification_name');
+      onUserAuthenticated(res.user);
+    } catch (err) {
+      setLoading(false);
+      setError('Could not verify credentials. Please try again.');
+    }
+  };
+
+  // Check if admin has approved the pending account
+  const handleCheckStatus = async () => {
+    if (!pendingInfo?.email) return;
+    setStatusChecking(true);
+    setStatusMessage('');
+
+    try {
+      const user = await checkUserStatus(pendingInfo.email);
+      setStatusChecking(false);
+
+      if (!user) {
+        setStatusMessage('No account found for this email.');
+        return;
+      }
+
+      if (user.status === 'approved') {
+        setStatusMessage('🎉 Great news! Your account has been approved.');
+        setTimeout(() => {
+          localStorage.removeItem('psc_pending_verification_email');
+          localStorage.removeItem('psc_pending_verification_name');
+          onUserAuthenticated(user);
+        }, 1200);
+      } else if (user.status === 'rejected') {
+        setStatusMessage('❌ Your account request was declined by the administrator.');
+      } else {
+        setStatusMessage('⏳ Still under verification. The admin will review it soon.');
+      }
+    } catch (err) {
+      setStatusChecking(false);
+      setStatusMessage('Could not connect to verify status. Please check your internet connection.');
+    }
   };
 
   return (
@@ -76,157 +171,265 @@ export default function AuthModal({
           </div>
         </div>
 
-        {/* Tab switchers if users exist */}
-        {users && users.length > 0 && (
-          <div className="auth-tabs">
-            <button
-              type="button"
-              className={`auth-tab-btn ${activeTab === 'select' ? 'active' : ''}`}
-              onClick={() => {
-                setActiveTab('select');
-                setError('');
-              }}
-            >
-              <UserIcon size={15} />
-              <span>Select Profile ({users.length})</span>
-            </button>
-            <button
-              type="button"
-              className={`auth-tab-btn ${activeTab === 'create' ? 'active' : ''}`}
-              onClick={() => {
-                setActiveTab('create');
-                setError('');
-              }}
-            >
-              <UserPlusIcon size={15} />
-              <span>Create New Profile</span>
-            </button>
+        {/* ── MODE: PENDING VERIFICATION NOTICE ── */}
+        {mode === 'pending_notice' && (
+          <div className="verification-notice-card">
+            <div className="verification-icon-pulse">
+              <span className="verification-emoji">⏳</span>
+            </div>
+
+            <h3 className="verification-heading">Account Under Verification</h3>
+            <p className="verification-subtext">
+              Hi <strong>{pendingInfo?.name || 'Aspirant'}</strong>, your request for{' '}
+              <span className="verification-email-badge">{pendingInfo?.email}</span> has been submitted to the administrator.
+            </p>
+
+            <div className="verification-info-banner">
+              <div className="verification-banner-step">
+                <span className="step-num">1</span>
+                <div>
+                  <strong>Request Submitted</strong>
+                  <p>Your details were sent to the admin portal.</p>
+                </div>
+              </div>
+              <div className="verification-banner-step active">
+                <span className="step-num">2</span>
+                <div>
+                  <strong>Admin Review in Progress</strong>
+                  <p>The admin will review and approve your profile.</p>
+                </div>
+              </div>
+              <div className="verification-banner-step">
+                <span className="step-num">3</span>
+                <div>
+                  <strong>Instant Access</strong>
+                  <p>Once approved, you can access all PSC exam tests.</p>
+                </div>
+              </div>
+            </div>
+
+            {statusMessage && (
+              <div className={`verification-status-result ${statusMessage.includes('approved') ? 'approved' : statusMessage.includes('declined') ? 'rejected' : 'waiting'}`}>
+                {statusMessage}
+              </div>
+            )}
+
+            <div className="verification-action-buttons">
+              <button
+                type="button"
+                className="btn-check-verification"
+                onClick={handleCheckStatus}
+                disabled={statusChecking}
+              >
+                <RotateIcon size={16} className={statusChecking ? 'spinning' : ''} />
+                <span>{statusChecking ? 'Checking...' : 'Check Approval Status'}</span>
+              </button>
+
+              <button
+                type="button"
+                className="auth-link-btn"
+                onClick={() => {
+                  setError('');
+                  setStatusMessage('');
+                  setMode('login');
+                }}
+              >
+                Already approved? Sign in with password →
+              </button>
+            </div>
           </div>
         )}
 
-        <div className="auth-body">
-          {activeTab === 'select' && users && users.length > 0 ? (
-            <div className="user-select-container">
-              <p className="auth-intro-text">
-                Select your profile to continue practice:
-              </p>
-              <div className="users-card-grid">
-                {users.map((u) => {
-                  const total = u.stats?.total || 0;
-                  const correct = u.stats?.correct || 0;
-                  const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
-                  const repeatCount = u.repeatQueue?.length || 0;
-
-                  return (
-                    <div
-                      key={u.id}
-                      className="user-profile-card"
-                      onClick={() => onSelectUser(u.id)}
-                    >
-                      <div className="user-card-avatar user-nav-avatar-initials" style={{ width: 40, height: 40, fontSize: '0.85rem' }}>
-                        {getInitials(u.name)}
-                      </div>
-                      <div className="user-card-info">
-                        <div className="user-card-name">{u.name}</div>
-                        <div className="user-card-stats">
-                          <span>{total} Solved</span>
-                          <span>•</span>
-                          <span>{accuracy}% Accuracy</span>
-                          {repeatCount > 0 && (
-                            <span className="user-card-mistakes" style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
-                              <RotateIcon size={12} /> {repeatCount} Review
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                      <button className="user-enter-btn" title="Continue practice" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                        <span>Start</span>
-                        <ArrowRightIcon size={14} />
-                      </button>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="auth-footer-action">
-                <button
-                  type="button"
-                  className="auth-link-btn"
-                  onClick={() => setActiveTab('create')}
-                >
-                  + Create Another Account
-                </button>
-              </div>
+        {/* ── MODE: LOGIN OR SIGN UP ── */}
+        {mode !== 'pending_notice' && (
+          <>
+            {/* Tabs */}
+            <div className="auth-tabs">
+              <button
+                type="button"
+                className={`auth-tab-btn ${mode === 'login' ? 'active' : ''}`}
+                onClick={() => {
+                  setMode('login');
+                  setError('');
+                }}
+              >
+                <UserIcon size={15} />
+                <span>Sign In</span>
+              </button>
+              <button
+                type="button"
+                className={`auth-tab-btn ${mode === 'signup' ? 'active' : ''}`}
+                onClick={() => {
+                  setMode('signup');
+                  setError('');
+                }}
+              >
+                <UserPlusIcon size={15} />
+                <span>Request Access (Sign Up)</span>
+              </button>
             </div>
-          ) : (
-            <form onSubmit={handleCreateSubmit} className="auth-form">
-              {/* Show invite code indicator if one is pending */}
-              {pendingInviteCode ? (
-                <div className="auth-invite-banner">
-                  <KeyIcon size={15} />
-                  <span>Invite code <strong>{pendingInviteCode.code}</strong> verified ✓ — enter your name to continue</span>
-                </div>
-              ) : (
-                <p className="auth-intro-text">
-                  This is a private portal. You need an invite code to create a new profile.
-                  Existing members can select their profile above.
-                </p>
-              )}
 
-              {error && (
-                <div className="auth-error-banner" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <AlertTriangleIcon size={16} />
-                  <span>{error}</span>
-                </div>
-              )}
+            {error && (
+              <div className="auth-error-msg" role="alert">
+                <AlertTriangleIcon size={16} />
+                <span>{error}</span>
+              </div>
+            )}
 
-              {/* Name only */}
-              {pendingInviteCode && (
+            {/* SIGN IN FORM */}
+            {mode === 'login' && (
+              <form onSubmit={handleLogin} className="auth-form">
                 <div className="form-group">
-                  <label className="form-label" htmlFor="user-name-input">
-                    Your Name:
+                  <label className="form-label" htmlFor="user-login-email">
+                    Email Address
                   </label>
                   <input
-                    id="user-name-input"
-                    type="text"
+                    id="user-login-email"
+                    type="email"
                     className="auth-text-input"
-                    placeholder="Enter your name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    placeholder="e.g. rahul@gmail.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
                     autoFocus
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label className="form-label" htmlFor="user-login-pass">
+                    Password
+                  </label>
+                  <input
+                    id="user-login-pass"
+                    type="password"
+                    className="auth-text-input"
+                    placeholder="Enter your password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                   />
                 </div>
-              )}
 
-              <div className="auth-form-actions" style={{ marginTop: '0.75rem' }}>
-                {pendingInviteCode ? (
-                  <button type="submit" className="auth-submit-btn">
-                    Start Practicing
-                  </button>
-                ) : (
+                <button
+                  type="submit"
+                  className="auth-submit-btn"
+                  disabled={loading}
+                >
+                  {loading ? (
+                    <span>Signing in...</span>
+                  ) : (
+                    <>
+                      <span>Sign In &amp; Practice</span>
+                      <ArrowRightIcon size={16} />
+                    </>
+                  )}
+                </button>
+
+                <div className="auth-footer-prompt">
+                  <span>New aspirant?</span>
                   <button
                     type="button"
-                    className="auth-submit-btn"
-                    onClick={onNeedInviteCode}
+                    className="auth-link-text-btn"
+                    onClick={() => {
+                      setMode('signup');
+                      setError('');
+                    }}
                   >
-                    Enter Invite Code
+                    Send registration for verification →
                   </button>
-                )}
+                </div>
+              </form>
+            )}
 
-                {users && users.length > 0 && (
+            {/* SIGN UP / REQUEST ACCESS FORM */}
+            {mode === 'signup' && (
+              <form onSubmit={handleRegister} className="auth-form">
+                <div className="auth-verification-callout">
+                  <span className="callout-icon">🛡️</span>
+                  <div>
+                    <strong>Admin Verification Required</strong>
+                    <p>New profiles require admin approval before portal access is unlocked.</p>
+                  </div>
+                </div>
+
+                <div className="form-group">
+                  <label className="form-label" htmlFor="signup-name">
+                    Full Name
+                  </label>
+                  <input
+                    id="signup-name"
+                    type="text"
+                    className="auth-text-input"
+                    placeholder="e.g. Anjali Nair"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    autoFocus
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label className="form-label" htmlFor="signup-email">
+                    Email Address
+                  </label>
+                  <input
+                    id="signup-email"
+                    type="email"
+                    className="auth-text-input"
+                    placeholder="e.g. anjali@gmail.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label className="form-label" htmlFor="signup-password">
+                    Create Password
+                  </label>
+                  <input
+                    id="signup-password"
+                    type="password"
+                    className="auth-text-input"
+                    placeholder="Minimum 4 characters"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="auth-submit-btn"
+                  disabled={loading}
+                >
+                  {loading ? (
+                    <span>Submitting Request...</span>
+                  ) : (
+                    <>
+                      <span>Submit for Verification</span>
+                      <ArrowRightIcon size={16} />
+                    </>
+                  )}
+                </button>
+
+                <div className="auth-footer-prompt">
+                  <span>Already sent a request?</span>
                   <button
                     type="button"
-                    className="auth-cancel-btn"
-                    onClick={() => setActiveTab('select')}
+                    className="auth-link-text-btn"
+                    onClick={() => {
+                      setMode('login');
+                      setError('');
+                    }}
                   >
-                    View Existing Profiles
+                    Log In / Check Status →
                   </button>
-                )}
-              </div>
-            </form>
-          )}
-        </div>
+                </div>
+              </form>
+            )}
+          </>
+        )}
       </div>
     </div>
   );

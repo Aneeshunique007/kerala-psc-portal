@@ -203,21 +203,54 @@ export default function App() {
     setShowAuthModal(false);
   };
 
+  // Called when user logs in or is approved from Supabase
+  const handleUserAuthenticated = (dbUser) => {
+    const existing = users.find(
+      (u) =>
+        u.id === dbUser.id ||
+        (u.email && u.email.toLowerCase() === dbUser.email?.toLowerCase())
+    );
+
+    let activeUser = existing;
+    if (!activeUser) {
+      activeUser = {
+        id: dbUser.id || `user_${Date.now()}`,
+        name: dbUser.name,
+        email: dbUser.email,
+        avatar: (dbUser.name?.[0] || 'U').toUpperCase(),
+        createdAt: dbUser.created_at ? new Date(dbUser.created_at).getTime() : Date.now(),
+        stats: {
+          correct: 0,
+          total: 0,
+          streak: 0,
+          maxStreak: 0,
+          topicStats: {},
+        },
+        repeatQueue: [],
+        upcomingRepeats: [],
+        questionHistory: [],
+      };
+      persistUsers([...users, activeUser]);
+    }
+
+    approveUser(activeUser.id);
+    setActiveUserId(activeUser.id);
+    localStorage.setItem('psc_active_user_id', activeUser.id);
+    setShowAuthModal(false);
+  };
+
   // Called from InviteGate after code validated
   const handleInviteCodeValid = (codeObj) => {
     setPendingInviteCode(codeObj);
     setShowInviteGate(false);
-    // Now show the name-registration AuthModal
     setShowAuthModal(true);
   };
 
   const handleCreateUser = (newUser) => {
-    // Consume the invite code
     if (pendingInviteCode) {
       consumeInviteCode(pendingInviteCode.id, newUser.name);
       setPendingInviteCode(null);
     }
-    // Mark as approved
     approveUser(newUser.id);
     const updatedUsers = [...users, newUser];
     persistUsers(updatedUsers);
@@ -941,21 +974,11 @@ export default function App() {
       )}
 
       {/* Auth Modal when not logged in or switching */}
-      {showAuthModal && !showInviteGate && (
+      {showAuthModal && (
         <AuthModal
           users={users}
           onSelectUser={handleSelectUser}
-          onCreateUser={pendingInviteCode || users.length === 0
-            ? (users.length === 0 && !pendingInviteCode
-                ? null  /* handled below */
-                : handleCreateUser)
-            : handleCreateUser}
-          onNeedInviteCode={users.length === 0 && !pendingInviteCode
-            ? () => { setShowAuthModal(false); setShowInviteGate(true); }
-            : !pendingInviteCode
-            ? () => { setShowAuthModal(false); setShowInviteGate(true); }
-            : null}
-          pendingInviteCode={pendingInviteCode}
+          onUserAuthenticated={handleUserAuthenticated}
         />
       )}
 

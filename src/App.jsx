@@ -18,7 +18,17 @@ import BlueprintDashboard from './components/BlueprintDashboard';
 import MockExamModal from './components/MockExamModal';
 import FormattedQuestion from './components/FormattedQuestion';
 import BookmarksPage from './components/BookmarksPage';
+import InviteGate from './components/InviteGate';
+import AdminPanel from './components/AdminPanel';
+import AdminLoginModal from './components/AdminLoginModal';
 import { cleanExplanation } from './utils/cleanExplanation';
+import {
+  consumeInviteCode,
+  approveUser,
+  isUserApproved,
+  isAdminLoggedIn,
+  revokeUser
+} from './utils/adminAuth';
 import {
   BookmarkIcon,
   RotateIcon,
@@ -33,7 +43,8 @@ import {
   AlertTriangleIcon,
   TrophyIcon,
   CheckCircleIcon,
-  InfoIcon
+  InfoIcon,
+  ShieldIcon
 } from './components/Icons';
 import './App.css';
 
@@ -100,6 +111,12 @@ export default function App() {
   const [showProfileModal, setShowProfileModal] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showSyllabusModal, setShowSyllabusModal] = useState(false);
+  // Admin / Invite Gate state
+  const [showInviteGate, setShowInviteGate] = useState(false);
+  const [pendingInviteCode, setPendingInviteCode] = useState(null);
+  const [showAdminPanel, setShowAdminPanel] = useState(false);
+  const [showAdminLogin, setShowAdminLogin] = useState(false);
+  const [adminUnlocked, setAdminUnlocked] = useState(() => isAdminLoggedIn());
 
   const currentUser = users.find(u => u.id === activeUserId) || null;
 
@@ -150,12 +167,19 @@ export default function App() {
     ? PYQ_QUESTION_BANK
     : QUESTION_BANK;
 
-  // If no current user, trigger Auth Modal
+  // If no current user, trigger Auth Modal (or invite gate for new users)
   useEffect(() => {
     if (!currentUser) {
       setShowAuthModal(true);
     } else {
-      setShowAuthModal(false);
+      // If user was revoked, boot them out
+      if (!isUserApproved(currentUser.id)) {
+        setActiveUserId(null);
+        localStorage.removeItem('psc_active_user_id');
+        setShowAuthModal(true);
+      } else {
+        setShowAuthModal(false);
+      }
     }
   }, [currentUser]);
 
@@ -165,18 +189,51 @@ export default function App() {
     localStorage.setItem('psc_malayalam_users', JSON.stringify(updatedUsers));
   };
 
+  // One-time migration: approve all pre-existing users so they aren't locked out
+  useEffect(() => {
+    if (users.length > 0) {
+      users.forEach(u => approveUser(u.id));
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleSelectUser = (userId) => {
     setActiveUserId(userId);
     localStorage.setItem('psc_active_user_id', userId);
     setShowAuthModal(false);
   };
 
+  // Called from InviteGate after code validated
+  const handleInviteCodeValid = (codeObj) => {
+    setPendingInviteCode(codeObj);
+    setShowInviteGate(false);
+    // Now show the name-registration AuthModal
+    setShowAuthModal(true);
+  };
+
   const handleCreateUser = (newUser) => {
+    // Consume the invite code
+    if (pendingInviteCode) {
+      consumeInviteCode(pendingInviteCode.id, newUser.name);
+      setPendingInviteCode(null);
+    }
+    // Mark as approved
+    approveUser(newUser.id);
     const updatedUsers = [...users, newUser];
     persistUsers(updatedUsers);
     setActiveUserId(newUser.id);
     localStorage.setItem('psc_active_user_id', newUser.id);
     setShowAuthModal(false);
+    setShowInviteGate(false);
+  };
+
+  const handleRevokeUserFromAdmin = (userId) => {
+    revokeUser(userId);
+    // If the active user is being revoked, sign them out
+    if (activeUserId === userId) {
+      setActiveUserId(null);
+      localStorage.removeItem('psc_active_user_id');
+    }
   };
 
   const handleUpdateUser = (updatedUser) => {
@@ -878,12 +935,48 @@ export default function App() {
 
   return (
     <div className="app-container">
+      {/* Invite Gate — shown to new users who need an invite code */}
+      {showInviteGate && (
+        <InviteGate onValidCode={handleInviteCodeValid} />
+      )}
+
       {/* Auth Modal when not logged in or switching */}
-      {showAuthModal && (
+      {showAuthModal && !showInviteGate && (
         <AuthModal
           users={users}
           onSelectUser={handleSelectUser}
-          onCreateUser={handleCreateUser}
+          onCreateUser={pendingInviteCode || users.length === 0
+            ? (users.length === 0 && !pendingInviteCode
+                ? null  /* handled below */
+                : handleCreateUser)
+            : handleCreateUser}
+          onNeedInviteCode={users.length === 0 && !pendingInviteCode
+            ? () => { setShowAuthModal(false); setShowInviteGate(true); }
+            : !pendingInviteCode
+            ? () => { setShowAuthModal(false); setShowInviteGate(true); }
+            : null}
+          pendingInviteCode={pendingInviteCode}
+        />
+      )}
+
+      {/* Admin Login Modal */}
+      {showAdminLogin && (
+        <AdminLoginModal
+          onSuccess={() => {
+            setAdminUnlocked(true);
+            setShowAdminLogin(false);
+            setShowAdminPanel(true);
+          }}
+          onClose={() => setShowAdminLogin(false)}
+        />
+      )}
+
+      {/* Admin Panel */}
+      {showAdminPanel && (
+        <AdminPanel
+          onClose={() => setShowAdminPanel(false)}
+          users={users}
+          onRevokeUser={handleRevokeUserFromAdmin}
         />
       )}
 
@@ -1202,6 +1295,21 @@ export default function App() {
                   <span className="user-nav-name desktop-only">{currentUser.name}</span>
                 </button>
               )}
+
+              {/* Secret Admin Button — tiny shield icon, only visible to admin */}
+              <button
+                className="nav-admin-btn"
+                title="Admin Panel"
+                onClick={() => {
+                  if (adminUnlocked) {
+                    setShowAdminPanel(true);
+                  } else {
+                    setShowAdminLogin(true);
+                  }
+                }}
+              >
+                <ShieldIcon size={15} />
+              </button>
             </div>
           </div>
 

@@ -5,16 +5,28 @@ import {
   UserPlusIcon,
   RotateIcon,
   ArrowRightIcon,
-  AlertTriangleIcon
+  AlertTriangleIcon,
+  KeyIcon
 } from './Icons';
 
-export default function AuthModal({ users, onSelectUser, onCreateUser }) {
+export default function AuthModal({
+  users,
+  onSelectUser,
+  onCreateUser,
+  onNeedInviteCode,
+  pendingInviteCode
+}) {
   const [activeTab, setActiveTab] = useState(users && users.length > 0 ? 'select' : 'create');
   const [name, setName] = useState('');
   const [error, setError] = useState('');
 
   const handleCreateSubmit = (e) => {
     e.preventDefault();
+    // If no invite code pending and no existing users → redirect to invite gate
+    if (onNeedInviteCode && !pendingInviteCode) {
+      onNeedInviteCode();
+      return;
+    }
     if (!name.trim()) {
       setError('Please enter your name');
       return;
@@ -59,7 +71,7 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
             <span className="auth-logo-icon"><BookOpenIcon size={24} /></span>
             <div>
               <h2 className="auth-title">Kerala PSC Aspirant Portal</h2>
-              <p className="auth-subtitle">Official Syllabus Practice & Analytics</p>
+              <p className="auth-subtitle">Official Syllabus Practice &amp; Analytics</p>
             </div>
           </div>
         </div>
@@ -148,9 +160,18 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
             </div>
           ) : (
             <form onSubmit={handleCreateSubmit} className="auth-form">
-              <p className="auth-intro-text">
-                Enter your name to start practicing. Your scores, mistake repeats, and topic mastery will be saved under your name.
-              </p>
+              {/* Show invite code indicator if one is pending */}
+              {pendingInviteCode ? (
+                <div className="auth-invite-banner">
+                  <KeyIcon size={15} />
+                  <span>Invite code <strong>{pendingInviteCode.code}</strong> verified ✓ — enter your name to continue</span>
+                </div>
+              ) : (
+                <p className="auth-intro-text">
+                  This is a private portal. You need an invite code to create a new profile.
+                  Existing members can select their profile above.
+                </p>
+              )}
 
               {error && (
                 <div className="auth-error-banner" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -160,26 +181,38 @@ export default function AuthModal({ users, onSelectUser, onCreateUser }) {
               )}
 
               {/* Name only */}
-              <div className="form-group">
-                <label className="form-label" htmlFor="user-name-input">
-                  Your Name:
-                </label>
-                <input
-                  id="user-name-input"
-                  type="text"
-                  className="auth-text-input"
-                  placeholder="Enter your name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  autoFocus
-                  required
-                />
-              </div>
+              {pendingInviteCode && (
+                <div className="form-group">
+                  <label className="form-label" htmlFor="user-name-input">
+                    Your Name:
+                  </label>
+                  <input
+                    id="user-name-input"
+                    type="text"
+                    className="auth-text-input"
+                    placeholder="Enter your name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    autoFocus
+                    required
+                  />
+                </div>
+              )}
 
               <div className="auth-form-actions" style={{ marginTop: '0.75rem' }}>
-                <button type="submit" className="auth-submit-btn">
-                  Start Practicing
-                </button>
+                {pendingInviteCode ? (
+                  <button type="submit" className="auth-submit-btn">
+                    Start Practicing
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    className="auth-submit-btn"
+                    onClick={onNeedInviteCode}
+                  >
+                    Enter Invite Code
+                  </button>
+                )}
 
                 {users && users.length > 0 && (
                   <button

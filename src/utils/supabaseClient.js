@@ -223,3 +223,72 @@ export async function adminDeleteUser(userId) {
 
   return { success: true };
 }
+
+// Sync candidate study progress (stats, bookmarks, repetition queues, quiz history) to Supabase
+export async function syncUserProgressToCloud(user) {
+  if (!supabase || !user) return { success: false, error: 'No user or supabase client' };
+
+  const payload = {
+    stats: user.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+    bookmarkedQuestions: user.bookmarkedQuestions || [],
+    repeatQueue: (user.repeatQueue || []).map((r) => ({
+      id: r.id,
+      step: r.step || 0,
+      nextReview: r.nextReview || 0,
+    })),
+    upcomingRepeats: (user.upcomingRepeats || []).map((r) => ({
+      id: r.id,
+      step: r.step || 0,
+      nextReview: r.nextReview || 0,
+    })),
+    questionHistory: (user.questionHistory || []).slice(-200),
+    lastSyncedAt: new Date().toISOString(),
+  };
+
+  try {
+    const isUuid = user.id && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(user.id);
+    let query = supabase.from('app_users').update({ progress: payload });
+    
+    if (isUuid) {
+      query = query.eq('id', user.id);
+    } else if (user.email) {
+      query = query.eq('email', user.email.toLowerCase().trim());
+    } else {
+      return { success: false, error: 'No valid user ID or email' };
+    }
+
+    const { error } = await query;
+    if (error) {
+      console.warn('Cloud progress sync notice:', error.message);
+      return { success: false, error: error.message };
+    }
+    return { success: true, lastSyncedAt: payload.lastSyncedAt };
+  } catch (err) {
+    console.warn('Cloud sync exception:', err);
+    return { success: false, error: err.message };
+  }
+}
+
+// Fetch candidate study progress from Supabase
+export async function fetchUserProgressFromCloud(identifier) {
+  if (!supabase || !identifier) return null;
+
+  try {
+    const isUuid = typeof identifier === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(identifier);
+    let query = supabase.from('app_users').select('progress');
+    
+    if (isUuid) {
+      query = query.eq('id', identifier);
+    } else {
+      query = query.eq('email', String(identifier).toLowerCase().trim());
+    }
+
+    const { data, error } = await query.maybeSingle();
+    if (error || !data) return null;
+    return data.progress || null;
+  } catch (err) {
+    console.warn('Fetch cloud progress error:', err);
+    return null;
+  }
+}
+

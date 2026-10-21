@@ -32,6 +32,10 @@ import {
   adminLogout
 } from './utils/adminAuth';
 import {
+  syncUserProgressToCloud,
+  fetchUserProgressFromCloud
+} from './utils/supabaseClient';
+import {
   BookmarkIcon,
   RotateIcon,
   CheckIcon,
@@ -187,10 +191,62 @@ export default function App() {
     }
   }, [currentUser]);
 
-  // Sync users to localStorage
+  const cloudSyncTimeoutRef = React.useRef(null);
+  const [cloudSyncStatus, setCloudSyncStatus] = useState('idle'); // 'idle' | 'syncing' | 'synced'
+
+  // Sync users to localStorage and debounced cloud sync
   const persistUsers = (updatedUsers) => {
     setUsers(updatedUsers);
     localStorage.setItem('psc_malayalam_users', JSON.stringify(updatedUsers));
+
+    // Debounced cloud sync to Supabase (1.2s debounce)
+    if (activeUserId) {
+      const active = updatedUsers.find((u) => u.id === activeUserId);
+      if (active && (active.email || (active.id && active.id.includes('-')))) {
+        if (cloudSyncTimeoutRef.current) {
+          clearTimeout(cloudSyncTimeoutRef.current);
+        }
+        cloudSyncTimeoutRef.current = setTimeout(async () => {
+          setCloudSyncStatus('syncing');
+          const res = await syncUserProgressToCloud(active);
+          if (res?.success) {
+            setCloudSyncStatus('synced');
+            setTimeout(() => setCloudSyncStatus('idle'), 3000);
+          } else {
+            setCloudSyncStatus('idle');
+          }
+        }, 1200);
+      }
+    }
+  };
+
+  // Manual trigger for user profile sync
+  const handleManualCloudSync = async () => {
+    if (!currentUser) return;
+    setCloudSyncStatus('syncing');
+    
+    // First push local state
+    await syncUserProgressToCloud(currentUser);
+    
+    // Fetch latest cloud progress
+    const remote = await fetchUserProgressFromCloud(currentUser.id || currentUser.email);
+    if (remote) {
+      const mergedBookmarks = Array.from(
+        new Set([
+          ...(currentUser.bookmarkedQuestions || []),
+          ...(remote.bookmarkedQuestions || [])
+        ])
+      );
+      const updatedUser = {
+        ...currentUser,
+        bookmarkedQuestions: mergedBookmarks,
+        stats: (remote.stats?.total || 0) > (currentUser.stats?.total || 0) ? remote.stats : currentUser.stats,
+      };
+      const updatedList = users.map((u) => (u.id === currentUser.id ? updatedUser : u));
+      persistUsers(updatedList);
+    }
+    setCloudSyncStatus('synced');
+    setTimeout(() => setCloudSyncStatus('idle'), 3000);
   };
 
   // One-time migration: approve all pre-existing users so they aren't locked out
@@ -208,31 +264,89 @@ export default function App() {
   };
 
   // Called when user logs in or is approved from Supabase
-  const handleUserAuthenticated = (dbUser) => {
-    const existing = users.find(
+  const handleUserAuthenticated = async (dbUser) => {
+    const cleanEmail = dbUser.email?.toLowerCase().trim();
+
+    // Check if cloud progress is present, or fetch from Supabase
+    let cloudProgress = dbUser.progress || null;
+    if (!cloudProgress && (dbUser.id || cleanEmail)) {
+      cloudProgress = await fetchUserProgressFromCloud(dbUser.id || cleanEmail);
+    }
+
+    const existingIndex = users.findIndex(
       (u) =>
         u.id === dbUser.id ||
-        (u.email && u.email.toLowerCase() === dbUser.email?.toLowerCase())
+        (u.email && u.email.toLowerCase().trim() === cleanEmail)
     );
 
-    let activeUser = existing;
-    if (!activeUser) {
+    let activeUser;
+
+    if (existingIndex >= 0) {
+      // User profile already present on this device - merge cloud progress seamlessly
+      const existing = users[existingIndex];
+      const mergedBookmarks = Array.from(
+        new Set([
+          ...(existing.bookmarkedQuestions || []),
+          ...(cloudProgress?.bookmarkedQuestions || [])
+        ])
+      );
+
+      const existingTotal = existing.stats?.total || 0;
+      const cloudTotal = cloudProgress?.stats?.total || 0;
+      const mergedStats = cloudTotal > existingTotal ? cloudProgress.stats : existing.stats;
+
+      const localRepeatIds = new Set((existing.repeatQueue || []).map((r) => r.id));
+      const mergedRepeats = [...(existing.repeatQueue || [])];
+      (cloudProgress?.repeatQueue || []).forEach((cr) => {
+        if (!localRepeatIds.has(cr.id)) {
+          mergedRepeats.push({ ...getFreshQuestion(cr), ...cr });
+        }
+      });
+
+      activeUser = {
+        ...existing,
+        id: dbUser.id || existing.id,
+        name: dbUser.name || existing.name,
+        email: dbUser.email || existing.email,
+        stats: mergedStats || existing.stats,
+        bookmarkedQuestions: mergedBookmarks,
+        repeatQueue: mergedRepeats,
+        upcomingRepeats: existing.upcomingRepeats?.length
+          ? existing.upcomingRepeats
+          : (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr })),
+        questionHistory: existing.questionHistory?.length
+          ? existing.questionHistory
+          : (cloudProgress?.questionHistory || [])
+      };
+
+      const updated = [...users];
+      updated[existingIndex] = activeUser;
+      persistUsers(updated);
+    } else {
+      // Brand new login on this device - restore completely from cloud progress
+      const restoredBookmarks = cloudProgress?.bookmarkedQuestions || [];
+      const restoredStats = cloudProgress?.stats || {
+        correct: 0,
+        total: 0,
+        streak: 0,
+        maxStreak: 0,
+        topicStats: {},
+      };
+      const restoredRepeats = (cloudProgress?.repeatQueue || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
+      const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
+      const restoredHistory = cloudProgress?.questionHistory || [];
+
       activeUser = {
         id: dbUser.id || `user_${Date.now()}`,
         name: dbUser.name,
         email: dbUser.email,
         avatar: (dbUser.name?.[0] || 'U').toUpperCase(),
         createdAt: dbUser.created_at ? new Date(dbUser.created_at).getTime() : Date.now(),
-        stats: {
-          correct: 0,
-          total: 0,
-          streak: 0,
-          maxStreak: 0,
-          topicStats: {},
-        },
-        repeatQueue: [],
-        upcomingRepeats: [],
-        questionHistory: [],
+        stats: restoredStats,
+        bookmarkedQuestions: restoredBookmarks,
+        repeatQueue: restoredRepeats,
+        upcomingRepeats: restoredUpcoming,
+        questionHistory: restoredHistory,
       };
       persistUsers([...users, activeUser]);
     }
@@ -241,6 +355,9 @@ export default function App() {
     setActiveUserId(activeUser.id);
     localStorage.setItem('psc_active_user_id', activeUser.id);
     setShowAuthModal(false);
+
+    // Initial background sync to ensure cloud is up to date
+    syncUserProgressToCloud(activeUser);
   };
 
   const handleAdminAuthenticated = () => {
@@ -1072,6 +1189,8 @@ export default function App() {
           onResetProgress={handleRequestResetAllProgress}
           onDeleteAccount={handleRequestDeleteAccount}
           onUpdateUser={handleUpdateUser}
+          onSyncNow={handleManualCloudSync}
+          cloudSyncStatus={cloudSyncStatus}
         />
       )}
 

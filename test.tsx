@@ -32,7 +32,9 @@ import {
   checkUserStatus,
   adminApproveUser,
   adminRejectUser,
-  adminDeleteUser
+  adminDeleteUser,
+  syncUserProgressToCloud,
+  fetchUserProgressFromCloud
 } from './src/utils/supabaseClient.js';
 
 let passed = 0;
@@ -132,7 +134,35 @@ async function runAllTests() {
   assert(postApprovalLogin.success === true, `Candidate successfully logs in after admin approval`);
   assert(postApprovalLogin.user?.name === testName, `User profile retrieved properly`);
 
-  console.log('  [Step F] Admin rejects/revokes access...');
+  console.log('  [Step F] Multi-Device Cloud Progress Sync & Cross-Device Continuation...');
+  const sampleProgress = {
+    id: regRes.user.id,
+    email: testEmail,
+    stats: { correct: 42, total: 45, streak: 8, maxStreak: 12, topicStats: { grammar: { correct: 10, total: 10 } } },
+    bookmarkedQuestions: ['mal_2026_q1', 'eng_2026_q8', 'pyq_2025_q14'],
+    repeatQueue: [{ id: 'mal_2026_q2', step: 1, nextReview: Date.now() + 3600000 }],
+    upcomingRepeats: [],
+    questionHistory: [{ id: 'mal_2026_q1', isCorrect: true, timestamp: Date.now() }]
+  };
+
+  const syncRes = await syncUserProgressToCloud(sampleProgress);
+  assert(syncRes.success === true, `Cloud sync saved bookmarks and stats to Supabase`);
+
+  const fetchedCloudData = await fetchUserProgressFromCloud(regRes.user.id);
+  assert(fetchedCloudData !== null, `Cloud progress retrieved successfully from Supabase`);
+  assert(fetchedCloudData?.stats?.correct === 42, `Cloud stats match (expected 42 correct, found ${fetchedCloudData?.stats?.correct})`);
+  assert(fetchedCloudData?.bookmarkedQuestions?.length === 3, `Cloud bookmarks match (expected 3 bookmarks, found ${fetchedCloudData?.bookmarkedQuestions?.length})`);
+
+  console.log('  [Step G] Simulate login on a second device (Device B)...');
+  const deviceBLogin = await loginUser({
+    email: testEmail,
+    password: testPassword
+  });
+  assert(deviceBLogin.success === true, `Device B successfully authenticated`);
+  assert(deviceBLogin.user?.progress?.stats?.streak === 8, `Device B loaded cloud streak (streak: 8)`);
+  assert(deviceBLogin.user?.progress?.bookmarkedQuestions?.includes('mal_2026_q1'), `Device B loaded cloud bookmarks`);
+
+  console.log('  [Step H] Admin rejects/revokes access...');
   const rejectRes = await adminRejectUser(regRes.user.id);
   assert(rejectRes.success === true, `Admin successfully revoked access`);
   assert(rejectRes.user?.status === 'rejected', `Status updated to 'rejected'`);
@@ -143,7 +173,7 @@ async function runAllTests() {
   });
   assert(postRejectLogin.success === false && postRejectLogin.isRejected === true, `Candidate is blocked after revocation`);
 
-  console.log('  [Step G] Cleanup test user from cloud database...');
+  console.log('  [Step I] Cleanup test user from cloud database...');
   const deleteRes = await adminDeleteUser(regRes.user.id);
   assert(deleteRes.success === true, `Temporary test user deleted cleanly`);
 

@@ -3,17 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+
+    <!-- PWA Theme -->
     <meta name="theme-color" content="#0b1120" />
-    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="background-color" content="#0b1120" />
+
+    <!-- iOS PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PSC Practice" />
+
+    <!-- Android PWA -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Windows PWA -->
+    <meta name="msapplication-TileColor" content="#0b1120" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- SEO -->
     <title>Kerala PSC Exam Practice Portal</title>
     <meta name="description" content="Kerala PSC exam practice platform with Malayalam, English, Previous Year Question Papers (PYQs), spaced repetition review queue, and full 100-mark mock examinations." />
+    <meta name="keywords" content="Kerala PSC, exam practice, PYQ, mock exam, LDC, LGS, degree prelims, spaced repetition" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kerala PSC Exam Practice Portal" />
+    <meta property="og:description" content="Practice Kerala PSC exams with PYQs, mock tests & spaced repetition." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icons/icon-512.png" />
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-96.png" />
+    <link rel="icon" type="image/jpeg" href="/kerala-psc-logo.jpg" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png" />
+
+    <!-- Apple Splash Screens (portrait) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
     <!-- Google Fonts for Malayalam and English typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&family=Manjari:wght@400;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/jpeg" href="/kerala-psc-logo.jpg" />
-    <link rel="apple-touch-icon" href="/kerala-psc-logo.jpg" />
   </head>
   <body>
     <div id="root"></div>

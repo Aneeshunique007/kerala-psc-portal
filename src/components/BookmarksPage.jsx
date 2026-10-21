@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import FormattedQuestion from './FormattedQuestion';
+import { cleanExplanation } from '../utils/cleanExplanation';
 import {
   BookmarkIcon,
   ChevronLeftIcon,
@@ -259,6 +260,26 @@ export default function BookmarksPage({
       <header className="bmark-sheet-header">
         <div className="bmark-header-top-row">
           <div className="bmark-header-left">
+            <div className="bmark-title-block">
+              <div className="bmark-title-row">
+                <h1 className="bmark-title-text">Bookmarks</h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="bmark-header-actions">
+            {bookmarkedQuestions.length > 0 && (
+              <button
+                type="button"
+                className="bmark-clear-btn"
+                onClick={() => setShowClearConfirm(true)}
+                title="Remove all bookmarks"
+              >
+                <TrashIcon size={14} />
+                <span>Clear All</span>
+              </button>
+            )}
+
             <button
               type="button"
               className="bmark-back-btn"
@@ -268,46 +289,6 @@ export default function BookmarksPage({
               <ChevronLeftIcon size={16} />
               <span>Back</span>
             </button>
-            <div className="bmark-title-block">
-              <div className="bmark-title-row">
-                <div className="bmark-badge-pill">
-                  <BookmarkIcon size={13} />
-                  <span>Revision Sheet</span>
-                </div>
-                <h1 className="bmark-title-text">Bookmarks</h1>
-                <span className="bmark-count-tag">
-                  {bookmarkedQuestions.length} {bookmarkedQuestions.length === 1 ? 'item' : 'items'}
-                </span>
-              </div>
-              <p className="bmark-subtitle">
-                Continuous revision sheet with verified answers and explanations.
-              </p>
-            </div>
-          </div>
-
-          <div className="bmark-header-actions">
-            {bookmarkedQuestions.length > 0 && (
-              <>
-                <button
-                  type="button"
-                  className={`bmark-mode-btn ${selfTestMode ? 'active' : ''}`}
-                  onClick={() => setSelfTestMode(!selfTestMode)}
-                  title="Hide answers by default so you can test yourself before revealing"
-                >
-                  {selfTestMode ? <EyeIcon size={14} /> : <EyeOffIcon size={14} />}
-                  <span>{selfTestMode ? 'Answers Visible' : 'Self-Test Mode'}</span>
-                </button>
-                <button
-                  type="button"
-                  className="bmark-clear-btn"
-                  onClick={() => setShowClearConfirm(true)}
-                  title="Remove all bookmarks"
-                >
-                  <TrashIcon size={14} />
-                  <span>Clear All</span>
-                </button>
-              </>
-            )}
           </div>
         </div>
 
@@ -374,10 +355,7 @@ export default function BookmarksPage({
                             }}
                           >
                             <span className="opt-icon">
-                              <span
-                                className="topic-accent-dot"
-                                style={{ background: isSelected ? '#f43f5e' : '#38bdf8' }}
-                              />
+                              <span className="topic-accent-dot" />
                             </span>
                             <div className="opt-details">
                               <div className="opt-title">{tab.label}</div>
@@ -510,22 +488,6 @@ export default function BookmarksPage({
           </div>
         ) : (
           <div className="bmark-paper-sheet">
-            {/* Sheet Metadata / Status Bar */}
-            <div className="bmark-sheet-meta-bar">
-              <div className="bmark-meta-summary">
-                Showing questions <strong>{startIndex + 1}–{Math.min(startIndex + ITEMS_PER_PAGE, filteredQuestions.length)}</strong> of <strong>{filteredQuestions.length}</strong>
-                {totalPages > 1 && (
-                  <span className="bmark-meta-page-tag"> (Page {currentPage} of {totalPages})</span>
-                )}
-              </div>
-
-              {selfTestMode && (
-                <div className="bmark-self-test-notice">
-                  <InfoIcon size={13} />
-                  <span>Self-test mode: click "Reveal Answer" on any question to check</span>
-                </div>
-              )}
-            </div>
 
             {/* Continuous Numbered Question Paper Sheet */}
             <div className="bmark-questions-sheet-list">
@@ -621,7 +583,7 @@ export default function BookmarksPage({
                           <strong>Explanation / വിശദീകരണം:</strong>
                         </div>
                         <div className="bmark-exp-text">
-                          {q.explanation}
+                          {cleanExplanation(q.explanation)}
                         </div>
                       </div>
                     )}

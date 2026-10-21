@@ -97,7 +97,7 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
       id: 'part2',
       title: 'Part II: ആനുകാലിക വിഷയങ്ങൾ (Current Affairs)',
       marks: '20 Marks',
-      badgeColor: '#eab308',
+      badgeColor: '#06b6d4',
       desc: 'ദേശീയ, അന്തർദേശീയ, സംസ്ഥാന തലത്തിലുള്ള പ്രധാന സംഭവങ്ങൾ, പുരസ്കാരങ്ങൾ, കായിക നേട്ടങ്ങൾ',
       topics: [
         {
@@ -114,7 +114,7 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
       id: 'part3',
       title: 'Part III: ലഘുഗണിതവും മാനസിക ശേഷിയും',
       marks: '10 Marks',
-      badgeColor: '#f59e0b',
+      badgeColor: '#6366f1',
       desc: 'ലഘുഗണിതം (5 Marks) + മാനസിക ശേഷിയും നിരീക്ഷണപാടവ പരിശോധനയും (5 Marks)',
       topics: [
         {
@@ -139,7 +139,7 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
       id: 'part4',
       title: 'Part IV: ജനറൽ ഇംഗ്ലീഷ് (General English)',
       marks: '10 Marks',
-      badgeColor: '#10b981',
+      badgeColor: '#3b82f6',
       desc: 'English Grammar (5 Marks) + Vocabulary (5 Marks)',
       topics: [
         {
@@ -164,7 +164,7 @@ export default function SyllabusModal({ isOpen, onClose, onSelectSubjectTopic })
       id: 'part5',
       title: 'Part V: പ്രാദേശിക ഭാഷകൾ (മലയാളം)',
       marks: '10 Marks',
-      badgeColor: '#ec4899',
+      badgeColor: '#0ea5e9',
       desc: 'മലയാള വ്യാകരണവും സാഹിത്യവും (10 Marks)',
       topics: [
         {

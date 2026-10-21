@@ -105,7 +105,7 @@ export default function BlueprintDashboard({
       id: 'part2',
       title: 'Part II: ആനുകാലിക വിഷയങ്ങൾ (Current Affairs)',
       marks: '20 Marks',
-      accentColor: '#eab308',
+      accentColor: '#06b6d4',
       badgeClass: 'badge-ca',
       desc: 'ദേശീയ, അന്തർദേശീയ, സംസ്ഥാന തലത്തിലുള്ള സമകാലിക സംഭവങ്ങൾ, പുരസ്കാരങ്ങൾ, കായിക നേട്ടങ്ങൾ',
       topics: [
@@ -124,7 +124,7 @@ export default function BlueprintDashboard({
       id: 'part3',
       title: 'Part III: ലഘുഗണിതവും മാനസിക ശേഷിയും',
       marks: '10 Marks',
-      accentColor: '#f59e0b',
+      accentColor: '#6366f1',
       badgeClass: 'badge-maths',
       desc: 'ലഘുഗണിതം (5 Marks) + മാനസിക ശേഷിയും നിരീക്ഷണപാടവ പരിശോധനയും (5 Marks)',
       topics: [
@@ -143,7 +143,7 @@ export default function BlueprintDashboard({
       id: 'part4',
       title: 'Part IV: ജനറൽ ഇംഗ്ലീഷ് (General English)',
       marks: '10 Marks',
-      accentColor: '#10b981',
+      accentColor: '#3b82f6',
       badgeClass: 'badge-english',
       desc: 'English Grammar (5 Marks) + Vocabulary (5 Marks)',
       topics: [
@@ -171,7 +171,7 @@ export default function BlueprintDashboard({
       id: 'part5',
       title: 'Part V: പ്രാദേശിക ഭാഷകൾ (മലയാളം)',
       marks: '10 Marks',
-      accentColor: '#ec4899',
+      accentColor: '#0ea5e9',
       badgeClass: 'badge-malayalam',
       desc: 'മലയാള വ്യാകരണവും സാഹിത്യവും (10 Marks)',
       topics: [
@@ -372,9 +372,6 @@ export default function BlueprintDashboard({
                 <h2 className="bp-section-title">{section.title}</h2>
                 <p className="bp-section-desc">{section.desc}</p>
               </div>
-              <span className={`bp-section-badge ${section.badgeClass}`}>
-                {section.marks}
-              </span>
             </div>
 
             <div className="bp-topics-grid">

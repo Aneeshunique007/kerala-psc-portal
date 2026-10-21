@@ -22,8 +22,10 @@ import {
   XIcon,
   AlertTriangleIcon,
   RotateIcon,
-  TargetIcon
+  TargetIcon,
+  InfoIcon
 } from './Icons';
+import { cleanExplanation } from '../utils/cleanExplanation';
 
 // Exact Mark distribution for Kerala PSC LDC 100-mark syllabus
 const DISTRIBUTION = [
@@ -793,11 +795,13 @@ export default function MockExamModal({ year = '2024', onClose }) {
                       </div>
                       {item.explanation && (
                         <div className="mrs-explanation-box">
-                          <strong style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                            <LightbulbIcon size={14} />
-                            <span>Explanation:</span>
-                          </strong>{' '}
-                          {item.explanation}
+                          <div className="explanation-header-title">
+                            <InfoIcon size={14} />
+                            <span className="explanation-heading">Explanation / വിശദീകരണം:</span>
+                          </div>
+                          <div className="mrs-explanation-text">
+                            {cleanExplanation(item.explanation)}
+                          </div>
                         </div>
                       )}
                     </div>

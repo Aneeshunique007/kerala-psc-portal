@@ -18,6 +18,7 @@ import BlueprintDashboard from './components/BlueprintDashboard';
 import MockExamModal from './components/MockExamModal';
 import FormattedQuestion from './components/FormattedQuestion';
 import BookmarksPage from './components/BookmarksPage';
+import { cleanExplanation } from './utils/cleanExplanation';
 import {
   BookmarkIcon,
   RotateIcon,
@@ -31,7 +32,8 @@ import {
   ArrowRightIcon,
   AlertTriangleIcon,
   TrophyIcon,
-  CheckCircleIcon
+  CheckCircleIcon,
+  InfoIcon
 } from './components/Icons';
 import './App.css';
 
@@ -1048,7 +1050,7 @@ export default function App() {
                     {topic.id === 'all' ? (
                       <TargetIcon size={16} />
                     ) : (
-                      <span className="topic-accent-dot" style={{ background: topic.color || '#38bdf8' }} />
+                      <span className="topic-accent-dot" />
                     )}
                   </span>
                   <div className="topic-details">
@@ -1066,7 +1068,7 @@ export default function App() {
                         className="topic-progress-mini-fill"
                         style={{
                           width: `${progressPercent}%`,
-                          background: topic.color || '#38bdf8'
+                          background: 'linear-gradient(90deg, #0284c7, #38bdf8)'
                         }}
                       />
                     </div>
@@ -1184,7 +1186,6 @@ export default function App() {
                 >
                   <RotateIcon size={15} className="queue-pill-icon" />
                   <span className="queue-pill-label desktop-only">Review Queue</span>
-                  <span className="queue-pill-badge">{currentSubjectRepeatQueue.length}</span>
                 </button>
               )}
 
@@ -1284,7 +1285,7 @@ export default function App() {
                             <div className="topic-progress-mini-bar">
                               <div
                                 className="topic-progress-mini-fill"
-                                style={{ width: `${progressPercent}%`, background: '#6366f1' }}
+                                style={{ width: `${progressPercent}%`, background: 'linear-gradient(90deg, #0284c7, #38bdf8)' }}
                               />
                             </div>
                           </div>
@@ -1315,7 +1316,7 @@ export default function App() {
                           }}
                         >
                           <span className="opt-icon">
-                            <span className="topic-accent-dot" style={{ background: topic.color || '#38bdf8' }} />
+                            <span className="topic-accent-dot" />
                           </span>
                           <div className="opt-details">
                             <div className="opt-title">{topic.name}</div>
@@ -1329,7 +1330,7 @@ export default function App() {
                                 className="topic-progress-mini-fill"
                                 style={{
                                   width: `${progressPercent}%`,
-                                  background: topic.color || '#38bdf8'
+                                  background: 'linear-gradient(90deg, #0284c7, #38bdf8)'
                                 }}
                               />
                             </div>
@@ -1402,17 +1403,6 @@ export default function App() {
                 </div>
 
                 <div className="card-top-bar-right">
-                  {currentQuestion.isRepeat && (
-                    <div className="repeat-alert-banner">
-                      <RotateIcon size={13} />
-                      <span>Review Queue {currentQuestion.repeatDifficulty ? `• Level: ${currentQuestion.repeatDifficulty.toUpperCase()}` : ''} {currentQuestion.remainingRepeats ? (
-                        isAnswered && selectedOption === currentQuestion.answer
-                          ? `(${Math.max(0, currentQuestion.remainingRepeats - 1)} repeat${Math.max(0, currentQuestion.remainingRepeats - 1) === 1 ? '' : 's'} left)`
-                          : `(${currentQuestion.remainingRepeats} repeat${currentQuestion.remainingRepeats > 1 ? 's' : ''} left)`
-                      ) : ''} — Practice until mastered</span>
-                    </div>
-                  )}
-
                   {/* Bookmark Button */}
                   <button
                     type="button"
@@ -1426,6 +1416,18 @@ export default function App() {
                   </button>
                 </div>
               </div>
+
+              {/* Spaced Review Queue Banner */}
+              {currentQuestion.isRepeat && (
+                <div className="repeat-alert-banner">
+                  <RotateIcon size={13} />
+                  <span>Review Queue {currentQuestion.repeatDifficulty ? `• Level: ${currentQuestion.repeatDifficulty.toUpperCase()}` : ''} {currentQuestion.remainingRepeats ? (
+                    isAnswered && selectedOption === currentQuestion.answer
+                      ? `(${Math.max(0, currentQuestion.remainingRepeats - 1)} repeat${Math.max(0, currentQuestion.remainingRepeats - 1) === 1 ? '' : 's'} left)`
+                      : `(${currentQuestion.remainingRepeats} repeat${currentQuestion.remainingRepeats > 1 ? 's' : ''} left)`
+                  ) : ''} — Practice until mastered</span>
+                </div>
+              )}
 
               {/* Question Text */}
               <div className="question-text">
@@ -1468,7 +1470,13 @@ export default function App() {
 
                   {currentQuestion.explanation && (
                     <div className="explanation-box">
-                      <span className="explanation-heading">Explanation:</span> {currentQuestion.explanation}
+                      <div className="explanation-header-title">
+                        <InfoIcon size={14} />
+                        <span className="explanation-heading">Explanation / വിശദീകരണം:</span>
+                      </div>
+                      <div className="explanation-text-body">
+                        {cleanExplanation(currentQuestion.explanation)}
+                      </div>
                     </div>
                   )}
 
@@ -1671,9 +1679,15 @@ export default function App() {
                       <div className="mistake-card-ans">
                         Correct Answer: {item.options[item.answer]}
                       </div>
-                      <div className="mistake-card-exp">
-                        {item.explanation}
-                      </div>
+                      {item.explanation && (
+                        <div className="mistake-card-exp">
+                          <div className="explanation-header-title">
+                            <InfoIcon size={13} />
+                            <span className="explanation-heading">Explanation / വിശദീകരണം:</span>
+                          </div>
+                          <div>{cleanExplanation(item.explanation)}</div>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </>

@@ -15,7 +15,7 @@ import ProfileModal from './components/ProfileModal';
 import ConfirmModal from './components/ConfirmModal';
 import SyllabusModal from './components/SyllabusModal';
 import BlueprintDashboard from './components/BlueprintDashboard';
-import MockExamModal from './components/MockExamModal';
+import MockExamPage from './components/MockExamPage';
 import FormattedQuestion from './components/FormattedQuestion';
 import BookmarksPage from './components/BookmarksPage';
 import InviteGate from './components/InviteGate';
@@ -497,7 +497,8 @@ export default function App() {
   };
 
   const handleStartMockFromBlueprint = () => {
-    setShowMockExam(true);
+    setPreviousViewMode(viewMode);
+    setViewMode('mock');
   };
 
   const questionCountsMap = {
@@ -1024,7 +1025,7 @@ export default function App() {
   const currentTopicData = currentSyllabusTopics.find(t => t.id === selectedTopic) || currentSyllabusTopics[0];
 
   return (
-    <div className={`app-container${viewMode === 'admin' ? ' admin-mode' : ''}`}>
+    <div className={`app-container${viewMode === 'admin' ? ' admin-mode' : ''}${viewMode === 'mock' ? ' mock-mode' : ''}`}>
       {/* Invite Gate — shown to new users who need an invite code */}
       {showInviteGate && (
         <InviteGate onValidCode={handleInviteCodeValid} />
@@ -1075,7 +1076,7 @@ export default function App() {
       )}
 
       {/* Sidebar: Syllabus Topics */}
-      <aside className={`sidebar ${mobileSidebarOpen ? 'mobile-open' : ''} ${viewMode === 'admin' ? 'sidebar-hidden' : ''}`}>
+      <aside className={`sidebar ${mobileSidebarOpen ? 'mobile-open' : ''} ${viewMode === 'admin' || viewMode === 'mock' ? 'sidebar-hidden' : ''}`}>
         <div className="sidebar-header">
           <button
             type="button"
@@ -1280,7 +1281,8 @@ export default function App() {
       {/* Main Practice Area */}
       <main className="quiz-main">
         {/* Top Navbar */}
-        <header className="top-nav">
+        {viewMode !== 'mock' && (
+          <header className="top-nav">
           <div className="top-nav-row-main">
             <div className="nav-left">
               {/* Navbar Kerala PSC Logo — Mobile Only (sidebar hidden on mobile) */}
@@ -1582,7 +1584,8 @@ export default function App() {
             )}
           </div>
         )}
-        </header>
+          </header>
+        )}
 
         {/* Main Content Viewport */}
         <div className="quiz-content-area">
@@ -1616,6 +1619,11 @@ export default function App() {
               syllabusTopics={SYLLABUS_TOPICS}
               englishTopics={ENGLISH_SYLLABUS_TOPICS}
               pyqTopics={PYQ_TOPICS}
+            />
+          ) : viewMode === 'mock' ? (
+            <MockExamPage
+              year={selectedYear}
+              onExit={() => setViewMode(previousViewMode || 'blueprint')}
             />
           ) : currentQuestion ? (
             <div className="question-card">
@@ -1942,13 +1950,6 @@ export default function App() {
         />
       )}
 
-      {/* Mock Exam Modal */}
-      {showMockExam && (
-        <MockExamModal
-          year={selectedYear}
-          onClose={() => setShowMockExam(false)}
-        />
-      )}
 
       {/* Themed Confirmation Modal */}
       <ConfirmModal

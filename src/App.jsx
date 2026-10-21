@@ -44,7 +44,8 @@ import {
   TrophyIcon,
   CheckCircleIcon,
   InfoIcon,
-  ShieldIcon
+  ShieldIcon,
+  LogOutIcon
 } from './components/Icons';
 import './App.css';
 
@@ -405,6 +406,13 @@ export default function App() {
   };
 
   const handleSwitchAccount = () => {
+    setShowProfileModal(false);
+    setShowAuthModal(true);
+  };
+
+  const handleLogout = () => {
+    setActiveUserId(null);
+    localStorage.removeItem('psc_active_user_id');
     setShowProfileModal(false);
     setShowAuthModal(true);
   };
@@ -1014,6 +1022,7 @@ export default function App() {
           user={currentUser}
           onClose={() => setShowProfileModal(false)}
           onSwitchAccount={handleSwitchAccount}
+          onLogout={handleLogout}
           onResetProgress={handleRequestResetAllProgress}
           onDeleteAccount={handleRequestDeleteAccount}
           onUpdateUser={handleUpdateUser}
@@ -1312,16 +1321,26 @@ export default function App() {
 
               {/* User Profile Badge (Top Right) */}
               {currentUser && (
-                <button
-                  className="user-nav-badge"
-                  onClick={() => setShowProfileModal(true)}
-                  title="View Profile and Topic Mastery Analytics"
-                >
-                  <span className="user-nav-avatar-initials">
-                    {currentUser.name ? currentUser.name[0].toUpperCase() : 'U'}
-                  </span>
-                  <span className="user-nav-name desktop-only">{currentUser.name}</span>
-                </button>
+                <>
+                  <button
+                    className="user-nav-badge"
+                    onClick={() => setShowProfileModal(true)}
+                    title="View Profile and Topic Mastery Analytics"
+                  >
+                    <span className="user-nav-avatar-initials">
+                      {currentUser.name ? currentUser.name[0].toUpperCase() : 'U'}
+                    </span>
+                    <span className="user-nav-name desktop-only">{currentUser.name}</span>
+                  </button>
+                  <button
+                    className="user-nav-logout-btn"
+                    onClick={handleLogout}
+                    title="Log Out"
+                  >
+                    <LogOutIcon size={14} />
+                    <span className="desktop-only">Log Out</span>
+                  </button>
+                </>
               )}
             </div>
           </div>

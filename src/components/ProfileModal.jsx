@@ -11,13 +11,15 @@ import {
   BookOpenIcon,
   TrashIcon,
   XIcon,
-  EditIcon
+  EditIcon,
+  LogOutIcon
 } from './Icons';
 
 export default function ProfileModal({
   user,
   onClose,
   onSwitchAccount,
+  onLogout,
   onResetProgress,
   onDeleteAccount,
   onUpdateUser
@@ -141,6 +143,15 @@ export default function ProfileModal({
           </div>
 
           <div className="profile-actions-grid">
+            <button
+              type="button"
+              className="action-btn logout-btn"
+              onClick={onLogout}
+              title="Log out of this session"
+            >
+              <LogOutIcon size={15} />
+              <span>Log Out</span>
+            </button>
             <button
               type="button"
               className="action-btn switch-btn"

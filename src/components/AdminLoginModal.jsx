@@ -29,10 +29,12 @@ export default function AdminLoginModal({ onSuccess, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="admin-login-header">
-          <span className="admin-login-icon">⚙</span>
+          <div className="admin-login-emblem-wrap">
+            <img src="/kerala-psc-logo.jpg" alt="Kerala PSC" className="admin-login-emblem-img" />
+          </div>
           <div>
-            <h2 className="admin-login-title">Admin Access</h2>
-            <p className="admin-login-sub">Sign in with your admin credentials</p>
+            <h2 className="admin-login-title">Admin Control Portal</h2>
+            <p className="admin-login-sub">Sign in with your administrator credentials</p>
           </div>
           <button className="admin-close-btn" onClick={onClose}>
             <XIcon size={18} />

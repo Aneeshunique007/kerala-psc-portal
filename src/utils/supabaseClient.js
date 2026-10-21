@@ -31,6 +31,14 @@ export async function registerUser({ name, email, password }) {
   if (!supabase) throw new Error('Supabase client not configured');
   
   const cleanEmail = email.trim().toLowerCase();
+
+  // Protect administrator email from being registered as candidate
+  if (cleanEmail === 'crazyaneeshus007@gmail.com') {
+    return {
+      success: false,
+      message: 'This email is reserved for the Administrator. Please log in directly via the Sign In tab.',
+    };
+  }
   
   // Check if user already exists
   const { data: existing, error: checkError } = await supabase

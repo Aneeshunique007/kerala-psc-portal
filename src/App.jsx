@@ -21,13 +21,15 @@ import BookmarksPage from './components/BookmarksPage';
 import InviteGate from './components/InviteGate';
 import AdminPanel from './components/AdminPanel';
 import AdminLoginModal from './components/AdminLoginModal';
+import AdminDashboardView from './components/AdminDashboardView';
 import { cleanExplanation } from './utils/cleanExplanation';
 import {
   consumeInviteCode,
   approveUser,
   isUserApproved,
   isAdminLoggedIn,
-  revokeUser
+  revokeUser,
+  adminLogout
 } from './utils/adminAuth';
 import {
   BookmarkIcon,
@@ -45,6 +47,7 @@ import {
   CheckCircleIcon,
   InfoIcon,
   ShieldIcon,
+  ShieldCheckIcon,
   LogOutIcon
 } from './components/Icons';
 import './App.css';
@@ -240,6 +243,37 @@ export default function App() {
     setShowAuthModal(false);
   };
 
+  const handleAdminAuthenticated = () => {
+    setAdminUnlocked(true);
+    let adminUser = users.find(u => u.isAdmin || u.email === 'crazyaneeshus007@gmail.com');
+    if (!adminUser) {
+      adminUser = {
+        id: 'admin_master_aneesh',
+        name: 'Aneesh (Admin)',
+        email: 'crazyaneeshus007@gmail.com',
+        isAdmin: true,
+        avatar: 'A',
+        createdAt: Date.now(),
+        stats: {
+          correct: 0,
+          total: 0,
+          streak: 0,
+          maxStreak: 0,
+          topicStats: {},
+        },
+        repeatQueue: [],
+        upcomingRepeats: [],
+        questionHistory: [],
+      };
+      persistUsers([...users, adminUser]);
+    }
+    approveUser(adminUser.id);
+    setActiveUserId(adminUser.id);
+    localStorage.setItem('psc_active_user_id', adminUser.id);
+    setShowAuthModal(false);
+    setViewMode('admin');
+  };
+
   // Called from InviteGate after code validated
   const handleInviteCodeValid = (codeObj) => {
     setPendingInviteCode(codeObj);
@@ -264,6 +298,16 @@ export default function App() {
   const handleRevokeUserFromAdmin = (userId) => {
     revokeUser(userId);
     // If the active user is being revoked, sign them out
+    if (activeUserId === userId) {
+      setActiveUserId(null);
+      localStorage.removeItem('psc_active_user_id');
+    }
+  };
+
+  const handleDeleteUserFromAdmin = (userId) => {
+    revokeUser(userId);
+    const updated = users.filter(u => u.id !== userId);
+    persistUsers(updated);
     if (activeUserId === userId) {
       setActiveUserId(null);
       localStorage.removeItem('psc_active_user_id');
@@ -413,6 +457,11 @@ export default function App() {
   const handleLogout = () => {
     setActiveUserId(null);
     localStorage.removeItem('psc_active_user_id');
+    localStorage.removeItem('psc_pending_verification_email');
+    localStorage.removeItem('psc_pending_verification_name');
+    adminLogout();
+    setAdminUnlocked(false);
+    setViewMode('quiz');
     setShowProfileModal(false);
     setShowAuthModal(true);
   };
@@ -975,7 +1024,7 @@ export default function App() {
   const currentTopicData = currentSyllabusTopics.find(t => t.id === selectedTopic) || currentSyllabusTopics[0];
 
   return (
-    <div className="app-container">
+    <div className={`app-container${viewMode === 'admin' ? ' admin-mode' : ''}`}>
       {/* Invite Gate — shown to new users who need an invite code */}
       {showInviteGate && (
         <InviteGate onValidCode={handleInviteCodeValid} />
@@ -987,11 +1036,7 @@ export default function App() {
           users={users}
           onSelectUser={handleSelectUser}
           onUserAuthenticated={handleUserAuthenticated}
-          onAdminAuthenticated={() => {
-            setAdminUnlocked(true);
-            setShowAuthModal(false);
-            setShowAdminPanel(true);
-          }}
+          onAdminAuthenticated={handleAdminAuthenticated}
         />
       )}
 
@@ -1030,7 +1075,7 @@ export default function App() {
       )}
 
       {/* Sidebar: Syllabus Topics */}
-      <aside className={`sidebar ${mobileSidebarOpen ? 'mobile-open' : ''}`}>
+      <aside className={`sidebar ${mobileSidebarOpen ? 'mobile-open' : ''} ${viewMode === 'admin' ? 'sidebar-hidden' : ''}`}>
         <div className="sidebar-header">
           <button
             type="button"
@@ -1250,33 +1295,40 @@ export default function App() {
                 </div>
               </button>
 
-              {/* Mobile Subject Toggle */}
-              <div className="mobile-subject-nav-toggle mobile-only">
-                <button
-                  type="button"
-                  className={`mob-subj-btn ${activeSubject === 'malayalam' ? 'active' : ''}`}
-                  onClick={() => handleSwitchSubject('malayalam')}
-                >
-                  MAL
-                </button>
-                <button
-                  type="button"
-                  className={`mob-subj-btn ${activeSubject === 'english' ? 'active' : ''}`}
-                  onClick={() => handleSwitchSubject('english')}
-                >
-                  ENG
-                </button>
-                <button
-                  type="button"
-                  className={`mob-subj-btn ${activeSubject === 'pyq' ? 'active' : ''}`}
-                  onClick={() => handleSwitchSubject('pyq')}
-                >
-                  PYQ
-                </button>
-              </div>
+              {/* Mobile Subject Toggle - hidden in admin mode */}
+              {viewMode !== 'admin' ? (
+                <div className="mobile-subject-nav-toggle mobile-only">
+                  <button
+                    type="button"
+                    className={`mob-subj-btn ${activeSubject === 'malayalam' ? 'active' : ''}`}
+                    onClick={() => handleSwitchSubject('malayalam')}
+                  >
+                    MAL
+                  </button>
+                  <button
+                    type="button"
+                    className={`mob-subj-btn ${activeSubject === 'english' ? 'active' : ''}`}
+                    onClick={() => handleSwitchSubject('english')}
+                  >
+                    ENG
+                  </button>
+                  <button
+                    type="button"
+                    className={`mob-subj-btn ${activeSubject === 'pyq' ? 'active' : ''}`}
+                    onClick={() => handleSwitchSubject('pyq')}
+                  >
+                    PYQ
+                  </button>
+                </div>
+              ) : (
+                <div className="mobile-admin-title mobile-only">
+                  <ShieldCheckIcon size={14} />
+                  <span>Admin Mode</span>
+                </div>
+              )}
 
               {/* Desktop View: Active Topic Pill */}
-              {viewMode === 'blueprint' ? (
+              {viewMode === 'admin' ? null : viewMode === 'blueprint' ? (
                 <div className="current-topic-pill desktop-only blueprint-nav-pill">
                   <LayoutDashboardIcon size={15} />
                   <strong>LDC 100-Mark Blueprint Dashboard</strong>
@@ -1295,19 +1347,50 @@ export default function App() {
             </div>
 
             <div className="nav-right">
-              {/* Bookmarks Navbar Button (Opens Full Page Library) */}
-              <button
-                type="button"
-                className={`nav-bookmark-btn ${viewMode === 'bookmarks' ? 'active' : ''}`}
-                onClick={handleOpenBookmarks}
-                title="View Bookmarks (Full Page Library)"
-              >
-                <BookmarkIcon size={16} className="nav-bookmark-icon" />
-                <span className="nav-bookmark-label desktop-only">Bookmark</span>
-              </button>
+              {/* Admin Center Navbar Button */}
+              {adminUnlocked && (
+                <button
+                  type="button"
+                  className={`nav-admin-center-btn ${viewMode === 'admin' ? 'active' : ''}`}
+                  onClick={() => {
+                    if (viewMode === 'admin') {
+                      setViewMode(previousViewMode || 'quiz');
+                    } else {
+                      setPreviousViewMode(viewMode);
+                      setViewMode('admin');
+                    }
+                  }}
+                  title={viewMode === 'admin' ? "Return to Practice Quiz" : "Administrator Control Center"}
+                >
+                  {viewMode === 'admin' ? (
+                    <>
+                      <ArrowRightIcon size={14} style={{ transform: 'rotate(180deg)' }} />
+                      <span className="desktop-only">Back to Practice</span>
+                    </>
+                  ) : (
+                    <>
+                      <ShieldIcon size={15} />
+                      <span className="desktop-only">Admin Center</span>
+                    </>
+                  )}
+                </button>
+              )}
 
-              {/* Spaced Review Queue Pill on Navbar - shown only when not empty */}
-              {currentSubjectRepeatQueue.length > 0 && (
+              {/* Bookmarks Navbar Button (Opens Full Page Library) - hidden in admin on mobile */}
+              {viewMode !== 'admin' && (
+                <button
+                  type="button"
+                  className={`nav-bookmark-btn ${viewMode === 'bookmarks' ? 'active' : ''}`}
+                  onClick={handleOpenBookmarks}
+                  title="View Bookmarks (Full Page Library)"
+                >
+                  <BookmarkIcon size={16} className="nav-bookmark-icon" />
+                  <span className="nav-bookmark-label desktop-only">Bookmark</span>
+                </button>
+              )}
+
+              {/* Spaced Review Queue Pill on Navbar - shown only when not empty & not in admin */}
+              {viewMode !== 'admin' && currentSubjectRepeatQueue.length > 0 && (
                 <button
                   type="button"
                   className="nav-review-queue-pill"
@@ -1345,8 +1428,9 @@ export default function App() {
             </div>
           </div>
 
-          {/* Mobile View: Dedicated Themed Topic Dropdown */}
-          <div className="mobile-topic-bar mobile-only">
+          {/* Mobile View: Dedicated Themed Topic Dropdown - Only shown in Quiz mode */}
+          {viewMode === 'quiz' && (
+            <div className="mobile-topic-bar mobile-only">
             <button
               type="button"
               className={`custom-topic-trigger ${topicDropdownOpen ? 'active' : ''}`}
@@ -1497,11 +1581,23 @@ export default function App() {
               </>
             )}
           </div>
+        )}
         </header>
 
         {/* Main Content Viewport */}
         <div className="quiz-content-area">
-          {viewMode === 'blueprint' ? (
+          {viewMode === 'admin' ? (
+            <AdminDashboardView
+              onStartPractice={() => {
+                setPreviousViewMode('admin');
+                setViewMode('quiz');
+              }}
+              onStartBlueprint={() => setViewMode('blueprint')}
+              onRevokeUser={handleRevokeUserFromAdmin}
+              onDeleteUser={handleDeleteUserFromAdmin}
+              onLogout={handleLogout}
+            />
+          ) : viewMode === 'blueprint' ? (
             <BlueprintDashboard
               currentUser={currentUser}
               onStartPractice={handleStartPracticeFromBlueprint}

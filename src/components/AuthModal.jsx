@@ -6,7 +6,8 @@ import {
   ArrowRightIcon,
   AlertTriangleIcon,
   CheckIcon,
-  ShieldIcon
+  ShieldIcon,
+  ClockIcon
 } from './Icons';
 import { registerUser, loginUser, checkUserStatus } from '../utils/supabaseClient';
 import { ADMIN_USERNAME, ADMIN_PASSWORD, adminLogin } from '../utils/adminAuth';
@@ -32,6 +33,11 @@ export default function AuthModal({
     const savedPendingEmail = localStorage.getItem('psc_pending_verification_email');
     const savedPendingName = localStorage.getItem('psc_pending_verification_name');
     if (savedPendingEmail) {
+      if (savedPendingEmail.trim().toLowerCase() === ADMIN_USERNAME.toLowerCase()) {
+        localStorage.removeItem('psc_pending_verification_email');
+        localStorage.removeItem('psc_pending_verification_name');
+        return;
+      }
       setPendingInfo({ email: savedPendingEmail, name: savedPendingName || 'Aspirant' });
       setMode('pending_notice');
     }
@@ -51,6 +57,13 @@ export default function AuthModal({
       setError('Please enter a valid email address');
       return;
     }
+
+    const cleanEmail = email.trim().toLowerCase();
+    if (cleanEmail === ADMIN_USERNAME.toLowerCase()) {
+      setError('This email address belongs to the Administrator. Please switch to the Sign In tab to log in.');
+      return;
+    }
+
     if (!password || password.length < 4) {
       setError('Password must be at least 4 characters');
       return;
@@ -102,15 +115,19 @@ export default function AuthModal({
     const cleanEmail = email.trim().toLowerCase();
 
     // 1. Check if Administrator is logging in
-    if (
-      cleanEmail === ADMIN_USERNAME.toLowerCase() &&
-      password === ADMIN_PASSWORD
-    ) {
-      adminLogin(ADMIN_USERNAME, ADMIN_PASSWORD);
-      if (onAdminAuthenticated) {
-        onAdminAuthenticated();
+    if (cleanEmail === ADMIN_USERNAME.toLowerCase()) {
+      if (password === ADMIN_PASSWORD) {
+        adminLogin(ADMIN_USERNAME, ADMIN_PASSWORD);
+        localStorage.removeItem('psc_pending_verification_email');
+        localStorage.removeItem('psc_pending_verification_name');
+        if (onAdminAuthenticated) {
+          onAdminAuthenticated();
+        }
+        return;
+      } else {
+        setError('Incorrect password for Administrator account.');
+        return;
       }
-      return;
     }
 
     setLoading(true);
@@ -204,7 +221,7 @@ export default function AuthModal({
         {mode === 'pending_notice' && (
           <div className="verification-notice-card">
             <div className="verification-icon-pulse">
-              <span className="verification-emoji">⏳</span>
+              <ClockIcon size={34} className="verification-clock-icon" />
             </div>
 
             <h3 className="verification-heading">Account Under Verification</h3>
@@ -264,6 +281,22 @@ export default function AuthModal({
                 }}
               >
                 Already approved? Sign in with password →
+              </button>
+
+              <button
+                type="button"
+                className="auth-link-btn"
+                style={{ marginTop: '0.4rem', opacity: 0.8, fontSize: '0.82rem' }}
+                onClick={() => {
+                  localStorage.removeItem('psc_pending_verification_email');
+                  localStorage.removeItem('psc_pending_verification_name');
+                  setPendingInfo(null);
+                  setError('');
+                  setStatusMessage('');
+                  setMode('login');
+                }}
+              >
+                ← Sign in with a different account / Admin
               </button>
             </div>
           </div>

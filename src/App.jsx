@@ -979,6 +979,11 @@ export default function App() {
           users={users}
           onSelectUser={handleSelectUser}
           onUserAuthenticated={handleUserAuthenticated}
+          onAdminAuthenticated={() => {
+            setAdminUnlocked(true);
+            setShowAuthModal(false);
+            setShowAdminPanel(true);
+          }}
         />
       )}
 

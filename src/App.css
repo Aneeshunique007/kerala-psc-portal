@@ -9813,3 +9813,34 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* Discreet Admin portal button at bottom of card */
+.auth-card-admin-row {
+  margin-top: 1.25rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card-admin-btn {
+  background: transparent;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  color: #64748b;
+  font-size: 0.74rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.auth-card-admin-btn:hover {
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.35);
+  background: rgba(245, 158, 11, 0.08);
+}

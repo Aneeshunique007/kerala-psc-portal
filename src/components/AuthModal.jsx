@@ -9,11 +9,13 @@ import {
   ShieldIcon
 } from './Icons';
 import { registerUser, loginUser, checkUserStatus } from '../utils/supabaseClient';
+import { ADMIN_USERNAME, ADMIN_PASSWORD, adminLogin } from '../utils/adminAuth';
 
 export default function AuthModal({
   users = [],
   onSelectUser,
   onUserAuthenticated,
+  onAdminAuthenticated,
 }) {
   const [mode, setMode] = useState(users.length > 0 ? 'profiles' : 'login'); // 'profiles' | 'login' | 'signup' | 'pending_notice'
   const [name, setName] = useState('');
@@ -97,9 +99,23 @@ export default function AuthModal({
       return;
     }
 
+    const cleanEmail = email.trim().toLowerCase();
+
+    // 1. Check if Administrator is logging in
+    if (
+      cleanEmail === ADMIN_USERNAME.toLowerCase() &&
+      password === ADMIN_PASSWORD
+    ) {
+      adminLogin(ADMIN_USERNAME, ADMIN_PASSWORD);
+      if (onAdminAuthenticated) {
+        onAdminAuthenticated();
+      }
+      return;
+    }
+
     setLoading(true);
     try {
-      const res = await loginUser({ email, password });
+      const res = await loginUser({ email: cleanEmail, password });
       setLoading(false);
 
       if (!res.success) {
@@ -506,6 +522,23 @@ export default function AuthModal({
             )}
           </>
         )}
+
+        {/* Subtle Admin shortcut at bottom of card */}
+        <div className="auth-card-admin-row">
+          <button
+            type="button"
+            className="auth-card-admin-btn"
+            onClick={() => {
+              if (onAdminAuthenticated) {
+                onAdminAuthenticated();
+              }
+            }}
+            title="Administrator Access & Approvals"
+          >
+            <ShieldIcon size={12} />
+            <span>Administrator Portal</span>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -803,11 +803,30 @@
   font-size: 1.05rem;
 }
 
+.explanation-box,
 .explanation-text {
-  margin-top: 0.6rem;
+  margin-top: 0.65rem;
   color: var(--text-primary);
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.feedback-card > .explanation-box:first-child {
+  margin-top: 0;
+}
+
+.explanation-heading,
+.explanation-box strong {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 0.02em;
+  margin-right: 0.35rem;
+}
+
+[data-theme="light"] .explanation-heading,
+[data-theme="light"] .explanation-box strong {
+  color: #0284c7;
 }
 
 .repeat-notice {

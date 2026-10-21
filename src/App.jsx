@@ -1465,31 +1465,12 @@ export default function App() {
               {/* Instant Feedback Card with Explanation */}
               {isAnswered && (
                 <div className={`feedback-card ${selectedOption === currentQuestion.answer ? 'correct' : 'wrong'}`}>
-                  {selectedOption === currentQuestion.answer ? (
-                    <div className="feedback-title">
-                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
-                        <CheckIcon size={18} />
-                        <span>Correct Answer</span>
-                      </span>
-                    </div>
-                  ) : (
-                    <div className="feedback-title">
-                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
-                        <XIcon size={18} />
-                        <span>Incorrect</span>
-                      </span>
+
+                  {currentQuestion.explanation && (
+                    <div className="explanation-box">
+                      <span className="explanation-heading">Explanation:</span> {currentQuestion.explanation}
                     </div>
                   )}
-
-                  {selectedOption !== currentQuestion.answer && (
-                    <div className="feedback-correct-answer">
-                      Correct Answer: <strong>{currentQuestion.options[currentQuestion.answer]}</strong>
-                    </div>
-                  )}
-
-                  <div className="explanation-box">
-                    <strong>Explanation:</strong> {currentQuestion.explanation}
-                  </div>
 
                   {/* FOR FRESH RIGHT ANSWER: Show Hard (repeat 3x) and Easy (mark learned) */}
                   {selectedOption === currentQuestion.answer && !currentQuestion.isRepeat ? (

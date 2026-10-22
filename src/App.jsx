@@ -663,11 +663,8 @@ export default function App() {
   const userRepeatQueue = currentUser?.repeatQueue || [];
   const userUpcomingRepeats = currentUser?.upcomingRepeats || [];
   const userHistory = currentUser?.questionHistory || [];
-  // Unique questions answered correctly (learned questions also count as solved)
-  const userSolvedSet = new Set([
-    ...(currentUser?.solvedQuestions || []),
-    ...(currentUser?.learnedQuestions || [])
-  ]);
+  // Topic progress counts only questions explicitly marked as learned.
+  const userSolvedSet = new Set(currentUser?.learnedQuestions || []);
 
   // Bookmarked questions tracking
   const userBookmarks = currentUser?.bookmarkedQuestions || [];
@@ -1089,6 +1086,11 @@ export default function App() {
   // Difficulty Selection (Easy, Medium, Hard)
   const handleDifficultySelect = (difficulty) => {
     if (!currentQuestion || !currentUser) return;
+    if (difficulty === 'easy' && (
+      currentQuestion.isRepeat
+      || !isAnswered
+      || selectedOption !== currentQuestion.answer
+    )) return;
 
     const currentTotal = userStats.total || 0;
     const qId = currentQuestion.id;
@@ -1977,19 +1979,6 @@ export default function App() {
                           <ArrowRightIcon size={15} />
                         </button>
                       </div>
-
-                      {(currentQuestion.remainingRepeats ?? 3) > 1 && (
-                        <div className="misclick-escape-row">
-                          <button
-                            type="button"
-                            className="misclick-escape-btn"
-                            onClick={() => handleDifficultySelect('easy')}
-                            title="Mark as fully learned immediately without waiting for remaining repeats"
-                          >
-                            Fully confident? Skip remaining repeats &amp; mark as learned
-                          </button>
-                        </div>
-                      )}
                     </div>
                   ) : (
                     /* FOR INCORRECT ANSWER: Auto-queued for 3 repeats (min 5 gap) */
@@ -2017,16 +2006,6 @@ export default function App() {
                         >
                           <span>Next Question</span>
                           <ArrowRightIcon size={15} />
-                        </button>
-                      </div>
-
-                      <div className="misclick-escape-row">
-                        <button
-                          type="button"
-                          className="misclick-escape-btn"
-                          onClick={() => handleDifficultySelect('easy')}
-                        >
-                          Accidental misclick? Skip repeats & mark as learned
                         </button>
                       </div>
                     </div>

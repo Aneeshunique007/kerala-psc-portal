@@ -250,13 +250,14 @@ export async function syncUserProgressToCloud(user) {
     learnedQuestions: user.learnedQuestions || [],
     solvedQuestions: user.solvedQuestions || [],
     questionHistory: (user.questionHistory || []).slice(-200),
+    progressResetAt: user.progressResetAt || null,
     lastSyncedAt: new Date().toISOString(),
   };
 
   try {
     const isUuid = user.id && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(user.id);
-    let query = supabase.from('app_users').update({ progress: payload });
-    
+    let query = supabase.from('app_users').select('progress');
+
     if (isUuid) {
       query = query.eq('id', user.id);
     } else if (user.email) {
@@ -265,7 +266,24 @@ export async function syncUserProgressToCloud(user) {
       return { success: false, error: 'No valid user ID or email' };
     }
 
-    const { error } = await query;
+    const { data: existingUser, error: lookupError } = await query.maybeSingle();
+    if (lookupError) {
+      console.warn('Cloud progress sync notice:', lookupError.message);
+      return { success: false, error: lookupError.message };
+    }
+    const cloudResetAt = existingUser?.progress?.progressResetAt;
+    if (cloudResetAt && user.progressResetAt !== cloudResetAt) {
+      return { success: false, error: 'Cloud progress was reset; local progress must be refreshed first.' };
+    }
+
+    let updateQuery = supabase.from('app_users').update({ progress: payload });
+    if (isUuid) {
+      updateQuery = updateQuery.eq('id', user.id);
+    } else {
+      updateQuery = updateQuery.eq('email', user.email.toLowerCase().trim());
+    }
+
+    const { error } = await updateQuery;
     if (error) {
       console.warn('Cloud progress sync notice:', error.message);
       return { success: false, error: error.message };
@@ -299,4 +317,3 @@ export async function fetchUserProgressFromCloud(identifier) {
     return null;
   }
 }
-

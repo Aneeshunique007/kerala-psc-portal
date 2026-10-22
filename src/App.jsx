@@ -232,6 +232,24 @@ export default function App() {
     // Fetch latest cloud progress
     const remote = await fetchUserProgressFromCloud(currentUser.id || currentUser.email);
     if (remote) {
+      if (remote.progressResetAt && currentUser.progressResetAt !== remote.progressResetAt) {
+        const resetUser = {
+          ...currentUser,
+          stats: remote.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+          bookmarkedQuestions: remote.bookmarkedQuestions || [],
+          repeatQueue: (remote.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+          upcomingRepeats: (remote.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+          questionHistory: remote.questionHistory || [],
+          learnedQuestions: remote.learnedQuestions || [],
+          solvedQuestions: remote.solvedQuestions || [],
+          progressResetAt: remote.progressResetAt
+        };
+        persistUsers(users.map((user) => user.id === currentUser.id ? resetUser : user));
+        setCloudSyncStatus('synced');
+        setTimeout(() => setCloudSyncStatus('idle'), 3000);
+        return;
+      }
+
       const mergedBookmarks = Array.from(
         new Set([
           ...(currentUser.bookmarkedQuestions || []),
@@ -257,6 +275,35 @@ export default function App() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (!currentUser) return;
+
+    let cancelled = false;
+    fetchUserProgressFromCloud(currentUser.id || currentUser.email).then((cloudProgress) => {
+      const resetAt = cloudProgress?.progressResetAt;
+      if (cancelled || !resetAt || currentUser.progressResetAt === resetAt) return;
+
+      const updatedUser = {
+        ...currentUser,
+        stats: cloudProgress.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+        bookmarkedQuestions: cloudProgress.bookmarkedQuestions || [],
+        repeatQueue: (cloudProgress.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+        upcomingRepeats: (cloudProgress.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+        questionHistory: cloudProgress.questionHistory || [],
+        learnedQuestions: cloudProgress.learnedQuestions || [],
+        solvedQuestions: cloudProgress.solvedQuestions || [],
+        progressResetAt: resetAt
+      };
+      persistUsers(users.map((user) => user.id === currentUser.id ? updatedUser : user));
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  // Check the reset marker when the active account changes.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeUserId]);
 
   const handleSelectUser = (userId) => {
     setActiveUserId(userId);
@@ -285,46 +332,65 @@ export default function App() {
     if (existingIndex >= 0) {
       // User profile already present on this device - merge cloud progress seamlessly
       const existing = users[existingIndex];
-      const mergedBookmarks = Array.from(
-        new Set([
-          ...(existing.bookmarkedQuestions || []),
-          ...(cloudProgress?.bookmarkedQuestions || [])
-        ])
-      );
+      const resetAt = cloudProgress?.progressResetAt;
+      if (resetAt && existing.progressResetAt !== resetAt) {
+        activeUser = {
+          ...existing,
+          id: dbUser.id || existing.id,
+          name: dbUser.name || existing.name,
+          email: dbUser.email || existing.email,
+          stats: cloudProgress.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+          bookmarkedQuestions: cloudProgress.bookmarkedQuestions || [],
+          repeatQueue: (cloudProgress.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+          upcomingRepeats: (cloudProgress.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+          questionHistory: cloudProgress.questionHistory || [],
+          learnedQuestions: cloudProgress.learnedQuestions || [],
+          solvedQuestions: cloudProgress.solvedQuestions || [],
+          progressResetAt: resetAt
+        };
+      } else {
+        const mergedBookmarks = Array.from(
+          new Set([
+            ...(existing.bookmarkedQuestions || []),
+            ...(cloudProgress?.bookmarkedQuestions || [])
+          ])
+        );
 
-      const existingTotal = existing.stats?.total || 0;
-      const cloudTotal = cloudProgress?.stats?.total || 0;
-      const mergedStats = cloudTotal > existingTotal ? cloudProgress.stats : existing.stats;
+        const existingTotal = existing.stats?.total || 0;
+        const cloudTotal = cloudProgress?.stats?.total || 0;
+        const mergedStats = cloudTotal > existingTotal ? cloudProgress.stats : existing.stats;
 
-      const localRepeatIds = new Set((existing.repeatQueue || []).map((r) => r.id));
-      const mergedRepeats = [...(existing.repeatQueue || [])];
-      (cloudProgress?.repeatQueue || []).forEach((cr) => {
-        if (!localRepeatIds.has(cr.id)) {
-          mergedRepeats.push({ ...getFreshQuestion(cr), ...cr });
-        }
-      });
+        const localRepeatIds = new Set((existing.repeatQueue || []).map((r) => r.id));
+        const mergedRepeats = [...(existing.repeatQueue || [])];
+        (cloudProgress?.repeatQueue || []).forEach((cr) => {
+          if (!localRepeatIds.has(cr.id)) {
+            mergedRepeats.push({ ...getFreshQuestion(cr), ...cr });
+          }
+        });
 
-      activeUser = {
-        ...existing,
-        id: dbUser.id || existing.id,
-        name: dbUser.name || existing.name,
-        email: dbUser.email || existing.email,
-        stats: mergedStats || existing.stats,
-        bookmarkedQuestions: mergedBookmarks,
-        repeatQueue: mergedRepeats,
-        upcomingRepeats: existing.upcomingRepeats?.length
-          ? existing.upcomingRepeats
-          : (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr })),
-        questionHistory: existing.questionHistory?.length
-          ? existing.questionHistory
-          : (cloudProgress?.questionHistory || []),
-        learnedQuestions: existing.learnedQuestions?.length
-          ? existing.learnedQuestions
-          : (cloudProgress?.learnedQuestions || []),
-        solvedQuestions: existing.solvedQuestions?.length
-          ? existing.solvedQuestions
-          : (cloudProgress?.solvedQuestions || [])
-      };
+        activeUser = {
+          ...existing,
+          id: dbUser.id || existing.id,
+          name: dbUser.name || existing.name,
+          email: dbUser.email || existing.email,
+          stats: mergedStats || existing.stats,
+          bookmarkedQuestions: mergedBookmarks,
+          repeatQueue: mergedRepeats,
+          upcomingRepeats: existing.upcomingRepeats?.length
+            ? existing.upcomingRepeats
+            : (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr })),
+          questionHistory: existing.questionHistory?.length
+            ? existing.questionHistory
+            : (cloudProgress?.questionHistory || []),
+          learnedQuestions: existing.learnedQuestions?.length
+            ? existing.learnedQuestions
+            : (cloudProgress?.learnedQuestions || []),
+          solvedQuestions: existing.solvedQuestions?.length
+            ? existing.solvedQuestions
+            : (cloudProgress?.solvedQuestions || []),
+          progressResetAt: resetAt || existing.progressResetAt
+        };
+      }
 
       const updated = [...users];
       updated[existingIndex] = activeUser;
@@ -356,6 +422,7 @@ export default function App() {
         questionHistory: restoredHistory,
         learnedQuestions: cloudProgress?.learnedQuestions || [],
         solvedQuestions: cloudProgress?.solvedQuestions || [],
+        progressResetAt: cloudProgress?.progressResetAt || null,
       };
       persistUsers([...users, activeUser]);
     }

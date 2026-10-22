@@ -2018,31 +2018,33 @@ export default function App() {
               <div style={{ marginBottom: '1rem', color: '#10b981', display: 'flex', justifyContent: 'center' }}>
                 <TrophyIcon size={44} />
               </div>
-              <h3>Topic Completely Mastered!</h3>
+              <h2>Topic Completely Mastered!</h2>
               <p>Every question here has been answered correctly and all repeats are finished. Switch topics or practice another syllabus section.</p>
-              {!isRepeatOnlyMode && (
+              <div className="empty-state-actions">
+                {!isRepeatOnlyMode && (
+                  <button
+                    type="button"
+                    id="review-topic-again-btn"
+                    className="next-btn"
+                    onClick={() => {
+                      setIsTopicReviewMode(true);
+                      loadNextQuestion({ reviewMode: true });
+                    }}
+                  >
+                    Review This Topic Again
+                  </button>
+                )}
                 <button
                   type="button"
-                  id="review-topic-again-btn"
                   className="next-btn"
-                  style={{ marginBottom: '0.6rem' }}
                   onClick={() => {
-                    setIsTopicReviewMode(true);
-                    loadNextQuestion({ reviewMode: true });
+                    setIsRepeatOnlyMode(false);
+                    setSelectedTopic('all');
                   }}
                 >
-                  Review This Topic Again
+                  Switch to All Topics
                 </button>
-              )}
-              <button
-                className="next-btn"
-                onClick={() => {
-                  setIsRepeatOnlyMode(false);
-                  setSelectedTopic('all');
-                }}
-              >
-                Switch to All Topics
-              </button>
+              </div>
             </div>
           )}
         </div>

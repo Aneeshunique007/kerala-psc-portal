@@ -1209,13 +1209,34 @@
 }
 
 .empty-state-card h2 {
-  color: #fff;
+  color: var(--text-primary);
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
 .empty-state-card p {
   color: var(--text-secondary);
+  margin: 0 auto 1rem;
+  max-width: 42rem;
+}
+
+.empty-state-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+@media (max-width: 480px) {
+  .empty-state-actions {
+    flex-direction: column;
+  }
+
+  .empty-state-actions .next-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Repeat Queue Drawer / Modal */

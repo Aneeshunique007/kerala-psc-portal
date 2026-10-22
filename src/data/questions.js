@@ -11,6 +11,7 @@ import pyq2023Questions from './pyq_2023_questions.json';
 import pyq2024Questions from './pyq_2024_questions.json';
 import pyq2025Questions from './pyq_2025_questions.json';
 import pyq2026Questions from './pyq_2026_questions.json';
+import currentAffairsQuestions from './current_affairs_questions.json';
 
 // -------------------------------------------------------------
 // 2. Syllabus & Topic Taxonomy Definitions
@@ -476,8 +477,10 @@ export const QUESTION_BANK = Array.isArray(malayalamQuestions) ? malayalamQuesti
 
 export const ENGLISH_QUESTION_BANK = Array.isArray(englishQuestions) ? englishQuestions : [];
 
+export const CURRENT_AFFAIRS_QUESTION_BANK = Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions : [];
+
 export const PYQ_YEARS = [
-  { id: '2026', label: '2026 Exam Papers', count: 1944 },
+  { id: '2026', label: '2026 Exam Papers', count: 1944 + (Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions.length : 0) },
   { id: '2025', label: '2025 Exam Papers', count: 2956 },
   { id: '2024', label: '2024 Exam Papers', count: 2711 },
   { id: '2023', label: '2023 Exam Papers', count: 2235 },
@@ -486,6 +489,7 @@ export const PYQ_YEARS = [
 ];
 
 export const PYQ_QUESTION_BANK = [
+  ...(Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions.map(q => ({ ...q, year: '2026' })) : []),
   ...(Array.isArray(pyq2026Questions) ? pyq2026Questions.map(q => ({ ...q, year: '2026' })) : []),
   ...(Array.isArray(pyq2025Questions) ? pyq2025Questions.map(q => ({ ...q, year: '2025' })) : []),
   ...(Array.isArray(pyq2024Questions) ? pyq2024Questions.map(q => ({ ...q, year: '2024' })) : []),
@@ -493,3 +497,4 @@ export const PYQ_QUESTION_BANK = [
   ...(Array.isArray(pyq2022Questions) ? pyq2022Questions.map(q => ({ ...q, year: '2022' })) : []),
   ...(Array.isArray(pyq2021Questions) ? pyq2021Questions.map(q => ({ ...q, year: '2021' })) : [])
 ];
+

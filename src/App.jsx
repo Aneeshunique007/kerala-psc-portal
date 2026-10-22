@@ -61,10 +61,10 @@ const MALAYALAM_TOPIC_ALIASES = {
   viparitham: ['viparitham', 'വിപരീതപദം'],
   samanapadham: ['samanapadham'],
   paryayam: ['paryayam', 'പര്യായപദം', 'പര്യായം'],
-  arthavyathyasam: ['ശബ്ദാർത്ഥം', 'അർത്ഥവ്യത്യാസം'],
+  arthavyathyasam: ['arthavyathyasam', 'ശബ്ദാർത്ഥം', 'അർത്ഥവ്യത്യാസം'],
   shaylikal: ['shaylikal', 'shailikal', 'ശൈലികൾ'],
   pirichezhuthal: ['pirichezhuthal', 'പിരിച്ചെഴുത്ത്'],
-  sandhi: ['സന്ധി'],
+  sandhi: ['sandhi', 'സന്ധി'],
   cherkkayzhuthuka: ['cherkkayzhuthuka'],
   padashuddhi: ['padashuddhi', 'പദശുദ്ധി'],
   vakyashuddhi: ['vakyashuddhi'],
@@ -138,6 +138,7 @@ export default function App() {
   const [isAnswered, setIsAnswered] = useState(false);
   const [showRepeatModal, setShowRepeatModal] = useState(false);
   const [isRepeatOnlyMode, setIsRepeatOnlyMode] = useState(false);
+  const [isTopicReviewMode, setIsTopicReviewMode] = useState(false);
   const [showMockExam, setShowMockExam] = useState(false);
   const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -316,7 +317,13 @@ export default function App() {
           : (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr })),
         questionHistory: existing.questionHistory?.length
           ? existing.questionHistory
-          : (cloudProgress?.questionHistory || [])
+          : (cloudProgress?.questionHistory || []),
+        learnedQuestions: existing.learnedQuestions?.length
+          ? existing.learnedQuestions
+          : (cloudProgress?.learnedQuestions || []),
+        solvedQuestions: existing.solvedQuestions?.length
+          ? existing.solvedQuestions
+          : (cloudProgress?.solvedQuestions || [])
       };
 
       const updated = [...users];
@@ -347,6 +354,8 @@ export default function App() {
         repeatQueue: restoredRepeats,
         upcomingRepeats: restoredUpcoming,
         questionHistory: restoredHistory,
+        learnedQuestions: cloudProgress?.learnedQuestions || [],
+        solvedQuestions: cloudProgress?.solvedQuestions || [],
       };
       persistUsers([...users, activeUser]);
     }
@@ -444,7 +453,9 @@ export default function App() {
           stats: { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
           repeatQueue: [],
           upcomingRepeats: [],
-          questionHistory: []
+          questionHistory: [],
+          learnedQuestions: [],
+          solvedQuestions: []
         };
       }
       return u;
@@ -471,9 +482,19 @@ export default function App() {
           return aliases.includes(q.topic);
         };
 
-        const newRepeatQueue = (u.repeatQueue || []).filter(q => !isTopicMatch(q));
-        const newUpcoming = (u.upcomingRepeats || []).filter(item => !isTopicMatch(item?.question));
-        const newHistory = (u.questionHistory || []).filter(item => !isTopicMatch(item));
+        const subjectBank = subject === 'english'
+          ? ENGLISH_QUESTION_BANK
+          : subject === 'pyq'
+          ? PYQ_QUESTION_BANK
+          : QUESTION_BANK;
+        const topicQuestionIds = new Set(subjectBank.filter(isTopicMatch).map(q => q.id));
+
+        // Repeat items are flat question objects; history/learned/solved are plain ID lists
+        const newRepeatQueue = (u.repeatQueue || []).filter(q => !isTopicMatch(getFreshQuestion(q)));
+        const newUpcoming = (u.upcomingRepeats || []).filter(item => !isTopicMatch(getFreshQuestion(item)));
+        const newHistory = (u.questionHistory || []).filter(id => !topicQuestionIds.has(id));
+        const newLearned = (u.learnedQuestions || []).filter(id => !topicQuestionIds.has(id));
+        const newSolved = (u.solvedQuestions || []).filter(id => !topicQuestionIds.has(id));
 
         return {
           ...u,
@@ -485,7 +506,9 @@ export default function App() {
           },
           repeatQueue: newRepeatQueue,
           upcomingRepeats: newUpcoming,
-          questionHistory: newHistory
+          questionHistory: newHistory,
+          learnedQuestions: newLearned,
+          solvedQuestions: newSolved
         };
       }
       return u;
@@ -640,6 +663,11 @@ export default function App() {
   const userRepeatQueue = currentUser?.repeatQueue || [];
   const userUpcomingRepeats = currentUser?.upcomingRepeats || [];
   const userHistory = currentUser?.questionHistory || [];
+  // Unique questions answered correctly (learned questions also count as solved)
+  const userSolvedSet = new Set([
+    ...(currentUser?.solvedQuestions || []),
+    ...(currentUser?.learnedQuestions || [])
+  ]);
 
   // Bookmarked questions tracking
   const userBookmarks = currentUser?.bookmarkedQuestions || [];
@@ -726,22 +754,7 @@ export default function App() {
     }
   });
 
-  const MALAYALAM_TOPIC_ALIASES = {
-    ottapadam: ['ottapadam', 'ഒറ്റപ്പദം'],
-    viparitham: ['viparitham', 'വിപരീതപദം'],
-    samanapadham: ['samanapadham', 'ശബ്ദാർത്ഥം', 'അർത്ഥവ്യത്യാസം', 'പര്യായം', 'പര്യായപദം', 'paryayam'],
-    shaylikal: ['shaylikal', 'shailikal', 'ശൈലികൾ'],
-    pirichezhuthal: ['pirichezhuthal', 'പിരിച്ചെഴുത്ത്', 'സന്ധി'],
-    padashuddhi: ['padashuddhi', 'പദശുദ്ധി'],
-    vakyashuddhi: ['vakyashuddhi'],
-    lingam: ['lingam', 'ethirlingam', 'എതിർലിംഗം'],
-    vachanam: ['vachanam'],
-    krithikal: ['krithikal', 'varikal', 'sahithyam', 'കാവ്യവരികളും കവികളും', 'കൃതികളും കഥാപാത്രങ്ങളും'],
-    paribhasha: ['paribhasha'],
-    ghadakapadam: ['ghadakapadam'],
-    cherkkayzhuthuka: ['cherkkayzhuthuka'],
-    pyq_malayalam: ['pyq_malayalam', 'pyq']
-  };
+  // Topic matching uses the module-level MALAYALAM_TOPIC_ALIASES (one topic per question)
 
   const matchesTopic = (qTopic, targetTopicId) => {
     if (targetTopicId === 'all') return true;
@@ -756,37 +769,56 @@ export default function App() {
     const bank = activeSubject === 'pyq'
       ? currentQuestionBank.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`))
       : currentQuestionBank;
-    const total = topicId === 'all'
-      ? bank.length
-      : bank.filter(q => matchesTopic(q.topic, topicId)).length;
-    const rawSolved = topicId === 'all'
-      ? currentSyllabusTopics.filter(t => t.id !== 'all').reduce((acc, t) => acc + (userStats?.topicStats?.[t.id]?.correct || 0), 0)
-      : (userStats?.topicStats?.[topicId]?.correct || 0);
-    const solved = Math.min(total, rawSolved);
+    const topicQuestions = topicId === 'all'
+      ? bank
+      : bank.filter(q => matchesTopic(q.topic, topicId));
+    const total = topicQuestions.length;
+    // Count each question only once, and only if it was answered correctly
+    const solved = topicQuestions.filter(q => userSolvedSet.has(q.id)).length;
     return { solved, total };
   };
 
-  const getFilteredPool = () => {
+  const isInActiveSubject = (qId) => {
+    if (activeSubject === 'english') return ENGLISH_QUESTION_BANK.some(eq => eq.id === qId);
+    if (activeSubject === 'pyq') return PYQ_QUESTION_BANK.some(pq => pq.id === qId);
+    return QUESTION_BANK.some(mq => mq.id === qId);
+  };
+
+  const matchesYearFilter = (q) =>
+    activeSubject !== 'pyq' || q?.year === selectedYear || String(q?.id || '').includes(`_${selectedYear}_`);
+
+  const getFilteredPool = (repeatQueueList = userRepeatQueue) => {
     let pool;
     if (isRepeatOnlyMode) {
-      pool = [...currentSubjectRepeatQueue];
+      pool = repeatQueueList.filter(q => isInActiveSubject(q.id));
     } else if (selectedTopic === 'all') {
       pool = [...currentQuestionBank];
     } else {
       pool = currentQuestionBank.filter(q => matchesTopic(q.topic, selectedTopic));
     }
-
-    if (activeSubject === 'pyq') {
-      pool = pool.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`));
-    }
-    return pool;
+    return pool.filter(matchesYearFilter);
   };
 
-  const loadNextQuestion = (resetHistory = false, overrideUpcoming = null) => {
+  // overrideUsers: pass the freshly-updated users array when calling right after persistUsers(),
+  // so this function never overwrites the just-saved state with stale data.
+  // reviewMode: allow re-practising already completed questions once a topic is finished.
+  const loadNextQuestion = ({ overrideUsers = null, reviewMode = null } = {}) => {
     setIsAnswered(false);
     setSelectedOption(null);
 
-    const pool = getFilteredPool();
+    const baseUsers = Array.isArray(overrideUsers) ? overrideUsers : users;
+    const baseUser = baseUsers.find(u => u.id === activeUserId) || currentUser;
+    const upcomingList = baseUser?.upcomingRepeats || [];
+    const repeatQueueList = baseUser?.repeatQueue || [];
+    const historyList = baseUser?.questionHistory || [];
+    const baseTotal = baseUser?.stats?.total || 0;
+    const learnedSet = new Set(baseUser?.learnedQuestions || []);
+    const solvedSet = new Set(baseUser?.solvedQuestions || []);
+    const upcomingIds = new Set(upcomingList.map(r => r.id));
+    const currentId = currentQuestion?.id;
+    const allowReview = reviewMode ?? isTopicReviewMode;
+
+    const pool = getFilteredPool(repeatQueueList);
 
     if (pool.length === 0) {
       setCurrentQuestion(null);
@@ -795,50 +827,63 @@ export default function App() {
 
     let nextQ = null;
     let isRepeat = false;
-    const upcomingList = overrideUpcoming || userUpcomingRepeats;
 
     if (isRepeatOnlyMode) {
-      // In Mistake Queue mode: pick from currentSubjectRepeatQueue without immediate repeats
-      const candidates = currentSubjectRepeatQueue.length > 1
-        ? currentSubjectRepeatQueue.filter(q => q.id !== currentQuestion?.id)
-        : currentSubjectRepeatQueue;
+      // In Mistake Queue mode: pick from the subject's repeat queue without immediate repeats
+      const candidates = pool.length > 1 ? pool.filter(q => q.id !== currentId) : pool;
       const randIndex = Math.floor(Math.random() * candidates.length);
-      nextQ = candidates[randIndex];
+      nextQ = getFreshQuestion(candidates[randIndex]);
       isRepeat = true;
     } else {
-      // Regular mode: check if an upcoming repeat question for this subject & topic is due
-      // Must NOT be the question just answered or in the last 5 questions (min 5 gap)
-      const currentTotal = userStats.total || 0;
-      const eligibleUpcoming = upcomingList.filter(rep => {
+      // All pending repeats for this subject / topic / year
+      const topicRepeats = upcomingList.filter(rep => {
         const freshQ = getFreshQuestion(rep);
-        const isCurrentSubject = activeSubject === 'english'
-          ? ENGLISH_QUESTION_BANK.some(eq => eq.id === freshQ.id)
-          : activeSubject === 'pyq'
-          ? PYQ_QUESTION_BANK.some(pq => pq.id === freshQ.id)
-          : QUESTION_BANK.some(mq => mq.id === freshQ.id);
-        const matchesCurrentTopic = selectedTopic === 'all' || matchesTopic(freshQ.topic, selectedTopic);
-        const matchesYear = activeSubject !== 'pyq' || freshQ.year === selectedYear || String(freshQ.id || '').includes(`_${selectedYear}_`);
-        const passedMinGap = !rep.minAvailableAt || currentTotal >= rep.minAvailableAt;
-        const notInRecentHistory = !userHistory.slice(-5).includes(freshQ.id);
-        const notCurrent = freshQ.id !== currentQuestion?.id;
-        const hasRemaining = (rep.remainingRepeats ?? 1) > 0;
-
-        return isCurrentSubject && matchesCurrentTopic && matchesYear && passedMinGap && notInRecentHistory && notCurrent && hasRemaining;
+        return isInActiveSubject(freshQ.id)
+          && (selectedTopic === 'all' || matchesTopic(freshQ.topic, selectedTopic))
+          && matchesYearFilter(freshQ)
+          && (rep.remainingRepeats ?? 1) > 0;
       });
 
-      if (eligibleUpcoming.length > 0 && Math.random() > 0.3) {
-        const chosenRep = eligibleUpcoming[0];
-        nextQ = getFreshQuestion(chosenRep);
+      // Repeats that are due: passed the 5-question gap, not recent, not the current question
+      const recent = historyList.slice(-5);
+      const dueRepeats = topicRepeats.filter(rep =>
+        (!rep.minAvailableAt || baseTotal >= rep.minAvailableAt)
+        && !recent.includes(rep.id)
+        && rep.id !== currentId
+      );
+
+      // Fresh questions: never answered correctly, not learned, not waiting in the repeat queue
+      const freshCandidates = pool.filter(q =>
+        !solvedSet.has(q.id)
+        && !learnedSet.has(q.id)
+        && !upcomingIds.has(q.id)
+        && q.id !== currentId
+      );
+
+      if (dueRepeats.length > 0 && (freshCandidates.length === 0 || Math.random() > 0.3)) {
+        nextQ = getFreshQuestion(dueRepeats[0]);
         isRepeat = true;
         soundFX.playRepeatAlert();
-      } else {
-        // Pick question from topic pool, avoiding recent history and the current question
-        const unasked = pool.filter(q => (resetHistory ? true : !userHistory.includes(q.id)) && q.id !== currentQuestion?.id);
-        const fallback = pool.filter(q => q.id !== currentQuestion?.id);
-        const selectionPool = unasked.length > 0 ? unasked : (fallback.length > 0 ? fallback : pool);
+      } else if (freshCandidates.length > 0) {
+        const randIndex = Math.floor(Math.random() * freshCandidates.length);
+        nextQ = getFreshQuestion(freshCandidates[randIndex]);
+      } else if (topicRepeats.length > 0) {
+        // No fresh questions left: finish the pending repeats (earliest due first)
+        const waiting = topicRepeats.filter(r => r.id !== currentId);
+        const ordered = [...(waiting.length > 0 ? waiting : topicRepeats)]
+          .sort((a, b) => (a.minAvailableAt || 0) - (b.minAvailableAt || 0));
+        nextQ = getFreshQuestion(ordered[0]);
+        isRepeat = true;
+        soundFX.playRepeatAlert();
+      } else if (allowReview) {
+        // Topic finished and the user chose to review it again
+        const reviewPool = pool.filter(q => q.id !== currentId && !recent.includes(q.id));
+        const fallback = pool.filter(q => q.id !== currentId);
+        const selectionPool = reviewPool.length > 0 ? reviewPool : (fallback.length > 0 ? fallback : pool);
         const randIndex = Math.floor(Math.random() * selectionPool.length);
         nextQ = getFreshQuestion(selectionPool[randIndex]);
       }
+      // Otherwise nextQ stays null -> "Topic Completely Mastered" screen
     }
 
     if (nextQ) {
@@ -860,7 +905,8 @@ export default function App() {
         finalOptions = shuffledOptions;
       }
 
-      const activeRep = upcomingList.find(r => r.id === nextQ.id);
+      const activeRep = upcomingList.find(r => r.id === nextQ.id)
+        || repeatQueueList.find(r => r.id === nextQ.id);
 
       setCurrentQuestion({
         ...nextQ,
@@ -868,12 +914,12 @@ export default function App() {
         answer: finalAnswer,
         isRepeat,
         repeatDifficulty: activeRep?.difficulty || nextQ.difficulty || null,
-        remainingRepeats: activeRep?.remainingRepeats || nextQ.remainingRepeats || null
+        remainingRepeats: isRepeat ? (activeRep?.remainingRepeats ?? 3) : null
       });
 
-      if (currentUser) {
-        const updatedHistory = [...userHistory.slice(-20), nextQ.id];
-        const updated = users.map(u => u.id === activeUserId ? { ...u, questionHistory: updatedHistory } : u);
+      if (baseUser) {
+        const updatedHistory = [...historyList.slice(-20), nextQ.id];
+        const updated = baseUsers.map(u => u.id === activeUserId ? { ...u, questionHistory: updatedHistory } : u);
         persistUsers(updated);
       }
     } else {
@@ -884,12 +930,19 @@ export default function App() {
   // Load question when topic, mode, subject, year, or active user changes
   useEffect(() => {
     if (currentUser) {
-      loadNextQuestion(true);
+      setIsTopicReviewMode(false);
+      loadNextQuestion({ reviewMode: false });
     }
   }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId]);
 
-  const handleOptionSelect = (optionIndex) => {
+  const handleOptionSelect = (rawOptionIndex) => {
     if (isAnswered || !currentQuestion || !currentUser) return;
+
+    // Some questions contain the correct answer text twice; treat an identical option as the correct one
+    const correctText = currentQuestion.options?.[currentQuestion.answer];
+    const optionIndex = currentQuestion.options?.[rawOptionIndex] === correctText
+      ? currentQuestion.answer
+      : rawOptionIndex;
 
     setIsAnswered(true);
     setSelectedOption(optionIndex);
@@ -925,6 +978,8 @@ export default function App() {
       let updatedUpcoming = [...userUpcomingRepeats];
       let updatedRepeatQueue = [...userRepeatQueue];
       let updatedLearned = [...(currentUser?.learnedQuestions || [])];
+      const prevSolved = currentUser?.solvedQuestions || [];
+      const updatedSolved = prevSolved.includes(qId) ? prevSolved : [...prevSolved, qId];
 
       if (currentQuestion.isRepeat) {
         // When an active repeat question is answered correctly: automatically advance repeat countdown!
@@ -967,6 +1022,7 @@ export default function App() {
             repeatQueue: updatedRepeatQueue,
             upcomingRepeats: updatedUpcoming,
             learnedQuestions: updatedLearned,
+            solvedQuestions: updatedSolved,
             stats: {
               correct: u.stats.correct + 1,
               total: currentTotal,
@@ -1005,6 +1061,8 @@ export default function App() {
         updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
       }
       const updatedLearned = (currentUser?.learnedQuestions || []).filter(id => id !== qId);
+      // A wrong answer means the question is no longer counted as solved until answered correctly again
+      const updatedSolved = (currentUser?.solvedQuestions || []).filter(id => id !== qId);
 
       const updated = users.map(u => {
         if (u.id === activeUserId) {
@@ -1013,6 +1071,7 @@ export default function App() {
             repeatQueue: updatedRepeatQueue,
             upcomingRepeats: updatedUpcoming,
             learnedQuestions: updatedLearned,
+            solvedQuestions: updatedSolved,
             stats: {
               ...u.stats,
               total: currentTotal,
@@ -1041,12 +1100,17 @@ export default function App() {
     let updatedRepeatQueue = [...userRepeatQueue];
     let updatedLearned = [...(currentUser?.learnedQuestions || [])];
 
+    let updatedSolved = [...(currentUser?.solvedQuestions || [])];
+
     if (difficulty === 'easy') {
       // Marked as learned! Removed from repeat queues
       updatedUpcoming = updatedUpcoming.filter(item => item.id !== qId);
       updatedRepeatQueue = updatedRepeatQueue.filter(item => item.id !== qId);
       if (!updatedLearned.includes(qId)) {
         updatedLearned.push(qId);
+      }
+      if (!updatedSolved.includes(qId)) {
+        updatedSolved.push(qId);
       }
     } else if (difficulty === 'medium') {
       // Repeats 2 more times with min 5 question gap
@@ -1099,14 +1163,16 @@ export default function App() {
           ...u,
           repeatQueue: updatedRepeatQueue,
           upcomingRepeats: updatedUpcoming,
-          learnedQuestions: updatedLearned
+          learnedQuestions: updatedLearned,
+          solvedQuestions: updatedSolved
         };
       }
       return u;
     });
 
     persistUsers(updated);
-    loadNextQuestion(false, updatedUpcoming);
+    // Pass the updated users so loadNextQuestion doesn't overwrite this choice with stale state
+    loadNextQuestion({ overrideUsers: updated });
   };
 
   // Keyboard shortcut listener for Easy (1/e) & Hard (2/h) when correct, or Next (Enter/Space/1) when incorrect
@@ -1137,7 +1203,7 @@ export default function App() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isAnswered, currentQuestion, selectedOption, userUpcomingRepeats, userRepeatQueue, userStats]);
+  }, [isAnswered, currentQuestion, selectedOption, userUpcomingRepeats, userRepeatQueue, userStats, users]);
 
   const currentTopicData = currentSyllabusTopics.find(t => t.id === selectedTopic) || currentSyllabusTopics[0];
 
@@ -1935,7 +2001,7 @@ export default function App() {
                         <div className="auto-queue-text">
                           <strong>
                             {currentQuestion.isRepeat
-                              ? `Scheduled repeat (${(currentQuestion.remainingRepeats && currentQuestion.remainingRepeats > 1) ? currentQuestion.remainingRepeats - 1 : 3} left)`
+                              ? 'Repeat counter reset — 3 more correct repeats needed'
                               : 'Scheduled to repeat 3 times'}
                           </strong>
                           <span>Will reappear after at least 5 questions</span>
@@ -1946,7 +2012,7 @@ export default function App() {
                         <button
                           type="button"
                           className="next-btn"
-                          onClick={loadNextQuestion}
+                          onClick={() => loadNextQuestion()}
                           title="Proceed to next question (Enter / Space)"
                         >
                           <span>Next Question</span>
@@ -1974,7 +2040,21 @@ export default function App() {
                 <TrophyIcon size={44} />
               </div>
               <h3>Topic Completely Mastered!</h3>
-              <p>No questions remaining in this filter. Switch topics or practice another syllabus section.</p>
+              <p>Every question here has been answered correctly and all repeats are finished. Switch topics or practice another syllabus section.</p>
+              {!isRepeatOnlyMode && (
+                <button
+                  type="button"
+                  id="review-topic-again-btn"
+                  className="next-btn"
+                  style={{ marginBottom: '0.6rem' }}
+                  onClick={() => {
+                    setIsTopicReviewMode(true);
+                    loadNextQuestion({ reviewMode: true });
+                  }}
+                >
+                  Review This Topic Again
+                </button>
+              )}
               <button
                 className="next-btn"
                 onClick={() => {

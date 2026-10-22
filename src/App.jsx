@@ -1184,7 +1184,6 @@ export default function App() {
         <ProfileModal
           user={currentUser}
           onClose={() => setShowProfileModal(false)}
-          onSwitchAccount={handleSwitchAccount}
           onLogout={handleLogout}
           onResetProgress={handleRequestResetAllProgress}
           onDeleteAccount={handleRequestDeleteAccount}

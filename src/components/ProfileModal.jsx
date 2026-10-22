@@ -18,7 +18,6 @@ import {
 export default function ProfileModal({
   user,
   onClose,
-  onSwitchAccount,
   onLogout,
   onResetProgress,
   onDeleteAccount,
@@ -197,14 +196,6 @@ export default function ProfileModal({
             >
               <LogOutIcon size={15} />
               <span>Log Out</span>
-            </button>
-            <button
-              type="button"
-              className="action-btn switch-btn"
-              onClick={onSwitchAccount}
-              title="Switch to another user or create a new aspirant profile"
-            >
-              <span>Switch Profile</span>
             </button>
             <button
               type="button"

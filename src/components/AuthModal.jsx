@@ -18,7 +18,7 @@ export default function AuthModal({
   onUserAuthenticated,
   onAdminAuthenticated,
 }) {
-  const [mode, setMode] = useState(users.length > 0 ? 'profiles' : 'login'); // 'profiles' | 'login' | 'signup' | 'pending_notice'
+  const [mode, setMode] = useState('login'); // 'login' | 'signup' | 'pending_notice'
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -305,21 +305,8 @@ export default function AuthModal({
         {/* ── MODE: TABS (PROFILES / LOGIN / SIGN UP) ── */}
         {mode !== 'pending_notice' && (
           <>
-            {/* Navigation Tabs */}
+            {/* Navigation Tabs (Clean 2-Tab Layout) */}
             <div className="auth-portal-tabs">
-              {users.length > 0 && (
-                <button
-                  type="button"
-                  className={`auth-portal-tab-btn ${mode === 'profiles' ? 'active' : ''}`}
-                  onClick={() => {
-                    setMode('profiles');
-                    setError('');
-                  }}
-                >
-                  <UserIcon size={15} />
-                  <span>Profiles ({users.length})</span>
-                </button>
-              )}
               <button
                 type="button"
                 className={`auth-portal-tab-btn ${mode === 'login' ? 'active' : ''}`}
@@ -351,48 +338,6 @@ export default function AuthModal({
               </div>
             )}
 
-            {/* TAB: SELECT SAVED PROFILE */}
-            {mode === 'profiles' && users.length > 0 && (
-              <div className="auth-profiles-view">
-                <p className="auth-section-desc">Select an active profile on this device to continue practice:</p>
-                <div className="auth-profiles-grid">
-                  {users.map((u) => (
-                    <button
-                      key={u.id}
-                      type="button"
-                      className="auth-profile-tile"
-                      onClick={() => onSelectUser(u.id)}
-                    >
-                      <div className="auth-profile-tile-avatar">
-                        {(u.name?.[0] || 'U').toUpperCase()}
-                      </div>
-                      <div className="auth-profile-tile-details">
-                        <span className="auth-profile-tile-name">{u.name}</span>
-                        <span className="auth-profile-tile-stats">
-                          {u.stats?.total || 0} solved · {u.stats?.streak || 0} streak
-                        </span>
-                      </div>
-                      <ArrowRightIcon size={16} className="tile-arrow" />
-                    </button>
-                  ))}
-                </div>
-
-                <div className="auth-footer-prompt">
-                  <span>Sign in to a different account?</span>
-                  <button
-                    type="button"
-                    className="auth-link-text-btn"
-                    onClick={() => {
-                      setMode('login');
-                      setError('');
-                    }}
-                  >
-                    Go to Sign In →
-                  </button>
-                </div>
-              </div>
-            )}
-
             {/* TAB: SIGN IN */}
             {mode === 'login' && (
               <form onSubmit={handleLogin} className="auth-portal-form">
@@ -408,6 +353,7 @@ export default function AuthModal({
                       placeholder="e.g. yourname@gmail.com"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                      autoComplete="username email"
                       required
                       autoFocus
                     />
@@ -426,6 +372,7 @@ export default function AuthModal({
                       placeholder="Enter your account password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
+                      autoComplete="current-password"
                       required
                     />
                   </div>
@@ -486,6 +433,7 @@ export default function AuthModal({
                     placeholder="e.g. Anjali Nair"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    autoComplete="name"
                     required
                     autoFocus
                   />
@@ -502,6 +450,7 @@ export default function AuthModal({
                     placeholder="e.g. anjali@gmail.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    autoComplete="email"
                     required
                   />
                 </div>
@@ -517,6 +466,7 @@ export default function AuthModal({
                     placeholder="At least 4 characters"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    autoComplete="new-password"
                     required
                   />
                 </div>

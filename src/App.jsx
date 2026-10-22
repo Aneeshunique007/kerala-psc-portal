@@ -1275,6 +1275,7 @@ export default function App() {
   }, [isAnswered, currentQuestion, selectedOption, userUpcomingRepeats, userRepeatQueue, userStats, users]);
 
   const currentTopicData = currentSyllabusTopics.find(t => t.id === selectedTopic) || currentSyllabusTopics[0];
+  const currentTopicProgress = getTopicCounts(selectedTopic);
 
   return (
     <div className={`app-container${viewMode === 'admin' ? ' admin-mode' : ''}${viewMode === 'mock' ? ' mock-mode' : ''}`}>
@@ -1696,6 +1697,13 @@ export default function App() {
                 <span className="trigger-icon">{isRepeatOnlyMode ? <RotateIcon size={15} /> : <TargetIcon size={15} />}</span>
                 <span className="trigger-name">{isRepeatOnlyMode ? 'Review Queue Practice' : currentTopicData.name}</span>
               </div>
+              <span
+                className="mobile-topic-count"
+                aria-label={`${currentTopicProgress.solved} of ${currentTopicProgress.total} questions learned`}
+                title={`${currentTopicProgress.solved} of ${currentTopicProgress.total} questions learned`}
+              >
+                {currentTopicProgress.solved} / {currentTopicProgress.total}
+              </span>
               <ChevronDownIcon size={15} className={`trigger-chevron ${topicDropdownOpen ? 'open' : ''}`} />
             </button>
 

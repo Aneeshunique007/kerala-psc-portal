@@ -3960,6 +3960,12 @@ export default function TopicNotes({ subject, topicId, onProceed }) {
         </div>
       </header>
 
+      <div className="topic-notes-start-actions">
+        <button type="button" className="topic-notes-proceed" onClick={onProceed}>
+          {isEnglish ? 'Continue to questions' : 'ചോദ്യങ്ങളിലേക്ക് പോകുക'}
+        </button>
+      </div>
+
       <div className="topic-notes-sections">
         {notes.sections.map((section, sectionIndex) => (
           <article className="topic-notes-section" key={section.title}>

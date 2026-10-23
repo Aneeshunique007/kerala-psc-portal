@@ -474,6 +474,8 @@
 
 .topic-notes-page {
   width: min(100%, 860px);
+  min-width: 0;
+  max-width: 100%;
   color: var(--text-primary);
   animation: cardFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -484,6 +486,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  min-width: 0;
 }
 
 .topic-notes-header {
@@ -510,6 +513,13 @@
   margin: 0;
   color: var(--text-secondary);
   line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.topic-notes-start-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
 }
 
 .topic-notes-line-by-line {
@@ -543,6 +553,7 @@
 }
 
 .topic-notes-section {
+  min-width: 0;
   padding: 1.25rem;
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
@@ -8943,6 +8954,7 @@
     padding: 1rem;
   }
 
+  .topic-notes-start-actions,
   .topic-notes-proceed {
     width: 100%;
   }

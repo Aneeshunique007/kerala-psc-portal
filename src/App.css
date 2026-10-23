@@ -527,22 +527,6 @@
   cursor: pointer;
 }
 
-.topic-notes-back {
-  flex-shrink: 0;
-  border: 1px solid var(--border-subtle);
-  border-radius: 10px;
-  padding: 0.7rem 1rem;
-  background: transparent;
-  color: var(--text-primary);
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.topic-notes-back:hover {
-  background: var(--bg-card-hover);
-}
-
 .topic-notes-proceed {
   border-color: #0ea5e9;
   background: linear-gradient(135deg, #0284c7, #2563eb);

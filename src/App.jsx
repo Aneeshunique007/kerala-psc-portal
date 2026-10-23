@@ -681,14 +681,20 @@ export default function App() {
     setIsRepeatOnlyMode(false);
     setTopicDropdownOpen(false);
     setMobileSidebarOpen(false);
-    setViewMode(subject === 'malayalam' || subject === 'english' ? 'notes' : 'quiz');
+    setViewMode(subject === 'malayalam' || subject === 'english' || subject === 'pyq' ? 'notes' : 'quiz');
   };
 
   const handleChooseTopic = (subject, topicId) => {
     setActiveSubject(subject);
     localStorage.setItem('psc_active_subject', subject);
     setSelectedTopic(topicId);
-    setViewMode(subject === 'malayalam' || subject === 'english' ? 'notes' : 'quiz');
+    setViewMode(
+      subject === 'malayalam'
+        || subject === 'english'
+        || (subject === 'pyq' && ['all', 'pq_history', 'pq_geography', 'pq_economics', 'pq_constitution', 'pq_kerala_governance', 'pq_science', 'pq_arts_sports', 'pq_computer', 'pq_acts_laws', 'pq_current_affairs', 'pq_maths', 'pq_english', 'pq_malayalam'].includes(topicId))
+        ? 'notes'
+        : 'quiz'
+    );
     setIsRepeatOnlyMode(false);
     setTopicDropdownOpen(false);
     setMobileSidebarOpen(false);
@@ -1888,7 +1894,6 @@ export default function App() {
             <TopicNotes
               subject={activeSubject}
               topicId={selectedTopic}
-              onBack={() => setViewMode('blueprint')}
               onProceed={() => setViewMode('quiz')}
             />
           ) : currentQuestion ? (

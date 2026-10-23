@@ -22,6 +22,7 @@ import InviteGate from './components/InviteGate';
 import AdminPanel from './components/AdminPanel';
 import AdminLoginModal from './components/AdminLoginModal';
 import AdminDashboardView from './components/AdminDashboardView';
+import TopicNotes from './components/TopicNotes';
 import { cleanExplanation } from './utils/cleanExplanation';
 import {
   consumeInviteCode,
@@ -680,27 +681,25 @@ export default function App() {
     setIsRepeatOnlyMode(false);
     setTopicDropdownOpen(false);
     setMobileSidebarOpen(false);
-    setViewMode('quiz');
+    setViewMode(subject === 'malayalam' || subject === 'english' ? 'notes' : 'quiz');
+  };
+
+  const handleChooseTopic = (subject, topicId) => {
+    setActiveSubject(subject);
+    localStorage.setItem('psc_active_subject', subject);
+    setSelectedTopic(topicId);
+    setViewMode(subject === 'malayalam' || subject === 'english' ? 'notes' : 'quiz');
+    setIsRepeatOnlyMode(false);
+    setTopicDropdownOpen(false);
+    setMobileSidebarOpen(false);
   };
 
   const handleSelectSubjectTopic = (subject, topicId) => {
-    setActiveSubject(subject);
-    localStorage.setItem('psc_active_subject', subject);
-    setSelectedTopic(topicId);
-    setViewMode('quiz');
-    setIsRepeatOnlyMode(false);
-    setTopicDropdownOpen(false);
-    setMobileSidebarOpen(false);
+    handleChooseTopic(subject, topicId);
   };
 
   const handleStartPracticeFromBlueprint = (subject, topicId) => {
-    setActiveSubject(subject);
-    localStorage.setItem('psc_active_subject', subject);
-    setSelectedTopic(topicId);
-    setViewMode('quiz');
-    setIsRepeatOnlyMode(false);
-    setTopicDropdownOpen(false);
-    setMobileSidebarOpen(false);
+    handleChooseTopic(subject, topicId);
   };
 
   const handleStartMockFromBlueprint = () => {
@@ -820,13 +819,22 @@ export default function App() {
 
   // Topic matching uses the module-level MALAYALAM_TOPIC_ALIASES (one topic per question)
 
-  const matchesTopic = (qTopic, targetTopicId) => {
+  const matchesTopic = (question, targetTopicId) => {
     if (targetTopicId === 'all') return true;
     if (activeSubject === 'english' || activeSubject === 'pyq') {
-      return qTopic === targetTopicId;
+      return question.topic === targetTopicId;
+    }
+    if (targetTopicId === 'samasam') {
+      return question.topic === 'ghadakapadam'
+        && (String(question.id).startsWith('sam_') || String(question.question).includes('സമാസ'));
+    }
+    if (targetTopicId === 'ghadakapadam') {
+      return question.topic === 'ghadakapadam'
+        && !String(question.id).startsWith('sam_')
+        && !String(question.question).includes('സമാസ');
     }
     const aliases = MALAYALAM_TOPIC_ALIASES[targetTopicId] || [targetTopicId];
-    return aliases.includes(qTopic);
+    return aliases.includes(question.topic);
   };
 
   const getTopicCounts = (topicId) => {
@@ -835,7 +843,7 @@ export default function App() {
       : currentQuestionBank;
     const topicQuestions = topicId === 'all'
       ? bank
-      : bank.filter(q => matchesTopic(q.topic, topicId));
+      : bank.filter(q => matchesTopic(q, topicId));
     const total = topicQuestions.length;
     // Count each question only once, and only if it was answered correctly
     const solved = topicQuestions.filter(q => userSolvedSet.has(q.id)).length;
@@ -858,7 +866,7 @@ export default function App() {
     } else if (selectedTopic === 'all') {
       pool = [...currentQuestionBank];
     } else {
-      pool = currentQuestionBank.filter(q => matchesTopic(q.topic, selectedTopic));
+      pool = currentQuestionBank.filter(q => matchesTopic(q, selectedTopic));
     }
     return pool.filter(matchesYearFilter);
   };
@@ -903,7 +911,7 @@ export default function App() {
       const topicRepeats = upcomingList.filter(rep => {
         const freshQ = getFreshQuestion(rep);
         return isInActiveSubject(freshQ.id)
-          && (selectedTopic === 'all' || matchesTopic(freshQ.topic, selectedTopic))
+          && (selectedTopic === 'all' || matchesTopic(freshQ, selectedTopic))
           && matchesYearFilter(freshQ)
           && (rep.remainingRepeats ?? 1) > 0;
       });
@@ -993,11 +1001,11 @@ export default function App() {
 
   // Load question when topic, mode, subject, year, or active user changes
   useEffect(() => {
-    if (currentUser) {
+    if (currentUser && viewMode === 'quiz') {
       setIsTopicReviewMode(false);
       loadNextQuestion({ reviewMode: false });
     }
-  }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId]);
+  }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId, viewMode]);
 
   const handleOptionSelect = (rawOptionIndex) => {
     if (isAnswered || !currentQuestion || !currentUser) return;
@@ -1014,7 +1022,7 @@ export default function App() {
     const isCorrect = optionIndex === currentQuestion.answer;
 
     // Find topic ID for stats
-    const matchedSyllabus = currentSyllabusTopics.find(t => t.id !== 'all' && matchesTopic(currentQuestion.topic, t.id));
+    const matchedSyllabus = currentSyllabusTopics.find(t => t.id !== 'all' && matchesTopic(currentQuestion, t.id));
     const topicIdKey = matchedSyllabus ? matchedSyllabus.id : currentQuestion.topic || 'other';
 
     const prevTopicStat = userStats.topicStats?.[topicIdKey] || { correct: 0, total: 0 };
@@ -1442,7 +1450,9 @@ export default function App() {
         <div className="topics-list">
           {currentSyllabusTopics.map((topic, idx) => {
             const { solved, total } = getTopicCounts(topic.id);
-            const isActive = selectedTopic === topic.id && !isRepeatOnlyMode && viewMode === 'quiz';
+            const isActive = selectedTopic === topic.id
+              && !isRepeatOnlyMode
+              && (viewMode === 'quiz' || viewMode === 'notes');
             const progressPercent = total > 0 ? Math.min(100, Math.max(solved > 0 ? 3 : 0, (solved / total) * 100)) : 0;
             const prevTopic = idx > 0 ? currentSyllabusTopics[idx - 1] : null;
             const isNewSection = topic.section && (!prevTopic || prevTopic.section !== topic.section);
@@ -1462,17 +1472,11 @@ export default function App() {
                   tabIndex={0}
                   className={`topic-item ${isActive ? 'active' : ''}`}
                   onClick={() => {
-                    setViewMode('quiz');
-                    setIsRepeatOnlyMode(false);
-                    setSelectedTopic(topic.id);
-                    setMobileSidebarOpen(false);
+                    handleChooseTopic(activeSubject, topic.id);
                   }}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
-                      setViewMode('quiz');
-                      setIsRepeatOnlyMode(false);
-                      setSelectedTopic(topic.id);
-                      setMobileSidebarOpen(false);
+                      handleChooseTopic(activeSubject, topic.id);
                     }
                   }}
                 >
@@ -1684,8 +1688,8 @@ export default function App() {
             </div>
           </div>
 
-          {/* Mobile View: Dedicated Themed Topic Dropdown - Only shown in Quiz mode */}
-          {viewMode === 'quiz' && (
+          {/* Keep topic selection available on mobile while reading notes or practicing. */}
+          {(viewMode === 'quiz' || viewMode === 'notes') && (
             <div className="mobile-topic-bar mobile-only">
             <button
               type="button"
@@ -1755,10 +1759,7 @@ export default function App() {
                         <div
                           className={`custom-dropdown-option ${selectedTopic === 'all' && !isRepeatOnlyMode ? 'selected' : ''}`}
                           onClick={() => {
-                            setIsRepeatOnlyMode(false);
-                            setSelectedTopic('all');
-                            setTopicDropdownOpen(false);
-                            setViewMode('quiz');
+                            handleChooseTopic(activeSubject, 'all');
                           }}
                         >
                           <span className="opt-icon"><TargetIcon size={16} /></span>
@@ -1796,10 +1797,7 @@ export default function App() {
                           key={topic.id}
                           className={`custom-dropdown-option ${isSelected ? 'selected' : ''}`}
                           onClick={() => {
-                            setIsRepeatOnlyMode(false);
-                            setSelectedTopic(topic.id);
-                            setTopicDropdownOpen(false);
-                            setViewMode('quiz');
+                            handleChooseTopic(activeSubject, topic.id);
                           }}
                         >
                           <span className="opt-icon">
@@ -1886,13 +1884,20 @@ export default function App() {
               year={selectedYear}
               onExit={() => setViewMode(previousViewMode || 'blueprint')}
             />
+          ) : viewMode === 'notes' ? (
+            <TopicNotes
+              subject={activeSubject}
+              topicId={selectedTopic}
+              onBack={() => setViewMode('blueprint')}
+              onProceed={() => setViewMode('quiz')}
+            />
           ) : currentQuestion ? (
             <div className="question-card">
               {/* Question Header & Badges */}
               <div className="card-top-bar">
                 <div className="card-top-bar-left">
                   <span className="topic-badge">
-                    {currentSyllabusTopics.find(t => matchesTopic(currentQuestion.topic, t.id))?.name || currentQuestion.topic || 'Practice Question'}
+                    {currentSyllabusTopics.find(t => matchesTopic(currentQuestion, t.id))?.name || currentQuestion.topic || 'Practice Question'}
                   </span>
                   {activeSubject === 'pyq' && (currentQuestion.year || currentQuestion.id) && (
                     <span className="pyq-year-badge">

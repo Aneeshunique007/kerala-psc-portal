@@ -20,23 +20,24 @@ import currentAffairsQuestions from './current_affairs_questions.json';
 // Part V: മലയാളം (Malayalam Language & Literature)
 export const SYLLABUS_TOPICS = [
   { id: 'all', name: 'All Topics (Full Mock)', icon: '🎯', desc: 'Random questions across entire 10-mark syllabus', color: '#6366f1' },
-  { id: 'ottapadam', name: 'One Word Substitution (Ottapadam)', icon: '📝', desc: 'Single word substitution for phrases (ഒറ്റപ്പദം)', color: '#3b82f6' },
-  { id: 'viparitham', name: 'Antonyms / Opposites (Viparitham)', icon: '🔄', desc: 'Direct antonyms and opposites (വിപരീതപദം)', color: '#10b981' },
-  { id: 'samanapadham', name: 'Synonyms & Word Meanings (Samanapadham)', icon: '📖', desc: 'Core synonyms and vocabulary meanings (സമാനപദം)', color: '#8b5cf6' },
-  { id: 'paryayam', name: 'Paryayam / Pure Synonyms (പര്യായപദം)', icon: '🪶', desc: 'Alternative poetic & classical synonyms (പര്യായപദങ്ങൾ)', color: '#a855f7' },
-  { id: 'arthavyathyasam', name: 'Word Distinctions & Meanings (ശബ്ദാർത്ഥം)', icon: '🔍', desc: 'Subtle semantic differences & definitions (ശബ്ദാർത്ഥം / അർത്ഥവ്യത്യാസം)', color: '#06b6d4' },
-  { id: 'shaylikal', name: 'Idioms & Proverbs (Shaylikal)', icon: '💡', desc: 'Malayalam idioms, phrases and proverbs (ശൈലികൾ & പഴഞ്ചൊല്ലുകൾ)', color: '#f59e0b' },
-  { id: 'pirichezhuthal', name: 'Word Splitting (Pirichezhuthal)', icon: '✂️', desc: 'Splitting combined Malayalam words (പിരിച്ചെഴുത്ത്)', color: '#ec4899' },
-  { id: 'sandhi', name: 'Sandhi Rules & Classification (സന്ധി)', icon: '🧬', desc: 'Identification of Agama, Adesha, Lopa & Dvitva sandhi (സന്ധി നിയമങ്ങൾ)', color: '#d946ef' },
-  { id: 'cherkkayzhuthuka', name: 'Joining Words (Cherkkayzhuthuka)', icon: '🔗', desc: 'Joining words with correct morphological junction (ചേർത്തെഴുതുക)', color: '#14b8a6' },
-  { id: 'padashuddhi', name: 'Spelling Correction (Padashuddhi)', icon: '✨', desc: 'Spotting correct and pure Malayalam spellings (പദശുദ്ധി)', color: '#2dd4bf' },
-  { id: 'vakyashuddhi', name: 'Sentence Correction (Vakyashuddhi)', icon: '📐', desc: 'Grammatically flawless sentence identification (വാക്യശുദ്ധി)', color: '#84cc16' },
-  { id: 'lingam', name: 'Gender Forms (Lingam / Ethirlingam)', icon: '👥', desc: 'Masculine, feminine & opposite gender forms (ലിംഗം / എതിർലിംഗം)', color: '#f43f5e' },
-  { id: 'vachanam', name: 'Singular / Plural (Vachanam)', icon: '🔢', desc: 'Singular and plural word forms (വചനം)', color: '#fb7185' },
-  { id: 'krithikal', name: 'Literature, Works & Characters (കൃതികൾ)', icon: '📚', desc: 'Famous Malayalam literary works, authors & characters (കൃതികൾ & കഥാപാത്രങ്ങൾ)', color: '#eab308' },
-  { id: 'varikal', name: 'Poetic Lines & Poets (കാവ്യവരികൾ)', icon: '📜', desc: 'Famous poetic verses and classical lines (കാവ്യവരികളും കവികളും)', color: '#ca8a04' },
-  { id: 'paribhasha', name: 'Translation & Official Terms (Paribhasha)', icon: '🌐', desc: 'English-to-Malayalam administrative terms and idioms (പരിഭാഷ)', color: '#0ea5e9' },
-  { id: 'ghadakapadam', name: 'Compound Words & Samasam (ഘടകപദം)', icon: '🧩', desc: 'Sentence connectors, samasam & compound words (ഘടകപദം & സമാസം)', color: '#64748b' }
+  { id: 'ottapadam', name: 'ഒറ്റപ്പദം', icon: '📝', desc: 'Single word substitution for phrases (ഒറ്റപ്പദം)', color: '#3b82f6' },
+  { id: 'viparitham', name: 'വിപരീതപദം', icon: '🔄', desc: 'Direct antonyms and opposites (വിപരീതപദം)', color: '#10b981' },
+  { id: 'samanapadham', name: 'സമാനപദം', icon: '📖', desc: 'Core synonyms and vocabulary meanings (സമാനപദം)', color: '#8b5cf6' },
+  { id: 'paryayam', name: 'പര്യായപദം', icon: '🪶', desc: 'Alternative poetic & classical synonyms (പര്യായപദങ്ങൾ)', color: '#a855f7' },
+  { id: 'arthavyathyasam', name: 'ശബ്ദാർത്ഥം / അർത്ഥവ്യത്യാസം', icon: '🔍', desc: 'Subtle semantic differences & definitions (ശബ്ദാർത്ഥം / അർത്ഥവ്യത്യാസം)', color: '#06b6d4' },
+  { id: 'shaylikal', name: 'ശൈലികളും പഴഞ്ചൊല്ലുകളും', icon: '💡', desc: 'Malayalam idioms, phrases and proverbs (ശൈലികൾ & പഴഞ്ചൊല്ലുകൾ)', color: '#f59e0b' },
+  { id: 'pirichezhuthal', name: 'പിരിച്ചെഴുതുക', icon: '✂️', desc: 'Splitting combined Malayalam words (പിരിച്ചെഴുത്ത്)', color: '#ec4899' },
+  { id: 'sandhi', name: 'സന്ധി', icon: '🧬', desc: 'Identification of Agama, Adesha, Lopa & Dvitva sandhi (സന്ധി നിയമങ്ങൾ)', color: '#d946ef' },
+  { id: 'cherkkayzhuthuka', name: 'ചേർത്തെഴുതുക', icon: '🔗', desc: 'Joining words with correct morphological junction (ചേർത്തെഴുതുക)', color: '#14b8a6' },
+  { id: 'padashuddhi', name: 'പദശുദ്ധി', icon: '✨', desc: 'Spotting correct and pure Malayalam spellings (പദശുദ്ധി)', color: '#2dd4bf' },
+  { id: 'vakyashuddhi', name: 'വാക്യശുദ്ധി', icon: '📐', desc: 'Grammatically flawless sentence identification (വാക്യശുദ്ധി)', color: '#84cc16' },
+  { id: 'lingam', name: 'എതിർലിംഗം', icon: '👥', desc: 'Masculine, feminine & opposite gender forms (ലിംഗം / എതിർലിംഗം)', color: '#f43f5e' },
+  { id: 'vachanam', name: 'വചനം', icon: '🔢', desc: 'Singular and plural word forms (വചനം)', color: '#fb7185' },
+  { id: 'krithikal', name: 'കൃതികളും കഥാപാത്രങ്ങളും', icon: '📚', desc: 'Famous Malayalam literary works, authors & characters (കൃതികൾ & കഥാപാത്രങ്ങൾ)', color: '#eab308' },
+  { id: 'varikal', name: 'കാവ്യവരികളും കവികളും', icon: '📜', desc: 'Famous poetic verses and classical lines (കാവ്യവരികളും കവികളും)', color: '#ca8a04' },
+  { id: 'paribhasha', name: 'പരിഭാഷ', icon: '🌐', desc: 'English-to-Malayalam administrative terms and idioms (പരിഭാഷ)', color: '#0ea5e9' },
+  { id: 'ghadakapadam', name: 'ഘടകപദം', icon: '🧩', desc: 'Sentence connectors and compound word forms (ഘടകപദം)', color: '#64748b' },
+  { id: 'samasam', name: 'സമാസം', icon: '🧩', desc: 'Malayalam compound classifications and meanings (സമാസം)', color: '#6366f1' }
 ];
 
 // Part IV: General English (Grammar & Vocabulary)
@@ -497,4 +498,3 @@ export const PYQ_QUESTION_BANK = [
   ...(Array.isArray(pyq2022Questions) ? pyq2022Questions.map(q => ({ ...q, year: '2022' })) : []),
   ...(Array.isArray(pyq2021Questions) ? pyq2021Questions.map(q => ({ ...q, year: '2021' })) : [])
 ];
-

@@ -1782,7 +1782,7 @@ export default function App() {
                     })()}
 
                     <div className="dropdown-section-label">
-                      {activeSubject === 'english' ? 'General English Topics (27)' : activeSubject === 'pyq' ? 'PYQ Topics (13)' : 'Malayalam Topics (13)'}
+                      {activeSubject === 'english' ? 'General English' : activeSubject === 'pyq' ? 'PYQ' : 'Malayalam'} Topics ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
                     </div>
 
                     {/* All Subject Topics */}

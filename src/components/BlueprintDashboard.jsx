@@ -113,8 +113,8 @@ export default function BlueprintDashboard({
           num: 'II',
           name: 'ആനുകാലിക സംഭവങ്ങൾ (Current Affairs)',
           marks: '20 Marks',
-          subject: 'pyq',
-          topicId: 'pq_current_affairs',
+          subject: 'current_affairs',
+          topicId: 'all',
           icon: '📰',
           details: 'പരീക്ഷാ തീയതിക്ക് തൊട്ടുമുമ്പുള്ള സമകാലിക സംഭവങ്ങൾ, സർക്കാർ പദ്ധതികൾ, ശാസ്ത്ര സാങ്കേതിക നേട്ടങ്ങൾ, പ്രധാന നിയമനങ്ങൾ, പുരസ്കാരങ്ങൾ, അന്താരാഷ്ട്ര ഉച്ചകോടികൾ.'
         }

@@ -21,9 +21,7 @@ export default function ProfileModal({
   onLogout,
   onResetProgress,
   onDeleteAccount,
-  onUpdateUser,
-  onSyncNow,
-  cloudSyncStatus = 'idle'
+  onUpdateUser
 }) {
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user.name);
@@ -138,52 +136,8 @@ export default function ProfileModal({
             </div>
           </div>
 
-          {/* Cloud Sync Status Card */}
-          <div className="profile-cloud-sync-card">
-            <div className="profile-cloud-sync-info">
-              <div className="profile-cloud-sync-title">
-                <span className={`profile-cloud-sync-dot ${cloudSyncStatus === 'syncing' ? 'syncing' : ''}`}></span>
-                <strong>Cloud Progress Sync</strong>
-                {cloudSyncStatus === 'synced' && <span className="profile-cloud-sync-badge">Synced ✓</span>}
-              </div>
-              <div className="profile-cloud-sync-subtitle">
-                {user.email ? (
-                  <>Connected to <strong>{user.email}</strong> • Cross-device sync enabled</>
-                ) : (
-                  'Sync bookmarks, streaks & quiz history across devices'
-                )}
-              </div>
-            </div>
-            {onSyncNow && (
-              <button
-                type="button"
-                className="profile-cloud-sync-btn"
-                onClick={onSyncNow}
-                disabled={cloudSyncStatus === 'syncing'}
-                title="Synchronize study progress now"
-              >
-                {cloudSyncStatus === 'syncing' ? (
-                  <>
-                    <RotateIcon size={13} className="spin-icon" />
-                    <span>Syncing...</span>
-                  </>
-                ) : cloudSyncStatus === 'synced' ? (
-                  <>
-                    <CheckIcon size={13} />
-                    <span>Updated ✓</span>
-                  </>
-                ) : (
-                  <>
-                    <RotateIcon size={13} />
-                    <span>Sync Now</span>
-                  </>
-                )}
-              </button>
-            )}
-          </div>
-
           {/* Account Actions */}
-          <div className="profile-section-title" style={{ marginTop: '1.5rem' }}>
+          <div className="profile-section-title" style={{ marginTop: '1.25rem' }}>
             Account Management
           </div>
 

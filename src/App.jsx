@@ -7,6 +7,8 @@ import {
   ENGLISH_QUESTION_BANK,
   PYQ_TOPICS,
   PYQ_QUESTION_BANK,
+  CURRENT_AFFAIRS_TOPICS,
+  CURRENT_AFFAIRS_QUESTION_BANK,
   PYQ_YEARS
 } from './data/questions';
 import { soundFX } from './utils/soundEffects';
@@ -83,6 +85,8 @@ function QuestionDisplay({ text }) {
 
 const getFreshQuestion = (q) => {
   if (!q) return q;
+  const freshCA = CURRENT_AFFAIRS_QUESTION_BANK.find(cq => cq.id === q.id);
+  if (freshCA) return freshCA;
   const freshPYQ = PYQ_QUESTION_BANK.find(pq => pq.id === q.id);
   if (freshPYQ) return freshPYQ;
   const freshEng = ENGLISH_QUESTION_BANK.find(eq => eq.id === q.id);
@@ -93,24 +97,52 @@ const getFreshQuestion = (q) => {
 };
 
 export default function App() {
-  // Users and Auth State
-  const [users, setUsers] = useState(() => {
-    const saved = localStorage.getItem('psc_malayalam_users');
-    if (!saved) return [];
-    try {
-      const parsed = JSON.parse(saved);
-      return parsed.map(u => ({
-        ...u,
-        repeatQueue: (u.repeatQueue || []).map(rep => ({ ...getFreshQuestion(rep), ...rep })),
-        upcomingRepeats: (u.upcomingRepeats || []).map(rep => ({ ...getFreshQuestion(rep), ...rep }))
-      }));
-    } catch {
-      return [];
-    }
-  });
-
+  // Users and Auth State: Cloud DB is the Single Source of Truth
   const [activeUserId, setActiveUserId] = useState(() => {
     return localStorage.getItem('psc_active_user_id') || null;
+  });
+
+  const [users, setUsers] = useState(() => {
+    const savedAuth = localStorage.getItem('psc_auth_user');
+    if (savedAuth) {
+      try {
+        const u = JSON.parse(savedAuth);
+        return [{
+          id: u.id,
+          name: u.name || 'Aspirant',
+          email: u.email || '',
+          avatar: u.avatar || (u.name?.[0] || 'U').toUpperCase(),
+          isAdmin: u.isAdmin || false,
+          stats: { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+          bookmarkedQuestions: [],
+          repeatQueue: [],
+          upcomingRepeats: [],
+          learnedQuestions: [],
+          solvedQuestions: [],
+          questionHistory: [],
+          progressResetAt: null
+        }];
+      } catch {}
+    }
+
+    const currentId = localStorage.getItem('psc_active_user_id');
+    if (currentId) {
+      return [{
+        id: currentId,
+        name: 'Aspirant',
+        email: currentId.includes('@') ? currentId : '',
+        avatar: 'A',
+        stats: { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+        bookmarkedQuestions: [],
+        repeatQueue: [],
+        upcomingRepeats: [],
+        learnedQuestions: [],
+        solvedQuestions: [],
+        questionHistory: [],
+        progressResetAt: null
+      }];
+    }
+    return [];
   });
 
   const [activeSubject, setActiveSubject] = useState(() => {
@@ -145,6 +177,8 @@ export default function App() {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [sidebarYearDropdownOpen, setSidebarYearDropdownOpen] = useState(false);
   const sidebarYearDropdownRef = React.useRef(null);
+  const quizContentAreaRef = React.useRef(null);
+  const feedbackCardRef = React.useRef(null);
 
   // Themed Confirmation Modal State
   const [confirmDialog, setConfirmDialog] = useState({
@@ -169,12 +203,16 @@ export default function App() {
     ? ENGLISH_SYLLABUS_TOPICS
     : activeSubject === 'pyq'
     ? PYQ_TOPICS
+    : activeSubject === 'current_affairs'
+    ? CURRENT_AFFAIRS_TOPICS
     : SYLLABUS_TOPICS;
 
   const currentQuestionBank = activeSubject === 'english'
     ? ENGLISH_QUESTION_BANK
     : activeSubject === 'pyq'
     ? PYQ_QUESTION_BANK
+    : activeSubject === 'current_affairs'
+    ? CURRENT_AFFAIRS_QUESTION_BANK
     : QUESTION_BANK;
 
   // If no current user, trigger Auth Modal (or invite gate for new users)
@@ -196,77 +234,91 @@ export default function App() {
   const cloudSyncTimeoutRef = React.useRef(null);
   const [cloudSyncStatus, setCloudSyncStatus] = useState('idle'); // 'idle' | 'syncing' | 'synced'
 
-  // Sync users to localStorage and debounced cloud sync
-  const persistUsers = (updatedUsers) => {
-    setUsers(updatedUsers);
-    localStorage.setItem('psc_malayalam_users', JSON.stringify(updatedUsers));
+  // Ref to hold latest currentUser for beforeunload sync flush
+  const currentUserRef = React.useRef(currentUser);
+  useEffect(() => {
+    currentUserRef.current = currentUser;
+  }, [currentUser]);
 
-    // Debounced cloud sync to Supabase (1.2s debounce)
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (currentUserRef.current && (currentUserRef.current.email || (currentUserRef.current.id && currentUserRef.current.id.includes('-')))) {
+        syncUserProgressToCloud(currentUserRef.current);
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, []);
+
+  // Update in-memory user state and sync directly to Supabase Cloud DB (no local progress saving)
+  const persistUsers = (updatedUsers, immediate = false) => {
+    setUsers(updatedUsers);
+    // Purge any legacy localStorage progress
+    try {
+      localStorage.removeItem('psc_malayalam_users');
+    } catch {}
+
+    // Cloud sync to Supabase (authoritative cloud DB)
     if (activeUserId) {
       const active = updatedUsers.find((u) => u.id === activeUserId);
       if (active && (active.email || (active.id && active.id.includes('-')))) {
         if (cloudSyncTimeoutRef.current) {
           clearTimeout(cloudSyncTimeoutRef.current);
         }
-        cloudSyncTimeoutRef.current = setTimeout(async () => {
+        if (immediate) {
           setCloudSyncStatus('syncing');
-          const res = await syncUserProgressToCloud(active);
-          if (res?.success) {
-            setCloudSyncStatus('synced');
-            setTimeout(() => setCloudSyncStatus('idle'), 3000);
-          } else {
-            setCloudSyncStatus('idle');
-          }
-        }, 1200);
+          syncUserProgressToCloud(active).then((res) => {
+            if (res?.success) {
+              setCloudSyncStatus('synced');
+              setTimeout(() => setCloudSyncStatus('idle'), 2500);
+            } else {
+              setCloudSyncStatus('idle');
+            }
+          });
+        } else {
+          cloudSyncTimeoutRef.current = setTimeout(async () => {
+            setCloudSyncStatus('syncing');
+            const res = await syncUserProgressToCloud(active);
+            if (res?.success) {
+              setCloudSyncStatus('synced');
+              setTimeout(() => setCloudSyncStatus('idle'), 2500);
+            } else {
+              setCloudSyncStatus('idle');
+            }
+          }, 800);
+        }
       }
     }
   };
 
-  // Manual trigger for user profile sync
+  // Manual trigger for user profile sync: Fetch latest from cloud DB first to ensure consistent cross-device progress
   const handleManualCloudSync = async () => {
     if (!currentUser) return;
     setCloudSyncStatus('syncing');
     
-    // First push local state
-    await syncUserProgressToCloud(currentUser);
-    
-    // Fetch latest cloud progress
-    const remote = await fetchUserProgressFromCloud(currentUser.id || currentUser.email);
+    const identifier = currentUser.email || currentUser.id;
+    const remote = await fetchUserProgressFromCloud(identifier);
     if (remote) {
-      if (remote.progressResetAt && currentUser.progressResetAt !== remote.progressResetAt) {
-        const resetUser = {
-          ...currentUser,
-          stats: remote.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
-          bookmarkedQuestions: remote.bookmarkedQuestions || [],
-          repeatQueue: (remote.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
-          upcomingRepeats: (remote.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
-          questionHistory: remote.questionHistory || [],
-          learnedQuestions: remote.learnedQuestions || [],
-          solvedQuestions: remote.solvedQuestions || [],
-          progressResetAt: remote.progressResetAt
-        };
-        persistUsers(users.map((user) => user.id === currentUser.id ? resetUser : user));
-        setCloudSyncStatus('synced');
-        setTimeout(() => setCloudSyncStatus('idle'), 3000);
-        return;
-      }
-
-      const mergedBookmarks = Array.from(
-        new Set([
-          ...(currentUser.bookmarkedQuestions || []),
-          ...(remote.bookmarkedQuestions || [])
-        ])
-      );
       const updatedUser = {
         ...currentUser,
-        bookmarkedQuestions: mergedBookmarks,
-        stats: (remote.stats?.total || 0) > (currentUser.stats?.total || 0) ? remote.stats : currentUser.stats,
+        stats: remote.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+        bookmarkedQuestions: remote.bookmarkedQuestions || [],
+        repeatQueue: (remote.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+        upcomingRepeats: (remote.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+        questionHistory: remote.questionHistory || [],
+        learnedQuestions: remote.learnedQuestions || [],
+        solvedQuestions: remote.solvedQuestions || [],
+        progressResetAt: remote.progressResetAt || null,
       };
-      const updatedList = users.map((u) => (u.id === currentUser.id ? updatedUser : u));
-      persistUsers(updatedList);
+      setUsers(users.map((u) => (u.id === currentUser.id ? updatedUser : u)));
+      setCloudSyncStatus('synced');
+      setTimeout(() => setCloudSyncStatus('idle'), 3000);
+    } else {
+      // If no remote yet, push current in-memory progress to cloud
+      await syncUserProgressToCloud(currentUser);
+      setCloudSyncStatus('synced');
+      setTimeout(() => setCloudSyncStatus('idle'), 3000);
     }
-    setCloudSyncStatus('synced');
-    setTimeout(() => setCloudSyncStatus('idle'), 3000);
   };
 
   // One-time migration: approve all pre-existing users so they aren't locked out
@@ -277,32 +329,139 @@ export default function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Fetch fresh progress from Supabase Cloud DB & automatically migrate highest legacy local progress if present
   useEffect(() => {
-    if (!currentUser) return;
+    if (!activeUserId) return;
 
     let cancelled = false;
-    fetchUserProgressFromCloud(currentUser.id || currentUser.email).then((cloudProgress) => {
-      const resetAt = cloudProgress?.progressResetAt;
-      if (cancelled || !resetAt || currentUser.progressResetAt === resetAt) return;
+    const active = users.find((u) => u.id === activeUserId);
+    const identifier = (active && active.email) ? active.email : activeUserId;
+
+    // Check for legacy local device progress to safely preserve highest streak / progress
+    let legacyLocalUser = null;
+    try {
+      const rawLocal = localStorage.getItem('psc_malayalam_users');
+      if (rawLocal) {
+        const parsed = JSON.parse(rawLocal);
+        legacyLocalUser = parsed.find(
+          (u) =>
+            u.id === activeUserId ||
+            (u.email && active?.email && u.email.toLowerCase().trim() === active.email.toLowerCase().trim()) ||
+            (activeUserId.includes('@') && u.email && u.email.toLowerCase().trim() === activeUserId.toLowerCase().trim())
+        ) || parsed[0] || null;
+      }
+    } catch {}
+
+    setCloudSyncStatus('syncing');
+    fetchUserProgressFromCloud(identifier).then(async (cloudProgress) => {
+      if (cancelled) return;
+
+      const cloudStats = cloudProgress?.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} };
+      const localStats = legacyLocalUser?.stats || null;
+
+      let mergedStats = cloudStats;
+      let mergedBookmarks = cloudProgress?.bookmarkedQuestions || [];
+      let mergedLearned = cloudProgress?.learnedQuestions || [];
+      let mergedSolved = cloudProgress?.solvedQuestions || [];
+      let mergedRepeats = (cloudProgress?.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+      let mergedUpcoming = (cloudProgress?.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+      let mergedHistory = cloudProgress?.questionHistory || [];
+
+      let needsCloudUpload = false;
+
+      // If legacy local data exists on this device, combine and preserve highest stats & highest streak!
+      if (localStats) {
+        const highestMaxStreak = Math.max(
+          cloudStats.maxStreak || 0,
+          localStats.maxStreak || 0,
+          cloudStats.streak || 0,
+          localStats.streak || 0
+        );
+        const highestTotal = Math.max(cloudStats.total || 0, localStats.total || 0);
+        const highestCorrect = Math.max(cloudStats.correct || 0, localStats.correct || 0);
+        // If local total was ahead, keep local current streak; otherwise keep cloud streak
+        const highestStreak = (localStats.total || 0) > (cloudStats.total || 0)
+          ? (localStats.streak || 0)
+          : Math.max(cloudStats.streak || 0, localStats.streak || 0);
+
+        // Merge topicStats to ensure no topic progress is lost
+        const mergedTopicStats = { ...(cloudStats.topicStats || {}) };
+        for (const [topId, topVal] of Object.entries(localStats.topicStats || {})) {
+          if (!mergedTopicStats[topId] || (topVal.total || 0) > (mergedTopicStats[topId].total || 0)) {
+            mergedTopicStats[topId] = topVal;
+          }
+        }
+
+        mergedStats = {
+          correct: highestCorrect,
+          total: highestTotal,
+          streak: highestStreak,
+          maxStreak: highestMaxStreak,
+          topicStats: mergedTopicStats,
+        };
+
+        mergedBookmarks = Array.from(
+          new Set([...mergedBookmarks, ...(legacyLocalUser.bookmarkedQuestions || [])])
+        );
+        mergedLearned = Array.from(
+          new Set([...mergedLearned, ...(legacyLocalUser.learnedQuestions || [])])
+        );
+        mergedSolved = Array.from(
+          new Set([...mergedSolved, ...(legacyLocalUser.solvedQuestions || [])])
+        );
+
+        if (!mergedRepeats.length && legacyLocalUser.repeatQueue?.length) {
+          mergedRepeats = (legacyLocalUser.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+        }
+        if (!mergedUpcoming.length && legacyLocalUser.upcomingRepeats?.length) {
+          mergedUpcoming = (legacyLocalUser.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+        }
+
+        needsCloudUpload = (localStats.total || 0) > (cloudStats.total || 0) || (localStats.maxStreak || 0) > (cloudStats.maxStreak || 0);
+      }
 
       const updatedUser = {
-        ...currentUser,
-        stats: cloudProgress.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
-        bookmarkedQuestions: cloudProgress.bookmarkedQuestions || [],
-        repeatQueue: (cloudProgress.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
-        upcomingRepeats: (cloudProgress.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
-        questionHistory: cloudProgress.questionHistory || [],
-        learnedQuestions: cloudProgress.learnedQuestions || [],
-        solvedQuestions: cloudProgress.solvedQuestions || [],
-        progressResetAt: resetAt
+        ...(users.find((u) => u.id === activeUserId) || {}),
+        id: activeUserId,
+        name: active?.name || legacyLocalUser?.name || 'Aspirant',
+        email: active?.email || legacyLocalUser?.email || (activeUserId.includes('@') ? activeUserId : ''),
+        avatar: active?.avatar || (active?.name?.[0] || 'A').toUpperCase(),
+        stats: mergedStats,
+        bookmarkedQuestions: mergedBookmarks,
+        repeatQueue: mergedRepeats,
+        upcomingRepeats: mergedUpcoming,
+        questionHistory: mergedHistory,
+        learnedQuestions: mergedLearned,
+        solvedQuestions: mergedSolved,
+        progressResetAt: cloudProgress?.progressResetAt || null,
       };
-      persistUsers(users.map((user) => user.id === currentUser.id ? updatedUser : user));
+
+      setUsers((prevUsers) => {
+        const userExists = prevUsers.some((u) => u.id === activeUserId);
+        if (!userExists) return [updatedUser];
+        return prevUsers.map((u) => (u.id === activeUserId ? updatedUser : u));
+      });
+
+      // If local stats were higher than cloud, upload the new record to Supabase
+      if (needsCloudUpload) {
+        await syncUserProgressToCloud(updatedUser);
+      }
+
+      // Safe to purge legacy local cache on this device now
+      try {
+        localStorage.removeItem('psc_malayalam_users');
+      } catch {}
+
+      setCloudSyncStatus('synced');
+      setTimeout(() => setCloudSyncStatus('idle'), 2500);
+    }).catch((err) => {
+      console.warn('Cloud progress fetch error:', err);
+      if (!cancelled) setCloudSyncStatus('idle');
     });
 
     return () => {
       cancelled = true;
     };
-  // Check the reset marker when the active account changes.
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeUserId]);
 
@@ -316,125 +475,62 @@ export default function App() {
   const handleUserAuthenticated = async (dbUser) => {
     const cleanEmail = dbUser.email?.toLowerCase().trim();
 
-    // Check if cloud progress is present, or fetch from Supabase
+    // Fetch authoritative cloud progress from Supabase
     let cloudProgress = dbUser.progress || null;
     if (!cloudProgress && (dbUser.id || cleanEmail)) {
       cloudProgress = await fetchUserProgressFromCloud(dbUser.id || cleanEmail);
     }
 
-    const existingIndex = users.findIndex(
-      (u) =>
-        u.id === dbUser.id ||
-        (u.email && u.email.toLowerCase().trim() === cleanEmail)
+    const restoredBookmarks = cloudProgress?.bookmarkedQuestions || [];
+    const restoredStats = cloudProgress?.stats || {
+      correct: 0,
+      total: 0,
+      streak: 0,
+      maxStreak: 0,
+      topicStats: {},
+    };
+    const restoredRepeats = (cloudProgress?.repeatQueue || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
+    const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
+    const restoredHistory = cloudProgress?.questionHistory || [];
+
+    const activeUser = {
+      id: dbUser.id || `user_${Date.now()}`,
+      name: dbUser.name || 'Aspirant',
+      email: dbUser.email || cleanEmail,
+      avatar: (dbUser.name?.[0] || 'U').toUpperCase(),
+      createdAt: dbUser.created_at ? new Date(dbUser.created_at).getTime() : Date.now(),
+      stats: restoredStats,
+      bookmarkedQuestions: restoredBookmarks,
+      repeatQueue: restoredRepeats,
+      upcomingRepeats: restoredUpcoming,
+      questionHistory: restoredHistory,
+      learnedQuestions: cloudProgress?.learnedQuestions || [],
+      solvedQuestions: cloudProgress?.solvedQuestions || [],
+      progressResetAt: cloudProgress?.progressResetAt || null,
+    };
+
+    // Store only auth session in localStorage (NO progress data)
+    localStorage.setItem('psc_active_user_id', activeUser.id);
+    localStorage.setItem(
+      'psc_auth_user',
+      JSON.stringify({
+        id: activeUser.id,
+        name: activeUser.name,
+        email: activeUser.email,
+        avatar: activeUser.avatar,
+        isAdmin: activeUser.isAdmin || false,
+      })
     );
+    try {
+      localStorage.removeItem('psc_malayalam_users');
+    } catch {}
 
-    let activeUser;
-
-    if (existingIndex >= 0) {
-      // User profile already present on this device - merge cloud progress seamlessly
-      const existing = users[existingIndex];
-      const resetAt = cloudProgress?.progressResetAt;
-      if (resetAt && existing.progressResetAt !== resetAt) {
-        activeUser = {
-          ...existing,
-          id: dbUser.id || existing.id,
-          name: dbUser.name || existing.name,
-          email: dbUser.email || existing.email,
-          stats: cloudProgress.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
-          bookmarkedQuestions: cloudProgress.bookmarkedQuestions || [],
-          repeatQueue: (cloudProgress.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
-          upcomingRepeats: (cloudProgress.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
-          questionHistory: cloudProgress.questionHistory || [],
-          learnedQuestions: cloudProgress.learnedQuestions || [],
-          solvedQuestions: cloudProgress.solvedQuestions || [],
-          progressResetAt: resetAt
-        };
-      } else {
-        const mergedBookmarks = Array.from(
-          new Set([
-            ...(existing.bookmarkedQuestions || []),
-            ...(cloudProgress?.bookmarkedQuestions || [])
-          ])
-        );
-
-        const existingTotal = existing.stats?.total || 0;
-        const cloudTotal = cloudProgress?.stats?.total || 0;
-        const mergedStats = cloudTotal > existingTotal ? cloudProgress.stats : existing.stats;
-
-        const localRepeatIds = new Set((existing.repeatQueue || []).map((r) => r.id));
-        const mergedRepeats = [...(existing.repeatQueue || [])];
-        (cloudProgress?.repeatQueue || []).forEach((cr) => {
-          if (!localRepeatIds.has(cr.id)) {
-            mergedRepeats.push({ ...getFreshQuestion(cr), ...cr });
-          }
-        });
-
-        activeUser = {
-          ...existing,
-          id: dbUser.id || existing.id,
-          name: dbUser.name || existing.name,
-          email: dbUser.email || existing.email,
-          stats: mergedStats || existing.stats,
-          bookmarkedQuestions: mergedBookmarks,
-          repeatQueue: mergedRepeats,
-          upcomingRepeats: existing.upcomingRepeats?.length
-            ? existing.upcomingRepeats
-            : (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr })),
-          questionHistory: existing.questionHistory?.length
-            ? existing.questionHistory
-            : (cloudProgress?.questionHistory || []),
-          learnedQuestions: existing.learnedQuestions?.length
-            ? existing.learnedQuestions
-            : (cloudProgress?.learnedQuestions || []),
-          solvedQuestions: existing.solvedQuestions?.length
-            ? existing.solvedQuestions
-            : (cloudProgress?.solvedQuestions || []),
-          progressResetAt: resetAt || existing.progressResetAt
-        };
-      }
-
-      const updated = [...users];
-      updated[existingIndex] = activeUser;
-      persistUsers(updated);
-    } else {
-      // Brand new login on this device - restore completely from cloud progress
-      const restoredBookmarks = cloudProgress?.bookmarkedQuestions || [];
-      const restoredStats = cloudProgress?.stats || {
-        correct: 0,
-        total: 0,
-        streak: 0,
-        maxStreak: 0,
-        topicStats: {},
-      };
-      const restoredRepeats = (cloudProgress?.repeatQueue || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
-      const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
-      const restoredHistory = cloudProgress?.questionHistory || [];
-
-      activeUser = {
-        id: dbUser.id || `user_${Date.now()}`,
-        name: dbUser.name,
-        email: dbUser.email,
-        avatar: (dbUser.name?.[0] || 'U').toUpperCase(),
-        createdAt: dbUser.created_at ? new Date(dbUser.created_at).getTime() : Date.now(),
-        stats: restoredStats,
-        bookmarkedQuestions: restoredBookmarks,
-        repeatQueue: restoredRepeats,
-        upcomingRepeats: restoredUpcoming,
-        questionHistory: restoredHistory,
-        learnedQuestions: cloudProgress?.learnedQuestions || [],
-        solvedQuestions: cloudProgress?.solvedQuestions || [],
-        progressResetAt: cloudProgress?.progressResetAt || null,
-      };
-      persistUsers([...users, activeUser]);
-    }
-
+    setUsers([activeUser]);
     approveUser(activeUser.id);
     setActiveUserId(activeUser.id);
-    localStorage.setItem('psc_active_user_id', activeUser.id);
     setShowAuthModal(false);
-
-    // Initial background sync to ensure cloud is up to date
-    syncUserProgressToCloud(activeUser);
+    setCloudSyncStatus('synced');
+    setTimeout(() => setCloudSyncStatus('idle'), 2500);
   };
 
   const handleAdminAuthenticated = () => {
@@ -514,6 +610,7 @@ export default function App() {
   };
 
   const handleResetProgress = (userId) => {
+    const resetTimestamp = new Date().toISOString();
     const updated = users.map(u => {
       if (u.id === userId) {
         return {
@@ -523,12 +620,13 @@ export default function App() {
           upcomingRepeats: [],
           questionHistory: [],
           learnedQuestions: [],
-          solvedQuestions: []
+          solvedQuestions: [],
+          progressResetAt: resetTimestamp
         };
       }
       return u;
     });
-    persistUsers(updated);
+    persistUsers(updated, true);
   };
 
   const handleResetTopicProgress = (userId, topicId, subject) => {
@@ -543,6 +641,14 @@ export default function App() {
 
         const isTopicMatch = (q) => {
           if (!q) return false;
+          if (subject === 'current_affairs') {
+            if (topicId === 'all') return true;
+            const caTopic = CURRENT_AFFAIRS_TOPICS.find(t => t.id === topicId);
+            if (caTopic && caTopic.qp_code) {
+              return q.qp_code === caTopic.qp_code;
+            }
+            return q.topic === topicId;
+          }
           if (subject === 'english' || subject === 'pyq') {
             return q.topic === topicId;
           }
@@ -554,6 +660,8 @@ export default function App() {
           ? ENGLISH_QUESTION_BANK
           : subject === 'pyq'
           ? PYQ_QUESTION_BANK
+          : subject === 'current_affairs'
+          ? CURRENT_AFFAIRS_QUESTION_BANK
           : QUESTION_BANK;
         const topicQuestionIds = new Set(subjectBank.filter(isTopicMatch).map(q => q.id));
 
@@ -581,7 +689,7 @@ export default function App() {
       }
       return u;
     });
-    persistUsers(updated);
+    persistUsers(updated, true);
   };
 
   const handleDeleteAccount = (userId) => {
@@ -665,8 +773,13 @@ export default function App() {
   const handleLogout = () => {
     setActiveUserId(null);
     localStorage.removeItem('psc_active_user_id');
+    localStorage.removeItem('psc_auth_user');
+    try {
+      localStorage.removeItem('psc_malayalam_users');
+    } catch {}
     localStorage.removeItem('psc_pending_verification_email');
     localStorage.removeItem('psc_pending_verification_name');
+    setUsers([]);
     adminLogout();
     setAdminUnlocked(false);
     setViewMode('quiz');
@@ -681,7 +794,7 @@ export default function App() {
     setIsRepeatOnlyMode(false);
     setTopicDropdownOpen(false);
     setMobileSidebarOpen(false);
-    setViewMode(subject === 'malayalam' || subject === 'english' || subject === 'pyq' ? 'notes' : 'quiz');
+    setViewMode(subject === 'malayalam' || subject === 'english' || subject === 'pyq' || subject === 'current_affairs' ? 'notes' : 'quiz');
   };
 
   const handleChooseTopic = (subject, topicId) => {
@@ -691,6 +804,7 @@ export default function App() {
     setViewMode(
       subject === 'malayalam'
         || subject === 'english'
+        || subject === 'current_affairs'
         || (subject === 'pyq' && ['all', 'pq_history', 'pq_geography', 'pq_economics', 'pq_constitution', 'pq_kerala_governance', 'pq_science', 'pq_arts_sports', 'pq_computer', 'pq_acts_laws', 'pq_current_affairs', 'pq_maths', 'pq_english', 'pq_malayalam'].includes(topicId))
         ? 'notes'
         : 'quiz'
@@ -716,6 +830,7 @@ export default function App() {
   const questionCountsMap = {
     malayalam: QUESTION_BANK.length,
     english: ENGLISH_QUESTION_BANK.length,
+    current_affairs: CURRENT_AFFAIRS_QUESTION_BANK.length,
     pyq: PYQ_QUESTION_BANK.length,
     pq_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_history').length,
     pq_geography: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_geography').length,
@@ -726,7 +841,7 @@ export default function App() {
     pq_arts_sports: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_arts_sports').length,
     pq_computer: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_computer').length,
     pq_acts_laws: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_acts_laws').length,
-    pq_current_affairs: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_current_affairs').length,
+    pq_current_affairs: CURRENT_AFFAIRS_QUESTION_BANK.length,
     pq_maths: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_maths').length
   };
 
@@ -787,6 +902,8 @@ export default function App() {
 
   const getBookmarkedQuestionsList = () => {
     return userBookmarks.map(id => {
+      const qCa = CURRENT_AFFAIRS_QUESTION_BANK.find(q => q.id === id);
+      if (qCa) return { ...qCa, subject: qCa.subject || 'current_affairs' };
       const qMal = QUESTION_BANK.find(q => q.id === id);
       if (qMal) return { ...qMal, subject: qMal.subject || 'malayalam' };
       const qEng = ENGLISH_QUESTION_BANK.find(q => q.id === id);
@@ -818,6 +935,8 @@ export default function App() {
       return ENGLISH_QUESTION_BANK.some(eq => eq.id === q.id);
     } else if (activeSubject === 'pyq') {
       return PYQ_QUESTION_BANK.some(pq => pq.id === q.id);
+    } else if (activeSubject === 'current_affairs') {
+      return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id);
     } else {
       return QUESTION_BANK.some(mq => mq.id === q.id);
     }
@@ -826,7 +945,15 @@ export default function App() {
   // Topic matching uses the module-level MALAYALAM_TOPIC_ALIASES (one topic per question)
 
   const matchesTopic = (question, targetTopicId) => {
+    if (!question) return false;
     if (targetTopicId === 'all') return true;
+    if (activeSubject === 'current_affairs') {
+      const caTopic = CURRENT_AFFAIRS_TOPICS.find(t => t.id === targetTopicId);
+      if (caTopic && caTopic.qp_code) {
+        return question.qp_code === caTopic.qp_code;
+      }
+      return question.topic === targetTopicId;
+    }
     if (activeSubject === 'english' || activeSubject === 'pyq') {
       return question.topic === targetTopicId;
     }
@@ -859,6 +986,7 @@ export default function App() {
   const isInActiveSubject = (qId) => {
     if (activeSubject === 'english') return ENGLISH_QUESTION_BANK.some(eq => eq.id === qId);
     if (activeSubject === 'pyq') return PYQ_QUESTION_BANK.some(pq => pq.id === qId);
+    if (activeSubject === 'current_affairs') return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === qId);
     return QUESTION_BANK.some(mq => mq.id === qId);
   };
 
@@ -965,11 +1093,11 @@ export default function App() {
     }
 
     if (nextQ) {
-      const isPYQ = activeSubject === 'pyq';
+      const isAuthenticKeyOrder = activeSubject === 'pyq' || activeSubject === 'current_affairs';
       let finalOptions = [...nextQ.options];
       let finalAnswer = nextQ.answer;
 
-      if (!isPYQ) {
+      if (!isAuthenticKeyOrder) {
         // Randomize option order dynamically ONLY for regular syllabus practice, NOT for PYQs
         const originalOptions = [...nextQ.options];
         const correctText = originalOptions[nextQ.answer];
@@ -1013,6 +1141,26 @@ export default function App() {
     }
   }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId, viewMode]);
 
+  // Reset scroll to top whenever a new question is loaded so the question is never stuck at previous bottom
+  useEffect(() => {
+    if (currentQuestion) {
+      if (quizContentAreaRef.current) {
+        quizContentAreaRef.current.scrollTo({ top: 0, behavior: 'instant' });
+      }
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }, [currentQuestion?.id]);
+
+  // When answered, smoothly reveal explanation and action buttons without abrupt jumps
+  useEffect(() => {
+    if (isAnswered && feedbackCardRef.current) {
+      const timer = setTimeout(() => {
+        feedbackCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [isAnswered]);
+
   const handleOptionSelect = (rawOptionIndex) => {
     if (isAnswered || !currentQuestion || !currentUser) return;
 
@@ -1042,14 +1190,12 @@ export default function App() {
 
     if (isCorrect) {
       soundFX.playCorrect();
+      confetti({
+        particleCount: 80,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
       const newStreak = userStats.streak + 1;
-      if (newStreak % 5 === 0) {
-        confetti({
-          particleCount: 80,
-          spread: 70,
-          origin: { y: 0.6 }
-        });
-      }
 
       const qId = currentQuestion.id;
       const currentTotal = (userStats.total || 0) + 1;
@@ -1338,8 +1484,6 @@ export default function App() {
           onResetProgress={handleRequestResetAllProgress}
           onDeleteAccount={handleRequestDeleteAccount}
           onUpdateUser={handleUpdateUser}
-          onSyncNow={handleManualCloudSync}
-          cloudSyncStatus={cloudSyncStatus}
         />
       )}
 
@@ -1385,6 +1529,20 @@ export default function App() {
             >
               <span className="subject-btn-label">General English</span>
               <span className="subject-qcount">{ENGLISH_QUESTION_BANK.length.toLocaleString()} Qs</span>
+            </button>
+          </div>
+
+          <div className={`ca-switch-row ${activeSubject === 'current_affairs' ? 'active' : ''}`}>
+            <button
+              type="button"
+              className="ca-switch-btn"
+              onClick={() => handleSwitchSubject('current_affairs')}
+            >
+              <div className="ca-btn-left">
+                <span className="ca-btn-badge">NEW</span>
+                <span className="ca-btn-title">Current Affairs 2026</span>
+              </div>
+              <span className="subject-qcount">{CURRENT_AFFAIRS_QUESTION_BANK.length.toLocaleString()} Qs</span>
             </button>
           </div>
 
@@ -1580,6 +1738,13 @@ export default function App() {
                   </button>
                   <button
                     type="button"
+                    className={`mob-subj-btn ${activeSubject === 'current_affairs' ? 'active' : ''}`}
+                    onClick={() => handleSwitchSubject('current_affairs')}
+                  >
+                    CA
+                  </button>
+                  <button
+                    type="button"
                     className={`mob-subj-btn ${activeSubject === 'pyq' ? 'active' : ''}`}
                     onClick={() => handleSwitchSubject('pyq')}
                   >
@@ -1727,7 +1892,7 @@ export default function App() {
                 <div className="custom-topic-dropdown-menu">
                   <div className="dropdown-menu-header">
                     <span>
-                      Select Topic ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? `${selectedYear} PYQ Papers` : 'Malayalam'})
+                      Select Topic ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? `${selectedYear} PYQ Papers` : activeSubject === 'current_affairs' ? 'Current Affairs 2026' : 'Malayalam'})
                     </span>
                     <button
                       className="dropdown-close-btn"
@@ -1789,7 +1954,7 @@ export default function App() {
                     })()}
 
                     <div className="dropdown-section-label">
-                      {activeSubject === 'english' ? 'General English' : activeSubject === 'pyq' ? 'PYQ' : 'Malayalam'} Topics ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
+                      {activeSubject === 'english' ? 'General English' : activeSubject === 'pyq' ? 'PYQ' : activeSubject === 'current_affairs' ? 'Current Affairs Capsules' : 'Malayalam'} Topics ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
                     </div>
 
                     {/* All Subject Topics */}
@@ -1853,7 +2018,7 @@ export default function App() {
         )}
 
         {/* Main Content Viewport */}
-        <div className="quiz-content-area">
+        <div className="quiz-content-area" ref={quizContentAreaRef}>
           {viewMode === 'admin' ? (
             <AdminDashboardView
               onStartPractice={() => {
@@ -1902,17 +2067,22 @@ export default function App() {
               <div className="card-top-bar">
                 <div className="card-top-bar-left">
                   <span className="topic-badge">
-                    {currentSyllabusTopics.find(t => matchesTopic(currentQuestion, t.id))?.name || currentQuestion.topic || 'Practice Question'}
+                    {currentSyllabusTopics.find(t => t.id !== 'all' && matchesTopic(currentQuestion, t.id))?.name || currentQuestion.topic || 'Practice Question'}
                   </span>
                   {activeSubject === 'pyq' && (currentQuestion.year || currentQuestion.id) && (
                     <span className="pyq-year-badge">
                       {currentQuestion.year || String(currentQuestion.id || '').match(/20\d\d/)?.[0] || 'PYQ'} Exam
                     </span>
                   )}
-                  {activeSubject === 'pyq' && currentQuestion.qp_code && (
-                    <span className="pyq-paper-code-badge" title="Original Kerala PSC Question Paper Code">
+                  {activeSubject === 'current_affairs' && (
+                    <span className="ca-year-badge">
+                      ⚡ 2026 Current Affairs
+                    </span>
+                  )}
+                  {(activeSubject === 'pyq' || activeSubject === 'current_affairs') && currentQuestion.qp_code && (
+                    <span className="pyq-paper-code-badge" title="Capsule / Question Paper Code">
                       <FileTextIcon size={12} />
-                      <span>QP: <strong>{currentQuestion.qp_code}</strong></span>
+                      <span>Capsule: <strong>{currentQuestion.qp_code}</strong></span>
                     </span>
                   )}
                 </div>
@@ -1981,7 +2151,10 @@ export default function App() {
 
               {/* Instant Feedback Card with Explanation */}
               {isAnswered && (
-                <div className={`feedback-card ${selectedOption === currentQuestion.answer ? 'correct' : 'wrong'}`}>
+                <div
+                  ref={feedbackCardRef}
+                  className={`feedback-card ${selectedOption === currentQuestion.answer ? 'correct' : 'wrong'}`}
+                >
 
                   {currentQuestion.explanation && (
                     <div className="explanation-box">
@@ -2142,7 +2315,7 @@ export default function App() {
             <div className="modal-header">
               <h2 className="modal-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <RotateIcon size={18} />
-                <span>Spaced Review & Repeat Queue ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? 'PYQ' : 'Malayalam'})</span>
+                <span>Spaced Review & Repeat Queue ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? 'PYQ' : activeSubject === 'current_affairs' ? 'Current Affairs' : 'Malayalam'})</span>
                 <span className="repeat-badge-count">{currentSubjectRepeatQueue.length}</span>
               </h2>
               <button className="close-btn" onClick={() => setShowRepeatModal(false)} aria-label="Close">

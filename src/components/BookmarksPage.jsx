@@ -26,6 +26,7 @@ const ITEMS_PER_PAGE = 8;
 const BOOKMARK_TOPIC_TABS = [
   { id: 'malayalam', label: 'Malayalam' },
   { id: 'english', label: 'General English' },
+  { id: 'current_affairs', label: 'Current Affairs (ആനുകാലികം)' },
   { id: 'pq_history', label: 'History (ചരിത്രം)' },
   { id: 'pq_geography', label: 'Geography (ഭൂമിശാസ്ത്രം)' },
   { id: 'pq_economics', label: 'Economics (ധനതത്വം)' },
@@ -35,7 +36,6 @@ const BOOKMARK_TOPIC_TABS = [
   { id: 'pq_arts_sports', label: 'Arts & Sports (കല, കായികം)' },
   { id: 'pq_computer', label: 'Computer (കമ്പ്യൂട്ടർ)' },
   { id: 'pq_acts_laws', label: 'Acts & Laws (നിയമങ്ങൾ)' },
-  { id: 'pq_current_affairs', label: 'Current Affairs (ആനുകാലികം)' },
   { id: 'pq_maths', label: 'Maths & Mental Ability (കണക്ക്)' }
 ];
 
@@ -45,6 +45,9 @@ function matchesBookmarkTopic(q, tabId) {
   }
   if (tabId === 'english') {
     return q.subject === 'english' || q.topic === 'pq_english' || q.topic === 'english';
+  }
+  if (tabId === 'current_affairs' || tabId === 'pq_current_affairs') {
+    return q.subject === 'current_affairs' || q.topic === 'pq_current_affairs' || String(q.id || '').startsWith('ca_');
   }
   if (tabId === 'other') {
     return !BOOKMARK_TOPIC_TABS.some(t => matchesBookmarkTopic(q, t.id));

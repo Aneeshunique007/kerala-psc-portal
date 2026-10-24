@@ -470,6 +470,119 @@ export const PYQ_TOPICS = [
   }
 ];
 
+// Part II: Current Affairs (Monthly Capsules & Special Guides)
+export const CURRENT_AFFAIRS_TOPICS = [
+  {
+    id: 'all',
+    name: 'All Current Affairs (2026 Mock)',
+    icon: '🎯',
+    desc: 'Practice across all 2026 monthly capsules & revision guides (2,300 Qs)',
+    color: '#6366f1',
+    section: '2026 Current Affairs (2,300 Qs)',
+    sectionMarks: '2,300 Qs'
+  },
+  {
+    id: 'ca_sep',
+    qp_code: 'SEP-CA/2026',
+    name: 'സെപ്റ്റംബർ 2026 (September)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from September 2026',
+    color: '#ec4899',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_aug',
+    qp_code: 'AUG-CA/2026',
+    name: 'ഓഗസ്റ്റ് 2026 (August)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from August 2026',
+    color: '#f59e0b',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_jul',
+    qp_code: 'JUL-CA/2026',
+    name: 'ജൂലൈ 2026 (July)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from July 2026',
+    color: '#10b981',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_jun',
+    qp_code: 'JUN-CA/2026',
+    name: 'ജൂൺ 2026 (June)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from June 2026',
+    color: '#06b6d4',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_may',
+    qp_code: 'MAY-CA/2026',
+    name: 'മേയ് 2026 (May)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from May 2026',
+    color: '#8b5cf6',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_apr',
+    qp_code: 'APR-CA/2026',
+    name: 'ഏപ്രിൽ 2026 (April)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from April 2026',
+    color: '#14b8a6',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_mar',
+    qp_code: 'MAR-CA/2026',
+    name: 'മാർച്ച് 2026 (March)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from March 2026',
+    color: '#84cc16',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_feb',
+    qp_code: 'FEB-CA/2026',
+    name: 'ഫെബ്രുവരി 2026 (February)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from February 2026',
+    color: '#f43f5e',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_jan',
+    qp_code: 'JAN-CA/2026',
+    name: 'ജനുവരി 2026 (January)',
+    icon: '📅',
+    desc: 'Current events, appointments, sports & awards from January 2026',
+    color: '#3b82f6',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '250 Qs'
+  },
+  {
+    id: 'ca_guide',
+    qp_code: 'CA-GUIDE/2026',
+    name: 'കറന്റ് അഫയേഴ്‌സ് ഗൈഡ് (Special Capsule)',
+    icon: '📘',
+    desc: 'High-priority appointments, governance & special state capsule',
+    color: '#eab308',
+    section: 'Special Revision Capsules',
+    sectionMarks: '50 Qs'
+  }
+];
+
 // -------------------------------------------------------------
 // 3. Question Bank Exports
 // -------------------------------------------------------------

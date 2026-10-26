@@ -90,7 +90,7 @@ export default function ProfileModal({
                   </button>
                 </div>
               )}
-              <span className="profile-exam-tag">Kerala PSC Aspirant</span>
+              <span className="profile-exam-tag">{user.isAdmin ? 'System Administrator' : 'Authorized Candidate'}</span>
               <span style={{ fontSize: '0.8rem', color: '#94a3b8', display: 'block', marginTop: '0.2rem' }}>
                 Overall Progress: {correct} Solved Across All Subjects
               </span>

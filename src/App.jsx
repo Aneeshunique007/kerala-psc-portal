@@ -22,6 +22,7 @@ import BlueprintDashboard from './components/BlueprintDashboard';
 import MockExamPage from './components/MockExamPage';
 import FormattedQuestion from './components/FormattedQuestion';
 import BookmarksPage from './components/BookmarksPage';
+import LearnedRetrainPage from './components/LearnedRetrainPage';
 import InviteGate from './components/InviteGate';
 import AdminPanel from './components/AdminPanel';
 import AdminLoginModal from './components/AdminLoginModal';
@@ -34,7 +35,8 @@ import {
   isUserApproved,
   isAdminLoggedIn,
   revokeUser,
-  adminLogout
+  adminLogout,
+  ADMIN_USERNAME
 } from './utils/adminAuth';
 import {
   syncUserProgressToCloud,
@@ -58,7 +60,8 @@ import {
   InfoIcon,
   ShieldIcon,
   ShieldCheckIcon,
-  LogOutIcon
+  LogOutIcon,
+  GraduationCapIcon
 } from './components/Icons';
 import './App.css';
 
@@ -100,9 +103,23 @@ const getFreshQuestion = (q) => {
 };
 
 export default function App() {
-  // Users and Auth State: Cloud DB is the Single Source of Truth
+  // Users and Auth State: Only Admin and Permitted users can use this portal
   const [activeUserId, setActiveUserId] = useState(() => {
-    return localStorage.getItem('psc_active_user_id') || null;
+    const savedAuth = localStorage.getItem('psc_auth_user');
+    if (savedAuth) {
+      try {
+        const u = JSON.parse(savedAuth);
+        if (u && (u.isAdmin || u.email === ADMIN_USERNAME || isUserApproved(u.id))) {
+          const isAdminUser = Boolean(u.isAdmin || u.email === ADMIN_USERNAME);
+          return isAdminUser ? '0da821a4-e665-4907-bb81-d058eb83b939' : u.id;
+        }
+      } catch {}
+    }
+    try {
+      localStorage.removeItem('psc_active_user_id');
+      localStorage.removeItem('psc_auth_user');
+    } catch {}
+    return null;
   });
 
   const [users, setUsers] = useState(() => {
@@ -110,40 +127,25 @@ export default function App() {
     if (savedAuth) {
       try {
         const u = JSON.parse(savedAuth);
-        return [{
-          id: u.id,
-          name: u.name || 'Aspirant',
-          email: u.email || '',
-          avatar: u.avatar || (u.name?.[0] || 'U').toUpperCase(),
-          isAdmin: u.isAdmin || false,
-          stats: { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
-          bookmarkedQuestions: [],
-          repeatQueue: [],
-          upcomingRepeats: [],
-          learnedQuestions: [],
-          solvedQuestions: [],
-          questionHistory: [],
-          progressResetAt: null
-        }];
+        if (u && (u.isAdmin || u.email === ADMIN_USERNAME || isUserApproved(u.id))) {
+          const isAdminUser = Boolean(u.isAdmin || u.email === ADMIN_USERNAME);
+          return [{
+            id: isAdminUser ? '0da821a4-e665-4907-bb81-d058eb83b939' : u.id,
+            name: u.name || (isAdminUser ? 'Aneesh (Admin)' : 'User'),
+            email: isAdminUser ? ADMIN_USERNAME : (u.email || ''),
+            avatar: u.avatar || (isAdminUser ? 'A' : (u.name?.[0] || 'U')).toUpperCase(),
+            isAdmin: isAdminUser,
+            stats: { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+            bookmarkedQuestions: [],
+            repeatQueue: [],
+            upcomingRepeats: [],
+            learnedQuestions: [],
+            solvedQuestions: [],
+            questionHistory: [],
+            progressResetAt: null
+          }];
+        }
       } catch {}
-    }
-
-    const currentId = localStorage.getItem('psc_active_user_id');
-    if (currentId) {
-      return [{
-        id: currentId,
-        name: 'Aspirant',
-        email: currentId.includes('@') ? currentId : '',
-        avatar: 'A',
-        stats: { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
-        bookmarkedQuestions: [],
-        repeatQueue: [],
-        upcomingRepeats: [],
-        learnedQuestions: [],
-        solvedQuestions: [],
-        questionHistory: [],
-        progressResetAt: null
-      }];
     }
     return [];
   });
@@ -227,15 +229,16 @@ export default function App() {
     ? CURRENT_AFFAIRS_QUESTION_BANK
     : QUESTION_BANK;
 
-  // If no current user, trigger Auth Modal (or invite gate for new users)
+  // Strict Access Gate: Only Admin and Admin-Permitted users can access this portal
   useEffect(() => {
     if (!currentUser) {
       setShowAuthModal(true);
     } else {
-      // If user was revoked, boot them out
-      if (!isUserApproved(currentUser.id)) {
+      const isPermitted = currentUser.isAdmin || currentUser.email === ADMIN_USERNAME || isUserApproved(currentUser.id);
+      if (!isPermitted) {
         setActiveUserId(null);
         localStorage.removeItem('psc_active_user_id');
+        localStorage.removeItem('psc_auth_user');
         setShowAuthModal(true);
       } else {
         setShowAuthModal(false);
@@ -333,12 +336,21 @@ export default function App() {
     }
   };
 
-  // One-time migration: approve all pre-existing users so they aren't locked out
+  // Clean up any legacy unapproved or dummy "Aspirant" sessions from localStorage
   useEffect(() => {
-    if (users.length > 0) {
-      users.forEach(u => approveUser(u.id));
+    const saved = localStorage.getItem('psc_auth_user');
+    if (saved) {
+      try {
+        const u = JSON.parse(saved);
+        if (u.name === 'Aspirant' && !u.isAdmin && !isUserApproved(u.id)) {
+          localStorage.removeItem('psc_auth_user');
+          localStorage.removeItem('psc_active_user_id');
+          setActiveUserId(null);
+          setUsers([]);
+          setShowAuthModal(true);
+        }
+      } catch {}
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Fetch fresh progress from Supabase Cloud DB & automatically migrate highest legacy local progress if present
@@ -545,35 +557,55 @@ export default function App() {
     setTimeout(() => setCloudSyncStatus('idle'), 2500);
   };
 
-  const handleAdminAuthenticated = () => {
+  const handleAdminAuthenticated = async () => {
     setAdminUnlocked(true);
-    let adminUser = users.find(u => u.isAdmin || u.email === 'crazyaneeshus007@gmail.com');
-    if (!adminUser) {
-      adminUser = {
-        id: 'admin_master_aneesh',
-        name: 'Aneesh (Admin)',
-        email: 'crazyaneeshus007@gmail.com',
-        isAdmin: true,
-        avatar: 'A',
-        createdAt: Date.now(),
-        stats: {
-          correct: 0,
-          total: 0,
-          streak: 0,
-          maxStreak: 0,
-          topicStats: {},
-        },
-        repeatQueue: [],
-        upcomingRepeats: [],
-        questionHistory: [],
-      };
-      persistUsers([...users, adminUser]);
-    }
-    approveUser(adminUser.id);
-    setActiveUserId(adminUser.id);
+    const adminEmail = 'crazyaneeshus007@gmail.com';
+    setCloudSyncStatus('syncing');
+    const cloudProgress = await fetchUserProgressFromCloud(adminEmail);
+    const restoredStats = cloudProgress?.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} };
+    const restoredBookmarks = cloudProgress?.bookmarkedQuestions || [];
+    const restoredLearned = cloudProgress?.learnedQuestions || [];
+    const restoredSolved = cloudProgress?.solvedQuestions || [];
+    const restoredRepeats = (cloudProgress?.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+    const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+    const restoredHistory = cloudProgress?.questionHistory || [];
+
+    const adminUser = {
+      id: '0da821a4-e665-4907-bb81-d058eb83b939',
+      name: 'Aneesh (Admin)',
+      email: adminEmail,
+      isAdmin: true,
+      avatar: 'A',
+      createdAt: Date.now(),
+      stats: restoredStats,
+      bookmarkedQuestions: restoredBookmarks,
+      repeatQueue: restoredRepeats,
+      upcomingRepeats: restoredUpcoming,
+      questionHistory: restoredHistory,
+      learnedQuestions: restoredLearned,
+      solvedQuestions: restoredSolved,
+      progressResetAt: cloudProgress?.progressResetAt || null,
+    };
+
     localStorage.setItem('psc_active_user_id', adminUser.id);
+    localStorage.setItem(
+      'psc_auth_user',
+      JSON.stringify({
+        id: adminUser.id,
+        name: adminUser.name,
+        email: adminUser.email,
+        avatar: adminUser.avatar,
+        isAdmin: true,
+      })
+    );
+
+    approveUser(adminUser.id);
+    setUsers([adminUser]);
+    setActiveUserId(adminUser.id);
     setShowAuthModal(false);
     setViewMode('admin');
+    setCloudSyncStatus('synced');
+    setTimeout(() => setCloudSyncStatus('idle'), 2500);
   };
 
   // Called from InviteGate after code validated
@@ -914,6 +946,41 @@ export default function App() {
       setPreviousViewMode(viewMode === 'bookmarks' ? 'blueprint' : viewMode);
       setViewMode('bookmarks');
     }
+  };
+
+  const handleOpenRetrain = () => {
+    if (viewMode === 'retrain') {
+      setViewMode(previousViewMode || 'blueprint');
+    } else {
+      setPreviousViewMode(viewMode === 'retrain' ? 'blueprint' : viewMode);
+      setViewMode('retrain');
+    }
+  };
+
+  const handleSendToReviewQueue = (question) => {
+    if (!currentUser || !question) return;
+    const qId = question.id;
+    const repeatItem = {
+      id: qId,
+      remainingRepeats: 1,
+      minAvailableAt: (currentUser?.stats?.total || 0) + 2
+    };
+    let updatedRepeatQueue = [...(currentUser?.repeatQueue || [])];
+    if (!updatedRepeatQueue.some(item => item.id === qId)) {
+      updatedRepeatQueue.push(repeatItem);
+    } else {
+      updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
+    }
+    const updated = users.map(u => {
+      if (u.id === activeUserId) {
+        return {
+          ...u,
+          repeatQueue: updatedRepeatQueue
+        };
+      }
+      return u;
+    });
+    persistUsers(updated);
   };
 
   const getBookmarkedQuestionsList = () => {
@@ -1984,7 +2051,7 @@ export default function App() {
               {adminUnlocked && (
                 <button
                   type="button"
-                  className={`nav-admin-center-btn ${viewMode === 'admin' ? 'active' : ''}`}
+                  className={`nav-btn nav-admin-center-btn ${viewMode === 'admin' ? 'active' : ''}`}
                   onClick={() => {
                     if (viewMode === 'admin') {
                       setViewMode(previousViewMode || 'quiz');
@@ -2002,43 +2069,57 @@ export default function App() {
                     </>
                   ) : (
                     <>
-                      <ShieldIcon size={15} />
+                      <ShieldIcon size={14} className="nav-icon-gold" />
                       <span className="desktop-only">Admin Center</span>
                     </>
                   )}
                 </button>
               )}
 
-              {/* Bookmarks Navbar Button (Opens Full Page Library) - hidden in admin on mobile */}
+              {/* Bookmarks Navbar Button */}
               {viewMode !== 'admin' && (
                 <button
                   type="button"
-                  className={`nav-bookmark-btn ${viewMode === 'bookmarks' ? 'active' : ''}`}
+                  className={`nav-btn nav-bookmark-btn ${viewMode === 'bookmarks' ? 'active' : ''}`}
                   onClick={handleOpenBookmarks}
-                  title="View Bookmarks (Full Page Library)"
+                  title="View Bookmarks Library"
                 >
-                  <BookmarkIcon size={16} className="nav-bookmark-icon" />
-                  <span className="nav-bookmark-label desktop-only">Bookmark</span>
+                  <BookmarkIcon size={14} className="nav-icon-blue" />
+                  <span className="desktop-only">Bookmarks</span>
                 </button>
               )}
 
-              {/* Spaced Review Queue Pill on Navbar - shown only when not empty & not in admin */}
+              {/* Retrain Hub Navbar Button */}
+              {viewMode !== 'admin' && (
+                <button
+                  type="button"
+                  className={`nav-btn nav-retrain-btn ${viewMode === 'retrain' ? 'active' : ''}`}
+                  onClick={handleOpenRetrain}
+                  title="Learned Questions & Retrain Hub"
+                >
+                  <GraduationCapIcon size={15} className="nav-icon-green" />
+                  <span className="desktop-only">Retrain Hub</span>
+                </button>
+              )}
+
+              {/* Spaced Review Queue Pill on Navbar */}
               {viewMode !== 'admin' && currentSubjectRepeatQueue.length > 0 && (
                 <button
                   type="button"
-                  className="nav-review-queue-pill"
+                  className="nav-btn nav-queue-btn"
                   onClick={() => setShowRepeatModal(true)}
                   title={`Open Spaced Review Queue (${currentSubjectRepeatQueue.length} questions waiting)`}
                 >
-                  <RotateIcon size={15} className="queue-pill-icon" />
-                  <span className="queue-pill-label desktop-only">Review Queue</span>
+                  <RotateIcon size={13} className="nav-icon-cyan" />
+                  <span className="desktop-only">Review Queue</span>
                 </button>
               )}
 
-              {/* User Profile Badge (Top Right) */}
+              {/* User Profile Capsule + Quick Logout */}
               {currentUser && (
-                <>
+                <div className="nav-user-group">
                   <button
+                    type="button"
                     className="user-nav-badge"
                     onClick={() => setShowProfileModal(true)}
                     title="View Profile and Topic Mastery Analytics"
@@ -2049,14 +2130,16 @@ export default function App() {
                     <span className="user-nav-name desktop-only">{currentUser.name}</span>
                   </button>
                   <button
+                    type="button"
                     className="user-nav-logout-btn"
                     onClick={handleLogout}
                     title="Log Out"
+                    aria-label="Log Out"
                   >
                     <LogOutIcon size={14} />
                     <span className="desktop-only">Log Out</span>
                   </button>
-                </>
+                </div>
               )}
             </div>
           </div>
@@ -2283,6 +2366,14 @@ export default function App() {
               syllabusTopics={SYLLABUS_TOPICS}
               englishTopics={ENGLISH_SYLLABUS_TOPICS}
               pyqTopics={PYQ_TOPICS}
+            />
+          ) : viewMode === 'retrain' ? (
+            <LearnedRetrainPage
+              currentUser={currentUser}
+              onBack={() => setViewMode(previousViewMode || 'blueprint')}
+              onToggleBookmark={handleToggleBookmark}
+              isBookmarked={(id) => userBookmarks.includes(id)}
+              onSendToReviewQueue={handleSendToReviewQueue}
             />
           ) : viewMode === 'mock' ? (
             <MockExamPage

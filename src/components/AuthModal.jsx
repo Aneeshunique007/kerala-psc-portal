@@ -38,7 +38,7 @@ export default function AuthModal({
         localStorage.removeItem('psc_pending_verification_name');
         return;
       }
-      setPendingInfo({ email: savedPendingEmail, name: savedPendingName || 'Aspirant' });
+      setPendingInfo({ email: savedPendingEmail, name: savedPendingName || 'User' });
       setMode('pending_notice');
     }
   }, []);
@@ -137,7 +137,7 @@ export default function AuthModal({
 
       if (!res.success) {
         if (res.isPending) {
-          setPendingInfo({ email: email.trim().toLowerCase(), name: res.user?.name || 'Aspirant' });
+          setPendingInfo({ email: email.trim().toLowerCase(), name: res.user?.name || 'User' });
           localStorage.setItem('psc_pending_verification_email', email.trim().toLowerCase());
           setMode('pending_notice');
           return;
@@ -207,7 +207,7 @@ export default function AuthModal({
             <div className="auth-emblem-ring"></div>
           </div>
 
-          <h2 className="auth-portal-title">Kerala PSC Aspirant Portal</h2>
+          <h2 className="auth-portal-title">Kerala PSC Portal</h2>
           <p className="auth-portal-subtitle">Official Syllabus Practice &amp; Real-time Analytics</p>
 
           <div className="auth-pill-badges">
@@ -226,7 +226,7 @@ export default function AuthModal({
 
             <h3 className="verification-heading">Account Under Verification</h3>
             <p className="verification-subtext">
-              Hi <strong>{pendingInfo?.name || 'Aspirant'}</strong>, your request for{' '}
+              Hi <strong>{pendingInfo?.name || 'User'}</strong>, your request for{' '}
               <span className="verification-email-badge">{pendingInfo?.email}</span> has been submitted to the administrator.
             </p>
 
@@ -396,7 +396,7 @@ export default function AuthModal({
                 </button>
 
                 <div className="auth-footer-prompt">
-                  <span>New aspirant?</span>
+                  <span>Need an account?</span>
                   <button
                     type="button"
                     className="auth-link-text-btn"

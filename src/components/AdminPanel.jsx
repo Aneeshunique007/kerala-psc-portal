@@ -125,9 +125,9 @@ export default function AdminPanel({ onClose, onRevokeUser }) {
     }
   };
 
-  const pendingUsers = dbUsers.filter((u) => u.status === 'pending');
-  const approvedUsers = dbUsers.filter((u) => u.status === 'approved');
-  const rejectedUsers = dbUsers.filter((u) => u.status === 'rejected');
+  const pendingUsers = dbUsers.filter((u) => u.status === 'pending' && u.email !== 'crazyaneeshus007@gmail.com');
+  const approvedUsers = dbUsers.filter((u) => u.status === 'approved' && u.email !== 'crazyaneeshus007@gmail.com');
+  const rejectedUsers = dbUsers.filter((u) => u.status === 'rejected' && u.email !== 'crazyaneeshus007@gmail.com');
 
   return (
     <div className="modal-overlay admin-overlay" onClick={onClose}>

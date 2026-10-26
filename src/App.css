@@ -267,6 +267,7 @@
   flex-direction: column;
   position: relative;
   height: 100%;
+  min-height: 0;
   overflow: hidden;
 }
 
@@ -477,11 +478,10 @@
 /* Quiz Content Viewport (Shared for Quiz, Bookmarks, and Blueprint) */
 .quiz-content-area {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  overscroll-behavior-y: contain;
-  touch-action: pan-y;
   padding: 1.5rem 1.25rem 3rem 1.25rem;
   display: flex;
   align-items: flex-start;
@@ -624,7 +624,6 @@
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(12px);
   animation: cardFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  touch-action: pan-y;
 }
 
 .card-top-bar {
@@ -864,7 +863,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  touch-action: pan-y;
 }
 
 .option-btn {
@@ -935,7 +933,6 @@
   border-radius: var(--radius-md);
   font-family: var(--font-malayalam);
   animation: slideFadeIn 0.3s ease;
-  touch-action: pan-y;
 }
 
 .feedback-card.correct {
@@ -972,7 +969,6 @@
   color: var(--text-primary);
   font-size: 1rem;
   line-height: 1.6;
-  touch-action: pan-y;
 }
 
 .feedback-card > .explanation-box:first-child {

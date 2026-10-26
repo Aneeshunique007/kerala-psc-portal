@@ -1173,11 +1173,25 @@ export default function App() {
     }
   }, [currentQuestion?.id]);
 
-  // When answered, smoothly reveal explanation and action buttons without abrupt jumps
+  // When answered, smoothly reveal explanation within quizContentAreaRef without scrolling outer window
   useEffect(() => {
-    if (isAnswered && feedbackCardRef.current) {
+    if (isAnswered && feedbackCardRef.current && quizContentAreaRef.current) {
+      const container = quizContentAreaRef.current;
+      const feedbackEl = feedbackCardRef.current;
+
       const timer = setTimeout(() => {
-        feedbackCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        if (!container || !feedbackEl) return;
+        const containerRect = container.getBoundingClientRect();
+        const feedbackRect = feedbackEl.getBoundingClientRect();
+
+        // If the bottom of the feedback card exceeds the visible container bottom
+        if (feedbackRect.bottom > containerRect.bottom) {
+          const scrollDistance = feedbackRect.bottom - containerRect.bottom + 32;
+          container.scrollBy({
+            top: scrollDistance,
+            behavior: 'smooth'
+          });
+        }
       }, 100);
       return () => clearTimeout(timer);
     }

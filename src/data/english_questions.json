@@ -32,7 +32,7 @@
     "options": [
       "Exclamatory",
       "Interrogative",
-      "Assertive (Declarative)",
+      "Assertive",
       "Imperative"
     ],
     "answer": 2,
@@ -1068,15 +1068,15 @@
   {
     "id": "typesent_83",
     "topic": "types_of_sentences",
-    "question": "Convert into Compound: 'He took his gun and shot the tiger.'",
+    "question": "Convert into Simple: 'He took his gun and shot the tiger.'",
     "options": [
-      "Having taken his gun, he shot the tiger (Simple form).",
+      "Having taken his gun, he shot the tiger.",
       "He took his gun and shot the tiger.",
       "Taking his gun he shot tiger.",
       "When he took gun he shot tiger."
     ],
-    "answer": 1,
-    "explanation": "'He took his gun and shot the tiger' എന്ന വാക്യത്തിൽ രണ്ട് സ്വതന്ത്ര ക്ലോസുകൾ 'and' കൊണ്ട് ബന്ധിപ്പിച്ചിരിക്കുന്നതിനാൽ ഇത് കോമ്പൗണ്ട് വാക്യമാണ് (Compound sentence). ചോദ്യത്തിൽ നൽകിയിരിക്കുന്ന ശരിയുത്തരം ഓപ്ഷൻ A ആണ്."
+    "answer": 0,
+    "explanation": "'He took his gun and shot the tiger' എന്ന കോമ്പൗണ്ട് വാക്യത്തെ പാർട്ടിസിപ്പിൾ ഫ്രെയ്സ് ('Having taken his gun...') ഉപയോഗിച്ച് സിമ്പിൾ വാക്യമാക്കി മാറ്റാം: 'Having taken his gun, he shot the tiger.'"
   },
   {
     "id": "typesent_84",
@@ -3098,7 +3098,7 @@
     "topic": "parts_of_speech",
     "question": "Identify the part of speech of 'over' in: 'The match is over.'",
     "options": [
-      "Adverb (or Predicate Adjective)",
+      "Adverb",
       "Preposition",
       "Verb",
       "Noun"
@@ -3189,7 +3189,7 @@
     "topic": "parts_of_speech",
     "question": "Identify the part of speech of 'water' in: 'He carries a water bottle.'",
     "options": [
-      "Adjective (Noun Adjunct)",
+      "Adjective",
       "Verb",
       "Noun",
       "Adverb"
@@ -25172,7 +25172,7 @@
     "topic": "active_passive_voice",
     "question": "Change into passive: 'The audience clapped loudly.'",
     "options": [
-      "No passive possible (intransitive verb).",
+      "No passive possible",
       "Clapping was done by audience.",
       "The audience were clapped.",
       "The audience was clapped loudly."
@@ -25185,7 +25185,7 @@
     "topic": "active_passive_voice",
     "question": "Change into passive: 'Birds fly in the sky.'",
     "options": [
-      "No passive possible (intransitive verb).",
+      "No passive possible",
       "The sky is flown by birds.",
       "Birds are flown in the sky.",
       "In the sky birds fly."
@@ -30543,7 +30543,7 @@
     "options": [
       "Focies",
       "Focuses only",
-      "Foci (or Focuses)",
+      "Foci",
       "Foca"
     ],
     "answer": 2,
@@ -30570,7 +30570,7 @@
       "Syllabies",
       "Syllaba",
       "Syllabuses only",
-      "Syllabi (or Syllabuses)"
+      "Syllabi"
     ],
     "answer": 3,
     "explanation": "'Syllabus' (പാഠ്യപദ്ധതി) എന്ന ലാറ്റിൻ പദത്തിന്റെ ശാസ്ത്രീയമായ ബഹുവചന രൂപം 'Syllabi' എന്നാണ് (സാധാരണ ഇംഗ്ലീഷിൽ Syllabuses എന്നും ഉപയോഗിക്കാറുണ്ട്)."
@@ -30647,7 +30647,7 @@
     "options": [
       "Curriculas",
       "Curriculi",
-      "Curricula (or Curriculums)",
+      "Curricula",
       "Curriculum"
     ],
     "answer": 2,
@@ -30659,7 +30659,7 @@
     "question": "What is the plural of 'Index'?",
     "options": [
       "Indici",
-      "Indices (or Indexes)",
+      "Indices",
       "Indexies",
       "Indexen"
     ],
@@ -30673,7 +30673,7 @@
     "options": [
       "Appendicies",
       "Appendixs",
-      "Appendices (or Appendixes)",
+      "Appendices",
       "Appendi"
     ],
     "answer": 2,
@@ -30960,7 +30960,7 @@
       "Nun",
       "Widow",
       "Bachelorette",
-      "Spinster (or Maid)"
+      "Spinster"
     ],
     "answer": 3,
     "explanation": "അവിവാഹിതനായ പുരുഷനെ 'Bachelor' എന്ന് വിളിക്കുന്നു. ഇതിന്റെ സ്ത്രീലിംഗ പദമായി പരമ്പരാഗതമായി ഉപയോഗിക്കുന്നത് 'Spinster' (അല്ലെങ്കിൽ Maid) എന്നാണ്."
@@ -31051,7 +31051,7 @@
       "Ewe",
       "Vixen",
       "Bitch",
-      "Hind (or Doe)"
+      "Hind"
     ],
     "answer": 3,
     "explanation": "'Stag' അല്ലെങ്കിൽ 'Hart' (പ്രായപൂർത്തിയായ ആൺമാൻ) എന്നതിന്റെ സ്ത്രീലിംഗ രൂപമാണ് 'Hind' (അല്ലെങ്കിൽ Doe). ആൺമാനിന്റെ കുഞ്ഞിനെ 'fawn' എന്ന് വിളിക്കുന്നു. പി.എസ്.സി ഇംഗ്ലീഷ് വ്യാകരണത്തിൽ സ്ഥിരമായി ആവർത്തിക്കുന്ന ചോദ്യമാണിത്."
@@ -31415,7 +31415,7 @@
       "Pack",
       "Herd",
       "Flock",
-      "Shoal (or School)"
+      "Shoal"
     ],
     "answer": 3,
     "explanation": "ഒന്നിച്ചു നീന്തുന്ന മത്സ്യക്കൂട്ടത്തെ സൂചിപ്പിക്കുന്ന കളക്ടീവ് നൗണുകളാണ് 'Shoal' അല്ലെങ്കിൽ 'School'. അതിനാൽ 'a shoal of fish' അല്ലെങ്കിൽ 'a school of fish' എന്ന് ഉപയോഗിക്കുന്നു."
@@ -31542,7 +31542,7 @@
     "topic": "singular_plural_gender_collective",
     "question": "What is the collective noun for a group of soldiers?",
     "options": [
-      "Regiment (or Army)",
+      "Regiment",
       "Flock",
       "Mob",
       "Crew"
@@ -31569,7 +31569,7 @@
     "question": "What is the collective noun for a group of musicians?",
     "options": [
       "Chorus",
-      "Band (or Orchestra)",
+      "Band",
       "Troop",
       "Crew"
     ],
@@ -31737,7 +31737,7 @@
     "topic": "singular_plural_gender_collective",
     "question": "What is the collective noun for a group of trees?",
     "options": [
-      "Clump (or Grove)",
+      "Clump",
       "Cluster",
       "Forest",
       "Fleet"
@@ -31752,7 +31752,7 @@
     "options": [
       "Peninsula",
       "Delta",
-      "Archipelago (or Chain)",
+      "Archipelago",
       "Cluster"
     ],
     "answer": 2,
@@ -31777,7 +31777,7 @@
     "question": "What is the collective noun for a group of stars forming a pattern?",
     "options": [
       "Solar system",
-      "Constellation (or Galaxy)",
+      "Constellation",
       "Nebula",
       "Cluster"
     ],
@@ -34184,7 +34184,7 @@
       "dis-",
       "in-",
       "un-",
-      "mis- (misspell)"
+      "mis-"
     ],
     "answer": 3,
     "explanation": "അക്ഷരവിന്യാസം തെറ്റായി എഴുതുക എന്ന അർത്ഥം നൽകാൻ 'Spell' എന്ന ക്രിയയ്ക്ക് മുൻപിൽ 'mis-' എന്ന പ്രിഫിക്സ് ചേർത്ത് 'Misspell' (തെറ്റായി അക്ഷരം കൂട്ടുക) എന്ന് എഴുതുന്നു."
@@ -34194,7 +34194,7 @@
     "topic": "word_formation_affixes",
     "question": "Add prefix to 'fortune' meaning 'bad luck':",
     "options": [
-      "mis- (misfortune)",
+      "mis-",
       "il-",
       "un-",
       "dis-"
@@ -34208,7 +34208,7 @@
     "question": "Add negative prefix to 'legible':",
     "options": [
       "in-",
-      "il- (illegible)",
+      "il-",
       "un-",
       "dis-"
     ],
@@ -34220,7 +34220,7 @@
     "topic": "word_formation_affixes",
     "question": "Add negative prefix to 'literate':",
     "options": [
-      "il- (illiterate)",
+      "il-",
       "dis-",
       "un-",
       "in-"
@@ -34234,7 +34234,7 @@
     "question": "Add negative prefix to 'moral':",
     "options": [
       "un-",
-      "im- (immoral)",
+      "im-",
       "il-",
       "dis-"
     ],
@@ -34246,7 +34246,7 @@
     "topic": "word_formation_affixes",
     "question": "Add negative prefix to 'mortal':",
     "options": [
-      "im- (immortal)",
+      "im-",
       "non-",
       "in-",
       "un-"
@@ -34261,7 +34261,7 @@
     "options": [
       "un-",
       "dis-",
-      "im- (impatient)",
+      "im-",
       "in-"
     ],
     "answer": 2,
@@ -34274,7 +34274,7 @@
     "options": [
       "dis-",
       "il-",
-      "im- (impure)",
+      "im-",
       "un-"
     ],
     "answer": 2,
@@ -34285,7 +34285,7 @@
     "topic": "word_formation_affixes",
     "question": "Add negative prefix to 'rational':",
     "options": [
-      "ir- (irrational)",
+      "ir-",
       "un-",
       "dis-",
       "il-"
@@ -34301,7 +34301,7 @@
       "in-",
       "un-",
       "dis-",
-      "ir- (irregular)"
+      "ir-"
     ],
     "answer": 3,
     "explanation": "'r' ൽ തുടങ്ങുന്ന 'Regular' (ക്രമമായ) എന്ന പദത്തിന് മുൻപിൽ 'ir-' എന്ന പ്രിഫിക്സ് ചേർക്കുമ്പോൾ 'Irregular' (ക്രമരഹിതമായ) എന്ന വിപരീത പദം ലഭിക്കുന്നു."
@@ -34313,7 +34313,7 @@
     "options": [
       "dis-",
       "un-",
-      "ir- (irrelevant)",
+      "ir-",
       "il-"
     ],
     "answer": 2,
@@ -34326,7 +34326,7 @@
     "options": [
       "un-",
       "in-",
-      "ir- (irresponsible)",
+      "ir-",
       "dis-"
     ],
     "answer": 2,
@@ -34340,7 +34340,7 @@
       "-less",
       "-like",
       "-hood",
-      "-ish (childish)"
+      "-ish"
     ],
     "answer": 3,
     "explanation": "'Child' എന്ന നാമത്തിൽ പക്വതയില്ലാത്ത അല്ലെങ്കിൽ വിഡ്ഢിത്തമുള്ള എന്ന നിഷേധാത്മക അർത്ഥത്തിൽ വിശേഷണം ഉണ്ടാക്കാൻ '-ish' ചേർത്ത് 'Childish' എന്ന് ഉപയോഗിക്കുന്നു."
@@ -34350,7 +34350,7 @@
     "topic": "word_formation_affixes",
     "question": "Add suffix to 'child' to form a noun denoting the state of being a child:",
     "options": [
-      "-hood (childhood)",
+      "-hood",
       "-ship",
       "-ment",
       "-dom"
@@ -34364,7 +34364,7 @@
     "question": "Add suffix to 'king' to denote jurisdiction/realm:",
     "options": [
       "-ship",
-      "-dom (kingdom)",
+      "-dom",
       "-hood",
       "-ment"
     ],
@@ -34378,7 +34378,7 @@
     "options": [
       "-hood",
       "-dom",
-      "-ship (friendship)",
+      "-ship",
       "-ness"
     ],
     "answer": 2,
@@ -34389,7 +34389,7 @@
     "topic": "word_formation_affixes",
     "question": "Add suffix to 'brave' to form an abstract noun:",
     "options": [
-      "-ry (bravery)",
+      "-ry",
       "-ness",
       "-hood",
       "-ment"
@@ -34404,7 +34404,7 @@
     "options": [
       "-hood",
       "-ship",
-      "-ness (darkness)",
+      "-ness",
       "-ment"
     ],
     "answer": 2,
@@ -34416,7 +34416,7 @@
     "question": "Add suffix to 'govern' to form a noun denoting the system of ruling:",
     "options": [
       "-hood",
-      "-ment (government)",
+      "-ment",
       "-tion",
       "-ance"
     ],
@@ -34430,7 +34430,7 @@
     "options": [
       "-tion",
       "-ment",
-      "-ance (performance)",
+      "-ance",
       "-ness"
     ],
     "answer": 2,
@@ -34441,7 +34441,7 @@
     "topic": "word_formation_affixes",
     "question": "Add suffix to 'hesitate' to form a noun:",
     "options": [
-      "-tion (hesitation)",
+      "-tion",
       "-ment",
       "-ness",
       "-ance"
@@ -34457,7 +34457,7 @@
       "sub-",
       "super-",
       "inter-",
-      "infra- (infrastructure)"
+      "infra-"
     ],
     "answer": 3,
     "explanation": "'Infra-' എന്ന പ്രിഫിക്സിന്റെ അർത്ഥം 'താഴെ അല്ലെങ്കിൽ അടിത്തറയിൽ' (below or beneath) എന്നാണ്. അതിനാൽ 'Infrastructure' എന്നാൽ ഒരു വ്യവസ്ഥിതിയുടെ അടിസ്ഥാന സൗകര്യങ്ങൾ എന്നാണ് അർത്ഥം."
@@ -34467,7 +34467,7 @@
     "topic": "word_formation_affixes",
     "question": "Add prefix to 'national' meaning 'between nations':",
     "options": [
-      "inter- (international)",
+      "inter-",
       "trans-",
       "intra-",
       "sub-"
@@ -34482,7 +34482,7 @@
     "options": [
       "extra-",
       "sub-",
-      "intra- (intracellular)",
+      "intra-",
       "inter-"
     ],
     "answer": 2,
@@ -34495,7 +34495,7 @@
     "options": [
       "super-",
       "ultra-",
-      "extra- (extraterrestrial)",
+      "extra-",
       "inter-"
     ],
     "answer": 2,
@@ -34507,7 +34507,7 @@
     "question": "Add prefix to 'violet' meaning 'beyond visible spectrum':",
     "options": [
       "hyper-",
-      "ultra- (ultraviolet)",
+      "ultra-",
       "super-",
       "infra-"
     ],
@@ -34520,7 +34520,7 @@
     "question": "Add prefix to 'critical' meaning 'excessively critical':",
     "options": [
       "ultra-",
-      "hyper- (hypercritical)",
+      "hyper-",
       "hypo-",
       "super-"
     ],
@@ -34534,7 +34534,7 @@
     "options": [
       "sub-",
       "under-",
-      "hypo- (hypotension)",
+      "hypo-",
       "hyper-"
     ],
     "answer": 2,
@@ -34545,7 +34545,7 @@
     "topic": "word_formation_affixes",
     "question": "Add prefix to 'meridian' meaning 'before noon':",
     "options": [
-      "ante- (ante-meridiem / a.m.)",
+      "ante-",
       "anti-",
       "post-",
       "pre-"
@@ -34561,7 +34561,7 @@
       "ante-",
       "pro-",
       "pre-",
-      "post- (post-meridiem / p.m.)"
+      "post-"
     ],
     "answer": 3,
     "explanation": "'Post-' എന്ന പ്രിഫിക്സിന്റെ അർത്ഥം 'ശേഷം അല്ലെങ്കിൽ പിന്നീട്' (after) എന്നാണ്. അതിനാൽ ഉച്ചയ്ക്ക് ശേഷമുള്ള സമയത്തെ ലാറ്റിൻ ഭാഷയിൽ 'Post-meridiem' (p.m.) എന്ന് വിളിക്കുന്നു."
@@ -34573,7 +34573,7 @@
     "options": [
       "pro-",
       "ante-",
-      "anti- (antibiotic)",
+      "anti-",
       "auto-"
     ],
     "answer": 2,
@@ -34587,7 +34587,7 @@
       "mono-",
       "bio-",
       "self-",
-      "auto- (autobiography)"
+      "auto-"
     ],
     "answer": 3,
     "explanation": "'Auto-' എന്ന പ്രിഫിക്സിന്റെ അർത്ഥം 'സ്വയം അല്ലെങ്കിൽ സ്വന്തം' (self) എന്നാണ്. അതിനാൽ സ്വന്തം ജീവിതകഥ സ്വന്തമായി എഴുതുന്നതിനെ 'Autobiography' (ആത്മകഥ) എന്ന് വിളിക്കുന്നു."
@@ -34597,7 +34597,7 @@
     "topic": "word_formation_affixes",
     "question": "Add prefix to 'poly' meaning 'single / one':",
     "options": [
-      "mono- (monopoly)",
+      "mono-",
       "bi-",
       "uni-",
       "tri-"
@@ -34613,7 +34613,7 @@
       "bi-",
       "poly-",
       "multi-",
-      "tri- (trilateral)"
+      "tri-"
     ],
     "answer": 3,
     "explanation": "'Tri-' എന്ന പ്രിഫിക്സിന്റെ അർത്ഥം 'മൂന്ന്' (three) എന്നാണ്. അതിനാൽ മൂന്ന് വശങ്ങളുള്ള അല്ലെങ്കിൽ മൂന്ന് കക്ഷികൾ ചേർന്ന കരാറുകളെ 'Trilateral' എന്ന് വിളിക്കുന്നു."
@@ -34626,7 +34626,7 @@
       "mono-",
       "tri-",
       "bi-",
-      "poly- / multi- (multilingual)"
+      "poly- / multi-"
     ],
     "answer": 3,
     "explanation": "'Multi-' അല്ലെങ്കിൽ 'Poly-' എന്ന പ്രിഫിക്സുകളുടെ അർത്ഥം 'പലത് അല്ലെങ്കിൽ അനേകം' (many) എന്നാണ്. അതിനാൽ പല ഭാഷകൾ സംസാരിക്കുന്നതിനെ 'Multilingual' എന്ന് വിളിക്കുന്നു."
@@ -34637,7 +34637,7 @@
     "question": "Add suffix to 'care' to mean 'without care':",
     "options": [
       "-ly",
-      "-less (careless)",
+      "-less",
       "-free",
       "-ful"
     ],
@@ -34650,7 +34650,7 @@
     "question": "Add suffix to 'beauty' to form an adjective:",
     "options": [
       "-less",
-      "-ful (beautiful)",
+      "-ful",
       "-ous",
       "-ly"
     ],
@@ -34665,7 +34665,7 @@
       "-ish",
       "-ful",
       "-less",
-      "-ous (courageous)"
+      "-ous"
     ],
     "answer": 3,
     "explanation": "'Courage' (ധൈര്യം) എന്ന നാമത്തിൽ '-ous' എന്ന സഫിക്സ് ചേർക്കുമ്പോൾ 'Courageous' (ധീരമായ / ധൈര്യശാലിയായ) എന്ന വിശേഷണ രൂപം ലഭിക്കുന്നു."
@@ -34675,7 +34675,7 @@
     "topic": "word_formation_affixes",
     "question": "Add suffix to 'danger' to form an adjective:",
     "options": [
-      "-ous (dangerous)",
+      "-ous",
       "-able",
       "-ful",
       "-ly"
@@ -34688,7 +34688,7 @@
     "topic": "word_formation_affixes",
     "question": "Add suffix to 'glory' to form an adjective:",
     "options": [
-      "-ous (glorious)",
+      "-ous",
       "-able",
       "-ly",
       "-ful"
@@ -34704,7 +34704,7 @@
       "-ful",
       "-ible",
       "-ous",
-      "-able (comfortable)"
+      "-able"
     ],
     "answer": 3,
     "explanation": "സാധ്യമായ അല്ലെങ്കിൽ പ്രാപ്തിയുള്ള എന്ന് കാണിക്കാൻ '-able' (capable of being) ചേർക്കുന്നു. ആശ്വാസവും സൗകര്യവും നൽകുന്നതിനെ 'Comfortable' എന്ന് വിളിക്കുന്നു."
@@ -34714,7 +34714,7 @@
     "topic": "word_formation_affixes",
     "question": "Add suffix to 'access' to mean 'able to be entered':",
     "options": [
-      "-ible (accessible)",
+      "-ible",
       "-able",
       "-ful",
       "-ous"
@@ -34730,7 +34730,7 @@
       "-ous",
       "-al",
       "-able",
-      "-ible (audible)"
+      "-ible"
     ],
     "answer": 3,
     "explanation": "കേൾക്കാൻ കഴിയുന്ന എന്ന അർത്ഥത്തിൽ കേൾവിയുമായി ബന്ധപ്പെട്ട 'Aud' എന്ന ലാറ്റിൻ ധാതുവിനൊപ്പം '-ible' ചേർത്ത് 'Audible' (വ്യക്തമായി കേൾക്കാവുന്ന) എന്ന് എഴുതുന്നു."
@@ -34743,7 +34743,7 @@
       "-ful",
       "-able",
       "-less",
-      "-ible (sensible)"
+      "-ible"
     ],
     "answer": 3,
     "explanation": "വിവേകമുള്ള അല്ലെങ്കിൽ പ്രായോഗിക ബുദ്ധിയുള്ള എന്ന അർത്ഥത്തിൽ 'Sense' എന്ന പദത്തിൽ '-ible' ചേർത്ത് 'Sensible' (വിവേകമുള്ള / യുക്തിയുള്ള) എന്ന് എഴുതുന്നു."
@@ -34756,7 +34756,7 @@
       "-ward",
       "-wise",
       "-ous",
-      "-ly (quickly)"
+      "-ly"
     ],
     "answer": 3,
     "explanation": "വിശേഷണങ്ങളിൽ നിന്ന് രീതിയെ സൂചിപ്പിക്കുന്ന ക്രിയാവിശേഷണങ്ങൾ (adverbs of manner) നിർമ്മിക്കാൻ '-ly' ചേർക്കുന്നു. 'Quick'-ൽ '-ly' ചേരുമ്പോൾ 'Quickly' (വേഗത്തിൽ) ഉണ്ടാകുന്നു."
@@ -34767,7 +34767,7 @@
     "question": "Add suffix to 'home' to mean 'towards home':",
     "options": [
       "-less",
-      "-ward (homeward)",
+      "-ward",
       "-ly",
       "-wise"
     ],
@@ -34781,7 +34781,7 @@
     "options": [
       "-like",
       "-ward",
-      "-wise (clockwise)",
+      "-wise",
       "-ly"
     ],
     "answer": 2,
@@ -34793,7 +34793,7 @@
     "question": "Add prefix to 'active' meaning 'initiating action in anticipation':",
     "options": [
       "re-",
-      "pro- (proactive)",
+      "pro-",
       "de-",
       "in-"
     ],
@@ -34806,7 +34806,7 @@
     "question": "Add prefix to 'frost' meaning 'to remove frost':",
     "options": [
       "un-",
-      "de- (defrost)",
+      "de-",
       "re-",
       "dis-"
     ],
@@ -34820,7 +34820,7 @@
     "options": [
       "dis-",
       "un-",
-      "re- (regenerate)",
+      "re-",
       "de-"
     ],
     "answer": 2,
@@ -35157,7 +35157,7 @@
     "question": "Identify the combination of parts of speech in 'TOOTHACHE':",
     "options": [
       "Adverb + Noun",
-      "Noun + Noun (or Noun + Verb)",
+      "Noun + Noun",
       "Adjective + Noun",
       "Verb + Noun"
     ],
@@ -35300,7 +35300,7 @@
     "question": "Identify the combination of parts of speech in 'OUTCRY':",
     "options": [
       "Noun + Noun",
-      "Adverb + Verb (or Noun)",
+      "Adverb + Verb",
       "Verb + Noun",
       "Adjective + Noun"
     ],
@@ -36004,7 +36004,7 @@
       "Adverb + Noun",
       "Verb + Noun",
       "Noun + Verb",
-      "Adjective + Noun (or Noun + Noun)"
+      "Adjective + Noun"
     ],
     "answer": 3,
     "explanation": "'NEWSPAPER' (വർത്തമാനപ്പത്രം) എന്ന സംയുക്ത പദം 'News' (വാർത്ത - Noun) എന്ന നാമവും 'Paper' (കടലാസ് - Noun) എന്ന നാമവും കൂടിച്ചേർന്ന് ഉണ്ടായതാണ് (Noun + Noun)."
@@ -43776,7 +43776,7 @@
     "question": "What is the meaning of the Latin phrase 'HABEAS CORPUS'?",
     "options": [
       "To seize property",
-      "You shall produce the body (unlawful detention remedy)",
+      "You shall produce the body",
       "To punish a criminal",
       "To award capital punishment"
     ],
@@ -43790,7 +43790,7 @@
     "options": [
       "We forbid",
       "To produce the body",
-      "We command (public duty order)",
+      "We command",
       "Under what authority"
     ],
     "answer": 2,
@@ -43815,7 +43815,7 @@
     "question": "What is the meaning of the Latin phrase 'CERTIORARI'?",
     "options": [
       "We command",
-      "To be certified or informed (quashing lower order)",
+      "To be certified or informed",
       "Stay order",
       "Produce the body"
     ],
@@ -44272,7 +44272,7 @@
       "Free of tax",
       "Fixed price",
       "According to weight",
-      "According to the value (used of taxes)"
+      "According to the value"
     ],
     "answer": 3,
     "explanation": "'Ad valorem' എന്നത് ലാറ്റിൻ സാമ്പത്തിക പദമാണ്; 'സാധനങ്ങളുടെ മൂല്യത്തിന് ആനുപാതികമായി ചുമത്തുന്ന നികുതി' (according to the estimated value of goods) എന്നാണർത്ഥം. ഉൽപന്നങ്ങളുടെ വില കൂടുന്നതിനനുസരിച്ച് കൂടുന്ന നികുതിയാണ് Ad valorem duty."
@@ -44401,7 +44401,7 @@
     "options": [
       "A dead human corpse",
       "A coroner's verdict",
-      "The facts and circumstances constituting a crime (body of the crime)",
+      "The facts and circumstances constituting a crime",
       "A prison term"
     ],
     "answer": 2,
@@ -44621,7 +44621,7 @@
     "question": "What is the meaning of the Italian phrase 'AL DENTE'?",
     "options": [
       "Frozen food",
-      "Cooked so as to be still firm when bitten (especially pasta)",
+      "Cooked so as to be still firm when bitten",
       "Sweet dessert",
       "Overcooked and soft"
     ],
@@ -44648,7 +44648,7 @@
     "options": [
       "Farewell",
       "I have lost it",
-      "I have found it! (cry of triumph at discovery)",
+      "I have found it!",
       "Help me"
     ],
     "answer": 2,
@@ -44856,7 +44856,7 @@
     "options": [
       "By heritage",
       "After death",
-      "Between living persons (especially of a transfer of property)",
+      "Between living persons",
       "Through a will"
     ],
     "answer": 2,
@@ -44881,7 +44881,7 @@
     "question": "What is the meaning of the Latin phrase 'VOLENTI NON FIT INJURIA'?",
     "options": [
       "Negligence brings punishment",
-      "To a willing person, injury is not done (consent excludes claim)",
+      "To a willing person, injury is not done",
       "An eye for an eye",
       "Strict liability"
     ],
@@ -45143,7 +45143,7 @@
       "Midnight",
       "After noon",
       "Dawn",
-      "Before noon (a.m.)"
+      "Before noon"
     ],
     "answer": 3,
     "explanation": "'Ante meridiem' (ചുരുക്കത്തിൽ a.m.) എന്നത് ലാറ്റിൻ ശൈലിയാണ്; 'ഉച്ചയ്ക്ക് മുൻപുള്ള സമയം' (before noon / between midnight and noon) എന്നാണർത്ഥം."
@@ -45752,7 +45752,7 @@
     "question": "What is the meaning of the foreign phrase 'Videlicet'?",
     "options": [
       "A formal military decoration",
-      "Namely / that is to say (abbreviated as viz.)",
+      "Namely / that is to say",
       "A secret diplomatic treaty",
       "A written confession in court"
     ],
@@ -46505,7 +46505,7 @@
     "topic": "one_word_substitutes_eng",
     "question": "A speech delivered without any prior preparation:",
     "options": [
-      "Extempore (Impromptu)",
+      "Extempore",
       "Oratory",
       "Eulogy",
       "Maiden speech"
@@ -46729,7 +46729,7 @@
       "Epicurean",
       "Cynic",
       "Hedonist",
-      "Ascetic (Hermit)"
+      "Ascetic"
     ],
     "answer": 3,
     "explanation": "'Ascetic' (അല്ലെങ്കിൽ Hermit) എന്നാൽ ഭൗതിക സുഖങ്ങളും ഭോഗങ്ങളും പൂർണ്ണമായി ഉപേക്ഷിച്ച് സന്യാസ ജീവിതം നയിക്കുന്ന താപസൻ (one devoted to religious discipline and self-denial) എന്നാണർത്ഥം."
@@ -46950,7 +46950,7 @@
       "Contagious",
       "Chronic",
       "Acute",
-      "Fatal (Mortal)"
+      "Fatal"
     ],
     "answer": 3,
     "explanation": "'Fatal / Mortal' എന്നാൽ മരണത്തിൽ കലാശിക്കുന്ന മാരകമായ രോഗം അല്ലെങ്കിൽ മുറിവ് (a disease ending in death / causing death) എന്നാണർത്ഥം. ഉദാഹരണം: Fatal accident (മരണകാരണമായ അപകടം)."
@@ -47028,7 +47028,7 @@
       "Granary",
       "Apiary",
       "Aviary",
-      "Abattoir (Slaughterhouse)"
+      "Abattoir"
     ],
     "answer": 3,
     "explanation": "'Abattoir' (അല്ലെങ്കിൽ Slaughterhouse) എന്നാൽ മാംസത്തിനായി മൃഗങ്ങളെ അറുക്കുന്ന അറവുശാല (a place where animals are slaughtered for food) എന്നാണർത്ഥം. ഫ്രഞ്ച് ഭാഷയിൽ നിന്നാണ് ഈ പദം ഉത്ഭവിച്ചത്."
@@ -47248,7 +47248,7 @@
     "options": [
       "Nomad",
       "Immigrant",
-      "Vagrant (Tramp)",
+      "Vagrant",
       "Pilgrim"
     ],
     "answer": 2,
@@ -54022,7 +54022,7 @@
       "To suffer an accident",
       "To lose a competition",
       "To stop running",
-      "Good luck! (theatrical wish)"
+      "Good luck!"
     ],
     "answer": 3,
     "explanation": "'Break a leg' എന്നാൽ 'ഒരു കലാകാരനോ പ്രകടനക്കാരനോ വേദിയിൽ കയറുന്നതിന് മുമ്പ് നൽകുന്ന ആശംസ' (Good luck! - theatrical wish) എന്നാണ് അർത്ഥം. തിയേറ്റർ രംഗത്ത് 'ഗുഡ് ലക്ക്' എന്ന് നേരിട്ട് പറഞ്ഞാൽ നിർഭാഗ്യം വരുമെന്ന പഴയ അന്ധവിശ്വാസത്തിൽ നിന്നാണ് വിപരീതാർത്ഥത്തിൽ ഈ ശൈലി ഉണ്ടായത്."

@@ -50,6 +50,7 @@ import {
   LayoutDashboardIcon,
   FileTextIcon,
   TargetIcon,
+  ArrowLeftIcon,
   ArrowRightIcon,
   AlertTriangleIcon,
   TrophyIcon,
@@ -174,6 +175,8 @@ export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
+  const [questionHistoryStack, setQuestionHistoryStack] = useState([]);
+  const [historyPointer, setHistoryPointer] = useState(-1);
   const [showRepeatModal, setShowRepeatModal] = useState(false);
   const [isRepeatOnlyMode, setIsRepeatOnlyMode] = useState(false);
   const [isTopicReviewMode, setIsTopicReviewMode] = useState(false);
@@ -803,6 +806,8 @@ export default function App() {
     setIsRepeatOnlyMode(false);
     setTopicDropdownOpen(false);
     setMobileSidebarOpen(false);
+    setQuestionHistoryStack([]);
+    setHistoryPointer(-1);
     setViewMode(subject === 'malayalam' || subject === 'english' || subject === 'pyq' || subject === 'current_affairs' ? 'notes' : 'quiz');
   };
 
@@ -810,6 +815,8 @@ export default function App() {
     setActiveSubject(subject);
     localStorage.setItem('psc_active_subject', subject);
     setSelectedTopic(topicId);
+    setQuestionHistoryStack([]);
+    setHistoryPointer(-1);
     setViewMode(
       subject === 'malayalam'
         || subject === 'english'
@@ -1030,7 +1037,20 @@ export default function App() {
   // overrideUsers: pass the freshly-updated users array when calling right after persistUsers(),
   // so this function never overwrites the just-saved state with stale data.
   // reviewMode: allow re-practising already completed questions once a topic is finished.
-  const loadNextQuestion = ({ overrideUsers = null, reviewMode = null } = {}) => {
+  const loadNextQuestion = ({ overrideUsers = null, reviewMode = null, clearHistory = false } = {}) => {
+    // If user is currently reviewing an earlier question in history, advance forward towards current
+    if (!clearHistory && historyPointer >= 0 && historyPointer < questionHistoryStack.length - 1) {
+      const nextPointer = historyPointer + 1;
+      const nextSnapshot = questionHistoryStack[nextPointer];
+      if (nextSnapshot && nextSnapshot.question) {
+        setHistoryPointer(nextPointer);
+        setCurrentQuestion(nextSnapshot.question);
+        setSelectedOption(nextSnapshot.selectedOption);
+        setIsAnswered(nextSnapshot.isAnswered);
+        return;
+      }
+    }
+
     setIsAnswered(false);
     setSelectedOption(null);
 
@@ -1115,7 +1135,7 @@ export default function App() {
     }
 
     if (nextQ) {
-      const isAuthenticKeyOrder = activeSubject === 'pyq' || activeSubject === 'current_affairs';
+      const isAuthenticKeyOrder = activeSubject === 'pyq';
       let finalOptions = [...nextQ.options];
       let finalAnswer = nextQ.answer;
 
@@ -1136,13 +1156,25 @@ export default function App() {
       const activeRep = upcomingList.find(r => r.id === nextQ.id)
         || repeatQueueList.find(r => r.id === nextQ.id);
 
-      setCurrentQuestion({
+      const newQuestionObj = {
         ...nextQ,
         options: finalOptions,
         answer: finalAnswer,
         isRepeat,
         repeatDifficulty: activeRep?.difficulty || nextQ.difficulty || null,
         remainingRepeats: isRepeat ? (activeRep?.remainingRepeats ?? 3) : null
+      };
+
+      setCurrentQuestion(newQuestionObj);
+
+      setQuestionHistoryStack(prev => {
+        const base = clearHistory ? [] : prev;
+        const newStack = [
+          ...base,
+          { question: newQuestionObj, selectedOption: null, isAnswered: false }
+        ].slice(-60);
+        setHistoryPointer(newStack.length - 1);
+        return newStack;
       });
 
       if (baseUser) {
@@ -1152,6 +1184,36 @@ export default function App() {
       }
     } else {
       setCurrentQuestion(null);
+      setQuestionHistoryStack([]);
+      setHistoryPointer(-1);
+    }
+  };
+
+  const handleGoPrevious = () => {
+    if (historyPointer > 0 && questionHistoryStack.length > 0) {
+      const prevPointer = historyPointer - 1;
+      const prevSnapshot = questionHistoryStack[prevPointer];
+      if (prevSnapshot && prevSnapshot.question) {
+        setHistoryPointer(prevPointer);
+        setCurrentQuestion(prevSnapshot.question);
+        setSelectedOption(prevSnapshot.selectedOption);
+        setIsAnswered(prevSnapshot.isAnswered);
+      }
+    }
+  };
+
+  const handleGoNext = () => {
+    if (historyPointer < questionHistoryStack.length - 1) {
+      const nextPointer = historyPointer + 1;
+      const nextSnapshot = questionHistoryStack[nextPointer];
+      if (nextSnapshot && nextSnapshot.question) {
+        setHistoryPointer(nextPointer);
+        setCurrentQuestion(nextSnapshot.question);
+        setSelectedOption(nextSnapshot.selectedOption);
+        setIsAnswered(nextSnapshot.isAnswered);
+      }
+    } else {
+      loadNextQuestion();
     }
   };
 
@@ -1159,7 +1221,9 @@ export default function App() {
   useEffect(() => {
     if (currentUser && viewMode === 'quiz') {
       setIsTopicReviewMode(false);
-      loadNextQuestion({ reviewMode: false });
+      setQuestionHistoryStack([]);
+      setHistoryPointer(-1);
+      loadNextQuestion({ reviewMode: false, clearHistory: true });
     }
   }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId, viewMode]);
 
@@ -1198,7 +1262,7 @@ export default function App() {
   }, [isAnswered]);
 
   const handleOptionSelect = (rawOptionIndex) => {
-    if (isAnswered || !currentQuestion || !currentUser) return;
+    if (isAnswered || !currentQuestion || !currentUser || historyPointer < questionHistoryStack.length - 1) return;
 
     // Some questions contain the correct answer text twice; treat an identical option as the correct one
     const correctText = currentQuestion.options?.[currentQuestion.answer];
@@ -1208,6 +1272,19 @@ export default function App() {
 
     setIsAnswered(true);
     setSelectedOption(optionIndex);
+
+    setQuestionHistoryStack(prev => {
+      if (historyPointer >= 0 && historyPointer < prev.length) {
+        const nextStack = [...prev];
+        nextStack[historyPointer] = {
+          ...nextStack[historyPointer],
+          selectedOption: optionIndex,
+          isAnswered: true
+        };
+        return nextStack;
+      }
+      return prev;
+    });
 
     const isCorrect = optionIndex === currentQuestion.answer;
 
@@ -1440,12 +1517,33 @@ export default function App() {
     loadNextQuestion({ overrideUsers: updated });
   };
 
-  // Keyboard shortcut listener for Easy (1/e) & Hard (2/h) when correct, or Next (Enter/Space/1) when incorrect
+  // Keyboard shortcut listener for Easy (1/e) & Hard (2/h) when correct, Next (Enter/Space/1/ArrowRight), or Previous (ArrowLeft)
   useEffect(() => {
-    if (!isAnswered || !currentQuestion) return;
+    if (!currentQuestion) return;
 
     const handleKeyDown = (e) => {
       if (['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName)) return;
+
+      // Allow ArrowLeft to go back to previous question at any time if history exists
+      if (e.key === 'ArrowLeft') {
+        if (historyPointer > 0) {
+          e.preventDefault();
+          handleGoPrevious();
+        }
+        return;
+      }
+
+      // If user is currently reviewing an earlier question in history:
+      if (historyPointer < questionHistoryStack.length - 1) {
+        if (e.key === 'ArrowRight' || e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleGoNext();
+        }
+        return;
+      }
+
+      if (!isAnswered) return;
+
       const isCorrect = selectedOption === currentQuestion.answer;
 
       if (isCorrect && !currentQuestion.isRepeat) {
@@ -1461,14 +1559,14 @@ export default function App() {
         // Repeat question answered correctly OR incorrect answer: Enter/Space/1/ArrowRight advances!
         if (e.key === 'Enter' || e.key === ' ' || e.key === '1' || e.key === 'ArrowRight') {
           e.preventDefault();
-          loadNextQuestion();
+          handleGoNext();
         }
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isAnswered, currentQuestion, selectedOption, userUpcomingRepeats, userRepeatQueue, userStats, users]);
+  }, [isAnswered, currentQuestion, selectedOption, userUpcomingRepeats, userRepeatQueue, userStats, users, historyPointer, questionHistoryStack]);
 
   const currentTopicData = (activeSubject === 'current_affairs'
     ? CURRENT_AFFAIRS_TOPICS.find(t => t.id === selectedTopic)
@@ -2221,9 +2319,38 @@ export default function App() {
                       <span>Capsule: <strong>{currentQuestion.qp_code}</strong></span>
                     </span>
                   )}
+                  {historyPointer < questionHistoryStack.length - 1 && (
+                    <span className="history-review-badge">
+                      Reviewing ({historyPointer + 1} of {questionHistoryStack.length})
+                    </span>
+                  )}
                 </div>
 
                 <div className="card-top-bar-right">
+                  {historyPointer > 0 && (
+                    <button
+                      type="button"
+                      className="card-prev-btn"
+                      onClick={handleGoPrevious}
+                      title="Review previous question (ArrowLeft)"
+                      aria-label="Previous question"
+                    >
+                      <ArrowLeftIcon size={14} />
+                      <span>Previous</span>
+                    </button>
+                  )}
+                  {historyPointer < questionHistoryStack.length - 1 && (
+                    <button
+                      type="button"
+                      className="card-next-btn"
+                      onClick={handleGoNext}
+                      title="Forward to next question (ArrowRight)"
+                      aria-label="Next question"
+                    >
+                      <span>{historyPointer === questionHistoryStack.length - 2 ? 'Current' : 'Next'}</span>
+                      <ArrowRightIcon size={14} />
+                    </button>
+                  )}
                   {/* Bookmark Button */}
                   <button
                     type="button"
@@ -2304,13 +2431,56 @@ export default function App() {
                     </div>
                   )}
 
-                  {/* FOR FRESH RIGHT ANSWER: Show Hard (repeat 3x) and Easy (mark learned) */}
-                  {selectedOption === currentQuestion.answer && !currentQuestion.isRepeat ? (
+                  {historyPointer < questionHistoryStack.length - 1 ? (
+                    /* PREVIOUS QUESTION REVIEW MODE */
+                    <div className="difficulty-prompt-container history-review-prompt">
+                      <div className="history-review-banner">
+                        <InfoIcon size={16} />
+                        <div className="history-review-text">
+                          <strong>Previous Question ({historyPointer + 1} of {questionHistoryStack.length})</strong>
+                          <span>Viewing previously answered question in this session.</span>
+                        </div>
+                      </div>
+                      <div className="action-row" style={{ marginTop: '0.85rem' }}>
+                        <button
+                          type="button"
+                          className="prev-btn"
+                          onClick={handleGoPrevious}
+                          disabled={historyPointer <= 0}
+                          title="Go to previous question (ArrowLeft)"
+                        >
+                          <ArrowLeftIcon size={15} />
+                          <span>Previous</span>
+                        </button>
+                        <button
+                          type="button"
+                          className="next-btn"
+                          onClick={handleGoNext}
+                          title="Forward (ArrowRight / Enter)"
+                        >
+                          <span>{historyPointer === questionHistoryStack.length - 2 ? 'Return to Current Question' : 'Next Question'}</span>
+                          <ArrowRightIcon size={15} />
+                        </button>
+                      </div>
+                    </div>
+                  ) : selectedOption === currentQuestion.answer && !currentQuestion.isRepeat ? (
+                    /* FOR FRESH RIGHT ANSWER: Show Hard (repeat 3x) and Easy (mark learned) */
                     <div className="difficulty-prompt-container">
                       <div className="difficulty-prompt-header">
                         <span className="difficulty-prompt-title">
                           Rate recall to continue:
                         </span>
+                        {historyPointer > 0 && (
+                          <button
+                            type="button"
+                            className="prev-text-btn"
+                            onClick={handleGoPrevious}
+                            title="Review previous question (ArrowLeft)"
+                          >
+                            <ArrowLeftIcon size={13} />
+                            <span>Previous Question</span>
+                          </button>
+                        )}
                       </div>
 
                       <div className="difficulty-buttons-grid two-options">
@@ -2363,10 +2533,21 @@ export default function App() {
                       </div>
 
                       <div className="action-row" style={{ marginTop: '0.85rem' }}>
+                        {historyPointer > 0 && (
+                          <button
+                            type="button"
+                            className="prev-btn"
+                            onClick={handleGoPrevious}
+                            title="Review previous question (ArrowLeft)"
+                          >
+                            <ArrowLeftIcon size={15} />
+                            <span>Previous</span>
+                          </button>
+                        )}
                         <button
                           type="button"
                           className="next-btn"
-                          onClick={() => loadNextQuestion()}
+                          onClick={handleGoNext}
                           title="Advance to next question (Enter / Space)"
                         >
                           <span>Next Question</span>
@@ -2392,10 +2573,21 @@ export default function App() {
                       </div>
 
                       <div className="action-row" style={{ marginTop: '0.85rem' }}>
+                        {historyPointer > 0 && (
+                          <button
+                            type="button"
+                            className="prev-btn"
+                            onClick={handleGoPrevious}
+                            title="Review previous question (ArrowLeft)"
+                          >
+                            <ArrowLeftIcon size={15} />
+                            <span>Previous</span>
+                          </button>
+                        )}
                         <button
                           type="button"
                           className="next-btn"
-                          onClick={() => loadNextQuestion()}
+                          onClick={handleGoNext}
                           title="Proceed to next question (Enter / Space)"
                         >
                           <span>Next Question</span>

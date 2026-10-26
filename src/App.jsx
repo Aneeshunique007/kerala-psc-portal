@@ -8,6 +8,8 @@ import {
   PYQ_TOPICS,
   PYQ_QUESTION_BANK,
   CURRENT_AFFAIRS_TOPICS,
+  CURRENT_AFFAIRS_MONTH_TOPICS,
+  CURRENT_AFFAIRS_SUBJECT_TOPICS,
   CURRENT_AFFAIRS_QUESTION_BANK,
   PYQ_YEARS
 } from './data/questions';
@@ -166,6 +168,9 @@ export default function App() {
   const [previousViewMode, setPreviousViewMode] = useState('blueprint');
   const [selectedTopic, setSelectedTopic] = useState('all');
   const [selectedYear, setSelectedYear] = useState('2026');
+  const [caViewMode, setCaViewMode] = useState(() => {
+    return localStorage.getItem('psc_ca_view_mode') || 'month';
+  });
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -176,7 +181,9 @@ export default function App() {
   const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [sidebarYearDropdownOpen, setSidebarYearDropdownOpen] = useState(false);
+  const [sidebarCaDropdownOpen, setSidebarCaDropdownOpen] = useState(false);
   const sidebarYearDropdownRef = React.useRef(null);
+  const sidebarCaDropdownRef = React.useRef(null);
   const quizContentAreaRef = React.useRef(null);
   const feedbackCardRef = React.useRef(null);
 
@@ -204,7 +211,9 @@ export default function App() {
     : activeSubject === 'pyq'
     ? PYQ_TOPICS
     : activeSubject === 'current_affairs'
-    ? CURRENT_AFFAIRS_TOPICS
+    ? (caViewMode === 'topic'
+        ? [CURRENT_AFFAIRS_TOPICS[0], ...CURRENT_AFFAIRS_SUBJECT_TOPICS]
+        : [CURRENT_AFFAIRS_TOPICS[0], ...CURRENT_AFFAIRS_MONTH_TOPICS])
     : SYLLABUS_TOPICS;
 
   const currentQuestionBank = activeSubject === 'english'
@@ -647,7 +656,7 @@ export default function App() {
             if (caTopic && caTopic.qp_code) {
               return q.qp_code === caTopic.qp_code;
             }
-            return q.topic === topicId;
+            return q.category === topicId || q.topic === topicId;
           }
           if (subject === 'english' || subject === 'pyq') {
             return q.topic === topicId;
@@ -929,6 +938,19 @@ export default function App() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [sidebarYearDropdownOpen]);
 
+  // Close CA dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (sidebarCaDropdownRef.current && !sidebarCaDropdownRef.current.contains(e.target)) {
+        setSidebarCaDropdownOpen(false);
+      }
+    };
+    if (sidebarCaDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [sidebarCaDropdownOpen]);
+
   // Filter mistake queue by current subject
   const currentSubjectRepeatQueue = userRepeatQueue.filter(q => {
     if (activeSubject === 'english') {
@@ -952,7 +974,7 @@ export default function App() {
       if (caTopic && caTopic.qp_code) {
         return question.qp_code === caTopic.qp_code;
       }
-      return question.topic === targetTopicId;
+      return question.category === targetTopicId || question.topic === targetTopicId;
     }
     if (activeSubject === 'english' || activeSubject === 'pyq') {
       return question.topic === targetTopicId;
@@ -1434,8 +1456,12 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isAnswered, currentQuestion, selectedOption, userUpcomingRepeats, userRepeatQueue, userStats, users]);
 
-  const currentTopicData = currentSyllabusTopics.find(t => t.id === selectedTopic) || currentSyllabusTopics[0];
+  const currentTopicData = (activeSubject === 'current_affairs'
+    ? CURRENT_AFFAIRS_TOPICS.find(t => t.id === selectedTopic)
+    : currentSyllabusTopics.find(t => t.id === selectedTopic)) || currentSyllabusTopics[0];
   const currentTopicProgress = getTopicCounts(selectedTopic);
+  const isPracticeMode = viewMode === 'quiz' || viewMode === 'notes';
+  const isSubjectActive = (subjectKey) => isPracticeMode && activeSubject === subjectKey;
 
   return (
     <div className={`app-container${viewMode === 'admin' ? ' admin-mode' : ''}${viewMode === 'mock' ? ' mock-mode' : ''}`}>
@@ -1492,7 +1518,7 @@ export default function App() {
         <div className="sidebar-header">
           <button
             type="button"
-            className="sidebar-brand-seal-btn"
+            className={`sidebar-brand-seal-btn ${viewMode === 'blueprint' ? 'active' : ''}`}
             onClick={() => {
               setViewMode('blueprint');
               setIsRepeatOnlyMode(false);
@@ -1516,7 +1542,7 @@ export default function App() {
           <div className="subject-switch-top-row">
             <button
               type="button"
-              className={`subject-switch-btn ${activeSubject === 'malayalam' ? 'active' : ''}`}
+              className={`subject-switch-btn ${isSubjectActive('malayalam') ? 'active' : ''}`}
               onClick={() => handleSwitchSubject('malayalam')}
             >
               <span className="subject-btn-label">Malayalam</span>
@@ -1524,7 +1550,7 @@ export default function App() {
             </button>
             <button
               type="button"
-              className={`subject-switch-btn ${activeSubject === 'english' ? 'active' : ''}`}
+              className={`subject-switch-btn ${isSubjectActive('english') ? 'active' : ''}`}
               onClick={() => handleSwitchSubject('english')}
             >
               <span className="subject-btn-label">General English</span>
@@ -1532,10 +1558,10 @@ export default function App() {
             </button>
           </div>
 
-          <div className={`ca-switch-row ${activeSubject === 'current_affairs' ? 'active' : ''}`}>
+          <div className={`ca-switch-row ${isSubjectActive('current_affairs') ? 'active' : ''}`}>
             <button
               type="button"
-              className="ca-switch-btn"
+              className="ca-switch-btn-left"
               onClick={() => handleSwitchSubject('current_affairs')}
             >
               <div className="ca-btn-left">
@@ -1544,9 +1570,73 @@ export default function App() {
               </div>
               <span className="subject-qcount">{CURRENT_AFFAIRS_QUESTION_BANK.length.toLocaleString()} Qs</span>
             </button>
+
+            <div className="ca-mode-custom-dropdown-container" ref={sidebarCaDropdownRef}>
+              <button
+                type="button"
+                className={`sidebar-ca-trigger-btn ${sidebarCaDropdownOpen ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSidebarCaDropdownOpen(!sidebarCaDropdownOpen);
+                }}
+                title="Select View Mode"
+              >
+                <span>{caViewMode === 'topic' ? 'Topics' : 'Months'}</span>
+                <ChevronDownIcon size={14} className={`sidebar-ca-chevron ${sidebarCaDropdownOpen ? 'open' : ''}`} />
+              </button>
+
+              {sidebarCaDropdownOpen && (
+                <div className="sidebar-ca-dropdown-menu">
+                  <div className="sidebar-year-dropdown-header">
+                    <span>Current Affairs View</span>
+                  </div>
+                  <div className="sidebar-year-list">
+                    <button
+                      type="button"
+                      className={`sidebar-year-item ${caViewMode === 'month' ? 'selected' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCaViewMode('month');
+                        localStorage.setItem('psc_ca_view_mode', 'month');
+                        if (activeSubject !== 'current_affairs') {
+                          handleSwitchSubject('current_affairs');
+                        }
+                        setSidebarCaDropdownOpen(false);
+                      }}
+                    >
+                      <div className="sidebar-year-item-left">
+                        <span className="sidebar-year-item-num">Month-wise</span>
+                        <span className="sidebar-year-item-count">({CURRENT_AFFAIRS_MONTH_TOPICS.length} Capsules)</span>
+                      </div>
+                      {caViewMode === 'month' && <span className="sidebar-year-check">✓</span>}
+                    </button>
+
+                    <button
+                      type="button"
+                      className={`sidebar-year-item ${caViewMode === 'topic' ? 'selected' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCaViewMode('topic');
+                        localStorage.setItem('psc_ca_view_mode', 'topic');
+                        if (activeSubject !== 'current_affairs') {
+                          handleSwitchSubject('current_affairs');
+                        }
+                        setSidebarCaDropdownOpen(false);
+                      }}
+                    >
+                      <div className="sidebar-year-item-left">
+                        <span className="sidebar-year-item-num">Topic-wise</span>
+                        <span className="sidebar-year-item-count">({CURRENT_AFFAIRS_SUBJECT_TOPICS.length} Topics)</span>
+                      </div>
+                      {caViewMode === 'topic' && <span className="sidebar-year-check">✓</span>}
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className={`pyq-switch-bottom-row ${activeSubject === 'pyq' ? 'active' : ''}`}>
+          <div className={`pyq-switch-bottom-row ${isSubjectActive('pyq') ? 'active' : ''}`}>
             <button
               type="button"
               className="pyq-switch-btn-left"
@@ -1710,7 +1800,7 @@ export default function App() {
               {/* Navbar Kerala PSC Logo — Mobile Only (sidebar hidden on mobile) */}
               <button
                 type="button"
-                className="nav-brand-btn mobile-only"
+                className={`nav-brand-btn mobile-only ${viewMode === 'blueprint' ? 'active' : ''}`}
                 onClick={() => setViewMode('blueprint')}
                 title="Go to Homescreen"
               >
@@ -1724,28 +1814,28 @@ export default function App() {
                 <div className="mobile-subject-nav-toggle mobile-only">
                   <button
                     type="button"
-                    className={`mob-subj-btn ${activeSubject === 'malayalam' ? 'active' : ''}`}
+                    className={`mob-subj-btn ${isSubjectActive('malayalam') ? 'active' : ''}`}
                     onClick={() => handleSwitchSubject('malayalam')}
                   >
                     MAL
                   </button>
                   <button
                     type="button"
-                    className={`mob-subj-btn ${activeSubject === 'english' ? 'active' : ''}`}
+                    className={`mob-subj-btn ${isSubjectActive('english') ? 'active' : ''}`}
                     onClick={() => handleSwitchSubject('english')}
                   >
                     ENG
                   </button>
                   <button
                     type="button"
-                    className={`mob-subj-btn ${activeSubject === 'current_affairs' ? 'active' : ''}`}
+                    className={`mob-subj-btn ${isSubjectActive('current_affairs') ? 'active' : ''}`}
                     onClick={() => handleSwitchSubject('current_affairs')}
                   >
                     CA
                   </button>
                   <button
                     type="button"
-                    className={`mob-subj-btn ${activeSubject === 'pyq' ? 'active' : ''}`}
+                    className={`mob-subj-btn ${isSubjectActive('pyq') ? 'active' : ''}`}
                     onClick={() => handleSwitchSubject('pyq')}
                   >
                     PYQ
@@ -1921,6 +2011,32 @@ export default function App() {
                     </div>
                   )}
 
+                  {/* Current Affairs Switcher Tabs inside dropdown */}
+                  {activeSubject === 'current_affairs' && (
+                    <div className="dropdown-ca-switcher">
+                      <button
+                        type="button"
+                        className={`dropdown-ca-chip ${caViewMode === 'month' ? 'active' : ''}`}
+                        onClick={() => {
+                          setCaViewMode('month');
+                          localStorage.setItem('psc_ca_view_mode', 'month');
+                        }}
+                      >
+                        Month-wise ({CURRENT_AFFAIRS_MONTH_TOPICS.length})
+                      </button>
+                      <button
+                        type="button"
+                        className={`dropdown-ca-chip ${caViewMode === 'topic' ? 'active' : ''}`}
+                        onClick={() => {
+                          setCaViewMode('topic');
+                          localStorage.setItem('psc_ca_view_mode', 'topic');
+                        }}
+                      >
+                        Topic-wise ({CURRENT_AFFAIRS_SUBJECT_TOPICS.length})
+                      </button>
+                    </div>
+                  )}
+
                   <div className="dropdown-options-list">
                     {/* All Topics */}
                     {(() => {
@@ -1954,7 +2070,13 @@ export default function App() {
                     })()}
 
                     <div className="dropdown-section-label">
-                      {activeSubject === 'english' ? 'General English' : activeSubject === 'pyq' ? 'PYQ' : activeSubject === 'current_affairs' ? 'Current Affairs Capsules' : 'Malayalam'} Topics ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
+                      {activeSubject === 'english'
+                        ? 'General English'
+                        : activeSubject === 'pyq'
+                        ? 'PYQ'
+                        : activeSubject === 'current_affairs'
+                        ? (caViewMode === 'topic' ? 'Current Affairs Topics' : 'Current Affairs Capsules')
+                        : 'Malayalam'} Topics ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
                     </div>
 
                     {/* All Subject Topics */}
@@ -2076,7 +2198,7 @@ export default function App() {
                   )}
                   {activeSubject === 'current_affairs' && (
                     <span className="ca-year-badge">
-                      ⚡ 2026 Current Affairs
+                      2026 Current Affairs
                     </span>
                   )}
                   {(activeSubject === 'pyq' || activeSubject === 'current_affairs') && currentQuestion.qp_code && (

@@ -470,22 +470,13 @@ export const PYQ_TOPICS = [
   }
 ];
 
-// Part II: Current Affairs (Monthly Capsules & Special Guides)
-export const CURRENT_AFFAIRS_TOPICS = [
-  {
-    id: 'all',
-    name: 'All Current Affairs (2026 Mock)',
-    icon: '🎯',
-    desc: 'Practice across all 2026 monthly capsules & revision guides (2,300 Qs)',
-    color: '#6366f1',
-    section: '2026 Current Affairs (2,300 Qs)',
-    sectionMarks: '2,300 Qs'
-  },
+// Part II: Current Affairs (Monthly Capsules & Topic-Wise Sections)
+export const CURRENT_AFFAIRS_MONTH_TOPICS = [
   {
     id: 'ca_sep',
     qp_code: 'SEP-CA/2026',
     name: 'സെപ്റ്റംബർ 2026 (September)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from September 2026',
     color: '#ec4899',
     section: '2026 Monthly Capsules',
@@ -495,7 +486,7 @@ export const CURRENT_AFFAIRS_TOPICS = [
     id: 'ca_aug',
     qp_code: 'AUG-CA/2026',
     name: 'ഓഗസ്റ്റ് 2026 (August)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from August 2026',
     color: '#f59e0b',
     section: '2026 Monthly Capsules',
@@ -505,82 +496,251 @@ export const CURRENT_AFFAIRS_TOPICS = [
     id: 'ca_jul',
     qp_code: 'JUL-CA/2026',
     name: 'ജൂലൈ 2026 (July)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from July 2026',
     color: '#10b981',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '420 Qs'
   },
   {
     id: 'ca_jun',
     qp_code: 'JUN-CA/2026',
     name: 'ജൂൺ 2026 (June)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from June 2026',
     color: '#06b6d4',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '420 Qs'
   },
   {
     id: 'ca_may',
     qp_code: 'MAY-CA/2026',
     name: 'മേയ് 2026 (May)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from May 2026',
     color: '#8b5cf6',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '420 Qs'
   },
   {
     id: 'ca_apr',
     qp_code: 'APR-CA/2026',
     name: 'ഏപ്രിൽ 2026 (April)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from April 2026',
     color: '#14b8a6',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '420 Qs'
   },
   {
     id: 'ca_mar',
     qp_code: 'MAR-CA/2026',
     name: 'മാർച്ച് 2026 (March)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from March 2026',
     color: '#84cc16',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '420 Qs'
   },
   {
     id: 'ca_feb',
     qp_code: 'FEB-CA/2026',
     name: 'ഫെബ്രുവരി 2026 (February)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from February 2026',
     color: '#f43f5e',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '420 Qs'
   },
   {
     id: 'ca_jan',
     qp_code: 'JAN-CA/2026',
     name: 'ജനുവരി 2026 (January)',
-    icon: '📅',
+    icon: '',
     desc: 'Current events, appointments, sports & awards from January 2026',
     color: '#3b82f6',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '420 Qs'
+  }
+];
+
+export const CURRENT_AFFAIRS_SUBJECT_TOPICS = [
+  {
+    id: 'ca_top_sports_cf',
+    name: 'കായികം: ക്രിക്കറ്റ് & ഫുട്ബോൾ',
+    icon: '',
+    desc: 'ഐ.പി.എൽ, ട്വന്റി-20, ടെസ്റ്റ് ക്രിക്കറ്റ്, ഫിഫ, സന്തോഷ് ട്രോഫി, ISL',
+    color: '#10b981',
+    section: 'Topic-wise Revision',
+    sectionMarks: '204 Qs'
   },
   {
-    id: 'ca_guide',
-    qp_code: 'CA-GUIDE/2026',
-    name: 'കറന്റ് അഫയേഴ്‌സ് ഗൈഡ് (Special Capsule)',
-    icon: '📘',
-    desc: 'High-priority appointments, governance & special state capsule',
+    id: 'ca_top_sports_oth',
+    name: 'കായികം: ഒളിമ്പിക്സ്, അത്‌ലറ്റിക്സ് & ഗെയിംസ്',
+    icon: '',
+    desc: 'ഒളിമ്പിക്സ്, പാരാലിമ്പിക്സ്, ചെസ്സ്, ബാഡ്മിന്റൺ, ടെന്നീസ്, ഏഷ്യൻ ഗെയിംസ്',
+    color: '#06b6d4',
+    section: 'Topic-wise Revision',
+    sectionMarks: '193 Qs'
+  },
+  {
+    id: 'ca_top_awards_gen',
+    name: 'ദേശീയ-അന്തർദേശീയ പുരസ്കാരങ്ങൾ',
+    icon: '',
+    desc: 'ഭാരതരത്ന, പത്മ പുരസ്കാരങ്ങൾ, നോബൽ സമ്മാനം, ഗാലന്ററി അവാർഡുകൾ',
     color: '#eab308',
-    section: 'Special Revision Capsules',
-    sectionMarks: '50 Qs'
+    section: 'Topic-wise Revision',
+    sectionMarks: '98 Qs'
+  },
+  {
+    id: 'ca_top_literature',
+    name: 'സാഹിത്യ പുരസ്കാരങ്ങളും പുസ്തകങ്ങളും',
+    icon: '',
+    desc: 'ജ്ഞാനപീഠം, എഴുത്തച്ഛൻ, സാഹിത്യ അക്കാദമി, പുതിയ കൃതികൾ & രചയിതാക്കൾ',
+    color: '#f97316',
+    section: 'Topic-wise Revision',
+    sectionMarks: '190 Qs'
+  },
+  {
+    id: 'ca_top_cinema',
+    name: 'ചലച്ചിത്ര പുരസ്കാരങ്ങളും സിനിമയും',
+    icon: '',
+    desc: 'ദേശീയ-സംസ്ഥാന ചലച്ചിത്ര അവാർഡുകൾ, ദാദാസാഹേബ് ഫാൽക്കെ, ഓസ്കാർ, കാൻ',
+    color: '#8b5cf6',
+    section: 'Topic-wise Revision',
+    sectionMarks: '553 Qs'
+  },
+  {
+    id: 'ca_top_culture',
+    name: 'കല, സംസ്കാരം, പൈതൃകം & ജി.ഐ ടാഗുകൾ',
+    icon: '',
+    desc: 'സ്കൂൾ കലോത്സവങ്ങൾ, യുനെസ്കോ പൈതൃകം, ജി.ഐ ടാഗുകൾ, പരമ്പരാഗത കലകൾ',
+    color: '#ec4899',
+    section: 'Topic-wise Revision',
+    sectionMarks: '58 Qs'
+  },
+  {
+    id: 'ca_top_app_national',
+    name: 'സുപ്രധാന ദേശീയ & അന്തർദേശീയ നിയമനങ്ങൾ',
+    icon: '',
+    desc: 'സുപ്രീം കോടതി, ഗവർണർമാർ, കേന്ദ്ര കമ്മീഷനുകൾ, ആഗോള തലവൻമാർ',
+    color: '#3b82f6',
+    section: 'Topic-wise Revision',
+    sectionMarks: '76 Qs'
+  },
+  {
+    id: 'ca_top_app_kerala',
+    name: 'കേരളം: ഭരണതല നിയമനങ്ങളും പദവികളും',
+    icon: '',
+    desc: 'ഹൈക്കോടതി, പി.എസ്.സി ചെയർമാൻ, ചീഫ് സെക്രട്ടറി, സംസ്ഥാന കമ്മീഷനുകൾ',
+    color: '#0ea5e9',
+    section: 'Topic-wise Revision',
+    sectionMarks: '18 Qs'
+  },
+  {
+    id: 'ca_top_kerala_schemes',
+    name: 'കേരള സർക്കാർ പദ്ധതികളും നയങ്ങളും',
+    icon: '',
+    desc: 'കുടുംബശ്രീ, കാരുണ്യ, ലൈഫ് മിഷൻ, അതിദാരിദ്ര്യ നിർമ്മാർജ്ജന പദ്ധതികൾ',
+    color: '#14b8a6',
+    section: 'Topic-wise Revision',
+    sectionMarks: '72 Qs'
+  },
+  {
+    id: 'ca_top_central_schemes',
+    name: 'കേന്ദ്ര സർക്കാർ പദ്ധതികളും നയങ്ങളും',
+    icon: '',
+    desc: 'പി.എം ആവാസ്, പി.എം കിസാൻ, ആയുഷ്മാൻ ഭാരത്, കേന്ദ്ര ബജറ്റ് നയങ്ങൾ',
+    color: '#f59e0b',
+    section: 'Topic-wise Revision',
+    sectionMarks: '1012 Qs'
+  },
+  {
+    id: 'ca_top_space_isro',
+    name: 'ബഹിരാകാശ ഗവേഷണവും ഐ.എസ്.ആർ.ഒയും',
+    icon: '',
+    desc: 'ഗഗൻയാൻ, ചന്ദ്രയാൻ, ആദിത്യ എൽ-1, നാസ, വി.എസ്.എസ്.സി, ഉപഗ്രഹങ്ങൾ',
+    color: '#6366f1',
+    section: 'Topic-wise Revision',
+    sectionMarks: '123 Qs'
+  },
+  {
+    id: 'ca_top_defence',
+    name: 'പ്രതിരോധം, സൈനിക അഭ്യാസങ്ങൾ & സുരക്ഷ',
+    icon: '',
+    desc: 'കര-നാവിക-വ്യോമസേനകൾ, ഡി.ആർ.ഡി.ഒ, സംയുക്ത അഭ്യാസങ്ങൾ, യുദ്ധക്കപ്പലുകൾ',
+    color: '#64748b',
+    section: 'Topic-wise Revision',
+    sectionMarks: '201 Qs'
+  },
+  {
+    id: 'ca_top_science_ai',
+    name: 'ശാസ്ത്ര സാങ്കേതികവിദ്യ, എ.ഐ & ഇന്നൊവേഷൻ',
+    icon: '',
+    desc: 'നിർമ്മിത ബുദ്ധി (AI), സൂപ്പർ കമ്പ്യൂട്ടറുകൾ, സൈബർ സുരക്ഷ, ഇന്നൊവേഷൻ',
+    color: '#a855f7',
+    section: 'Topic-wise Revision',
+    sectionMarks: '86 Qs'
+  },
+  {
+    id: 'ca_top_environment',
+    name: 'പരിസ്ഥിതി, കാലാവസ്ഥ & റാംസർ സൈറ്റുകൾ',
+    icon: '',
+    desc: 'റാംസർ തണ്ണീർത്തടങ്ങൾ, ദേശീയോദ്യാനങ്ങൾ, വന്യജീവി സങ്കേതങ്ങൾ, കാലാവസ്ഥ',
+    color: '#22c55e',
+    section: 'Topic-wise Revision',
+    sectionMarks: '111 Qs'
+  },
+  {
+    id: 'ca_top_indices_summits',
+    name: 'ആഗോള സൂചികകൾ, റിപ്പോർട്ടുകൾ & ഉച്ചകോടികൾ',
+    icon: '',
+    desc: 'ഹാപ്പിനസ് ഇൻഡക്സ്, ഹംഗർ ഇൻഡക്സ്, ജി-20, ബ്രിക്സ്, COP ഉച്ചകോടികൾ',
+    color: '#0284c7',
+    section: 'Topic-wise Revision',
+    sectionMarks: '104 Qs'
+  },
+  {
+    id: 'ca_top_kerala_infra',
+    name: 'കേരളം: അടിസ്ഥാന സൗകര്യ വികസനം, തുറമുഖം & ഗതാഗതം',
+    icon: '',
+    desc: 'വിഴിഞ്ഞം അന്താരാഷ്ട്ര തുറമുഖം, വാട്ടർ മെട്രോ, ദേശീയപാത 66 വികസനം',
+    color: '#059669',
+    section: 'Topic-wise Revision',
+    sectionMarks: '53 Qs'
+  },
+  {
+    id: 'ca_top_days_themes',
+    name: 'സുപ്രധാന ദിനങ്ങളും ഔദ്യോഗിക പ്രമേയങ്ങളും',
+    icon: '',
+    desc: 'ദേശീയ-അന്തർദേശീയ ദിനങ്ങൾ, ആചരണങ്ങൾ, അവയുടെ ഔദ്യോഗിക പ്രമേയങ്ങൾ',
+    color: '#d97706',
+    section: 'Topic-wise Revision',
+    sectionMarks: '157 Qs'
+  },
+  {
+    id: 'ca_top_obituaries',
+    name: 'ചരമം: വിടവാങ്ങിയ പ്രമുഖ വ്യക്തികൾ',
+    icon: '',
+    desc: 'അടുത്തിടെ വിടവാങ്ങിയ സാംസ്കാരിക, രാഷ്ട്രീയ, കായിക, ചലച്ചിത്ര പ്രമുഖർ',
+    color: '#475569',
+    section: 'Topic-wise Revision',
+    sectionMarks: '131 Qs'
   }
+];
+
+export const CURRENT_AFFAIRS_TOPICS = [
+  {
+    id: 'all',
+    name: 'All Current Affairs (2026 Mock)',
+    icon: '🎯',
+    desc: 'Practice across all 2026 monthly capsules & topics (3,440 Qs)',
+    color: '#6366f1',
+    section: '2026 Current Affairs (3,440 Qs)',
+    sectionMarks: '3,440 Qs'
+  },
+  ...CURRENT_AFFAIRS_MONTH_TOPICS,
+  ...CURRENT_AFFAIRS_SUBJECT_TOPICS
 ];
 
 // -------------------------------------------------------------

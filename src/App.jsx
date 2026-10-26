@@ -2327,30 +2327,6 @@ export default function App() {
                 </div>
 
                 <div className="card-top-bar-right">
-                  {historyPointer > 0 && (
-                    <button
-                      type="button"
-                      className="card-prev-btn"
-                      onClick={handleGoPrevious}
-                      title="Review previous question (ArrowLeft)"
-                      aria-label="Previous question"
-                    >
-                      <ArrowLeftIcon size={14} />
-                      <span>Previous</span>
-                    </button>
-                  )}
-                  {historyPointer < questionHistoryStack.length - 1 && (
-                    <button
-                      type="button"
-                      className="card-next-btn"
-                      onClick={handleGoNext}
-                      title="Forward to next question (ArrowRight)"
-                      aria-label="Next question"
-                    >
-                      <span>{historyPointer === questionHistoryStack.length - 2 ? 'Current' : 'Next'}</span>
-                      <ArrowRightIcon size={14} />
-                    </button>
-                  )}
                   {/* Bookmark Button */}
                   <button
                     type="button"
@@ -2450,7 +2426,7 @@ export default function App() {
                           title="Go to previous question (ArrowLeft)"
                         >
                           <ArrowLeftIcon size={15} />
-                          <span>Previous</span>
+                          <span>Previous Question</span>
                         </button>
                         <button
                           type="button"
@@ -2458,7 +2434,7 @@ export default function App() {
                           onClick={handleGoNext}
                           title="Forward (ArrowRight / Enter)"
                         >
-                          <span>{historyPointer === questionHistoryStack.length - 2 ? 'Return to Current Question' : 'Next Question'}</span>
+                          <span>{historyPointer === questionHistoryStack.length - 2 ? 'Current Question' : 'Next Question'}</span>
                           <ArrowRightIcon size={15} />
                         </button>
                       </div>
@@ -2541,7 +2517,7 @@ export default function App() {
                             title="Review previous question (ArrowLeft)"
                           >
                             <ArrowLeftIcon size={15} />
-                            <span>Previous</span>
+                            <span>Previous Question</span>
                           </button>
                         )}
                         <button
@@ -2581,7 +2557,7 @@ export default function App() {
                             title="Review previous question (ArrowLeft)"
                           >
                             <ArrowLeftIcon size={15} />
-                            <span>Previous</span>
+                            <span>Previous Question</span>
                           </button>
                         )}
                         <button

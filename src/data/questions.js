@@ -328,9 +328,9 @@ export const ENGLISH_SYLLABUS_TOPICS = [
 export const PYQ_TOPICS = [
   {
     id: 'all',
-    name: 'All Topics (Full Mock)',
+    name: 'All Topics (Excl. Maths)',
     icon: '🎯',
-    desc: 'Random questions across all topics for the selected year',
+    desc: 'Random questions across all topics for the selected year (Maths available in separate tab)',
     color: '#6366f1'
   },
   // Part I: പൊതുവിജ്ഞാനം (50 Marks)

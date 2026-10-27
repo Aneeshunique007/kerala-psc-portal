@@ -1052,7 +1052,12 @@ export default function App() {
 
   const matchesTopic = (question, targetTopicId) => {
     if (!question) return false;
-    if (targetTopicId === 'all') return true;
+    if (targetTopicId === 'all') {
+      if (activeSubject === 'pyq') {
+        return question.topic !== 'pq_maths';
+      }
+      return true;
+    }
     if (activeSubject === 'current_affairs') {
       const caTopic = CURRENT_AFFAIRS_TOPICS.find(t => t.id === targetTopicId);
       if (caTopic && caTopic.qp_code) {
@@ -1081,7 +1086,7 @@ export default function App() {
       ? currentQuestionBank.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`))
       : currentQuestionBank;
     const topicQuestions = topicId === 'all'
-      ? bank
+      ? (activeSubject === 'pyq' ? bank.filter(q => q.topic !== 'pq_maths') : bank)
       : bank.filter(q => matchesTopic(q, topicId));
     const total = topicQuestions.length;
     // Count each question only once, and only if it was answered correctly
@@ -1107,8 +1112,13 @@ export default function App() {
     let pool;
     if (isRepeatOnlyMode) {
       pool = repeatQueueList.filter(q => isInActiveSubject(q.id));
+      if (activeSubject === 'pyq' && selectedTopic === 'all') {
+        pool = pool.filter(q => q.topic !== 'pq_maths');
+      }
     } else if (selectedTopic === 'all') {
-      pool = [...currentQuestionBank];
+      pool = activeSubject === 'pyq'
+        ? currentQuestionBank.filter(q => q.topic !== 'pq_maths')
+        : [...currentQuestionBank];
     } else {
       pool = currentQuestionBank.filter(q => matchesTopic(q, selectedTopic));
     }
@@ -1168,7 +1178,7 @@ export default function App() {
       const topicRepeats = upcomingList.filter(rep => {
         const freshQ = getFreshQuestion(rep);
         return isInActiveSubject(freshQ.id)
-          && (selectedTopic === 'all' || matchesTopic(freshQ, selectedTopic))
+          && matchesTopic(freshQ, selectedTopic)
           && matchesYearFilter(freshQ)
           && (rep.remainingRepeats ?? 1) > 0;
       });
@@ -2260,7 +2270,9 @@ export default function App() {
                         >
                           <span className="opt-icon"><TargetIcon size={16} /></span>
                           <div className="opt-details">
-                            <div className="opt-title">All Topics (Full Mock)</div>
+                            <div className="opt-title">
+                              {activeSubject === 'pyq' ? 'All Topics (Excl. Maths)' : 'All Topics (Full Mock)'}
+                            </div>
                             <div className="opt-count">
                               <span style={{ color: solved > 0 ? '#38bdf8' : '#94a3b8', fontWeight: 600 }}>
                                 {solved} / {total}

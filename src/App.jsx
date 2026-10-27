@@ -193,6 +193,7 @@ export default function App() {
   const sidebarCaDropdownRef = React.useRef(null);
   const quizContentAreaRef = React.useRef(null);
   const feedbackCardRef = React.useRef(null);
+  const roundRobinIndexRef = React.useRef(0);
 
   // Themed Confirmation Modal State
   const [confirmDialog, setConfirmDialog] = useState({
@@ -672,6 +673,12 @@ export default function App() {
       }
       return u;
     });
+    roundRobinIndexRef.current = 0;
+    try {
+      localStorage.removeItem(`psc_rr_idx_${activeSubject}`);
+    } catch {
+      // ignore
+    }
     persistUsers(updated, true);
   };
 
@@ -851,6 +858,14 @@ export default function App() {
     setSelectedTopic(topicId);
     setQuestionHistoryStack([]);
     setHistoryPointer(-1);
+    if (topicId === 'all') {
+      try {
+        const saved = parseInt(localStorage.getItem(`psc_rr_idx_${subject}`), 10);
+        roundRobinIndexRef.current = Number.isNaN(saved) ? 0 : saved;
+      } catch {
+        roundRobinIndexRef.current = 0;
+      }
+    }
     setViewMode(
       subject === 'malayalam'
         || subject === 'english'
@@ -1125,6 +1140,53 @@ export default function App() {
     return pool.filter(matchesYearFilter);
   };
 
+  // Selects questions in balanced round-robin rotation across all topics in the syllabus
+  const pickRoundRobinQuestion = (candidatePool) => {
+    if (!candidatePool || candidatePool.length === 0) return null;
+    const availableTopics = currentSyllabusTopics.filter(t =>
+      t.id !== 'all' && (activeSubject !== 'pyq' || t.id !== 'pq_maths')
+    );
+    if (availableTopics.length === 0) {
+      const randIndex = Math.floor(Math.random() * candidatePool.length);
+      return candidatePool[randIndex];
+    }
+
+    const totalTopics = availableTopics.length;
+    let startIndex = roundRobinIndexRef.current;
+    if (typeof startIndex !== 'number' || startIndex < 0 || startIndex >= totalTopics) {
+      try {
+        const saved = parseInt(localStorage.getItem(`psc_rr_idx_${activeSubject}`), 10);
+        startIndex = !Number.isNaN(saved) && saved >= 0 && saved < totalTopics ? saved : 0;
+      } catch {
+        startIndex = 0;
+      }
+    }
+
+    // Search cyclically for the next topic that has candidate questions
+    for (let offset = 0; offset < totalTopics; offset++) {
+      const topicIndex = (startIndex + offset) % totalTopics;
+      const topicCandidate = availableTopics[topicIndex];
+      const matchingQuestions = candidatePool.filter(q => matchesTopic(q, topicCandidate.id));
+
+      if (matchingQuestions.length > 0) {
+        // Advance cursor to the next topic for subsequent turns
+        const nextIndex = (topicIndex + 1) % totalTopics;
+        roundRobinIndexRef.current = nextIndex;
+        try {
+          localStorage.setItem(`psc_rr_idx_${activeSubject}`, String(nextIndex));
+        } catch {
+          // ignore storage error
+        }
+        const randInTopic = Math.floor(Math.random() * matchingQuestions.length);
+        return matchingQuestions[randInTopic];
+      }
+    }
+
+    // Fallback if no topic matched specifically
+    const randFallback = Math.floor(Math.random() * candidatePool.length);
+    return candidatePool[randFallback];
+  };
+
   // overrideUsers: pass the freshly-updated users array when calling right after persistUsers(),
   // so this function never overwrites the just-saved state with stale data.
   // reviewMode: allow re-practising already completed questions once a topic is finished.
@@ -1170,8 +1232,10 @@ export default function App() {
     if (isRepeatOnlyMode) {
       // In Mistake Queue mode: pick from the subject's repeat queue without immediate repeats
       const candidates = pool.length > 1 ? pool.filter(q => q.id !== currentId) : pool;
-      const randIndex = Math.floor(Math.random() * candidates.length);
-      nextQ = getFreshQuestion(candidates[randIndex]);
+      const chosen = selectedTopic === 'all'
+        ? pickRoundRobinQuestion(candidates)
+        : candidates[Math.floor(Math.random() * candidates.length)];
+      nextQ = getFreshQuestion(chosen);
       isRepeat = true;
     } else {
       // All pending repeats for this subject / topic / year
@@ -1204,8 +1268,10 @@ export default function App() {
         isRepeat = true;
         soundFX.playRepeatAlert();
       } else if (freshCandidates.length > 0) {
-        const randIndex = Math.floor(Math.random() * freshCandidates.length);
-        nextQ = getFreshQuestion(freshCandidates[randIndex]);
+        const chosen = selectedTopic === 'all'
+          ? pickRoundRobinQuestion(freshCandidates)
+          : freshCandidates[Math.floor(Math.random() * freshCandidates.length)];
+        nextQ = getFreshQuestion(chosen);
       } else if (topicRepeats.length > 0) {
         // No fresh questions left: finish the pending repeats (earliest due first)
         const waiting = topicRepeats.filter(r => r.id !== currentId);
@@ -1219,8 +1285,10 @@ export default function App() {
         const reviewPool = pool.filter(q => q.id !== currentId && !recent.includes(q.id));
         const fallback = pool.filter(q => q.id !== currentId);
         const selectionPool = reviewPool.length > 0 ? reviewPool : (fallback.length > 0 ? fallback : pool);
-        const randIndex = Math.floor(Math.random() * selectionPool.length);
-        nextQ = getFreshQuestion(selectionPool[randIndex]);
+        const chosen = selectedTopic === 'all'
+          ? pickRoundRobinQuestion(selectionPool)
+          : selectionPool[Math.floor(Math.random() * selectionPool.length)];
+        nextQ = getFreshQuestion(chosen);
       }
       // Otherwise nextQ stays null -> "Topic Completely Mastered" screen
     }

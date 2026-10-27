@@ -11,7 +11,6 @@ import { soundFX } from '../utils/soundEffects';
 import {
   RotateIcon,
   ChevronLeftIcon,
-  ChevronRightIcon,
   SearchIcon,
   CheckIcon,
   XIcon,
@@ -76,8 +75,6 @@ export default function LearnedRetrainPage({
   const [activeSubject, setActiveSubject] = useState('pyq');
   const [activeSetIndex, setActiveSetIndex] = useState(0); // 0 = Set 1, 1 = Set 2, etc.
   const [searchQuery, setSearchQuery] = useState('');
-  const [pageInSet, setPageInSet] = useState(1);
-  const itemsPerPage = 10;
 
   // Active Retrain Session States
   const [isRetraining, setIsRetraining] = useState(false);
@@ -192,7 +189,6 @@ export default function LearnedRetrainPage({
     if (activeSetIndex >= sets.length) {
       setActiveSetIndex(Math.max(0, sets.length - 1));
     }
-    setPageInSet(1);
     setSearchQuery('');
   }, [activeSubject, sets.length]);
 
@@ -218,13 +214,6 @@ export default function LearnedRetrainPage({
       );
     });
   }, [currentSet, searchQuery]);
-
-  // Paginated questions in current set
-  const totalPages = Math.ceil(filteredSetQuestions.length / itemsPerPage) || 1;
-  const paginatedQuestions = useMemo(() => {
-    const start = (pageInSet - 1) * itemsPerPage;
-    return filteredSetQuestions.slice(start, start + itemsPerPage);
-  }, [filteredSetQuestions, pageInSet, itemsPerPage]);
 
   // -------------------------------------------------------------
   // RETRAIN SESSION LOGIC (NO CHANGE AS REQUESTED)
@@ -291,18 +280,17 @@ export default function LearnedRetrainPage({
   const activeSubjectConfig = SUBJECT_CONFIGS.find(s => s.id === activeSubject) || SUBJECT_CONFIGS[0];
   const ActiveSubjectIcon = activeSubjectConfig.IconComponent;
 
-  // Helper to format clean answer text
+  // Helper to format clean answer text (without option letter prefix like C.)
   const getAnswerText = (item) => {
     if (!item) return '';
+    let text = '';
     if (Array.isArray(item.options) && typeof item.answer === 'number') {
-      const letter = String.fromCharCode(65 + item.answer);
-      const text = item.options[item.answer] || '';
-      return `${letter}. ${text}`;
+      text = item.options[item.answer] || '';
+    } else if (typeof item.answer === 'string') {
+      text = item.answer;
     }
-    if (typeof item.answer === 'string') {
-      return item.answer;
-    }
-    return '';
+    // Clean any leading letter prefixes like "A. ", "A) ", "(A) " if present
+    return text.replace(/^(\([A-Da-d]\)|[A-Da-d][.)]\s*)/, '').trim();
   };
 
   return (
@@ -642,7 +630,6 @@ export default function LearnedRetrainPage({
                           className={`retrain-compact-set-tab ${isTabActive ? 'active' : ''}`}
                           onClick={() => {
                             setActiveSetIndex(sIdx);
-                            setPageInSet(1);
                           }}
                         >
                           <span className="compact-set-title">
@@ -682,7 +669,6 @@ export default function LearnedRetrainPage({
                       value={searchQuery}
                       onChange={(e) => {
                         setSearchQuery(e.target.value);
-                        setPageInSet(1);
                       }}
                     />
                     {searchQuery && (
@@ -703,13 +689,13 @@ export default function LearnedRetrainPage({
                   CLEAN QUESTIONS & ANSWERS LIST (ONLY QUESTION & ANSWER)
                   ----------------------------------------------------- */}
               <div className="retrain-qa-stack">
-                {paginatedQuestions.length === 0 ? (
+                {filteredSetQuestions.length === 0 ? (
                   <div className="retrain-no-results">
                     <p>No questions matched your search criteria in this set.</p>
                   </div>
                 ) : (
-                  paginatedQuestions.map((item, localIdx) => {
-                    const globalIdx = (pageInSet - 1) * itemsPerPage + localIdx + 1;
+                  filteredSetQuestions.map((item, localIdx) => {
+                    const globalIdx = localIdx + 1;
                     const setBaseIdx = (activeSetIndex * 100) + globalIdx;
                     const isQBookmarked = isBookmarked ? isBookmarked(item.id) : false;
                     const answerText = getAnswerText(item);
@@ -725,11 +711,6 @@ export default function LearnedRetrainPage({
                             {item.year && (
                               <span className="retrain-qa-badge">
                                 {item.year}
-                              </span>
-                            )}
-                            {item.topic && (
-                              <span className="retrain-qa-badge topic">
-                                {item.topic}
                               </span>
                             )}
                           </div>
@@ -767,55 +748,6 @@ export default function LearnedRetrainPage({
                   })
                 )}
               </div>
-
-              {/* -----------------------------------------------------
-                  PAGINATION BAR
-                  ----------------------------------------------------- */}
-              {totalPages > 1 && (
-                <div className="retrain-pagination-bar">
-                  <button
-                    type="button"
-                    className="retrain-page-btn"
-                    disabled={pageInSet <= 1}
-                    onClick={() => {
-                      setPageInSet(prev => Math.max(1, prev - 1));
-                      window.scrollTo({ top: 120, behavior: 'smooth' });
-                    }}
-                  >
-                    <ChevronLeftIcon size={16} />
-                    <span>Previous</span>
-                  </button>
-
-                  <div className="retrain-page-pills">
-                    {Array.from({ length: totalPages }, (_, idx) => idx + 1).map(pNum => (
-                      <button
-                        key={pNum}
-                        type="button"
-                        className={`retrain-page-number ${pNum === pageInSet ? 'active' : ''}`}
-                        onClick={() => {
-                          setPageInSet(pNum);
-                          window.scrollTo({ top: 120, behavior: 'smooth' });
-                        }}
-                      >
-                        {pNum}
-                      </button>
-                    ))}
-                  </div>
-
-                  <button
-                    type="button"
-                    className="retrain-page-btn"
-                    disabled={pageInSet >= totalPages}
-                    onClick={() => {
-                      setPageInSet(prev => Math.min(totalPages, prev + 1));
-                      window.scrollTo({ top: 120, behavior: 'smooth' });
-                    }}
-                  >
-                    <span>Next</span>
-                    <ChevronRightIcon size={16} />
-                  </button>
-                </div>
-              )}
             </>
           )}
         </div>

@@ -3,6 +3,7 @@ import FormattedQuestion from './FormattedQuestion';
 import { cleanExplanation } from '../utils/cleanExplanation';
 import {
   BookmarkIcon,
+  BookmarkFilledIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   SearchIcon,
@@ -267,6 +268,9 @@ export default function BookmarksPage({
               <div className="bmark-title-row">
                 <h1 className="bmark-title-text">Bookmarks</h1>
               </div>
+              <p className="bmark-subtitle">
+                Saved questions organized for quick reference and focused revision.
+              </p>
             </div>
           </div>
 
@@ -493,79 +497,62 @@ export default function BookmarksPage({
           <div className="bmark-paper-sheet">
 
             {/* Continuous Numbered Question Paper Sheet */}
-            <div className="bmark-questions-sheet-list">
+            <div className="retrain-qa-stack">
               {paginatedQuestions.map((q, idx) => {
                 const globalIndex = startIndex + idx + 1;
                 const isRevealed = !selfTestMode || revealedIds.has(q.id);
                 const options = getNormalizedOptions(q);
                 const correctOption = options.find((opt) => opt.isCorrect);
-                const answerText = correctOption
+                const rawAnswer = correctOption
                   ? correctOption.text
                   : (typeof q.answer === 'string'
                       ? q.answer
                       : (Array.isArray(q.options) && typeof q.answer === 'number'
                           ? q.options[q.answer]
                           : ''));
+                const answerText = (rawAnswer || '').replace(/^(\([A-Da-d]\)|[A-Da-d][.)]\s*)/, '').trim();
 
                 return (
-                  <article key={q.id || globalIndex} className="bmark-sheet-item">
+                  <article key={q.id || globalIndex} className="retrain-qa-card">
                     {/* Item Meta & Header */}
-                    <div className="bmark-item-header">
-                      <div className="bmark-item-meta-row">
-                        <span className="bmark-item-num">Q{globalIndex}.</span>
+                    <div className="retrain-qa-header">
+                      <div className="retrain-qa-badges">
+                        <span className="retrain-qa-number">#{globalIndex}</span>
 
                         {q.subject && (
-                          <span className={`bmark-pill bmark-pill-${q.subject}`}>
+                          <span className="retrain-qa-badge">
                             {q.subject === 'malayalam' && 'Malayalam'}
                             {q.subject === 'english' && 'English'}
                             {q.subject === 'pyq' && (q.year ? `${q.year} PYQ` : 'PYQ Exam')}
-                          </span>
-                        )}
-
-                        <span className="bmark-pill bmark-pill-topic" title={getTopicName(q)}>
-                          {getTopicName(q)}
-                        </span>
-
-                        {q.qp_code && (
-                          <span className="bmark-pill bmark-pill-qp" title="Original Kerala PSC Question Paper Code">
-                            QP: {q.qp_code}
+                            {q.subject === 'current_affairs' && 'Current Affairs'}
                           </span>
                         )}
                       </div>
 
-                      <div className="bmark-item-actions">
-                        <button
-                          type="button"
-                          className="bmark-action-remove"
-                          onClick={() => onRemoveBookmark(q.id)}
-                          title="Remove bookmark"
-                        >
-                          <TrashIcon size={13} />
-                          <span>Remove</span>
-                        </button>
-                      </div>
+                      <button
+                        type="button"
+                        className="retrain-bookmark-btn bookmarked"
+                        onClick={() => onRemoveBookmark(q.id)}
+                        title="Remove bookmark"
+                      >
+                        <BookmarkFilledIcon size={16} />
+                      </button>
                     </div>
 
                     {/* Question Text */}
-                    <div className="bmark-sheet-question">
+                    <div className="retrain-qa-question">
                       <FormattedQuestion text={q.question} />
                     </div>
 
-                    {/* Correct Answer Display (Options removed for clean revision sheet) */}
-                    {isRevealed && answerText && (
-                      <div className="bmark-sheet-answer-row">
-                        <span className="bmark-answer-badge">
-                          <CheckIcon size={12} />
-                          <span>ഉത്തരം:</span>
-                        </span>
-                        <span className="bmark-answer-text">
-                          {answerText}
-                        </span>
-                      </div>
-                    )}
-
-                    {/* Self Test Reveal Toggle */}
-                    {selfTestMode && !isRevealed && (
+                    {/* Unified Clean Answer Row */}
+                    {isRevealed ? (
+                      answerText && (
+                        <div className="retrain-qa-answer-row">
+                          <span className="retrain-qa-answer-label">Answer:</span>
+                          <span className="retrain-qa-answer-text">{answerText}</span>
+                        </div>
+                      )
+                    ) : (
                       <div className="bmark-reveal-wrapper">
                         <button
                           type="button"
@@ -573,21 +560,8 @@ export default function BookmarksPage({
                           onClick={() => toggleReveal(q.id)}
                         >
                           <EyeIcon size={14} />
-                          <span>Reveal Answer &amp; Explanation</span>
+                          <span>Reveal Answer</span>
                         </button>
-                      </div>
-                    )}
-
-                    {/* Explanation Section */}
-                    {isRevealed && q.explanation && (
-                      <div className="bmark-sheet-explanation">
-                        <div className="bmark-exp-label">
-                          <InfoIcon size={14} />
-                          <strong>Explanation / വിശദീകരണം:</strong>
-                        </div>
-                        <div className="bmark-exp-text">
-                          {cleanExplanation(q.explanation)}
-                        </div>
                       </div>
                     )}
                   </article>

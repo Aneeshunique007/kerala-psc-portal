@@ -2099,13 +2099,13 @@
   }
 
   .nav-brand-seal {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
 
   .mobile-subject-nav-toggle {
     margin-left: 0.25rem;
-    height: 28px;
+    height: 30px;
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
@@ -2117,9 +2117,9 @@
   }
 
   .mob-subj-btn {
-    height: 22px;
-    padding: 0 0.48rem !important;
-    font-size: 0.72rem !important;
+    height: 24px;
+    padding: 0 0.52rem !important;
+    font-size: 0.74rem !important;
     font-weight: 700 !important;
     line-height: 1 !important;
     letter-spacing: -0.01em !important;
@@ -2137,7 +2137,7 @@
     flex-shrink: 0;
   }
 
-  /* Compact Sleek Circular Buttons on Mobile (< 900px) */
+  /* Compact Sleek Circular Buttons on Mobile (< 900px) - Uniform 30px */
   .nav-btn,
   .nav-admin-center-btn,
   .nav-bookmark-btn,
@@ -2145,10 +2145,10 @@
   .nav-queue-btn,
   .nav-review-queue-pill,
   .user-nav-badge {
-    width: 28px !important;
-    height: 28px !important;
-    min-width: 28px !important;
-    max-width: 28px !important;
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
     padding: 0 !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -2464,20 +2464,20 @@
   }
 
   .nav-brand-seal {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
 
   .mobile-subject-nav-toggle {
-    height: 28px;
+    height: 30px;
     padding: 2px;
     gap: 2px;
   }
 
   .mob-subj-btn {
-    height: 22px;
-    padding: 0 0.44rem !important;
-    font-size: 0.7rem !important;
+    height: 24px;
+    padding: 0 0.46rem !important;
+    font-size: 0.72rem !important;
     font-weight: 700 !important;
     line-height: 1 !important;
   }
@@ -2489,10 +2489,10 @@
   .nav-queue-btn,
   .nav-review-queue-pill,
   .user-nav-badge {
-    width: 26px !important;
-    height: 26px !important;
-    min-width: 26px !important;
-    max-width: 26px !important;
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
     padding: 0 !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -13042,21 +13042,21 @@
 
 .nav-retrain-btn:hover,
 .nav-retrain-btn.active {
-  background: rgba(16, 185, 129, 0.15) !important;
-  border-color: #10b981 !important;
-  color: #ecfdf5 !important;
-  box-shadow: 0 0 16px rgba(16, 185, 129, 0.25) !important;
+  background: rgba(56, 189, 248, 0.15) !important;
+  border-color: #38bdf8 !important;
+  color: #f0f9ff !important;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.25) !important;
 }
 
 .nav-retrain-badge {
-  background: linear-gradient(135deg, #059669, #10b981);
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
   color: #ffffff;
   padding: 0.12rem 0.55rem;
   border-radius: var(--radius-full);
   font-size: 0.74rem;
   font-weight: 800;
   line-height: 1.2;
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 2px 6px rgba(56, 189, 248, 0.35);
 }
 
 .retrain-hub-page {
@@ -13179,10 +13179,10 @@
 }
 
 .retrain-subject-tab-btn.active {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(56, 189, 248, 0.1));
-  border-color: #10b981;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(37, 99, 235, 0.1));
+  border-color: #38bdf8;
   color: #ffffff;
-  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
 }
 
 .retrain-subject-icon-box {
@@ -13200,9 +13200,9 @@
 }
 
 .retrain-subject-tab-btn.active .retrain-subject-icon-box {
-  background: rgba(16, 185, 129, 0.2);
-  border-color: #10b981;
-  color: #34d399;
+  background: rgba(56, 189, 248, 0.18);
+  border-color: #38bdf8;
+  color: #38bdf8;
 }
 
 .retrain-subject-info {
@@ -13237,7 +13237,7 @@
 }
 
 .retrain-subject-tab-btn.active .retrain-subject-badge {
-  background: #10b981;
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
   color: #ffffff;
 }
 
@@ -13250,7 +13250,7 @@
 }
 
 .retrain-subject-tab-btn.active .retrain-subject-tabs-count {
-  color: #a7f3d0;
+  color: #7dd3fc;
   font-weight: 600;
 }
 
@@ -13326,7 +13326,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.65rem 1.25rem;
-  background: linear-gradient(135deg, #059669, #10b981);
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
   border: none;
   border-radius: var(--radius-full);
   color: #ffffff;
@@ -13334,15 +13334,16 @@
   font-size: 0.88rem;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.35);
   transition: all 0.2s;
   white-space: nowrap;
 }
 
 .retrain-action-btn-primary:hover {
-  background: linear-gradient(135deg, #047857, #059669);
+  background: linear-gradient(135deg, #1d4ed8, #0891b2);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.45);
 }
 
 .retrain-control-search-row {
@@ -13534,6 +13535,40 @@
   font-weight: 700;
   color: #ecfdf5;
   line-height: 1.45;
+}
+
+[data-theme="light"] .retrain-qa-card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .retrain-qa-card:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+[data-theme="light"] .retrain-qa-question {
+  color: #0f172a;
+}
+
+[data-theme="light"] .retrain-qa-badge {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+[data-theme="light"] .retrain-qa-badge.topic {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+[data-theme="light"] .retrain-qa-answer-row {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+[data-theme="light"] .retrain-qa-answer-text {
+  color: #065f46;
 }
 
 .explanation-title {
@@ -14130,13 +14165,21 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 1.5rem;
-  background: linear-gradient(135deg, #059669, #10b981);
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
   border: none;
   border-radius: var(--radius-full);
   color: #ffffff;
   font-weight: 800;
   font-size: 0.98rem;
   cursor: pointer;
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.35);
+  transition: all 0.2s;
+}
+
+.retrain-btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #0891b2);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.45);
 }
 
 .retrain-btn-warning {

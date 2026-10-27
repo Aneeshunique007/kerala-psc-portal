@@ -23,6 +23,7 @@ import MockExamPage from './components/MockExamPage';
 import FormattedQuestion from './components/FormattedQuestion';
 import BookmarksPage from './components/BookmarksPage';
 import LearnedRetrainPage from './components/LearnedRetrainPage';
+import ReviewQueuePage from './components/ReviewQueuePage';
 import InviteGate from './components/InviteGate';
 import AdminPanel from './components/AdminPanel';
 import AdminLoginModal from './components/AdminLoginModal';
@@ -44,6 +45,7 @@ import {
 } from './utils/supabaseClient';
 import {
   BookmarkIcon,
+  BookmarkFilledIcon,
   RotateIcon,
   CheckIcon,
   XIcon,
@@ -957,6 +959,15 @@ export default function App() {
     }
   };
 
+  const handleOpenReview = () => {
+    if (viewMode === 'review') {
+      setViewMode(previousViewMode || 'blueprint');
+    } else {
+      setPreviousViewMode(viewMode === 'review' ? 'blueprint' : viewMode);
+      setViewMode('review');
+    }
+  };
+
   const handleSendToReviewQueue = (question) => {
     if (!currentUser || !question) return;
     const qId = question.id;
@@ -1029,10 +1040,11 @@ export default function App() {
   const currentSubjectRepeatQueue = userRepeatQueue.filter(q => {
     if (activeSubject === 'english') {
       return ENGLISH_QUESTION_BANK.some(eq => eq.id === q.id);
-    } else if (activeSubject === 'pyq') {
-      return PYQ_QUESTION_BANK.some(pq => pq.id === q.id);
     } else if (activeSubject === 'current_affairs') {
-      return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id);
+      return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id) || String(q.id).startsWith('ca_') || q.topic === 'pq_current_affairs';
+    } else if (activeSubject === 'pyq') {
+      const isCA = CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id) || String(q.id).startsWith('ca_') || q.topic === 'pq_current_affairs';
+      return !isCA && PYQ_QUESTION_BANK.some(pq => pq.id === q.id);
     } else {
       return QUESTION_BANK.some(mq => mq.id === q.id);
     }
@@ -1081,8 +1093,13 @@ export default function App() {
 
   const isInActiveSubject = (qId) => {
     if (activeSubject === 'english') return ENGLISH_QUESTION_BANK.some(eq => eq.id === qId);
-    if (activeSubject === 'pyq') return PYQ_QUESTION_BANK.some(pq => pq.id === qId);
-    if (activeSubject === 'current_affairs') return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === qId);
+    if (activeSubject === 'current_affairs') {
+      return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === qId) || String(qId).startsWith('ca_');
+    }
+    if (activeSubject === 'pyq') {
+      const isCA = CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === qId) || String(qId).startsWith('ca_');
+      return !isCA && PYQ_QUESTION_BANK.some(pq => pq.id === qId);
+    }
     return QUESTION_BANK.some(mq => mq.id === qId);
   };
 
@@ -2103,12 +2120,12 @@ export default function App() {
               )}
 
               {/* Spaced Review Queue Pill on Navbar */}
-              {viewMode !== 'admin' && currentSubjectRepeatQueue.length > 0 && (
+              {viewMode !== 'admin' && userRepeatQueue.length > 0 && (
                 <button
                   type="button"
-                  className="nav-btn nav-queue-btn"
-                  onClick={() => setShowRepeatModal(true)}
-                  title={`Open Spaced Review Queue (${currentSubjectRepeatQueue.length} questions waiting)`}
+                  className={`nav-btn nav-queue-btn ${viewMode === 'review' ? 'active' : ''}`}
+                  onClick={handleOpenReview}
+                  title={`Open Review Page (${userRepeatQueue.length} questions waiting)`}
                 >
                   <RotateIcon size={13} className="nav-icon-cyan" />
                   <span className="desktop-only">Review Queue</span>
@@ -2374,6 +2391,14 @@ export default function App() {
               onToggleBookmark={handleToggleBookmark}
               isBookmarked={(id) => userBookmarks.includes(id)}
               onSendToReviewQueue={handleSendToReviewQueue}
+            />
+          ) : viewMode === 'review' ? (
+            <ReviewQueuePage
+              repeatQueue={userRepeatQueue}
+              initialSubject={activeSubject}
+              onBack={() => setViewMode(previousViewMode || 'blueprint')}
+              onToggleBookmark={handleToggleBookmark}
+              isBookmarked={(id) => userBookmarks.includes(id)}
             />
           ) : viewMode === 'mock' ? (
             <MockExamPage
@@ -2703,72 +2728,17 @@ export default function App() {
         </div>
       </main>
 
-      {/* Repeat Queue Modal */}
+      {/* Review Queue Modal / Sheet */}
       {showRepeatModal && (
         <div className="modal-overlay" onClick={() => setShowRepeatModal(false)}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <div className="modal-header">
-              <h2 className="modal-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <RotateIcon size={18} />
-                <span>Spaced Review & Repeat Queue ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? 'PYQ' : activeSubject === 'current_affairs' ? 'Current Affairs' : 'Malayalam'})</span>
-                <span className="repeat-badge-count">{currentSubjectRepeatQueue.length}</span>
-              </h2>
-              <button className="close-btn" onClick={() => setShowRepeatModal(false)} aria-label="Close">
-                <XIcon size={18} />
-              </button>
-            </div>
-
-            <div className="modal-body">
-              {currentSubjectRepeatQueue.length === 0 ? (
-                <div style={{ textAlign: 'center', padding: '2.5rem', color: '#94a3b8' }}>
-                  <div style={{ marginBottom: '1rem', color: '#38bdf8', display: 'flex', justifyContent: 'center' }}>
-                    <CheckCircleIcon size={44} />
-                  </div>
-                  <h3 style={{ color: '#fff', marginBottom: '0.5rem' }}>No Missed Questions in Queue!</h3>
-                  <p>You have mastered all attempted questions in this subject. Any missed questions will automatically appear here for spaced repetition.</p>
-                </div>
-              ) : (
-                <>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    <p style={{ fontSize: '0.9rem', color: '#94a3b8', margin: 0 }}>
-                      Missed questions repeat during practice until mastered:
-                    </p>
-                    <button
-                      className="next-btn"
-                      style={{ margin: 0, padding: '0.5rem 1rem', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
-                      onClick={() => {
-                        setShowRepeatModal(false);
-                        setIsRepeatOnlyMode(true);
-                      }}
-                    >
-                      <span>Practice Missed Questions Only</span>
-                      <ArrowRightIcon size={14} />
-                    </button>
-                  </div>
-
-                  {currentSubjectRepeatQueue.map((item, idx) => (
-                    <div key={item.id} className="mistake-card">
-                      <div className="mistake-card-q">
-                        <span className="mistake-idx">{idx + 1}.</span>{' '}
-                        <QuestionDisplay text={item.question} />
-                      </div>
-                      <div className="mistake-card-ans">
-                        Correct Answer: {item.options[item.answer]}
-                      </div>
-                      {item.explanation && (
-                        <div className="mistake-card-exp">
-                          <div className="explanation-header-title">
-                            <InfoIcon size={13} />
-                            <span className="explanation-heading">Explanation / വിശദീകരണം:</span>
-                          </div>
-                          <div>{cleanExplanation(item.explanation)}</div>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
+          <div className="modal-content bmark-paper-sheet" style={{ maxWidth: '900px', width: '95%', maxHeight: '92vh', overflowY: 'auto', padding: '1.25rem 1.5rem' }} onClick={e => e.stopPropagation()}>
+            <ReviewQueuePage
+              repeatQueue={userRepeatQueue}
+              initialSubject={activeSubject}
+              onBack={() => setShowRepeatModal(false)}
+              onToggleBookmark={handleToggleBookmark}
+              isBookmarked={(id) => userBookmarks.includes(id)}
+            />
           </div>
         </div>
       )}

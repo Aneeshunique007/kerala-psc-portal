@@ -890,8 +890,7 @@ export default function App() {
     pq_science: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_science').length,
     pq_arts_sports: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_arts_sports').length,
     pq_computer: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_computer').length,
-    pq_acts_laws: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_acts_laws').length,
-    pq_current_affairs: CURRENT_AFFAIRS_QUESTION_BANK.length,
+    pq_current_affairs: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_current_affairs').length,
     pq_maths: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_maths').length
   };
 
@@ -996,14 +995,14 @@ export default function App() {
 
   const getBookmarkedQuestionsList = () => {
     return userBookmarks.map(id => {
+      const qPyq = PYQ_QUESTION_BANK.find(q => q.id === id);
+      if (qPyq) return { ...qPyq, subject: qPyq.subject || 'pyq' };
       const qCa = CURRENT_AFFAIRS_QUESTION_BANK.find(q => q.id === id);
       if (qCa) return { ...qCa, subject: qCa.subject || 'current_affairs' };
       const qMal = QUESTION_BANK.find(q => q.id === id);
       if (qMal) return { ...qMal, subject: qMal.subject || 'malayalam' };
       const qEng = ENGLISH_QUESTION_BANK.find(q => q.id === id);
       if (qEng) return { ...qEng, subject: qEng.subject || 'english' };
-      const qPyq = PYQ_QUESTION_BANK.find(q => q.id === id);
-      if (qPyq) return { ...qPyq, subject: qPyq.subject || 'pyq' };
       return null;
     }).filter(Boolean);
   };
@@ -1039,12 +1038,11 @@ export default function App() {
   // Filter mistake queue by current subject
   const currentSubjectRepeatQueue = userRepeatQueue.filter(q => {
     if (activeSubject === 'english') {
-      return ENGLISH_QUESTION_BANK.some(eq => eq.id === q.id);
+      return ENGLISH_QUESTION_BANK.some(eq => eq.id === q.id) || String(q.id).startsWith('eng_');
     } else if (activeSubject === 'current_affairs') {
-      return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id) || String(q.id).startsWith('ca_') || q.topic === 'pq_current_affairs';
+      return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id) || String(q.id).startsWith('ca_');
     } else if (activeSubject === 'pyq') {
-      const isCA = CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id) || String(q.id).startsWith('ca_') || q.topic === 'pq_current_affairs';
-      return !isCA && PYQ_QUESTION_BANK.some(pq => pq.id === q.id);
+      return PYQ_QUESTION_BANK.some(pq => pq.id === q.id) || String(q.id).startsWith('pyq_');
     } else {
       return QUESTION_BANK.some(mq => mq.id === q.id);
     }
@@ -1092,13 +1090,12 @@ export default function App() {
   };
 
   const isInActiveSubject = (qId) => {
-    if (activeSubject === 'english') return ENGLISH_QUESTION_BANK.some(eq => eq.id === qId);
+    if (activeSubject === 'english') return ENGLISH_QUESTION_BANK.some(eq => eq.id === qId) || String(qId).startsWith('eng_');
     if (activeSubject === 'current_affairs') {
       return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === qId) || String(qId).startsWith('ca_');
     }
     if (activeSubject === 'pyq') {
-      const isCA = CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === qId) || String(qId).startsWith('ca_');
-      return !isCA && PYQ_QUESTION_BANK.some(pq => pq.id === qId);
+      return PYQ_QUESTION_BANK.some(pq => pq.id === qId) || String(qId).startsWith('pyq_');
     }
     return QUESTION_BANK.some(mq => mq.id === qId);
   };

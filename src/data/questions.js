@@ -754,16 +754,15 @@ export const ENGLISH_QUESTION_BANK = Array.isArray(englishQuestions) ? englishQu
 export const CURRENT_AFFAIRS_QUESTION_BANK = Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions : [];
 
 export const PYQ_YEARS = [
-  { id: '2026', label: '2026 Exam Papers', count: 1944 + (Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions.length : 0) },
-  { id: '2025', label: '2025 Exam Papers', count: 2956 },
-  { id: '2024', label: '2024 Exam Papers', count: 2711 },
-  { id: '2023', label: '2023 Exam Papers', count: 2235 },
-  { id: '2022', label: '2022 Exam Papers', count: 879 },
-  { id: '2021', label: '2021 Exam Papers', count: 593 }
+  { id: '2026', label: '2026 Exam Papers', count: Array.isArray(pyq2026Questions) ? pyq2026Questions.length : 1944 },
+  { id: '2025', label: '2025 Exam Papers', count: Array.isArray(pyq2025Questions) ? pyq2025Questions.length : 2956 },
+  { id: '2024', label: '2024 Exam Papers', count: Array.isArray(pyq2024Questions) ? pyq2024Questions.length : 2711 },
+  { id: '2023', label: '2023 Exam Papers', count: Array.isArray(pyq2023Questions) ? pyq2023Questions.length : 2235 },
+  { id: '2022', label: '2022 Exam Papers', count: Array.isArray(pyq2022Questions) ? pyq2022Questions.length : 879 },
+  { id: '2021', label: '2021 Exam Papers', count: Array.isArray(pyq2021Questions) ? pyq2021Questions.length : 593 }
 ];
 
 export const PYQ_QUESTION_BANK = [
-  ...(Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions.map(q => ({ ...q, year: '2026' })) : []),
   ...(Array.isArray(pyq2026Questions) ? pyq2026Questions.map(q => ({ ...q, year: '2026' })) : []),
   ...(Array.isArray(pyq2025Questions) ? pyq2025Questions.map(q => ({ ...q, year: '2025' })) : []),
   ...(Array.isArray(pyq2024Questions) ? pyq2024Questions.map(q => ({ ...q, year: '2024' })) : []),

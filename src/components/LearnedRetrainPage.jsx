@@ -103,9 +103,7 @@ export default function LearnedRetrainPage({
     });
 
     (Array.isArray(PYQ_QUESTION_BANK) ? PYQ_QUESTION_BANK : []).forEach(q => {
-      if (!map.has(q.id)) {
-        map.set(q.id, { ...q, subject: 'pyq' });
-      }
+      map.set(q.id, { ...q, subject: 'pyq' });
     });
 
     return { questionMap: map };

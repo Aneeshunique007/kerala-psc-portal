@@ -55,11 +55,7 @@ export default function ReviewQueuePage({
     const ca = new Set((CURRENT_AFFAIRS_QUESTION_BANK || []).map(q => q.id));
     const eng = new Set((ENGLISH_QUESTION_BANK || []).map(q => q.id));
     const mal = new Set((QUESTION_BANK || []).map(q => q.id));
-    const pyq = new Set();
-    // Exclude CA questions from PYQ set to prevent false-positive PYQ matches
-    (PYQ_QUESTION_BANK || []).forEach(q => {
-      if (!ca.has(q.id)) pyq.add(q.id);
-    });
+    const pyq = new Set((PYQ_QUESTION_BANK || []).map(q => q.id));
     return { caSet: ca, engSet: eng, malSet: mal, pyqSet: pyq };
   }, []);
 
@@ -74,19 +70,19 @@ export default function ReviewQueuePage({
     const id = String(q.id || '');
     const topic = String(q.topic || '');
 
-    // Current Affairs checks first
-    if (id.startsWith('ca_') || topic === 'pq_current_affairs' || topic.includes('current_affairs') || caSet.has(id)) {
+    // PYQ checks (includes past paper current affairs questions)
+    if (id.startsWith('pyq_') || pyqSet.has(id) || q.qp_code || id.includes('_202') || (topic.startsWith('pq_') && !id.startsWith('ca_'))) {
+      return 'pyq';
+    }
+
+    // Standalone Current Affairs checks
+    if (id.startsWith('ca_') || caSet.has(id) || topic.startsWith('ca_')) {
       return 'current_affairs';
     }
 
     // English checks
     if (id.startsWith('eng_') || topic.startsWith('eng_') || topic === 'english' || engSet.has(id)) {
       return 'english';
-    }
-
-    // PYQ checks
-    if (pyqSet.has(id) || q.qp_code || id.includes('_202') || topic.startsWith('pq_')) {
-      return 'pyq';
     }
 
     // Malayalam checks

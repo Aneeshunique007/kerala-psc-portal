@@ -762,6 +762,42 @@ export const PYQ_YEARS = [
   { id: '2021', label: '2021 Exam Papers', count: Array.isArray(pyq2021Questions) ? pyq2021Questions.length : 593 }
 ];
 
+const buildPyqPaperTopics = (questions, year) => {
+  if (!Array.isArray(questions)) return [];
+  const counts = new Map();
+  for (const q of questions) {
+    if (!q?.qp_code) continue;
+    counts.set(q.qp_code, (counts.get(q.qp_code) || 0) + 1);
+  }
+  const sortedCodes = Array.from(counts.entries()).sort((a, b) => {
+    const numA = parseInt(String(a[0]).match(/\d+/)?.[0] || '9999', 10);
+    const numB = parseInt(String(b[0]).match(/\d+/)?.[0] || '9999', 10);
+    return numA - numB || String(a[0]).localeCompare(String(b[0]));
+  });
+  return sortedCodes.map(([qpCode, count], idx) => ({
+    id: `qp:${qpCode}`,
+    qp_code: qpCode,
+    year,
+    paperNumber: idx + 1,
+    name: `QP ${qpCode}`,
+    marks: `${count} Qs`,
+    section: `${year} Question Papers`,
+    sectionMarks: `${sortedCodes.length} Papers`,
+    icon: '📄',
+    desc: `Official Kerala PSC Question Paper (${qpCode}) — ${count} Questions`,
+    color: '#38bdf8'
+  }));
+};
+
+export const PYQ_PAPER_TOPICS_BY_YEAR = {
+  '2026': buildPyqPaperTopics(pyq2026Questions, '2026'),
+  '2025': buildPyqPaperTopics(pyq2025Questions, '2025'),
+  '2024': buildPyqPaperTopics(pyq2024Questions, '2024'),
+  '2023': buildPyqPaperTopics(pyq2023Questions, '2023'),
+  '2022': buildPyqPaperTopics(pyq2022Questions, '2022'),
+  '2021': buildPyqPaperTopics(pyq2021Questions, '2021')
+};
+
 export const PYQ_QUESTION_BANK = [
   ...(Array.isArray(pyq2026Questions) ? pyq2026Questions.map(q => ({ ...q, year: '2026' })) : []),
   ...(Array.isArray(pyq2025Questions) ? pyq2025Questions.map(q => ({ ...q, year: '2025' })) : []),

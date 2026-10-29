@@ -6,6 +6,7 @@ import {
   ENGLISH_SYLLABUS_TOPICS,
   ENGLISH_QUESTION_BANK,
   PYQ_TOPICS,
+  PYQ_PAPER_TOPICS_BY_YEAR,
   PYQ_QUESTION_BANK,
   CURRENT_AFFAIRS_TOPICS,
   CURRENT_AFFAIRS_MONTH_TOPICS,
@@ -173,6 +174,9 @@ export default function App() {
   const [previousViewMode, setPreviousViewMode] = useState('blueprint');
   const [selectedTopic, setSelectedTopic] = useState('all');
   const [selectedYear, setSelectedYear] = useState('2026');
+  const [pyqViewMode, setPyqViewMode] = useState(() => {
+    return localStorage.getItem('psc_pyq_view_mode') || 'topic';
+  });
   const [caViewMode, setCaViewMode] = useState(() => {
     return localStorage.getItem('psc_ca_view_mode') || 'month';
   });
@@ -214,10 +218,12 @@ export default function App() {
   };
 
   // Subject-specific lists
+  const currentYearPapers = PYQ_PAPER_TOPICS_BY_YEAR[selectedYear] || [];
+
   const currentSyllabusTopics = activeSubject === 'english'
     ? ENGLISH_SYLLABUS_TOPICS
     : activeSubject === 'pyq'
-    ? PYQ_TOPICS
+    ? (pyqViewMode === 'paper' ? currentYearPapers : PYQ_TOPICS)
     : activeSubject === 'current_affairs'
     ? (caViewMode === 'topic'
         ? [CURRENT_AFFAIRS_TOPICS[0], ...CURRENT_AFFAIRS_SUBJECT_TOPICS]
@@ -321,8 +327,8 @@ export default function App() {
         ...currentUser,
         stats: remote.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
         bookmarkedQuestions: remote.bookmarkedQuestions || [],
-        repeatQueue: (remote.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
-        upcomingRepeats: (remote.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item })),
+        repeatQueue: (remote.repeatQueue || []).map((item) => ({ ...item, ...getFreshQuestion(item) })),
+        upcomingRepeats: (remote.upcomingRepeats || []).map((item) => ({ ...item, ...getFreshQuestion(item) })),
         questionHistory: remote.questionHistory || [],
         learnedQuestions: remote.learnedQuestions || [],
         solvedQuestions: remote.solvedQuestions || [],
@@ -390,8 +396,8 @@ export default function App() {
       let mergedBookmarks = cloudProgress?.bookmarkedQuestions || [];
       let mergedLearned = cloudProgress?.learnedQuestions || [];
       let mergedSolved = cloudProgress?.solvedQuestions || [];
-      let mergedRepeats = (cloudProgress?.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
-      let mergedUpcoming = (cloudProgress?.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+      let mergedRepeats = (cloudProgress?.repeatQueue || []).map((item) => ({ ...item, ...getFreshQuestion(item) }));
+      let mergedUpcoming = (cloudProgress?.upcomingRepeats || []).map((item) => ({ ...item, ...getFreshQuestion(item) }));
       let mergedHistory = cloudProgress?.questionHistory || [];
 
       let needsCloudUpload = false;
@@ -438,10 +444,10 @@ export default function App() {
         );
 
         if (!mergedRepeats.length && legacyLocalUser.repeatQueue?.length) {
-          mergedRepeats = (legacyLocalUser.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+          mergedRepeats = (legacyLocalUser.repeatQueue || []).map((item) => ({ ...item, ...getFreshQuestion(item) }));
         }
         if (!mergedUpcoming.length && legacyLocalUser.upcomingRepeats?.length) {
-          mergedUpcoming = (legacyLocalUser.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+          mergedUpcoming = (legacyLocalUser.upcomingRepeats || []).map((item) => ({ ...item, ...getFreshQuestion(item) }));
         }
 
         needsCloudUpload = (localStats.total || 0) > (cloudStats.total || 0) || (localStats.maxStreak || 0) > (cloudStats.maxStreak || 0);
@@ -516,8 +522,8 @@ export default function App() {
       maxStreak: 0,
       topicStats: {},
     };
-    const restoredRepeats = (cloudProgress?.repeatQueue || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
-    const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...getFreshQuestion(cr), ...cr }));
+    const restoredRepeats = (cloudProgress?.repeatQueue || []).map((cr) => ({ ...cr, ...getFreshQuestion(cr) }));
+    const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((cr) => ({ ...cr, ...getFreshQuestion(cr) }));
     const restoredHistory = cloudProgress?.questionHistory || [];
 
     const activeUser = {
@@ -569,8 +575,8 @@ export default function App() {
     const restoredBookmarks = cloudProgress?.bookmarkedQuestions || [];
     const restoredLearned = cloudProgress?.learnedQuestions || [];
     const restoredSolved = cloudProgress?.solvedQuestions || [];
-    const restoredRepeats = (cloudProgress?.repeatQueue || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
-    const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((item) => ({ ...getFreshQuestion(item), ...item }));
+    const restoredRepeats = (cloudProgress?.repeatQueue || []).map((item) => ({ ...item, ...getFreshQuestion(item) }));
+    const restoredUpcoming = (cloudProgress?.upcomingRepeats || []).map((item) => ({ ...item, ...getFreshQuestion(item) }));
     const restoredHistory = cloudProgress?.questionHistory || [];
 
     const adminUser = {
@@ -703,6 +709,9 @@ export default function App() {
             return q.category === topicId || q.topic === topicId;
           }
           if (subject === 'english' || subject === 'pyq') {
+            if (subject === 'pyq' && String(topicId).startsWith('qp:')) {
+              return q.qp_code === String(topicId).slice(3);
+            }
             return q.topic === topicId;
           }
           const aliases = MALAYALAM_TOPIC_ALIASES[topicId] || [topicId];
@@ -843,18 +852,57 @@ export default function App() {
   const handleSwitchSubject = (subject) => {
     setActiveSubject(subject);
     localStorage.setItem('psc_active_subject', subject);
-    setSelectedTopic('all');
+    const defaultTopic = (subject === 'pyq' && pyqViewMode === 'paper')
+      ? ((PYQ_PAPER_TOPICS_BY_YEAR[selectedYear] || [])[0]?.id || 'all')
+      : 'all';
+    setSelectedTopic(defaultTopic);
     setIsRepeatOnlyMode(false);
     setTopicDropdownOpen(false);
     setMobileSidebarOpen(false);
     setQuestionHistoryStack([]);
     setHistoryPointer(-1);
-    setViewMode(subject === 'malayalam' || subject === 'english' || subject === 'pyq' || subject === 'current_affairs' ? 'notes' : 'quiz');
+    if (subject === 'pyq' && pyqViewMode === 'paper') {
+      setViewMode('quiz');
+    } else {
+      setViewMode(subject === 'malayalam' || subject === 'english' || subject === 'pyq' || subject === 'current_affairs' ? 'notes' : 'quiz');
+    }
+  };
+
+  const handleSelectPyqMode = (mode, yearOverride = selectedYear) => {
+    setPyqViewMode(mode);
+    localStorage.setItem('psc_pyq_view_mode', mode);
+    setActiveSubject('pyq');
+    localStorage.setItem('psc_active_subject', 'pyq');
+    setIsRepeatOnlyMode(false);
+    setQuestionHistoryStack([]);
+    setHistoryPointer(-1);
+
+    const papersForYear = PYQ_PAPER_TOPICS_BY_YEAR[yearOverride] || [];
+    if (mode === 'paper') {
+      const isCurrentValidPaper = papersForYear.some(p => p.id === selectedTopic);
+      const nextPaperId = isCurrentValidPaper ? selectedTopic : (papersForYear[0]?.id || 'all');
+      setSelectedTopic(nextPaperId);
+      setViewMode('quiz');
+    } else {
+      if (String(selectedTopic).startsWith('qp:')) {
+        setSelectedTopic('all');
+        setViewMode('notes');
+      } else if (viewMode !== 'quiz' && viewMode !== 'notes') {
+        setViewMode('notes');
+      }
+    }
   };
 
   const handleChooseTopic = (subject, topicId) => {
     setActiveSubject(subject);
     localStorage.setItem('psc_active_subject', subject);
+    if (subject === 'pyq') {
+      const nextPyqMode = String(topicId).startsWith('qp:') ? 'paper' : 'topic';
+      if (pyqViewMode !== nextPyqMode) {
+        setPyqViewMode(nextPyqMode);
+        localStorage.setItem('psc_pyq_view_mode', nextPyqMode);
+      }
+    }
     setSelectedTopic(topicId);
     setQuestionHistoryStack([]);
     setHistoryPointer(-1);
@@ -1081,6 +1129,9 @@ export default function App() {
       return question.category === targetTopicId || question.topic === targetTopicId;
     }
     if (activeSubject === 'english' || activeSubject === 'pyq') {
+      if (activeSubject === 'pyq' && String(targetTopicId).startsWith('qp:')) {
+        return question.qp_code === String(targetTopicId).slice(3);
+      }
       return question.topic === targetTopicId;
     }
     if (targetTopicId === 'samasam') {
@@ -1123,6 +1174,11 @@ export default function App() {
   const matchesYearFilter = (q) =>
     activeSubject !== 'pyq' || q?.year === selectedYear || String(q?.id || '').includes(`_${selectedYear}_`);
 
+  const getPaperQuestionNumber = (q) => {
+    const m = String(q?.id || '').match(/_q?(\d+)$/);
+    return m ? parseInt(m[1], 10) : 9999;
+  };
+
   const getFilteredPool = (repeatQueueList = userRepeatQueue) => {
     let pool;
     if (isRepeatOnlyMode) {
@@ -1137,7 +1193,19 @@ export default function App() {
     } else {
       pool = currentQuestionBank.filter(q => matchesTopic(q, selectedTopic));
     }
-    return pool.filter(matchesYearFilter);
+    const yearFiltered = pool.filter(matchesYearFilter);
+    if (activeSubject === 'pyq' && String(selectedTopic).startsWith('qp:')) {
+      return [...yearFiltered].sort((a, b) => getPaperQuestionNumber(a) - getPaperQuestionNumber(b));
+    }
+    return yearFiltered;
+  };
+
+  const pickSequentialPaperQuestion = (candidatePool, fullPool, currentId) => {
+    if (!candidatePool || candidatePool.length === 0) return null;
+    if (!currentId || !fullPool || fullPool.length === 0) return candidatePool[0];
+    const currentQnNum = getPaperQuestionNumber({ id: currentId });
+    const nextInOrder = candidatePool.find(q => getPaperQuestionNumber(q) > currentQnNum);
+    return nextInOrder || candidatePool[0];
   };
 
   // Selects questions in balanced round-robin rotation across all topics in the syllabus
@@ -1270,6 +1338,8 @@ export default function App() {
       } else if (freshCandidates.length > 0) {
         const chosen = selectedTopic === 'all'
           ? pickRoundRobinQuestion(freshCandidates)
+          : (activeSubject === 'pyq' && String(selectedTopic).startsWith('qp:'))
+          ? pickSequentialPaperQuestion(freshCandidates, pool, currentId)
           : freshCandidates[Math.floor(Math.random() * freshCandidates.length)];
         nextQ = getFreshQuestion(chosen);
       } else if (topicRepeats.length > 0) {
@@ -1287,6 +1357,8 @@ export default function App() {
         const selectionPool = reviewPool.length > 0 ? reviewPool : (fallback.length > 0 ? fallback : pool);
         const chosen = selectedTopic === 'all'
           ? pickRoundRobinQuestion(selectionPool)
+          : (activeSubject === 'pyq' && String(selectedTopic).startsWith('qp:'))
+          ? pickSequentialPaperQuestion(selectionPool, pool, currentId)
           : selectionPool[Math.floor(Math.random() * selectionPool.length)];
         nextQ = getFreshQuestion(chosen);
       }
@@ -1908,64 +1980,96 @@ export default function App() {
           </div>
 
           <div className={`pyq-switch-bottom-row ${isSubjectActive('pyq') ? 'active' : ''}`}>
-            <button
-              type="button"
-              className="pyq-switch-btn-left"
-              onClick={() => handleSwitchSubject('pyq')}
-            >
-              <span className="pyq-btn-title">Previous Year Papers</span>
-              <span className="subject-qcount">
-                {`${(PYQ_YEARS.find(y => y.id === selectedYear) || PYQ_YEARS[0]).count.toLocaleString()} Qs`}
-              </span>
-            </button>
-
-            <div className="pyq-year-custom-dropdown-container" ref={sidebarYearDropdownRef}>
+            <div className="pyq-switch-top-line">
               <button
                 type="button"
-                className={`sidebar-year-trigger-btn ${sidebarYearDropdownOpen ? 'active' : ''}`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSidebarYearDropdownOpen(!sidebarYearDropdownOpen);
-                }}
-                title="Select Exam Year"
+                className="pyq-switch-btn-left"
+                onClick={() => handleSwitchSubject('pyq')}
               >
-                <span>{selectedYear}</span>
-                <ChevronDownIcon size={14} className={`sidebar-year-chevron ${sidebarYearDropdownOpen ? 'open' : ''}`} />
+                <span className="pyq-btn-title">Previous Year Papers</span>
+                <span className="subject-qcount">
+                  {`${(PYQ_YEARS.find(y => y.id === selectedYear) || PYQ_YEARS[0]).count.toLocaleString()} Qs`}
+                </span>
               </button>
 
-              {sidebarYearDropdownOpen && (
-                <div className="sidebar-year-dropdown-menu">
-                  <div className="sidebar-year-dropdown-header">
-                    <span>Select Exam Year</span>
+              <div className="pyq-year-custom-dropdown-container" ref={sidebarYearDropdownRef}>
+                <button
+                  type="button"
+                  className={`sidebar-year-trigger-btn ${sidebarYearDropdownOpen ? 'active' : ''}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSidebarYearDropdownOpen(!sidebarYearDropdownOpen);
+                  }}
+                  title="Select Exam Year"
+                >
+                  <span>{selectedYear}</span>
+                  <ChevronDownIcon size={14} className={`sidebar-year-chevron ${sidebarYearDropdownOpen ? 'open' : ''}`} />
+                </button>
+
+                {sidebarYearDropdownOpen && (
+                  <div className="sidebar-year-dropdown-menu">
+                    <div className="sidebar-year-dropdown-header">
+                      <span>Select Exam Year</span>
+                    </div>
+                    <div className="sidebar-year-list">
+                      {PYQ_YEARS.map(yr => {
+                        const isSelected = selectedYear === yr.id;
+                        return (
+                          <button
+                            key={yr.id}
+                            type="button"
+                            className={`sidebar-year-item ${isSelected ? 'selected' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedYear(yr.id);
+                              if (activeSubject !== 'pyq') {
+                                setActiveSubject('pyq');
+                                localStorage.setItem('psc_active_subject', 'pyq');
+                              }
+                              if (pyqViewMode === 'paper') {
+                                const firstPaper = (PYQ_PAPER_TOPICS_BY_YEAR[yr.id] || [])[0]?.id || 'all';
+                                setSelectedTopic(firstPaper);
+                                setViewMode('quiz');
+                              } else if (activeSubject !== 'pyq') {
+                                setSelectedTopic('all');
+                                setViewMode('notes');
+                              }
+                              setSidebarYearDropdownOpen(false);
+                            }}
+                          >
+                            <div className="sidebar-year-item-left">
+                              <span className="sidebar-year-item-num">{yr.id}</span>
+                              <span className="sidebar-year-item-count">({yr.count.toLocaleString()} Qs)</span>
+                            </div>
+                            {isSelected && <span className="sidebar-year-check">✓</span>}
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <div className="sidebar-year-list">
-                    {PYQ_YEARS.map(yr => {
-                      const isSelected = selectedYear === yr.id;
-                      return (
-                        <button
-                          key={yr.id}
-                          type="button"
-                          className={`sidebar-year-item ${isSelected ? 'selected' : ''}`}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedYear(yr.id);
-                            if (activeSubject !== 'pyq') {
-                              handleSwitchSubject('pyq');
-                            }
-                            setSidebarYearDropdownOpen(false);
-                          }}
-                        >
-                          <div className="sidebar-year-item-left">
-                            <span className="sidebar-year-item-num">{yr.id}</span>
-                            <span className="sidebar-year-item-count">({yr.count.toLocaleString()} Qs)</span>
-                          </div>
-                          {isSelected && <span className="sidebar-year-check">✓</span>}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
+                )}
+              </div>
+            </div>
+
+            <div className="pyq-mode-switch-row">
+              <button
+                type="button"
+                className={`pyq-mode-switch-btn ${isSubjectActive('pyq') && pyqViewMode === 'topic' ? 'active' : ''}`}
+                onClick={() => handleSelectPyqMode('topic')}
+                title="Practice PYQs Topic-wise"
+              >
+                <span className="pyq-mode-btn-label">Topic-wise</span>
+                <span className="pyq-mode-btn-count">{PYQ_TOPICS.length - 1} Topics</span>
+              </button>
+              <button
+                type="button"
+                className={`pyq-mode-switch-btn ${isSubjectActive('pyq') && pyqViewMode === 'paper' ? 'active' : ''}`}
+                onClick={() => handleSelectPyqMode('paper')}
+                title="Attend Full Question Papers (QP Code-wise)"
+              >
+                <span className="pyq-mode-btn-label">Qn Paper-wise</span>
+                <span className="pyq-mode-btn-count">{currentYearPapers.length} Papers</span>
+              </button>
             </div>
           </div>
         </div>
@@ -2008,6 +2112,8 @@ export default function App() {
                   <span className="topic-icon">
                     {topic.id === 'all' ? (
                       <TargetIcon size={16} />
+                    ) : String(topic.id).startsWith('qp:') ? (
+                      <FileTextIcon size={15} />
                     ) : (
                       <span className="topic-accent-dot" />
                     )}
@@ -2281,21 +2387,46 @@ export default function App() {
 
                   {/* PYQ Year Switcher Tabs inside dropdown */}
                   {activeSubject === 'pyq' && (
-                    <div className="dropdown-year-switcher">
-                      <span className="dropdown-year-title">Exam Year:</span>
-                      <div className="dropdown-year-chips">
-                        {PYQ_YEARS.map(yr => (
-                          <button
-                            key={yr.id}
-                            type="button"
-                            className={`dropdown-year-chip ${selectedYear === yr.id ? 'active' : ''}`}
-                            onClick={() => setSelectedYear(yr.id)}
-                          >
-                            {yr.id}
-                          </button>
-                        ))}
+                    <>
+                      <div className="dropdown-year-switcher">
+                        <span className="dropdown-year-title">Exam Year:</span>
+                        <div className="dropdown-year-chips">
+                          {PYQ_YEARS.map(yr => (
+                            <button
+                              key={yr.id}
+                              type="button"
+                              className={`dropdown-year-chip ${selectedYear === yr.id ? 'active' : ''}`}
+                              onClick={() => {
+                                setSelectedYear(yr.id);
+                                if (pyqViewMode === 'paper') {
+                                  const firstPaper = (PYQ_PAPER_TOPICS_BY_YEAR[yr.id] || [])[0]?.id || 'all';
+                                  setSelectedTopic(firstPaper);
+                                  setViewMode('quiz');
+                                }
+                              }}
+                            >
+                              {yr.id}
+                            </button>
+                          ))}
+                        </div>
                       </div>
-                    </div>
+                      <div className="dropdown-ca-switcher">
+                        <button
+                          type="button"
+                          className={`dropdown-ca-chip ${pyqViewMode === 'topic' ? 'active' : ''}`}
+                          onClick={() => handleSelectPyqMode('topic')}
+                        >
+                          Topic-wise ({PYQ_TOPICS.length - 1})
+                        </button>
+                        <button
+                          type="button"
+                          className={`dropdown-ca-chip ${pyqViewMode === 'paper' ? 'active' : ''}`}
+                          onClick={() => handleSelectPyqMode('paper')}
+                        >
+                          Qn Paper-wise ({currentYearPapers.length})
+                        </button>
+                      </div>
+                    </>
                   )}
 
                   {/* Current Affairs Switcher Tabs inside dropdown */}
@@ -2325,8 +2456,8 @@ export default function App() {
                   )}
 
                   <div className="dropdown-options-list">
-                    {/* All Topics */}
-                    {(() => {
+                    {/* All Topics (hidden in PYQ Paper-wise mode) */}
+                    {!(activeSubject === 'pyq' && pyqViewMode === 'paper') && (() => {
                       const { solved, total } = getTopicCounts('all');
                       const progressPercent = total > 0 ? Math.min(100, Math.max(solved > 0 ? 3 : 0, (solved / total) * 100)) : 0;
                       return (
@@ -2360,15 +2491,15 @@ export default function App() {
 
                     <div className="dropdown-section-label">
                       {activeSubject === 'english'
-                        ? 'General English'
+                        ? 'General English Topics'
                         : activeSubject === 'pyq'
-                        ? 'PYQ'
+                        ? (pyqViewMode === 'paper' ? `${selectedYear} Question Papers` : 'PYQ Topics')
                         : activeSubject === 'current_affairs'
                         ? (caViewMode === 'topic' ? 'Current Affairs Topics' : 'Current Affairs Capsules')
-                        : 'Malayalam'} Topics ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
+                        : 'Malayalam Topics'} ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
                     </div>
 
-                    {/* All Subject Topics */}
+                    {/* All Subject Topics / Papers */}
                     {currentSyllabusTopics.filter(t => t.id !== 'all').map(topic => {
                       const { solved, total } = getTopicCounts(topic.id);
                       const isSelected = selectedTopic === topic.id && !isRepeatOnlyMode;
@@ -2383,7 +2514,11 @@ export default function App() {
                           }}
                         >
                           <span className="opt-icon">
-                            <span className="topic-accent-dot" />
+                            {String(topic.id).startsWith('qp:') ? (
+                              <FileTextIcon size={15} />
+                            ) : (
+                              <span className="topic-accent-dot" />
+                            )}
                           </span>
                           <div className="opt-details">
                             <div className="opt-title">{topic.name}</div>
@@ -2494,7 +2629,10 @@ export default function App() {
               <div className="card-top-bar">
                 <div className="card-top-bar-left">
                   <span className="topic-badge">
-                    {currentSyllabusTopics.find(t => t.id !== 'all' && matchesTopic(currentQuestion, t.id))?.name || currentQuestion.topic || 'Practice Question'}
+                    {(activeSubject === 'pyq'
+                      ? PYQ_TOPICS.find(t => t.id !== 'all' && t.id === currentQuestion.topic)?.name
+                      : currentSyllabusTopics.find(t => t.id !== 'all' && matchesTopic(currentQuestion, t.id))?.name
+                    ) || currentQuestion.topic || 'Practice Question'}
                   </span>
                   {activeSubject === 'pyq' && (currentQuestion.year || currentQuestion.id) && (
                     <span className="pyq-year-badge">
@@ -2507,9 +2645,14 @@ export default function App() {
                     </span>
                   )}
                   {(activeSubject === 'pyq' || activeSubject === 'current_affairs') && currentQuestion.qp_code && (
-                    <span className="pyq-paper-code-badge" title="Capsule / Question Paper Code">
+                    <span className="pyq-paper-code-badge" title="Question Paper / Capsule Code">
                       <FileTextIcon size={12} />
-                      <span>Capsule: <strong>{currentQuestion.qp_code}</strong></span>
+                      <span>
+                        {activeSubject === 'pyq' ? 'QP:' : 'Capsule:'} <strong>{currentQuestion.qp_code}</strong>
+                        {activeSubject === 'pyq' && String(currentQuestion.id || '').match(/_q?(\d+)$/) && (
+                          <> • Qn. <strong>{String(currentQuestion.id).match(/_q?(\d+)$/)[1]}</strong></>
+                        )}
+                      </span>
                     </span>
                   )}
                   {historyPointer < questionHistoryStack.length - 1 && (
@@ -2773,7 +2916,7 @@ export default function App() {
               <div style={{ marginBottom: '1rem', color: '#10b981', display: 'flex', justifyContent: 'center' }}>
                 <TrophyIcon size={44} />
               </div>
-              <h2>Topic Completely Mastered!</h2>
+              <h2>{String(selectedTopic).startsWith('qp:') ? 'Question Paper Completed!' : 'Topic Completely Mastered!'}</h2>
               <p>Every question here has been answered correctly and all repeats are finished. Switch topics or practice another syllabus section.</p>
               <div className="empty-state-actions">
                 {!isRepeatOnlyMode && (
@@ -2786,7 +2929,7 @@ export default function App() {
                       loadNextQuestion({ reviewMode: true });
                     }}
                   >
-                    Review This Topic Again
+                    {String(selectedTopic).startsWith('qp:') ? 'Review This Paper Again' : 'Review This Topic Again'}
                   </button>
                 )}
                 <button
@@ -2794,10 +2937,18 @@ export default function App() {
                   className="next-btn"
                   onClick={() => {
                     setIsRepeatOnlyMode(false);
+                    if (activeSubject === 'pyq' && pyqViewMode === 'paper' && currentYearPapers.length > 0) {
+                      const currIdx = currentYearPapers.findIndex(p => p.id === selectedTopic);
+                      const nextPaper = currentYearPapers[(currIdx + 1) % currentYearPapers.length];
+                      if (nextPaper) {
+                        handleChooseTopic('pyq', nextPaper.id);
+                        return;
+                      }
+                    }
                     setSelectedTopic('all');
                   }}
                 >
-                  Switch to All Topics
+                  {activeSubject === 'pyq' && pyqViewMode === 'paper' ? 'Next Question Paper' : 'Switch to All Topics'}
                 </button>
               </div>
             </div>

@@ -3783,13 +3783,12 @@
   font-weight: 600;
 }
 
-/* PYQ Bottom Row with Integrated Year Dropdown */
+/* PYQ Bottom Row with Integrated Year Dropdown & Mode Switcher */
 .pyq-switch-bottom-row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.45rem;
-  padding: 0.45rem 0.6rem;
+  flex-direction: column;
+  gap: 0.42rem;
+  padding: 0.48rem 0.6rem;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   background: rgba(255, 255, 255, 0.03);
@@ -3801,9 +3800,72 @@
 }
 
 .pyq-switch-bottom-row.active {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.22), rgba(99, 102, 241, 0.22));
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(99, 102, 241, 0.18));
   border: 1px solid rgba(56, 189, 248, 0.5);
   box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+}
+
+.pyq-switch-top-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.pyq-mode-switch-row {
+  display: flex;
+  gap: 0.38rem;
+  width: 100%;
+  padding-top: 0.38rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pyq-mode-switch-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  padding: 0.36rem 0.52rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 23, 42, 0.65);
+  color: #94a3b8;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  min-width: 0;
+}
+
+.pyq-mode-switch-btn:hover {
+  background: rgba(56, 189, 248, 0.14);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: #e2e8f0;
+}
+
+.pyq-mode-switch-btn.active {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  border-color: #38bdf8;
+  color: #ffffff;
+  box-shadow: 0 3px 12px rgba(6, 182, 212, 0.35);
+}
+
+.pyq-mode-btn-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pyq-mode-btn-count {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #38bdf8;
+  white-space: nowrap;
+}
+
+.pyq-mode-switch-btn.active .pyq-mode-btn-count {
+  color: #e0f2fe;
 }
 
 .pyq-switch-btn-left {

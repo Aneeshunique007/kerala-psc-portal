@@ -764,7 +764,7 @@
       "Assertive-compound sentence"
     ],
     "answer": 1,
-    "explanation": "'He confessed that he had committed the crime' എന്ന വാക്യത്തിൽ 'He confessed' എന്ന പ്രധാന ക്ലോസും 'that he had committed the crime' എന്ന നൗൺ ക്ലോസും ഉള്ളതിനാൽ ഇത് കോംപ്ലക്സ് വാക്യമാണ് (Complex sentence)."
+    "explanation": "'He confessed that he had committed a crime' എന്ന വാക്യത്തിൽ ഒരു പ്രധാന ക്ലോസും ('He confessed') 'that' കൊണ്ട് തുടങ്ങുന്ന ഒരു ആശ്രിത ഉപവാക്യവും ('that he had committed a crime') ഉള്ളതിനാൽ ഇത് ഒരു കോംപ്ലക്സ് വാക്യമാണ് (Complex sentence)."
   },
   {
     "id": "typesent_60",
@@ -1102,7 +1102,7 @@
       "Simple sentence"
     ],
     "answer": 0,
-    "explanation": "'Although the weather was bad, we enjoyed our trip' എന്ന വാക്യത്തിൽ 'Although' എന്ന സബോർഡിനേറ്റിംഗ് കൺജങ്ഷൻ ഉള്ളതിനാൽ ഇത് ഒരു കോംപ്ലക്സ് വാക്യമാണ് (Complex sentence)."
+    "explanation": "'Although the weather was bad, the plane took off' എന്ന വാക്യത്തിൽ ഒരു പ്രധാന ക്ലോസും ('the plane took off') 'Although' എന്ന ആശ്രിത സംയോജകാവ്യയം അടങ്ങിയ സബോർഡിനേറ്റ് ക്ലോസും ('Although the weather was bad') ഉള്ളതിനാൽ ഇത് കോംപ്ലക്സ് വാക്യമാണ് (Complex sentence)."
   },
   {
     "id": "typesent_86",
@@ -1219,7 +1219,7 @@
       "Exclamatory sentence"
     ],
     "answer": 2,
-    "explanation": "'Since you are here, help me with this work' എന്ന വാക്യത്തിൽ കാരണം വ്യക്തമാക്കുന്ന 'Since' അടങ്ങിയ ആശ്രിത ക്ലോസ് ഉള്ളതിനാൽ ഇത് കോംപ്ലക്സ് വാക്യമാണ് (Complex sentence)."
+    "explanation": "'Since you are here, help me with this' എന്ന വാക്യത്തിൽ ഒരു പ്രധാന ക്ലോസും ('help me with this') 'Since' കൊണ്ട് തുടങ്ങുന്ന ആശ്രിത ക്ലോസും ഉള്ളതിനാൽ ഇത് ഒരു കോംപ്ലക്സ് വാക്യമാണ് (Complex sentence)."
   },
   {
     "id": "typesent_95",
@@ -2051,7 +2051,7 @@
       "Noun"
     ],
     "answer": 3,
-    "explanation": "'He kept a fast for two days' എന്ന വാക്യത്തിൽ 'a' എന്ന ആർട്ടിക്കിളിന് ശേഷം വരികയും 'വ്രതം / ഉപവാസം' എന്ന നാമമായി വർത്തിക്കുകയും ചെയ്യുന്നതിനാൽ ഇവിടെ 'fast' എന്നത് ഒരു നാമമാണ് (Noun)."
+    "explanation": "'He kept a fast on Monday' എന്ന വാക്യത്തിൽ 'a' എന്ന ആർട്ടിക്കിളിന് ശേഷം വരികയും 'വ്രതം / ഉപവാസം' എന്ന നാമമായി വർത്തിക്കുകയും ചെയ്യുന്നതിനാൽ ഇവിടെ 'fast' എന്നത് ഒരു നാമമാണ് (Noun)."
   },
   {
     "id": "pos_4",
@@ -2116,7 +2116,7 @@
       "Verb"
     ],
     "answer": 1,
-    "explanation": "'They drew water from a well' എന്ന വാക്യത്തിൽ കിണർ എന്ന ഭൗതിക വസ്തുവിനെ സൂചിപ്പിക്കാൻ 'a' എന്ന ആർട്ടിക്കിളിന് ശേഷം ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ 'well' ഇവിടെ ഒരു നാമമാണ് (Noun)."
+    "explanation": "'They drew water from a deep well' എന്ന വാക്യത്തിൽ കിണർ എന്ന ഭൗതിക വസ്തുവിനെ സൂചിപ്പിക്കാൻ 'a' എന്ന ആർട്ടിക്കിളിന് ശേഷം ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ 'well' ഇവിടെ ഒരു നാമമാണ് (Noun)."
   },
   {
     "id": "pos_9",
@@ -2129,7 +2129,7 @@
       "Preposition"
     ],
     "answer": 0,
-    "explanation": "'They arrived after the sun had set' എന്ന വാക്യത്തിൽ 'after' എന്നത് 'They arrived', 'the sun had set' എന്നീ രണ്ട് പൂർണ്ണ ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമായി (Conjunction) പ്രവർത്തിക്കുന്നു."
+    "explanation": "'They arrived after the show had begun' എന്ന വാക്യത്തിൽ 'after' എന്നത് 'They arrived', 'the show had begun' എന്നീ രണ്ട് പൂർണ്ണ ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമായി (Conjunction) പ്രവർത്തിക്കുന്നു."
   },
   {
     "id": "pos_10",
@@ -2168,7 +2168,7 @@
       "Conjunction"
     ],
     "answer": 3,
-    "explanation": "'Think before you speak' എന്ന വാക്യത്തിൽ 'before' എന്നത് 'Think', 'you speak' എന്നീ രണ്ട് ക്ലോസുകളെ പരസ്പരം ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമാണ് (Conjunction)."
+    "explanation": "'Think before you leap' എന്ന വാക്യത്തിൽ 'before' എന്നത് 'Think', 'you leap' എന്നീ രണ്ട് ക്ലോസുകളെ പരസ്പരം ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമാണ് (Conjunction)."
   },
   {
     "id": "pos_13",
@@ -2194,7 +2194,7 @@
       "Conjunction"
     ],
     "answer": 1,
-    "explanation": "'I have seen this before' എന്ന വാക്യത്തിൽ 'before' എന്നത് മുമ്പ് എന്ന അർത്ഥത്തിൽ 'have seen' എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന കാലവാചക ക്രിയാവിശേഷണമാണ് (Adverb of time)."
+    "explanation": "'I have seen this movie before' എന്ന വാക്യത്തിൽ 'before' എന്നത് മുമ്പ് എന്ന അർത്ഥത്തിൽ 'have seen' എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന കാലവാചക ക്രിയാവിശേഷണമാണ് (Adverb of time)."
   },
   {
     "id": "pos_15",
@@ -2272,7 +2272,7 @@
       "Verb"
     ],
     "answer": 3,
-    "explanation": "'I like apples' എന്ന വാക്യത്തിൽ 'like' എന്നത് ഇഷ്ടപ്പെടുന്നു എന്ന അർത്ഥത്തിൽ കർത്താവിന്റെ മനശാസ്ത്രപരമായ പ്രവർത്തനത്തെ കാണിക്കുന്ന സകർമ്മക ക്രിയയാണ് (Transitive Verb)."
+    "explanation": "'I like classical music' എന്ന വാക്യത്തിൽ 'like' എന്നത് ഇഷ്ടപ്പെടുന്നു എന്ന അർത്ഥത്തിൽ കർത്താവിന്റെ മനശാസ്ത്രപരമായ പ്രവർത്തനത്തെ കാണിക്കുന്ന സകർമ്മക ക്രിയയാണ് (Transitive Verb)."
   },
   {
     "id": "pos_21",
@@ -2298,7 +2298,7 @@
       "Adjective"
     ],
     "answer": 3,
-    "explanation": "'He is the right person for the job' എന്ന വാക്യത്തിൽ 'right' എന്നത് 'person' എന്ന നാമത്തെ അനുയോജ്യനായ എന്ന് വിശേഷിപ്പിക്കുന്നതിനാൽ ഇത് നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'He is the right person for this post' എന്ന വാക്യത്തിൽ 'right' എന്നത് 'person' എന്ന നാമത്തെ അനുയോജ്യനായ എന്ന് വിശേഷിപ്പിക്കുന്നതിനാൽ ഇത് നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "pos_23",
@@ -2311,7 +2311,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'He hit right on target' എന്ന വാക്യത്തിൽ 'right' എന്നത് കൃത്യമായി എന്ന അർത്ഥത്തിൽ 'on target' എന്ന പ്രിപ്പോസിഷണൽ ഫ്രെയ്സിനെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He hit the ball right into the stands' എന്ന വാക്യത്തിൽ 'right' എന്നത് കൃത്യമായി എന്ന അർത്ഥത്തിൽ 'on target' എന്ന പ്രിപ്പോസിഷണൽ ഫ്രെയ്സിനെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "pos_24",
@@ -2337,7 +2337,7 @@
       "Noun"
     ],
     "answer": 2,
-    "explanation": "'We must right the wrong' എന്ന വാക്യത്തിൽ 'must' എന്ന മോഡൽ ഓക്സിലറിക്ക് ശേഷം വന്ന് തെറ്റ് തിരുത്തുക / ശരിയാക്കുക എന്ന അർത്ഥത്തിൽ ഉപയോഗിച്ചിരിക്കുന്ന ക്രിയയാണ് (Verb)."
+    "explanation": "'We must right the wrongs' എന്ന വാക്യത്തിൽ 'must' എന്ന മോഡൽ ഓക്സിലറിക്ക് ശേഷം വന്ന് തെറ്റ് തിരുത്തുക / ശരിയാക്കുക എന്ന അർത്ഥത്തിൽ ഉപയോഗിച്ചിരിക്കുന്ന ക്രിയയാണ് (Verb)."
   },
   {
     "id": "pos_26",
@@ -2363,7 +2363,7 @@
       "Conjunction"
     ],
     "answer": 2,
-    "explanation": "'He is still waiting' എന്ന വാക്യത്തിൽ 'still' എന്നത് ഇപ്പോഴും എന്ന അർത്ഥത്തിൽ 'is waiting' എന്ന ക്രിയാരൂപത്തെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of time)."
+    "explanation": "'He is still waiting for you' എന്ന വാക്യത്തിൽ 'still' എന്നത് ഇപ്പോഴും എന്ന അർത്ഥത്തിൽ 'is waiting' എന്ന ക്രിയാരൂപത്തെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of time)."
   },
   {
     "id": "pos_28",
@@ -2376,7 +2376,7 @@
       "Noun"
     ],
     "answer": 0,
-    "explanation": "'The mother tried to still the crying child' എന്ന വാക്യത്തിൽ 'to still' എന്നത് ശാന്തനാക്കുക / നിശബ്ദനാക്കുക എന്ന അർത്ഥത്തിൽ ഇൻഫിനിറ്റീവ് ക്രിയയായി (Verb) പ്രവർത്തിക്കുന്നു."
+    "explanation": "'The mother tried to still the crying baby' എന്ന വാക്യത്തിൽ 'to still' എന്നത് ശാന്തനാക്കുക / നിശബ്ദനാക്കുക എന്ന അർത്ഥത്തിൽ ഇൻഫിനിറ്റീവ് ക്രിയയായി (Verb) പ്രവർത്തിക്കുന്നു."
   },
   {
     "id": "pos_29",
@@ -2441,7 +2441,7 @@
       "Preposition"
     ],
     "answer": 3,
-    "explanation": "'The earth revolves round the sun' എന്ന വാക്യത്തിൽ 'round' എന്നത് 'the sun' എന്ന നാമത്തിന് മുൻപ് വന്ന് ചുറ്റും എന്ന അർത്ഥത്തിൽ ഉപയോഗിച്ചിരിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'The earth moves round the sun' എന്ന വാക്യത്തിൽ 'round' എന്നത് 'the sun' എന്ന നാമത്തിന് മുൻപ് വന്ന് ചുറ്റും എന്ന അർത്ഥത്തിൽ ഉപയോഗിച്ചിരിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "pos_34",
@@ -2454,7 +2454,7 @@
       "Verb"
     ],
     "answer": 2,
-    "explanation": "'The doctor made his rounds in the hospital' എന്ന വാക്യത്തിൽ സന്ദർശനം / നിരീക്ഷണം എന്ന അർത്ഥത്തിൽ ബഹുവചനമായി വന്നിരിക്കുന്നതിനാൽ 'rounds' ഇവിടെ ഒരു നാമമാണ് (Noun)."
+    "explanation": "'The doctor went on his daily rounds' എന്ന വാക്യത്തിൽ സന്ദർശനം / നിരീക്ഷണം എന്ന അർത്ഥത്തിൽ ബഹുവചനമായി വന്നിരിക്കുന്നതിനാൽ 'rounds' ഇവിടെ ഒരു നാമമാണ് (Noun)."
   },
   {
     "id": "pos_35",
@@ -2506,7 +2506,7 @@
       "Preposition"
     ],
     "answer": 1,
-    "explanation": "'Since you are here, please help me' എന്ന വാക്യത്തിൽ 'Since' എന്നത് കാരണം കാണിച്ച് രണ്ട് ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സബോർഡിനേറ്റിംഗ് കൺജങ്ഷനാണ് (Conjunction)."
+    "explanation": "'Since you are late, you cannot enter' എന്ന വാക്യത്തിൽ 'Since' എന്നത് കാരണം കാണിച്ച് രണ്ട് ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സബോർഡിനേറ്റിംഗ് കൺജങ്ഷനാണ് (Conjunction)."
   },
   {
     "id": "pos_39",
@@ -2519,7 +2519,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'He left in 2020 and has not been seen since' എന്ന വാക്യത്തിൽ 'since' എന്നത് പിന്നീട് / അന്നുമുതൽ എന്ന അർത്ഥത്തിൽ തനിച്ചു നിന്ന് ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He left five years ago and has not been seen since' എന്ന വാക്യത്തിൽ 'since' എന്നത് പിന്നീട് / അന്നുമുതൽ എന്ന അർത്ഥത്തിൽ തനിച്ചു നിന്ന് ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "pos_40",
@@ -2558,7 +2558,7 @@
       "Adjective"
     ],
     "answer": 1,
-    "explanation": "'Read as much as you like, only do not read rubbish' എന്ന വാക്യത്തിൽ 'only' എന്നത് 'but' (എങ്കിലും) എന്ന അർത്ഥത്തിൽ രണ്ട് ക്ലോസുകളെ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Conjunction)."
+    "explanation": "'Read as much as you like, only do not copy' എന്ന വാക്യത്തിൽ 'only' എന്നത് 'but' (എങ്കിലും) എന്ന അർത്ഥത്തിൽ രണ്ട് ക്ലോസുകളെ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Conjunction)."
   },
   {
     "id": "pos_43",
@@ -2571,7 +2571,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'The prices of vegetables have gone up' എന്ന വാക്യത്തിൽ 'up' എന്നത് 'have gone' (വർദ്ധിച്ചു / ഉയർന്നു) എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'The prices have gone up' എന്ന വാക്യത്തിൽ 'up' എന്നത് 'have gone' (വർദ്ധിച്ചു / ഉയർന്നു) എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "pos_44",
@@ -2597,7 +2597,7 @@
       "Noun"
     ],
     "answer": 0,
-    "explanation": "'He is waiting on the up platform' എന്ന വാക്യത്തിൽ 'up' എന്നത് തലസ്ഥാനത്തേക്കോ പ്രധാന നഗരത്തിലേക്കോ പോകുന്ന പ്ലാറ്റ്ഫോം എന്ന അർത്ഥത്തിൽ 'platform' എന്ന നാമത്തെ വിശേഷിപ്പിക്കുന്ന Adjective ആണ്."
+    "explanation": "'He is on the up platform' എന്ന വാക്യത്തിൽ 'up' എന്നത് തലസ്ഥാനത്തേക്കോ പ്രധാന നഗരത്തിലേക്കോ പോകുന്ന പ്ലാറ്റ്ഫോം എന്ന അർത്ഥത്തിൽ 'platform' എന്ന നാമത്തെ വിശേഷിപ്പിക്കുന്ന Adjective ആണ്."
   },
   {
     "id": "pos_46",
@@ -2610,7 +2610,7 @@
       "Abstract Noun"
     ],
     "answer": 3,
-    "explanation": "'His bravery was praised by all' എന്ന വാക്യത്തിൽ 'bravery' (ധീരത) എന്നത് തൊട്ടറിയാൻ കഴിയാത്ത ഒരു ഗുണത്തെയാണ് സൂചിപ്പിക്കുന്നത്. ഗുണങ്ങൾ, അവസ്ഥകൾ, ആശയങ്ങൾ എന്നിവയുടെ പേരുകളെ അബ്സ്ട്രാക്റ്റ് നൗൺ (Abstract Noun - ഭാവനാമം) എന്ന് വിളിക്കുന്നു."
+    "explanation": "'His bravery was rewarded' എന്ന വാക്യത്തിൽ 'bravery' (ധീരത) എന്നത് തൊട്ടറിയാൻ കഴിയാത്ത ഒരു ഗുണത്തെയാണ് സൂചിപ്പിക്കുന്നത്. ഗുണങ്ങൾ, അവസ്ഥകൾ, ആശയങ്ങൾ എന്നിവയുടെ പേരുകളെ അബ്സ്ട്രാക്റ്റ് നൗൺ (Abstract Noun - ഭാവനാമം) എന്ന് വിളിക്കുന്നു."
   },
   {
     "id": "pos_47",
@@ -2649,7 +2649,7 @@
       "Demonstrative Pronoun"
     ],
     "answer": 0,
-    "explanation": "'He cut himself while shaving' എന്ന വാക്യത്തിൽ കർത്താവിന്റെ പ്രവർത്തനം കർത്താവിലേക്ക് തന്നെ തിരിച്ചെത്തുന്നതിനെ (Reflect) കാണിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ 'himself' ഇവിടെ റിഫ്ലക്സീവ് പ്രൊനൗൺ (Reflexive Pronoun) ആണ്."
+    "explanation": "'He cut himself with a knife' എന്ന വാക്യത്തിൽ കർത്താവിന്റെ പ്രവർത്തനം കർത്താവിലേക്ക് തന്നെ തിരിച്ചെത്തുന്നതിനെ (Reflect) കാണിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ 'himself' ഇവിടെ റിഫ്ലക്സീവ് പ്രൊനൗൺ (Reflexive Pronoun) ആണ്."
   },
   {
     "id": "pos_50",
@@ -2662,7 +2662,7 @@
       "Indefinite Pronoun"
     ],
     "answer": 2,
-    "explanation": "'The President himself attended the function' എന്ന വാക്യത്തിൽ 'The President' എന്ന കർത്താവിനെ കൂടുതൽ ഊന്നിപ്പറയാൻ (Emphasis) തൊട്ടടുത്തു തന്നെ ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ 'himself' ഇവിടെ എംഫാറ്റിക് പ്രൊനൗൺ (Emphatic Pronoun) ആണ്."
+    "explanation": "'The King himself gave away the prizes' എന്ന വാക്യത്തിൽ 'The President' എന്ന കർത്താവിനെ കൂടുതൽ ഊന്നിപ്പറയാൻ (Emphasis) തൊട്ടടുത്തു തന്നെ ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ 'himself' ഇവിടെ എംഫാറ്റിക് പ്രൊനൗൺ (Emphatic Pronoun) ആണ്."
   },
   {
     "id": "pos_51",
@@ -2675,7 +2675,7 @@
       "Indefinite Pronoun"
     ],
     "answer": 1,
-    "explanation": "'The boy who won the first prize is my friend' എന്ന വാക്യത്തിൽ 'who' എന്നത് തൊട്ടുമുൻപിലുള്ള 'The boy' (Antecedent) എന്ന നാമത്തോട് ബന്ധപ്പെടുത്തി ആശ്രിത ക്ലോസ് നിർമ്മിക്കുന്നതിനാൽ ഇത് റിലേറ്റീവ് പ്രൊനൗൺ (Relative Pronoun) ആണ്."
+    "explanation": "'The boy who won the race is my friend' എന്ന വാക്യത്തിൽ 'who' എന്നത് തൊട്ടുമുൻപിലുള്ള 'The boy' (Antecedent) എന്ന നാമത്തോട് ബന്ധപ്പെടുത്തി ആശ്രിത ക്ലോസ് നിർമ്മിക്കുന്നതിനാൽ ഇത് റിലേറ്റീവ് പ്രൊനൗൺ (Relative Pronoun) ആണ്."
   },
   {
     "id": "pos_52",
@@ -2688,7 +2688,7 @@
       "Interrogative Pronoun"
     ],
     "answer": 3,
-    "explanation": "'Who wrote this book?' എന്ന വാക്യത്തിൽ നേരിട്ട് ചോദ്യം ചോദിക്കാൻ നാമത്തിന് പകരമായി ഉപയോഗിച്ചിരിക്കുന്ന സർവ്വനാമമായതിനാൽ 'Who' ഇവിടെ ഇന്ററോഗേറ്റീവ് പ്രൊനൗൺ (Interrogative Pronoun - ചോദ്യ സർവ്വനാമം) ആകുന്നു."
+    "explanation": "'Who wrote this letter?' എന്ന വാക്യത്തിൽ നേരിട്ട് ചോദ്യം ചോദിക്കാൻ നാമത്തിന് പകരമായി ഉപയോഗിച്ചിരിക്കുന്ന സർവ്വനാമമായതിനാൽ 'Who' ഇവിടെ ഇന്ററോഗേറ്റീവ് പ്രൊനൗൺ (Interrogative Pronoun - ചോദ്യ സർവ്വനാമം) ആകുന്നു."
   },
   {
     "id": "pos_53",
@@ -2701,7 +2701,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'This is my pen' എന്ന വാക്യത്തിൽ 'This' എന്നത് നാമത്തിന്റെ കൂടെയല്ലാതെ ഒറ്റയ്ക്ക് കർത്താവായി നിന്ന് വസ്തുവിനെ ചൂണ്ടിക്കാണിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ ഡെമോൺസ്ട്രേറ്റീവ് പ്രൊനൗൺ (Demonstrative Pronoun) ആകുന്നു."
+    "explanation": "'This is my book' എന്ന വാക്യത്തിൽ 'This' എന്നത് നാമത്തിന്റെ കൂടെയല്ലാതെ ഒറ്റയ്ക്ക് കർത്താവായി നിന്ന് വസ്തുവിനെ ചൂണ്ടിക്കാണിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്നതിനാൽ ഡെമോൺസ്ട്രേറ്റീവ് പ്രൊനൗൺ (Demonstrative Pronoun) ആകുന്നു."
   },
   {
     "id": "pos_54",
@@ -2727,7 +2727,7 @@
       "Distributive Adjective"
     ],
     "answer": 3,
-    "explanation": "'Each boy was given a certificate' എന്ന വാക്യത്തിൽ 'Each' എന്നത് 'boy' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് ഓരോരുത്തരെയായി പ്രത്യേകം വിശേഷിപ്പിക്കുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് അഡ്ജക്റ്റീവ് (Distributive Adjective) ആകുന്നു."
+    "explanation": "'Each boy received a prize' എന്ന വാക്യത്തിൽ 'Each' എന്നത് 'boy' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് ഓരോരുത്തരെയായി പ്രത്യേകം വിശേഷിപ്പിക്കുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് അഡ്ജക്റ്റീവ് (Distributive Adjective) ആകുന്നു."
   },
   {
     "id": "pos_56",
@@ -2740,7 +2740,7 @@
       "Distributive Adjective"
     ],
     "answer": 0,
-    "explanation": "'Each of the students received an award' എന്ന വാക്യത്തിൽ 'Each' എന്നത് നാമത്തോടൊപ്പമല്ലാതെ തനിച്ചു നിന്ന് 'of' എന്ന പ്രിപ്പോസിഷന് മുൻപ് കർത്താവായി വരുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് പ്രൊനൗൺ (Distributive Pronoun) ആകുന്നു."
+    "explanation": "'Each of the boys received a prize' എന്ന വാക്യത്തിൽ 'Each' എന്നത് നാമത്തോടൊപ്പമല്ലാതെ തനിച്ചു നിന്ന് 'of' എന്ന പ്രിപ്പോസിഷന് മുൻപ് കർത്താവായി വരുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് പ്രൊനൗൺ (Distributive Pronoun) ആകുന്നു."
   },
   {
     "id": "pos_57",
@@ -2753,7 +2753,7 @@
       "Distributive Pronoun"
     ],
     "answer": 3,
-    "explanation": "'Neither of the accusations is true' എന്ന വാക്യത്തിൽ 'Neither' എന്നത് രണ്ടിൽ ഒന്നുപോലുമല്ല എന്ന അർത്ഥത്തിൽ തനിച്ചു നിന്ന് സർവ്വനാമമായി പ്രവർത്തിക്കുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് പ്രൊനൗൺ (Distributive Pronoun) ആകുന്നു."
+    "explanation": "'Neither of them was present' എന്ന വാക്യത്തിൽ 'Neither' എന്നത് രണ്ടിൽ ഒന്നുപോലുമല്ല എന്ന അർത്ഥത്തിൽ തനിച്ചു നിന്ന് സർവ്വനാമമായി പ്രവർത്തിക്കുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് പ്രൊനൗൺ (Distributive Pronoun) ആകുന്നു."
   },
   {
     "id": "pos_58",
@@ -2766,7 +2766,7 @@
       "Adverb"
     ],
     "answer": 2,
-    "explanation": "'There are trees on neither side of the road' എന്ന വാക്യത്തിൽ 'neither' എന്നത് 'side' എന്ന നാമത്തിന് മുൻപ് വന്ന് അതിനെ വിശേഷിപ്പിക്കുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് അഡ്ജക്റ്റീവ് (Distributive Adjective) ആകുന്നു."
+    "explanation": "'Neither side won' എന്ന വാക്യത്തിൽ 'neither' എന്നത് 'side' എന്ന നാമത്തിന് മുൻപ് വന്ന് അതിനെ വിശേഷിപ്പിക്കുന്നതിനാൽ ഡിസ്ട്രിബ്യൂട്ടീവ് അഡ്ജക്റ്റീവ് (Distributive Adjective) ആകുന്നു."
   },
   {
     "id": "pos_59",
@@ -2779,7 +2779,7 @@
       "Adjective"
     ],
     "answer": 0,
-    "explanation": "'He is neither honest nor hardworking' എന്ന വാക്യത്തിൽ 'Neither ... nor ...' എന്നത് തുല്യ പ്രാധാന്യമുള്ള രണ്ട് വിശേഷണങ്ങളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന കോറിലേറ്റീവ് കൺജങ്ഷൻ (Correlative Conjunction) ആയി പ്രവർത്തിക്കുന്നു."
+    "explanation": "'He is neither wise nor honest' എന്ന വാക്യത്തിൽ 'Neither ... nor ...' എന്നത് തുല്യ പ്രാധാന്യമുള്ള രണ്ട് വിശേഷണങ്ങളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന കോറിലേറ്റീവ് കൺജങ്ഷൻ (Correlative Conjunction) ആയി പ്രവർത്തിക്കുന്നു."
   },
   {
     "id": "pos_60",
@@ -2805,7 +2805,7 @@
       "Indefinite Adjective"
     ],
     "answer": 2,
-    "explanation": "'Some were born great, some achieve greatness' എന്ന വാക്യത്തിൽ 'Some' എന്നത് നാമത്തിന്റെ അകമ്പടിയില്ലാതെ വാക്യത്തിലെ കർത്താവായി തനിച്ചു നിൽക്കുന്നതിനാൽ ഇൻഡെഫിനിറ്റ് പ്രൊനൗൺ (Indefinite Pronoun) ആകുന്നു."
+    "explanation": "'Some were killed, others wounded' എന്ന വാക്യത്തിൽ 'Some' എന്നത് നാമത്തിന്റെ അകമ്പടിയില്ലാതെ വാക്യത്തിലെ കർത്താവായി തനിച്ചു നിൽക്കുന്നതിനാൽ ഇൻഡെഫിനിറ്റ് പ്രൊനൗൺ (Indefinite Pronoun) ആകുന്നു."
   },
   {
     "id": "pos_62",
@@ -2831,7 +2831,7 @@
       "Conjunction"
     ],
     "answer": 2,
-    "explanation": "'Hurrah! We have won the championship' എന്ന വാക്യത്തിൽ 'Hurrah!' എന്നത് അതിയായ സന്തോഷവും ആഹ്ലാദവും പ്രകടിപ്പിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്ന പദമായതിനാൽ ഇത് ഇന്റർജക്ഷൻ (Interjection) ആകുന്നു."
+    "explanation": "'Hurrah! It' എന്ന വാക്യത്തിൽ 'Hurrah!' എന്നത് അതിയായ സന്തോഷവും ആഹ്ലാദവും പ്രകടിപ്പിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്ന പദമായതിനാൽ ഇത് ഇന്റർജക്ഷൻ (Interjection) ആകുന്നു."
   },
   {
     "id": "pos_64",
@@ -2844,7 +2844,7 @@
       "Adverb"
     ],
     "answer": 2,
-    "explanation": "'He is a better player than his brother' എന്ന വാക്യത്തിൽ 'better' എന്നത് 'player' എന്ന നാമത്തെ ഗുണപരമായി വിശേഷിപ്പിക്കുന്ന കംപാരറ്റീവ് നാമവിശേഷണമാണ് (Comparative Adjective)."
+    "explanation": "'He is a better player than me' എന്ന വാക്യത്തിൽ 'better' എന്നത് 'player' എന്ന നാമത്തെ ഗുണപരമായി വിശേഷിപ്പിക്കുന്ന കംപാരറ്റീവ് നാമവിശേഷണമാണ് (Comparative Adjective)."
   },
   {
     "id": "pos_65",
@@ -2857,7 +2857,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'He plays better than anyone else' എന്ന വാക്യത്തിൽ 'better' എന്നത് 'plays' (കളിക്കുന്നു) എന്ന ക്രിയയെ എങ്ങനെ കളിക്കുന്നു എന്ന് വിശേഷിപ്പിക്കുന്നതിനാൽ ഇത് ക്രിയാവിശേഷണമാണ് (Adverb of manner)."
+    "explanation": "'He plays better than before' എന്ന വാക്യത്തിൽ 'better' എന്നത് 'plays' (കളിക്കുന്നു) എന്ന ക്രിയയെ എങ്ങനെ കളിക്കുന്നു എന്ന് വിശേഷിപ്പിക്കുന്നതിനാൽ ഇത് ക്രിയാവിശേഷണമാണ് (Adverb of manner)."
   },
   {
     "id": "pos_66",
@@ -2870,7 +2870,7 @@
       "Adverb"
     ],
     "answer": 1,
-    "explanation": "'You should better your condition through hard work' എന്ന വാക്യത്തിൽ 'should' എന്ന മോഡൽ ക്രിയയ്ക്ക് ശേഷം വന്ന് മെച്ചപ്പെടുത്തുക എന്ന പ്രവർത്തനത്തെ കുറിക്കുന്നതിനാൽ 'better' ഇവിടെ ക്രിയയാണ് (Verb)."
+    "explanation": "'You should better your previous score' എന്ന വാക്യത്തിൽ 'should' എന്ന മോഡൽ ക്രിയയ്ക്ക് ശേഷം വന്ന് മെച്ചപ്പെടുത്തുക എന്ന പ്രവർത്തനത്തെ കുറിക്കുന്നതിനാൽ 'better' ഇവിടെ ക്രിയയാണ് (Verb)."
   },
   {
     "id": "pos_67",
@@ -2896,7 +2896,7 @@
       "Noun"
     ],
     "answer": 0,
-    "explanation": "'There is little hope of recovery' എന്ന വാക്യത്തിൽ 'little' എന്നത് 'hope' (പ്രതീക്ഷ) എന്ന എണ്ണാൻ സാധിക്കാത്ത നാമത്തിന് മുൻപ് വന്ന് അളവ് കാണിക്കുന്ന വിശേഷണമാണ് (Adjective of quantity)."
+    "explanation": "'There is little hope of his recovery' എന്ന വാക്യത്തിൽ 'little' എന്നത് 'hope' (പ്രതീക്ഷ) എന്ന എണ്ണാൻ സാധിക്കാത്ത നാമത്തിന് മുൻപ് വന്ന് അളവ് കാണിക്കുന്ന വിശേഷണമാണ് (Adjective of quantity)."
   },
   {
     "id": "pos_69",
@@ -2909,7 +2909,7 @@
       "Noun"
     ],
     "answer": 1,
-    "explanation": "'He sleeps little during the examination' എന്ന വാക്യത്തിൽ 'little' എന്നത് 'sleeps' (ഉറങ്ങുന്നു) എന്ന ക്രിയയെ എത്രമാത്രം എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of degree)."
+    "explanation": "'He sleeps very little' എന്ന വാക്യത്തിൽ 'little' എന്നത് 'sleeps' (ഉറങ്ങുന്നു) എന്ന ക്രിയയെ എത്രമാത്രം എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of degree)."
   },
   {
     "id": "pos_70",
@@ -2974,7 +2974,7 @@
       "Noun"
     ],
     "answer": 1,
-    "explanation": "'He walked past the post office' എന്ന വാക്യത്തിൽ 'past' എന്നത് 'the post office' എന്ന നാമത്തിന് മുൻപ് വന്ന് താണ്ടി / കടന്നുപോയി എന്ന ബന്ധം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'He walked past the gate' എന്ന വാക്യത്തിൽ 'past' എന്നത് 'the post office' എന്ന നാമത്തിന് മുൻപ് വന്ന് താണ്ടി / കടന്നുപോയി എന്ന ബന്ധം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "pos_75",
@@ -2987,7 +2987,7 @@
       "Preposition"
     ],
     "answer": 0,
-    "explanation": "'The bus drove past without stopping' എന്ന വാക്യത്തിൽ 'past' എന്നത് 'drove' (ഓടിച്ചുപോയി) എന്ന ക്രിയയെ വിശേഷിപ്പിച്ചു തനിച്ചു നിൽക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'The bus drove past' എന്ന വാക്യത്തിൽ 'past' എന്നത് 'drove' (ഓടിച്ചുപോയി) എന്ന ക്രിയയെ വിശേഷിപ്പിച്ചു തനിച്ചു നിൽക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "pos_76",
@@ -3000,7 +3000,7 @@
       "Noun"
     ],
     "answer": 3,
-    "explanation": "'Forget the past and focus on the future' എന്ന വാക്യത്തിൽ 'the' എന്ന ആർട്ടിക്കിളിന് ശേഷം വന്ന് കഴിഞ്ഞകാലം എന്ന അർത്ഥം നൽകുന്നതിനാൽ 'past' ഇവിടെ ഒരു നാമമാണ് (Noun)."
+    "explanation": "'Forget the past and move on' എന്ന വാക്യത്തിൽ 'the' എന്ന ആർട്ടിക്കിളിന് ശേഷം വന്ന് കഴിഞ്ഞകാലം എന്ന അർത്ഥം നൽകുന്നതിനാൽ 'past' ഇവിടെ ഒരു നാമമാണ് (Noun)."
   },
   {
     "id": "pos_77",
@@ -3013,7 +3013,7 @@
       "Noun"
     ],
     "answer": 1,
-    "explanation": "'For the past few days, it has been raining' എന്ന വാക്യത്തിൽ 'past' എന്നത് 'days' എന്ന നാമത്തെ കഴിഞ്ഞുപോയ എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'For the past three years, he worked hard' എന്ന വാക്യത്തിൽ 'past' എന്നത് 'days' എന്ന നാമത്തെ കഴിഞ്ഞുപോയ എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "pos_78",
@@ -3026,7 +3026,7 @@
       "Conjunction"
     ],
     "answer": 3,
-    "explanation": "'As he was late, he missed the morning train' എന്ന വാക്യത്തിൽ 'As' എന്നത് കാരണം കാണിച്ചുകൊണ്ട് രണ്ട് ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമാണ് (Conjunction of reason)."
+    "explanation": "'As he was tired, he went to sleep' എന്ന വാക്യത്തിൽ 'As' എന്നത് കാരണം കാണിച്ചുകൊണ്ട് രണ്ട് ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമാണ് (Conjunction of reason)."
   },
   {
     "id": "pos_79",
@@ -3039,7 +3039,7 @@
       "Adverb"
     ],
     "answer": 2,
-    "explanation": "'She works as a registered nurse in this hospital' എന്ന വാക്യത്തിൽ 'as' എന്നത് 'a nurse' എന്ന നാമത്തിന് മുൻപ് വന്ന് പദവി കാണിക്കുന്ന പ്രിപ്പോസിഷനായി (Preposition) പ്രവർത്തിക്കുന്നു."
+    "explanation": "'She works as a nurse' എന്ന വാക്യത്തിൽ 'as' എന്നത് 'a nurse' എന്ന നാമത്തിന് മുൻപ് വന്ന് പദവി കാണിക്കുന്ന പ്രിപ്പോസിഷനായി (Preposition) പ്രവർത്തിക്കുന്നു."
   },
   {
     "id": "pos_80",
@@ -3065,7 +3065,7 @@
       "Preposition"
     ],
     "answer": 3,
-    "explanation": "'I bought this novel for fifty rupees' എന്ന വാക്യത്തിൽ 'for' എന്നത് 'fifty rupees' എന്ന നാമത്തിന് മുൻപ് വന്ന് വിനിമയ മൂല്യം വ്യക്തമാക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'I bought this pen for ten rupees' എന്ന വാക്യത്തിൽ 'for' എന്നത് 'fifty rupees' എന്ന നാമത്തിന് മുൻപ് വന്ന് വിനിമയ മൂല്യം വ്യക്തമാക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "pos_82",
@@ -3078,7 +3078,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'I cannot go, for it is raining heavily' എന്ന വാക്യത്തിൽ 'for' എന്നത് കാരണം (because) വ്യക്തമാക്കി രണ്ട് സ്വതന്ത്ര ക്ലോസുകളെ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Coordinating Conjunction)."
+    "explanation": "'I cannot go, for it is raining' എന്ന വാക്യത്തിൽ 'for' എന്നത് കാരണം (because) വ്യക്തമാക്കി രണ്ട് സ്വതന്ത്ര ക്ലോസുകളെ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Coordinating Conjunction)."
   },
   {
     "id": "pos_83",
@@ -3091,7 +3091,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'The birds flew over the high wall' എന്ന വാക്യത്തിൽ 'over' എന്നത് 'the high wall' എന്ന നാമത്തിന് മുൻപ് വന്ന് മീതെ എന്ന സ്ഥാനം കുറിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'The bird flew over the roof' എന്ന വാക്യത്തിൽ 'over' എന്നത് 'the high wall' എന്ന നാമത്തിന് മുൻപ് വന്ന് മീതെ എന്ന സ്ഥാനം കുറിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "pos_84",
@@ -3117,7 +3117,7 @@
       "Preposition"
     ],
     "answer": 2,
-    "explanation": "'Read the instructions over again carefully' എന്ന വാക്യത്തിൽ 'over' എന്നത് വീണ്ടും എന്ന അർത്ഥത്തിൽ 'read' എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'Read this document over carefully' എന്ന വാക്യത്തിൽ 'over' എന്നത് വീണ്ടും എന്ന അർത്ഥത്തിൽ 'read' എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "pos_86",
@@ -3130,7 +3130,7 @@
       "Noun"
     ],
     "answer": 2,
-    "explanation": "'The children are playing in the garden' എന്ന വാക്യത്തിൽ 'in' എന്നത് 'the garden' എന്ന നാമത്തിന് മുൻപ് വന്ന് ഉള്ളിൽ എന്ന സ്ഥാനം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'He is in the garden' എന്ന വാക്യത്തിൽ 'in' എന്നത് 'the garden' എന്ന നാമത്തിന് മുൻപ് വന്ന് ഉള്ളിൽ എന്ന സ്ഥാനം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "pos_87",
@@ -3143,7 +3143,7 @@
       "Adjective"
     ],
     "answer": 0,
-    "explanation": "'Please come in and have a seat' എന്ന വാക്യത്തിൽ 'in' എന്നത് 'come' (വരൂ) എന്ന ക്രിയയെ അകത്തേക്ക് എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of place)."
+    "explanation": "'Please come in' എന്ന വാക്യത്തിൽ 'in' എന്നത് 'come' (വരൂ) എന്ന ക്രിയയെ അകത്തേക്ക് എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of place)."
   },
   {
     "id": "pos_88",
@@ -3156,7 +3156,7 @@
       "Noun"
     ],
     "answer": 3,
-    "explanation": "'He has an in with the ruling political party' എന്ന വാക്യത്തിൽ 'an in' എന്നത് സ്വാധീനം / ബന്ധം എന്ന അർത്ഥത്തിൽ ആർട്ടിക്കിളിന് ശേഷം ഉപയോഗിച്ചിരിക്കുന്ന നാമമാണ് (Noun)."
+    "explanation": "'He has an in with the management' എന്ന വാക്യത്തിൽ 'an in' എന്നത് സ്വാധീനം / ബന്ധം എന്ന അർത്ഥത്തിൽ ആർട്ടിക്കിളിന് ശേഷം ഉപയോഗിച്ചിരിക്കുന്ന നാമമാണ് (Noun)."
   },
   {
     "id": "pos_89",
@@ -3169,7 +3169,7 @@
       "Adjective"
     ],
     "answer": 1,
-    "explanation": "'Drink plenty of water every single day' എന്ന വാക്യത്തിൽ 'water' എന്നത് ഒരു ദ്രവ്യത്തെ സൂചിപ്പിക്കുന്ന മെറ്റീരിയൽ നൗൺ (Material Noun - ദ്രവ്യനാമം) ആണ്."
+    "explanation": "'Drink pure water' എന്ന വാക്യത്തിൽ 'water' എന്നത് ഒരു ദ്രവ്യത്തെ സൂചിപ്പിക്കുന്ന മെറ്റീരിയൽ നൗൺ (Material Noun - ദ്രവ്യനാമം) ആണ്."
   },
   {
     "id": "pos_90",
@@ -3182,7 +3182,7 @@
       "Noun"
     ],
     "answer": 2,
-    "explanation": "'Water the plants every morning' എന്ന വാക്യത്തിൽ ചെടികൾക്ക് നനയ്ക്കുക എന്ന പ്രവർത്തനത്തെ സൂചിപ്പിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്ന ആജ്ഞാ ക്രിയയാണ് (Imperative Verb)."
+    "explanation": "'Water the plants daily' എന്ന വാക്യത്തിൽ ചെടികൾക്ക് നനയ്ക്കുക എന്ന പ്രവർത്തനത്തെ സൂചിപ്പിക്കാൻ ഉപയോഗിച്ചിരിക്കുന്ന ആജ്ഞാ ക്രിയയാണ് (Imperative Verb)."
   },
   {
     "id": "pos_91",
@@ -3195,7 +3195,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'He carried a water bottle during the journey' എന്ന വാക്യത്തിൽ 'water' എന്നത് 'bottle' എന്ന നാമത്തെ വിശേഷിപ്പിക്കുന്ന നൗൺ അഡ്ജക്റ്റ് / നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'He carries a water bottle' എന്ന വാക്യത്തിൽ 'water' എന്നത് 'bottle' എന്ന നാമത്തെ വിശേഷിപ്പിക്കുന്ന നൗൺ അഡ്ജക്റ്റ് / നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "pos_92",
@@ -3208,7 +3208,7 @@
       "Noun"
     ],
     "answer": 3,
-    "explanation": "'Iron is an essential metal for industries' എന്ന വാക്യത്തിൽ 'Iron' എന്നത് ഒരു ലോഹത്തിന്റെ പേരായതിനാൽ ഇത് മെറ്റീരിയൽ നൗൺ (Material Noun) ആകുന്നു."
+    "explanation": "'Iron is a useful metal' എന്ന വാക്യത്തിൽ 'Iron' എന്നത് ഒരു ലോഹത്തിന്റെ പേരായതിനാൽ ഇത് മെറ്റീരിയൽ നൗൺ (Material Noun) ആകുന്നു."
   },
   {
     "id": "pos_93",
@@ -3221,7 +3221,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'Iron your clothes before going to the interview' എന്ന വാക്യത്തിൽ വസ്ത്രങ്ങൾ ഇസ്തിരിയിടുക എന്ന പ്രവർത്തിയെ കുറിക്കുന്ന ക്രിയയാണ് (Verb)."
+    "explanation": "'Iron your clothes properly' എന്ന വാക്യത്തിൽ വസ്ത്രങ്ങൾ ഇസ്തിരിയിടുക എന്ന പ്രവർത്തിയെ കുറിക്കുന്ന ക്രിയയാണ് (Verb)."
   },
   {
     "id": "pos_94",
@@ -3234,7 +3234,7 @@
       "Noun"
     ],
     "answer": 1,
-    "explanation": "'He is a leader with an iron will' എന്ന വാക്യത്തിൽ 'iron' എന്നത് 'will' (ഇച്ഛാശക്തി) എന്ന നാമത്തെ ഉറച്ച / ദൃഢമായ എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'He has an iron will' എന്ന വാക്യത്തിൽ 'iron' എന്നത് 'will' (ഇച്ഛാശക്തി) എന്ന നാമത്തെ ഉറച്ച / ദൃഢമായ എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "pos_95",
@@ -3247,7 +3247,7 @@
       "Verb"
     ],
     "answer": 2,
-    "explanation": "'He works hard from dawn to dusk' എന്ന വാക്യത്തിൽ 'hard' എന്നത് 'works' (ജോലി ചെയ്യുന്നു) എന്ന ക്രിയയെ കഠിനമായി എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of manner)."
+    "explanation": "'He works hard' എന്ന വാക്യത്തിൽ 'hard' എന്നത് 'works' (ജോലി ചെയ്യുന്നു) എന്ന ക്രിയയെ കഠിനമായി എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of manner)."
   },
   {
     "id": "pos_96",
@@ -3273,7 +3273,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'He is an early riser who walks every day' എന്ന വാക്യത്തിൽ 'early' എന്നത് 'riser' എന്ന നാമത്തെ നേരത്തെ എഴുന്നേൽക്കുന്ന എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'He is an early riser' എന്ന വാക്യത്തിൽ 'early' എന്നത് 'riser' എന്ന നാമത്തെ നേരത്തെ എഴുന്നേൽക്കുന്ന എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "pos_98",
@@ -3286,7 +3286,7 @@
       "Verb"
     ],
     "answer": 0,
-    "explanation": "'He woke up early to catch the first bus' എന്ന വാക്യത്തിൽ 'early' എന്നത് 'woke up' എന്ന ക്രിയയെ നേരത്തെ എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of time)."
+    "explanation": "'He woke up early' എന്ന വാക്യത്തിൽ 'early' എന്നത് 'woke up' എന്ന ക്രിയയെ നേരത്തെ എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of time)."
   },
   {
     "id": "pos_99",
@@ -3299,7 +3299,7 @@
       "Verb"
     ],
     "answer": 1,
-    "explanation": "'He arrived late for the important meeting' എന്ന വാക്യത്തിൽ 'late' എന്നത് 'arrived' (എത്തിച്ചേർന്നു) എന്ന ക്രിയയെ വൈകി എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He arrived late' എന്ന വാക്യത്തിൽ 'late' എന്നത് 'arrived' (എത്തിച്ചേർന്നു) എന്ന ക്രിയയെ വൈകി എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "pos_100",
@@ -3312,7 +3312,7 @@
       "Adverb"
     ],
     "answer": 2,
-    "explanation": "'He is late for the morning assembly' എന്ന വാക്യത്തിൽ 'late' എന്നത് കർത്താവായ വ്യക്തിയുടെ അവസ്ഥയെ വിശേഷിപ്പിക്കുന്ന പ്രെഡിക്കേറ്റീവ് നാമവിശേഷണമാണ് (Predicate Adjective)."
+    "explanation": "'He is late for the meeting' എന്ന വാക്യത്തിൽ 'late' എന്നത് കർത്താവായ വ്യക്തിയുടെ അവസ്ഥയെ വിശേഷിപ്പിക്കുന്ന പ്രെഡിക്കേറ്റീവ് നാമവിശേഷണമാണ് (Predicate Adjective)."
   },
   {
     "id": "pos_101",
@@ -3325,7 +3325,7 @@
       "Adverb"
     ],
     "answer": 2,
-    "explanation": "'He reads a daily newspaper every morning' എന്ന വാക്യത്തിൽ 'daily' എന്നത് 'newspaper' എന്ന നാമത്തെ പ്രതിദിന എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'He reads a daily newspaper' എന്ന വാക്യത്തിൽ 'daily' എന്നത് 'newspaper' എന്ന നാമത്തെ പ്രതിദിന എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "pos_102",
@@ -3338,7 +3338,7 @@
       "Noun"
     ],
     "answer": 1,
-    "explanation": "'He exercises daily to stay fit and healthy' എന്ന വാക്യത്തിൽ 'daily' എന്നത് 'exercises' എന്ന ക്രിയയെ ദിവസവും എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of frequency)."
+    "explanation": "'He exercises daily' എന്ന വാക്യത്തിൽ 'daily' എന്നത് 'exercises' എന്ന ക്രിയയെ ദിവസവും എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of frequency)."
   },
   {
     "id": "pos_103",
@@ -3351,7 +3351,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'Hold fast to your noble principles' എന്ന വാക്യത്തിൽ 'fast' എന്നത് 'hold' (ഉറപ്പിച്ചു പിടിക്കുക) എന്ന ക്രിയയെ ദൃഢമായി എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'Hold fast to your principles' എന്ന വാക്യത്തിൽ 'fast' എന്നത് 'hold' (ഉറപ്പിച്ചു പിടിക്കുക) എന്ന ക്രിയയെ ദൃഢമായി എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "pos_104",
@@ -3364,7 +3364,7 @@
       "Demonstrative Pronoun"
     ],
     "answer": 3,
-    "explanation": "'That is the historical monument I visited' എന്ന വാക്യത്തിൽ 'That' എന്നത് നാമത്തിന് പകരമായി ഒറ്റയ്ക്ക് കർത്താവായി നിൽക്കുന്ന ഡെമോൺസ്ട്രേറ്റീവ് പ്രൊനൗൺ (Demonstrative Pronoun) ആണ്."
+    "explanation": "'That is my house' എന്ന വാക്യത്തിൽ 'That' എന്നത് നാമത്തിന് പകരമായി ഒറ്റയ്ക്ക് കർത്താവായി നിൽക്കുന്ന ഡെമോൺസ്ട്രേറ്റീവ് പ്രൊനൗൺ (Demonstrative Pronoun) ആണ്."
   },
   {
     "id": "pos_105",
@@ -3377,7 +3377,7 @@
       "Conjunction"
     ],
     "answer": 0,
-    "explanation": "'That boy secured the highest marks' എന്ന വാക്യത്തിൽ 'That' എന്നത് 'boy' എന്ന നാമത്തിന് മുൻപ് വന്ന് ആ കുട്ടി എന്ന് നിർദ്ദേശിച്ചു വിശേഷിപ്പിക്കുന്ന ഡെമോൺസ്ട്രേറ്റീവ് അഡ്ജക്റ്റീവ് ആണ്."
+    "explanation": "'That boy is my brother' എന്ന വാക്യത്തിൽ 'That' എന്നത് 'boy' എന്ന നാമത്തിന് മുൻപ് വന്ന് ആ കുട്ടി എന്ന് നിർദ്ദേശിച്ചു വിശേഷിപ്പിക്കുന്ന ഡെമോൺസ്ട്രേറ്റീവ് അഡ്ജക്റ്റീവ് ആണ്."
   },
   {
     "id": "parts_of_speech_106",
@@ -3390,7 +3390,7 @@
       "Preposition"
     ],
     "answer": 3,
-    "explanation": "'He walked about the busy town' എന്ന വാക്യത്തിൽ 'about' എന്നത് 'the busy town' എന്ന നാമത്തിന് മുൻപ് വന്ന് ചുറ്റിലും എന്ന സ്ഥാനം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'He walked about the town' എന്ന വാക്യത്തിൽ 'about' എന്നത് 'the busy town' എന്ന നാമത്തിന് മുൻപ് വന്ന് ചുറ്റിലും എന്ന സ്ഥാനം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "parts_of_speech_107",
@@ -3403,7 +3403,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'The cattle wandered about aimlessly' എന്ന വാക്യത്തിൽ 'about' എന്നത് നാമത്തിന്റെ അകമ്പടിയില്ലാതെ ചുറ്റും എന്ന് ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He wandered about aimlessly' എന്ന വാക്യത്തിൽ 'about' എന്നത് നാമത്തിന്റെ അകമ്പടിയില്ലാതെ ചുറ്റും എന്ന് ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_108",
@@ -3416,7 +3416,7 @@
       "Pronoun"
     ],
     "answer": 2,
-    "explanation": "'All men are created equal' എന്ന വാക്യത്തിൽ 'All' എന്നത് 'men' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് എല്ലാവരും എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'All men are mortal' എന്ന വാക്യത്തിൽ 'All' എന്നത് 'men' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് എല്ലാവരും എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "parts_of_speech_109",
@@ -3429,7 +3429,7 @@
       "Adverb"
     ],
     "answer": 1,
-    "explanation": "'All spoke in favour of the proposed resolution' എന്ന വാക്യത്തിൽ 'All' എന്നത് വാക്യത്തിലെ കർത്താവായി തനിച്ചു നിൽക്കുന്ന ഇൻഡെഫിനിറ്റ് പ്രൊനൗൺ (Indefinite Pronoun) ആണ്."
+    "explanation": "'All spoke in his favor' എന്ന വാക്യത്തിൽ 'All' എന്നത് വാക്യത്തിലെ കർത്താവായി തനിച്ചു നിൽക്കുന്ന ഇൻഡെഫിനിറ്റ് പ്രൊനൗൺ (Indefinite Pronoun) ആണ്."
   },
   {
     "id": "parts_of_speech_110",
@@ -3442,7 +3442,7 @@
       "Adjective"
     ],
     "answer": 1,
-    "explanation": "'He was all alone in the deserted room' എന്ന വാക്യത്തിൽ 'all' എന്നത് തികച്ചും / പൂർണ്ണമായും എന്ന അർത്ഥത്തിൽ 'alone' എന്ന വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He was all alone in the dark' എന്ന വാക്യത്തിൽ 'all' എന്നത് തികച്ചും / പൂർണ്ണമായും എന്ന അർത്ഥത്തിൽ 'alone' എന്ന വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_111",
@@ -3455,7 +3455,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'Is there any milk left in the refrigerator?' എന്ന വാക്യത്തിൽ 'any' എന്നത് 'milk' എന്ന എണ്ണാൻ സാധിക്കാത്ത നാമത്തിന് മുൻപ് വന്ന് അളവ് കാണിക്കുന്ന വിശേഷണമാണ് (Adjective of quantity)."
+    "explanation": "'Is there any milk in the jug?' എന്ന വാക്യത്തിൽ 'any' എന്നത് 'milk' എന്ന എണ്ണാൻ സാധിക്കാത്ത നാമത്തിന് മുൻപ് വന്ന് അളവ് കാണിക്കുന്ന വിശേഷണമാണ് (Adjective of quantity)."
   },
   {
     "id": "parts_of_speech_112",
@@ -3468,7 +3468,7 @@
       "Adjective"
     ],
     "answer": 1,
-    "explanation": "'Did you see any of the famous paintings?' എന്ന വാക്യത്തിൽ 'any' എന്നത് നാമത്തോടൊപ്പമല്ലാതെ 'of' എന്ന പ്രിപ്പോസിഷന് മുൻപ് തനിച്ചു നിൽക്കുന്ന പ്രൊനൗൺ (Pronoun) ആണ്."
+    "explanation": "'Did you see any of the candidates?' എന്ന വാക്യത്തിൽ 'any' എന്നത് നാമത്തോടൊപ്പമല്ലാതെ 'of' എന്ന പ്രിപ്പോസിഷന് മുൻപ് തനിച്ചു നിൽക്കുന്ന പ്രൊനൗൺ (Pronoun) ആണ്."
   },
   {
     "id": "parts_of_speech_113",
@@ -3481,7 +3481,7 @@
       "Adjective"
     ],
     "answer": 2,
-    "explanation": "'Is he any better today than yesterday?' എന്ന വാക്യത്തിൽ 'any' എന്നത് അല്പമെങ്കിലും എന്ന അർത്ഥത്തിൽ 'better' എന്ന കംപാരറ്റീവ് വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'Is he any better today?' എന്ന വാക്യത്തിൽ 'any' എന്നത് അല്പമെങ്കിലും എന്ന അർത്ഥത്തിൽ 'better' എന്ന കംപാരറ്റീവ് വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_114",
@@ -3494,7 +3494,7 @@
       "Pronoun"
     ],
     "answer": 0,
-    "explanation": "'Both books were written by the same author' എന്ന വാക്യത്തിൽ 'Both' എന്നത് 'books' എന്ന നാമത്തിന് മുൻപ് വന്ന് രണ്ടും എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'Both books are interesting' എന്ന വാക്യത്തിൽ 'Both' എന്നത് 'books' എന്ന നാമത്തിന് മുൻപ് വന്ന് രണ്ടും എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "parts_of_speech_115",
@@ -3507,7 +3507,7 @@
       "Adverb"
     ],
     "answer": 1,
-    "explanation": "'Both of the candidates are equally qualified' എന്ന വാക്യത്തിൽ 'Both' എന്നത് സർവ്വനാമമായി തനിച്ചു നിന്ന് കർത്താവായി വർത്തിക്കുന്നതിനാൽ പ്രൊനൗൺ (Pronoun) ആണ്."
+    "explanation": "'Both of them attended the function' എന്ന വാക്യത്തിൽ 'Both' എന്നത് സർവ്വനാമമായി തനിച്ചു നിന്ന് കർത്താവായി വർത്തിക്കുന്നതിനാൽ പ്രൊനൗൺ (Pronoun) ആണ്."
   },
   {
     "id": "parts_of_speech_116",
@@ -3520,7 +3520,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'He is both intelligent and hardworking' എന്ന വാക്യത്തിൽ 'Both ... and ...' എന്നത് രണ്ട് വിശേഷണങ്ങളെ ബന്ധിപ്പിക്കുന്ന കോറിലേറ്റീവ് കൺജങ്ഷൻ (Correlative Conjunction) ആണ്."
+    "explanation": "'He is both wise and humble' എന്ന വാക്യത്തിൽ 'Both ... and ...' എന്നത് രണ്ട് വിശേഷണങ്ങളെ ബന്ധിപ്പിക്കുന്ന കോറിലേറ്റീവ് കൺജങ്ഷൻ (Correlative Conjunction) ആണ്."
   },
   {
     "id": "parts_of_speech_117",
@@ -3533,7 +3533,7 @@
       "Adjective"
     ],
     "answer": 3,
-    "explanation": "'There is enough food for all the guests' എന്ന വാക്യത്തിൽ 'enough' എന്നത് 'food' (ഭക്ഷണം) എന്ന നാമത്തിന് മുൻപ് വന്ന് ആവശ്യത്തിന് എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'There is enough food for everyone' എന്ന വാക്യത്തിൽ 'enough' എന്നത് 'food' (ഭക്ഷണം) എന്ന നാമത്തിന് മുൻപ് വന്ന് ആവശ്യത്തിന് എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "parts_of_speech_118",
@@ -3546,7 +3546,7 @@
       "Pronoun"
     ],
     "answer": 1,
-    "explanation": "'He ran fast enough to catch the speeding bus' എന്ന വാക്യത്തിൽ 'enough' എന്നത് 'fast' എന്ന ക്രിയാവിശേഷണത്തിന് ശേഷം വന്ന് അതിനെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He ran fast enough to catch the bus' എന്ന വാക്യത്തിൽ 'enough' എന്നത് 'fast' എന്ന ക്രിയാവിശേഷണത്തിന് ശേഷം വന്ന് അതിനെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_119",
@@ -3559,7 +3559,7 @@
       "Adverb"
     ],
     "answer": 2,
-    "explanation": "'He gave me half an apple during lunch' എന്ന വാക്യത്തിൽ 'half' എന്നത് 'an apple' എന്ന നാമത്തിന്റെ പകുതി എന്ന് കാണിക്കുന്ന നാമവിശേഷണമാണ് (Adjective / Fraction Determiner)."
+    "explanation": "'He gave me half an apple' എന്ന വാക്യത്തിൽ 'half' എന്നത് 'an apple' എന്ന നാമത്തിന്റെ പകുതി എന്ന് കാണിക്കുന്ന നാമവിശേഷണമാണ് (Adjective / Fraction Determiner)."
   },
   {
     "id": "parts_of_speech_120",
@@ -3572,7 +3572,7 @@
       "Pronoun"
     ],
     "answer": 0,
-    "explanation": "'Half of the mangoes were rotten' എന്ന വാക്യത്തിൽ 'Half' എന്നത് പകുതി ഭാഗം എന്ന അർത്ഥത്തിൽ വാക്യത്തിന്റെ കർത്താവായി നിൽക്കുന്ന നാമരൂപമാണ് (Noun / Pronoun)."
+    "explanation": "'Half of the work is completed' എന്ന വാക്യത്തിൽ 'Half' എന്നത് പകുതി ഭാഗം എന്ന അർത്ഥത്തിൽ വാക്യത്തിന്റെ കർത്താവായി നിൽക്കുന്ന നാമരൂപമാണ് (Noun / Pronoun)."
   },
   {
     "id": "parts_of_speech_121",
@@ -3585,7 +3585,7 @@
       "Noun"
     ],
     "answer": 2,
-    "explanation": "'He was half dead with severe exhaustion' എന്ന വാക്യത്തിൽ 'half' എന്നത് പകുതിയായി എന്ന അർത്ഥത്തിൽ 'dead' എന്ന വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He was half dead with exhaustion' എന്ന വാക്യത്തിൽ 'half' എന്നത് പകുതിയായി എന്ന അർത്ഥത്തിൽ 'dead' എന്ന വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_122",
@@ -3598,7 +3598,7 @@
       "Adjective"
     ],
     "answer": 3,
-    "explanation": "'We need more men to complete the project' എന്ന വാക്യത്തിൽ 'more' എന്നത് 'men' എന്ന നാമത്തിന് മുൻപ് വന്ന് കൂടുതൽ എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'We need more men for this project' എന്ന വാക്യത്തിൽ 'more' എന്നത് 'men' എന്ന നാമത്തിന് മുൻപ് വന്ന് കൂടുതൽ എന്ന് വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "parts_of_speech_123",
@@ -3611,7 +3611,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'More of the students joined the awareness rally' എന്ന വാക്യത്തിൽ 'More' എന്നത് സർവ്വനാമമായി തനിച്ചു നിന്ന് കർത്താവായി പ്രവർത്തിക്കുന്ന പ്രൊനൗൺ (Pronoun) ആണ്."
+    "explanation": "'More of them were injured' എന്ന വാക്യത്തിൽ 'More' എന്നത് സർവ്വനാമമായി തനിച്ചു നിന്ന് കർത്താവായി പ്രവർത്തിക്കുന്ന പ്രൊനൗൺ (Pronoun) ആണ്."
   },
   {
     "id": "parts_of_speech_124",
@@ -3624,7 +3624,7 @@
       "Pronoun"
     ],
     "answer": 0,
-    "explanation": "'Please speak more clearly so we can hear' എന്ന വാക്യത്തിൽ 'more' എന്നത് 'clearly' എന്ന ക്രിയാവിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന കമ്പാരിസൺ ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'Speak more clearly' എന്ന വാക്യത്തിൽ 'more' എന്നത് 'clearly' എന്ന ക്രിയാവിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന കമ്പാരിസൺ ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_125",
@@ -3637,7 +3637,7 @@
       "Adjective"
     ],
     "answer": 3,
-    "explanation": "'There is much work left to be finished' എന്ന വാക്യത്തിൽ 'much' എന്നത് 'work' എന്ന എണ്ണാൻ സാധിക്കാത്ത നാമത്തിന് മുൻപ് വന്ന് അളവ് കാണിക്കുന്ന നാമവിശേഷണമാണ് (Adjective of quantity)."
+    "explanation": "'There is much work left to do' എന്ന വാക്യത്തിൽ 'much' എന്നത് 'work' എന്ന എണ്ണാൻ സാധിക്കാത്ത നാമത്തിന് മുൻപ് വന്ന് അളവ് കാണിക്കുന്ന നാമവിശേഷണമാണ് (Adjective of quantity)."
   },
   {
     "id": "parts_of_speech_126",
@@ -3650,7 +3650,7 @@
       "Noun"
     ],
     "answer": 1,
-    "explanation": "'Much of what he claimed was completely false' എന്ന വാക്യത്തിൽ 'Much' എന്നത് സർവ്വനാമമായി വാക്യത്തിലെ കർത്താവായി പ്രവർത്തിക്കുന്ന ഇൻഡെഫിനിറ്റ് പ്രൊനൗൺ (Pronoun) ആണ്."
+    "explanation": "'Much of what he said was true' എന്ന വാക്യത്തിൽ 'Much' എന്നത് സർവ്വനാമമായി വാക്യത്തിലെ കർത്താവായി പ്രവർത്തിക്കുന്ന ഇൻഡെഫിനിറ്റ് പ്രൊനൗൺ (Pronoun) ആണ്."
   },
   {
     "id": "parts_of_speech_127",
@@ -3663,7 +3663,7 @@
       "Preposition"
     ],
     "answer": 0,
-    "explanation": "'He is much better now after the treatment' എന്ന വാക്യത്തിൽ 'much' എന്നത് 'better' എന്ന കംപാരറ്റീവ് വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of degree)."
+    "explanation": "'He is much better today' എന്ന വാക്യത്തിൽ 'much' എന്നത് 'better' എന്ന കംപാരറ്റീവ് വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of degree)."
   },
   {
     "id": "parts_of_speech_128",
@@ -3676,7 +3676,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'Come near and listen attentively' എന്ന വാക്യത്തിൽ 'near' എന്നത് അടുത്തു വരൂ എന്ന അർത്ഥത്തിൽ 'come' എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of place)."
+    "explanation": "'Come near and listen to me' എന്ന വാക്യത്തിൽ 'near' എന്നത് അടുത്തു വരൂ എന്ന അർത്ഥത്തിൽ 'come' എന്ന ക്രിയയെ വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of place)."
   },
   {
     "id": "parts_of_speech_129",
@@ -3689,7 +3689,7 @@
       "Adverb"
     ],
     "answer": 2,
-    "explanation": "'His house is near the ancient temple' എന്ന വാക്യത്തിൽ 'near' എന്നത് 'the ancient temple' എന്ന നാമത്തിന് മുൻപ് വന്ന് സ്ഥാനം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'His house is near the temple' എന്ന വാക്യത്തിൽ 'near' എന്നത് 'the ancient temple' എന്ന നാമത്തിന് മുൻപ് വന്ന് സ്ഥാനം കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "parts_of_speech_130",
@@ -3702,7 +3702,7 @@
       "Preposition"
     ],
     "answer": 0,
-    "explanation": "'He is a near relation of the minister' എന്ന വാക്യത്തിൽ 'near' എന്നത് അടുത്ത ബന്ധു എന്ന അർത്ഥത്തിൽ 'relation' എന്ന നാമത്തെ വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
+    "explanation": "'He is a near relative of mine' എന്ന വാക്യത്തിൽ 'near' എന്നത് അടുത്ത ബന്ധു എന്ന അർത്ഥത്തിൽ 'relation' എന്ന നാമത്തെ വിശേഷിപ്പിക്കുന്ന നാമവിശേഷണമാണ് (Adjective)."
   },
   {
     "id": "parts_of_speech_131",
@@ -3715,7 +3715,7 @@
       "Adjective"
     ],
     "answer": 3,
-    "explanation": "'He has no sense of responsibility at all' എന്ന വാക്യത്തിൽ 'no' എന്നത് 'sense' എന്ന നാമത്തിന് മുൻപ് വന്ന് യാതൊരു എന്ന് വിശേഷിപ്പിക്കുന്ന നെഗറ്റീവ് അഡ്ജക്റ്റീവ് ആണ് (Adjective)."
+    "explanation": "'He has no sense of humor' എന്ന വാക്യത്തിൽ 'no' എന്നത് 'sense' എന്ന നാമത്തിന് മുൻപ് വന്ന് യാതൊരു എന്ന് വിശേഷിപ്പിക്കുന്ന നെഗറ്റീവ് അഡ്ജക്റ്റീവ് ആണ് (Adjective)."
   },
   {
     "id": "parts_of_speech_132",
@@ -3728,7 +3728,7 @@
       "Interjection"
     ],
     "answer": 0,
-    "explanation": "'He is no more in this world' എന്ന വാക്യത്തിൽ 'no' എന്നത് 'more' എന്ന ക്രിയാവിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'He is no more' എന്ന വാക്യത്തിൽ 'no' എന്നത് 'more' എന്ന ക്രിയാവിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_133",
@@ -3741,7 +3741,7 @@
       "Adjective"
     ],
     "answer": 0,
-    "explanation": "'No! I will never agree to such a proposal' എന്ന വാക്യത്തിൽ 'No!' എന്നത് ശക്തമായ നിഷേധവികാരത്തെ പെട്ടെന്ന് പ്രകടിപ്പിക്കുന്ന ഇന്റർജക്ഷൻ (Interjection) ആകുന്നു."
+    "explanation": "'No! I will never agree to this' എന്ന വാക്യത്തിൽ 'No!' എന്നത് ശക്തമായ നിഷേധവികാരത്തെ പെട്ടെന്ന് പ്രകടിപ്പിക്കുന്ന ഇന്റർജക്ഷൻ (Interjection) ആകുന്നു."
   },
   {
     "id": "parts_of_speech_134",
@@ -3754,7 +3754,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'I was young once, full of dreams and energy' എന്ന വാക്യത്തിൽ 'once' എന്നത് ഒരുകാലത്ത് എന്ന അർത്ഥത്തിൽ കാലത്തെ സൂചിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of time)."
+    "explanation": "'I was young once' എന്ന വാക്യത്തിൽ 'once' എന്നത് ഒരുകാലത്ത് എന്ന അർത്ഥത്തിൽ കാലത്തെ സൂചിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb of time)."
   },
   {
     "id": "parts_of_speech_135",
@@ -3767,7 +3767,7 @@
       "Conjunction"
     ],
     "answer": 3,
-    "explanation": "'Once you begin the task, you must finish it' എന്ന വാക്യത്തിൽ 'Once' എന്നത് ഒരുകാര്യം തുടങ്ങി കഴിഞ്ഞാൽ എന്ന അർത്ഥത്തിൽ രണ്ട് ക്ലോസുകളെ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Conjunction)."
+    "explanation": "'Once you begin, you must finish' എന്ന വാക്യത്തിൽ 'Once' എന്നത് ഒരുകാര്യം തുടങ്ങി കഴിഞ്ഞാൽ എന്ന അർത്ഥത്തിൽ രണ്ട് ക്ലോസുകളെ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Conjunction)."
   },
   {
     "id": "parts_of_speech_136",
@@ -3806,7 +3806,7 @@
       "Adverb"
     ],
     "answer": 1,
-    "explanation": "'The ship sailed round the stormy cape' എന്ന വാക്യത്തിൽ 'round' എന്നത് 'the stormy cape' എന്ന നാമത്തിന് മുൻപ് വന്ന് ചുറ്റും എന്ന ദിശ കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'The ship sailed round the cape' എന്ന വാക്യത്തിൽ 'round' എന്നത് 'the stormy cape' എന്ന നാമത്തിന് മുൻപ് വന്ന് ചുറ്റും എന്ന ദിശ കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "parts_of_speech_139",
@@ -3819,7 +3819,7 @@
       "Adverb"
     ],
     "answer": 3,
-    "explanation": "'The wheel turned round very smoothly' എന്ന വാക്യത്തിൽ 'round' എന്നത് 'turned' എന്ന ക്രിയയെ എങ്ങനെ തിരിഞ്ഞു എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
+    "explanation": "'The wheel turned round' എന്ന വാക്യത്തിൽ 'round' എന്നത് 'turned' എന്ന ക്രിയയെ എങ്ങനെ തിരിഞ്ഞു എന്ന് വിശേഷിപ്പിക്കുന്ന ക്രിയാവിശേഷണമാണ് (Adverb)."
   },
   {
     "id": "parts_of_speech_140",
@@ -3832,7 +3832,7 @@
       "Noun"
     ],
     "answer": 1,
-    "explanation": "'All save him were present at the meeting' എന്ന വാക്യത്തിൽ 'save' എന്നത് 'except' (ഒഴികെ) എന്ന അർത്ഥത്തിൽ പ്രൊനൗണിന് മുൻപ് വരുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'All save him were drowned' എന്ന വാക്യത്തിൽ 'save' എന്നത് 'except' (ഒഴികെ) എന്ന അർത്ഥത്തിൽ പ്രൊനൗണിന് മുൻപ് വരുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "parts_of_speech_141",
@@ -3845,7 +3845,7 @@
       "Verb"
     ],
     "answer": 3,
-    "explanation": "'Save your money for unexpected emergencies' എന്ന വാക്യത്തിൽ പണം സൂക്ഷിച്ചുവെക്കുക / മിച്ചംപിടിക്കുക എന്ന പ്രവർത്തനത്തെ സൂചിപ്പിക്കുന്ന ആജ്ഞാ ക്രിയയാണ് (Imperative Verb)."
+    "explanation": "'Save your money for emergencies' എന്ന വാക്യത്തിൽ പണം സൂക്ഷിച്ചുവെക്കുക / മിച്ചംപിടിക്കുക എന്ന പ്രവർത്തനത്തെ സൂചിപ്പിക്കുന്ന ആജ്ഞാ ക്രിയയാണ് (Imperative Verb)."
   },
   {
     "id": "parts_of_speech_142",
@@ -3858,7 +3858,7 @@
       "Conjunction"
     ],
     "answer": 0,
-    "explanation": "'I have not seen him since yesterday afternoon' എന്ന വാക്യത്തിൽ 'since' എന്നത് ഇന്നലെ മുതൽ എന്ന സമയബിന്ദുവിനെ കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'I have not seen him since yesterday' എന്ന വാക്യത്തിൽ 'since' എന്നത് ഇന്നലെ മുതൽ എന്ന സമയബിന്ദുവിനെ കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "parts_of_speech_143",
@@ -3871,7 +3871,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'Since you refuse to cooperate, I must proceed alone' എന്ന വാക്യത്തിൽ 'Since' എന്നത് കാരണം കാണിച്ച് രണ്ട് ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Conjunction)."
+    "explanation": "'Since you say so, I believe it' എന്ന വാക്യത്തിൽ 'Since' എന്നത് കാരണം കാണിച്ച് രണ്ട് ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന കൺജങ്ഷനാണ് (Conjunction)."
   },
   {
     "id": "parts_of_speech_144",
@@ -3884,7 +3884,7 @@
       "Conjunction"
     ],
     "answer": 1,
-    "explanation": "'He is so tired that he cannot even walk' എന്ന വാക്യത്തിൽ 'so' എന്നത് അത്രയധികം എന്ന അർത്ഥത്തിൽ 'tired' എന്ന വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന അഡ്വെർബ് ഓഫ് ഡിഗ്രി (Adverb) ആണ്."
+    "explanation": "'He is so tired that he fell asleep' എന്ന വാക്യത്തിൽ 'so' എന്നത് അത്രയധികം എന്ന അർത്ഥത്തിൽ 'tired' എന്ന വിശേഷണത്തെ മോഡിഫൈ ചെയ്യുന്ന അഡ്വെർബ് ഓഫ് ഡിഗ്രി (Adverb) ആണ്."
   },
   {
     "id": "parts_of_speech_145",
@@ -3897,7 +3897,7 @@
       "Pronoun"
     ],
     "answer": 1,
-    "explanation": "'He was seriously ill, and so he stayed home' എന്ന വാക്യത്തിൽ 'so' എന്നത് അതിനാൽ എന്ന അർത്ഥത്തിൽ രണ്ട് ക്ലോസുകളെ പരസ്പരം ബന്ധിപ്പിക്കുന്ന കോഓർഡിനേറ്റിംഗ് കൺജങ്ഷനാണ് (Conjunction)."
+    "explanation": "'He was ill, and so he could not come' എന്ന വാക്യത്തിൽ 'so' എന്നത് അതിനാൽ എന്ന അർത്ഥത്തിൽ രണ്ട് ക്ലോസുകളെ പരസ്പരം ബന്ധിപ്പിക്കുന്ന കോഓർഡിനേറ്റിംഗ് കൺജങ്ഷനാണ് (Conjunction)."
   },
   {
     "id": "parts_of_speech_146",
@@ -3910,7 +3910,7 @@
       "Demonstrative Pronoun"
     ],
     "answer": 3,
-    "explanation": "'That is what I was trying to explain' എന്ന വാക്യത്തിൽ 'That' എന്നത് നാമത്തിന്റെ കൂടെയല്ലാതെ വാക്യത്തിലെ കർത്താവായി തനിച്ചു നിന്ന് ചൂണ്ടിക്കാണിക്കുന്നതിനാൽ ഡെമോൺസ്ട്രേറ്റീവ് പ്രൊനൗൺ (Demonstrative Pronoun) ആണ്."
+    "explanation": "'That is what I meant' എന്ന വാക്യത്തിൽ 'That' എന്നത് നാമത്തിന്റെ കൂടെയല്ലാതെ വാക്യത്തിലെ കർത്താവായി തനിച്ചു നിന്ന് ചൂണ്ടിക്കാണിക്കുന്നതിനാൽ ഡെമോൺസ്ട്രേറ്റീവ് പ്രൊനൗൺ (Demonstrative Pronoun) ആണ്."
   },
   {
     "id": "parts_of_speech_147",
@@ -3923,7 +3923,7 @@
       "Demonstrative Pronoun"
     ],
     "answer": 0,
-    "explanation": "'That boy broke the classroom window' എന്ന വാക്യത്തിൽ 'That' എന്നത് 'boy' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് ഏത് ആൺകുട്ടി എന്ന് നിർദ്ദേശിച്ചു വിശേഷിപ്പിക്കുന്നതിനാൽ ഡെമോൺസ്ട്രേറ്റീവ് അഡ്ജക്റ്റീവ് (Demonstrative Adjective) ആണ്."
+    "explanation": "'That boy broke the window' എന്ന വാക്യത്തിൽ 'That' എന്നത് 'boy' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് ഏത് ആൺകുട്ടി എന്ന് നിർദ്ദേശിച്ചു വിശേഷിപ്പിക്കുന്നതിനാൽ ഡെമോൺസ്ട്രേറ്റീവ് അഡ്ജക്റ്റീവ് (Demonstrative Adjective) ആണ്."
   },
   {
     "id": "parts_of_speech_148",
@@ -3936,7 +3936,7 @@
       "Pronoun"
     ],
     "answer": 2,
-    "explanation": "'He said that he was not feeling well' എന്ന വാക്യത്തിൽ 'that' എന്നത് റിപ്പോർട്ടിംഗ് ക്ലോസിനെയും നൗൺ ക്ലോസിനെയും പരസ്പരം ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമായി (Conjunction) പ്രവർത്തിക്കുന്നു."
+    "explanation": "'He said that he was busy' എന്ന വാക്യത്തിൽ 'that' എന്നത് റിപ്പോർട്ടിംഗ് ക്ലോസിനെയും നൗൺ ക്ലോസിനെയും പരസ്പരം ബന്ധിപ്പിക്കുന്ന സംയോജകാവ്യയമായി (Conjunction) പ്രവർത്തിക്കുന്നു."
   },
   {
     "id": "parts_of_speech_149",
@@ -3949,7 +3949,7 @@
       "Conjunction"
     ],
     "answer": 2,
-    "explanation": "'The pen that you gave me writes very smoothly' എന്ന വാക്യത്തിൽ 'that' എന്നത് തൊട്ടുമുൻപിലുള്ള 'The pen' എന്ന പൂർവ്വപദത്തെ (Antecedent) റിലേറ്റ് ചെയ്യുന്ന റിലേറ്റീവ് പ്രൊനൗൺ (Relative Pronoun) ആണ്."
+    "explanation": "'The pen that you gave me writes well' എന്ന വാക്യത്തിൽ 'that' എന്നത് തൊട്ടുമുൻപിലുള്ള 'The pen' എന്ന പൂർവ്വപദത്തെ (Antecedent) റിലേറ്റ് ചെയ്യുന്ന റിലേറ്റീവ് പ്രൊനൗൺ (Relative Pronoun) ആണ്."
   },
   {
     "id": "parts_of_speech_150",
@@ -3975,7 +3975,7 @@
       "Preposition"
     ],
     "answer": 3,
-    "explanation": "'Wait till tomorrow before taking a decision' എന്ന വാക്യത്തിൽ 'till' എന്നത് 'tomorrow' എന്ന നാമത്തിന് മുൻപ് വന്ന് സമയം വരെ എന്ന് കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
+    "explanation": "'Wait till tomorrow' എന്ന വാക്യത്തിൽ 'till' എന്നത് 'tomorrow' എന്ന നാമത്തിന് മുൻപ് വന്ന് സമയം വരെ എന്ന് കാണിക്കുന്ന പ്രിപ്പോസിഷനാണ് (Preposition)."
   },
   {
     "id": "parts_of_speech_152",
@@ -3988,7 +3988,7 @@
       "Verb"
     ],
     "answer": 2,
-    "explanation": "'Wait till I return from the office' എന്ന വാക്യത്തിൽ 'till' എന്നത് 'Wait', 'I return' എന്നീ രണ്ട് പൂർണ്ണ ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സബോർഡിനേറ്റിംഗ് കൺജങ്ഷനാണ് (Conjunction of time)."
+    "explanation": "'Wait till I return' എന്ന വാക്യത്തിൽ 'till' എന്നത് 'Wait', 'I return' എന്നീ രണ്ട് പൂർണ്ണ ക്ലോസുകളെ തമ്മിൽ ബന്ധിപ്പിക്കുന്ന സബോർഡിനേറ്റിംഗ് കൺജങ്ഷനാണ് (Conjunction of time)."
   },
   {
     "id": "parts_of_speech_153",
@@ -4001,7 +4001,7 @@
       "Conjunction"
     ],
     "answer": 2,
-    "explanation": "'Farmers till the fertile land before sowing seeds' എന്ന വാക്യത്തിൽ നിലം ഉഴുക / കൃഷി ചെയ്യുക എന്ന അർത്ഥത്തിൽ കർത്താവ് ചെയ്യുന്ന പ്രവർത്തനത്തെ കുറിക്കുന്ന സകർമ്മക ക്രിയയാണ് (Verb)."
+    "explanation": "'Farmers till the fertile land' എന്ന വാക്യത്തിൽ നിലം ഉഴുക / കൃഷി ചെയ്യുക എന്ന അർത്ഥത്തിൽ കർത്താവ് ചെയ്യുന്ന പ്രവർത്തനത്തെ കുറിക്കുന്ന സകർമ്മക ക്രിയയാണ് (Verb)."
   },
   {
     "id": "parts_of_speech_154",
@@ -4014,7 +4014,7 @@
       "Interrogative Pronoun"
     ],
     "answer": 3,
-    "explanation": "'What is your opinion about the new policy?' എന്ന വാക്യത്തിൽ ചോദ്യം ചോദിക്കാൻ നാമത്തിന് പകരമായി തനിച്ചു നിൽക്കുന്നതിനാൽ 'What' ഇവിടെ ഇന്ററോഗേറ്റീവ് പ്രൊനൗൺ (Interrogative Pronoun) ആകുന്നു."
+    "explanation": "'What is your name?' എന്ന വാക്യത്തിൽ ചോദ്യം ചോദിക്കാൻ നാമത്തിന് പകരമായി തനിച്ചു നിൽക്കുന്നതിനാൽ 'What' ഇവിടെ ഇന്ററോഗേറ്റീവ് പ്രൊനൗൺ (Interrogative Pronoun) ആകുന്നു."
   },
   {
     "id": "parts_of_speech_155",
@@ -4027,7 +4027,7 @@
       "Adverb"
     ],
     "answer": 0,
-    "explanation": "'What book are you reading currently?' എന്ന വാക്യത്തിൽ 'What' എന്നത് 'book' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് ഏത് പുസ്തകം എന്ന് ചോദ്യരൂപത്തിൽ വിശേഷിപ്പിക്കുന്നതിനാൽ ഇന്ററോഗേറ്റീവ് അഡ്ജക്റ്റീവ് (Interrogative Adjective) ആകുന്നു."
+    "explanation": "'What book are you reading?' എന്ന വാക്യത്തിൽ 'What' എന്നത് 'book' എന്ന നാമത്തിന് തൊട്ടുമുൻപ് വന്ന് ഏത് പുസ്തകം എന്ന് ചോദ്യരൂപത്തിൽ വിശേഷിപ്പിക്കുന്നതിനാൽ ഇന്ററോഗേറ്റീവ് അഡ്ജക്റ്റീവ് (Interrogative Adjective) ആകുന്നു."
   },
   {
     "id": "sva_1",
@@ -22760,7 +22760,7 @@
       "He said that he was waiting for two hours."
     ],
     "answer": 1,
-    "explanation": "'Where have you been?' എന്ന പ്രസന്റ് പെർഫെക്റ്റ് ചോദ്യം ഇൻഡയറക്ട് സ്പീച്ചിൽ പാസ്റ്റ് പെർഫെക്റ്റായ 'where I had been' എന്ന അഫർമേറ്റീവ് ക്രമത്തിലേക്ക് മാറുന്നു."
+    "explanation": "റിപ്പോർട്ടിംഗ് വെർബ് പാസ്റ്റിലാകുമ്പോൾ (said) ഡയറക്ട് സ്പീച്ചിലെ പ്രസന്റ് പെർഫെക്റ്റ് കണ്ടിന്യൂവസ് ടെൻസായ 'have been waiting' എന്നത് ഇൻഡയറക്ട് സ്പീച്ചിൽ പാസ്റ്റ് പെർഫെക്റ്റ് കണ്ടിന്യൂവസ് ടെൻസായ 'had been waiting' ആയി മാറുന്നു ('He said that he had been waiting for two hours')."
   },
   {
     "id": "speech_43",
@@ -22773,7 +22773,7 @@
       "She said that she might come tomorrow."
     ],
     "answer": 1,
-    "explanation": "'I must finish this today' എന്നതിലെ 'must' എന്നത് 'had to' ആയും, 'this' എന്നത് 'that' ആയും, 'today' എന്നത് 'that day' ആയും മാറുന്നു. അതിനാൽ ഇത് ശരിയാണ്."
+    "explanation": "ഇൻഡയറക്ട് സ്പീച്ചിലേക്ക് മാറ്റുമ്പോൾ മോഡൽ ഓക്സിലറിയായ 'may' എന്നത് 'might' ആയും, സമയസൂചക പദമായ 'tomorrow' എന്നത് 'the next day' (അല്ലെങ്കിൽ the following day) ആയും മാറുന്നു ('She said that she might come the next day')."
   },
   {
     "id": "speech_44",
@@ -22786,7 +22786,7 @@
       "He said that water froze at zero degree Celsius."
     ],
     "answer": 1,
-    "explanation": "റിപ്പോർട്ടിംഗ് വെർബ് പ്രസന്റ് പെർഫെക്റ്റിലാകുമ്പോൾ (has said), റിപ്പോർട്ടഡ് ക്ലോസിലെ ടെൻസിന് യാതൊരു മാറ്റവും വരുത്തരുത്. അതിനാൽ 'will come' മാറ്റമില്ലാതെ തുടരുന്നു."
+    "explanation": "മാറ്റമില്ലാത്ത ശാസ്ത്രീയ സത്യങ്ങൾ (Scientific facts) അല്ലെങ്കിൽ സാർവ്വലൗകിക യാഥാർത്ഥ്യങ്ങൾ റിപ്പോർട്ട് ചെയ്യുമ്പോൾ റിപ്പോർട്ടിംഗ് വെർബ് പാസ്റ്റിലാണെങ്കിലും റിപ്പോർട്ടഡ് ക്ലോസിലെ സിമ്പിൾ പ്രസന്റ് ടെൻസിന് മാറ്റം വരുത്തരുത്. അതിനാൽ 'water freezes at zero degree Celsius' മാറ്റമില്ലാതെ തുടരുന്നു."
   },
   {
     "id": "speech_45",
@@ -22799,7 +22799,7 @@
       "The stranger asked me that which way led to station."
     ],
     "answer": 1,
-    "explanation": "'What a terrible storm!' എന്ന ആശ്ചര്യ വാക്യം ഇൻഡയറക്ട് സ്പീച്ചിൽ 'He exclaimed that it was a very terrible storm' എന്ന് മാറുന്നു."
+    "explanation": "'Wh-' ചോദ്യങ്ങൾ ഇൻഡയറക്ട് സ്പീച്ചിലേക്ക് മാറ്റുമ്പോൾ ചോദ്യവാക്ക് തന്നെ കൺജങ്ഷനായി നിൽക്കുകയും വാക്യഘടന അഫർമേറ്റീവ് ക്രമത്തിലേക്ക് മാറുകയും ചെയ്യുന്നു. സിമ്പിൾ പ്രസന്റായ 'leads' എന്നത് സിമ്പിൾ പാസ്റ്റായ 'led' ആയി മാറുന്നു ('The stranger asked me which way led to the station')."
   },
   {
     "id": "speech_46",
@@ -22812,7 +22812,7 @@
       "He forbade them not to make a noise."
     ],
     "answer": 0,
-    "explanation": "മാതാപിതാക്കളോടുള്ള വിനയപൂർവ്വമായ അപേക്ഷയിൽ 'requested' ഉപയോഗിക്കുകയും 'to buy him a bicycle' എന്ന് ഇൻഫിനിറ്റീവ് രൂപത്തിലേക്ക് മാറുകയും ചെയ്യുന്നു."
+    "explanation": "നിരോധനത്തെ സൂചിപ്പിക്കുന്ന ഇമ്പറേറ്റീവ് വാക്യങ്ങളിൽ 'forbade' (വിലക്കി) എന്ന റിപ്പോർട്ടിംഗ് വെർബ് ഉപയോഗിക്കുമ്പോൾ 'to + V1' രൂപമാണ് വരുന്നത്. 'Forbade' എന്നതിൽ തന്നെ നിഷേധാർത്ഥമുള്ളതിനാൽ വീണ്ടും 'not' ചേർക്കുന്നത് വ്യാകരണപരമായി തെറ്റാണ്. അതിനാൽ 'He forbade them to make a noise' ശരിയായ ഉത്തരമാണ്."
   },
   {
     "id": "speech_47",
@@ -22825,7 +22825,7 @@
       "She said that she is so glad to be here tonight."
     ],
     "answer": 1,
-    "explanation": "'Are you angry with me?' എന്ന ചോദ്യം ഇൻഡയറക്ട് സ്പീച്ചിൽ 'if I was angry with him' എന്ന അഫർമേറ്റീവ് രൂപത്തിലേക്ക് മാറുന്നു."
+    "explanation": "ഇൻഡയറക്ട് സ്പീച്ചിലേക്ക് മാറ്റുമ്പോൾ പ്രസന്റ് ടെൻസായ 'am' എന്നത് പാസ്റ്റായ 'was' ആയും, 'here' എന്നത് 'there' ആയും, 'tonight' എന്നത് 'that night' ആയും മാറുന്നു. അതിനാൽ 'She said that she was so glad to be there that night' ശരിയായ രൂപമാണ്."
   },
   {
     "id": "speech_48",
@@ -22838,7 +22838,7 @@
       "He said that these mangoes were sweet."
     ],
     "answer": 2,
-    "explanation": "'Let us wait for the bus' എന്നത് ഒരു നിർദ്ദേശമായതിനാൽ (suggestion) റിപ്പോർട്ടിംഗ് വെർബായി 'suggested' വരികയും 'that they should wait for the bus' എന്ന് മാറുകയും ചെയ്യുന്നു. ബസ്സിനായി കാത്തിരിക്കാമെന്ന് നിർദ്ദേശിച്ചു എന്നർത്ഥം."
+    "explanation": "റിപ്പോർട്ടിംഗ് വെർബ് പാസ്റ്റിലാകുമ്പോൾ (said) 'these' എന്നത് 'those' ആയും, സിമ്പിൾ പ്രസന്റായ 'are' എന്നത് സിമ്പിൾ പാസ്റ്റായ 'were' ആയും മാറുന്നു. അതിനാൽ 'He said that those mangoes were sweet' ശരിയായ ഉത്തരമാണ്."
   },
   {
     "id": "speech_49",
@@ -22851,7 +22851,7 @@
       "The beggar wished that I might live long."
     ],
     "answer": 3,
-    "explanation": "'Water boils at 100°C' എന്നത് മാറ്റമില്ലാത്ത ശാസ്ത്രീയ സത്യമായതിനാൽ (Scientific fact) ഇൻഡയറക്ട് സ്പീച്ചിലും പ്രസന്റ് ടെൻസായ 'boils' മാറ്റമില്ലാതെ തുടരുന്നു."
+    "explanation": "ആശംസയോ പ്രാർത്ഥനയോ (optative sentence) സൂചിപ്പിക്കുന്ന വാക്യങ്ങളെ ഇൻഡയറക്ട് സ്പീച്ചിലേക്ക് മാറ്റുമ്പോൾ റിപ്പോർട്ടിംഗ് വെർബായി 'wished / prayed' വരികയും 'May' എന്നത് പാസ്റ്റ് രൂപമായ 'might' ആയി മാറുകയും ചെയ്യുന്നു. അതിനാൽ 'The beggar wished that I might live long' ശരിയായ ഉത്തരമാണ്."
   },
   {
     "id": "speech_50",

@@ -177,6 +177,23 @@ export default function App() {
   const [pyqViewMode, setPyqViewMode] = useState(() => {
     return localStorage.getItem('psc_pyq_view_mode') || 'topic';
   });
+  const [pyqPaperIncludeMaths, setPyqPaperIncludeMaths] = useState(() => {
+    try {
+      const saved = localStorage.getItem('psc_pyq_paper_include_maths');
+      return saved !== null ? saved === 'true' : true;
+    } catch {
+      return true;
+    }
+  });
+
+  const handleTogglePyqMaths = (included) => {
+    setPyqPaperIncludeMaths(included);
+    try {
+      localStorage.setItem('psc_pyq_paper_include_maths', String(included));
+    } catch (e) {
+      console.warn('Failed to save pyq maths preference', e);
+    }
+  };
   const [caViewMode, setCaViewMode] = useState(() => {
     return localStorage.getItem('psc_ca_view_mode') || 'month';
   });
@@ -710,6 +727,7 @@ export default function App() {
           }
           if (subject === 'english' || subject === 'pyq') {
             if (subject === 'pyq' && String(topicId).startsWith('qp:')) {
+              if (!pyqPaperIncludeMaths && isMathsQuestion(q)) return false;
               return q.qp_code === String(topicId).slice(3);
             }
             return q.topic === topicId;
@@ -1111,6 +1129,19 @@ export default function App() {
     }
   });
 
+  // Maths / Simple Arithmetic / Mental Ability detection for PYQ papers
+  const isMathsQuestion = (question) => {
+    if (!question) return false;
+    const t = String(question.topic || '').trim().toLowerCase();
+    if (t === 'pq_maths' || t === 'pq_arithmetic' || t === 'pq_mental_ability' || t === 'pq_simple_arithmetic' || t === 'pq_quantitative_aptitude' || t === 'mensuration') {
+      return true;
+    }
+    if (t.includes('math') || t.includes('arithmetic') || t.includes('mental ability') || t.includes('quantitative') || t.includes('mensuration')) {
+      return true;
+    }
+    return false;
+  };
+
   // Topic matching uses the module-level MALAYALAM_TOPIC_ALIASES (one topic per question)
 
   const matchesTopic = (question, targetTopicId) => {
@@ -1130,6 +1161,9 @@ export default function App() {
     }
     if (activeSubject === 'english' || activeSubject === 'pyq') {
       if (activeSubject === 'pyq' && String(targetTopicId).startsWith('qp:')) {
+        if (!pyqPaperIncludeMaths && isMathsQuestion(question)) {
+          return false;
+        }
         return question.qp_code === String(targetTopicId).slice(3);
       }
       return question.topic === targetTopicId;
@@ -1183,8 +1217,12 @@ export default function App() {
     let pool;
     if (isRepeatOnlyMode) {
       pool = repeatQueueList.filter(q => isInActiveSubject(q.id));
-      if (activeSubject === 'pyq' && selectedTopic === 'all') {
-        pool = pool.filter(q => q.topic !== 'pq_maths');
+      if (activeSubject === 'pyq') {
+        if (selectedTopic === 'all') {
+          pool = pool.filter(q => q.topic !== 'pq_maths');
+        } else if (String(selectedTopic).startsWith('qp:')) {
+          pool = pool.filter(q => matchesTopic(q, selectedTopic));
+        }
       }
     } else if (selectedTopic === 'all') {
       pool = activeSubject === 'pyq'
@@ -1456,7 +1494,7 @@ export default function App() {
       setHistoryPointer(-1);
       loadNextQuestion({ reviewMode: false, clearHistory: true });
     }
-  }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId, viewMode]);
+  }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId, viewMode, pyqPaperIncludeMaths]);
 
   // Reset scroll to top whenever a new question is loaded so the question is never stuck at previous bottom
   useEffect(() => {
@@ -2071,6 +2109,31 @@ export default function App() {
                 <span className="pyq-mode-btn-count">{currentYearPapers.length} Papers</span>
               </button>
             </div>
+            {isSubjectActive('pyq') && pyqViewMode === 'paper' && (
+              <div className="pyq-maths-toggle-row pyq-maths-toggle-sidebar">
+                <label className="pyq-maths-checkbox-label">
+                  <input
+                    type="checkbox"
+                    className="pyq-maths-checkbox"
+                    checked={pyqPaperIncludeMaths}
+                    onChange={(e) => handleTogglePyqMaths(e.target.checked)}
+                  />
+                  <span className="pyq-maths-custom-checkbox">
+                    {pyqPaperIncludeMaths && (
+                      <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7.5L5.5 10.5L11.5 3.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    )}
+                  </span>
+                  <span className="pyq-maths-checkbox-text">
+                    Include Maths
+                  </span>
+                </label>
+                <span className={`pyq-maths-status-badge ${pyqPaperIncludeMaths ? 'included' : 'excluded'}`}>
+                  {pyqPaperIncludeMaths ? 'ON' : 'OFF'}
+                </span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -2426,6 +2489,31 @@ export default function App() {
                           Qn Paper-wise ({currentYearPapers.length})
                         </button>
                       </div>
+                      {pyqViewMode === 'paper' && (
+                        <div className="pyq-maths-toggle-row">
+                          <label className="pyq-maths-checkbox-label">
+                            <input
+                              type="checkbox"
+                              className="pyq-maths-checkbox"
+                              checked={pyqPaperIncludeMaths}
+                              onChange={(e) => handleTogglePyqMaths(e.target.checked)}
+                            />
+                            <span className="pyq-maths-custom-checkbox">
+                              {pyqPaperIncludeMaths && (
+                                <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                                  <path d="M2.5 7.5L5.5 10.5L11.5 3.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                              )}
+                            </span>
+                            <span className="pyq-maths-checkbox-text">
+                              Include Maths (Simple Arithmetic & Mental Ability)
+                            </span>
+                          </label>
+                          <span className={`pyq-maths-status-badge ${pyqPaperIncludeMaths ? 'included' : 'excluded'}`}>
+                            {pyqPaperIncludeMaths ? 'Maths Included' : 'No Maths'}
+                          </span>
+                        </div>
+                      )}
                     </>
                   )}
 
@@ -2653,6 +2741,11 @@ export default function App() {
                           <> • Qn. <strong>{String(currentQuestion.id).match(/_q?(\d+)$/)[1]}</strong></>
                         )}
                       </span>
+                    </span>
+                  )}
+                  {activeSubject === 'pyq' && String(selectedTopic).startsWith('qp:') && !pyqPaperIncludeMaths && (
+                    <span className="pyq-no-maths-pill" title="Maths & Mental Ability questions excluded from this question paper">
+                      No Maths
                     </span>
                   )}
                   {historyPointer < questionHistoryStack.length - 1 && (

@@ -1989,6 +1989,141 @@
   color: #fff;
 }
 
+/* PYQ Maths Toggle Row (Modal & Sidebar) */
+.pyq-maths-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.95rem;
+  background: rgba(14, 165, 233, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.pyq-maths-toggle-sidebar {
+  padding: 0.45rem 0.6rem;
+  margin-top: 0.45rem;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pyq-maths-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: pointer;
+  user-select: none;
+  min-width: 0;
+  flex: 1;
+}
+
+.pyq-maths-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.pyq-maths-custom-checkbox {
+  width: 19px;
+  height: 19px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(56, 189, 248, 0.5);
+  background: rgba(15, 23, 42, 0.75);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+  font-size: 0.78rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pyq-maths-checkbox:focus-visible + .pyq-maths-custom-checkbox {
+  outline: 2px solid #38bdf8;
+  outline-offset: 1px;
+}
+
+.pyq-maths-checkbox:checked + .pyq-maths-custom-checkbox {
+  background: linear-gradient(135deg, #0284c7, #06b6d4);
+  border-color: #38bdf8;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.35);
+}
+
+.pyq-maths-checkbox-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pyq-maths-status-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pyq-maths-status-badge.included {
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #4ade80;
+}
+
+.pyq-maths-status-badge.excluded {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #f87171;
+}
+
+.pyq-no-maths-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.18rem 0.5rem;
+  border-radius: 9999px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+  letter-spacing: 0.02em;
+}
+
+[data-theme="light"] .pyq-maths-toggle-row {
+  background: rgba(2, 132, 199, 0.06);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .pyq-maths-toggle-sidebar {
+  background: #f8fafc;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .pyq-maths-custom-checkbox {
+  background: #ffffff;
+  border-color: rgba(2, 132, 199, 0.4);
+}
+
+[data-theme="light"] .pyq-maths-checkbox:checked + .pyq-maths-custom-checkbox {
+  background: linear-gradient(135deg, #0284c7, #06b6d4);
+  color: #ffffff;
+}
+
+[data-theme="light"] .pyq-maths-checkbox-text {
+  color: #0f172a;
+}
+
 .dropdown-options-list {
   padding: 0.65rem 0.75rem 1rem;
   overflow-y: auto;

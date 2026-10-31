@@ -15,19 +15,12 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
     return '';
   }).replace(/[ \t]{2,}/g, ' ').trim();
 
-  // Only split inline statements if at least 2 valid badges exist
-  // This prevents abbreviations like (OPEC), (WHO), (UN) from being mistaken as bullets
-  const potentialBadges = clean.match(BADGE_FINDER_REGEX) || [];
-  if (potentialBadges.length >= 2) {
-    clean = clean.replace(INLINE_STATEMENT_REGEX, '$1\n$2 ');
-  }
-
-  const lines = clean.split('\n').map(l => l.trim()).filter(Boolean);
-
-  // Check for markdown table (at least 2 lines with | ... |)
-  const tableLines = lines.filter(l => l.startsWith('|') && l.endsWith('|'));
+  // 1. Check for markdown table FIRST on raw lines (before splitting inline badges)
+  // This ensures badges like (i), (a) inside table cells do not corrupt the table structure
+  const rawLines = clean.split('\n').map(l => l.trim()).filter(Boolean);
+  const tableLines = rawLines.filter(l => l.startsWith('|') && l.endsWith('|'));
   if (tableLines.length >= 2) {
-    const introLines = lines.filter(l => !l.startsWith('|'));
+    const introLines = rawLines.filter(l => !l.startsWith('|'));
     const headerLine = tableLines[0];
     const headers = headerLine.split('|').map(c => c.trim()).filter(Boolean);
     const rowLines = tableLines.slice(1).filter(l => !l.includes('---'));
@@ -64,6 +57,15 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
       </div>
     );
   }
+
+  // 2. Only split inline statements if at least 2 valid badges exist
+  // This prevents abbreviations like (OPEC), (WHO), (UN) from being mistaken as bullets
+  const potentialBadges = clean.match(BADGE_FINDER_REGEX) || [];
+  if (potentialBadges.length >= 2) {
+    clean = clean.replace(INLINE_STATEMENT_REGEX, '$1\n$2 ');
+  }
+
+  const lines = clean.split('\n').map(l => l.trim()).filter(Boolean);
 
   // Check for genuine statements list (must have at least 2 statements)
   const statements = [];

@@ -57055,5 +57055,1435 @@
     ],
     "answer": 2,
     "explanation": "NITI Aayog ലെ NITI യുടെ പൂർണ്ണരൂപം 'National Institution for Transforming India' എന്നാണ്. ഇന്ത്യയുടെ സാമ്പത്തിക നയരൂപീകരണത്തിനായി പ്ലാനിംഗ് കമ്മീഷന് പകരമായി 2015 ജനുവരി 1 ന് സ്ഥാപിതമായ തിങ്ക് ടാങ്കാണിത്. പ്രധാനമന്ത്രിയാണ് ഇതിന്റെ ചെയർപേഴ്സൺ."
+  },
+  {
+    "id": "singular_plural_gender_collective_184",
+    "topic": "singular_plural_gender_collective",
+    "question": "What is the young one of a 'Hare' called?",
+    "options": [
+      "Leveret",
+      "Fawn",
+      "Colt",
+      "Cub"
+    ],
+    "answer": 0,
+    "explanation": "മുയലിന്റെ (Hare) കുഞ്ഞിനെ 'Leveret' എന്ന് വിളിക്കുന്നു. മാൻകുട്ടിയെ 'Fawn' എന്നും, കുതിരക്കുട്ടിയെ 'Colt' എന്നും, സിംഹം/കരടി കുഞ്ഞുങ്ങളെ 'Cub' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_185",
+    "topic": "singular_plural_gender_collective",
+    "question": "The young one of a 'Swan' is known as:",
+    "options": [
+      "Gosling",
+      "Cygnet",
+      "Duckling",
+      "Eaglet"
+    ],
+    "answer": 1,
+    "explanation": "അരയന്നത്തിന്റെ (Swan) കുഞ്ഞിനെ 'Cygnet' എന്ന് വിളിക്കുന്നു. വാത്തിന്റെ (Goose) കുഞ്ഞിനെ 'Gosling' എന്നും, താറാവിന്റെ കുഞ്ഞിനെ 'Duckling' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_186",
+    "topic": "singular_plural_gender_collective",
+    "question": "What is the young one of a 'Goose' called?",
+    "options": [
+      "Chick",
+      "Poult",
+      "Gosling",
+      "Cygnet"
+    ],
+    "answer": 2,
+    "explanation": "വാത്തിന്റെ (Goose) കുഞ്ഞിനെ 'Gosling' എന്ന് വിളിക്കുന്നു. കോഴിക്കുഞ്ഞിനെ 'Chick' എന്നും അരയന്നത്തിന്റെ കുഞ്ഞിനെ 'Cygnet' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_187",
+    "topic": "singular_plural_gender_collective",
+    "question": "The young one of a 'Deer' is called a:",
+    "options": [
+      "Calf",
+      "Kid",
+      "Foal",
+      "Fawn"
+    ],
+    "answer": 3,
+    "explanation": "മാനിന്റെ (Deer) കുഞ്ഞിനെ 'Fawn' എന്ന് വിളിക്കുന്നു. ആട്ടിൻകുട്ടിയെ 'Kid' എന്നും, പശു/ആന കുഞ്ഞുങ്ങളെ 'Calf' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_188",
+    "topic": "singular_plural_gender_collective",
+    "question": "What is the young one of a 'Frog' called?",
+    "options": [
+      "Tadpole",
+      "Fry",
+      "Fingerling",
+      "Larva"
+    ],
+    "answer": 0,
+    "explanation": "തവളയുടെ (Frog) കുഞ്ഞിനെ വാല്മാക്രി അഥവാ 'Tadpole' എന്ന് വിളിക്കുന്നു. മത്സ്യക്കുഞ്ഞുങ്ങളെ 'Fry' അല്ലെങ്കിൽ 'Fingerling' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_189",
+    "topic": "singular_plural_gender_collective",
+    "question": "The young one of a 'Kangaroo' is called a:",
+    "options": [
+      "Cub",
+      "Joey",
+      "Pup",
+      "Calf"
+    ],
+    "answer": 1,
+    "explanation": "കംഗാരുവിന്റെ (Kangaroo) കുഞ്ഞിനെ 'Joey' എന്ന് വിളിക്കുന്നു. അമ്മക്കംഗാരുവിന്റെ സഞ്ചിക്കുള്ളിൽ വളരുന്ന കുഞ്ഞാണിത്."
+  },
+  {
+    "id": "singular_plural_gender_collective_190",
+    "topic": "singular_plural_gender_collective",
+    "question": "A young female horse is called a:",
+    "options": [
+      "Colt",
+      "Foal",
+      "Filly",
+      "Mare"
+    ],
+    "answer": 2,
+    "explanation": "പെൺ കുതിരക്കുട്ടിയെ 'Filly' എന്ന് വിളിക്കുന്നു. ആൺ കുതിരക്കുട്ടിയെ 'Colt' എന്നും, പൊതുവായി കുതിരക്കുട്ടിയെ 'Foal' എന്നും, പൂർണ്ണവളർച്ചയെത്തിയ പെൺകുതിരയെ 'Mare' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_191",
+    "topic": "singular_plural_gender_collective",
+    "question": "A young male horse is called a:",
+    "options": [
+      "Stallion",
+      "Gelding",
+      "Pony",
+      "Colt"
+    ],
+    "answer": 3,
+    "explanation": "ആൺ കുതിരക്കുട്ടിയെ 'Colt' എന്ന് വിളിക്കുന്നു. പൂർണ്ണവളർച്ചയെത്തിയ ആൺകുതിരയെ 'Stallion' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_192",
+    "topic": "singular_plural_gender_collective",
+    "question": "The young one of an 'Eagle' is called an:",
+    "options": [
+      "Eaglet",
+      "Owlet",
+      "Nestling",
+      "Fledgling"
+    ],
+    "answer": 0,
+    "explanation": "കഴുകന്റെയോ പരുന്തിന്റെയോ (Eagle) കുഞ്ഞിനെ 'Eaglet' എന്ന് വിളിക്കുന്നു. മൂങ്ങയുടെ കുഞ്ഞിനെ 'Owlet' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_193",
+    "topic": "singular_plural_gender_collective",
+    "question": "The young one of an 'Owl' is called an:",
+    "options": [
+      "Eaglet",
+      "Owlet",
+      "Gosling",
+      "Squab"
+    ],
+    "answer": 1,
+    "explanation": "മൂങ്ങയുടെ (Owl) കുഞ്ഞിനെ 'Owlet' എന്ന് വിളിക്കുന്നു. പ്രാവിന്റെ കുഞ്ഞിനെ 'Squab' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_194",
+    "topic": "singular_plural_gender_collective",
+    "question": "What is the young one of an 'Elephant' called?",
+    "options": [
+      "Cub",
+      "Foal",
+      "Calf",
+      "Kid"
+    ],
+    "answer": 2,
+    "explanation": "ആനക്കുട്ടിയെ 'Calf' എന്ന് വിളിക്കുന്നു. പശു, തിമിംഗലം, ഒട്ടകം, ജിറാഫ് എന്നിവയുടെ കുഞ്ഞുങ്ങളെയും 'Calf' എന്ന് തന്നെയാണ് വിളിക്കുന്നത്."
+  },
+  {
+    "id": "singular_plural_gender_collective_195",
+    "topic": "singular_plural_gender_collective",
+    "question": "The young one of a 'Sheep' is known as a:",
+    "options": [
+      "Kid",
+      "Calf",
+      "Foal",
+      "Lamb"
+    ],
+    "answer": 3,
+    "explanation": "ചെമ്മരിയാടിന്റെ (Sheep) കുഞ്ഞിനെ 'Lamb' എന്ന് വിളിക്കുന്നു. സാധാരണ ആടിന്റെ (Goat) കുഞ്ഞിനെ 'Kid' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_196",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does an 'Elephant' make?",
+    "options": [
+      "Trumpet",
+      "Roar",
+      "Bray",
+      "Neigh"
+    ],
+    "answer": 0,
+    "explanation": "ആനയുടെ ശബ്ദത്തെ അഥവാ ചിന്നംവിളിയെ 'Trumpet' എന്ന് വിളിക്കുന്നു. സിംഹത്തിന്റെ ശബ്ദത്തെ 'Roar' എന്നും, കഴുതയുടെ ശബ്ദത്തെ 'Bray' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_197",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does a 'Horse' make?",
+    "options": [
+      "Bray",
+      "Neigh / Whinny",
+      "Bleat",
+      "Bellow"
+    ],
+    "answer": 1,
+    "explanation": "കുതിരയുടെ ശബ്ദത്തെ (ചിനയ്ക്കൽ) 'Neigh' അല്ലെങ്കിൽ 'Whinny' എന്ന് വിളിക്കുന്നു. കഴുതയുടെ ശബ്ദത്തെ 'Bray' എന്നും ആടിന്റെ ശബ്ദത്തെ 'Bleat' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_198",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does an 'Owl' make?",
+    "options": [
+      "Caw",
+      "Screech",
+      "Hoot",
+      "Chirp"
+    ],
+    "answer": 2,
+    "explanation": "മൂങ്ങയുടെ ശബ്ദത്തെ 'Hoot' എന്ന് വിളിക്കുന്നു. കാക്കയുടെ ശബ്ദത്തെ 'Caw' എന്നും, കുരുവികളുടെ ശബ്ദത്തെ 'Chirp' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_199",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does a 'Donkey' make?",
+    "options": [
+      "Neigh",
+      "Growl",
+      "Bleat",
+      "Bray"
+    ],
+    "answer": 3,
+    "explanation": "കഴുതയുടെ കരച്ചിലിനെ 'Bray' എന്ന് വിളിക്കുന്നു. കുതിരയുടെ ശബ്ദത്തെ 'Neigh' എന്നും ആടിന്റെ ശബ്ദത്തെ 'Bleat' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_200",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does a 'Frog' make?",
+    "options": [
+      "Croak",
+      "Hiss",
+      "Buzz",
+      "Squeak"
+    ],
+    "answer": 0,
+    "explanation": "തവളയുടെ ശബ്ദത്തെ (കരച്ചിൽ) 'Croak' എന്ന് വിളിക്കുന്നു. പാമ്പിന്റെ ശബ്ദത്തെ 'Hiss' എന്നും തേനീച്ചയുടെ ശബ്ദത്തെ 'Buzz' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_201",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does a 'Snake' make?",
+    "options": [
+      "Croak",
+      "Hiss",
+      "Howl",
+      "Squeak"
+    ],
+    "answer": 1,
+    "explanation": "പാമ്പിന്റെ ചീറ്റലിനെ 'Hiss' എന്ന് വിളിക്കുന്നു. കുറുനരിയുടെ ഓരിയിടലിനെ 'Howl' എന്നും എലിയുടെ ശബ്ദത്തെ 'Squeak' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_202",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does a 'Wolf' make?",
+    "options": [
+      "Bark",
+      "Growl",
+      "Howl",
+      "Yelp"
+    ],
+    "answer": 2,
+    "explanation": "ചെന്നായയുടെ അല്ലെങ്കിൽ കുറുക്കന്റെ ഓരിയിടലിനെ 'Howl' എന്ന് വിളിക്കുന്നു. പട്ടിയുടെ കുരയെ 'Bark' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_203",
+    "topic": "singular_plural_gender_collective",
+    "question": "What sound does a 'Pigeon' or 'Dove' make?",
+    "options": [
+      "Chirp",
+      "Caw",
+      "Screech",
+      "Coo"
+    ],
+    "answer": 3,
+    "explanation": "പ്രാവിന്റെ കുറുകലിനെ 'Coo' എന്ന് വിളിക്കുന്നു. കാക്കയുടെ ശബ്ദത്തെ 'Caw' എന്നും കിളികളുടെ ചിലയ്ക്കലിനെ 'Chirp' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_204",
+    "topic": "singular_plural_gender_collective",
+    "question": "A place where 'Bees' are kept is called an:",
+    "options": [
+      "Apiary",
+      "Aviary",
+      "Aquarium",
+      "Arboretum"
+    ],
+    "answer": 0,
+    "explanation": "തേനീച്ചകളെ വളർത്തുന്ന സ്ഥലത്തെ 'Apiary' (തേനീച്ചത്തോട്ടം) എന്ന് വിളിക്കുന്നു. പക്ഷികളെ സൂക്ഷിക്കുന്ന സ്ഥലത്തെ 'Aviary' എന്നും, മത്സ്യങ്ങളെ വളർത്തുന്ന ടാങ്കിനെ 'Aquarium' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_205",
+    "topic": "singular_plural_gender_collective",
+    "question": "A place where 'Birds' are kept is called an:",
+    "options": [
+      "Apiary",
+      "Aviary",
+      "Sanctuary",
+      "Kennel"
+    ],
+    "answer": 1,
+    "explanation": "പക്ഷികളെ സൂക്ഷിക്കുന്ന വലിയ കൂട് അല്ലെങ്കിൽ കൂടാരത്തെ 'Aviary' എന്ന് വിളിക്കുന്നു. തേനീച്ചകളെ വളർത്തുന്ന സ്ഥലത്തെ 'Apiary' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_206",
+    "topic": "singular_plural_gender_collective",
+    "question": "The dwelling place or home of a 'Rabbit' is called a:",
+    "options": [
+      "Stable",
+      "Sty",
+      "Burrow / Warren",
+      "Kennel"
+    ],
+    "answer": 2,
+    "explanation": "മുയലുകൾ താമസിക്കുന്ന മാളത്തെ 'Burrow' അല്ലെങ്കിൽ 'Warren' എന്ന് വിളിക്കുന്നു. കുതിരയെ പാർപ്പിക്കുന്ന ലയത്തെ 'Stable' എന്നും പന്നിക്കൂടിനെ 'Sty' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_207",
+    "topic": "singular_plural_gender_collective",
+    "question": "The dwelling place or shelter of a 'Pig' is called a:",
+    "options": [
+      "Byre",
+      "Lair",
+      "Den",
+      "Sty"
+    ],
+    "answer": 3,
+    "explanation": "പന്നിയെ പാർപ്പിക്കുന്ന കൂടിനെ 'Sty' എന്ന് വിളിക്കുന്നു. പശുത്തൊഴുത്തിനെ 'Byre' എന്നും സിംഹത്തിന്റെ ഗുഹയെ 'Den' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_208",
+    "topic": "singular_plural_gender_collective",
+    "question": "A shelter for a 'Cow' or cattle is called a:",
+    "options": [
+      "Byre / Cowshed",
+      "Stable",
+      "Kennel",
+      "Sty"
+    ],
+    "answer": 0,
+    "explanation": "പശുക്കളെ പാർപ്പിക്കുന്ന തൊഴുത്തിനെ 'Byre' അല്ലെങ്കിൽ 'Cowshed' എന്ന് വിളിക്കുന്നു. കുതിരയെ പാർപ്പിക്കുന്ന സ്ഥലത്തെ 'Stable' എന്നും പട്ടിക്കൂടിനെ 'Kennel' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_209",
+    "topic": "singular_plural_gender_collective",
+    "question": "A shelter for a 'Dog' is called a:",
+    "options": [
+      "Stable",
+      "Kennel",
+      "Pen",
+      "Burrow"
+    ],
+    "answer": 1,
+    "explanation": "പട്ടിക്കൂടിനെ 'Kennel' എന്ന് വിളിക്കുന്നു. ആടുകളെ പാർപ്പിക്കുന്ന ഇടത്തെ 'Pen' എന്നും കുതിരയെ പാർപ്പിക്കുന്ന ഇടത്തെ 'Stable' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_210",
+    "topic": "singular_plural_gender_collective",
+    "question": "The dwelling place of a 'Lion' is called a:",
+    "options": [
+      "Burrow",
+      "Lodge",
+      "Den / Lair",
+      "Sty"
+    ],
+    "answer": 2,
+    "explanation": "സിംഹം പാർക്കുന്ന ഗുഹയെ 'Den' അല്ലെങ്കിൽ 'Lair' എന്ന് വിളിക്കുന്നു. ബീവർ ജീവികളുടെ വീടിനെ 'Lodge' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_211",
+    "topic": "singular_plural_gender_collective",
+    "question": "The home built by a 'Beaver' is called a:",
+    "options": [
+      "Burrow",
+      "Drey",
+      "Eyrie",
+      "Lodge"
+    ],
+    "answer": 3,
+    "explanation": "ബീവർ (Beaver) എന്ന ജീവി തടികളും മണ്ണും കൊണ്ട് ജലാശയങ്ങളിൽ നിർമ്മിക്കുന്ന വീടിനെ 'Lodge' എന്ന് വിളിക്കുന്നു. അണ്ണാന്റെ കൂട്ടിനെ 'Drey' എന്നും കഴുകന്റെ കൂട്ടിനെ 'Eyrie' എന്നും വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_212",
+    "topic": "singular_plural_gender_collective",
+    "question": "The nest of an eagle built high on a cliff or tall tree is called an:",
+    "options": [
+      "Eyrie / Aerie",
+      "Aviary",
+      "Lodge",
+      "Drey"
+    ],
+    "answer": 0,
+    "explanation": "കഴുകൻ ഉയർന്ന മലഞ്ചെരിവുകളിലോ വൻമരങ്ങളുടെ തുഞ്ചത്തോ പണിയുന്ന കൂട്ടിനെ 'Eyrie' (അഥവാ 'Aerie') എന്ന് വിളിക്കുന്നു. അണ്ണാന്റെ കൂട്ടിനെ 'Drey' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "singular_plural_gender_collective_213",
+    "topic": "singular_plural_gender_collective",
+    "question": "The nest of a 'Squirrel' is known as a:",
+    "options": [
+      "Burrow",
+      "Drey",
+      "Warren",
+      "Lodge"
+    ],
+    "answer": 1,
+    "explanation": "മരങ്ങളിൽ അണ്ണാൻ കമ്പുകളും ഇലകളും കൊണ്ട് നിർമ്മിക്കുന്ന കൂട്ടിനെ 'Drey' എന്ന് വിളിക്കുന്നു. മുയലിന്റെ മാളത്തെ 'Burrow' അല്ലെങ്കിൽ 'Warren' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "idioms_meanings_193",
+    "topic": "idioms_meanings",
+    "question": "What does the proverb 'A bird in the hand is worth two in the bush' mean?",
+    "options": [
+      "It is better to hold on to something you already have than risk losing it by trying to get more",
+      "Hunting birds in the bush is difficult",
+      "Two opportunities are always better than one",
+      "You should always catch birds with both hands"
+    ],
+    "answer": 0,
+    "explanation": "'A bird in the hand is worth two in the bush' എന്ന പഴഞ്ചൊല്ലിന്റെ അർത്ഥം കയ്യിലുള്ളത് നിലനിർത്തുന്നതാണ് കിട്ടുമോ എന്ന് ഉറപ്പില്ലാത്ത കൂടുതൽ നേട്ടങ്ങൾക്ക് പിന്നാലെ പോയി ഉള്ളതും കൂടി നഷ്ടപ്പെടുത്തുന്നതിനേക്കാൾ നല്ലത് (കയ്യിലുള്ള ഒന്നിന് കാട്ടിലുള്ള രണ്ടിനേക്കാൾ വിലയുണ്ട്) എന്നാണ്."
+  },
+  {
+    "id": "idioms_meanings_194",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Actions speak louder than words' implies that:",
+    "options": [
+      "Speaking loudly makes people listen",
+      "What you do is more significant and believable than what you say",
+      "Words are unnecessary in communication",
+      "Action movies are more interesting than books"
+    ],
+    "answer": 1,
+    "explanation": "'Actions speak louder than words' എന്നാൽ ഒരാൾ വാക്കുകൾ കൊണ്ട് എന്ത് പറയുന്നു എന്നതിനേക്കാൾ അയാളുടെ പ്രവർത്തികളാണ് അയാളുടെ സ്വഭാവവും ലക്ഷ്യവും വ്യക്തമാക്കുന്നത് (വാക്കുകളേക്കാൾ പ്രവൃത്തിക്ക് ശക്തിയുണ്ട്) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_195",
+    "topic": "idioms_meanings",
+    "question": "What is the meaning of the proverb 'A stitch in time saves nine'?",
+    "options": [
+      "Sewing clothes requires nine stitches",
+      "Timely repair of clothes is very expensive",
+      "Dealing with a problem immediately prevents it from becoming much worse later",
+      "Wasting time can lead to nine different troubles"
+    ],
+    "answer": 2,
+    "explanation": "'A stitch in time saves nine' എന്നാൽ ചെറിയൊരു കേടുപാട് അല്ലെങ്കിൽ പ്രശ്നം ഉണ്ടാകുമ്പോൾ തന്നെ പരിഹരിച്ചാൽ ഭാവിയിൽ വലിയ നഷ്ടങ്ങളും അധിക പ്രയത്നങ്ങളും ഒഴിവാക്കാൻ സാധിക്കും (യഥാസമയത്തെ ചെറിയ മുൻകരുതൽ ഭാവിയിലെ വലിയ ആപത്ത് തടയും) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_196",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'All that glitters is not gold' warns us that:",
+    "options": [
+      "Gold never glitters in the dark",
+      "Expensive items always shine brighter",
+      "Gold is the only valuable precious metal",
+      "Things that appear attractive or valuable on the surface may not actually be so"
+    ],
+    "answer": 3,
+    "explanation": "'All that glitters is not gold' (മിന്നുന്നതെല്ലാം പൊന്നല്ല) എന്നാൽ പുറമെ മനോഹരമായോ ആകർഷകമായോ തോന്നുന്ന വസ്തുക്കളോ വ്യക്തികളോ ഉള്ളിൽ യഥാർത്ഥ മൂല്യമോ ഗുണമോ ഉള്ളവരാകണമെന്നില്ല എന്ന മുന്നറിയിപ്പാണ്."
+  },
+  {
+    "id": "idioms_meanings_197",
+    "topic": "idioms_meanings",
+    "question": "What does 'Barking dogs seldom bite' mean?",
+    "options": [
+      "People who make big threats or loud noises rarely actually carry them out",
+      "Dogs that bark never attack humans",
+      "Quiet animals are always safe to touch",
+      "Biting dogs make no noise at all"
+    ],
+    "answer": 0,
+    "explanation": "'Barking dogs seldom bite' (കുരയ്ക്കുന്ന പട്ടി കടിക്കാറില്ല) എന്നാൽ വലിപ്പത്തിൽ ആക്രോശിക്കുകയും ഭീഷണിപ്പെടുത്തുകയും ചെയ്യുന്ന ആളുകൾ യഥാർത്ഥത്തിൽ ഉപദ്രവിക്കാനോ പ്രതികരിക്കാനോ സാധ്യത കുറവാണ് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_198",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Don't count your chickens before they hatch' advises:",
+    "options": [
+      "Always count your poultry carefully every morning",
+      "Do not make plans that depend on something desirable happening before it actually occurs",
+      "Never buy eggs from unverified farms",
+      "Chicks hatch better when kept undisturbed"
+    ],
+    "answer": 1,
+    "explanation": "'Don't count your chickens before they hatch' (മുട്ട വിരിയുന്നതിന് മുൻപ് കോഴിക്കുഞ്ഞുങ്ങളെ എണ്ണരുത്) എന്നാൽ ഒരു കാര്യം പൂർണ്ണമായി നടന്നു കിട്ടുന്നതിന് മുൻപ് അതിന്റെ ഫലം ഉറപ്പിച്ചുകൊണ്ട് മുൻകൂട്ടി സന്തോഷിക്കുകയോ പ്ലാനുകൾ ഉണ്ടാക്കുകയോ ചെയ്യരുത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_199",
+    "topic": "idioms_meanings",
+    "question": "What does 'Every cloud has a silver lining' mean?",
+    "options": [
+      "Storm clouds are always followed by rain",
+      "Silver is found high in the mountains where clouds touch",
+      "Every difficult or unpleasant situation has some positive or hopeful aspect",
+      "Dark clouds usually look silver during sunrise"
+    ],
+    "answer": 2,
+    "explanation": "'Every cloud has a silver lining' (കാർമേഘങ്ങൾക്ക് പിന്നിലും വെള്ളിത്തിളക്കമുണ്ട്) എന്നാൽ എത്ര മോശമായതോ ദുരന്തപൂർണ്ണമായതോ ആയ അവസ്ഥയിലും പ്രത്യാശ നൽകുന്ന എന്തെങ്കിലും നല്ല ഘടകമുണ്ടാകും (ദുരിതങ്ങൾക്ക് പിന്നാലെ നന്മയുണ്ടാകും) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_200",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Look before you leap' advises people to:",
+    "options": [
+      "Always look at the ground while running",
+      "Measure distances before attempting high jump",
+      "Avoid jumping across rivers and streams",
+      "Think carefully about the consequences before taking any action"
+    ],
+    "answer": 3,
+    "explanation": "'Look before you leap' (ചാടുന്നതിന് മുൻപ് നോക്കുക) എന്നാൽ ഏതൊരു പ്രവൃത്തിയും ആരംഭിക്കുന്നതിന് മുൻപ് അതിന്റെ ഭവിഷ്യത്തുകളെക്കുറിച്ചും അപകടങ്ങളെക്കുറിച്ചും നന്നായി ചിന്തിച്ചുറപ്പിക്കണം എന്ന ഉപദേശമാണ്."
+  },
+  {
+    "id": "idioms_meanings_201",
+    "topic": "idioms_meanings",
+    "question": "What is the meaning of 'Make hay while the sun shines'?",
+    "options": [
+      "Take advantage of good opportunities while they are available",
+      "Farmers should only work during sunny days",
+      "Hay should be dried inside greenhouses",
+      "Sunshine is essential for agricultural growth"
+    ],
+    "answer": 0,
+    "explanation": "'Make hay while the sun shines' (വെയിൽ ഉള്ളപ്പോൾ വൈക്കോൽ ഉണക്കുക) എന്നാൽ അനുകൂലമായ സാഹചര്യങ്ങളും അവസരങ്ങളും ഒത്തുവരുമ്പോൾ തന്നെ അത് പരമാവധി പ്രയോജനപ്പെടുത്തണം എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_202",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Necessity is the mother of invention' suggests that:",
+    "options": [
+      "Inventions are created by mothers for their children",
+      "When people are in genuine need, they find creative ways to solve problems",
+      "Necessity prevents scientific development",
+      "Inventors always live in extreme poverty"
+    ],
+    "answer": 1,
+    "explanation": "'Necessity is the mother of invention' (ആവശ്യമാണ് കണ്ടുപിടുത്തങ്ങളുടെ മാതാവ്) എന്നാൽ മനുഷ്യന് വലിയൊരു പ്രതിസന്ധിയോ തീവ്രമായ ആവശ്യമോ ഉണ്ടാകുമ്പോഴാണ് പുതിയ പരിഹാരങ്ങളും സാങ്കേതികവിദ്യകളും കണ്ടുപിടിക്കാൻ അവൻ നിർബന്ധിതനാകുന്നത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_203",
+    "topic": "idioms_meanings",
+    "question": "What does 'People who live in glass houses should not throw stones' mean?",
+    "options": [
+      "Glass houses are extremely fragile and expensive",
+      "Throwing stones at buildings is a criminal offense",
+      "People with their own faults should not criticize the faults of others",
+      "Architects should avoid building houses with glass walls"
+    ],
+    "answer": 2,
+    "explanation": "'People who live in glass houses should not throw stones' (കണ്ണാടിക്കൂട്ടിലിരിക്കുന്നവർ കല്ലെറിയരുത്) എന്നാൽ സ്വന്തമായി ഒരുപാട് കുറവുകളും ബലഹീനതകളുമുള്ളവർ മറ്റുള്ളവരുടെ തെറ്റുകളെ കുറ്റപ്പെടുത്താനും വിമർശിക്കാനും പോകരുത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_204",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Rome was not built in a day' teaches that:",
+    "options": [
+      "Rome took several centuries to complete",
+      "Ancient buildings required stone masonry",
+      "Modern cities are built much faster than ancient ones",
+      "Important and great achievements require time, patience, and sustained effort"
+    ],
+    "answer": 3,
+    "explanation": "'Rome was not built in a day' എന്നാൽ മഹത്തായ വലിയ നേട്ടങ്ങൾ ഒറ്റരാത്രികൊണ്ട് ഉണ്ടാക്കാൻ സാധിക്കില്ല; അതിന് ദീർഘകാലത്തെ ക്ഷമയും കഠിനാധ്വാനവും ആവശ്യമാണ് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_205",
+    "topic": "idioms_meanings",
+    "question": "What does 'The grass is always greener on the other side' mean?",
+    "options": [
+      "Other people's situations always seem better and more attractive than one's own",
+      "Gardens across fences get more sunlight",
+      "Green grass grows better in neighboring plots",
+      "Fertilizers make adjacent pastures greener"
+    ],
+    "answer": 0,
+    "explanation": "'The grass is always greener on the other side' (അക്കരെപ്പച്ച) എന്നാൽ സ്വന്തം അവസ്ഥയേക്കാൾ മറ്റുള്ളവരുടെ ജീവിതവും സാഹചര്യങ്ങളും എപ്പോഴും കൂടുതൽ മെച്ചപ്പെട്ടതും സുഖകരവുമാണെന്ന് തോന്നുന്ന മിഥ്യാബോധത്തെ സൂചിപ്പിക്കുന്നു."
+  },
+  {
+    "id": "idioms_meanings_206",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'The pen is mightier than the sword' highlights that:",
+    "options": [
+      "Pens are made of stronger metals than swords",
+      "Written words and ideas have a greater long-term influence on society than military force",
+      "Warriors prefer writing to fighting battles",
+      "Lawyers earn more money than soldiers"
+    ],
+    "answer": 1,
+    "explanation": "'The pen is mightier than the sword' (വാളിനേക്കാൾ മൂർച്ച തൂലികയ്ക്ക്) എന്നാൽ ആയുധബലം കൊണ്ടുള്ള യുദ്ധങ്ങളേക്കാൾ ദീർഘകാലം ലോകത്തെ മാറ്റാൻ ചിന്തകൾക്കും ആശയങ്ങൾക്കും രചനകൾക്കും സാധിക്കും എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_207",
+    "topic": "idioms_meanings",
+    "question": "What does 'Too many cooks spoil the broth' mean?",
+    "options": [
+      "Cooking soup requires high culinary training",
+      "Restaurants should hire more kitchen staff",
+      "When too many people try to manage or do a task, it often leads to confusion and poor results",
+      "Broth becomes salty when boiled multiple times"
+    ],
+    "answer": 2,
+    "explanation": "'Too many cooks spoil the broth' (അടുക്കളക്കാർ കൂടിയാൽ കഞ്ഞി കുഴയും) എന്നാൽ ഒരൊറ്റ കാര്യത്തിൽ ആവശ്യമില്ലാതെ ഒരുപാട് ആളുകൾ ഇടപെടുകയും ഉപദേശങ്ങൾ നൽകുകയും ചെയ്താൽ ആ കാര്യം വഷളായി പരാജയപ്പെടും എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_208",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'When in Rome, do as the Romans do' suggests:",
+    "options": [
+      "Tourists in Rome should wear Roman costumes",
+      "Italian language is mandatory when visiting Italy",
+      "One should study European history before travel",
+      "You should adapt to the customs and behavior of the people and place you are visiting"
+    ],
+    "answer": 3,
+    "explanation": "'When in Rome, do as the Romans do' (നാട്ടിൽ ചെന്നാൽ നാട്ടുകാരെപ്പോലെ) എന്നാൽ നാം ഏത് സ്ഥലത്താണോ ഉള്ളത് അവിടുത്തെ സംസ്കാരത്തെയും ആചാരങ്ങളെയും ബഹുമാനിച്ചുകൊണ്ട് അതിനനുസരിച്ച് പൊരുത്തപ്പെട്ടു ജീവിക്കണം എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_209",
+    "topic": "idioms_meanings",
+    "question": "What does 'You can't judge a book by its cover' mean?",
+    "options": [
+      "You should not form an opinion about someone or something purely based on outward appearance",
+      "Book covers are often designed by different artists",
+      "Reading the preface is better than reading the back cover",
+      "Expensive books always have attractive cover designs"
+    ],
+    "answer": 0,
+    "explanation": "'You can't judge a book by its cover' എന്നാൽ പുറമെയുള്ള സൗന്ദര്യമോ വസ്ത്രധാരണമോ രൂപമോ കണ്ട് ഒരാളുടെയോ ഒരു കാര്യത്തിന്റെയോ യഥാർത്ഥ സ്വഭാവവും ഗുണവും വിലയിരുത്താൻ സാധിക്കില്ല എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_210",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Empty vessels make the most noise' implies that:",
+    "options": [
+      "Metal pots ring louder when completely dry",
+      "People with the least knowledge or substance often talk the most and loudest",
+      "Silence is a sign of lack of intelligence",
+      "Loudspeakers are hollow inside"
+    ],
+    "answer": 1,
+    "explanation": "'Empty vessels make the most noise' (നിറകുടം തുളുമ്പില്ല / പാഴ്പ്പാത്രം മുഴങ്ങും) എന്നാൽ കാര്യമായ അറിവോ പാണ്ഡിത്യമോ ഇല്ലാത്തവരായിരിക്കും തങ്ങൾക്ക് എല്ലാം അറിയാമെന്ന ഭാവത്തിൽ ഏറ്റവും കൂടുതൽ ഉറക്കെ സംസാരിക്കുകയും വീമ്പിളക്കുകയും ചെയ്യുന്നത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_211",
+    "topic": "idioms_meanings",
+    "question": "What is the meaning of 'Birds of a feather flock together'?",
+    "options": [
+      "Birds of the same species migrate together in winter",
+      "Feathered animals cannot survive in isolation",
+      "People with similar interests, backgrounds, or characters tend to associate with one another",
+      "Group study improves academic performance"
+    ],
+    "answer": 2,
+    "explanation": "'Birds of a feather flock together' എന്നാൽ സമാനമായ സ്വഭാവമോ താല്പര്യങ്ങളോ ഉള്ള ആളുകൾ എപ്പോഴും പരസ്പരം ഒന്നിച്ചു കൂടാനും കൂട്ടുകൂടാനും താല്പര്യപ്പെടുന്നു എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_212",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Strike while the iron is hot' advises one to:",
+    "options": [
+      "Blacksmiths should use heavy hammers on heated iron",
+      "Avoid working with cold metals",
+      "Wait until steel cools down before shaping it",
+      "Act promptly and take decisive action while an opportunity is most favorable"
+    ],
+    "answer": 3,
+    "explanation": "'Strike while the iron is hot' (ഇരുമ്പ് ചൂടുള്ളപ്പോൾ തന്നെ അടിക്കുക) എന്നാൽ അനുകൂലമായ ഒരവസരം മുന്നിൽ വരുമ്പോൾ തന്നെ താമസിപ്പിക്കാതെ കൃത്യസമയത്ത് പ്രയോജനപ്പെടുത്തണം എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_213",
+    "topic": "idioms_meanings",
+    "question": "What does 'Cleanliness is next to godliness' signify?",
+    "options": [
+      "Keeping oneself and one's surroundings clean is a high moral and spiritual virtue",
+      "Temples and churches are the only places that require cleanliness",
+      "God only visits clean houses",
+      "Bathing is a religious ritual only"
+    ],
+    "answer": 0,
+    "explanation": "'Cleanliness is next to godliness' (ശുചിത്വം ഈശ്വരഭക്തിക്ക് തുല്യം) എന്നാൽ ശരീരവും പരിസരവും വൃത്തിയായി സൂക്ഷിക്കുന്നത് സദാചാരപരമായും ആത്മീയമായും ഉയർന്നൊരു സദ്ഗുണമാണ് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_214",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Better late than never' means:",
+    "options": [
+      "Being late for appointments is acceptable",
+      "It is better to complete something late than not to do it at all",
+      "Arriving late shows careful planning",
+      "Postponing work is always preferable"
+    ],
+    "answer": 1,
+    "explanation": "'Better late than never' എന്നാൽ ഒട്ടും ചെയ്യാതിരിക്കുന്നതിനേക്കാൾ വളരെ നല്ലതാണ് വൈകിയാണെങ്കിലും ഒരു നല്ല കാര്യം ചെയ്തു തീർക്കുന്നത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_215",
+    "topic": "idioms_meanings",
+    "question": "What does the proverb 'Where there is a will, there is a way' imply?",
+    "options": [
+      "Legal wills always lead to property disputes",
+      "Road construction requires legal permission",
+      "If a person has strong determination to achieve something, they will find a method to succeed",
+      "Desires can be fulfilled without effort"
+    ],
+    "answer": 2,
+    "explanation": "'Where there is a will, there is a way' (മനസ്സുണ്ടെങ്കിൽ മാർഗ്ഗമുണ്ട്) എന്നാൽ എന്തെങ്കിലും കാര്യം നേടിയെടുക്കാൻ ഒരാൾക്ക് ദൃഢനിശ്ചയവും ആത്മാർത്ഥമായ താല്പര്യവുമുണ്ടെങ്കിൽ ഏത് പ്രതിസന്ധിയെയും മറികടക്കാനുള്ള വഴി അവൻ കണ്ടെത്തും എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_216",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Slow and steady wins the race' stresses the value of:",
+    "options": [
+      "Walking slowly during athletic marathons",
+      "Turtles are faster than hares",
+      "Speed is irrelevant in competitions",
+      "Consistency, patience, and persistence over rushed or careless speed"
+    ],
+    "answer": 3,
+    "explanation": "'Slow and steady wins the race' എന്നാൽ അമിതമായ എടുത്തുചാട്ടമോ ധൃതിയോ ഇല്ലാതെ ചിട്ടയായ സ്ഥിരതയോടും ക്ഷമയോടും കൂടി പ്രയത്നിക്കുന്നതിനാണ് അവസാനം വിജയം കൈവരിക്കാൻ സാധിക്കുന്നത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_217",
+    "topic": "idioms_meanings",
+    "question": "What does 'Fortune favors the bold' mean?",
+    "options": [
+      "Courageous people who take calculated risks are more likely to achieve success",
+      "Luck comes only to wealthy individuals",
+      "Reckless behavior guarantees positive outcomes",
+      "Fate cannot be influenced by human effort"
+    ],
+    "answer": 0,
+    "explanation": "'Fortune favors the bold' എന്നാൽ ഭയന്നു പിന്മാറാതെ ധൈര്യത്തോടെ റിസ്ക് എടുക്കാനും മുന്നോട്ട് പോകാനും തയ്യാറാവുന്നവരെയാണ് ഭാഗ്യവും വിജയവും തുണയ്ക്കുന്നത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_218",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Beauty is in the eye of the beholder' means that:",
+    "options": [
+      "Good vision is necessary to appreciate art",
+      "Different people have different ideas about what is beautiful",
+      "Physical appearance is the sole measure of value",
+      "Eye care enhances personal beauty"
+    ],
+    "answer": 1,
+    "explanation": "'Beauty is in the eye of the beholder' എന്നാൽ സൗന്ദര്യമെന്നത് ഓരോ വ്യക്തിയുടെയും കാഴ്ചപ്പാടിനനുസരിച്ച് വ്യത്യസ്തമായിരിക്കും (ഒരാൾക്ക് സുന്ദരമായി തോന്നുന്നത് മറ്റൊരാൾക്ക് അങ്ങനെ തോന്നണമെന്നില്ല) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_219",
+    "topic": "idioms_meanings",
+    "question": "What does 'Honesty is the best policy' emphasize?",
+    "options": [
+      "Insurance policies should be transparent",
+      "Truthfulness is difficult to maintain in business",
+      "Being truthful and candid is always the most prudent and honorable approach in life",
+      "Lying is justified in difficult circumstances"
+    ],
+    "answer": 2,
+    "explanation": "'Honesty is the best policy' (സത്യസന്ധതയാണ് ഏറ്റവും നല്ല നയം) എന്നാൽ ജീവിതത്തിൽ ഏത് സന്ദർഭത്തിലും നേരും നെറിയുമുള്ള സത്യസന്ധമായ വഴി സ്വീകരിക്കുന്നതാണ് ദീർഘകാലാടിസ്ഥാനത്തിൽ വ്യക്തിക്ക് ഏറ്റവും കൂടുതൽ ആദരവും സമാധാനവും നൽകുന്നത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_220",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Prevention is better than cure' advises that:",
+    "options": [
+      "Medicines are unnecessary for health",
+      "Hospital treatments are always painful",
+      "Doctors should focus on surgery rather than medicines",
+      "It is wiser to stop a problem from happening than to deal with it after it occurs"
+    ],
+    "answer": 3,
+    "explanation": "'Prevention is better than cure' (രോഗം വന്നിട്ട് ചികിത്സിക്കുന്നതിനേക്കാൾ നല്ലത് വരാതെ നോക്കലാണ്) എന്നാൽ രോഗമോ ആപത്തോ വന്നതിന് ശേഷം പരിഹരിക്കാൻ പ്രയാസപ്പെടുന്നതിനേക്കാൾ വളരെ ബുദ്ധിപരമാണ് അത് ഉണ്ടാകാതിരിക്കാനുള്ള മുൻകരുതലുകൾ എടുക്കുന്നത് എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_221",
+    "topic": "idioms_meanings",
+    "question": "What does 'One man's meat is another man's poison' mean?",
+    "options": [
+      "What is good or pleasing to one person may be disliked or harmful to another",
+      "Food poisoning affects people differently",
+      "Vegetarians should avoid meat products",
+      "All medicines have poisonous components"
+    ],
+    "answer": 0,
+    "explanation": "'One man's meat is another man's poison' എന്നാൽ ഒരാൾക്ക് വളരെ ഇഷ്ടപ്പെട്ടതും ആസ്വാദ്യകരവുമായ ഒരു കാര്യം മറ്റൊരാൾക്ക് ഒട്ടും താല്പര്യമില്ലാത്തതോ അരോചകമായതോ ആയിരിക്കാം (ഓരോരുത്തരുടെയും അഭിരുചികൾ വ്യത്യസ്തമാണ്) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "idioms_meanings_222",
+    "topic": "idioms_meanings",
+    "question": "The proverb 'Practice makes perfect' encourages:",
+    "options": [
+      "Natural talent is more important than hard work",
+      "Continuous repetition and training lead to mastery and proficiency",
+      "Perfection is impossible to attain in any skill",
+      "Practicing too much causes fatigue"
+    ],
+    "answer": 1,
+    "explanation": "'Practice makes perfect' എന്നാൽ ഒരു കാര്യത്തിൽ നിരന്തരമായി പരിശീലനം നടത്തുന്നത് വഴി മാത്രമേ ഒരാൾക്ക് അതിൽ പൂർണ്ണ പ്രാവീണ്യവും തെറ്റുകളില്ലാത്ത നൈപുണ്യവും കൈവരിക്കാൻ സാധിക്കൂ എന്നാണർത്ഥം."
+  },
+  {
+    "id": "one_word_substitutes_eng_197",
+    "topic": "one_word_substitutes_eng",
+    "question": "A written statement confirmed by oath or affirmation for use as evidence in court:",
+    "options": [
+      "Affidavit",
+      "Subpoena",
+      "Deed",
+      "Warrant"
+    ],
+    "answer": 0,
+    "explanation": "കോടതിയിലോ നിയമപരമായ കാര്യങ്ങളിലോ തെളിവായി ഉപയോഗിക്കാൻ സത്യപ്രസ്താവന നൽകി ഒപ്പുവെക്കുന്ന സാക്ഷ്യപത്രത്തെ 'Affidavit' (സത്യവാങ്മൂലം) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_198",
+    "topic": "one_word_substitutes_eng",
+    "question": "An official pardon granted by the government to people convicted of political offenses:",
+    "options": [
+      "Parole",
+      "Amnesty",
+      "Reprieve",
+      "Absolution"
+    ],
+    "answer": 1,
+    "explanation": "രാഷ്ട്രീയപരമായോ മറ്റ് കുറ്റങ്ങൾക്കോ ശിക്ഷിക്കപ്പെട്ടവർക്ക് ഭരണകൂടം നൽകുന്ന പൊതുമാപ്പിനെ 'Amnesty' എന്ന് വിളിക്കുന്നു. തടവുകാരന് നല്ലനടപ്പിന്റെ പേരിൽ നൽകുന്ന താത്കാലിക വിടുതലിനെ 'Parole' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_199",
+    "topic": "one_word_substitutes_eng",
+    "question": "The release of a prisoner before the completion of a sentence on the promise of good behavior:",
+    "options": [
+      "Bail",
+      "Acquittal",
+      "Parole",
+      "Remission"
+    ],
+    "answer": 2,
+    "explanation": "ശിക്ഷാ കാലാവധി പൂർത്തിയാകുന്നതിന് മുൻപ് നല്ലനടപ്പ് ഉറപ്പുനൽകി തടവുകാരന് നൽകുന്ന സോപാധിക വിടുതലിനെ 'Parole' എന്ന് വിളിക്കുന്നു. വിചാരണ വേളയിലെ ജാമ്യത്തെ 'Bail' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_200",
+    "topic": "one_word_substitutes_eng",
+    "question": "A judicial writ commanding a public official or body to perform a specific statutory duty:",
+    "options": [
+      "Habeas Corpus",
+      "Quo Warranto",
+      "Certiorari",
+      "Mandamus"
+    ],
+    "answer": 3,
+    "explanation": "നിയമപരമായ കടമ നിർവ്വഹിക്കാൻ പൊതു ഉദ്യോഗസ്ഥനോടോ സ്ഥാപനത്തോടോ കോടതി ഉത്തരവിടുന്ന റിട്ടിനെ 'Mandamus' ('We Command' / പരമാധികാര കൽപ്പന) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_201",
+    "topic": "one_word_substitutes_eng",
+    "question": "A writ requiring a person under detention to be brought before a judge or court to examine the lawfulness of custody:",
+    "options": [
+      "Habeas Corpus",
+      "Mandamus",
+      "Certiorari",
+      "Prohibition"
+    ],
+    "answer": 0,
+    "explanation": "അന്യായമായി തടങ്കലിൽ വെച്ചിരിക്കുന്ന വ്യക്തിയെ കോടതിക്ക് മുന്നിൽ ഹാജരാക്കാൻ ആവശ്യപ്പെടുന്ന റിട്ടിനെ 'Habeas Corpus' ('To have the body') എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_202",
+    "topic": "one_word_substitutes_eng",
+    "question": "A writ issued by a superior court to quash an order passed by an inferior court or tribunal:",
+    "options": [
+      "Quo Warranto",
+      "Certiorari",
+      "Mandamus",
+      "Injunction"
+    ],
+    "answer": 1,
+    "explanation": "കീഴ്ക്കോടതികളുടെയോ ട്രൈബ്യൂണലുകളുടെയോ നിയമവിരുദ്ധമായ ഉത്തരവുകൾ റദ്ദാക്കാൻ (quash) ഹൈക്കോടതിയോ സുപ്രീം കോടതിയോ പുറപ്പെടുവിക്കുന്ന റിട്ടിനെ 'Certiorari' ('To be certified') എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_203",
+    "topic": "one_word_substitutes_eng",
+    "question": "A writ inquiring by what authority or warrant a person holds a public office:",
+    "options": [
+      "Mandamus",
+      "Certiorari",
+      "Quo Warranto",
+      "Habeas Corpus"
+    ],
+    "answer": 2,
+    "explanation": "ഏതധികാരത്തിലാണ് ഒരാൾ ഒരു പബ്ലിക് ഓഫീസ് അല്ലെങ്കിൽ ഔദ്യോഗിക പദവി കൈവശം വെച്ചിരിക്കുന്നത് എന്ന് ചോദിക്കുന്ന റിട്ടിനെ 'Quo Warranto' ('By what authority') എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_204",
+    "topic": "one_word_substitutes_eng",
+    "question": "The legal surrender by one country to another of an individual accused or convicted of a crime:",
+    "options": [
+      "Exile",
+      "Deportation",
+      "Expulsion",
+      "Extradition"
+    ],
+    "answer": 3,
+    "explanation": "ഒരു രാജ്യത്ത് കുറ്റം ചെയ്ത് മറ്റൊരു രാജ്യത്തേക്ക് ഒളിച്ചോടിയ കുറ്റവാളിയെ ബന്ധപ്പെട്ട രാജ്യത്തിന് നിയമപരമായി വിട്ടുകൊടുക്കുന്ന പ്രക്രിയയെ 'Extradition' (കുറ്റവാളി കൈമാറ്റം) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_205",
+    "topic": "one_word_substitutes_eng",
+    "question": "A legal document by which a bank lends money against immovable property as security:",
+    "options": [
+      "Mortgage",
+      "Bond",
+      "Lease",
+      "Promissory Note"
+    ],
+    "answer": 0,
+    "explanation": "ഭൂമിയോ വീടോ പോലുള്ള സ്ഥാവര സ്വത്തുക്കൾ ഈടായി വെച്ച് ബാങ്കിൽ നിന്നും പണം കടമെടുക്കുന്ന കരാറിനെ 'Mortgage' (പണയം/ഈട് വെയ്ക്കൽ) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_206",
+    "topic": "one_word_substitutes_eng",
+    "question": "The official authority of a court or agency to make legal decisions and judgments:",
+    "options": [
+      "Arbitration",
+      "Jurisdiction",
+      "Legislation",
+      "Adjudication"
+    ],
+    "answer": 1,
+    "explanation": "ഒരു കോടതിക്കോ ഉദ്യോഗസ്ഥനോ നിയമപരമായ തീരുമാനങ്ങളെടുക്കാനും വിധി പറയാനുമുള്ള അധികാര പരിധിയെ 'Jurisdiction' (അധികാരപരിധി) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_207",
+    "topic": "one_word_substitutes_eng",
+    "question": "The crime of betraying one's country, especially by attempting to overthrow the government:",
+    "options": [
+      "Sedulity",
+      "Sedition",
+      "Treason",
+      "Espionage"
+    ],
+    "answer": 2,
+    "explanation": "സ്വന്തം രാജ്യത്തിനെതിരെ പ്രവർത്തിക്കുകയോ ഭരണകൂടത്തെ അട്ടിമറിക്കാൻ ശത്രുക്കൾക്കൊപ്പം നിൽക്കുകയോ ചെയ്യുന്ന രാജ്യദ്രോഹ കുറ്റത്തെ 'Treason' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_208",
+    "topic": "one_word_substitutes_eng",
+    "question": "The practice of obtaining money or advantages from someone through force, threats, or intimidation:",
+    "options": [
+      "Bribery",
+      "Embezzlement",
+      "Burglary",
+      "Extortion"
+    ],
+    "answer": 3,
+    "explanation": "ഭീഷണിപ്പെടുത്തി പണം തട്ടിയെടുക്കുന്നതിനെ അഥവാ ബ്ലാക്ക്മെയിൽ ചെയ്ത് കൈക്കലാക്കുന്നതിനെ 'Extortion' (പിടിച്ചുപറി/ഭീഷണിപ്പെടുത്തി പണം വാങ്ങൽ) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_209",
+    "topic": "one_word_substitutes_eng",
+    "question": "The unlawful killing of a human being without premeditation or malice:",
+    "options": [
+      "Manslaughter",
+      "Homicide",
+      "Assassination",
+      "Parricide"
+    ],
+    "answer": 0,
+    "explanation": "മുൻകൂട്ടി പ്ലാൻ ചെയ്യാതെയോ പെട്ടെന്നുള്ള പ്രകോപനം കാരണമോ അബദ്ധത്തിലോ സംഭവിക്കുന്ന നരഹത്യയെ 'Manslaughter' എന്ന് വിളിക്കുന്നു. ആസൂത്രിത കൊലപാതകത്തെ 'Murder' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_210",
+    "topic": "one_word_substitutes_eng",
+    "question": "A formal decision or opinion reached by a jury at the end of a trial in court:",
+    "options": [
+      "Injunction",
+      "Verdict",
+      "Decree",
+      "Indictment"
+    ],
+    "answer": 1,
+    "explanation": "കോടതി വിചാരണയ്ക്ക് ശേഷം ജൂറി അല്ലെങ്കിൽ ജഡ്ജി നൽകുന്ന അന്തിമ വിധിയെ 'Verdict' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_211",
+    "topic": "one_word_substitutes_eng",
+    "question": "A judicial order that restrains a person from continuing an action or invading a legal right:",
+    "options": [
+      "Subpoena",
+      "Writ",
+      "Injunction",
+      "Affidavit"
+    ],
+    "answer": 2,
+    "explanation": "ഒരു പ്രവൃത്തി ചെയ്യുന്നതിൽ നിന്ന് വ്യക്തികളെയോ സ്ഥാപനങ്ങളെയോ വിലക്കിക്കൊണ്ട് കോടതി നൽകുന്ന ഉത്തരവിനെ 'Injunction' (നിരോധന ഉത്തരവ് / സ്റ്റേ) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_212",
+    "topic": "one_word_substitutes_eng",
+    "question": "A person who brings a legal action against another in a court of law:",
+    "options": [
+      "Defendant",
+      "Prosecutor",
+      "Solicitor",
+      "Plaintiff"
+    ],
+    "answer": 3,
+    "explanation": "സിവിൽ കോടതിയിൽ അപരനെതിരെ പരാതി സമർപ്പിച്ച് കേസ് നടത്തുന്ന വ്യക്തിയെ 'Plaintiff' (വാദി) എന്ന് വിളിക്കുന്നു. കേസിൽ ആരോപണം നേരിടുന്നയാളെ 'Defendant' (പ്രതി) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_213",
+    "topic": "one_word_substitutes_eng",
+    "question": "The state of being kept in custody or confined by the police:",
+    "options": [
+      "Detention",
+      "Acquittal",
+      "Exoneration",
+      "Extradition"
+    ],
+    "answer": 0,
+    "explanation": "പോലീസോ നിയമപാലകരോ ഒരാളെ കസ്റ്റഡിയിൽ സൂക്ഷിക്കുന്നതിനെ 'Detention' (തടങ്കൽ) എന്ന് വിളിക്കുന്നു. കുറ്റവിമുക്തനാക്കുന്നതിനെ 'Acquittal' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_214",
+    "topic": "one_word_substitutes_eng",
+    "question": "The official cancellation or abrogation of a law, decree, or parliamentary act:",
+    "options": [
+      "Ratification",
+      "Repeal",
+      "Amendment",
+      "Promulgation"
+    ],
+    "answer": 1,
+    "explanation": "പാർലമെന്റ് നിർമ്മിച്ച ഒരു നിയമം ഔദ്യോഗികമായി പിൻവലിക്കുന്നതിനെയോ റദ്ദാക്കുന്നതിനെയോ 'Repeal' (റദ്ദാക്കൽ) എന്ന് വിളിക്കുന്നു. മാറ്റം വരുത്തുന്നതിനെ 'Amendment' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_215",
+    "topic": "one_word_substitutes_eng",
+    "question": "A testing period during which a newly appointed employee's performance and conduct are assessed:",
+    "options": [
+      "Apprenticeship",
+      "Internship",
+      "Probation",
+      "Tenure"
+    ],
+    "answer": 2,
+    "explanation": "ഒരു പുതിയ ഉദ്യോഗസ്ഥന്റെ കാര്യക്ഷമതയും പെരുമാറ്റവും വിലയിരുത്തുന്നതിനായുള്ള ഔദ്യോഗിക പരീക്ഷണ കാലഘട്ടത്തെ 'Probation' (പ്രൊബേഷൻ) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_216",
+    "topic": "one_word_substitutes_eng",
+    "question": "The minimum number of members of a committee or legislative assembly that must be present for valid proceedings:",
+    "options": [
+      "Majority",
+      "Consensus",
+      "Plurality",
+      "Quorum"
+    ],
+    "answer": 3,
+    "explanation": "ഒരു യോഗമോ നിയമസഭാ നടപടിയോ ഔദ്യോഗികമായി സാധുവാകാൻ ആവശ്യമായ ഏറ്റവും കുറഞ്ഞ അംഗസംഖ്യയെ 'Quorum' (കോറം) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_217",
+    "topic": "one_word_substitutes_eng",
+    "question": "A direct vote by all electors of a country on an important public question or constitutional issue:",
+    "options": [
+      "Plebiscite / Referendum",
+      "Equestrian",
+      "Enfranchisement",
+      "Veto"
+    ],
+    "answer": 0,
+    "explanation": "രാജ്യത്തെ പ്രധാനപ്പെട്ട ഒരു രാഷ്ട്രീയ തീരുമാനത്തിലോ നിയമത്തിലോ പൗരന്മാർ നേരിട്ട് വോട്ട് രേഖപ്പെടുത്തി അഭിപ്രായം പറയുന്ന ജനഹിതപരിശോധനയെ 'Plebiscite' അല്ലെങ്കിൽ 'Referendum' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_218",
+    "topic": "one_word_substitutes_eng",
+    "question": "The deliberate destruction, damage, or obstruction of infrastructure, especially for military or political advantage:",
+    "options": [
+      "Espionage",
+      "Sabotage",
+      "Treason",
+      "Anarchy"
+    ],
+    "answer": 1,
+    "explanation": "ശത്രുക്കളെ തകർക്കാനോ ഭരണകൂടത്തിനെതിരെയോ റെയിൽവേ, ഫാക്ടറികൾ തുടങ്ങിയവ മനഃപൂർവ്വം നശിപ്പിക്കുന്ന അട്ടിമറി പ്രവർത്തനത്തെ 'Sabotage' (അട്ടിമറി) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_219",
+    "topic": "one_word_substitutes_eng",
+    "question": "The illegal movement of goods into or out of a country without paying customs duty:",
+    "options": [
+      "Pilferage",
+      "Piracy",
+      "Smuggling",
+      "Blackmail"
+    ],
+    "answer": 2,
+    "explanation": "നികുതി വെട്ടിച്ച് അനധികൃതമായി വിദേശത്തുനിന്നും സാധനങ്ങൾ കടത്തുന്നതിനെ 'Smuggling' (കള്ളക്കടത്ത്) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_220",
+    "topic": "one_word_substitutes_eng",
+    "question": "The misappropriation or theft of funds placed in one's trust or belonging to one's employer:",
+    "options": [
+      "Forgery",
+      "Larceny",
+      "Bribery",
+      "Embezzlement"
+    ],
+    "answer": 3,
+    "explanation": "തനിക്ക് കൈകാര്യം ചെയ്യാൻ ഏൽപ്പിച്ച സ്ഥാപനത്തിന്റെയോ സർക്കാരിന്റെയോ പണം കൃത്രിമ രേഖകളുണ്ടാക്കി അപഹരിക്കുന്നതിനെ 'Embezzlement' (ധനാപഹരണം) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_221",
+    "topic": "one_word_substitutes_eng",
+    "question": "The legal process by which a foreign citizen acquires citizenship of a country:",
+    "options": [
+      "Naturalization",
+      "Immigration",
+      "Assimilation",
+      "Colonization"
+    ],
+    "answer": 0,
+    "explanation": "ഒരു വിദേശി നിശ്ചിത കാലം ഒരു രാജ്യത്ത് താമസിച്ച് അവിടുത്തെ നിയമപ്രകാരം പൗരത്വം നേടുന്ന രീതിയെ 'Naturalization' (ദേശീയവൽക്കരണം / പൗരത്വപ്രാപ്തി) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_222",
+    "topic": "one_word_substitutes_eng",
+    "question": "The person who currently holds a particular official position or political office:",
+    "options": [
+      "Predecessor",
+      "Incumbent",
+      "Nominee",
+      "Beneficiary"
+    ],
+    "answer": 1,
+    "explanation": "നിലവിൽ ഒരു ഔദ്യോഗിക പദവി വഹിക്കുന്നയാളെ 'Incumbent' (പദവി വഹിക്കുന്ന വ്യക്തി) എന്ന് വിളിക്കുന്നു. മുൻപ് വഹിച്ചിരുന്നയാളെ 'Predecessor' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_223",
+    "topic": "one_word_substitutes_eng",
+    "question": "A system of government in which most decisions are made by state officials rather than elected representatives:",
+    "options": [
+      "Autocracy",
+      "Plutocracy",
+      "Bureaucracy",
+      "Aristocracy"
+    ],
+    "answer": 2,
+    "explanation": "തിരഞ്ഞെടുക്കപ്പെട്ട ജനപ്രതിനിധികൾക്ക് പകരം സിവിൽ സർവീസ് ഉദ്യോഗസ്ഥർ ഭരണനിർവ്വഹണം നടത്തുന്ന സംവിധാനത്തെ 'Bureaucracy' (ഉദ്യോഗസ്ഥഭരണം) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_224",
+    "topic": "one_word_substitutes_eng",
+    "question": "A legal document ordering someone to attend a court of law to give evidence as a witness:",
+    "options": [
+      "Affidavit",
+      "Injunction",
+      "Warrant",
+      "Subpoena"
+    ],
+    "answer": 3,
+    "explanation": "സാക്ഷി പറയാനായി കോടതിയിൽ നേരിട്ട് ഹാജരാകാൻ വ്യക്തിക്ക് നൽകുന്ന ഔദ്യോഗിക സമ്മൻസിനെ 'Subpoena' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_225",
+    "topic": "one_word_substitutes_eng",
+    "question": "A statement by a judge that someone is not guilty of the crime they have been charged with:",
+    "options": [
+      "Acquittal",
+      "Conviction",
+      "Indictment",
+      "Sentence"
+    ],
+    "answer": 0,
+    "explanation": "ചുമത്തപ്പെട്ട കുറ്റത്തിൽ നിന്ന് ഒരാളെ നിരപരാധിയാണെന്ന് കണ്ട് വെറുതെ വിടുന്ന ഉത്തരവിനെ 'Acquittal' (കുറ്റവിമുക്തനാക്കൽ) എന്ന് വിളിക്കുന്നു. കുറ്റക്കാരനാണെന്ന് കണ്ടെത്തുന്നതിനെ 'Conviction' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "one_word_substitutes_eng_226",
+    "topic": "one_word_substitutes_eng",
+    "question": "The power of a President or Governor to reject a bill proposed by a legislature:",
+    "options": [
+      "Quorum",
+      "Veto",
+      "Decree",
+      "Referendum"
+    ],
+    "answer": 1,
+    "explanation": "നിയമസഭയോ പാർലമെന്റോ പാസ്സാക്കിയ ബില്ല് തടഞ്ഞുവെക്കാനോ തള്ളിക്കളയാനോ രാഷ്ട്രപതിക്കോ ഗവർണർക്കോ ഉള്ള പ്രത്യേക അധികാരത്തെ 'Veto' (വീറ്റോ അധികാരം) എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_186",
+    "topic": "foreign_words",
+    "question": "What is the meaning of the Latin phrase 'LAPSUS LINGUAE'?",
+    "options": [
+      "A slip of the pen",
+      "A slip of the tongue",
+      "A lapse of memory",
+      "A false step"
+    ],
+    "answer": 1,
+    "explanation": "'Lapsus linguae' എന്നത് ലാറ്റിൻ പ്രയോഗമാണ്; സംസാരത്തിനിടയിൽ അബദ്ധത്തിൽ പറ്റുന്ന 'നാക്കുപിഴ' (a slip of the tongue) എന്നാണർത്ഥം. എഴുതുമ്പോൾ പറ്റുന്ന കൈപിഴയെ 'Lapsus calami' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_187",
+    "topic": "foreign_words",
+    "question": "The Latin expression 'LAPSUS CALAMI' means:",
+    "options": [
+      "A slip of the pen",
+      "A slip of the tongue",
+      "A loss of speech",
+      "A secret writing"
+    ],
+    "answer": 0,
+    "explanation": "'Lapsus calami' എന്നത് ലാറ്റിൻ പ്രയോഗമാണ്; എഴുത്തിൽ അബദ്ധത്തിൽ സംഭവിക്കുന്ന 'കൈപിഴ' അഥവാ അക്ഷരത്തെറ്റ് (a slip of the pen) എന്നാണർത്ഥം. നാക്കുപിഴയെ 'Lapsus linguae' എന്ന് വിളിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_188",
+    "topic": "foreign_words",
+    "question": "What does the Latin phrase 'LAPSUS MEMORIAE' denote?",
+    "options": [
+      "Permanent brain damage",
+      "Loss of eyesight",
+      "A slip or lapse of memory",
+      "A sudden shock"
+    ],
+    "answer": 2,
+    "explanation": "'Lapsus memoriae' എന്നത് ലാറ്റിൻ പ്രയോഗമാണ്; 'പെട്ടെന്നുണ്ടാകുന്ന ഓർമ്മക്കുറവ്' അല്ലെങ്കിൽ ഓർമ്മപ്പിശക് (a lapse of memory) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_189",
+    "topic": "foreign_words",
+    "question": "What is the meaning of 'ALTER EGO'?",
+    "options": [
+      "A bitter enemy",
+      "A proud leader",
+      "A distant relative",
+      "Another self / a very close, trusted friend"
+    ],
+    "answer": 3,
+    "explanation": "'Alter ego' എന്നത് ലാറ്റിൻ പദമാണ്; 'രണ്ടാമതൊരു ഞാൻ' (another self) അല്ലെങ്കിൽ ഒരു വ്യക്തിയുടെ മനസ്സ് അടുത്തറിയുന്ന 'ഏറ്റവും വിശ്വസ്തനായ ആത്മസുഹൃത്ത്' എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_190",
+    "topic": "foreign_words",
+    "question": "The Latin phrase 'PRO TEMPORE' (PRO TEM) means:",
+    "options": [
+      "For the time being / temporarily",
+      "Permanently",
+      "According to law",
+      "By public demand"
+    ],
+    "answer": 0,
+    "explanation": "'Pro tempore' (ചുരുക്കത്തിൽ Pro tem) എന്നത് ലാറ്റിൻ നിയമ പദമാണ്; 'തത്കാലത്തേക്ക്' അല്ലെങ്കിൽ 'താത്കാലികമായി' (for the time being / temporarily) എന്നാണർത്ഥം. ഉദാഹരണത്തിന്, സ്ഥിരം സ്പീക്കറെ തിരഞ്ഞെടുക്കുന്നത് വരെ സഭ നിയന്ത്രിക്കാൻ 'Speaker Pro Tem' (താത്കാലിക സ്പീക്കർ) എന്ന പദവി ഉപയോഗിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_191",
+    "topic": "foreign_words",
+    "question": "What is the meaning of the Latin term 'PER DIEM'?",
+    "options": [
+      "Yearly salary",
+      "By the day / a daily allowance",
+      "Per hundred",
+      "Lifetime pension"
+    ],
+    "answer": 1,
+    "explanation": "'Per diem' എന്നത് ലാറ്റിൻ പ്രയോഗമാണ്; 'പ്രതിദിനം' (by the day) അല്ലെങ്കിൽ ഔദ്യോഗിക ആവശ്യങ്ങൾക്കായി യാത്ര ചെയ്യുന്ന ഉദ്യോഗസ്ഥർക്ക് നൽകുന്ന 'ദിവസബത്ത / ദിവസപ്പടി' (daily allowance) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_192",
+    "topic": "foreign_words",
+    "question": "What does the Latin phrase 'AD NAUSEAM' mean?",
+    "options": [
+      "With great enthusiasm",
+      "In short summary",
+      "To a sickening or disgusting degree",
+      "Under medical supervision"
+    ],
+    "answer": 2,
+    "explanation": "'Ad nauseam' എന്നത് ലാറ്റിൻ പ്രയോഗമാണ്; ഒരു കാര്യത്തെക്കുറിച്ച് അമിതമായി ആവർത്തിച്ചു പറഞ്ഞ് കേൾവിക്കാരന് 'മടുപ്പും വെറുപ്പും ഉണ്ടാക്കുന്ന വിധം' (to a sickening or disgusting degree) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_193",
+    "topic": "foreign_words",
+    "question": "The Latin phrase 'AD INTERIM' means:",
+    "options": [
+      "At the end of life",
+      "Before trial begins",
+      "Without prior notice",
+      "In the meantime / for an intervening period"
+    ],
+    "answer": 3,
+    "explanation": "'Ad interim' എന്നത് ലാറ്റിൻ പ്രയോഗമാണ്; സ്ഥിരം സംവിധാനം ഉണ്ടാകുന്നത് വരെയുള്ള 'ഇടക്കാലത്തേക്ക്' (in the meantime / temporarily) എന്നാണർത്ഥം. 'Ad interim government' എന്നാൽ ഇടക്കാല സർക്കാർ."
+  },
+  {
+    "id": "foreign_words_194",
+    "topic": "foreign_words",
+    "question": "A person traveling 'INCOGNITO' travels:",
+    "options": [
+      "With one's true identity concealed",
+      "In royal celebration",
+      "With full government honors",
+      "Without any luggage"
+    ],
+    "answer": 0,
+    "explanation": "'Incognito' എന്നത് ഇറ്റാലിയൻ/ലാറ്റിൻ പദമാണ്; ആളുകൾ തിരിച്ചറിയാതിരിക്കാനായി പേരോ വേഷമോ മാറ്റി 'మారుവേഷത്തിൽ' (having one's true identity concealed) പ്രത്യക്ഷപ്പെടുന്നതിനെ സൂചിപ്പിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_195",
+    "topic": "foreign_words",
+    "question": "What is the meaning of the French expression 'TOUR DE FORCE'?",
+    "options": [
+      "A failure in battle",
+      "A masterpiece or feat of extraordinary skill",
+      "A long vacation tour",
+      "A forceful eviction"
+    ],
+    "answer": 1,
+    "explanation": "'Tour de force' എന്നത് ഫ്രഞ്ച് ശൈലിയാണ്; ഒരാളുടെ 'അസാധാരണമായ കഴിവോ സാങ്കേതിക പ്രാവീണ്യമോ വ്യക്തമാക്കുന്ന മാസ്റ്റർപീസ് പ്രകടനം' (a feat of extraordinary skill and achievement) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_196",
+    "topic": "foreign_words",
+    "question": "The legal maxim 'CAVEAT VENDITOR' means:",
+    "options": [
+      "Let the buyer beware",
+      "Let the court decide",
+      "Let the seller beware",
+      "Let the law take its course"
+    ],
+    "answer": 2,
+    "explanation": "'Caveat venditor' എന്നത് ലാറ്റിൻ നിയമ തത്വമാണ്; ഗുണനിലവാരമില്ലാത്ത സാധനങ്ങൾ വിറ്റാൽ നിയമനടപടി നേരിടേണ്ടി വരുമെന്നതിനാൽ 'വിൽപ്പനക്കാരൻ ജാഗ്രത പാലിക്കട്ടെ' (let the seller beware) എന്നാണർത്ഥം. ഉപഭോക്താവ് ജാഗ്രത പാലിക്കട്ടെ എന്നതിന് 'Caveat emptor' എന്ന് പറയുന്നു."
+  },
+  {
+    "id": "foreign_words_197",
+    "topic": "foreign_words",
+    "question": "What is the meaning of the French diplomatic term 'DÉTENTE'?",
+    "options": [
+      "A declaration of war",
+      "A military alliance",
+      "An economic embargo",
+      "The easing of hostility or strained relations between nations"
+    ],
+    "answer": 3,
+    "explanation": "'Détente' എന്നത് ഫ്രഞ്ച് നയതന്ത്ര പദമാണ്; ശത്രുതയിലായിരുന്ന രണ്ട് രാജ്യങ്ങൾ തമ്മിലുള്ള പിരിമുറുക്കവും സംഘർഷാവസ്ഥയും അയയുന്നതിനെ അഥവാ 'ബന്ധങ്ങളിൽ ശാന്തത കൈവരുന്നതിനെ' (easing of hostility or strained relations) സൂചിപ്പിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_198",
+    "topic": "foreign_words",
+    "question": "What does 'IN MEMORIAM' mean?",
+    "options": [
+      "In memory of / in honor of the memory of a deceased person",
+      "For the sake of argument",
+      "In future generations",
+      "With deep regret"
+    ],
+    "answer": 0,
+    "explanation": "'In memoriam' എന്നത് ലാറ്റിൻ പ്രയോഗമാണ്; അന്തരിച്ച ഒരു വ്യക്തിയുടെ 'സ്മരണാർത്ഥം' അല്ലെങ്കിൽ ഓർമ്മയ്ക്കായി (in memory of) സമർപ്പിക്കുന്നതിനെ സൂചിപ്പിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_199",
+    "topic": "foreign_words",
+    "question": "The Latin term 'INTERREGNUM' refers to:",
+    "options": [
+      "A royal coronation",
+      "A period between two successive reigns or governments",
+      "A military dictatorship",
+      "An international peace conference"
+    ],
+    "answer": 1,
+    "explanation": "'Interregnum' എന്നത് ലാറ്റിൻ പദമാണ്; ഒരു രാജാവിന്റെയോ ഭരണകൂടത്തിന്റെയോ ഭരണം അവസാനിക്കുകയും അടുത്തയാൾ അധികാരമേൽക്കുകയും ചെയ്യുന്നതിന് ഇടയിലുള്ള 'ഇടവേള അഥവാ ഭരണരഹിത കാലഘട്ടം' (interval between two successive reigns or regimes) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_200",
+    "topic": "foreign_words",
+    "question": "The French word 'PASSÉ' means:",
+    "options": [
+      "Newly discovered",
+      "Extremely expensive",
+      "Out of date / no longer fashionable",
+      "Approved by the board"
+    ],
+    "answer": 2,
+    "explanation": "'Passé' എന്നത് ഫ്രഞ്ച് വാക്കാണ്; പഴയ രീതിയിലുള്ളത്, ട്രെൻഡ് കഴിഞ്ഞത് അല്ലെങ്കിൽ 'കാലഹരണപ്പെട്ടത്' (out of date / behind the times) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_201",
+    "topic": "foreign_words",
+    "question": "What does the French phrase 'EN RAPPORT' mean?",
+    "options": [
+      "In constant conflict",
+      "Under investigation",
+      "Separated by distance",
+      "In close agreement, harmony, or sympathy"
+    ],
+    "answer": 3,
+    "explanation": "'En rapport' എന്നത് ഫ്രഞ്ച് ശൈലിയാണ്; പരസ്പരം നല്ല പൊരുത്തത്തിലും ധാരണയിലും സൗഹൃദത്തിലും കഴിയുന്ന അവസ്ഥയെ (in close agreement or sympathetic relationship) സൂചിപ്പിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_202",
+    "topic": "foreign_words",
+    "question": "What is the meaning of the Latin phrase 'VENI, VIDI, VICI'?",
+    "options": [
+      "I came, I saw, I conquered",
+      "Live and let live",
+      "Truth alone triumphs",
+      "Time and tide wait for none"
+    ],
+    "answer": 0,
+    "explanation": "'Veni, vidi, vici' എന്നത് റോമൻ ചക്രവർത്തി ജൂലിയസ് സീസറിന്റെ വിഖ്യാതമായ ലാറ്റിൻ വാക്യമാണ്; 'ഞാൻ വന്നു, ഞാൻ കണ്ടു, ഞാൻ കീഴടക്കി' (I came, I saw, I conquered) എന്നാണർത്ഥം. ഒരു കാര്യത്തിൽ അതിവേഗവും ആധികാരികവുമായ വിജയം കൈവരിക്കുന്നതിനെ ഇത് സൂചിപ്പിക്കുന്നു."
+  },
+  {
+    "id": "foreign_words_203",
+    "topic": "foreign_words",
+    "question": "The Latin word 'ERGO' means:",
+    "options": [
+      "However",
+      "Therefore / consequently",
+      "Although",
+      "Nevertheless"
+    ],
+    "answer": 1,
+    "explanation": "'Ergo' എന്നത് ലാറ്റിൻ സംയോജക പദമാണ്; 'അതുകൊണ്ട്' അല്ലെങ്കിൽ 'ആയതിനാൽ' (therefore / consequently) എന്നാണർത്ഥം. 'Cogito, ergo sum' (ഞാൻ ചിന്തിക്കുന്നു, അതിനാൽ ഞാൻ നിലനിൽക്കുന്നു) എന്നത് റെനെ ദെക്കാർത്തിന്റെ പ്രശസ്തമായ തത്വചിന്താ വാക്യമാണ്."
+  },
+  {
+    "id": "foreign_words_204",
+    "topic": "foreign_words",
+    "question": "The French expression 'A PROPOS' (APROPOS) means:",
+    "options": [
+      "Against the rule",
+      "In total confusion",
+      "Concerning / with reference to",
+      "Without any doubt"
+    ],
+    "answer": 2,
+    "explanation": "'A propos' (അല്ലെങ്കിൽ Apropos) എന്നത് ഫ്രഞ്ച് പ്രയോഗമാണ്; 'ഒരു വിഷയത്തെ സംബന്ധിച്ച്' അല്ലെങ്കിൽ 'അതുമായി ബന്ധപ്പെട്ട്' (concerning / with reference to) എന്നാണർത്ഥം."
+  },
+  {
+    "id": "foreign_words_205",
+    "topic": "foreign_words",
+    "question": "The Latin word 'ALUMNI' refers to:",
+    "options": [
+      "Current undergraduate students",
+      "Teaching faculty members",
+      "The governing board of trustees",
+      "Former students / graduates of an educational institution"
+    ],
+    "answer": 3,
+    "explanation": "'Alumni' എന്നത് ലാറ്റിൻ ബഹുവചന പദമാണ്; ഒരു സ്കൂളിലോ കോളേജിലോ പഠിച്ചിറങ്ങിയ 'പൂർവ്വ വിദ്യാർത്ഥികളെ' (former students / graduates) സൂചിപ്പിക്കുന്നു. പുരുഷ പൂർവ്വ വിദ്യാർത്ഥിയെ 'Alumnus' എന്നും, വനിതാ പൂർവ്വ വിദ്യാർത്ഥിനിയെ 'Alumna' എന്നും, വനിതാ പൂർവ്വ വിദ്യാർത്ഥികളുടെ കൂട്ടത്തെ 'Alumnae' എന്നും വിളിക്കുന്നു."
   }
 ]

@@ -12,7 +12,8 @@ import {
   TrashIcon,
   XIcon,
   EditIcon,
-  LogOutIcon
+  LogOutIcon,
+  CameraIcon
 } from './Icons';
 
 export default function ProfileModal({
@@ -29,6 +30,68 @@ export default function ProfileModal({
   const [name, setName] = useState(user.name);
   const [restoring, setRestoring] = useState(false);
   const [restoreMsg, setRestoreMsg] = useState('');
+  const [photoLoading, setPhotoLoading] = useState(false);
+  const fileInputRef = React.useRef(null);
+
+  const hasCustomPhoto = Boolean(user.avatar && (user.avatar.startsWith('data:') || user.avatar.startsWith('http')));
+
+  const handlePhotoSelect = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (!file.type.startsWith('image/')) {
+      alert('Please choose an image file (JPG, PNG, or WebP).');
+      return;
+    }
+
+    setPhotoLoading(true);
+    const reader = new FileReader();
+    reader.onload = (loadEvent) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const maxDim = 160;
+        let w = img.width;
+        let h = img.height;
+        if (w > h) {
+          if (w > maxDim) {
+            h = Math.round((h * maxDim) / w);
+            w = maxDim;
+          }
+        } else {
+          if (h > maxDim) {
+            w = Math.round((w * maxDim) / h);
+            h = maxDim;
+          }
+        }
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.82);
+
+        onUpdateUser({
+          ...user,
+          avatar: dataUrl
+        });
+        setPhotoLoading(false);
+      };
+      img.onerror = () => {
+        setPhotoLoading(false);
+        alert('Could not process this image.');
+      };
+      img.src = loadEvent.target.result;
+    };
+    reader.onerror = () => setPhotoLoading(false);
+    reader.readAsDataURL(file);
+  };
+
+  const handleRemovePhoto = () => {
+    onUpdateUser({
+      ...user,
+      avatar: (user.name?.[0] || 'U').toUpperCase()
+    });
+  };
 
   const stats = user.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} };
   const total = stats.total || 0;
@@ -74,9 +137,32 @@ export default function ProfileModal({
         {/* Header */}
         <div className="modal-header">
           <div className="profile-header-title">
-            <span className="profile-avatar-large profile-avatar-initials">
-              {(user.name || 'U')[0].toUpperCase()}
-            </span>
+            <div className="profile-avatar-wrapper">
+              {hasCustomPhoto ? (
+                <img src={user.avatar} alt={user.name} className="profile-avatar-img" />
+              ) : (
+                <span className="profile-avatar-large">
+                  {(user.name || 'U')[0].toUpperCase()}
+                </span>
+              )}
+              <button
+                type="button"
+                className="profile-avatar-camera-btn"
+                onClick={() => fileInputRef.current?.click()}
+                title="Upload or change profile photo"
+                aria-label="Upload photo"
+                disabled={photoLoading}
+              >
+                <CameraIcon size={13} />
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                style={{ display: 'none' }}
+                onChange={handlePhotoSelect}
+              />
+            </div>
             <div>
               {isEditing ? (
                 <form onSubmit={handleSaveEdit} className="profile-name-edit-form">
@@ -108,7 +194,19 @@ export default function ProfileModal({
                   </button>
                 </div>
               )}
-              <span className="profile-exam-tag">{user.isAdmin ? 'System Administrator' : 'Authorized Candidate'}</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <span className="profile-exam-tag">{user.isAdmin ? 'System Administrator' : 'Authorized Candidate'}</span>
+                {hasCustomPhoto && (
+                  <button
+                    type="button"
+                    className="profile-remove-photo-btn"
+                    onClick={handleRemovePhoto}
+                    title="Remove custom photo and use letter initial"
+                  >
+                    Remove photo
+                  </button>
+                )}
+              </div>
               <span style={{ fontSize: '0.8rem', color: '#94a3b8', display: 'block', marginTop: '0.2rem' }}>
                 Overall Progress: {correct} Solved Across All Subjects
               </span>

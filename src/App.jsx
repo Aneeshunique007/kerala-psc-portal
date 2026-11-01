@@ -354,6 +354,7 @@ export default function App() {
     if (remote) {
       const updatedUser = {
         ...currentUser,
+        avatar: remote.avatar || currentUser.avatar || (currentUser.name?.[0] || 'A').toUpperCase(),
         stats: remote.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
         bookmarkedQuestions: remote.bookmarkedQuestions || [],
         repeatQueue: (remote.repeatQueue || []).map((item) => ({ ...item, ...getFreshQuestion(item) })),
@@ -490,7 +491,7 @@ export default function App() {
         id: activeUserId,
         name: active?.name || legacyLocalUser?.name || 'Aspirant',
         email: active?.email || legacyLocalUser?.email || (activeUserId.includes('@') ? activeUserId : ''),
-        avatar: active?.avatar || (active?.name?.[0] || 'A').toUpperCase(),
+        avatar: cloudProgress?.avatar || active?.avatar || (active?.name?.[0] || 'A').toUpperCase(),
         stats: mergedStats,
         bookmarkedQuestions: mergedBookmarks,
         repeatQueue: mergedRepeats,
@@ -572,7 +573,7 @@ export default function App() {
       id: dbUser.id || `user_${Date.now()}`,
       name: dbUser.name || 'Aspirant',
       email: dbUser.email || cleanEmail,
-      avatar: (dbUser.name?.[0] || 'U').toUpperCase(),
+      avatar: cloudProgress?.avatar || (dbUser.name?.[0] || 'U').toUpperCase(),
       createdAt: dbUser.created_at ? new Date(dbUser.created_at).getTime() : Date.now(),
       stats: restoredStats,
       bookmarkedQuestions: restoredBookmarks,
@@ -630,7 +631,7 @@ export default function App() {
       name: 'Aneesh (Admin)',
       email: adminEmail,
       isAdmin: true,
-      avatar: 'A',
+      avatar: cloudProgress?.avatar || 'A',
       createdAt: Date.now(),
       stats: restoredStats,
       bookmarkedQuestions: restoredBookmarks,
@@ -2420,7 +2421,15 @@ export default function App() {
                     title="View Profile and Topic Mastery Analytics"
                   >
                     <span className="user-nav-avatar-initials">
-                      {currentUser.name ? currentUser.name[0].toUpperCase() : 'U'}
+                      {currentUser.avatar && (currentUser.avatar.startsWith('data:') || currentUser.avatar.startsWith('http')) ? (
+                        <img
+                          src={currentUser.avatar}
+                          alt={currentUser.name || 'User'}
+                          style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover', display: 'block' }}
+                        />
+                      ) : (
+                        currentUser.name ? currentUser.name[0].toUpperCase() : 'U'
+                      )}
                     </span>
                     <span className="user-nav-name desktop-only">{currentUser.name}</span>
                   </button>

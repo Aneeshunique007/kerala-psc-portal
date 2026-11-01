@@ -225,6 +225,7 @@ export async function syncUserProgressToCloud(user) {
   if (!supabase || !user) return { success: false, error: 'No user or supabase client' };
 
   const payload = {
+    avatar: user.avatar || null,
     stats: user.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
     bookmarkedQuestions: user.bookmarkedQuestions || [],
     repeatQueue: (user.repeatQueue || []).map((r) => ({

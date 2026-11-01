@@ -537,6 +537,7 @@ export default function App() {
   const handleSelectUser = (userId) => {
     setActiveUserId(userId);
     localStorage.setItem('psc_active_user_id', userId);
+    setViewMode('blueprint');
     setShowAuthModal(false);
   };
 
@@ -606,6 +607,7 @@ export default function App() {
     approveUser(activeUser.id);
     setActiveUserId(activeUser.id);
     setShowAuthModal(false);
+    setViewMode('blueprint');
     setCloudSyncStatus('synced');
     setTimeout(() => setCloudSyncStatus('idle'), 2500);
   };
@@ -892,7 +894,7 @@ export default function App() {
     setUsers([]);
     adminLogout();
     setAdminUnlocked(false);
-    setViewMode('quiz');
+    setViewMode('blueprint');
     setShowProfileModal(false);
     setShowAuthModal(true);
   };

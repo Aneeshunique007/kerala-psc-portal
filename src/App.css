@@ -3230,6 +3230,91 @@
   opacity: 1;
 }
 
+.profile-sync-panel {
+  margin: 1rem 0 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(99, 102, 241, 0.06);
+  border-radius: 10px;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+}
+
+.profile-sync-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.profile-sync-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.profile-cloud-icon {
+  color: #818cf8;
+}
+
+.profile-cloud-icon.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+.profile-sync-check-icon {
+  color: #34d399;
+}
+
+.profile-restore-btn {
+  background: rgba(99, 102, 241, 0.14);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  color: #c7d2fe;
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.profile-restore-btn:hover:not(:disabled) {
+  background: rgba(99, 102, 241, 0.25);
+  border-color: rgba(99, 102, 241, 0.55);
+  color: #ffffff;
+}
+
+.profile-restore-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.profile-restore-btn .spin {
+  animation: spin 1s linear infinite;
+}
+
+.profile-sync-feedback {
+  margin-top: 0.5rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.79rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.profile-sync-feedback.success {
+  color: #34d399;
+}
+
+.profile-sync-feedback.error {
+  color: #f87171;
+}
+
 .profile-name-row {
   display: flex;
   align-items: center;

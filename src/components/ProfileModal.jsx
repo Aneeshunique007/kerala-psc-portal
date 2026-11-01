@@ -7,13 +7,16 @@ import {
 import {
   TargetIcon,
   CheckIcon,
+  CheckCircleIcon,
+  XCircleIcon,
   RotateIcon,
   BookOpenIcon,
   TrashIcon,
   XIcon,
   EditIcon,
   LogOutIcon,
-  CameraIcon
+  CameraIcon,
+  CloudIcon
 } from './Icons';
 
 export default function ProfileModal({
@@ -29,7 +32,7 @@ export default function ProfileModal({
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user.name);
   const [restoring, setRestoring] = useState(false);
-  const [restoreMsg, setRestoreMsg] = useState('');
+  const [restoreFeedback, setRestoreFeedback] = useState(null);
   const [photoLoading, setPhotoLoading] = useState(false);
   const fileInputRef = React.useRef(null);
 
@@ -120,15 +123,15 @@ export default function ProfileModal({
   const handleRestoreFromCloud = async () => {
     if (!onRestoreFromCloud) return;
     setRestoring(true);
-    setRestoreMsg('');
+    setRestoreFeedback(null);
     try {
       await onRestoreFromCloud();
-      setRestoreMsg('✅ Progress restored from cloud!');
+      setRestoreFeedback({ type: 'success', text: 'Study progress synchronized with cloud.' });
     } catch {
-      setRestoreMsg('❌ Restore failed. Check your connection.');
+      setRestoreFeedback({ type: 'error', text: 'Synchronization failed. Please check your network connection.' });
     }
     setRestoring(false);
-    setTimeout(() => setRestoreMsg(''), 4000);
+    setTimeout(() => setRestoreFeedback(null), 4000);
   };
 
   return (
@@ -173,8 +176,12 @@ export default function ProfileModal({
                     onChange={(e) => setName(e.target.value)}
                     autoFocus
                   />
-                  <button type="submit" className="profile-name-save-btn" title="Save name">✓</button>
-                  <button type="button" className="profile-name-cancel-btn" onClick={() => setIsEditing(false)} title="Cancel">✕</button>
+                  <button type="submit" className="profile-name-save-btn" title="Save name" aria-label="Save name">
+                    <CheckIcon size={12} />
+                  </button>
+                  <button type="button" className="profile-name-cancel-btn" onClick={() => setIsEditing(false)} title="Cancel" aria-label="Cancel">
+                    <XIcon size={12} />
+                  </button>
                 </form>
               ) : (
                 <div className="profile-name-row">
@@ -253,37 +260,38 @@ export default function ProfileModal({
           </div>
 
           {/* Cloud Sync Status + Restore */}
-          <div style={{ margin: '1rem 0 0.5rem', padding: '0.75rem 1rem', background: 'rgba(99,102,241,0.08)', borderRadius: '10px', border: '1px solid rgba(99,102,241,0.2)' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <div style={{ fontSize: '0.82rem', color: '#94a3b8' }}>
-                {cloudSyncStatus === 'syncing' && <span>☁️ Syncing with cloud…</span>}
-                {cloudSyncStatus === 'synced' && <span style={{ color: '#4ade80' }}>☁️ All progress synced ✓</span>}
-                {cloudSyncStatus === 'idle' && <span>☁️ Progress saved to cloud</span>}
+          <div className="profile-sync-panel">
+            <div className="profile-sync-row">
+              <div className="profile-sync-indicator">
+                <CloudIcon size={16} className={`profile-cloud-icon ${cloudSyncStatus === 'syncing' ? 'pulse' : ''}`} />
+                <span>
+                  {cloudSyncStatus === 'syncing' && 'Synchronizing with cloud...'}
+                  {cloudSyncStatus === 'synced' && 'All progress backed up'}
+                  {cloudSyncStatus === 'idle' && 'Cloud sync active'}
+                </span>
+                {cloudSyncStatus === 'synced' && (
+                  <CheckCircleIcon size={14} className="profile-sync-check-icon" />
+                )}
               </div>
               <button
                 type="button"
                 onClick={handleRestoreFromCloud}
                 disabled={restoring}
-                style={{
-                  background: restoring ? '#334155' : 'rgba(99,102,241,0.2)',
-                  border: '1px solid rgba(99,102,241,0.4)',
-                  color: '#a5b4fc',
-                  borderRadius: '6px',
-                  padding: '0.3rem 0.7rem',
-                  fontSize: '0.78rem',
-                  cursor: restoring ? 'not-allowed' : 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.3rem',
-                }}
-                title="Fetch latest progress from cloud (use if data seems missing)"
+                className="profile-restore-btn"
+                title="Fetch latest progress from cloud"
               >
-                {restoring ? '⏳ Restoring…' : '🔄 Restore from Cloud'}
+                <RotateIcon size={13} className={restoring ? 'spin' : ''} />
+                <span>{restoring ? 'Restoring...' : 'Restore from Cloud'}</span>
               </button>
             </div>
-            {restoreMsg && (
-              <div style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: restoreMsg.startsWith('✅') ? '#4ade80' : '#f87171' }}>
-                {restoreMsg}
+            {restoreFeedback && (
+              <div className={`profile-sync-feedback ${restoreFeedback.type}`}>
+                {restoreFeedback.type === 'success' ? (
+                  <CheckCircleIcon size={14} />
+                ) : (
+                  <XCircleIcon size={14} />
+                )}
+                <span>{restoreFeedback.text}</span>
               </div>
             )}
           </div>

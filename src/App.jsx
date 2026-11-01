@@ -132,20 +132,27 @@ export default function App() {
         const u = JSON.parse(savedAuth);
         if (u && (u.isAdmin || u.email === ADMIN_USERNAME || isUserApproved(u.id))) {
           const isAdminUser = Boolean(u.isAdmin || u.email === ADMIN_USERNAME);
+          const targetId = isAdminUser ? '0da821a4-e665-4907-bb81-d058eb83b939' : u.id;
+          let cached = null;
+          try {
+            const rawCached = localStorage.getItem(`psc_cached_progress_${targetId}`);
+            if (rawCached) cached = JSON.parse(rawCached);
+          } catch {}
+
           return [{
-            id: isAdminUser ? '0da821a4-e665-4907-bb81-d058eb83b939' : u.id,
+            id: targetId,
             name: u.name || (isAdminUser ? 'Aneesh (Admin)' : 'User'),
             email: isAdminUser ? ADMIN_USERNAME : (u.email || ''),
             avatar: u.avatar || (isAdminUser ? 'A' : (u.name?.[0] || 'U')).toUpperCase(),
             isAdmin: isAdminUser,
-            stats: { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
-            bookmarkedQuestions: [],
-            repeatQueue: [],
-            upcomingRepeats: [],
-            learnedQuestions: [],
-            solvedQuestions: [],
-            questionHistory: [],
-            progressResetAt: null
+            stats: cached?.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
+            bookmarkedQuestions: cached?.bookmarkedQuestions || [],
+            repeatQueue: (cached?.repeatQueue || []).map((r) => ({ ...r, ...getFreshQuestion(r) })),
+            upcomingRepeats: (cached?.upcomingRepeats || []).map((r) => ({ ...r, ...getFreshQuestion(r) })),
+            learnedQuestions: cached?.learnedQuestions || [],
+            solvedQuestions: cached?.solvedQuestions || [],
+            questionHistory: cached?.questionHistory || [],
+            progressResetAt: cached?.progressResetAt || null,
           }];
         }
       } catch {}
@@ -303,6 +310,11 @@ export default function App() {
     if (activeUserId) {
       const active = updatedUsers.find((u) => u.id === activeUserId);
       if (active && (active.email || (active.id && active.id.includes('-')))) {
+        // Cache progress locally for instant zero-latency loading on reload / reopen
+        try {
+          localStorage.setItem(`psc_cached_progress_${active.id}`, JSON.stringify(active));
+        } catch {}
+
         if (cloudSyncTimeoutRef.current) {
           clearTimeout(cloudSyncTimeoutRef.current);
         }
@@ -352,6 +364,9 @@ export default function App() {
         progressResetAt: remote.progressResetAt || null,
       };
       setUsers(users.map((u) => (u.id === currentUser.id ? updatedUser : u)));
+      try {
+        localStorage.setItem(`psc_cached_progress_${currentUser.id}`, JSON.stringify(updatedUser));
+      } catch {}
       setCloudSyncStatus('synced');
       setTimeout(() => setCloudSyncStatus('idle'), 3000);
     } else {
@@ -492,6 +507,10 @@ export default function App() {
         return prevUsers.map((u) => (u.id === activeUserId ? updatedUser : u));
       });
 
+      try {
+        localStorage.setItem(`psc_cached_progress_${activeUserId}`, JSON.stringify(updatedUser));
+      } catch {}
+
       // If local stats were higher than cloud, upload the new record to Supabase
       if (needsCloudUpload) {
         await syncUserProgressToCloud(updatedUser);
@@ -525,10 +544,15 @@ export default function App() {
   const handleUserAuthenticated = async (dbUser) => {
     const cleanEmail = dbUser.email?.toLowerCase().trim();
 
-    // Fetch authoritative cloud progress from Supabase
-    let cloudProgress = dbUser.progress || null;
-    if (!cloudProgress && (dbUser.id || cleanEmail)) {
-      cloudProgress = await fetchUserProgressFromCloud(dbUser.id || cleanEmail);
+    // Always fetch the freshest progress from Supabase (dbUser.progress may be stale from login query)
+    let cloudProgress = null;
+    const fetchId = dbUser.id || cleanEmail;
+    if (fetchId) {
+      cloudProgress = await fetchUserProgressFromCloud(fetchId);
+    }
+    // Fallback: use progress embedded in login response if cloud fetch failed
+    if (!cloudProgress && dbUser.progress) {
+      cloudProgress = dbUser.progress;
     }
 
     const restoredBookmarks = cloudProgress?.bookmarkedQuestions || [];
@@ -571,6 +595,9 @@ export default function App() {
         isAdmin: activeUser.isAdmin || false,
       })
     );
+    try {
+      localStorage.setItem(`psc_cached_progress_${activeUser.id}`, JSON.stringify(activeUser));
+    } catch {}
     try {
       localStorage.removeItem('psc_malayalam_users');
     } catch {}
@@ -624,6 +651,9 @@ export default function App() {
         isAdmin: true,
       })
     );
+    try {
+      localStorage.setItem(`psc_cached_progress_${adminUser.id}`, JSON.stringify(adminUser));
+    } catch {}
 
     approveUser(adminUser.id);
     setUsers([adminUser]);
@@ -1891,6 +1921,8 @@ export default function App() {
           onResetProgress={handleRequestResetAllProgress}
           onDeleteAccount={handleRequestDeleteAccount}
           onUpdateUser={handleUpdateUser}
+          onRestoreFromCloud={handleManualCloudSync}
+          cloudSyncStatus={cloudSyncStatus}
         />
       )}
 

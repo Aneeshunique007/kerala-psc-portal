@@ -21,10 +21,14 @@ export default function ProfileModal({
   onLogout,
   onResetProgress,
   onDeleteAccount,
-  onUpdateUser
+  onUpdateUser,
+  onRestoreFromCloud,
+  cloudSyncStatus,
 }) {
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user.name);
+  const [restoring, setRestoring] = useState(false);
+  const [restoreMsg, setRestoreMsg] = useState('');
 
   const stats = user.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} };
   const total = stats.total || 0;
@@ -48,6 +52,20 @@ export default function ProfileModal({
 
   const handleDeleteConfirm = () => {
     onDeleteAccount(user.id);
+  };
+
+  const handleRestoreFromCloud = async () => {
+    if (!onRestoreFromCloud) return;
+    setRestoring(true);
+    setRestoreMsg('');
+    try {
+      await onRestoreFromCloud();
+      setRestoreMsg('✅ Progress restored from cloud!');
+    } catch {
+      setRestoreMsg('❌ Restore failed. Check your connection.');
+    }
+    setRestoring(false);
+    setTimeout(() => setRestoreMsg(''), 4000);
   };
 
   return (
@@ -131,9 +149,45 @@ export default function ProfileModal({
             </div>
             <div className="profile-metric-card">
               <span className="metric-icon"><BookOpenIcon size={18} /></span>
-              <div className="metric-val">{QUESTION_BANK.length + ENGLISH_QUESTION_BANK.length + PYQ_QUESTION_BANK.length}</div>
-              <div className="metric-lbl">Total Question Bank</div>
+              <div className="metric-val">{user.learnedQuestions?.length || 0}</div>
+              <div className="metric-lbl">Questions Learned</div>
             </div>
+          </div>
+
+          {/* Cloud Sync Status + Restore */}
+          <div style={{ margin: '1rem 0 0.5rem', padding: '0.75rem 1rem', background: 'rgba(99,102,241,0.08)', borderRadius: '10px', border: '1px solid rgba(99,102,241,0.2)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div style={{ fontSize: '0.82rem', color: '#94a3b8' }}>
+                {cloudSyncStatus === 'syncing' && <span>☁️ Syncing with cloud…</span>}
+                {cloudSyncStatus === 'synced' && <span style={{ color: '#4ade80' }}>☁️ All progress synced ✓</span>}
+                {cloudSyncStatus === 'idle' && <span>☁️ Progress saved to cloud</span>}
+              </div>
+              <button
+                type="button"
+                onClick={handleRestoreFromCloud}
+                disabled={restoring}
+                style={{
+                  background: restoring ? '#334155' : 'rgba(99,102,241,0.2)',
+                  border: '1px solid rgba(99,102,241,0.4)',
+                  color: '#a5b4fc',
+                  borderRadius: '6px',
+                  padding: '0.3rem 0.7rem',
+                  fontSize: '0.78rem',
+                  cursor: restoring ? 'not-allowed' : 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.3rem',
+                }}
+                title="Fetch latest progress from cloud (use if data seems missing)"
+              >
+                {restoring ? '⏳ Restoring…' : '🔄 Restore from Cloud'}
+              </button>
+            </div>
+            {restoreMsg && (
+              <div style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: restoreMsg.startsWith('✅') ? '#4ade80' : '#f87171' }}>
+                {restoreMsg}
+              </div>
+            )}
           </div>
 
           {/* Account Actions */}

@@ -180,35 +180,31 @@ export async function adminApproveUser(userId) {
     .single();
 
   if (error) {
-    console.error('Approve error:', error);
     return { success: false, error: error.message };
   }
 
   return { success: true, user: data };
 }
 
-// Admin: reject or revoke a user
+// Admin: reject a pending user
 export async function adminRejectUser(userId) {
   if (!supabase) return { success: false, error: 'Supabase not configured' };
 
   const { data, error } = await supabase
     .from('app_users')
-    .update({
-      status: 'rejected',
-    })
+    .update({ status: 'rejected' })
     .eq('id', userId)
     .select()
     .single();
 
   if (error) {
-    console.error('Reject error:', error);
     return { success: false, error: error.message };
   }
 
   return { success: true, user: data };
 }
 
-// Admin: delete user completely
+// Admin: delete a user record entirely
 export async function adminDeleteUser(userId) {
   if (!supabase) return { success: false, error: 'Supabase not configured' };
 
@@ -276,6 +272,48 @@ export async function syncUserProgressToCloud(user) {
       return { success: false, error: 'Cloud progress was reset; local progress must be refreshed first.' };
     }
 
+    // Protection Guard: Never allow an uninitialized or stale local session to overwrite or downgrade higher cloud progress!
+    const cloudProgress = existingUser?.progress;
+    if (cloudProgress && !user._isExplicitReset) {
+      const cloudLearned = cloudProgress.learnedQuestions || [];
+      const localLearned = payload.learnedQuestions || [];
+      const cloudSolved = cloudProgress.solvedQuestions || [];
+      const localSolved = payload.solvedQuestions || [];
+      const cloudStats = cloudProgress.stats || {};
+      const localStats = payload.stats || {};
+
+      // If cloud has more learned questions or higher total, safely merge to preserve all progress
+      if (cloudLearned.length > localLearned.length || (cloudStats.total || 0) > (localStats.total || 0)) {
+        payload.learnedQuestions = Array.from(new Set([...cloudLearned, ...localLearned]));
+        payload.solvedQuestions = Array.from(new Set([...cloudSolved, ...localSolved]));
+        payload.bookmarkedQuestions = Array.from(
+          new Set([...(cloudProgress.bookmarkedQuestions || []), ...(payload.bookmarkedQuestions || [])])
+        );
+
+        const mergedTopicStats = { ...(cloudStats.topicStats || {}) };
+        for (const [topId, topVal] of Object.entries(localStats.topicStats || {})) {
+          if (!mergedTopicStats[topId] || (topVal.total || 0) > (mergedTopicStats[topId].total || 0)) {
+            mergedTopicStats[topId] = topVal;
+          }
+        }
+
+        payload.stats = {
+          correct: Math.max(cloudStats.correct || 0, localStats.correct || 0),
+          total: Math.max(cloudStats.total || 0, localStats.total || 0),
+          streak: Math.max(cloudStats.streak || 0, localStats.streak || 0),
+          maxStreak: Math.max(cloudStats.maxStreak || 0, localStats.maxStreak || 0, payload.stats.streak || 0),
+          topicStats: mergedTopicStats,
+        };
+
+        if ((!payload.repeatQueue || payload.repeatQueue.length === 0) && cloudProgress.repeatQueue?.length) {
+          payload.repeatQueue = cloudProgress.repeatQueue;
+        }
+        if ((!payload.upcomingRepeats || payload.upcomingRepeats.length === 0) && cloudProgress.upcomingRepeats?.length) {
+          payload.upcomingRepeats = cloudProgress.upcomingRepeats;
+        }
+      }
+    }
+
     let updateQuery = supabase.from('app_users').update({ progress: payload });
     if (isUuid) {
       updateQuery = updateQuery.eq('id', user.id);
@@ -314,6 +352,23 @@ export async function fetchUserProgressFromCloud(identifier) {
     return data.progress || null;
   } catch (err) {
     console.warn('Fetch cloud progress error:', err);
+    return null;
+  }
+}
+
+// Diagnostic: fetch full user row (id + progress) by email — for debugging sync issues
+export async function fetchUserRowByEmail(email) {
+  if (!supabase || !email) return null;
+  try {
+    const { data, error } = await supabase
+      .from('app_users')
+      .select('id, name, email, status, progress, created_at')
+      .eq('email', email.trim().toLowerCase())
+      .maybeSingle();
+    if (error) { console.warn('fetchUserRowByEmail error:', error.message); return null; }
+    return data;
+  } catch (err) {
+    console.warn('fetchUserRowByEmail exception:', err);
     return null;
   }
 }

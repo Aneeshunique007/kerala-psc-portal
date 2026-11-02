@@ -509,7 +509,6 @@ export default function MockExamPage({ year = '2024', onExit }) {
                             return { ...prev, [currentIdx]: { ...qMap, [idx]: next } };
                           });
                         }}
-                        title="Single tap: ✅ Candidate | Double tap: ❌ Eliminate | Tap again: Clear"
                         aria-label={`Mark option ${optLetters[idx]}`}
                       >
                         {scratchStatus === 'correct' && <CheckIcon size={13} />}

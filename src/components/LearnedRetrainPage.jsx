@@ -470,7 +470,7 @@ export default function LearnedRetrainPage({
                               [oIdx]: prev[oIdx] === 'wrong' ? 'none' : 'wrong'
                             }));
                           }}
-                          title="Single tap: ✅ Candidate | Double tap: ❌ Eliminate | Tap again: Clear"
+                          aria-label={`Mark option ${String.fromCharCode(65 + oIdx)}`}
                         >
                           {scratchStatus === 'correct' && <CheckIcon size={13} />}
                           {scratchStatus === 'wrong' && <XIcon size={13} />}

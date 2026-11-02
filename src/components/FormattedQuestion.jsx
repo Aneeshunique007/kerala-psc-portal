@@ -9,12 +9,16 @@ const BADGE_FINDER_REGEX = /(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e]\.)
 export default function FormattedQuestion({ text, className = '', showQpBadge = false }) {
   if (!text) return null;
 
-  // Extract [QP: ...] code if present
+  // Extract [QP: ...] code if present, and strip exam tags like [LDC 2020], [Kerala PSC PYQ]
   let qpCode = null;
-  let clean = text.replace(/\[QP:\s*([^\]]+)\]/gi, (_, code) => {
-    qpCode = code.trim();
-    return '';
-  }).replace(/[ \t]{2,}/g, ' ').trim();
+  let clean = text
+    .replace(/\[QP:\s*([^\]]+)\]/gi, (_, code) => {
+      qpCode = code.trim();
+      return '';
+    })
+    .replace(/\s*\[(10th|Degree|CPO|VEO|VFA|LDC|LGS|Kerala PSC|Secretariat|University|Assistant|Asst)[^\]]*\]/gi, '')
+    .replace(/[ \t]{2,}/g, ' ')
+    .trim();
 
   // 1. Check for markdown table FIRST on raw lines (before splitting inline badges)
   // This ensures badges like (i), (a) inside table cells do not corrupt the table structure
@@ -111,6 +115,16 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
             {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
           </div>
         )}
+        <div className="statement-scratch-guide">
+          <span className="scratch-guide-label">Statements</span>
+          <span className="scratch-guide-pill">
+            <span className="scratch-guide-step"><span className="step-tag correct"><CheckIcon size={10} /></span> 1-tap</span>
+            <span className="scratch-guide-sep">•</span>
+            <span className="scratch-guide-step"><span className="step-tag wrong"><XIcon size={10} /></span> 2-tap</span>
+            <span className="scratch-guide-sep">•</span>
+            <span className="scratch-guide-step">3-tap clear</span>
+          </span>
+        </div>
         <div className="pyq-statements-list">
           {statements.map((st, idx) => {
             const markStatus = statementMarks[idx] || 'none';
@@ -122,7 +136,6 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
                   markStatus === 'wrong' ? 'statement-marked-wrong' : ''
                 }`}
                 onClick={() => cycleStatementMark(idx)}
-                title="Tap statement or box: 1 tap ✅ | 2 taps ❌ | 3 taps Clear"
               >
                 <span className="pyq-statement-badge">{st.badge}</span>
                 <span className="pyq-statement-body">{st.body}</span>
@@ -138,7 +151,6 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
                     e.stopPropagation();
                     setDirectWrong(idx);
                   }}
-                  title="Single tap: ✅ | Double tap: ❌ | Tap again: Clear"
                   aria-label={`Mark statement ${st.badge}`}
                 >
                   {markStatus === 'correct' && <CheckIcon size={14} />}

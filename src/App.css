@@ -970,7 +970,90 @@
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
-  margin: 0.6rem 0 0.8rem 0.5rem;
+  margin: 0.4rem 0 0.8rem 0.25rem;
+}
+
+/* Statement Scratchpad Top Guide */
+.statement-scratch-guide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.75rem 0 0.45rem 0.25rem;
+  padding: 0.35rem 0.65rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 6px;
+  font-family: var(--font-ui);
+}
+
+.scratch-guide-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary, #94a3b8);
+}
+
+.scratch-guide-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.74rem;
+  color: var(--text-secondary, #94a3b8);
+}
+
+.scratch-guide-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.step-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.step-tag.correct {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+.step-tag.wrong {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.scratch-guide-sep {
+  opacity: 0.4;
+  font-size: 0.7rem;
+}
+
+[data-theme="light"] .statement-scratch-guide {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .scratch-guide-label,
+[data-theme="light"] .scratch-guide-pill {
+  color: #64748b;
+}
+
+[data-theme="light"] .step-tag.correct {
+  background: rgba(22, 163, 74, 0.15);
+  color: #16a34a;
+  border-color: rgba(22, 163, 74, 0.35);
+}
+
+[data-theme="light"] .step-tag.wrong {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+  border-color: rgba(220, 38, 38, 0.35);
 }
 
 .pyq-statement-item {
@@ -4246,10 +4329,12 @@
 .pyq-mode-switch-btn {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.25rem;
-  padding: 0.36rem 0.52rem;
+  justify-content: center;
+  text-align: center;
+  gap: 0.15rem;
+  padding: 0.42rem 0.3rem;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(15, 23, 42, 0.65);
@@ -4258,6 +4343,7 @@
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   min-width: 0;
+  overflow: hidden;
 }
 
 .pyq-mode-switch-btn:hover {
@@ -4277,6 +4363,7 @@
   font-size: 0.74rem;
   font-weight: 700;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .pyq-mode-btn-count {
@@ -4284,6 +4371,7 @@
   font-weight: 600;
   color: #38bdf8;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .pyq-mode-switch-btn.active .pyq-mode-btn-count {

@@ -2885,7 +2885,6 @@ export default function App() {
                               [idx]: prev[idx] === 'wrong' ? 'none' : 'wrong'
                             }));
                           }}
-                          title="Single tap: ✅ Candidate | Double tap: ❌ Eliminate | Tap again: Clear"
                           aria-label={`Mark option ${optionLetters[idx]}`}
                         >
                           {scratchStatus === 'correct' && <CheckIcon size={13} />}

@@ -80,6 +80,12 @@ export default function LearnedRetrainPage({
   const [isRetraining, setIsRetraining] = useState(false);
   const [retrainCurrentIndex, setRetrainCurrentIndex] = useState(0);
   const [retrainSelectedOption, setRetrainSelectedOption] = useState(null);
+  const [optionScratchMarks, setOptionScratchMarks] = useState({});
+
+  useEffect(() => {
+    setOptionScratchMarks({});
+  }, [currentRetrainQuestion?.id]);
+
   const [retrainIsAnswered, setRetrainIsAnswered] = useState(false);
   const [retrainScore, setRetrainScore] = useState({ correct: 0, wrong: 0 });
   const [retrainMissedList, setRetrainMissedList] = useState([]);
@@ -418,6 +424,11 @@ export default function LearnedRetrainPage({
               <div className="retrain-options-list">
                 {currentRetrainQuestion.options?.map((opt, oIdx) => {
                   let optClass = 'retrain-opt-btn';
+                  const scratchStatus = optionScratchMarks[oIdx] || 'none';
+                  if (!retrainIsAnswered) {
+                    if (scratchStatus === 'correct') optClass += ' scratch-candidate';
+                    if (scratchStatus === 'wrong') optClass += ' scratch-eliminated';
+                  }
                   if (retrainIsAnswered) {
                     if (oIdx === currentRetrainQuestion.answer) {
                       optClass += ' correct';
@@ -440,6 +451,31 @@ export default function LearnedRetrainPage({
                         {String.fromCharCode(65 + oIdx)}
                       </span>
                       <span className="retrain-opt-text">{opt}</span>
+                      {!retrainIsAnswered && (
+                        <span
+                          className={`scratch-checkbox option-scratch ${scratchStatus}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setOptionScratchMarks(prev => {
+                              const cur = prev[oIdx] || 'none';
+                              const next = cur === 'none' ? 'correct' : cur === 'correct' ? 'wrong' : 'none';
+                              return { ...prev, [oIdx]: next };
+                            });
+                          }}
+                          onContextMenu={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            setOptionScratchMarks(prev => ({
+                              ...prev,
+                              [oIdx]: prev[oIdx] === 'wrong' ? 'none' : 'wrong'
+                            }));
+                          }}
+                          title="Single tap: ✅ Candidate | Double tap: ❌ Eliminate | Tap again: Clear"
+                        >
+                          {scratchStatus === 'correct' && <CheckIcon size={13} />}
+                          {scratchStatus === 'wrong' && <XIcon size={13} />}
+                        </span>
+                      )}
                       {retrainIsAnswered && oIdx === currentRetrainQuestion.answer && (
                         <CheckIcon size={16} className="retrain-opt-icon correct-icon" />
                       )}

@@ -151,6 +151,7 @@ export default function MockExamPage({ year = '2024', onExit }) {
   const [questions, setQuestions] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState({});
+  const [optionScratchMarks, setOptionScratchMarks] = useState({});
   const [flagged, setFlagged] = useState({});
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
   const [timerRunning, setTimerRunning] = useState(false);
@@ -167,6 +168,7 @@ export default function MockExamPage({ year = '2024', onExit }) {
     const paper = buildPaper(yr);
     setQuestions(paper);
     setAnswers({});
+    setOptionScratchMarks({});
     setFlagged({});
     setCurrentIdx(0);
     setTimeLeft(TOTAL_TIME);
@@ -476,15 +478,43 @@ export default function MockExamPage({ year = '2024', onExit }) {
               <div className="mock-options-container">
                 {q.options.map((opt, idx) => {
                   const isSelected = answers[currentIdx] === idx;
+                  const scratchStatus = (optionScratchMarks[currentIdx] || {})[idx] || 'none';
                   return (
                     <button
                       key={idx}
                       type="button"
-                      className={`mock-option-row ${isSelected ? 'selected' : ''}`}
+                      className={`mock-option-row ${isSelected ? 'selected' : ''} ${scratchStatus === 'correct' ? 'scratch-candidate' : scratchStatus === 'wrong' ? 'scratch-eliminated' : ''}`}
                       onClick={() => handleSelectOption(idx)}
                     >
                       <span className="mock-opt-bubble">{optLetters[idx]}</span>
                       <span className="mock-opt-label">{opt}</span>
+                      <span
+                        className={`scratch-checkbox option-scratch ${scratchStatus}`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setOptionScratchMarks(prev => {
+                            const qMap = prev[currentIdx] || {};
+                            const cur = qMap[idx] || 'none';
+                            const next = cur === 'none' ? 'correct' : cur === 'correct' ? 'wrong' : 'none';
+                            return { ...prev, [currentIdx]: { ...qMap, [idx]: next } };
+                          });
+                        }}
+                        onContextMenu={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setOptionScratchMarks(prev => {
+                            const qMap = prev[currentIdx] || {};
+                            const cur = qMap[idx] || 'none';
+                            const next = cur === 'wrong' ? 'none' : 'wrong';
+                            return { ...prev, [currentIdx]: { ...qMap, [idx]: next } };
+                          });
+                        }}
+                        title="Single tap: ✅ Candidate | Double tap: ❌ Eliminate | Tap again: Clear"
+                        aria-label={`Mark option ${optLetters[idx]}`}
+                      >
+                        {scratchStatus === 'correct' && <CheckIcon size={13} />}
+                        {scratchStatus === 'wrong' && <XIcon size={13} />}
+                      </span>
                       {isSelected && (
                         <span className="mock-opt-check">
                           <CheckIcon size={14} />

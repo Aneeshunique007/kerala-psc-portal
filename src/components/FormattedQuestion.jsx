@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { CheckIcon, XIcon } from './Icons';
 
 // True statement bullets in Kerala PSC: (a)-(e), (i)-(v), (1)-(9), or 1.-9.
 const STATEMENT_BADGE_REGEX = /^(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e]\.)\s*(.+)$/i;
@@ -80,6 +81,27 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
     }
   });
 
+  const [statementMarks, setStatementMarks] = useState({});
+
+  useEffect(() => {
+    setStatementMarks({});
+  }, [text]);
+
+  const cycleStatementMark = (idx) => {
+    setStatementMarks(prev => {
+      const cur = prev[idx] || 'none';
+      const next = cur === 'none' ? 'correct' : cur === 'correct' ? 'wrong' : 'none';
+      return { ...prev, [idx]: next };
+    });
+  };
+
+  const setDirectWrong = (idx) => {
+    setStatementMarks(prev => ({
+      ...prev,
+      [idx]: prev[idx] === 'wrong' ? 'none' : 'wrong'
+    }));
+  };
+
   if (statements.length >= 2) {
     return (
       <div className={`pyq-rendered-question ${className}`}>
@@ -90,12 +112,41 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
           </div>
         )}
         <div className="pyq-statements-list">
-          {statements.map((st, idx) => (
-            <div key={idx} className="pyq-statement-item">
-              <span className="pyq-statement-badge">{st.badge}</span>
-              <span className="pyq-statement-body">{st.body}</span>
-            </div>
-          ))}
+          {statements.map((st, idx) => {
+            const markStatus = statementMarks[idx] || 'none';
+            return (
+              <div
+                key={idx}
+                className={`pyq-statement-item ${
+                  markStatus === 'correct' ? 'statement-marked-correct' :
+                  markStatus === 'wrong' ? 'statement-marked-wrong' : ''
+                }`}
+                onClick={() => cycleStatementMark(idx)}
+                title="Tap statement or box: 1 tap ✅ | 2 taps ❌ | 3 taps Clear"
+              >
+                <span className="pyq-statement-badge">{st.badge}</span>
+                <span className="pyq-statement-body">{st.body}</span>
+                <button
+                  type="button"
+                  className={`scratch-checkbox statement-scratch ${markStatus}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    cycleStatementMark(idx);
+                  }}
+                  onContextMenu={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setDirectWrong(idx);
+                  }}
+                  title="Single tap: ✅ | Double tap: ❌ | Tap again: Clear"
+                  aria-label={`Mark statement ${st.badge}`}
+                >
+                  {markStatus === 'correct' && <CheckIcon size={14} />}
+                  {markStatus === 'wrong' && <XIcon size={14} />}
+                </button>
+              </div>
+            );
+          })}
         </div>
       </div>
     );

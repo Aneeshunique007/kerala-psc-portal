@@ -975,16 +975,37 @@
 
 .pyq-statement-item {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 0.65rem;
   background: transparent;
-  border: none;
-  border-radius: 0;
-  padding: 0.15rem 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
   font-size: 1.25rem;
   font-weight: 500;
   color: #f1f5f9;
   line-height: 1.6;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pyq-statement-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.pyq-statement-item.statement-marked-correct {
+  background: rgba(34, 197, 94, 0.1) !important;
+  border-left: 3.5px solid #22c55e !important;
+}
+
+.pyq-statement-item.statement-marked-wrong {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border-left: 3.5px solid #ef4444 !important;
+}
+
+.pyq-statement-item.statement-marked-wrong .pyq-statement-body {
+  text-decoration: line-through;
+  opacity: 0.65;
 }
 
 .pyq-statement-badge {
@@ -992,10 +1013,78 @@
   color: #ffffff;
   min-width: 2rem;
   flex-shrink: 0;
+  margin-top: 0.1rem;
 }
 
 .pyq-statement-body {
   color: #f1f5f9;
+  flex: 1;
+}
+
+/* Scratchpad Checkbox Component */
+.scratch-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 6px;
+  border: 1.5px dashed rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  color: transparent;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  padding: 0;
+  touch-action: manipulation;
+  margin-left: auto;
+}
+
+.scratch-checkbox:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.08);
+}
+
+.scratch-checkbox.correct {
+  border: 1.5px solid #22c55e !important;
+  background: rgba(34, 197, 94, 0.22) !important;
+  color: #22c55e !important;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.35);
+}
+
+.scratch-checkbox.wrong {
+  border: 1.5px solid #ef4444 !important;
+  background: rgba(239, 68, 68, 0.22) !important;
+  color: #ef4444 !important;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.35);
+}
+
+/* Option Candidate & Elimination Styles */
+.option-btn.scratch-candidate,
+.mock-option-row.scratch-candidate,
+.retrain-opt-btn.scratch-candidate {
+  border-color: rgba(34, 197, 94, 0.55) !important;
+  background: rgba(34, 197, 94, 0.08) !important;
+}
+
+.option-btn.scratch-eliminated,
+.mock-option-row.scratch-eliminated,
+.retrain-opt-btn.scratch-eliminated {
+  opacity: 0.42 !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+  background: rgba(239, 68, 68, 0.04) !important;
+}
+
+.option-btn.scratch-eliminated .option-text,
+.mock-option-row.scratch-eliminated .mock-opt-label,
+.retrain-opt-btn.scratch-eliminated .retrain-opt-text {
+  text-decoration: line-through;
+}
+
+.option-scratch {
+  margin-left: 0.5rem;
 }
 
 /* 4 Options Grid */
@@ -9819,8 +9908,61 @@
   color: #1e293b;
 }
 
+[data-theme="light"] .pyq-statement-item:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .pyq-statement-item.statement-marked-correct,
+[data-theme="light"] .mock-q-statement-body .pyq-statement-item.statement-marked-correct {
+  background: rgba(34, 197, 94, 0.12) !important;
+  border-left-color: #16a34a !important;
+}
+
+[data-theme="light"] .pyq-statement-item.statement-marked-wrong,
+[data-theme="light"] .mock-q-statement-body .pyq-statement-item.statement-marked-wrong {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border-left-color: #dc2626 !important;
+}
+
 [data-theme="light"] .pyq-statement-badge {
   color: #0f172a;
+}
+
+[data-theme="light"] .scratch-checkbox {
+  border-color: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .scratch-checkbox:hover {
+  border-color: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .scratch-checkbox.correct {
+  border-color: #16a34a !important;
+  background: rgba(34, 197, 94, 0.22) !important;
+  color: #16a34a !important;
+}
+
+[data-theme="light"] .scratch-checkbox.wrong {
+  border-color: #dc2626 !important;
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: #dc2626 !important;
+}
+
+[data-theme="light"] .option-btn.scratch-candidate,
+[data-theme="light"] .mock-option-row.scratch-candidate,
+[data-theme="light"] .retrain-opt-btn.scratch-candidate {
+  border-color: rgba(22, 163, 74, 0.6) !important;
+  background: rgba(22, 163, 74, 0.09) !important;
+}
+
+[data-theme="light"] .option-btn.scratch-eliminated,
+[data-theme="light"] .mock-option-row.scratch-eliminated,
+[data-theme="light"] .retrain-opt-btn.scratch-eliminated {
+  opacity: 0.42 !important;
+  border-color: rgba(220, 38, 38, 0.35) !important;
+  background: rgba(220, 38, 38, 0.05) !important;
 }
 
 [data-theme="light"] .mock-q-statement-body .pyq-statement-item {

@@ -206,6 +206,7 @@ export default function App() {
   });
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [optionScratchMarks, setOptionScratchMarks] = useState({});
   const [isAnswered, setIsAnswered] = useState(false);
   const [questionHistoryStack, setQuestionHistoryStack] = useState([]);
   const [historyPointer, setHistoryPointer] = useState(-1);
@@ -222,6 +223,11 @@ export default function App() {
   const quizContentAreaRef = React.useRef(null);
   const feedbackCardRef = React.useRef(null);
   const roundRobinIndexRef = React.useRef(0);
+
+  // Reset option scratch marks on question change
+  useEffect(() => {
+    setOptionScratchMarks({});
+  }, [currentQuestion?.id]);
 
   // Themed Confirmation Modal State
   const [confirmDialog, setConfirmDialog] = useState({
@@ -2834,6 +2840,11 @@ export default function App() {
               <div className="options-grid">
                 {currentQuestion.options.map((option, idx) => {
                   let optClass = 'option-btn';
+                  const scratchStatus = optionScratchMarks[idx] || 'none';
+                  if (!isAnswered) {
+                    if (scratchStatus === 'correct') optClass += ' scratch-candidate';
+                    if (scratchStatus === 'wrong') optClass += ' scratch-eliminated';
+                  }
                   if (isAnswered) {
                     if (idx === currentQuestion.answer) {
                       optClass += ' correct';
@@ -2855,6 +2866,32 @@ export default function App() {
                     >
                       <span className="option-letter">{optionLetters[idx]}</span>
                       <span className="option-text">{option}</span>
+                      {!isAnswered && (
+                        <span
+                          className={`scratch-checkbox option-scratch ${scratchStatus}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setOptionScratchMarks(prev => {
+                              const cur = prev[idx] || 'none';
+                              const next = cur === 'none' ? 'correct' : cur === 'correct' ? 'wrong' : 'none';
+                              return { ...prev, [idx]: next };
+                            });
+                          }}
+                          onContextMenu={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            setOptionScratchMarks(prev => ({
+                              ...prev,
+                              [idx]: prev[idx] === 'wrong' ? 'none' : 'wrong'
+                            }));
+                          }}
+                          title="Single tap: ✅ Candidate | Double tap: ❌ Eliminate | Tap again: Clear"
+                          aria-label={`Mark option ${optionLetters[idx]}`}
+                        >
+                          {scratchStatus === 'correct' && <CheckIcon size={13} />}
+                          {scratchStatus === 'wrong' && <XIcon size={13} />}
+                        </span>
+                      )}
                     </button>
                   );
                 })}

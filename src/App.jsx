@@ -176,6 +176,7 @@ export default function App() {
   const [adminUnlocked, setAdminUnlocked] = useState(() => isAdminLoggedIn());
 
   const currentUser = users.find(u => u.id === activeUserId) || null;
+  const userRepeatTarget = currentUser?.repeatTarget ? Number(currentUser.repeatTarget) : 3;
 
   // Selected Topic & Practice State
   const [viewMode, setViewMode] = useState('blueprint'); // 'blueprint' (homepage), 'quiz', or 'bookmarks'
@@ -374,6 +375,7 @@ export default function App() {
       const updatedUser = {
         ...currentUser,
         avatar: remote.avatar || currentUser.avatar || (currentUser.name?.[0] || 'A').toUpperCase(),
+        repeatTarget: remote.repeatTarget || currentUser.repeatTarget || 3,
         stats: remote.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
         bookmarkedQuestions: remote.bookmarkedQuestions || [],
         repeatQueue: (remote.repeatQueue || []).map((item) => ({ ...item, ...getFreshQuestion(item) })),
@@ -518,6 +520,7 @@ export default function App() {
         questionHistory: mergedHistory,
         learnedQuestions: mergedLearned,
         solvedQuestions: mergedSolved,
+        repeatTarget: cloudProgress?.repeatTarget || legacyLocalUser?.repeatTarget || active?.repeatTarget || 3,
         progressResetAt: cloudProgress?.progressResetAt || null,
       };
 
@@ -601,6 +604,7 @@ export default function App() {
       questionHistory: restoredHistory,
       learnedQuestions: cloudProgress?.learnedQuestions || [],
       solvedQuestions: cloudProgress?.solvedQuestions || [],
+      repeatTarget: cloudProgress?.repeatTarget || 3,
       progressResetAt: cloudProgress?.progressResetAt || null,
     };
 
@@ -659,6 +663,7 @@ export default function App() {
       questionHistory: restoredHistory,
       learnedQuestions: restoredLearned,
       solvedQuestions: restoredSolved,
+      repeatTarget: cloudProgress?.repeatTarget || 3,
       progressResetAt: cloudProgress?.progressResetAt || null,
     };
 
@@ -727,7 +732,25 @@ export default function App() {
   };
 
   const handleUpdateUser = (updatedUser) => {
-    const updated = users.map(u => u.id === updatedUser.id ? updatedUser : u);
+    const target = updatedUser.repeatTarget ? Number(updatedUser.repeatTarget) : 3;
+    // When repeatTarget is updated, immediately cap any existing repeat items so they respect the new target
+    const adjustedUpcoming = (updatedUser.upcomingRepeats || []).map(r => ({
+      ...r,
+      remainingRepeats: r.remainingRepeats != null ? Math.min(r.remainingRepeats, target) : target
+    }));
+    const adjustedQueue = (updatedUser.repeatQueue || []).map(r => ({
+      ...r,
+      remainingRepeats: r.remainingRepeats != null ? Math.min(r.remainingRepeats, target) : target
+    }));
+
+    const finalUser = {
+      ...updatedUser,
+      repeatTarget: target,
+      upcomingRepeats: adjustedUpcoming,
+      repeatQueue: adjustedQueue
+    };
+
+    const updated = users.map(u => u.id === finalUser.id ? finalUser : u);
     persistUsers(updated);
   };
 
@@ -1483,7 +1506,7 @@ export default function App() {
         answer: finalAnswer,
         isRepeat,
         repeatDifficulty: activeRep?.difficulty || nextQ.difficulty || null,
-        remainingRepeats: isRepeat ? (activeRep?.remainingRepeats ?? 3) : null
+        remainingRepeats: isRepeat ? Math.min(activeRep?.remainingRepeats ?? userRepeatTarget, userRepeatTarget) : null
       };
 
       setCurrentQuestion(newQuestionObj);
@@ -1642,11 +1665,12 @@ export default function App() {
       if (currentQuestion.isRepeat) {
         // When an active repeat question is answered correctly: automatically advance repeat countdown!
         const existingRepeat = userUpcomingRepeats.find(item => item.id === qId);
-        const prevRemaining = currentQuestion.remainingRepeats ?? existingRepeat?.remainingRepeats ?? 3;
+        const rawRemaining = currentQuestion.remainingRepeats ?? existingRepeat?.remainingRepeats ?? userRepeatTarget;
+        const prevRemaining = Math.min(rawRemaining, userRepeatTarget);
         const nextRemaining = prevRemaining > 1 ? prevRemaining - 1 : 0;
 
         if (nextRemaining === 0) {
-          // Completed all 3 repeats! Mastered and graduated
+          // Completed repeat target! Mastered and graduated
           updatedUpcoming = updatedUpcoming.filter(item => item.id !== qId);
           updatedRepeatQueue = updatedRepeatQueue.filter(item => item.id !== qId);
           if (!updatedLearned.includes(qId)) {
@@ -1704,7 +1728,7 @@ export default function App() {
         ...freshQ,
         id: qId,
         difficulty: 'hard',
-        remainingRepeats: 3,
+        remainingRepeats: userRepeatTarget,
         minAvailableAt: currentTotal + 5
       };
 
@@ -1776,9 +1800,10 @@ export default function App() {
         updatedSolved.push(qId);
       }
     } else if (difficulty === 'medium') {
-      // Repeats 2 more times with min 5 question gap
+      // Repeats based on target (min of 2 and userRepeatTarget)
       const prevRemaining = existingRepeat?.remainingRepeats;
-      const nextRemaining = (existingRepeat && prevRemaining > 1) ? prevRemaining - 1 : 2;
+      const targetMedium = Math.min(2, userRepeatTarget);
+      const nextRemaining = (existingRepeat && prevRemaining > 1) ? prevRemaining - 1 : targetMedium;
 
       const repeatItem = {
         ...freshQ,
@@ -1799,12 +1824,12 @@ export default function App() {
       }
       updatedLearned = updatedLearned.filter(id => id !== qId);
     } else if (difficulty === 'hard') {
-      // Fresh question marked Hard: schedules for 3 repeats with min 5 question gap
+      // Fresh question marked Hard: schedules for userRepeatTarget repeats with min 5 question gap
       const repeatItem = {
         ...freshQ,
         id: qId,
         difficulty: 'hard',
-        remainingRepeats: 3,
+        remainingRepeats: userRepeatTarget,
         minAvailableAt: currentTotal + 5
       };
 
@@ -3058,16 +3083,16 @@ export default function App() {
                     <div className="difficulty-prompt-container repeat-correct-prompt">
                       <div className="auto-queue-banner repeat-success-banner">
                         <span className="auto-queue-icon">
-                          {(currentQuestion.remainingRepeats ?? 3) <= 1 ? <CheckIcon size={18} /> : <RotateIcon size={18} />}
+                          {(currentQuestion.remainingRepeats ?? userRepeatTarget) <= 1 ? <CheckIcon size={18} /> : <RotateIcon size={18} />}
                         </span>
                         <div className="auto-queue-text">
                           <strong>
-                            {(currentQuestion.remainingRepeats ?? 3) <= 1
-                              ? 'Mastered! All 3 repeats completed'
-                              : `Repeat completed! (${(currentQuestion.remainingRepeats ?? 3) - 1} left)`}
+                            {(currentQuestion.remainingRepeats ?? userRepeatTarget) <= 1
+                              ? 'Mastered! Graduated to learned questions'
+                              : `Repeat completed! (${(currentQuestion.remainingRepeats ?? userRepeatTarget) - 1} left)`}
                           </strong>
                           <span>
-                            {(currentQuestion.remainingRepeats ?? 3) <= 1
+                            {(currentQuestion.remainingRepeats ?? userRepeatTarget) <= 1
                               ? 'Question successfully mastered and marked as learned!'
                               : 'Will reappear after at least 5 questions'}
                           </span>

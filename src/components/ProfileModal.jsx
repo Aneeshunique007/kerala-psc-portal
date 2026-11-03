@@ -296,6 +296,48 @@ export default function ProfileModal({
             )}
           </div>
 
+          {/* Review & Spaced Repetition Settings */}
+          <div className="profile-section-title" style={{ marginTop: '1.25rem' }}>
+            Review Queue Mastery Target
+          </div>
+
+          <div className="profile-setting-card">
+            <div className="profile-setting-desc">
+              Choose how many times a missed question must be answered correctly to graduate to Learned:
+            </div>
+            <div className="repeat-target-selector">
+              {[
+                { val: 1, label: '1 Repeat', badge: 'Express', desc: '1 correct answer marks as learned' },
+                { val: 2, label: '2 Repeats', badge: 'Balanced', desc: 'Requires 2 spaced correct reviews' },
+                { val: 3, label: '3 Repeats', badge: 'Thorough', desc: 'Standard 3 spaced reviews to master' }
+              ].map((opt) => {
+                const isSelected = (user.repeatTarget || 3) === opt.val;
+                return (
+                  <button
+                    key={opt.val}
+                    type="button"
+                    className={`repeat-target-btn ${isSelected ? 'active' : ''}`}
+                    onClick={() => {
+                      onUpdateUser({
+                        ...user,
+                        repeatTarget: opt.val
+                      });
+                    }}
+                  >
+                    <div className="repeat-target-left">
+                      <span className="repeat-target-radio">
+                        {isSelected && <span className="repeat-target-radio-dot" />}
+                      </span>
+                      <span className="repeat-target-val">{opt.label}</span>
+                      <span className="repeat-target-badge">{opt.badge}</span>
+                    </div>
+                    <span className="repeat-target-desc">{opt.desc}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Account Actions */}
           <div className="profile-section-title" style={{ marginTop: '1.25rem' }}>
             Account Management

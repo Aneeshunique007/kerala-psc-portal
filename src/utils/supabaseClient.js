@@ -226,6 +226,7 @@ export async function syncUserProgressToCloud(user) {
 
   const payload = {
     avatar: user.avatar || null,
+    repeatTarget: user.repeatTarget || 3,
     stats: user.stats || { correct: 0, total: 0, streak: 0, maxStreak: 0, topicStats: {} },
     bookmarkedQuestions: user.bookmarkedQuestions || [],
     repeatQueue: (user.repeatQueue || []).map((r) => ({

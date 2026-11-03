@@ -82,10 +82,6 @@ export default function LearnedRetrainPage({
   const [retrainSelectedOption, setRetrainSelectedOption] = useState(null);
   const [optionScratchMarks, setOptionScratchMarks] = useState({});
 
-  useEffect(() => {
-    setOptionScratchMarks({});
-  }, [currentRetrainQuestion?.id]);
-
   const [retrainIsAnswered, setRetrainIsAnswered] = useState(false);
   const [retrainScore, setRetrainScore] = useState({ correct: 0, wrong: 0 });
   const [retrainMissedList, setRetrainMissedList] = useState([]);
@@ -236,6 +232,10 @@ export default function LearnedRetrainPage({
   };
 
   const currentRetrainQuestion = currentSet?.questions?.[retrainCurrentIndex] || null;
+
+  useEffect(() => {
+    setOptionScratchMarks({});
+  }, [currentRetrainQuestion?.id]);
 
   const handleRetrainOptionSelect = (index) => {
     if (retrainIsAnswered || !currentRetrainQuestion) return;

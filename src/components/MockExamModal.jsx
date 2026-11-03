@@ -512,8 +512,8 @@ export default function MockExamModal({ year = '2024', onClose }) {
                           title="Mark candidate or scratch"
                         >
                           <span className={`scratch-checkbox option-scratch ${scratchStatus}`}>
-                            {scratchStatus === 'correct' && <CheckIcon size={13} />}
-                            {scratchStatus === 'wrong' && <XIcon size={13} />}
+                            {scratchStatus === 'correct' && <CheckIcon size={18} />}
+                            {scratchStatus === 'wrong' && <XIcon size={18} />}
                           </span>
                         </button>
                       </div>

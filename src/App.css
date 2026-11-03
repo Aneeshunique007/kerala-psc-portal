@@ -1168,6 +1168,11 @@
 
 .option-scratch {
   margin: 0;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 9px;
+  border-width: 2px;
 }
 
 /* 4 Options Grid */
@@ -1204,7 +1209,8 @@
   align-items: center;
   gap: 0.85rem;
   padding: 1.1rem 1.25rem;
-  flex: 1;
+  flex: 1 1 70%;
+  max-width: 70%;
   min-width: 0;
   background: transparent;
   border: none;
@@ -1215,6 +1221,15 @@
   touch-action: manipulation;
 }
 
+/* When answered or no scratch zone, take full 100% width */
+.option-btn.correct .option-main-btn,
+.option-btn.wrong .option-main-btn,
+.option-btn.disabled .option-main-btn,
+.option-btn:not(:has(.option-scratch-zone)) .option-main-btn {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
 .option-main-btn:disabled {
   cursor: default;
 }
@@ -1223,8 +1238,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 58px;
-  min-width: 58px;
+  flex: 0 0 30%;
+  width: 30%;
+  max-width: 30%;
+  min-width: 0;
   background: rgba(255, 255, 255, 0.02);
   border: none;
   border-left: 1px solid rgba(255, 255, 255, 0.08);
@@ -1244,8 +1261,8 @@
 }
 
 .option-scratch-zone:hover .scratch-checkbox {
-  border-color: rgba(255, 255, 255, 0.65);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.12);
   transform: scale(1.08);
 }
 
@@ -8855,7 +8872,8 @@
   align-items: center;
   gap: 1rem;
   padding: 0.95rem 1.25rem;
-  flex: 1;
+  flex: 1 1 70%;
+  max-width: 70%;
   min-width: 0;
   background: transparent;
   border: none;
@@ -8870,8 +8888,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 58px;
-  min-width: 58px;
+  flex: 0 0 30%;
+  width: 30%;
+  max-width: 30%;
+  min-width: 0;
   background: rgba(255, 255, 255, 0.02);
   border: none;
   border-left: 1px solid rgba(255, 255, 255, 0.08);
@@ -8891,8 +8911,8 @@
 }
 
 .mock-option-scratch-zone:hover .scratch-checkbox {
-  border-color: rgba(255, 255, 255, 0.65);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.12);
   transform: scale(1.08);
 }
 
@@ -14645,7 +14665,8 @@
   align-items: center;
   gap: 0.9rem;
   padding: 1rem 1.25rem;
-  flex: 1;
+  flex: 1 1 70%;
+  max-width: 70%;
   min-width: 0;
   background: transparent;
   border: none;
@@ -14656,6 +14677,15 @@
   touch-action: manipulation;
 }
 
+/* When answered or no scratch zone, take full 100% width */
+.retrain-opt-btn.correct .retrain-opt-main-btn,
+.retrain-opt-btn.wrong .retrain-opt-main-btn,
+.retrain-opt-btn.disabled .retrain-opt-main-btn,
+.retrain-opt-btn:not(:has(.retrain-opt-scratch-zone)) .retrain-opt-main-btn {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
 .retrain-opt-main-btn:disabled {
   cursor: default;
 }
@@ -14664,8 +14694,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 58px;
-  min-width: 58px;
+  flex: 0 0 30%;
+  width: 30%;
+  max-width: 30%;
+  min-width: 0;
   background: rgba(255, 255, 255, 0.02);
   border: none;
   border-left: 1px solid rgba(255, 255, 255, 0.08);
@@ -14685,8 +14717,8 @@
 }
 
 .retrain-opt-scratch-zone:hover .scratch-checkbox {
-  border-color: rgba(255, 255, 255, 0.65);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.12);
   transform: scale(1.08);
 }
 

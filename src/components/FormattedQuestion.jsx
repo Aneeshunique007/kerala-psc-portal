@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { CheckIcon, XIcon } from './Icons';
 
-// True statement bullets in Kerala PSC: (a)-(e), (i)-(v), (1)-(9), or 1.-9.
-const STATEMENT_BADGE_REGEX = /^(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e]\.)\s*(.+)$/i;
-const INLINE_STATEMENT_REGEX = /([^\n])\s+(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e]\.)\s+/gi;
-const BADGE_FINDER_REGEX = /(\([a-e]\)|\([ivx]{1,5}\)|\([1-9]\)|[1-9]\.|[a-e]\.)\s+/gi;
+// True statement bullets in Kerala PSC: (a)-(e), (i)-(vi), (1)-(9), 1.-9., 1)-9), a.-e., a)-e), i.-vi., i)-vi)
+const BADGE_CHARS = '\\([a-e]\\)|\\([ivx]{1,6}\\)|\\([1-9]\\)|[1-9]\\.|[1-9]\\)|[a-e]\\.|[a-e]\\)|[ivx]{1,6}\\.|[ivx]{1,6}\\)';
+const BADGE_FINDER_REGEX = new RegExp('(?:^|\\s)(?<![a-z\\.])(' + BADGE_CHARS + ')(?=\\s+)', 'gi');
+const INLINE_STATEMENT_REGEX = new RegExp('([^\\n])\\s+(?<![a-z\\.])(' + BADGE_CHARS + ')\\s+', 'gi');
+const STATEMENT_BADGE_REGEX = new RegExp('^(' + BADGE_CHARS + ')\\s*(.+)$', 'i');
 
 export default function FormattedQuestion({ text, className = '', showQpBadge = false }) {
   if (!text) return null;
 
-  // Extract [QP: ...] code if present, and strip exam tags like [LDC 2020], [Kerala PSC PYQ]
+  // Extract [QP: ...] code if present, and strip exam tags like [LDC 2020], [Kerala PSC PYQ], and topic tags like [സാഹിത്യം]
   let qpCode = null;
   let clean = text
     .replace(/\[QP:\s*([^\]]+)\]/gi, (_, code) => {
@@ -17,6 +18,8 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
       return '';
     })
     .replace(/\s*\[(10th|Degree|CPO|VEO|VFA|LDC|LGS|Kerala PSC|Secretariat|University|Assistant|Asst)[^\]]*\]/gi, '')
+    .replace(/^\s*\[[^\d+×÷/=\-^()[\]]+\]\s*/, '')
+    .replace(/\[(സാഹിത്യം|അർത്ഥം|ഒറ്റപ്പദം|കടങ്കഥ|ക്രിയ|പദവിഭജനം|പദശുദ്ധി|പരിഭാഷ|പര്യായപദം|പഴഞ്ചൊൽ|ലിംഗം|വചനം|വാക്യശുദ്ധി|വിപരീതപദം|വ്യാകരണം|ശൈലി|സന്ധി|സമാനപദം|സമാസം)\]\s*/g, '')
     .replace(/[ \t]{2,}/g, ' ')
     .trim();
 
@@ -65,7 +68,7 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
 
   // 2. Only split inline statements if at least 2 valid badges exist
   // This prevents abbreviations like (OPEC), (WHO), (UN) from being mistaken as bullets
-  const potentialBadges = clean.match(BADGE_FINDER_REGEX) || [];
+  const potentialBadges = [...clean.matchAll(BADGE_FINDER_REGEX)].map(m => m[1]);
   if (potentialBadges.length >= 2) {
     clean = clean.replace(INLINE_STATEMENT_REGEX, '$1\n$2 ');
   }

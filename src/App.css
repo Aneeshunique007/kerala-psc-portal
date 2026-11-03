@@ -6146,6 +6146,157 @@
    BOOKMARK / FAVORITES STYLES (Heart Symbol & Big Navbar Box)
    ======================================================== */
 
+/* Question Card Shortcut Hint (Bulb) Button */
+.card-hint-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  border-radius: var(--radius-full);
+  color: #fbbf24;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.card-hint-btn:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: rgba(245, 158, 11, 0.55);
+  color: #fef08a;
+  transform: translateY(-1px);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
+}
+
+.card-hint-btn.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.28), rgba(217, 119, 6, 0.22));
+  border-color: #f59e0b;
+  color: #fef3c7;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.35);
+  font-weight: 700;
+}
+
+[data-theme="light"] .card-hint-btn {
+  background: #fffbeb;
+  border-color: #fcd34d;
+  color: #b45309;
+}
+
+[data-theme="light"] .card-hint-btn:hover {
+  background: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
+}
+
+[data-theme="light"] .card-hint-btn.active {
+  background: #fef3c7;
+  border-color: #d97706;
+  color: #78350f;
+  box-shadow: 0 0 12px rgba(217, 119, 6, 0.2);
+}
+
+/* Collapsible Shortcut Hint Card */
+.question-hint-card {
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 0.95rem 1.15rem;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(217, 119, 6, 0.04));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-left: 4px solid #f59e0b;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  animation: hintSlideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes hintSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hint-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hint-bulb-icon {
+  color: #fbbf24;
+  flex-shrink: 0;
+}
+
+.hint-heading {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #fbbf24;
+  letter-spacing: 0.02em;
+  flex: 1;
+}
+
+.hint-close-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.18s ease;
+}
+
+.hint-close-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hint-card-body {
+  color: var(--text-primary);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+
+[data-theme="light"] .question-hint-card {
+  background: #fffbeb;
+  border-color: #fde68a;
+  border-left-color: #f59e0b;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.08);
+}
+
+[data-theme="light"] .hint-heading {
+  color: #b45309;
+}
+
+[data-theme="light"] .hint-bulb-icon {
+  color: #d97706;
+}
+
+[data-theme="light"] .hint-card-body {
+  color: #1e293b;
+}
+
+[data-theme="light"] .hint-close-btn {
+  color: #64748b;
+}
+
+[data-theme="light"] .hint-close-btn:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.06);
+}
+
 /* Question Card Bookmark / Heart Button */
 .card-bookmark-btn {
   display: inline-flex;

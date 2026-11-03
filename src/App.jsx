@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import confetti from 'canvas-confetti';
 import {
   SYLLABUS_TOPICS,
@@ -64,7 +64,8 @@ import {
   ShieldIcon,
   ShieldCheckIcon,
   LogOutIcon,
-  GraduationCapIcon
+  GraduationCapIcon,
+  LightbulbIcon
 } from './components/Icons';
 import './App.css';
 
@@ -207,6 +208,7 @@ export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
   const [optionScratchMarks, setOptionScratchMarks] = useState({});
+  const [showHint, setShowHint] = useState(false);
   const [isAnswered, setIsAnswered] = useState(false);
   const [questionHistoryStack, setQuestionHistoryStack] = useState([]);
   const [historyPointer, setHistoryPointer] = useState(-1);
@@ -224,10 +226,21 @@ export default function App() {
   const feedbackCardRef = React.useRef(null);
   const roundRobinIndexRef = React.useRef(0);
 
-  // Reset option scratch marks on question change
+  // Reset option scratch marks and hint on question change
   useEffect(() => {
     setOptionScratchMarks({});
+    setShowHint(false);
   }, [currentQuestion?.id]);
+
+  // Extract shortcut tip if present in current question
+  const currentQuestionHint = useMemo(() => {
+    if (!currentQuestion?.explanation) return null;
+    const exp = currentQuestion.explanation;
+    const match = exp.match(/(?:💡\s*)?എളുപ്പവഴി:[\s\S]*/);
+    if (!match) return null;
+    const rawTip = cleanExplanation(match[0].trim());
+    return rawTip.replace(/^(?:💡\s*)?എളുപ്പവഴി:\s*/, '').trim();
+  }, [currentQuestion?.id, currentQuestion?.explanation]);
 
   // Themed Confirmation Modal State
   const [confirmDialog, setConfirmDialog] = useState({
@@ -2805,6 +2818,20 @@ export default function App() {
                 </div>
 
                 <div className="card-top-bar-right">
+                  {/* Shortcut Hint Bulb Button */}
+                  {currentQuestionHint && (
+                    <button
+                      type="button"
+                      className={`card-hint-btn ${showHint ? 'active' : ''}`}
+                      onClick={() => setShowHint(prev => !prev)}
+                      title={showHint ? "Hide Shortcut Hint" : "Show Shortcut Hint / എളുപ്പവഴി"}
+                      aria-label="Toggle shortcut hint"
+                    >
+                      <LightbulbIcon size={15} />
+                      <span className="hint-btn-text">{showHint ? 'Hide Hint' : 'Hint'}</span>
+                    </button>
+                  )}
+
                   {/* Bookmark Button */}
                   <button
                     type="button"
@@ -2835,6 +2862,28 @@ export default function App() {
               <div className="question-text">
                 <QuestionDisplay text={currentQuestion.question} />
               </div>
+
+              {/* Collapsible Shortcut Hint Banner */}
+              {showHint && currentQuestionHint && (
+                <div className="question-hint-card">
+                  <div className="hint-card-header">
+                    <LightbulbIcon size={16} className="hint-bulb-icon" />
+                    <span className="hint-heading">എളുപ്പവഴി / Shortcut Tip:</span>
+                    <button
+                      type="button"
+                      className="hint-close-btn"
+                      onClick={() => setShowHint(false)}
+                      title="Close hint"
+                      aria-label="Close hint"
+                    >
+                      <XIcon size={14} />
+                    </button>
+                  </div>
+                  <div className="hint-card-body">
+                    {currentQuestionHint}
+                  </div>
+                </div>
+              )}
 
               {/* Options Grid */}
               <div className="options-grid">

@@ -1346,6 +1346,7 @@
   color: var(--text-primary);
   font-size: 1rem;
   line-height: 1.6;
+  white-space: pre-line;
 }
 
 .feedback-card > .explanation-box:first-child {
@@ -1384,6 +1385,7 @@
   color: var(--text-primary);
   font-size: 0.95rem;
   line-height: 1.6;
+  white-space: pre-line;
 }
 
 .repeat-notice {
@@ -14363,6 +14365,7 @@
   font-size: 0.86rem;
   color: #cbd5e1;
   line-height: 1.5;
+  white-space: pre-line;
 }
 
 /* Pagination Bar */
@@ -14856,6 +14859,7 @@
 
 .retrain-explanation-text p {
   margin: 0;
+  white-space: pre-line;
 }
 
 .retrain-next-wrapper {

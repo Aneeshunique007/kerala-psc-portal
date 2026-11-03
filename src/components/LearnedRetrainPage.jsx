@@ -440,20 +440,31 @@ export default function LearnedRetrainPage({
                   }
 
                   return (
-                    <button
+                    <div
                       key={oIdx}
-                      type="button"
                       className={optClass}
-                      onClick={() => handleRetrainOptionSelect(oIdx)}
-                      disabled={retrainIsAnswered}
                     >
-                      <span className="retrain-opt-letter">
-                        {String.fromCharCode(65 + oIdx)}
-                      </span>
-                      <span className="retrain-opt-text">{opt}</span>
+                      <button
+                        type="button"
+                        className="retrain-opt-main-btn"
+                        onClick={() => handleRetrainOptionSelect(oIdx)}
+                        disabled={retrainIsAnswered}
+                      >
+                        <span className="retrain-opt-letter">
+                          {String.fromCharCode(65 + oIdx)}
+                        </span>
+                        <span className="retrain-opt-text">{opt}</span>
+                        {retrainIsAnswered && oIdx === currentRetrainQuestion.answer && (
+                          <CheckIcon size={16} className="retrain-opt-icon correct-icon" />
+                        )}
+                        {retrainIsAnswered && oIdx === retrainSelectedOption && oIdx !== currentRetrainQuestion.answer && (
+                          <XIcon size={16} className="retrain-opt-icon wrong-icon" />
+                        )}
+                      </button>
                       {!retrainIsAnswered && (
-                        <span
-                          className={`scratch-checkbox option-scratch ${scratchStatus}`}
+                        <button
+                          type="button"
+                          className={`retrain-opt-scratch-zone ${scratchStatus}`}
                           onClick={(e) => {
                             e.stopPropagation();
                             setOptionScratchMarks(prev => {
@@ -471,18 +482,15 @@ export default function LearnedRetrainPage({
                             }));
                           }}
                           aria-label={`Mark option ${String.fromCharCode(65 + oIdx)}`}
+                          title="Mark candidate or scratch"
                         >
-                          {scratchStatus === 'correct' && <CheckIcon size={13} />}
-                          {scratchStatus === 'wrong' && <XIcon size={13} />}
-                        </span>
+                          <span className={`scratch-checkbox option-scratch ${scratchStatus}`}>
+                            {scratchStatus === 'correct' && <CheckIcon size={13} />}
+                            {scratchStatus === 'wrong' && <XIcon size={13} />}
+                          </span>
+                        </button>
                       )}
-                      {retrainIsAnswered && oIdx === currentRetrainQuestion.answer && (
-                        <CheckIcon size={16} className="retrain-opt-icon correct-icon" />
-                      )}
-                      {retrainIsAnswered && oIdx === retrainSelectedOption && oIdx !== currentRetrainQuestion.answer && (
-                        <XIcon size={16} className="retrain-opt-icon wrong-icon" />
-                      )}
-                    </button>
+                    </div>
                   );
                 })}
               </div>

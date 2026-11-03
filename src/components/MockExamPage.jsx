@@ -480,16 +480,26 @@ export default function MockExamPage({ year = '2024', onExit }) {
                   const isSelected = answers[currentIdx] === idx;
                   const scratchStatus = (optionScratchMarks[currentIdx] || {})[idx] || 'none';
                   return (
-                    <button
+                    <div
                       key={idx}
-                      type="button"
                       className={`mock-option-row ${isSelected ? 'selected' : ''} ${scratchStatus === 'correct' ? 'scratch-candidate' : scratchStatus === 'wrong' ? 'scratch-eliminated' : ''}`}
-                      onClick={() => handleSelectOption(idx)}
                     >
-                      <span className="mock-opt-bubble">{optLetters[idx]}</span>
-                      <span className="mock-opt-label">{opt}</span>
-                      <span
-                        className={`scratch-checkbox option-scratch ${scratchStatus}`}
+                      <button
+                        type="button"
+                        className="mock-option-main-btn"
+                        onClick={() => handleSelectOption(idx)}
+                      >
+                        <span className="mock-opt-bubble">{optLetters[idx]}</span>
+                        <span className="mock-opt-label">{opt}</span>
+                        {isSelected && (
+                          <span className="mock-opt-check">
+                            <CheckIcon size={14} />
+                          </span>
+                        )}
+                      </button>
+                      <button
+                        type="button"
+                        className={`mock-option-scratch-zone ${scratchStatus}`}
                         onClick={(e) => {
                           e.stopPropagation();
                           setOptionScratchMarks(prev => {
@@ -510,16 +520,14 @@ export default function MockExamPage({ year = '2024', onExit }) {
                           });
                         }}
                         aria-label={`Mark option ${optLetters[idx]}`}
+                        title="Mark candidate or scratch"
                       >
-                        {scratchStatus === 'correct' && <CheckIcon size={13} />}
-                        {scratchStatus === 'wrong' && <XIcon size={13} />}
-                      </span>
-                      {isSelected && (
-                        <span className="mock-opt-check">
-                          <CheckIcon size={14} />
+                        <span className={`scratch-checkbox option-scratch ${scratchStatus}`}>
+                          {scratchStatus === 'correct' && <CheckIcon size={13} />}
+                          {scratchStatus === 'wrong' && <XIcon size={13} />}
                         </span>
-                      )}
-                    </button>
+                      </button>
+                    </div>
                   );
                 })}
               </div>

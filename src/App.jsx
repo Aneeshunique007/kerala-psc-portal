@@ -2858,17 +2858,23 @@ export default function App() {
                   const optionLetters = ['A', 'B', 'C', 'D'];
 
                   return (
-                    <button
+                    <div
                       key={idx}
                       className={optClass}
-                      onClick={() => handleOptionSelect(idx)}
-                      disabled={isAnswered}
                     >
-                      <span className="option-letter">{optionLetters[idx]}</span>
-                      <span className="option-text">{option}</span>
+                      <button
+                        type="button"
+                        className="option-main-btn"
+                        onClick={() => handleOptionSelect(idx)}
+                        disabled={isAnswered}
+                      >
+                        <span className="option-letter">{optionLetters[idx]}</span>
+                        <span className="option-text">{option}</span>
+                      </button>
                       {!isAnswered && (
-                        <span
-                          className={`scratch-checkbox option-scratch ${scratchStatus}`}
+                        <button
+                          type="button"
+                          className={`option-scratch-zone ${scratchStatus}`}
                           onClick={(e) => {
                             e.stopPropagation();
                             setOptionScratchMarks(prev => {
@@ -2886,12 +2892,15 @@ export default function App() {
                             }));
                           }}
                           aria-label={`Mark option ${optionLetters[idx]}`}
+                          title="Mark candidate or scratch"
                         >
-                          {scratchStatus === 'correct' && <CheckIcon size={13} />}
-                          {scratchStatus === 'wrong' && <XIcon size={13} />}
-                        </span>
+                          <span className={`scratch-checkbox option-scratch ${scratchStatus}`}>
+                            {scratchStatus === 'correct' && <CheckIcon size={13} />}
+                            {scratchStatus === 'wrong' && <XIcon size={13} />}
+                          </span>
+                        </button>
                       )}
-                    </button>
+                    </div>
                   );
                 })}
               </div>

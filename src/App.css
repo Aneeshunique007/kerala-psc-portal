@@ -1111,6 +1111,9 @@
   color: #f1f5f9;
   line-height: 1.5;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.2s ease;
 }
 
@@ -1248,6 +1251,9 @@
   font-family: var(--font-malayalam);
   font-size: 1rem;
   line-height: 1.5;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: left;
   overflow: hidden;
@@ -9255,6 +9261,9 @@
   border: 1.5px solid rgba(255, 255, 255, 0.08);
   color: var(--text-primary, #f8fafc);
   text-align: left;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   overflow: hidden;
@@ -15053,6 +15062,9 @@
   border: 1.5px solid rgba(255, 255, 255, 0.09);
   border-radius: 8px;
   text-align: left;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   color: #e2e8f0;
   font-family: var(--font-ui);

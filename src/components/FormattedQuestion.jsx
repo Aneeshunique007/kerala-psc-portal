@@ -1,13 +1,188 @@
 import React, { useState, useEffect } from 'react';
 import { CheckIcon, XIcon } from './Icons';
 
-// True statement bullets in Kerala PSC: (a)-(e), (i)-(vi), (1)-(9), 1.-9., 1)-9), a.-e., a)-e), i.-vi., i)-vi)
-const BADGE_CHARS = '\\([a-e]\\)|\\([ivx]{1,6}\\)|\\([1-9]\\)|[1-9]\\.|[1-9]\\)|[a-e]\\.|[a-e]\\)|[ivx]{1,6}\\.|[ivx]{1,6}\\)';
-const BADGE_FINDER_REGEX = new RegExp('(?:^|\\s)(?<![a-z\\.])(' + BADGE_CHARS + ')(?=\\s+)', 'gi');
-const INLINE_STATEMENT_REGEX = new RegExp('([^\\n])\\s+(?<![a-z\\.])(' + BADGE_CHARS + ')\\s+', 'gi');
-const STATEMENT_BADGE_REGEX = new RegExp('^(' + BADGE_CHARS + ')\\s*(.+)$', 'i');
+// True statement bullets in Kerala PSC: (a)-(e), (i)-(vi), (1)-(10), 1.-10., 1)-10), a.-e., a)-e), i.-vi., i)-vi)
+const BADGE_CHARS = '\\([a-e]\\)|\\([ivx]{1,6}\\)|\\((?:10|[1-9])\\)|(?:10|[1-9])\\.|(?:10|[1-9])\\)|[a-e]\\.|[a-e]\\)|[ivx]{1,6}\\.|[ivx]{1,6}\\)';
+const MONTH_BEFORE = '(?<!ജനുവരി\\s+|ഫെബ്രുവരി\\s+|മാർച്ച്\\s+|ഏപ്രിൽ\\s+|മെയ്\\s+|ജൂൺ\\s+|ജൂലൈ\\s+|ഓഗസ്റ്റ്\\s+|സെപ്റ്റംബർ\\s+|ഒക്ടോബർ\\s+|നവംബർ\\s+|ഡിസംബർ\\s+)';
+const BADGE_FINDER_REGEX = new RegExp('(?:^|\\s)(?<![a-z]\\.\\s*)(?<![a-z\\.+\\-×÷*/=^])' + MONTH_BEFORE + '(' + BADGE_CHARS + ')(?=\\s+(?!എന്നീ))', 'gi');
+const INLINE_STATEMENT_REGEX = new RegExp('([^\\n+\\-×÷*/=^])\\s+(?<![a-z]\\.\\s*)(?<![a-z\\.])' + MONTH_BEFORE + '(' + BADGE_CHARS + ')\\s+(?!എന്നീ)', 'gi');
+const STATEMENT_BADGE_REGEX = new RegExp('^(' + BADGE_CHARS + ')\\s+(.+)$', 'i');
 
-export default function FormattedQuestion({ text, className = '', showQpBadge = false }) {
+// ---- Statement verdicts (Browse Mode): work out which statements are correct ----
+const normBadge = (b) => String(b || '').replace(/[().\s]/g, '').toLowerCase();
+const NEGATIVE_Q = /തെറ്റായ|തെറ്റാണ്|ശരിയല്ലാത്ത|ശരിയല്ല|ഒഴികെ|\b(incorrect|not correct|false|wrong|except|not true)\b/i;
+const ORDER_Q = /കാലഗണന|കാലക്രമ|ശരിയായ ക്രമം|(?<!എന്ന\s)ക്രമത്തിൽ|ക്രമീകരിക്ക|ക്രമപ്പെടുത്ത|\b(arrange|chronolog\w*|sequence|order)\b/i;
+
+// ---- Highlight positive (ശരിയായ, ശരി...) vs negative (തെറ്റ്, ശരിയല്ലാത്ത, പൊരുത്തപ്പെടാത്തത്, ഉൾപ്പെടാത്തത്...) keywords in question stems ----
+const KW_POS_EARLY = 'തെറ്റില്ലാത്ത[\\p{L}\\p{M}\\u200C\\u200D]*';
+const KW_NEG_SRC = '(?:ശരിയല്ലാത്ത|ശരിയല്ല|തെറ്റായ|തെറ്റായി|തെറ്റാണ്|തെറ്റ്|പൊരുത്തപ്പെടാത്ത|യോജിക്കാത്ത|ബന്ധമില്ലാത്ത|ബന്ധപ്പെടാത്ത|ബന്ധപ്പെട്ടിട്ടില്ലാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്നില്ല|പെടാത്ത|അല്ലാത്ത|ഒഴികെ|ഒറ്റപ്പെട്ട|വ്യത്യസ്തമായ)[\\p{L}\\p{M}\\u200C\\u200D]*|[\\p{L}\\p{M}\\u200C\\u200D]+(?:ല്ലാത്ത|പെടാത്ത|പ്പെടാത്ത)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:not\\s+correct|not\\s+true|incorrect|false|wrong|mismatch\\w*|not\\s+match\\w*|does\\s+not\\s+belong|not\\s+related|except|odd\\s+one(?:\\s+out)?)\\b';
+const KW_POS_SRC = '(?:ശരിയായ|ശരിയായി|ശരിയാണ്|ശരിയേത്|ശരി|പൊരുത്തപ്പെടുന്ന|യോജിക്കുന്ന|യോജിച്ച|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്ന)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:correct|true|right)\\b';
+const POLARITY_KW_REGEX = new RegExp(`(?<![\\p{L}\\p{M}])(?:(${KW_POS_EARLY})|(${KW_NEG_SRC})|(${KW_POS_SRC}))(?![\\p{L}\\p{M}])`, 'giu');
+const NEEDS_OPTIONS_REGEX = /താഴെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|സൂചിപ്പിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ചുവടെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ഇനിപ്പറയുന്നവയിൽ|ഇവയിൽ\s*നിന്ന്|\b(?:which\s+of\s+the\s+following|among\s+the\s+following)\b/iu;
+
+function highlightQuestionPolarity(text) {
+  if (!text) return text;
+  const parts = [];
+  let lastIdx = 0;
+  let key = 0;
+  for (const m of text.matchAll(POLARITY_KW_REGEX)) {
+    const idx = m.index;
+    if (idx > lastIdx) parts.push(text.slice(lastIdx, idx));
+    const isNeg = Boolean(m[2]);
+    parts.push(
+      <span key={`kw-${key++}`} className={isNeg ? 'pyq-kw-negative' : 'pyq-kw-positive'}>
+        {m[0]}
+      </span>
+    );
+    lastIdx = idx + m[0].length;
+  }
+  if (parts.length === 0) return text;
+  if (lastIdx < text.length) parts.push(text.slice(lastIdx));
+  return parts;
+}
+const ALL_ANS = /all of the above|all the above|all are|(?:എ|െ)ല്ലാം|മുഴുവൻ|എല്ലാ|രണ്ട് പ്രസ്താവനകളും ശരി/i;
+const NONE_ANS = /none of the above|none of these|(?:ഒ|ൊ)ന്നുമല്ല|(?:ഒ|ൊ)ന്നും?\s*അല്ല|ഒന്നും ശരിയല്ല|ഇവയാനുമല്ല|none/i;
+const LABEL_IN_ANS = /(?<![\p{L}\d])\(?([ivxIVX]{1,4}|[a-eA-E]|10|[1-9])[.)]?(?![\p{L}\d])/gu;
+
+// Malayalam number words used in answers such as "രണ്ടും മൂന്നും ശരിയാണ്" or "മൂന്നും ശരി"
+const NUM_WORDS = { 'ഒന്ന്': 1, 'ഒന്നു': 1, 'ഒന്നൂ': 1, 'ഒന്നും': 1, 'ഒന്നൂം': 1, 'ഒന്നാമത്തെ': 1, 'രണ്ട്': 2, 'രണ്ടു': 2, 'രണ്ടൂ': 2, 'രണ്ടും': 2, 'രണ്ടൂം': 2, 'രണ്ടാമത്തെ': 2, 'മൂന്ന്': 3, 'മൂന്നു': 3, 'മൂന്നും': 3, 'മൂന്നാമത്തെ': 3, 'നാല്': 4, 'നാലു': 4, 'നാലും': 4, 'നാലാമത്തെ': 4, 'അഞ്ച്': 5, 'അഞ്ചു': 5, 'അഞ്ചും': 5 };
+const FILLER_WORDS = new Set(['ശരിയാണ്', 'ശരി', 'മാത്രം', 'എന്നിവ', 'ഉം', 'ശരിയായവ', 'പ്രസ്താവനകളും', 'പ്രസ്താവനകൾ', 'പ്രസ്താവന', 'പ്രസ്താവനയും']);
+
+// Converts Malayalam number-word answers to something the label parser understands.
+// Returns { all: true } for "both/all N correct", or { text } with digits, or null.
+function normaliseNumberWords(answerText, statementCount) {
+  const words = answerText.trim().split(/[\s,]+/).filter(Boolean);
+  const nums = words.filter(w => NUM_WORDS[w]);
+  if (nums.length === 0 || words.some(w => !NUM_WORDS[w] && !FILLER_WORDS.has(w))) return null;
+  if (nums.length === 1) {
+    // "നാല് മാത്രം" => only statement 4
+    if (words.includes('മാത്രം')) return { text: String(NUM_WORDS[nums[0]]) };
+    // "രണ്ടും ശരി" => all of N statements; a bare count ("രണ്ട്") is ambiguous
+    return nums[0].endsWith('ും') && NUM_WORDS[nums[0]] === statementCount ? { all: true } : null;
+  }
+  return { text: nums.map(w => NUM_WORDS[w]).join(', ') };
+}
+
+// Answers that spell out verdicts, e.g. "ii, iii, iv ശരിയാണ്, i ശരിയല്ല" or "ഒന്നും രണ്ടും ശരി മൂന്ന് തെറ്റ്"
+const VERDICT_TOKEN = /(ശരിയല്ല|തെറ്റ(?:്|ാണ്|ായ|ും))|(ശരി(?:യാണ്|യും|യായ)?)|(ഒന്നാമത്തെ|രണ്ടാമത്തെ|മൂന്നാമത്തെ|നാലാമത്തെ|ഒന്നും|ഒന്ന്|ഒന്നു|രണ്ടും|രണ്ട്|രണ്ടു|മൂന്നും|മൂന്ന്|മൂന്നു|നാലും|നാല്|നാലു|അഞ്ചും|അഞ്ച്|അഞ്ചു)|(?<![\p{L}\d])\(?([ivxIVX]{1,4}|[a-eA-E]|10|[1-9])[.)]?(?![\p{L}\d])/gu;
+function explicitVerdicts(answerText, labels) {
+  const assigned = {};
+  let pending = [];
+  let used = 0;
+  for (const m of answerText.matchAll(VERDICT_TOKEN)) {
+    if (m[1] || m[2]) {
+      const v = m[1] ? 'wrong' : 'correct';
+      if (pending.length === 0) return null;
+      pending.forEach(l => { assigned[l] = v; });
+      pending = [];
+      used++;
+    } else {
+      let l = m[3] ? String(NUM_WORDS[m[3]]) : normBadge(m[4]);
+      if (!labels.includes(l) && /^[1-9]$/.test(l) && Number(l) <= labels.length && labels.every(x => !/^[1-9]$/.test(x))) {
+        l = labels[Number(l) - 1];
+      }
+      if (!labels.includes(l)) return null;
+      pending.push(l);
+    }
+  }
+  if (used === 0 || pending.length) return null;
+  const vals = new Set(Object.values(assigned));
+  const out = {};
+  labels.forEach(l => {
+    if (assigned[l]) out[l] = assigned[l];
+    else if (vals.size === 1) out[l] = vals.has('correct') ? 'wrong' : 'correct';
+  });
+  return labels.every(l => out[l]) ? out : null;
+}
+
+// For chronological / ordering statement questions in Browse Mode:
+// returns the statements rearranged in the exact order given by answerText, or null.
+function computeOrderedStatements(statements, answerText, introText) {
+  try {
+    if (!answerText || statements.length < 2) return null;
+    if (/ശരി|തെറ്റ|മാത്രം|എല്ലാം|only|all|both|true|false/i.test(answerText)) return null;
+    const labels = statements.map(st => normBadge(st.badge));
+    if (new Set(labels).size !== labels.length) return null;
+
+    let seq = [...String(answerText).matchAll(LABEL_IN_ANS)].map(m => normBadge(m[1]));
+    const compact = String(answerText).trim().toLowerCase();
+    if (seq.length !== labels.length && /^[a-e1-9]{3,6}$/.test(compact) && compact.length === labels.length) {
+      seq = compact.split('');
+    }
+    if (seq.some(l => !labels.includes(l)) && seq.every(l => /^[1-9]$/.test(l) && Number(l) <= labels.length) && labels.every(l => !/^[1-9]$/.test(l))) {
+      seq = seq.map(l => labels[Number(l) - 1]);
+    }
+    if (seq.length === labels.length && new Set(seq).size === labels.length && seq.every(l => labels.includes(l))) {
+      if (ORDER_Q.test(introText || '') || seq.join(',') !== labels.join(',')) {
+        const byLabel = new Map(statements.map(s => [normBadge(s.badge), s]));
+        return seq.map(l => byLabel.get(l));
+      }
+    }
+    if (ORDER_Q.test(introText || '')) {
+      const parts = String(answerText).split(/\s*(?:,|;|>|→|->|–|-)\s*/).map(s => s.trim()).filter(Boolean);
+      if (parts.length === statements.length) {
+        const matched = parts.map(p => statements.find(s => s.body.trim().toLowerCase() === p.toLowerCase()));
+        if (matched.every(Boolean) && new Set(matched).size === statements.length) return matched;
+      }
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+// Returns { [normalisedBadge]: 'correct' | 'wrong' } or null if it cannot be determined safely
+function computeVerdicts(statements, answerText, questionText) {
+  try {
+    if (!answerText || statements.length < 2) return null;
+    const labels = statements.map(st => normBadge(st.badge));
+    if (new Set(labels).size !== labels.length) return null;
+
+    const explicit = explicitVerdicts(answerText, labels);
+    if (explicit) return explicit;
+    if (/തെറ്റായ പ്രസ്താവനകൾ ഇല്ല|തെറ്റായ പ്രസ്താവന ഇല്ല/.test(answerText)) {
+      const all = {};
+      labels.forEach(l => { all[l] = 'correct'; });
+      return all;
+    }
+
+    let picked;
+    const nw = normaliseNumberWords(answerText, statements.length);
+    if (nw && nw.all) answerText = 'all of the above';
+    else if (nw && nw.text) answerText = nw.text;
+    if (ALL_ANS.test(answerText) && !/[ivx1-9]/i.test(answerText.replace(new RegExp(ALL_ANS.source, 'gi'), ''))) {
+      picked = new Set(labels);
+    } else if (NONE_ANS.test(answerText) && !/[ivx1-9]/i.test(answerText.replace(new RegExp(NONE_ANS.source, 'gi'), ''))) {
+      picked = new Set();
+    } else {
+      const seq = [...answerText.matchAll(LABEL_IN_ANS)].map(m => normBadge(m[1]));
+      picked = new Set(seq);
+      if (picked.size === 0) return null;
+      // Statements labelled (i)/(a)/… but answer uses 1, 2, 3 => position in the list
+      if ([...picked].some(l => !labels.includes(l)) && [...picked].every(l => /^[1-9]$/.test(l) && Number(l) <= labels.length) && labels.every(l => !/^[1-9]$/.test(l))) {
+        const byPos = new Set([...picked].map(l => labels[Number(l) - 1]));
+        seq.length = 0;
+        labels.forEach(l => { if (byPos.has(l)) seq.push(l); });
+        picked = byPos;
+      }
+      for (const l of picked) if (!labels.includes(l)) return null;
+      // Listing every label out of order (e.g. "1, 4, 3, 2") is an ordering answer, not a selection
+      if (picked.size === labels.length && [...picked].join(',') !== labels.join(',')) return null;
+    }
+
+    const negative = NEGATIVE_Q.test(questionText || '');
+    const verdicts = {};
+    labels.forEach(l => {
+      const inPicked = picked.has(l);
+      verdicts[l] = (negative ? !inPicked : inPicked) ? 'correct' : 'wrong';
+    });
+    return verdicts;
+  } catch {
+    return null;
+  }
+}
+
+export default function FormattedQuestion({ text, className = '', showQpBadge = false, answerText = null, verdictOverride = null, options = null, answerIndex = null }) {
   if (!text) return null;
 
   // Extract [QP: ...] code if present, and strip exam tags like [LDC 2020], [Kerala PSC PYQ], and topic tags like [സാഹിത്യം]
@@ -28,17 +203,28 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
   const rawLines = clean.split('\n').map(l => l.trim()).filter(Boolean);
   const tableLines = rawLines.filter(l => l.startsWith('|') && l.endsWith('|'));
   if (tableLines.length >= 2) {
-    const introLines = rawLines.filter(l => !l.startsWith('|'));
+    const firstTableIdx = rawLines.findIndex(l => l.startsWith('|') && l.endsWith('|'));
+    const lastTableIdx = rawLines.findLastIndex(l => l.startsWith('|') && l.endsWith('|'));
+    const introLines = rawLines.slice(0, firstTableIdx).filter(l => !l.startsWith('|'));
+    const outroLines = rawLines.slice(lastTableIdx + 1).filter(l => !l.startsWith('|'));
     const headerLine = tableLines[0];
     const headers = headerLine.split('|').map(c => c.trim()).filter(Boolean);
     const rowLines = tableLines.slice(1).filter(l => !l.includes('---'));
     const rows = rowLines.map(r => r.split('|').map(c => c.trim()).filter(Boolean));
+    const tableStmts = rows
+      .map(r => (r[0] || '').match(STATEMENT_BADGE_REGEX))
+      .filter(Boolean)
+      .map(m => ({ badge: m[1], body: m[2] }));
+    const tableVerdicts =
+      answerText && tableStmts.length === rows.length
+        ? computeVerdicts(tableStmts, answerText, clean)
+        : null;
 
     return (
       <div className={`pyq-rendered-question ${className}`}>
         {introLines.length > 0 && (
           <div className="pyq-question-intro">
-            {introLines.join('\n')}
+            {highlightQuestionPolarity(introLines.join('\n'))}
             {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
           </div>
         )}
@@ -52,16 +238,39 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
               </tr>
             </thead>
             <tbody>
-              {rows.map((row, rIdx) => (
-                <tr key={rIdx}>
-                  {row.map((cell, cIdx) => (
-                    <td key={cIdx}>{cell}</td>
-                  ))}
-                </tr>
-              ))}
+              {rows.map((row, rIdx) => {
+                const v = tableVerdicts ? tableVerdicts[normBadge(tableStmts[rIdx].badge)] : null;
+                return (
+                  <tr key={rIdx}>
+                    {row.map((cell, cIdx) => (
+                      <td key={cIdx}>
+                        {cIdx === row.length - 1 && v ? (
+                          <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
+                            <span>{cell}</span>
+                            <span
+                              className={`scratch-checkbox statement-scratch ${v}`}
+                              style={{ flexShrink: 0 }}
+                              aria-label={v === 'correct' ? 'Correct pair' : 'Wrong pair'}
+                            >
+                              {v === 'correct' ? <CheckIcon size={14} /> : <XIcon size={14} />}
+                            </span>
+                          </span>
+                        ) : (
+                          cell
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
+        {outroLines.length > 0 && (
+          <div className="pyq-question-intro" style={{ marginTop: '8px' }}>
+            {highlightQuestionPolarity(outroLines.join('\n'))}
+          </div>
+        )}
       </div>
     );
   }
@@ -110,14 +319,49 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
   };
 
   if (statements.length >= 2) {
+    const orderedStmts = computeOrderedStatements(statements, answerText, introLines.join(' '));
+    let verdicts = orderedStmts ? null : computeVerdicts(statements, answerText, clean);
+    // Hand-checked verdicts stored with the question, e.g. "cwww" (c = correct, w = wrong)
+    if (!orderedStmts && typeof verdictOverride === 'string' && verdictOverride.length === statements.length) {
+      verdicts = {};
+      statements.forEach((st, i) => { verdicts[normBadge(st.badge)] = verdictOverride[i] === 'c' ? 'correct' : 'wrong'; });
+    }
+    if (orderedStmts) {
+      return (
+        <div className={`pyq-rendered-question ${className}`}>
+          {introLines.length > 0 && (
+            <div className="pyq-question-intro">
+              <span>{highlightQuestionPolarity(introLines.join(' '))}</span>
+              {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
+            </div>
+          )}
+          <div className="pyq-statements-list">
+            {orderedStmts.map((st, idx) => (
+              <div key={idx} className="pyq-statement-item statement-marked-correct">
+                <span className="pyq-statement-badge">{st.badge}</span>
+                <span className="pyq-statement-body" style={{ textDecoration: 'none', opacity: 1 }}>{st.body}</span>
+                <span
+                  className="scratch-checkbox statement-scratch correct"
+                  style={{ fontWeight: 700, fontSize: '0.78rem' }}
+                  aria-label={`Order ${idx + 1}`}
+                >
+                  {idx + 1}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
     return (
       <div className={`pyq-rendered-question ${className}`}>
         {introLines.length > 0 && (
           <div className="pyq-question-intro">
-            <span>{introLines.join(' ')}</span>
+            <span>{highlightQuestionPolarity(introLines.join(' '))}</span>
             {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
           </div>
         )}
+        {!verdicts && (
         <div className="statement-scratch-guide">
           <span className="scratch-guide-label">Statements</span>
           <span className="scratch-guide-pill">
@@ -128,9 +372,28 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
             <span className="scratch-guide-step">3-tap clear</span>
           </span>
         </div>
+        )}
         <div className="pyq-statements-list">
           {statements.map((st, idx) => {
-            const markStatus = statementMarks[idx] || 'none';
+            const verdict = verdicts ? verdicts[normBadge(st.badge)] : null;
+            const markStatus = verdict || statementMarks[idx] || 'none';
+            if (verdict) {
+              return (
+                <div
+                  key={idx}
+                  className={`pyq-statement-item ${verdict === 'correct' ? 'statement-marked-correct' : 'statement-marked-wrong'}`}
+                >
+                  <span className="pyq-statement-badge">{st.badge}</span>
+                  <span className="pyq-statement-body" style={{ textDecoration: 'none', opacity: 1 }}>{st.body}</span>
+                  <span
+                    className={`scratch-checkbox statement-scratch ${verdict}`}
+                    aria-label={verdict === 'correct' ? 'Correct statement' : 'Wrong statement'}
+                  >
+                    {verdict === 'correct' ? <CheckIcon size={14} /> : <XIcon size={14} />}
+                  </span>
+                </div>
+              );
+            }
             return (
               <div
                 key={idx}
@@ -167,11 +430,64 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
     );
   }
 
-  // Regular single or multi-line question (including parenthetical terms like (OPEC), (WHO))
+  // Regular single or multi-line question: if it asks a positive/negative or "which of the following" question in Browse Mode, show the options with ✓ / ✗
+  const kwMatches = [...clean.matchAll(POLARITY_KW_REGEX)];
+  const showOptionStatements =
+    Array.isArray(options) &&
+    options.length >= 2 &&
+    typeof answerIndex === 'number' &&
+    !options.some(o => /^ഓപ്ഷൻ\s*[A-D]$/i.test(String(o || '').trim())) &&
+    (kwMatches.length > 0 || NEEDS_OPTIONS_REGEX.test(clean));
+
+  if (showOptionStatements) {
+    const hasNegKw = kwMatches.some(m => Boolean(m[2]));
+    const ansOpt = String(options[answerIndex] || '');
+    const isAllAns = ALL_ANS.test(ansOpt);
+    const isNoneAns = NONE_ANS.test(ansOpt);
+    const optBadges = ['(A)', '(B)', '(C)', '(D)', '(E)'];
+
+    return (
+      <div className={`pyq-rendered-question ${className}`}>
+        <div className="pyq-question-intro">
+          <span>{highlightQuestionPolarity(clean)}</span>
+          {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
+        </div>
+        <div className="pyq-statements-list">
+          {options.map((opt, oIdx) => {
+            const isPicked = oIdx === answerIndex;
+            let verdict;
+            if (isAllAns) {
+              verdict = hasNegKw ? 'wrong' : 'correct';
+            } else if (isNoneAns) {
+              verdict = isPicked ? 'correct' : (hasNegKw ? 'correct' : 'wrong');
+            } else {
+              verdict = (hasNegKw ? !isPicked : isPicked) ? 'correct' : 'wrong';
+            }
+            return (
+              <div
+                key={oIdx}
+                className={`pyq-statement-item ${verdict === 'correct' ? 'statement-marked-correct' : 'statement-marked-wrong'}`}
+              >
+                <span className="pyq-statement-badge">{optBadges[oIdx] || `(${oIdx + 1})`}</span>
+                <span className="pyq-statement-body" style={{ textDecoration: 'none', opacity: 1 }}>{opt}</span>
+                <span
+                  className={`scratch-checkbox statement-scratch ${verdict}`}
+                  aria-label={verdict === 'correct' ? 'Correct option' : 'Wrong option'}
+                >
+                  {verdict === 'correct' ? <CheckIcon size={14} /> : <XIcon size={14} />}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={`pyq-rendered-question ${className}`}>
       <span className="pyq-question-intro">
-        {clean}
+        {highlightQuestionPolarity(clean)}
         {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
       </span>
     </div>

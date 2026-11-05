@@ -729,22 +729,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.4rem;
 }
 
 .card-top-bar-left {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.35rem;
   flex-wrap: wrap;
 }
 
 .card-top-bar-right {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.35rem;
   flex-wrap: wrap;
 }
 
@@ -808,20 +808,30 @@
 }
 
 .pyq-paper-code-badge {
-  font-size: 0.82rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.68rem;
+  line-height: 1.3;
   font-family: var(--font-ui);
   color: #cbd5e1;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--border-subtle);
-  padding: 0.3rem 0.75rem;
+  padding: 0.16rem 0.5rem;
   border-radius: var(--radius-sm);
+}
+
+.pyq-paper-code-badge svg {
+  width: 11px;
+  height: 11px;
 }
 
 .pyq-year-badge {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.68rem;
+  line-height: 1.3;
   font-weight: 700;
-  padding: 0.25rem 0.65rem;
+  padding: 0.16rem 0.5rem;
   border-radius: var(--radius-full);
   background: rgba(14, 165, 233, 0.15);
   border: 1px solid rgba(14, 165, 233, 0.4);
@@ -831,8 +841,9 @@
 
 .topic-badge {
   display: inline-block;
-  font-size: 0.8rem;
-  padding: 0.3rem 0.8rem;
+  font-size: 0.68rem;
+  line-height: 1.3;
+  padding: 0.16rem 0.5rem;
   border-radius: var(--radius-full);
   background: rgba(59, 130, 246, 0.15);
   border: 1px solid rgba(59, 130, 246, 0.3);
@@ -860,12 +871,12 @@
 
 .question-heading,
 .question-text {
-  font-size: 1.45rem;
-  font-weight: 700;
+  font-size: 1.12rem;
+  font-weight: 600;
   color: #ffffff;
-  line-height: 1.6;
-  margin-top: 1.5rem;
-  margin-bottom: 2.25rem;
+  line-height: 1.55;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
   white-space: pre-line;
 }
@@ -878,8 +889,9 @@
 }
 
 .pyq-question-intro {
+  font-size: 1.12rem;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.55;
   white-space: pre-line;
 }
@@ -1056,6 +1068,36 @@
   border-color: rgba(220, 38, 38, 0.35);
 }
 
+.pyq-kw-positive {
+  background: rgba(34, 197, 94, 0.18);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  padding: 0.05rem 0.38rem;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.pyq-kw-negative {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  padding: 0.05rem 0.38rem;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+[data-theme="light"] .pyq-kw-positive {
+  background: rgba(22, 163, 74, 0.14);
+  color: #15803d;
+  border-color: rgba(22, 163, 74, 0.35);
+}
+
+[data-theme="light"] .pyq-kw-negative {
+  background: rgba(220, 38, 38, 0.14);
+  color: #b91c1c;
+  border-color: rgba(220, 38, 38, 0.35);
+}
+
 .pyq-statement-item {
   display: flex;
   align-items: flex-start;
@@ -1064,12 +1106,36 @@
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 0.35rem 0.6rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #f1f5f9;
-  line-height: 1.6;
+  line-height: 1.5;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+@media (max-width: 640px) {
+  .pyq-question-intro {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .pyq-statement-item,
+  .pyq-statement-badge {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 420px) {
+  .pyq-question-intro {
+    font-size: 0.94rem;
+    line-height: 1.45;
+  }
+  .pyq-statement-item,
+  .pyq-statement-badge {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
 }
 
 .pyq-statement-item:hover {
@@ -1086,17 +1152,13 @@
   border-left: 3.5px solid #ef4444 !important;
 }
 
-.pyq-statement-item.statement-marked-wrong .pyq-statement-body {
-  text-decoration: line-through;
-  opacity: 0.65;
-}
-
 .pyq-statement-badge {
+  font-size: 1rem;
+  line-height: 1.5;
   font-weight: 700;
   color: #ffffff;
   min-width: 2rem;
   flex-shrink: 0;
-  margin-top: 0.1rem;
 }
 
 .pyq-statement-body {
@@ -1155,43 +1217,37 @@
 .option-btn.scratch-eliminated,
 .mock-option-row.scratch-eliminated,
 .retrain-opt-btn.scratch-eliminated {
-  opacity: 0.42 !important;
   border-color: rgba(239, 68, 68, 0.35) !important;
   background: rgba(239, 68, 68, 0.04) !important;
 }
 
-.option-btn.scratch-eliminated .option-text,
-.mock-option-row.scratch-eliminated .mock-opt-label,
-.retrain-opt-btn.scratch-eliminated .retrain-opt-text {
-  text-decoration: line-through;
-}
-
 .option-scratch {
   margin: 0;
-  width: 38px;
-  height: 38px;
-  min-width: 38px;
-  border-radius: 9px;
-  border-width: 2px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 6px;
+  border-width: 1.5px;
 }
 
 /* 4 Options Grid */
 .options-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0.55rem;
 }
 
 .option-btn {
   display: flex;
   align-items: stretch;
   padding: 0;
-  border-radius: var(--radius-md);
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-primary);
   font-family: var(--font-malayalam);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.5;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: left;
   overflow: hidden;
@@ -1207,10 +1263,10 @@
 .option-main-btn {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
-  padding: 1.1rem 1.25rem;
-  flex: 1 1 70%;
-  max-width: 70%;
+  gap: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  flex: 1 1 78%;
+  max-width: 78%;
   min-width: 0;
   background: transparent;
   border: none;
@@ -1238,9 +1294,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 30%;
-  width: 30%;
-  max-width: 30%;
+  flex: 0 0 22%;
+  width: 22%;
+  max-width: 22%;
   min-width: 0;
   background: rgba(255, 255, 255, 0.02);
   border: none;
@@ -1267,15 +1323,15 @@
 }
 
 .option-letter {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-sm);
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
   background: rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: var(--font-ui);
   flex-shrink: 0;
 }
@@ -1800,12 +1856,13 @@
 .history-review-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.75rem;
+  gap: 0.25rem;
+  padding: 0.16rem 0.5rem;
   background: rgba(245, 158, 11, 0.14);
   border: 1px solid rgba(245, 158, 11, 0.38);
   color: #fbbf24;
-  font-size: 0.78rem;
+  font-size: 0.68rem;
+  line-height: 1.3;
   font-weight: 700;
   border-radius: var(--radius-full);
   letter-spacing: 0.02em;
@@ -2861,9 +2918,9 @@
 
   .question-heading,
   .question-text {
-    font-size: 1.2rem;
-    margin-top: 1.15rem;
-    margin-bottom: 1.75rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
     line-height: 1.5;
   }
 }
@@ -2949,12 +3006,12 @@
 
   .option-btn {
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.88rem;
   }
 
   .option-main-btn {
-    padding: 0.85rem 1rem;
-    font-size: 1rem;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.88rem;
   }
 
   .action-row {
@@ -4526,13 +4583,14 @@
 .ca-year-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.25rem;
   background: rgba(234, 179, 8, 0.15);
   color: #facc15;
   border: 1px solid rgba(234, 179, 8, 0.35);
-  padding: 0.22rem 0.55rem;
+  padding: 0.16rem 0.5rem;
   border-radius: var(--radius-sm);
-  font-size: 0.76rem;
+  font-size: 0.68rem;
+  line-height: 1.3;
   font-weight: 600;
 }
 
@@ -6326,18 +6384,24 @@
 .card-hint-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.4rem 0.85rem;
+  gap: 0.3rem;
+  padding: 0.2rem 0.55rem;
   background: rgba(245, 158, 11, 0.08);
   border: 1px solid rgba(245, 158, 11, 0.28);
   border-radius: var(--radius-full);
   color: #fbbf24;
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: 0.7rem;
+  line-height: 1.3;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   outline: none;
+}
+
+.card-hint-btn svg {
+  width: 12px;
+  height: 12px;
 }
 
 .card-hint-btn:hover {
@@ -6477,18 +6541,24 @@
 .card-bookmark-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.95rem;
+  gap: 0.3rem;
+  padding: 0.2rem 0.55rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-full);
   color: var(--text-secondary);
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: 0.7rem;
+  line-height: 1.3;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   outline: none;
+}
+
+.card-bookmark-btn svg {
+  width: 12px;
+  height: 12px;
 }
 
 .card-bookmark-btn:hover {
@@ -6772,9 +6842,9 @@
 
 .bmark-item-question {
   color: #f8fafc;
-  font-size: 1.1rem;
-  font-weight: 700;
-  line-height: 1.65;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.55;
   font-family: var(--font-malayalam);
   white-space: pre-line;
 }
@@ -6802,9 +6872,9 @@
 
 .bmark-item-answer strong {
   color: #ecfdf5;
-  font-size: 1.08rem;
-  font-weight: 700;
-  line-height: 1.45;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 /* Optional Explanation */
@@ -7402,7 +7472,7 @@
 .bmark-sheet-question {
   color: #f8fafc;
   font-size: 1.12rem;
-  line-height: 1.7;
+  line-height: 1.55;
   font-weight: 600;
   font-family: var(--font-malayalam);
   padding-left: 0.25rem;
@@ -7431,8 +7501,8 @@
   padding: 0.45rem 0.65rem;
   border-radius: 8px;
   font-family: var(--font-malayalam);
-  font-size: 0.96rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #94a3b8;
   transition: all 0.15s ease;
 }
@@ -7440,10 +7510,10 @@
 .bmark-opt-prefix {
   font-family: var(--font-ui);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #64748b;
   flex-shrink: 0;
-  margin-top: 0.05rem;
 }
 
 .bmark-opt-body {
@@ -9111,8 +9181,8 @@
 }
 
 .mock-q-statement-body .pyq-question-intro {
-  font-size: 1.15rem;
-  line-height: 1.6;
+  font-size: 1.12rem;
+  line-height: 1.55;
   font-weight: 600;
   color: var(--text-primary, #f8fafc);
   margin-bottom: 0.6rem;
@@ -9128,8 +9198,8 @@
   border: none;
   border-radius: 0;
   padding: 0.15rem 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--text-primary, #f8fafc);
   align-items: baseline;
   gap: 0.65rem;
@@ -9143,7 +9213,7 @@
 .mock-q-statement-body .pyq-statement-badge {
   color: var(--text-primary, #f8fafc);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1rem;
   min-width: 2rem;
 }
 
@@ -9162,8 +9232,8 @@
 }
 
 .mock-q-text-mal {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.12rem;
+  line-height: 1.55;
   font-weight: 600;
   color: var(--text-primary, #f8fafc);
   letter-spacing: 0.01em;
@@ -9173,14 +9243,14 @@
 .mock-options-container {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .mock-option-row {
   display: flex;
   align-items: stretch;
   padding: 0;
-  border-radius: 12px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.03);
   border: 1.5px solid rgba(255, 255, 255, 0.08);
   color: var(--text-primary, #f8fafc);
@@ -9199,10 +9269,10 @@
 .mock-option-main-btn {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 0.95rem 1.25rem;
-  flex: 1 1 70%;
-  max-width: 70%;
+  gap: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  flex: 1 1 78%;
+  max-width: 78%;
   min-width: 0;
   background: transparent;
   border: none;
@@ -9217,9 +9287,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 30%;
-  width: 30%;
-  max-width: 30%;
+  flex: 0 0 22%;
+  width: 22%;
+  max-width: 22%;
   min-width: 0;
   background: rgba(255, 255, 255, 0.02);
   border: none;
@@ -9252,14 +9322,14 @@
 }
 
 .mock-opt-bubble {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--text-secondary, #94a3b8);
@@ -9275,8 +9345,8 @@
 
 .mock-opt-label {
   flex: 1;
-  font-size: 1.05rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.5;
   color: inherit;
 }
 
@@ -9923,8 +9993,8 @@
 .mrs-item-badge.unanswered { background: rgba(148, 163, 184, 0.15); color: #94a3b8; }
 
 .mrs-item-text {
-  font-size: 0.98rem;
-  line-height: 1.5;
+  font-size: 1.12rem;
+  line-height: 1.55;
   font-weight: 600;
   color: var(--text-primary, #f8fafc);
 }
@@ -9943,7 +10013,8 @@
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  font-size: 0.84rem;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--text-primary, #f8fafc);
 }
 
@@ -9958,7 +10029,6 @@
   background: rgba(239, 68, 68, 0.12);
   border-color: #ef4444;
   color: #f87171;
-  text-decoration: line-through;
 }
 
 .mrs-opt-letter {
@@ -10197,7 +10267,7 @@
 }
 
 .mrs-q-text {
-  font-size: 0.98rem;
+  font-size: 1.12rem;
   line-height: 1.55;
   font-weight: 600;
   color: var(--text-primary, #f8fafc);
@@ -10842,26 +10912,28 @@
     font-size: 1.1rem;
   }
 
-  .mock-q-statement-body .pyq-question-intro {
-    font-size: 1.05rem;
-    line-height: 1.55;
+  .mock-q-statement-body .pyq-question-intro,
+  .mock-q-text-mal {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .mock-q-statement-body .pyq-statement-item {
     padding: 0.15rem 0;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
+    line-height: 1.4;
     gap: 0.5rem;
     background: transparent;
     border: none;
   }
 
   .mock-q-statement-body .pyq-statement-badge {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     min-width: 1.8rem;
   }
 
   .mock-options-container {
-    gap: 0.6rem;
+    gap: 0.45rem;
   }
 
   .mock-option-row {
@@ -10869,18 +10941,18 @@
   }
 
   .mock-option-main-btn {
-    padding: 0.75rem 0.9rem;
-    gap: 0.75rem;
+    padding: 0.45rem 0.7rem;
+    gap: 0.55rem;
   }
 
   .mock-opt-bubble {
-    width: 28px;
-    height: 28px;
-    font-size: 0.78rem;
+    width: 22px;
+    height: 22px;
+    font-size: 0.75rem;
   }
 
   .mock-opt-label {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     line-height: 1.4;
   }
 
@@ -11015,13 +11087,16 @@
     padding: 0.85rem 0.7rem 2.5rem;
   }
 
-  .mock-q-statement-body .pyq-question-intro {
-    font-size: 0.98rem;
+  .mock-q-statement-body .pyq-question-intro,
+  .mock-q-text-mal {
+    font-size: 0.94rem;
+    line-height: 1.45;
   }
 
   .mock-q-statement-body .pyq-statement-item {
     padding: 0.5rem 0.65rem;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
+    line-height: 1.35;
   }
 
   .mock-option-row {
@@ -11029,11 +11104,12 @@
   }
 
   .mock-option-main-btn {
-    padding: 0.65rem 0.75rem;
+    padding: 0.4rem 0.6rem;
   }
 
   .mock-opt-label {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
+    line-height: 1.35;
   }
 
   .mock-exam-footer {
@@ -14610,10 +14686,10 @@
 }
 
 .retrain-qa-question {
-  font-size: 1.02rem;
+  font-size: 1.12rem;
   font-weight: 600;
   color: #f8fafc;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .retrain-qa-answer-row {
@@ -14637,10 +14713,10 @@
 }
 
 .retrain-qa-answer-text {
-  font-size: 0.92rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: #ecfdf5;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 [data-theme="light"] .retrain-qa-card {
@@ -14957,16 +15033,16 @@
 }
 
 .retrain-q-content {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.12rem;
+  font-weight: 600;
   color: #f8fafc;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .retrain-options-list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .retrain-opt-btn {
@@ -14975,12 +15051,13 @@
   padding: 0;
   background: rgba(255, 255, 255, 0.04);
   border: 1.5px solid rgba(255, 255, 255, 0.09);
-  border-radius: 12px;
+  border-radius: 8px;
   text-align: left;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   color: #e2e8f0;
   font-family: var(--font-ui);
   font-size: 1rem;
+  line-height: 1.5;
   overflow: hidden;
 }
 
@@ -14993,10 +15070,10 @@
 .retrain-opt-main-btn {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
-  padding: 1rem 1.25rem;
-  flex: 1 1 70%;
-  max-width: 70%;
+  gap: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  flex: 1 1 78%;
+  max-width: 78%;
   min-width: 0;
   background: transparent;
   border: none;
@@ -15024,9 +15101,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 30%;
-  width: 30%;
-  max-width: 30%;
+  flex: 0 0 22%;
+  width: 22%;
+  max-width: 22%;
   min-width: 0;
   background: rgba(255, 255, 255, 0.02);
   border: none;
@@ -15056,12 +15133,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 800;
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   flex-shrink: 0;
   color: #94a3b8;
 }

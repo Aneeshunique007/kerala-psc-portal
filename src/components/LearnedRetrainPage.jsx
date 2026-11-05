@@ -65,6 +65,134 @@ const SUBJECT_CONFIGS = [
   }
 ];
 
+// Normalise a label like "(i)", "i.", "A)", "3." to a bare lowercase token
+const normLabel = (s) => String(s || '').replace(/[().\s]/g, '').toLowerCase();
+
+// For matching-table questions: rebuild the table so column B rows are
+// arranged beside their correct column A rows. Returns null if not applicable
+// or anything cannot be resolved (caller falls back to the normal layout).
+const buildMatchedQuestion = (item) => {
+  try {
+    const text = item?.question;
+    if (!text || !Array.isArray(item.options) || typeof item.answer !== 'number') return null;
+    const ansStr = item.options[item.answer];
+    if (!ansStr) return null;
+
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+    const tableLines = lines.filter(l => l.startsWith('|') && l.endsWith('|'));
+    if (tableLines.length < 3) return null;
+    const introLines = lines.filter(l => !(l.startsWith('|') && l.endsWith('|')));
+    const splitRow = (r) => r.split('|').map(c => c.trim()).filter(Boolean);
+    const labelOf = (cell) => {
+      const m = cell.match(/^\(?([A-Za-z0-9]{1,6})[.)]\s*/);
+      return m ? normLabel(m[1]) : null;
+    };
+
+    const allRows = tableLines.filter(l => !l.includes('---')).map(splitRow);
+    const nCols = allRows[0].length;
+    if (allRows.some(r => r.length !== nCols)) return null;
+
+    // 3+ column tables: answers like "1-4-4, 2-3-3" (column A label - column B label - column C label ...)
+    if (nCols >= 3) {
+      const header = allRows[0];
+      const rows = allRows.slice(1);
+      const labelsByCol = Array.from({ length: nCols }, (_, c) => {
+        const m = new Map();
+        rows.forEach(r => { const l = labelOf(r[c]); if (l) m.set(l, r[c]); });
+        return m;
+      });
+      if (labelsByCol.some(m => m.size !== rows.length)) return null;
+      const chainRe = new RegExp(`[A-Za-z0-9]{1,6}(?:\\s*[-–—,:]\\s*[A-Za-z0-9]{1,6}){${nCols - 1}}`, 'g');
+      const chains = [...String(ansStr).matchAll(chainRe)]
+        .map(m => m[0].split(/\s*[-–—,:]\s*/).map(normLabel))
+        .filter(c => c.length === nCols);
+      if (chains.length !== rows.length) return null;
+      const out = [];
+      for (const r of rows) {
+        const chain = chains.find(c => c[0] === labelOf(r[0]));
+        if (!chain) return null;
+        const cells = chain.map((l, c) => labelsByCol[c].get(l));
+        if (cells.some(x => !x)) return null;
+        out.push(`| ${cells.join(' | ')} |`);
+      }
+      return [
+        ...introLines,
+        '',
+        `| ${header.join(' | ')} |`,
+        `|${header.map(() => '---').join('|')}|`,
+        ...out
+      ].join('\n');
+    }
+    if (nCols !== 2) return null;
+
+    // First row is a header unless it already looks like a labelled data row
+    let header = allRows[0];
+    let rows = allRows.slice(1);
+    if (labelOf(header[0]) && labelOf(header[1])) {
+      header = ['ലിസ്റ്റ് I', 'ലിസ്റ്റ് II'];
+      rows = allRows;
+    }
+    // Rows whose left cell has no label but whose right cell does are extra
+    // (distractor) items of column B; rows with neither label are sub-headers.
+    const extraRights = rows.filter(r => !labelOf(r[0]) && labelOf(r[1])).map(r => r[1]);
+    rows = rows.filter(r => labelOf(r[0]));
+    if (rows.length < 2) return null;
+
+    const leftLabels = rows.map(r => labelOf(r[0]));
+
+    const rightByLabel = new Map();
+    [...rows.map(r => r[1]), ...extraRights].forEach(c => {
+      const l = labelOf(c);
+      if (l) rightByLabel.set(l, c);
+      const stripped = normLabel(c.replace(/^\(?[A-Za-z0-9]{1,6}[.)]\s*/, ''));
+      if (stripped && !rightByLabel.has(stripped)) rightByLabel.set(stripped, c);
+    });
+    if (rightByLabel.size < rows.length) return null;
+
+    let pairs = [...String(ansStr).matchAll(/\(?([A-Za-z0-9]{1,6})\)?\s*[-–—→=:]\s*\(?([A-Za-z0-9]{1,6})\)?/g)]
+      .map(m => [normLabel(m[1]), normLabel(m[2])]);
+
+    // Compact answers like "1D 2C 3A 4B"
+    if (pairs.length !== rows.length) {
+      pairs = [...String(ansStr).matchAll(/\b(\d)([A-Za-z])\b/g)]
+        .map(m => [normLabel(m[1]), normLabel(m[2])]);
+    }
+
+    // Positional answers like "ii, iv, i, iii": k-th token matches k-th left row
+    if (pairs.length !== rows.length) {
+      let tokens = (String(ansStr).match(/[A-Za-z0-9]+/g) || []).map(normLabel);
+      // Digits run together, e.g. "4513"
+      if (tokens.length === 1 && /^\d+$/.test(tokens[0]) && tokens[0].length === rows.length) {
+        tokens = tokens[0].split('');
+      }
+      if (tokens.length !== rows.length) return null;
+      pairs = leftLabels.map((l, i) => [l, tokens[i]]);
+    }
+
+    const newRows = [];
+    for (let i = 0; i < rows.length; i++) {
+      const lbl = leftLabels[i];
+      let right = null;
+      for (const [x, y] of pairs) {
+        if (x === lbl && rightByLabel.has(y)) { right = rightByLabel.get(y); break; }
+        if (y === lbl && rightByLabel.has(x)) { right = rightByLabel.get(x); break; }
+      }
+      if (!right) return null;
+      newRows.push(`| ${rows[i][0]} | ${right} |`);
+    }
+
+    return [
+      ...introLines,
+      '',
+      `| ${header[0]} | ${header[1]} |`,
+      '|---|---|',
+      ...newRows
+    ].join('\n');
+  } catch {
+    return null;
+  }
+};
+
 export default function LearnedRetrainPage({
   currentUser,
   onBack,
@@ -741,6 +869,7 @@ export default function LearnedRetrainPage({
                     const setBaseIdx = (activeSetIndex * 100) + globalIdx;
                     const isQBookmarked = isBookmarked ? isBookmarked(item.id) : false;
                     const answerText = getAnswerText(item);
+                    const matchedText = buildMatchedQuestion(item);
 
                     return (
                       <article key={item.id || localIdx} className="retrain-qa-card">
@@ -775,16 +904,24 @@ export default function LearnedRetrainPage({
 
                         {/* Question Text */}
                         <div className="retrain-qa-question">
-                          <FormattedQuestion text={item.question} />
+                          <FormattedQuestion
+                            text={matchedText || item.question}
+                            answerText={matchedText ? null : answerText}
+                            verdictOverride={matchedText ? null : item.statementVerdicts}
+                            options={matchedText ? null : item.options}
+                            answerIndex={matchedText ? null : item.answer}
+                          />
                         </div>
 
-                        {/* Direct Answer Only (No options grid, no explanation) */}
-                        <div className="retrain-qa-answer-row">
-                          <span className="retrain-qa-answer-label">Answer:</span>
-                          <span className="retrain-qa-answer-text">
-                            {answerText}
-                          </span>
-                        </div>
+                        {matchedText ? null : (
+                          /* Direct Answer Only (No options grid, no explanation) */
+                          <div className="retrain-qa-answer-row">
+                            <span className="retrain-qa-answer-label">Answer:</span>
+                            <span className="retrain-qa-answer-text">
+                              {answerText}
+                            </span>
+                          </div>
+                        )}
                       </article>
                     );
                   })

@@ -8,17 +8,17 @@ const BADGE_FINDER_REGEX = new RegExp('(?:^|\\s)(?<![a-z]\\.\\s*)(?<![a-z\\.+\\-
 const INLINE_STATEMENT_REGEX = new RegExp('([^\\n+\\-×÷*/=^])\\s+(?<![a-z]\\.\\s*)(?<![a-z\\.])' + MONTH_BEFORE + '(' + BADGE_CHARS + ')\\s+(?!എന്നീ)', 'gi');
 const STATEMENT_BADGE_REGEX = new RegExp('^(' + BADGE_CHARS + ')\\s+(.+)$', 'i');
 
-// ---- Statement verdicts (Browse Mode): work out which statements are correct ----
-const normBadge = (b) => String(b || '').replace(/[().\s]/g, '').toLowerCase();
-const NEGATIVE_Q = /തെറ്റായ|തെറ്റാണ്|ശരിയല്ലാത്ത|ശരിയല്ല|ഒഴികെ|\b(incorrect|not correct|false|wrong|except|not true)\b/i;
-const ORDER_Q = /കാലഗണന|കാലക്രമ|ശരിയായ ക്രമം|(?<!എന്ന\s)ക്രമത്തിൽ|ക്രമീകരിക്ക|ക്രമപ്പെടുത്ത|\b(arrange|chronolog\w*|sequence|order)\b/i;
-
 // ---- Highlight positive (ശരിയായ, ശരി...) vs negative (തെറ്റ്, ശരിയല്ലാത്ത, പൊരുത്തപ്പെടാത്തത്, ഉൾപ്പെടാത്തത്...) keywords in question stems ----
 const KW_POS_EARLY = 'തെറ്റില്ലാത്ത[\\p{L}\\p{M}\\u200C\\u200D]*';
 const KW_NEG_SRC = '(?:ശരിയല്ലാത്ത|ശരിയല്ല|തെറ്റായ|തെറ്റായി|തെറ്റാണ്|തെറ്റ്|പൊരുത്തപ്പെടാത്ത|യോജിക്കാത്ത|ബന്ധമില്ലാത്ത|ബന്ധപ്പെടാത്ത|ബന്ധപ്പെട്ടിട്ടില്ലാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്നില്ല|പെടാത്ത|അല്ലാത്ത|ഒഴികെ|ഒറ്റപ്പെട്ട|വ്യത്യസ്തമായ)[\\p{L}\\p{M}\\u200C\\u200D]*|[\\p{L}\\p{M}\\u200C\\u200D]+(?:ല്ലാത്ത|പെടാത്ത|പ്പെടാത്ത)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:not\\s+correct|not\\s+true|incorrect|false|wrong|mismatch\\w*|not\\s+match\\w*|does\\s+not\\s+belong|not\\s+related|except|odd\\s+one(?:\\s+out)?)\\b';
 const KW_POS_SRC = '(?:ശരിയായ|ശരിയായി|ശരിയാണ്|ശരിയേത്|ശരി|പൊരുത്തപ്പെടുന്ന|യോജിക്കുന്ന|യോജിച്ച|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്ന)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:correct|true|right)\\b';
 const POLARITY_KW_REGEX = new RegExp(`(?<![\\p{L}\\p{M}])(?:(${KW_POS_EARLY})|(${KW_NEG_SRC})|(${KW_POS_SRC}))(?![\\p{L}\\p{M}])`, 'giu');
 const NEEDS_OPTIONS_REGEX = /താഴെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|സൂചിപ്പിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ചുവടെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ഇനിപ്പറയുന്നവയിൽ|ഇവയിൽ\s*നിന്ന്|\b(?:which\s+of\s+the\s+following|among\s+the\s+following)\b/iu;
+
+// ---- Statement verdicts (Browse Mode): work out which statements are correct ----
+const normBadge = (b) => String(b || '').replace(/[().\s]/g, '').toLowerCase();
+const NEGATIVE_Q = new RegExp(KW_NEG_SRC, 'iu');
+const ORDER_Q = /കാലഗണന|കാലക്രമ|ശരിയായ ക്രമം|(?<!എന്ന\s)ക്രമത്തിൽ|ക്രമീകരിക്ക|ക്രമപ്പെടുത്ത|\b(arrange|chronolog\w*|sequence|order)\b/i;
 
 function highlightQuestionPolarity(text) {
   if (!text) return text;
@@ -248,11 +248,12 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
                           <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
                             <span>{cell}</span>
                             <span
-                              className={`scratch-checkbox statement-scratch ${v}`}
+                              className={`statement-verdict-pill ${v}`}
                               style={{ flexShrink: 0 }}
-                              aria-label={v === 'correct' ? 'Correct pair' : 'Wrong pair'}
+                              aria-label={v === 'correct' ? 'ശരിയായ ജോഡി' : 'തെറ്റായ ജോഡി'}
                             >
-                              {v === 'correct' ? <CheckIcon size={14} /> : <XIcon size={14} />}
+                              {v === 'correct' ? <CheckIcon size={12} /> : <XIcon size={12} />}
+                              <span className="verdict-pill-text">{v === 'correct' ? 'ശരി' : 'തെറ്റ്'}</span>
                             </span>
                           </span>
                         ) : (
@@ -378,6 +379,7 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
             const verdict = verdicts ? verdicts[normBadge(st.badge)] : null;
             const markStatus = verdict || statementMarks[idx] || 'none';
             if (verdict) {
+              const verdictLabel = verdict === 'correct' ? 'ശരി' : 'തെറ്റ്';
               return (
                 <div
                   key={idx}
@@ -386,10 +388,11 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
                   <span className="pyq-statement-badge">{st.badge}</span>
                   <span className="pyq-statement-body" style={{ textDecoration: 'none', opacity: 1 }}>{st.body}</span>
                   <span
-                    className={`scratch-checkbox statement-scratch ${verdict}`}
-                    aria-label={verdict === 'correct' ? 'Correct statement' : 'Wrong statement'}
+                    className={`statement-verdict-pill ${verdict}`}
+                    aria-label={verdict === 'correct' ? 'ശരിയായ പ്രസ്താവന' : 'തെറ്റായ പ്രസ്താവന'}
                   >
-                    {verdict === 'correct' ? <CheckIcon size={14} /> : <XIcon size={14} />}
+                    {verdict === 'correct' ? <CheckIcon size={12} /> : <XIcon size={12} />}
+                    <span className="verdict-pill-text">{verdictLabel}</span>
                   </span>
                 </div>
               );
@@ -471,10 +474,11 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
                 <span className="pyq-statement-badge">{optBadges[oIdx] || `(${oIdx + 1})`}</span>
                 <span className="pyq-statement-body" style={{ textDecoration: 'none', opacity: 1 }}>{opt}</span>
                 <span
-                  className={`scratch-checkbox statement-scratch ${verdict}`}
-                  aria-label={verdict === 'correct' ? 'Correct option' : 'Wrong option'}
+                  className={`statement-verdict-pill ${verdict}`}
+                  aria-label={verdict === 'correct' ? 'ശരി' : 'തെറ്റ്'}
                 >
-                  {verdict === 'correct' ? <CheckIcon size={14} /> : <XIcon size={14} />}
+                  {verdict === 'correct' ? <CheckIcon size={12} /> : <XIcon size={12} />}
+                  <span className="verdict-pill-text">{verdict === 'correct' ? 'ശരി' : 'തെറ്റ്'}</span>
                 </span>
               </div>
             );

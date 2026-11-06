@@ -2813,6 +2813,30 @@
     color: #7dd3fc;
   }
 
+  /* Master All Topics (2026-2021) above Exam Year */
+  .dropdown-master-all-wrapper {
+    padding: 0.65rem 0.85rem 0.5rem;
+    background: rgba(15, 23, 42, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .dropdown-master-all-card {
+    border-color: rgba(56, 189, 248, 0.35);
+    background: rgba(56, 189, 248, 0.08);
+  }
+
+  .dropdown-master-all-card:hover {
+    background: rgba(56, 189, 248, 0.16);
+    border-color: #38bdf8;
+    transform: translateY(-1px);
+  }
+
+  .dropdown-master-all-card.selected {
+    background: rgba(56, 189, 248, 0.22);
+    border-color: #38bdf8;
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);
+  }
+
   /* Year Switcher inside topic dropdown */
   .dropdown-year-switcher {
     padding: 0.75rem 1rem;
@@ -8048,6 +8072,21 @@
 [data-theme="light"] .bmark-dropdown-menu .opt-check,
 [data-theme="light"] .custom-topic-dropdown-menu .opt-check {
   color: #0284c7;
+}
+
+[data-theme="light"] .dropdown-master-all-wrapper {
+  background: rgba(241, 245, 249, 0.7);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .dropdown-master-all-card {
+  background: #f0f9ff;
+  border-color: rgba(2, 132, 199, 0.25);
+}
+
+[data-theme="light"] .dropdown-master-all-card.selected {
+  background: #e0f2fe;
+  border-color: #0284c7;
 }
 
 [data-theme="light"] .bmark-item-name {

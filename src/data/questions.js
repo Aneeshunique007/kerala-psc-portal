@@ -1076,12 +1076,13 @@ export const ENGLISH_QUESTION_BANK = Array.isArray(englishQuestions) ? englishQu
 export const CURRENT_AFFAIRS_QUESTION_BANK = Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions : [];
 
 export const PYQ_YEARS = [
-  { id: '2026', label: '2026 Exam Papers', count: Array.isArray(pyq2026Questions) ? pyq2026Questions.length : 1944 },
-  { id: '2025', label: '2025 Exam Papers', count: Array.isArray(pyq2025Questions) ? pyq2025Questions.length : 2956 },
-  { id: '2024', label: '2024 Exam Papers', count: Array.isArray(pyq2024Questions) ? pyq2024Questions.length : 2711 },
-  { id: '2023', label: '2023 Exam Papers', count: Array.isArray(pyq2023Questions) ? pyq2023Questions.length : 2235 },
-  { id: '2022', label: '2022 Exam Papers', count: Array.isArray(pyq2022Questions) ? pyq2022Questions.length : 879 },
-  { id: '2021', label: '2021 Exam Papers', count: Array.isArray(pyq2021Questions) ? pyq2021Questions.length : 593 }
+  { id: 'all', label: 'All Exam Papers (2026–2021)', shortLabel: '2026-2021', count: 17101 },
+  { id: '2026', label: '2026 Exam Papers', shortLabel: '2026', count: Array.isArray(pyq2026Questions) ? pyq2026Questions.length : 2326 },
+  { id: '2025', label: '2025 Exam Papers', shortLabel: '2025', count: Array.isArray(pyq2025Questions) ? pyq2025Questions.length : 3594 },
+  { id: '2024', label: '2024 Exam Papers', shortLabel: '2024', count: Array.isArray(pyq2024Questions) ? pyq2024Questions.length : 4333 },
+  { id: '2023', label: '2023 Exam Papers', shortLabel: '2023', count: Array.isArray(pyq2023Questions) ? pyq2023Questions.length : 4277 },
+  { id: '2022', label: '2022 Exam Papers', shortLabel: '2022', count: Array.isArray(pyq2022Questions) ? pyq2022Questions.length : 1727 },
+  { id: '2021', label: '2021 Exam Papers', shortLabel: '2021', count: Array.isArray(pyq2021Questions) ? pyq2021Questions.length : 844 }
 ];
 
 const buildPyqPaperTopics = (questions, year) => {
@@ -1112,6 +1113,14 @@ const buildPyqPaperTopics = (questions, year) => {
 };
 
 export const PYQ_PAPER_TOPICS_BY_YEAR = {
+  'all': [
+    ...buildPyqPaperTopics(pyq2026Questions, '2026'),
+    ...buildPyqPaperTopics(pyq2025Questions, '2025'),
+    ...buildPyqPaperTopics(pyq2024Questions, '2024'),
+    ...buildPyqPaperTopics(pyq2023Questions, '2023'),
+    ...buildPyqPaperTopics(pyq2022Questions, '2022'),
+    ...buildPyqPaperTopics(pyq2021Questions, '2021')
+  ],
   '2026': buildPyqPaperTopics(pyq2026Questions, '2026'),
   '2025': buildPyqPaperTopics(pyq2025Questions, '2025'),
   '2024': buildPyqPaperTopics(pyq2024Questions, '2024'),

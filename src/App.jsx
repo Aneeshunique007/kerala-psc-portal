@@ -1284,7 +1284,9 @@ export default function App() {
 
   const getTopicCounts = (topicId) => {
     const bank = activeSubject === 'pyq'
-      ? currentQuestionBank.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`))
+      ? (selectedYear === 'all'
+          ? currentQuestionBank
+          : currentQuestionBank.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`)))
       : currentQuestionBank;
     const topicQuestions = topicId === 'all'
       ? (activeSubject === 'pyq' ? bank.filter(q => !isMathsQuestion(q)) : bank)
@@ -1307,7 +1309,7 @@ export default function App() {
   };
 
   const matchesYearFilter = (q) =>
-    activeSubject !== 'pyq' || q?.year === selectedYear || String(q?.id || '').includes(`_${selectedYear}_`);
+    activeSubject !== 'pyq' || selectedYear === 'all' || q?.year === selectedYear || String(q?.id || '').includes(`_${selectedYear}_`);
 
   const getPaperQuestionNumber = (q) => {
     const m = String(q?.id || '').match(/_q?(\d+)$/);
@@ -2145,7 +2147,7 @@ export default function App() {
                   }}
                   title="Select Exam Year"
                 >
-                  <span>{selectedYear}</span>
+                  <span>{(PYQ_YEARS.find(y => y.id === selectedYear)?.shortLabel) || selectedYear}</span>
                   <ChevronDownIcon size={14} className={`sidebar-year-chevron ${sidebarYearDropdownOpen ? 'open' : ''}`} />
                 </button>
 
@@ -2551,7 +2553,7 @@ export default function App() {
                 <div className="custom-topic-dropdown-menu">
                   <div className="dropdown-menu-header">
                     <span>
-                      Select Topic ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? `${selectedYear} PYQ Papers` : activeSubject === 'current_affairs' ? 'Current Affairs 2026' : 'Malayalam'})
+                      Select Topic ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? (selectedYear === 'all' ? '2026–2021 All PYQs' : `${selectedYear} PYQ Papers`) : activeSubject === 'current_affairs' ? 'Current Affairs 2026' : 'Malayalam'})
                     </span>
                     <button
                       className="dropdown-close-btn"
@@ -2564,6 +2566,49 @@ export default function App() {
                   {/* PYQ Year Switcher Tabs inside dropdown */}
                   {activeSubject === 'pyq' && (
                     <>
+                      {/* Master "All Topics 2026-2021 (Excl. Maths)" Option BEFORE Exam Year */}
+                      {(() => {
+                        const allPyqNonMaths = PYQ_QUESTION_BANK.filter(q => !isMathsQuestion(q));
+                        const allPyqTotal = allPyqNonMaths.length;
+                        const allPyqSolved = allPyqNonMaths.filter(q => userSolvedSet.has(q.id)).length;
+                        const allProgress = allPyqTotal > 0 ? Math.min(100, Math.max(allPyqSolved > 0 ? 3 : 0, (allPyqSolved / allPyqTotal) * 100)) : 0;
+                        const isMasterSelected = selectedYear === 'all' && selectedTopic === 'all' && !isRepeatOnlyMode;
+
+                        return (
+                          <div className="dropdown-master-all-wrapper">
+                            <div
+                              className={`custom-dropdown-option dropdown-master-all-card ${isMasterSelected ? 'selected' : ''}`}
+                              onClick={() => {
+                                setSelectedYear('all');
+                                handleChooseTopic('pyq', 'all');
+                              }}
+                            >
+                              <span className="opt-icon"><TargetIcon size={16} /></span>
+                              <div className="opt-details">
+                                <div className="opt-title">
+                                  All Topics (2026–2021 Excl. Maths)
+                                </div>
+                                <div className="opt-count">
+                                  <span style={{ color: allPyqSolved > 0 ? '#38bdf8' : '#94a3b8', fontWeight: 600 }}>
+                                    {allPyqSolved} / {allPyqTotal}
+                                  </span>
+                                </div>
+                                <div className="topic-progress-mini-bar">
+                                  <div
+                                    className="topic-progress-mini-fill"
+                                    style={{
+                                      width: `${allProgress}%`,
+                                      background: 'linear-gradient(90deg, #0284c7, #38bdf8)'
+                                    }}
+                                  />
+                                </div>
+                              </div>
+                              {isMasterSelected && <span className="opt-check">✓</span>}
+                            </div>
+                          </div>
+                        );
+                      })()}
+
                       <div className="dropdown-year-switcher">
                         <span className="dropdown-year-title">Exam Year:</span>
                         <div className="dropdown-year-chips">
@@ -2581,7 +2626,7 @@ export default function App() {
                                 }
                               }}
                             >
-                              {yr.id}
+                              {yr.shortLabel || yr.id}
                             </button>
                           ))}
                         </div>
@@ -2671,7 +2716,9 @@ export default function App() {
                           <span className="opt-icon"><TargetIcon size={16} /></span>
                           <div className="opt-details">
                             <div className="opt-title">
-                              {activeSubject === 'pyq' ? 'All Topics (Excl. Maths)' : 'All Topics (Full Mock)'}
+                              {activeSubject === 'pyq'
+                                ? (selectedYear === 'all' ? 'All Topics (2026–2021 Excl. Maths)' : `${selectedYear} All Topics (Excl. Maths)`)
+                                : 'All Topics (Full Mock)'}
                             </div>
                             <div className="opt-count">
                               <span style={{ color: solved > 0 ? '#38bdf8' : '#94a3b8', fontWeight: 600 }}>
@@ -2694,7 +2741,7 @@ export default function App() {
                       {activeSubject === 'english'
                         ? 'General English Topics'
                         : activeSubject === 'pyq'
-                        ? (pyqViewMode === 'paper' ? `${selectedYear} Question Papers` : 'PYQ Topics')
+                        ? (pyqViewMode === 'paper' ? (selectedYear === 'all' ? '2026–2021 Question Papers' : `${selectedYear} Question Papers`) : 'PYQ Topics')
                         : activeSubject === 'current_affairs'
                         ? (caViewMode === 'topic' ? 'Current Affairs Topics' : 'Current Affairs Capsules')
                         : 'Malayalam Topics'} ({currentSyllabusTopics.filter(t => t.id !== 'all').length})

@@ -1011,7 +1011,7 @@ export default function App() {
       subject === 'malayalam'
         || subject === 'english'
         || subject === 'current_affairs'
-        || (subject === 'pyq' && ['all', 'pq_history', 'pq_geography', 'pq_economics', 'pq_constitution', 'pq_kerala_governance', 'pq_science', 'pq_arts_sports', 'pq_computer', 'pq_acts_laws', 'pq_current_affairs', 'pq_maths', 'pq_english', 'pq_malayalam'].includes(topicId))
+        || (subject === 'pyq' && !String(topicId).startsWith('qp:'))
         ? 'notes'
         : 'quiz'
     );
@@ -1038,16 +1038,34 @@ export default function App() {
     english: ENGLISH_QUESTION_BANK.length,
     current_affairs: CURRENT_AFFAIRS_QUESTION_BANK.length,
     pyq: PYQ_QUESTION_BANK.length,
-    pq_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_history').length,
-    pq_geography: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_geography').length,
+    pq_kerala_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_kerala_history').length,
+    pq_indian_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_indian_history').length,
+    pq_world_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_world_history').length,
+    pq_history: PYQ_QUESTION_BANK.filter(q => ['pq_kerala_history', 'pq_indian_history', 'pq_world_history'].includes(q.topic)).length,
+    pq_basic_geography: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_basic_geography').length,
+    pq_indian_geography: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_indian_geography').length,
+    pq_kerala_geography: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_kerala_geography').length,
+    pq_geography: PYQ_QUESTION_BANK.filter(q => ['pq_basic_geography', 'pq_indian_geography', 'pq_kerala_geography'].includes(q.topic)).length,
     pq_economics: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_economics').length,
     pq_constitution: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_constitution').length,
     pq_kerala_governance: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_kerala_governance').length,
-    pq_science: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_science').length,
-    pq_arts_sports: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_arts_sports').length,
+    pq_biology: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_biology').length,
+    pq_physics: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_physics').length,
+    pq_chemistry: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_chemistry').length,
+    pq_science: PYQ_QUESTION_BANK.filter(q => ['pq_biology', 'pq_physics', 'pq_chemistry'].includes(q.topic)).length,
+    pq_arts_culture: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_arts_culture').length,
+    pq_sports: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_sports').length,
+    pq_literature_cinema: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_literature_cinema').length,
+    pq_arts_sports: PYQ_QUESTION_BANK.filter(q => ['pq_arts_culture', 'pq_sports', 'pq_literature_cinema'].includes(q.topic)).length,
     pq_computer: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_computer').length,
+    pq_acts_laws: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_acts_laws').length,
     pq_current_affairs: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_current_affairs').length,
-    pq_maths: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_maths').length
+    pq_arithmetic: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_arithmetic').length,
+    pq_mental_ability: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_mental_ability').length,
+    pq_maths: PYQ_QUESTION_BANK.filter(q => ['pq_arithmetic', 'pq_mental_ability'].includes(q.topic)).length,
+    pq_english_grammar: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_english_grammar').length,
+    pq_english_vocabulary: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_english_vocabulary').length,
+    pq_malayalam: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_malayalam').length
   };
 
   // Stats & repeat queues for current active user
@@ -1223,7 +1241,7 @@ export default function App() {
     if (!question) return false;
     if (targetTopicId === 'all') {
       if (activeSubject === 'pyq') {
-        return question.topic !== 'pq_maths';
+        return !isMathsQuestion(question);
       }
       return true;
     }
@@ -1240,6 +1258,14 @@ export default function App() {
           return false;
         }
         return question.qp_code === String(targetTopicId).slice(3);
+      }
+      if (activeSubject === 'pyq') {
+        if (targetTopicId === 'pq_history') return ['pq_kerala_history', 'pq_indian_history', 'pq_world_history'].includes(question.topic);
+        if (targetTopicId === 'pq_geography') return ['pq_basic_geography', 'pq_indian_geography', 'pq_kerala_geography'].includes(question.topic);
+        if (targetTopicId === 'pq_science') return ['pq_biology', 'pq_physics', 'pq_chemistry'].includes(question.topic);
+        if (targetTopicId === 'pq_arts_sports') return ['pq_arts_culture', 'pq_sports', 'pq_literature_cinema'].includes(question.topic);
+        if (targetTopicId === 'pq_maths') return ['pq_arithmetic', 'pq_mental_ability'].includes(question.topic);
+        if (targetTopicId === 'pq_english') return ['pq_english_grammar', 'pq_english_vocabulary'].includes(question.topic);
       }
       return question.topic === targetTopicId;
     }
@@ -1261,7 +1287,7 @@ export default function App() {
       ? currentQuestionBank.filter(q => q.year === selectedYear || String(q.id || '').includes(`_${selectedYear}_`))
       : currentQuestionBank;
     const topicQuestions = topicId === 'all'
-      ? (activeSubject === 'pyq' ? bank.filter(q => q.topic !== 'pq_maths') : bank)
+      ? (activeSubject === 'pyq' ? bank.filter(q => !isMathsQuestion(q)) : bank)
       : bank.filter(q => matchesTopic(q, topicId));
     const total = topicQuestions.length;
     // Count each question only once, and only if it was answered correctly
@@ -1294,14 +1320,14 @@ export default function App() {
       pool = repeatQueueList.filter(q => isInActiveSubject(q.id));
       if (activeSubject === 'pyq') {
         if (selectedTopic === 'all') {
-          pool = pool.filter(q => q.topic !== 'pq_maths');
+          pool = pool.filter(q => !isMathsQuestion(q));
         } else if (String(selectedTopic).startsWith('qp:')) {
           pool = pool.filter(q => matchesTopic(q, selectedTopic));
         }
       }
     } else if (selectedTopic === 'all') {
       pool = activeSubject === 'pyq'
-        ? currentQuestionBank.filter(q => q.topic !== 'pq_maths')
+        ? currentQuestionBank.filter(q => !isMathsQuestion(q))
         : [...currentQuestionBank];
     } else {
       pool = currentQuestionBank.filter(q => matchesTopic(q, selectedTopic));
@@ -2808,6 +2834,7 @@ export default function App() {
                       ? PYQ_TOPICS.find(t => t.id !== 'all' && t.id === currentQuestion.topic)?.name
                       : currentSyllabusTopics.find(t => t.id !== 'all' && matchesTopic(currentQuestion, t.id))?.name
                     ) || currentQuestion.topic || 'Practice Question'}
+                    {activeSubject === 'pyq' && currentQuestion.subtopic ? ` • ${currentQuestion.subtopic}` : ''}
                   </span>
                   {activeSubject === 'pyq' && (currentQuestion.year || currentQuestion.id) && (
                     <span className="pyq-year-badge">

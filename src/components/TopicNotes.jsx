@@ -4816,7 +4816,100 @@ const CURRENT_AFFAIRS_NOTES = {
   }
 };
 
-const ALL_NOTES = { ...NOTES, ...ADDITIONAL_NOTES, ...ENGLISH_NOTES, ...PYQ_NOTES, ...CURRENT_AFFAIRS_NOTES };
+const pickSections = (noteObj, indices) =>
+  indices.map((idx, newIdx) => {
+    const sec = noteObj.sections[idx];
+    if (!sec) return null;
+    return {
+      ...sec,
+      title: sec.title.replace(/^\d+\.\s*/, `${newIdx + 1}. `)
+    };
+  }).filter(Boolean);
+
+const PYQ_SPLIT_TOPIC_NOTES = {
+  pq_kerala_history: {
+    title: 'കേരള ചരിത്രം (Kerala History) — PYQ Notes',
+    intro: 'കേരളത്തിലേക്കുള്ള യൂറോപ്യന്മാരുടെ വരവ്, തിരുവിതാംകൂർ-കൊച്ചി-മലബാർ ചരിത്രം, സാമൂഹിക-മത പരിഷ്കരണ പ്രസ്ഥാനങ്ങൾ, ദേശീയ പ്രസ്ഥാനം കേരളത്തിൽ, ഐക്യകേരള പ്രസ്ഥാനം എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_history, [0, 1, 4, 5])
+  },
+  pq_indian_history: {
+    title: 'ഇന്ത്യാ ചരിത്രം (Indian History) — PYQ Notes',
+    intro: 'മധ്യകാല ഇന്ത്യ, ഒന്നാം സ്വാതന്ത്ര്യ സമരം (1857), ഇന്ത്യൻ നാഷണൽ കോൺഗ്രസ്, ഗാന്ധിജിയും ദേശീയ പ്രസ്ഥാനവും, സ്വാതന്ത്ര്യാനന്തര ഇന്ത്യ എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_history, [0, 2, 4, 5])
+  },
+  pq_world_history: {
+    title: 'ലോക ചരിത്രം (World History) — PYQ Notes',
+    intro: 'ഇംഗ്ലീഷ് വിപ്ലവം, അമേരിക്കൻ സ്വാതന്ത്ര്യ സമരം, ഫ്രഞ്ച് വിപ്ലവം, റഷ്യൻ വിപ്ലവം, ചൈനീസ് വിപ്ലവം, രണ്ടാം ലോകമഹായുദ്ധാനന്തര രാഷ്ട്രീയ ചരിത്രം, ഐക്യരാഷ്ട്ര സംഘടന എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_history, [0, 3, 5])
+  },
+  pq_basic_geography: {
+    title: 'ഭൂമിശാസ്ത്ര അടിസ്ഥാന തത്വങ്ങൾ (Basic Geography) — PYQ Notes',
+    intro: 'ഭൂമിയുടെ ഘടന, അന്തരീക്ഷം, പാറകൾ, ഭൗമോപരിതല രൂപങ്ങൾ, അന്തരീക്ഷമർദ്ദം, കാറ്റുകൾ, ഋതുഭേദങ്ങൾ, ആഗോളപ്രശ്നങ്ങൾ, ഭൂപടങ്ങൾ, സമയവും അക്ഷാംശ-രേഖാംശ രേഖകളും എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_geography, [0, 4, 5, 6])
+  },
+  pq_indian_geography: {
+    title: 'ഇന്ത്യ — ഭൂമിശാസ്ത്ര സവിശേഷതകൾ (Indian Geography) — PYQ Notes',
+    intro: 'ഇന്ത്യയുടെ ഭൂപ്രകൃതി, സംസ്ഥാനങ്ങളും സവിശേഷതകളും, നദികൾ, മണ്ണിനങ്ങൾ, കാർഷിക വിളകൾ, ധാതുവിഭവങ്ങൾ, ഊർജ്ജസ്രോതസ്സുകൾ, ഗതാഗത സംവിധാനങ്ങൾ എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_geography, [0, 2, 3, 5, 6])
+  },
+  pq_kerala_geography: {
+    title: 'കേരളം — ഭൂമിശാസ്ത്ര സവിശേഷതകൾ (Kerala Geography) — PYQ Notes',
+    intro: 'കേരളത്തിന്റെ ഭൂപ്രകൃതി, 14 ജില്ലകളും സവിശേഷതകളും, നദികൾ, കായലുകൾ, വന്യജീവി സങ്കേതങ്ങൾ, ദേശീയോദ്യാനങ്ങൾ, മത്സ്യബന്ധനം, ധാതുക്കൾ, കൃഷി, ഗതാഗത സംവിധാനങ്ങൾ എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_geography, [0, 1, 3, 5, 6])
+  },
+  pq_biology: {
+    title: 'ജീവശാസ്ത്രവും പൊതുജനാരോഗ്യവും (Biology & Public Health) — PYQ Notes',
+    intro: 'മനുഷ്യശരീരത്തെക്കുറിച്ചുള്ള പൊതുഅറിവ്, അവയവങ്ങളും അവയവ വ്യവസ്ഥകളും, പോഷകഘടകങ്ങളും അപര്യാപ്തതാരോഗങ്ങളും, സാംക്രമിക-ജീവിതശൈലി രോഗങ്ങൾ, കേരളത്തിലെ ആരോഗ്യക്ഷേമ പ്രവർത്തനങ്ങൾ, സസ്യങ്ങളും വനങ്ങളും, പരിസ്ഥിതിയും ആവാസവ്യവസ്ഥയും എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_science, [0, 1, 2, 3, 8])
+  },
+  pq_physics: {
+    title: 'ഭൗതികശാസ്ത്രം (Physics) — PYQ Notes',
+    intro: 'ഭൗതികശാസ്ത്ര ശാഖകൾ, അളവുകളും യൂണിറ്റുകളും, പ്രകാശം, ശബ്ദം, താപം, ചലനനിയമങ്ങൾ, തരംഗങ്ങൾ, ബലം, കാന്തികത, വൈദ്യുതി, ബഹിരാകാശ ശാസ്ത്രവും ISRO ദൗത്യങ്ങളും, ഊർജ്ജവും ഊർജ്ജസ്രോതസ്സുകളും എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_science, [0, 4, 5, 7, 8])
+  },
+  pq_chemistry: {
+    title: 'രസതന്ത്രം (Chemistry) — PYQ Notes',
+    intro: 'ആറ്റവും തന്മാത്രയും, ദ്രവ്യത്തിന്റെ അവസ്ഥകൾ, മൂലകങ്ങളും ആവർത്തനപ്പട്ടികയും, സംയുക്തങ്ങളും രാസപ്രവർത്തനങ്ങളും, ലോഹങ്ങളും അലോഹങ്ങളും സങ്കരലോഹങ്ങളും, ആസിഡും ആൽക്കലിയും (pH), വാതക നിയമങ്ങൾ എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_science, [0, 6, 8])
+  },
+  pq_arts_culture: {
+    title: 'കലയും സംസ്കാരവും (Arts & Culture) — PYQ Notes',
+    intro: 'കേരളത്തിലെ ദൃശ്യ-ശ്രാവ്യ കലാരൂപങ്ങൾ, അവയുടെ ഉത്ഭവം, വ്യാപനം, പരിശീലനം, പ്രശസ്തരായ കലാകാരന്മാർ, സാംസ്കാരിക സ്ഥാപനങ്ങൾ, പ്രശസ്തമായ ഉത്സവങ്ങളും ക്ഷേത്രങ്ങളും എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_arts_sports, [0, 1, 6])
+  },
+  pq_sports: {
+    title: 'കായികം (Sports) — PYQ Notes',
+    intro: 'കേരളത്തിലെയും ഇന്ത്യയിലെയും ലോകത്തിലെയും പ്രശസ്ത കായികതാരങ്ങൾ, പ്രധാന അവാർഡുകളും ട്രോഫികളും, ഒളിമ്പിക്സ്, ഏഷ്യൻ ഗെയിംസ്, കോമൺവെൽത്ത് ഗെയിംസ്, ദേശീയ ഗെയിംസ്, കായിക പദങ്ങളും ഗ്രൗണ്ടുകളും എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_arts_sports, [0, 4, 5, 6])
+  },
+  pq_literature_cinema: {
+    title: 'സാഹിത്യവും സിനിമയും (Literature & Cinema) — PYQ Notes',
+    intro: 'മലയാള സാഹിത്യ പ്രസ്ഥാനങ്ങൾ, പ്രമുഖ കൃതികളും ഗ്രന്ഥകർത്താക്കളും, തൂലികാനാമങ്ങളും കഥാപാത്രങ്ങളും, ജ്ഞാനപീഠം-എഴുത്തച്ഛൻ പുരസ്കാരങ്ങൾ, മലയാള സിനിമയുടെ ചരിത്രം, ദേശീയ-സംസ്ഥാന ചലച്ചിത്ര പുരസ്കാരങ്ങൾ എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_arts_sports, [0, 2, 3, 6])
+  },
+  pq_arithmetic: {
+    title: 'ലഘുഗണിതം (Simple Arithmetic) — PYQ Notes',
+    intro: 'സംഖ്യകളും അടിസ്ഥാന ക്രിയകളും, ഭിന്നസംഖ്യകളും ദശാംശ സംഖ്യകളും, ശതമാനം, ലാഭവും നഷ്ടവും, സാധാരണ പലിശയും കൂട്ടുപലിശയും, അംശബന്ധവും അനുപാതവും, സമയവും ദൂരവും പ്രവൃത്തിയും, ശരാശരി, കൃത്യങ്കങ്ങൾ, ജ്യാമിതീയ രൂപങ്ങളുടെ ചുറ്റളവ്-വിസ്തീർണ്ണം-വ്യാപ്തം, പ്രോഗ്രഷനുകൾ എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_maths, [0, 1, 2, 3, 4, 5, 7])
+  },
+  pq_mental_ability: {
+    title: 'മാനസിക ശേഷിയും നിരീക്ഷണപാടവവും (Mental Ability & Reasoning) — PYQ Notes',
+    intro: 'സംഖ്യാ ശ്രേണികളും അക്ഷര ശ്രേണികളും, ഗണിത ചിഹ്നങ്ങൾ ഉപയോഗിച്ചുള്ള ക്രിയകൾ, സ്ഥാന നിർണ്ണയ പരിശോധന, സമാന ബന്ധങ്ങൾ, ഒറ്റയാനെ കണ്ടെത്തുക, കോഡിംഗും ഡീകോഡിംഗും, കുടുംബ ബന്ധങ്ങൾ, ദിശാവബോധം, ഘടികാരത്തിലെ സമയവും കോണളവും, കലണ്ടറും തീയതിയും, ക്ലറിക്കൽ ശേഷി പരിശോധന എന്നിവ ഉൾക്കൊള്ളുന്ന പഠനക്കുറിപ്പുകൾ.',
+    sections: pickSections(PYQ_NOTES.pq_maths, [6, 7])
+  },
+  pq_english_grammar: {
+    title: 'English Grammar — PYQ Notes',
+    intro: 'Types of Sentences & Interchange, Parts of Speech, Agreement of Verb and Subject, Confusion of Adjectives and Adverbs, Comparison of Adjectives, Adverbs & Position, Articles, Uses of Primary and Modal Auxiliary Verbs, Tag Questions, Infinitive and Gerunds, Tenses & Conditional Sentences, Prepositions, Correlatives, Direct and Indirect Speech, Active and Passive Voice, Correction of Sentences.',
+    sections: pickSections(PYQ_NOTES.pq_english, [0, 1, 2, 3, 4, 6])
+  },
+  pq_english_vocabulary: {
+    title: 'English Vocabulary — PYQ Notes',
+    intro: 'Singular & Plural, Change of Gender, Collective Nouns, Word Formation & Prefix/Suffix, Compound Words, Synonyms & Antonyms, Phrasal Verbs, Foreign Words and Phrases, One Word Substitutes, Words Often Confused, Spelling Test, Idioms and their Meanings, Expansion and Abbreviations.',
+    sections: pickSections(PYQ_NOTES.pq_english, [0, 5, 6])
+  }
+};
+
+const ALL_NOTES = { ...NOTES, ...ADDITIONAL_NOTES, ...ENGLISH_NOTES, ...PYQ_NOTES, ...PYQ_SPLIT_TOPIC_NOTES, ...CURRENT_AFFAIRS_NOTES };
 
 const SENTENCE_NOTE_LABELS = {
   'ആദ്യം: വാക്യത്തിലെ ചില അടിസ്ഥാന ഭാഗങ്ങൾ': 'ആദ്യം subject, verb, clause മനസ്സിലാക്കാം',

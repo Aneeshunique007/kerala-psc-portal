@@ -324,7 +324,7 @@ export const ENGLISH_SYLLABUS_TOPICS = [
   }
 ];
 
-// PYQ (Previous Year Questions Subject Blueprint)
+// PYQ (Previous Year Questions Subject Blueprint — 23 LDC Syllabus Topics)
 export const PYQ_TOPICS = [
   {
     id: 'all',
@@ -333,87 +333,313 @@ export const PYQ_TOPICS = [
     desc: 'Random questions across all topics for the selected year (Maths available in separate tab)',
     color: '#6366f1'
   },
-  // Part I: പൊതുവിജ്ഞാനം (50 Marks)
+  // Part I: പൊതുവിജ്ഞാനം (50 Marks) — (i) ചരിത്രം (5 Marks)
   {
-    id: 'pq_history',
-    name: 'ചരിത്രം (History)',
+    id: 'pq_kerala_history',
+    name: 'കേരള ചരിത്രം (Kerala History)',
+    marks: '5 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '🌴',
+    desc: 'യൂറോപ്യന്മാരുടെ വരവ്, തിരുവിതാംകൂർ ചരിത്രം, നവോത്ഥാന പ്രസ്ഥാനങ്ങൾ, ഐക്യകേരളം',
+    color: '#ec4899',
+    subtopics: [
+      'യൂറോപ്യന്മാരുടെ വരവും സംഭാവനകളും',
+      'മാർത്താണ്ഡവർമ്മ മുതൽ ശ്രീചിത്തിരതിരുനാൾ വരെയുള്ള തിരുവിതാംകൂർ ചരിത്രം',
+      'സാമൂഹിക, മത, നവോത്ഥാന പ്രസ്ഥാനങ്ങൾ',
+      'കേരളത്തിലെ ദേശീയ പ്രസ്ഥാനങ്ങൾ',
+      'ചരിത്രത്തിന്റെ സാഹിത്യ സ്രോതസ്സുകൾ',
+      'ഐക്യകേരള പ്രസ്ഥാനം',
+      '1956-ന് ശേഷമുള്ള സാമൂഹ്യ-രാഷ്ട്രീയ ചരിത്രം'
+    ]
+  },
+  {
+    id: 'pq_indian_history',
+    name: 'ഇന്ത്യാ ചരിത്രം (Indian History)',
     marks: '5 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '🏛️',
-    desc: 'Kerala, Indian, and World History questions',
-    color: '#ec4899'
+    desc: 'ബ്രിട്ടീഷ് ആധിപത്യം, ഒന്നാം സ്വാതന്ത്ര്യസമരം, INC, ഗാന്ധിജിയും സ്വാതന്ത്ര്യസമരവും',
+    color: '#f43f5e',
+    subtopics: [
+      'ബ്രിട്ടീഷ് ആധിപത്യം & ഒന്നാം സ്വാതന്ത്ര്യസമരം',
+      'ഇന്ത്യൻ നാഷണൽ കോൺഗ്രസ്സ് & സ്വദേശി പ്രസ്ഥാനം',
+      'സാമൂഹ്യപരിഷ്കരണ പ്രസ്ഥാനങ്ങൾ & പത്രങ്ങൾ',
+      'സ്വാതന്ത്ര്യസമരകാലത്തെ സാഹിത്യവും കലയും',
+      'മഹാത്മാഗാന്ധിയും സ്വാതന്ത്ര്യസമരവും',
+      'സ്വാതന്ത്ര്യാനന്തര കാലഘട്ടം & പുനഃസംഘടന',
+      'ശാസ്ത്ര, വിദ്യാഭ്യാസ പുരോഗതി & വിദേശനയം'
+    ]
   },
   {
-    id: 'pq_geography',
-    name: 'ഭൂമിശാസ്ത്രം (Geography)',
+    id: 'pq_world_history',
+    name: 'ലോക ചരിത്രം (World History)',
+    marks: '5 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '🌐',
+    desc: 'ഇംഗ്ലണ്ട്, അമേരിക്കൻ, ഫ്രഞ്ച്, റഷ്യൻ, ചൈനീസ് വിപ്ലവങ്ങൾ, ഐക്യരാഷ്ട്രസഭ',
+    color: '#d946ef',
+    subtopics: [
+      'ഇംഗ്ലണ്ടിലെ മഹത്തായ വിപ്ലവം (Glorious Rev.)',
+      'അമേരിക്കൻ സ്വാതന്ത്ര്യ സമരം',
+      'ഫ്രഞ്ച് വിപ്ലവം & റഷ്യൻ വിപ്ലവം',
+      'ചൈനീസ് വിപ്ലവം',
+      'രണ്ടാം ലോകമഹായുദ്ധാനന്തര രാഷ്ട്രീയം',
+      'ഐക്യരാഷ്ട്രസഭ & അന്താരാഷ്ട്ര സംഘടനകൾ'
+    ]
+  },
+  // (ii) ഭൂമിശാസ്ത്രം (5 Marks)
+  {
+    id: 'pq_basic_geography',
+    name: 'ഭൂമിശാസ്ത്രം - അടിസ്ഥാന തത്ത്വങ്ങൾ (Basic Geography)',
     marks: '5 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '🌍',
-    desc: 'Physical, Indian, and Kerala Geography questions',
-    color: '#06b6d4'
+    desc: 'ഭൂമിയുടെ ഘടന, അന്തരീക്ഷം, മർദ്ദവും കാറ്റും, ടോപ്പോഗ്രാഫിക് മാപ്പുകൾ, സമുദ്രങ്ങൾ',
+    color: '#06b6d4',
+    subtopics: [
+      'ഭൂമിയുടെ ഘടന, അന്തരീക്ഷം, ശിലകൾ',
+      'ഭൗമോപരിതലം, മർദ്ദവും കാറ്റും, താപനില',
+      'ഋതുക്കൾ, ആഗോളതാപനം, മലിനീകരണം',
+      'ടോപ്പോഗ്രാഫിക് മാപ്പുകൾ & ചിഹ്നങ്ങൾ',
+      'വിദൂരസംവേദനം & GIS',
+      'മഹാസമുദ്രങ്ങൾ, സമുദ്രചലനങ്ങൾ, ഭൂഖണ്ഡങ്ങൾ',
+      'ലോകരാഷ്ട്രങ്ങളും സവിശേഷതകളും'
+    ]
   },
   {
+    id: 'pq_indian_geography',
+    name: 'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം (Indian Geography)',
+    marks: '5 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '🗺️',
+    desc: 'ഉത്തരപർവ്വത മേഖല, നദികൾ, ഉപദ്വീപീയ പീഠഭൂമി, കൃഷി, ധാതുക്കൾ, ഗതാഗതം',
+    color: '#0ea5e9',
+    subtopics: [
+      'ഭൂപ്രകൃതി & സംസ്ഥാനങ്ങളുടെ സവിശേഷതകൾ',
+      'ഉത്തരപർവ്വത മേഖല, നദികൾ, ഉത്തരസമതലം',
+      'ഉപദ്വീപീയ പീഠഭൂമി, തീരദേശം',
+      'കാലാവസ്ഥ & സ്വാഭാവിക സസ്യപ്രകൃതി',
+      'കൃഷി, ധാതുക്കൾ & വ്യവസായങ്ങൾ',
+      'ഊർജ്ജസ്രോതസ്സുകൾ',
+      'റോഡ്, ജല, റെയിൽ, വ്യോമ ഗതാഗതം'
+    ]
+  },
+  {
+    id: 'pq_kerala_geography',
+    name: 'കേരള ഭൂമിശാസ്ത്രം (Kerala Geography)',
+    marks: '5 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '🏞️',
+    desc: 'ഭൂപ്രകൃതി, ജില്ലകൾ, നദികൾ, വന്യജീവി & ഗവേഷണ സ്ഥാപനങ്ങൾ, ഊർജ്ജം, ഗതാഗതം',
+    color: '#14b8a6',
+    subtopics: [
+      'ഭൂപ്രകൃതി & ജില്ലകളുടെ സവിശേഷതകൾ',
+      'നദികൾ, കാലാവസ്ഥ, സസ്യപ്രകൃതി',
+      'വന്യജീവി & ഗവേഷണ സ്ഥാപനങ്ങൾ',
+      'ധാതുക്കളും വ്യവസായവും',
+      'ഊർജ്ജസ്രോതസ്സുകൾ',
+      'ഗതാഗത സംവിധാനങ്ങൾ'
+    ]
+  },
+  // (iii) ധനതത്ത്വശാസ്ത്രം (5 Marks)
+  {
     id: 'pq_economics',
-    name: 'ധനതത്വശാസ്ത്രം (Economics)',
+    name: 'ധനതത്ത്വശാസ്ത്രം (Economics)',
     marks: '5 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '📈',
-    desc: 'Indian Economy, Five-Year Plans, NITI Aayog, Banking & Agriculture',
-    color: '#10b981'
+    desc: 'പഞ്ചവത്സര പദ്ധതികൾ, നീതി ആയോഗ്, LPG നയങ്ങൾ, ധനകാര്യ സ്ഥാപനങ്ങൾ, ഹരിതവിപ്ലവം',
+    color: '#10b981',
+    subtopics: [
+      'ഇന്ത്യൻ സാമ്പത്തിക രംഗം & പഞ്ചവത്സര പദ്ധതികൾ',
+      'പ്ലാനിംഗ് കമ്മീഷൻ & നീതി ആയോഗ് (NITI Aayog)',
+      'നവസാമ്പത്തിക പരിഷ്കാരങ്ങൾ (LPG നയങ്ങൾ)',
+      'പ്രധാന ധനകാര്യ സ്ഥാപനങ്ങൾ',
+      'കാർഷിക വിളകളും ധാതുക്കളും',
+      'ഹരിതവിപ്ലവം (Green Revolution)'
+    ]
   },
+  // (iv) ഇന്ത്യൻ ഭരണഘടന (5 Marks)
   {
     id: 'pq_constitution',
-    name: 'ഇന്ത്യൻ ഭരണഘടന (Constitution)',
+    name: 'ഇന്ത്യൻ ഭരണഘടന (Indian Constitution)',
     marks: '5 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '⚖️',
-    desc: 'Preamble, Fundamental Rights & Duties, Organs of Govt & Amendments',
-    color: '#84cc16'
+    desc: 'ആമുഖം, മൗലികാവകാശങ്ങൾ, മൗലിക കടമകൾ, ഭേദഗതികൾ, പഞ്ചായത്തീരാജ്, ഭരണഘടനാ സ്ഥാപനങ്ങൾ',
+    color: '#84cc16',
+    subtopics: [
+      'ഭരണഘടനാ നിർമ്മാണ സമിതി & ആമുഖം',
+      'പൗരത്വം, മൗലികാവകാശങ്ങൾ, നിർദ്ദേശക തത്ത്വങ്ങൾ, മൗലിക കടമകൾ',
+      'ഗവൺമെന്റിന്റെ ഘടകങ്ങൾ (കാര്യനിർവ്വഹണം, നിയമനിർമ്മാണം, നീതിന്യായം)',
+      'പ്രധാന ഭേദഗതികൾ (42, 44, 52, 73, 74, 86, 91) & പഞ്ചായത്തീരാജ്',
+      'ഭരണഘടനാ സ്ഥാപനങ്ങളും ചുമതലകളും',
+      'യൂണിയൻ ലിസ്റ്റ്, സ്റ്റേറ്റ് ലിസ്റ്റ്, കൺകറന്റ് ലിസ്റ്റ്'
+    ]
   },
+  // (v) കേരളം - ഭരണവും ഭരണസംവിധാനങ്ങളും (5 Marks)
   {
     id: 'pq_kerala_governance',
-    name: 'കേരളം ഭരണസംവിധാനങ്ങൾ (Kerala Governance)',
+    name: 'കേരളം - ഭരണവും ഭരണസംവിധാനങ്ങളും (Kerala Governance)',
     marks: '5 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '🏢',
-    desc: 'State Civil Services, Commissions, Welfare & Employment Schemes',
-    color: '#f97316'
+    desc: 'സിവിൽ സർവീസ് & കമ്മീഷനുകൾ, ദുരന്തനിവാരണ അതോറിറ്റി, തൊഴിൽ പദ്ധതികൾ, സാമൂഹ്യക്ഷേമം',
+    color: '#f97316',
+    subtopics: [
+      'കേരള സംസ്ഥാന സിവിൽ സർവീസ് & കമ്മീഷനുകൾ',
+      'സാമൂഹിക, സാമ്പത്തിക, വാണിജ്യ ആസൂത്രണം',
+      'ദുരന്തനിവാരണ അതോറിറ്റി & തണ്ണീർത്തട സംരക്ഷണം',
+      'തൊഴിലും ദേശീയ ഗ്രാമീണ തൊഴിൽ പദ്ധതികളും & ഭൂപരിഷ്കരണങ്ങൾ',
+      'സ്ത്രീകൾ, കുട്ടികൾ, വയോജന സംരക്ഷണം',
+      'സാമൂഹ്യക്ഷേമവും സാമൂഹ്യ സുരക്ഷിതത്വവും'
+    ]
   },
+  // (vi) ജീവശാസ്ത്രവും പൊതുജനാരോഗ്യവും (6 Marks)
   {
-    id: 'pq_science',
-    name: 'ജനറൽ സയൻസ് (General Science)',
-    marks: '12 Marks',
+    id: 'pq_biology',
+    name: 'ജീവശാസ്ത്രവും പൊതുജനാരോഗ്യവും (Biology & Public Health)',
+    marks: '6 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
-    icon: '🔬',
-    desc: 'Biology & Public Health (6M), Physics (3M), Chemistry (3M)',
-    color: '#a855f7'
+    icon: '🧬',
+    desc: 'മനുഷ്യശരീരം, ജീവകങ്ങളും അപര്യാപ്തതാ രോഗങ്ങളും, സാംക്രമിക-ജീവിതശൈലീ രോഗങ്ങൾ, പരിസ്ഥിതി',
+    color: '#22c55e',
+    subtopics: [
+      'മനുഷ്യ ശരീരത്തെക്കുറിച്ചുള്ള പൊതു അറിവ്',
+      'ജീവകങ്ങളും ധാതുക്കളും - അപര്യാപ്തതാ രോഗങ്ങൾ',
+      'സാംക്രമിക രോഗങ്ങളും രോഗകാരികളും',
+      'കേരളത്തിലെ ആരോഗ്യക്ഷേമ പ്രവർത്തനങ്ങൾ',
+      'ജീവിതശൈലീ രോഗങ്ങൾ & പ്രതിരോധം',
+      'അടിസ്ഥാന ആരോഗ്യ വിജ്ഞാനം',
+      'പരിസ്ഥിതിയും പരിസ്ഥിതി പ്രശ്നങ്ങളും'
+    ]
   },
+  // (vii) ഭൗതികശാസ്ത്രം (3 Marks)
   {
-    id: 'pq_arts_sports',
-    name: 'കല, കായികം, സംസ്കാരം (Arts & Sports)',
+    id: 'pq_physics',
+    name: 'ഭൗതികശാസ്ത്രം (Physics)',
+    marks: '3 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '⚛️',
+    desc: 'യൂണിറ്റും അളവുകളും, ചലനം, പ്രകാശം, ശബ്ദം, ബലം, ഗുരുത്വാകർഷണം, താപം, ഊർജ്ജം',
+    color: '#a855f7',
+    subtopics: [
+      'ഭൗതികശാസ്ത്ര ശാഖകൾ, ദ്രവ്യം, യൂണിറ്റും അളവുകളും',
+      'ചലനം, ന്യൂട്ടന്റെ നിയമങ്ങൾ, പ്രൊജക്ടൈൽ മോഷൻ, ISRO',
+      'പ്രകാശം, ലെൻസ്, ദർപ്പണം, വർണ്ണങ്ങൾ, സ്പെക്ട്രം (IR, UV)',
+      'ശബ്ദം, തരംഗങ്ങൾ, പ്രവേഗം, അനുരണനം',
+      'ബലം, ഘർഷണം, ദ്രാവകമർദ്ദം, പ്ലവക്ഷമബലം, സാന്ദ്രത',
+      'ഗുരുത്വാകർഷണം, ഉപഗ്രഹങ്ങൾ, പലായന പ്രവേഗം, \'g\'',
+      'താപം, താപനില, തെർമോമീറ്ററുകൾ, ആർദ്രത',
+      'പ്രവൃത്തി, ഊർജ്ജം, പവർ, ഉത്തോലകങ്ങൾ'
+    ]
+  },
+  // (viii) രസതന്ത്രം (3 Marks)
+  {
+    id: 'pq_chemistry',
+    name: 'രസതന്ത്രം (Chemistry)',
+    marks: '3 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '🧪',
+    desc: 'ആറ്റം, തന്മാത്ര, മൂലകങ്ങൾ, ആവർത്തനപ്പട്ടിക, ലോഹസങ്കരങ്ങൾ, ആസിഡും ആൽക്കലിയും, pH മൂല്യം',
+    color: '#8b5cf6',
+    subtopics: [
+      'ആറ്റം, തന്മാത്ര, ദ്രവ്യത്തിന്റെ അവസ്ഥകൾ',
+      'രൂപാന്തരത്വം, വാതക നിയമങ്ങൾ, അക്വാറീജിയ',
+      'മൂലകങ്ങൾ, ആവർത്തനപ്പട്ടിക',
+      'ലോഹങ്ങളും അലോഹങ്ങളും, ലോഹസങ്കരങ്ങൾ',
+      'രാസ-ഭൗതിക മാറ്റങ്ങൾ, രാസപ്രവർത്തനങ്ങൾ',
+      'ലായനികൾ, മിശ്രിതങ്ങൾ, സംയുക്തങ്ങൾ',
+      'ആസിഡും ആൽക്കലിയും, pH മൂല്യം',
+      'ആൽക്കലോയിഡുകൾ'
+    ]
+  },
+  // (ix) കല, കായികം, സാഹിത്യം, സംസ്കാരം (5 Marks)
+  {
+    id: 'pq_arts_culture',
+    name: 'കല & സംസ്കാരം (Arts & Culture)',
     marks: '5 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '🎨',
-    desc: 'Kerala Arts, Sports & Olympics, Malayalam Cinema & Awards',
-    color: '#e11d48'
+    desc: 'കേരളത്തിലെ ദൃശ്യ-ശ്രവ്യ കലകൾ, ആഘോഷങ്ങൾ, ഉത്സവങ്ങൾ, സാംസ്കാരിക കേന്ദ്രങ്ങൾ',
+    color: '#e11d48',
+    subtopics: [
+      'കേരളത്തിലെ പ്രധാന ദൃശ്യ-ശ്രവ്യ കലകൾ',
+      'ഉത്ഭവം, വ്യാപനം, പരിശീലന കേന്ദ്രങ്ങൾ',
+      'പ്രശസ്തമായ സ്ഥലങ്ങൾ, സ്ഥാപനങ്ങൾ, വ്യക്തികൾ',
+      'പ്രധാന ആഘോഷങ്ങൾ, ഉത്സവങ്ങൾ, തീർത്ഥാടന കേന്ദ്രങ്ങൾ',
+      'സാംസ്കാരിക കേന്ദ്രങ്ങൾ, സാംസ്കാരിക നായകർ'
+    ]
   },
   {
+    id: 'pq_sports',
+    name: 'കായികം (Sports)',
+    marks: '5 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '🏆',
+    desc: 'കായികതാരങ്ങൾ, അവാർഡുകൾ, ട്രോഫികൾ, ഒളിമ്പിക്സ്, ഏഷ്യൻ & ദേശീയ ഗെയിംസ്',
+    color: '#f43f5e',
+    subtopics: [
+      'പ്രമുഖ കായികതാരങ്ങളും നേട്ടങ്ങളും',
+      'അവാർഡുകൾ & ജേതാക്കൾ, പ്രധാന ട്രോഫികൾ',
+      'കളിക്കാരുടെ എണ്ണം & പ്രധാന കായിക പദങ്ങൾ',
+      'ഒളിമ്പിക്സ് (വേദികൾ, ഇന്ത്യയുടെ പ്രകടനം, പാരാ ഒളിമ്പിക്സ്)',
+      'ഏഷ്യൻ ഗെയിംസ്, കോമൺവെൽത്ത്, സാഫ്, ദേശീയ ഗെയിംസ്',
+      'ഓരോ രാജ്യത്തിന്റെയും ദേശീയ വിനോദങ്ങൾ'
+    ]
+  },
+  {
+    id: 'pq_literature_cinema',
+    name: 'സാഹിത്യം & സിനിമ (Literature & Cinema)',
+    marks: '5 Marks',
+    section: 'Part I: പൊതുവിജ്ഞാനം',
+    sectionMarks: '50 Marks',
+    icon: '🎬',
+    desc: 'സാഹിത്യ പ്രസ്ഥാനങ്ങൾ, കൃതികൾ, തൂലികാനാമങ്ങൾ, പത്രപ്രവർത്തന ചരിത്രം, മലയാള സിനിമ',
+    color: '#fb7185',
+    subtopics: [
+      'പ്രധാന സാഹിത്യ പ്രസ്ഥാനങ്ങൾ, ആദ്യകൃതികൾ, കർത്താക്കൾ',
+      'എഴുത്തുകാരും തൂലികാനാമങ്ങളും, പ്രധാന കഥാപാത്രങ്ങൾ',
+      'പ്രശസ്തമായ വരികളും എഴുത്തുകാരും',
+      'മലയാള പത്രപ്രവർത്തന ചരിത്രം',
+      'സാഹിത്യ അവാർഡുകൾ & ജ്ഞാനപീഠം നേടിയ മലയാളികൾ',
+      'മലയാള സിനിമ (ഉത്ഭവം, നാഴികക്കല്ലുകൾ, ദേശീയ അവാർഡുകൾ)'
+    ]
+  },
+  // (x) കമ്പ്യൂട്ടർ - അടിസ്ഥാന വിവരങ്ങൾ (3 Marks)
+  {
     id: 'pq_computer',
-    name: 'കമ്പ്യൂട്ടർ അടിസ്ഥാന വിവരങ്ങൾ (Computer)',
+    name: 'കമ്പ്യൂട്ടർ - അടിസ്ഥാന വിവരങ്ങൾ (Computer)',
     marks: '3 Marks',
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '💻',
-    desc: 'Hardware, Software, Internet, HTML, Cyber Crimes & IT Act',
-    color: '#0284c7'
+    desc: 'Hardware, Software, Networks, Internet, HTML, Cyber Crimes & IT Act',
+    color: '#0284c7',
+    subtopics: [
+      'Hardware: Input/Output Devices, Memory (Primary/Secondary)',
+      'Software: System & Application, OS, Office Packages',
+      'Programming Basics: Instructions, Control transfer',
+      'Networks: LAN, WAN, MAN, Network Devices (Router, Hub)',
+      'Internet: WWW, Email, Search Engines, Social Media, HTML',
+      'Cyber Laws: Cyber Crimes, IT Act (Awareness level)'
+    ]
   },
+  // (xi) സുപ്രധാന നിയമങ്ങൾ (5 Marks)
   {
     id: 'pq_acts_laws',
     name: 'സുപ്രധാന നിയമങ്ങൾ (Important Acts)',
@@ -421,8 +647,16 @@ export const PYQ_TOPICS = [
     section: 'Part I: പൊതുവിജ്ഞാനം',
     sectionMarks: '50 Marks',
     icon: '📜',
-    desc: 'RTI Act, Consumer Protection, Human Rights, Women & Child (POCSO) Laws',
-    color: '#d97706'
+    desc: 'RTI Act 2005, Consumer Protection, SC/ST Act, Human Rights, Domestic Violence & POCSO Act',
+    color: '#d97706',
+    subtopics: [
+      'വിവരാവകാശ നിയമം (RTI Act 2005) - കമ്മീഷനുകൾ, അധികാരങ്ങൾ',
+      'ഉപഭോക്തൃ സംരക്ഷണ നിയമം (Consumer Protection)',
+      'SC/ST അതിക്രമങ്ങൾ തടയൽ നിയമം & കമ്മീഷനുകൾ',
+      'മനുഷ്യാവകാശ കമ്മീഷനുകൾ & വയോജന സംരക്ഷണം',
+      'ഗാർഹിക പീഡന നിരോധന നിയമം (2005) & വനിതാ കമ്മീഷൻ',
+      'പോക്സോ നിയമം (POCSO Act 2012)'
+    ]
   },
   // Part II: ആനുകാലിക വിഷയങ്ങൾ (20 Marks)
   {
@@ -432,41 +666,129 @@ export const PYQ_TOPICS = [
     section: 'Part II: ആനുകാലിക വിഷയങ്ങൾ',
     sectionMarks: '20 Marks',
     icon: '📰',
-    desc: 'National, International & Kerala Current Events, Awards & Sports',
-    color: '#eab308'
+    desc: 'സമകാലിക സംഭവങ്ങൾ, പുരസ്കാരങ്ങൾ, നിയമനങ്ങൾ, കായിക നേട്ടങ്ങൾ, പദ്ധതികൾ, ശാസ്ത്ര വാർത്തകൾ',
+    color: '#eab308',
+    subtopics: [
+      'ദേശീയ, അന്തർദേശീയ, സംസ്ഥാന തലങ്ങളിലെ സമകാലിക സംഭവങ്ങൾ',
+      'പ്രധാന പുരസ്കാരങ്ങൾ, ബഹുമതികൾ, ജേതാക്കൾ',
+      'പ്രധാന ഭരണഘടനാ/ഭരണപരമായ നിയമനങ്ങൾ',
+      'കായിക രംഗത്തെ സുപ്രധാന നേട്ടങ്ങൾ & റെക്കോർഡുകൾ',
+      'സർക്കാരിന്റെ പ്രധാന നയങ്ങൾ, വികസന പദ്ധതികൾ & ക്ഷേമപദ്ധതികൾ',
+      'ശാസ്ത്ര-സാങ്കേതിക-ബഹിരാകാശ രംഗത്തെ പുതിയ വാർത്തകൾ'
+    ]
   },
   // Part III: ലഘുഗണിതവും മാനസിക ശേഷിയും (10 Marks)
   {
-    id: 'pq_maths',
-    name: 'കണക്കും റീസണിംഗും (Maths & Mental Ability)',
-    marks: '10 Marks',
+    id: 'pq_arithmetic',
+    name: 'ലഘുഗണിതം (Simple Arithmetic)',
+    marks: '5 Marks',
     section: 'Part III: കണക്കും റീസണിംഗും',
     sectionMarks: '10 Marks',
     icon: '🔢',
-    desc: 'Arithmetic (5M) and Mental Ability, Series & Reasoning (5M)',
-    color: '#f59e0b'
+    desc: 'സംഖ്യകൾ, ശതമാനം, ലാഭവും നഷ്ടവും, പലിശ, അംശബന്ധം, സമയവും ദൂരവും, ശരാശരി, ക്ഷേത്രഗണിതം',
+    color: '#f59e0b',
+    subtopics: [
+      'സംഖ്യകളും അടിസ്ഥാന ക്രിയകളും',
+      'ഭിന്നസംഖ്യകളും ദശാംശ സംഖ്യകളും',
+      'ശതമാനം (Percentage)',
+      'ലാഭവും നഷ്ടവും (Profit & Loss)',
+      'സാധാരണ പലിശയും കൂട്ടുപലിശയും',
+      'അംശബന്ധവും അനുപാതവും (Ratio & Proportion)',
+      'സമയവും ദൂരവും (Time & Distance)',
+      'സമയവും പ്രവൃത്തിയും (Time & Work)',
+      'ശരാശരി (Average)',
+      'കൃത്യങ്കങ്ങൾ (Laws of Exponents)',
+      'ക്ഷേത്രഗണിതം - ചുറ്റളവ്, വിസ്തീർണ്ണം, വ്യാപ്തം',
+      'പ്രോഗ്രഷനുകൾ (AP & GP)'
+    ]
+  },
+  {
+    id: 'pq_mental_ability',
+    name: 'മാനസികശേഷി പരിശോധന (Mental Ability)',
+    marks: '5 Marks',
+    section: 'Part III: കണക്കും റീസണിംഗും',
+    sectionMarks: '10 Marks',
+    icon: '🧠',
+    desc: 'ശ്രേണികൾ, സ്ഥാന നിർണ്ണയം, സമാന ബന്ധങ്ങൾ, ഒറ്റയാനെ കണ്ടെത്തുക, കോഡിംഗ്, ദിശാബോധം, ക്ലോക്ക്, കലണ്ടർ',
+    color: '#f97316',
+    subtopics: [
+      'ശ്രേണികൾ (സംഖ്യാ, അക്ഷര ശ്രേണികൾ)',
+      'ഗണിത ചിഹ്നങ്ങൾ ഉപയോഗിച്ചുള്ള പ്രശ്നങ്ങൾ',
+      'സ്ഥാന നിർണ്ണയ പരിശോധന (Ranking)',
+      'സമാന ബന്ധങ്ങൾ (Analogy)',
+      'ഒറ്റയാനെ കണ്ടെത്തുക (Odd Man Out)',
+      'സംഖ്യാവലോകന പ്രശ്നങ്ങൾ',
+      'കോഡിംഗും ഡീകോഡിംഗും',
+      'കുടുംബ ബന്ധങ്ങൾ (Blood Relations)',
+      'ദിശാബോധം (Sense of Direction)',
+      'ക്ലോക്കിലെ സമയവും കോണളവും & പ്രതിബിംബവും',
+      'കലണ്ടറും തീയതിയും',
+      'ക്ലറിക്കൽ ശേഷി പരിശോധന (Clerical Ability)'
+    ]
   },
   // Part IV: General English (10 Marks)
   {
-    id: 'pq_english',
-    name: 'General English',
-    marks: '10 Marks',
+    id: 'pq_english_grammar',
+    name: 'English Grammar',
+    marks: '5 Marks',
     section: 'Part IV: General English',
     sectionMarks: '10 Marks',
     icon: '🇬🇧',
-    desc: 'English Grammar (5M) & Vocabulary (5M)',
-    color: '#10b981'
+    desc: 'Sentences, Parts of Speech, Articles, Question Tags, Tenses, Prepositions, Voice & Speech',
+    color: '#10b981',
+    subtopics: [
+      'Types & Interchange of Sentences',
+      'Parts of Speech & Subject-Verb Agreement',
+      'Articles, Auxiliaries & Modals',
+      'Question Tags, Infinitives & Gerunds',
+      'Tenses & Conditional Sentences',
+      'Prepositions & Correlatives',
+      'Direct & Indirect Speech',
+      'Active & Passive Voice',
+      'Sentence Correction & Degrees of Comparison'
+    ]
+  },
+  {
+    id: 'pq_english_vocabulary',
+    name: 'English Vocabulary',
+    marks: '5 Marks',
+    section: 'Part IV: General English',
+    sectionMarks: '10 Marks',
+    icon: '📖',
+    desc: 'Synonyms, Antonyms, Phrasal Verbs, Foreign Words, One Word Substitutes, Idioms & Spelling',
+    color: '#059669',
+    subtopics: [
+      'Singular & Plural, Gender, Collective Nouns',
+      'Word Formation, Prefixes & Suffixes',
+      'Compound Words',
+      'Synonyms & Antonyms',
+      'Phrasal Verbs',
+      'Foreign Words & Phrases',
+      'One Word Substitutes',
+      'Words Often Confused & Spelling Test',
+      'Idioms & Meanings, Common Abbreviations'
+    ]
   },
   // Part V: മലയാളം (10 Marks)
   {
     id: 'pq_malayalam',
-    name: 'മലയാളം (Malayalam Language)',
+    name: 'പ്രാദേശിക ഭാഷകൾ (മലയാളം)',
     marks: '10 Marks',
     section: 'Part V: മലയാളം',
     sectionMarks: '10 Marks',
     icon: '📚',
-    desc: 'Official Malayalam Grammar, Vocabulary & Literature (10M)',
-    color: '#3b82f6'
+    desc: 'പദശുദ്ധി, വാക്യശുദ്ധി, പരിഭാഷ, ഒറ്റപ്പദം, പര്യായപദം, ശൈലികൾ, ചേർത്തെഴുതുക, ലിംഗം, വചനം',
+    color: '#3b82f6',
+    subtopics: [
+      'പദശുദ്ധി & വാക്യശുദ്ധി',
+      'പരിഭാഷ (Translation)',
+      'ഒറ്റപ്പദം & സമാനപദം',
+      'പര്യായപദം & വിപരീത പദം',
+      'ശൈലികളും പഴഞ്ചൊല്ലുകളും',
+      'ചേർത്തെഴുതുക & പിരിച്ചെഴുതൽ',
+      'സ്ത്രീലിംഗം / പുല്ലിംഗം & വചനം',
+      'ഘടകപദം (വാക്യം ചേർത്തെഴുതുക)'
+    ]
   }
 ];
 

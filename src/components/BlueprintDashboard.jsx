@@ -16,88 +16,160 @@ export default function BlueprintDashboard({
       marks: '50 Marks',
       accentColor: '#3b82f6',
       badgeClass: 'badge-gk',
-      desc: 'ചരിത്രം, ഭൂമിശാസ്ത്രം, ഭരണഘടന, ധനതത്വശാസ്ത്രം, സയൻസ്, കല-കായികം, കമ്പ്യൂട്ടർ & സുപ്രധാന നിയമങ്ങൾ',
+      desc: 'ചരിത്രം (5M), ഭൂമിശാസ്ത്രം (5M), ധനതത്വശാസ്ത്രം (5M), ഭരണഘടന (5M), കേരള ഭരണം (5M), ജീവശാസ്ത്രം (6M), ഭൗതികശാസ്ത്രം (3M), രസതന്ത്രം (3M), കല-കായികം-സാഹിത്യം (5M), കമ്പ്യൂട്ടർ (3M), സുപ്രധാന നിയമങ്ങൾ (5M)',
       topics: [
         {
-          num: 'i',
-          name: 'ചരിത്രം (History)',
-          marks: '5 Marks',
+          num: '1',
+          name: 'കേരള ചരിത്രം (Kerala History)',
+          marks: '5 Marks (i–iii)',
           subject: 'pyq',
-          topicId: 'pq_history',
+          topicId: 'pq_kerala_history',
           icon: '🏛️',
-          details: 'കേരള ചരിത്രം (യൂറോപ്യന്മാർ മുതൽ ഐക്യകേരളം, നവോത്ഥാനം), ഇന്ത്യൻ ചരിത്രം (1857, കോൺഗ്രസ്, ഗാന്ധിയൻ കാലഘട്ടം, സ്വാതന്ത്ര്യാനന്തര ഇന്ത്യ), ലോക വിപ്ലവങ്ങൾ & UNO.'
+          details: 'കേരളത്തിലേക്കുള്ള യൂറോപ്യന്മാരുടെ വരവ്, യൂറോപ്യന്മാരുടെ സംഭാവനകൾ, മാർത്താണ്ഡവർമ്മ മുതൽ ശ്രീ ചിത്തിരതിരുനാൾ വരെ തിരുവിതാംകൂർ ചരിത്രം, കൊച്ചി-മലബാർ ചരിത്രം, സാമൂഹിക-മത പരിഷ്കരണ പ്രസ്ഥാനങ്ങൾ, ദേശീയ പ്രസ്ഥാനം കേരളത്തിൽ, ഐക്യകേരള പ്രസ്ഥാനം, 1956-ന് ശേഷമുള്ള സാമൂഹ്യരാഷ്ട്രീയ ചരിത്രം.'
         },
         {
-          num: 'ii',
-          name: 'ഭൂമിശാസ്ത്രം (Geography)',
-          marks: '5 Marks',
+          num: '2',
+          name: 'ഇന്ത്യാ ചരിത്രം (Indian History)',
+          marks: '5 Marks (i–iii)',
           subject: 'pyq',
-          topicId: 'pq_geography',
-          icon: '🌍',
-          details: 'ഭൂമിശാസ്ത്ര അടിസ്ഥാന തത്വങ്ങൾ, ഇന്ത്യ (ഭൂപ്രകൃതി, നദികൾ, കാലാവസ്ഥ, കൃഷി, ഗതാഗതം), കേരളം (ജില്ലകൾ, നദികൾ, തണ്ണീർത്തടങ്ങൾ, വന്യജീവി).'
+          topicId: 'pq_indian_history',
+          icon: '🇮🇳',
+          details: 'മധ്യകാല ഇന്ത്യ, രാഷ്ട്രീയ ചരിത്രം, ഭരണപരിഷ്കാരങ്ങൾ, സംഭാവനകൾ, ഒന്നാം സ്വാതന്ത്ര്യ സമരം (1857), ഇന്ത്യൻ നാഷണൽ കോൺഗ്രസിന്റെ രൂപീകരണം, സ്വദേശി പ്രസ്ഥാനം, സാമൂഹ്യപരിഷ്കരണ പ്രസ്ഥാനങ്ങൾ, പത്രങ്ങൾ, സാഹിത്യവും കലയും, ഗാന്ധിജിയും ദേശീയ പ്രസ്ഥാനവും, സ്വാതന്ത്ര്യാനന്തര ഇന്ത്യ, സംസ്ഥാന പുനഃസംഘടന, വിദേശനയം.'
         },
         {
-          num: 'iii',
-          name: 'ധനതത്വശാസ്ത്രം (Economics)',
+          num: '3',
+          name: 'ലോക ചരിത്രം (World History)',
+          marks: '5 Marks (i–iii)',
+          subject: 'pyq',
+          topicId: 'pq_world_history',
+          icon: '🌐',
+          details: 'ഇംഗ്ലീഷ് വിപ്ലവം (Glorious Revolution), അമേരിക്കൻ സ്വാതന്ത്ര്യ സമരം, ഫ്രഞ്ച് വിപ്ലവം, റഷ്യൻ വിപ്ലവം, ചൈനീസ് വിപ്ലവം, രണ്ടാം ലോക മഹായുദ്ധാനന്തര രാഷ്ട്രീയ ചരിത്രം, ഐക്യരാഷ്ട്ര സംഘടന (UNO) & മറ്റ് അന്താരാഷ്ട്ര സംഘടനകൾ.'
+        },
+        {
+          num: '4',
+          name: 'ഭൂമിശാസ്ത്ര അടിസ്ഥാന തത്വങ്ങൾ (Basic Geography)',
+          marks: '5 Marks (iv–vi)',
+          subject: 'pyq',
+          topicId: 'pq_basic_geography',
+          icon: '🪐',
+          details: 'ഭൂമിയുടെ ഘടന, അന്തരീക്ഷം, പാറകൾ, ഭൗമോപരിതല രൂപങ്ങൾ, അന്തരീക്ഷമർദ്ദവും കാറ്റുകളും, താപനിലയും ഋതുഭേദങ്ങളും, ആഗോളപ്രശ്നങ്ങളും ആഗോളതാപനവും, ഭൂപടങ്ങൾ, ടോപ്പോഗ്രാഫിക് മാപ്പുകളും അടയാളങ്ങളും, വിദൂര സംവേദനം (Remote Sensing), ഭൂമിശാസ്ത്ര വിവര വ്യവസ്ഥ (GIS), മഹാസമുദ്രങ്ങളും സമുദ്രചലനങ്ങളും, ഭൂഖണ്ഡങ്ങൾ, സമയവും അക്ഷാംശ-രേഖാംശ രേഖകളും.'
+        },
+        {
+          num: '5',
+          name: 'ഇന്ത്യ — ഭൂമിശാസ്ത്ര സവിശേഷതകൾ (Indian Geography)',
+          marks: '5 Marks (iv–vi)',
+          subject: 'pyq',
+          topicId: 'pq_indian_geography',
+          icon: '🗺️',
+          details: 'ഇന്ത്യയുടെ ഭൂപ്രകൃതി, സംസ്ഥാനങ്ങളും സവിശേഷതകളും, ഉത്തരേന്ത്യൻ സമതലം, ഉപദ്വീപീയ പീഠഭൂമി, തീരപ്രദേശം, ഇന്ത്യൻ നദികൾ, കാലാവസ്ഥ, സ്വാഭാവിക സസ്യജാലം, കൃഷി, മണ്ണിനങ്ങൾ, ധാതുക്കളും വ്യവസായവും, ഊർജ്ജസ്രോതസ്സുകൾ, റോഡ്-ജല-റെയിൽ-വ്യോമ ഗതാഗത സംവിധാനങ്ങൾ.'
+        },
+        {
+          num: '6',
+          name: 'കേരളം — ഭൂമിശാസ്ത്ര സവിശേഷതകൾ (Kerala Geography)',
+          marks: '5 Marks (iv–vi)',
+          subject: 'pyq',
+          topicId: 'pq_kerala_geography',
+          icon: '🌴',
+          details: 'കേരളത്തിന്റെ ഭൂപ്രകൃതി, 14 ജില്ലകളും സവിശേഷതകളും, നദികൾ, കായലുകൾ, കാലാവസ്ഥ, മണ്ണിനങ്ങൾ, സ്വാഭാവിക സസ്യജാലം, വന്യജീവി സങ്കേതങ്ങളും ദേശീയോദ്യാനങ്ങളും, മത്സ്യബന്ധനം, ധാതുക്കൾ, വ്യവസായം, അടിസ്ഥാന സൗകര്യങ്ങൾ, കൃഷി, ഗതാഗത സംവിധാനങ്ങൾ.'
+        },
+        {
+          num: '7',
+          name: 'ധനതത്വശാസ്ത്രം — ഇന്ത്യ : സാമ്പത്തിക രംഗം (Economics)',
           marks: '5 Marks',
           subject: 'pyq',
           topicId: 'pq_economics',
           icon: '📈',
-          details: 'ഇന്ത്യൻ സാമ്പത്തിക വ്യവസ്ഥ, പഞ്ചവത്സര പദ്ധതികൾ, നീതി ആയോഗ്, റിസർവ് ബാങ്ക്, ധനകാര്യ സ്ഥാപനങ്ങൾ, കാർഷിക വിളകൾ, ഹരിത വിപ്ലവം.'
+          details: 'ഇന്ത്യയുടെ സാമ്പത്തിക രംഗം, പഞ്ചവത്സര പദ്ധതികൾ, ആസൂത്രണ കമ്മീഷൻ, നീതി ആയോഗ് (NITI Aayog), നവ സാമ്പത്തിക പരിഷ്കാരങ്ങൾ, റിസർവ് ബാങ്ക് (RBI) & ധനകാര്യ സ്ഥാപനങ്ങൾ, കാർഷിക വിളകൾ, ധാതുക്കൾ, ഹരിത വിപ്ലവം.'
         },
         {
-          num: 'iv',
-          name: 'ഇന്ത്യൻ ഭരണഘടന (Constitution)',
+          num: '8',
+          name: 'ഇന്ത്യൻ ഭരണഘടന (Indian Constitution)',
           marks: '5 Marks',
           subject: 'pyq',
           topicId: 'pq_constitution',
           icon: '⚖️',
-          details: 'ഭരണഘടനാ നിർമ്മാണ സഭ, ആമുഖം, മൗലികാവകാശങ്ങൾ, നിർദ്ദേശക തത്വങ്ങൾ, കർത്തവ്യങ്ങൾ, പ്രധാന ഭേദഗതികൾ (42, 44, 52, 73, 74, 86, 91), പഞ്ചായത്തീരാജ്.'
+          details: 'ഭരണഘടനാ നിർമ്മാണ സഭ, ആമുഖം, മൗലികാവകാശങ്ങൾ, നിർദ്ദേശക തത്വങ്ങൾ, മൗലിക കർത്തവ്യങ്ങൾ, പൗരത്വം, ഭരണഘടനാ ഭേദഗതികൾ (42, 44, 52, 73, 74, 86, 91), പഞ്ചായത്തീരാജ്, ഭരണഘടനാ സ്ഥാപനങ്ങളും ചുമതലകളും, യൂണിയൻ ലിസ്റ്റ്-സ്റ്റേറ്റ് ലിസ്റ്റ്-കൺകറന്റ് ലിസ്റ്റ്.'
         },
         {
-          num: 'v',
-          name: 'കേരളം - ഭരണസംവിധാനങ്ങൾ (Kerala Governance)',
+          num: '9',
+          name: 'കേരളം — ഭരണവും ഭരണസംവിധാനങ്ങളും (Kerala Governance)',
           marks: '5 Marks',
           subject: 'pyq',
           topicId: 'pq_kerala_governance',
           icon: '🏢',
-          details: 'കേരള സിവിൽ സർവീസ്, വിവിധ കമ്മീഷനുകൾ, സാമൂഹിക ക്ഷേമ പദ്ധതികൾ, ദുരന്ത നിവാരണം, ദേശീയ ഗ്രാമീണ തൊഴിൽ പദ്ധതികൾ, സ്ത്രീ-ശിശു സംരക്ഷണം.'
+          details: 'കേരളം — സംസ്ഥാന സിവിൽ സർവീസ്, ഭരണഘടനാ സ്ഥാപനങ്ങൾ, വിവിധ കമ്മീഷനുകൾ, സാമൂഹിക ക്ഷേമ പദ്ധതികൾ, ഭൂപരിഷ്കരണം, സാമൂഹ്യ സുരക്ഷാ പെൻഷനുകൾ, കുടുംബശ്രീ, ദേശീയ ഗ്രാമീണ തൊഴിൽ പദ്ധതികൾ, ദുരന്ത നിവാരണ അതോറിറ്റി, സ്ത്രീ-ശിശു സംരക്ഷണം.'
         },
         {
-          num: 'vi-viii',
-          name: 'ജനറൽ സയൻസ് (General Science)',
-          marks: '12 Marks',
+          num: '10',
+          name: 'ജീവശാസ്ത്രവും പൊതുജനാരോഗ്യവും (Biology & Public Health)',
+          marks: '6 Marks',
           subject: 'pyq',
-          topicId: 'pq_science',
-          icon: '🔬',
-          details: 'ജീവശാസ്ത്രവും പൊതുജനാരോഗ്യവും (6 Marks): മനുഷ്യശരീരം, ജീവകങ്ങൾ, സാംക്രമിക രോഗങ്ങൾ, പരിസ്ഥിതി. ഭൗതികശാസ്ത്രം (3 Marks): ചലന നിയമങ്ങൾ, പ്രകാശം, ശബ്ദം, ബലം, ഗുരുത്വാകർഷണം. രസതന്ത്രം (3 Marks): ആറ്റം, മൂലകങ്ങൾ, ലോഹങ്ങൾ-അലോഹങ്ങൾ, ആസിഡും ആൽക്കലിയും, pH മൂല്യം.'
+          topicId: 'pq_biology',
+          icon: '🧬',
+          details: 'മനുഷ്യശരീരത്തെക്കുറിച്ചുള്ള പൊതുഅറിവ്, അവയവങ്ങളും അവയവ വ്യവസ്ഥകളും, പോഷകഘടകങ്ങളും അപര്യാപ്തതാരോഗങ്ങളും, സാംക്രമിക രോഗങ്ങളും രോഗകാരികളും, കേരളത്തിലെ ആരോഗ്യക്ഷേമ പ്രവർത്തനങ്ങൾ, ജീവിതശൈലി രോഗങ്ങൾ, സസ്യങ്ങളും വനങ്ങളും, പരിസ്ഥിതിയും ആവാസവ്യവസ്ഥയും.'
         },
         {
-          num: 'ix',
-          name: 'കല, കായികം, സാഹിത്യം, സംസ്കാരം (Arts & Sports)',
-          marks: '5 Marks',
+          num: '11',
+          name: 'ഭൗതികശാസ്ത്രം (Physics)',
+          marks: '3 Marks',
           subject: 'pyq',
-          topicId: 'pq_arts_sports',
-          icon: '🎨',
-          details: 'കേരളത്തിലെ ദൃശ്യ-ശ്രവ്യ കലകൾ, സാംസ്കാരിക കേന്ദ്രങ്ങൾ. കായികരംഗം, പ്രമുഖ താരങ്ങൾ, പുരസ്കാരങ്ങൾ, ഒളിമ്പിക്സ്, ഏഷ്യൻ ഗെയിംസ്. മലയാള സിനിമ & ദേശീയ പുരസ്കാരങ്ങൾ.'
+          topicId: 'pq_physics',
+          icon: '⚛️',
+          details: 'ഭൗതികശാസ്ത്ര ശാഖകൾ, ദ്രവ്യം, യൂണിറ്റുകളും അളവുകളും, പ്രകാശം, ശബ്ദം, താപം, ചലനം, ചലനനിയമങ്ങൾ, തരംഗങ്ങൾ, ബലം, കാന്തികത, വൈദ്യുതി, മർദ്ദം, പ്ലവക്ഷമത, ബഹിരാകാശ ശാസ്ത്രവും ISRO ദൗത്യങ്ങളും, സൗരയൂഥം, ഊർജ്ജവും ഊർജ്ജസ്രോതസ്സുകളും.'
         },
         {
-          num: 'x',
+          num: '12',
+          name: 'രസതന്ത്രം (Chemistry)',
+          marks: '3 Marks',
+          subject: 'pyq',
+          topicId: 'pq_chemistry',
+          icon: '🧪',
+          details: 'ആറ്റവും തന്മാത്രയും, ദ്രവ്യത്തിന്റെ അവസ്ഥകൾ, മൂലകങ്ങളും ആവർത്തനപ്പട്ടികയും, സംയുക്തങ്ങളും രാസപ്രവർത്തനങ്ങളും, ലോഹങ്ങളും അലോഹങ്ങളും സങ്കരലോഹങ്ങളും, ആസിഡും ആൽക്കലിയും (pH മൂല്യം), വാതക നിയമങ്ങൾ.'
+        },
+        {
+          num: '13',
+          name: 'കലയും സംസ്കാരവും (Arts & Culture)',
+          marks: '5 Marks (xiii–xv)',
+          subject: 'pyq',
+          topicId: 'pq_arts_culture',
+          icon: '🎭',
+          details: 'കേരളത്തിലെ പ്രധാന ദൃശ്യ-ശ്രാവ്യ കലാരൂപങ്ങൾ (ഉത്ഭവം, വ്യാപനം, പരിശീലനം), പ്രശസ്തമായ സ്ഥലങ്ങൾ, പ്രശസ്തമായ സ്ഥാപനങ്ങൾ, പ്രശസ്തരായ കലാകാരന്മാർ, ഉത്സവങ്ങളും ക്ഷേത്രങ്ങളും.'
+        },
+        {
+          num: '14',
+          name: 'കായികം (Sports)',
+          marks: '5 Marks (xiii–xv)',
+          subject: 'pyq',
+          topicId: 'pq_sports',
+          icon: '🏆',
+          details: 'കായികരംഗത്ത് വ്യക്തിമുദ്ര പതിപ്പിച്ച കേരളത്തിലെയും ഇന്ത്യയിലെയും ലോകത്തിലെയും പ്രധാന കായികതാരങ്ങൾ, പ്രധാന അവാർഡുകൾ, ട്രോഫികൾ, ഒളിമ്പിക്സ്, ഏഷ്യൻ ഗെയിംസ്, കോമൺവെൽത്ത് ഗെയിംസ്, ദേശീയ ഗെയിംസ്, കായിക പദങ്ങളും ഗ്രൗണ്ടുകളും.'
+        },
+        {
+          num: '15',
+          name: 'സാഹിത്യവും സിനിമയും (Literature & Cinema)',
+          marks: '5 Marks (xiii–xv)',
+          subject: 'pyq',
+          topicId: 'pq_literature_cinema',
+          icon: '🎬',
+          details: 'മലയാളത്തിലെ പ്രധാന സാഹിത്യ പ്രസ്ഥാനങ്ങൾ, ആദ്യകൃതികൾ, ഗ്രന്ഥകർത്താക്കൾ, തൂലികാനാമങ്ങൾ, കഥാപാത്രങ്ങൾ, ജ്ഞാനപീഠം-എഴുത്തച്ഛൻ പുരസ്കാരങ്ങൾ, മലയാള സിനിമയുടെ ഉത്ഭവം, വളർച്ച, നാഴികക്കല്ലുകൾ, ദേശീയ ചലച്ചിത്ര പുരസ്കാരങ്ങൾ.'
+        },
+        {
+          num: '16',
           name: 'കമ്പ്യൂട്ടർ അടിസ്ഥാന വിവരങ്ങൾ (Computer Basics)',
           marks: '3 Marks',
           subject: 'pyq',
           topicId: 'pq_computer',
           icon: '💻',
-          details: 'Hardware (Input, Output, Memory), Software (System, Application, OS), Computer Networks (LAN, WAN), Internet (WWW, Email, HTML), Cyber Crimes & IT Act.'
+          details: 'Hardware (Input Devices, Output Devices, Memory — Primary & Secondary), Software (System, Application, Operating Systems), Computer Networks (LAN, WAN, MAN), Internet (WWW, E-Mail, Search Engines, Social Media, HTML Basics), Cyber Crimes & IT Act 2000.'
         },
         {
-          num: 'xi',
-          name: 'സുപ്രധാന നിയമങ്ങൾ (Special Laws & Acts)',
+          num: '17',
+          name: 'സുപ്രധാന നിയമങ്ങൾ (Important Acts & Laws)',
           marks: '5 Marks',
           subject: 'pyq',
           topicId: 'pq_acts_laws',
           icon: '📜',
-          details: 'വിവരാവകാശ നിയമം (RTI Act 2005), ഉപഭോക്തൃ സംരക്ഷണം, മനുഷ്യാവകാശ കമ്മീഷൻ (NHRC/SHRC), SC/ST സംരക്ഷണം, ഗാർഹിക പീഡന നിരോധന നിയമം, വനിതാ കമ്മീഷൻ, പോക്സോ നിയമം (POCSO Act 2012).'
+          details: 'വിവരാവകാശ നിയമം (RTI Act 2005 — കേന്ദ്ര-സംസ്ഥാന വിവരാവകാശ കമ്മീഷൻ), ഉപഭോക്തൃ സംരക്ഷണ നിയമം, മനുഷ്യാവകാശ സംരക്ഷണ നിയമം (NHRC & SHRC), പട്ടികജാതി-പട്ടികവർഗ്ഗ അതിക്രമങ്ങൾ തടയൽ നിയമം (1989), ഗാർഹിക പീഡന നിരോധന നിയമം (2005), വനിതാ കമ്മീഷൻ, പോക്സോ (POCSO Act 2012) & ബാലാവകാശ സംരക്ഷണം.'
         }
       ]
     },
@@ -110,32 +182,41 @@ export default function BlueprintDashboard({
       desc: 'ദേശീയ, അന്തർദേശീയ, സംസ്ഥാന തലത്തിലുള്ള സമകാലിക സംഭവങ്ങൾ, പുരസ്കാരങ്ങൾ, കായിക നേട്ടങ്ങൾ',
       topics: [
         {
-          num: 'II',
-          name: 'ആനുകാലിക സംഭവങ്ങൾ (Current Affairs)',
+          num: '18',
+          name: 'ആനുകാലിക വിഷയങ്ങൾ — PYQ (Current Affairs PYQs)',
           marks: '20 Marks',
-          subject: 'current_affairs',
-          topicId: 'all',
+          subject: 'pyq',
+          topicId: 'pq_current_affairs',
           icon: '📰',
-          details: 'പരീക്ഷാ തീയതിക്ക് തൊട്ടുമുമ്പുള്ള സമകാലിക സംഭവങ്ങൾ, സർക്കാർ പദ്ധതികൾ, ശാസ്ത്ര സാങ്കേതിക നേട്ടങ്ങൾ, പ്രധാന നിയമനങ്ങൾ, പുരസ്കാരങ്ങൾ, അന്താരാഷ്ട്ര ഉച്ചകോടികൾ.'
+          details: 'കേരളം — ആനുകാലികം, ഇന്ത്യ — ദേശീയ ആനുകാലികം, ലോകം — അന്താരാഷ്ട്ര ആനുകാലികം, പുരസ്കാരങ്ങളും ബഹുമതികളും, കായിക ആനുകാലികം, ശാസ്ത്ര-സാങ്കേതിക-ബഹിരാകാശ ആനുകാലികം.'
         }
       ]
     },
     {
       id: 'part3',
-      title: 'Part III: ലഘുഗണിതവും മാനസിക ശേഷിയും',
+      title: 'Part III: ലഘുഗണിതവും മാനസിക ശേഷിയും (Simple Arithmetic & Mental Ability)',
       marks: '10 Marks',
       accentColor: '#6366f1',
       badgeClass: 'badge-maths',
       desc: 'ലഘുഗണിതം (5 Marks) + മാനസിക ശേഷിയും നിരീക്ഷണപാടവ പരിശോധനയും (5 Marks)',
       topics: [
         {
-          num: 'i',
-          name: 'ലഘുഗണിതം & റീസണിംഗ് (Maths & Mental Ability)',
-          marks: '10 Marks',
+          num: '19',
+          name: 'ലഘുഗണിതം (Simple Arithmetic)',
+          marks: '5 Marks',
           subject: 'pyq',
-          topicId: 'pq_maths',
+          topicId: 'pq_arithmetic',
           icon: '🔢',
-          details: 'സംഖ്യകൾ, ഭിന്നസംഖ്യകൾ, ശതമാനം, ലാഭവും നഷ്ടവും, സാധാരണ & കൂട്ടുപലിശ, അംശബന്ധം, സമയവും ദൂരവും, സമയവും പ്രവൃത്തിയും, ശരാശരി, കൃത്യങ്കങ്ങൾ, ജ്യാമിതി, ശ്രേണികൾ, കോഡിംഗ്-ഡീകോഡിംഗ്, ദിശാബോധം, ക്ലോക്ക്, കലണ്ടർ.'
+          details: 'സംഖ്യകളും അടിസ്ഥാന ക്രിയകളും, ഭിന്നസംഖ്യകളും ദശാംശ സംഖ്യകളും, ശതമാനം (Percentage), ലാഭവും നഷ്ടവും, സാധാരണ പലിശയും കൂട്ടുപലിശയും, അംശബന്ധവും അനുപാതവും, സമയവും ദൂരവും, സമയവും പ്രവൃത്തിയും, ശരാശരി, കൃത്യങ്കങ്ങൾ, ജ്യാമിതീയ രൂപങ്ങളുടെ ചുറ്റളവ്, വിസ്തീർണ്ണം, വ്യാപ്തം, പ്രോഗ്രഷനുകൾ.'
+        },
+        {
+          num: '20',
+          name: 'മാനസിക ശേഷിയും നിരീക്ഷണപാടവവും (Mental Ability)',
+          marks: '5 Marks',
+          subject: 'pyq',
+          topicId: 'pq_mental_ability',
+          icon: '🧠',
+          details: 'സംഖ്യാ ശ്രേണികളും അക്ഷര ശ്രേണികളും (Series), ഗണിത ചിഹ്നങ്ങൾ ഉപയോഗിച്ചുള്ള ക്രിയകൾ, സ്ഥാന നിർണ്ണയ പരിശോധന, സമാന ബന്ധങ്ങൾ (Analogy), ഒറ്റയാനെ കണ്ടെത്തുക (Odd Man Out), കോഡിംഗും ഡീകോഡിംഗും, കുടുംബ ബന്ധങ്ങൾ (Blood Relations), ദിശാവബോധം, ഘടികാരത്തിലെ സമയവും കോണളവും, കലണ്ടറും തീയതിയും, ക്ലറിക്കൽ ശേഷി പരിശോധന.'
         }
       ]
     },
@@ -145,25 +226,25 @@ export default function BlueprintDashboard({
       marks: '10 Marks',
       accentColor: '#3b82f6',
       badgeClass: 'badge-english',
-      desc: 'English Grammar (5 Marks) + Vocabulary (5 Marks)',
+      desc: 'English Grammar (5 Marks) + English Vocabulary (5 Marks)',
       topics: [
         {
-          num: 'i',
-          name: 'English Grammar & Usage',
+          num: '21',
+          name: 'English Grammar (PYQs)',
           marks: '5 Marks',
-          subject: 'english',
-          topicId: 'types_of_sentences',
+          subject: 'pyq',
+          topicId: 'pq_english_grammar',
           icon: '📝',
-          details: 'Types of Sentences, Parts of Speech, Subject-Verb Agreement, Articles, Auxiliaries, Question Tags, Infinitives & Gerunds, Tenses, Prepositions, Voice, Direct & Indirect Speech, Degrees of Comparison.'
+          details: 'Types of Sentences and Interchange, Parts of Speech, Agreement of Verb and Subject, Confusion of Adjectives and Adverbs, Comparison of Adjectives, Adverbs & Position, Articles, Uses of Primary and Modal Auxiliary Verbs, Tag Questions, Infinitive and Gerunds, Tenses & Conditional Sentences, Prepositions, Correlatives, Direct and Indirect Speech, Active and Passive Voice, Correction of Sentences.'
         },
         {
-          num: 'ii',
-          name: 'Vocabulary & Phrases',
+          num: '22',
+          name: 'English Vocabulary (PYQs)',
           marks: '5 Marks',
-          subject: 'english',
-          topicId: 'synonyms_eng',
+          subject: 'pyq',
+          topicId: 'pq_english_vocabulary',
           icon: '📖',
-          details: 'Singular & Plural, Gender, Collective Nouns, Prefix & Suffix, Compound Words, Synonyms, Antonyms, Phrasal Verbs, One Word Substitutes, Confused Words, Spelling Test, Idioms & Meanings.'
+          details: 'Singular & Plural, Change of Gender, Collective Nouns, Word Formation & Prefix/Suffix, Compound Words, Synonyms & Antonyms, Phrasal Verbs, Foreign Words and Phrases, One Word Substitutes, Words Often Confused, Spelling Test, Idioms and their Meanings, Expansion and Abbreviations.'
         }
       ]
     },
@@ -173,16 +254,16 @@ export default function BlueprintDashboard({
       marks: '10 Marks',
       accentColor: '#0ea5e9',
       badgeClass: 'badge-malayalam',
-      desc: 'മലയാള വ്യാകരണവും സാഹിത്യവും (10 Marks)',
+      desc: 'മലയാള വ്യാകരണവും പദസമ്പത്തും സാഹിത്യവും (10 Marks)',
       topics: [
         {
-          num: 'V',
-          name: 'മലയാളം വ്യാകരണവും സാഹിത്യവും',
+          num: '23',
+          name: 'മലയാളം — PYQ (Malayalam PYQs)',
           marks: '10 Marks',
-          subject: 'malayalam',
-          topicId: 'all',
+          subject: 'pyq',
+          topicId: 'pq_malayalam',
           icon: '📚',
-          details: 'പദശുദ്ധി, വാക്യശുദ്ധി, പരിഭാഷ, ഒറ്റപ്പദം, പര്യായം, വിപരീത പദം, ശൈലികൾ & പഴഞ്ചൊല്ലുകൾ, സമാനപദം, ചേർത്തെഴുതുക, ലിംഗം, വചനം, പിരിച്ചെഴുതുക, ഘടകപദം, സാഹിത്യവും കൃതികളും.'
+          details: 'പദശുദ്ധി, വാക്യശുദ്ധി, പരിഭാഷ (Translation), ഒറ്റപ്പദം, പര്യായം, വിപരീത പദം, ശൈലികൾ & പഴഞ്ചൊല്ലുകൾ, സമാനപദം, ചേർത്തെഴുതുക / സന്ധി / സമാസം, സ്ത്രീലിംഗം / പുല്ലിംഗം, വചനം, പിരിച്ചെഴുതുക, ഘടകപദം (വാക്യം ചേർത്തെഴുതുക), മലയാള സാഹിത്യവും കൃതികളും.'
         }
       ]
     }

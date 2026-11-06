@@ -28,26 +28,34 @@ import {
 } from './Icons';
 import { cleanExplanation } from '../utils/cleanExplanation';
 
-// Exact Mark distribution for Kerala PSC LDC 100-mark syllabus
+// Exact Mark distribution for Kerala PSC LDC 100-mark syllabus (23 Official Syllabus Topics)
 const DISTRIBUTION = [
   // Part I: GK (50 Marks)
-  { label: 'ചരിത്രം (History)',         topicId: 'pq_history',           marks: 5,  part: 'Part I: GK', code: '01' },
-  { label: 'ഭൂമിശാസ്ത്രം (Geography)',   topicId: 'pq_geography',         marks: 5,  part: 'Part I: GK', code: '02' },
-  { label: 'ധനതത്വം (Economics)',        topicId: 'pq_economics',         marks: 5,  part: 'Part I: GK', code: '03' },
-  { label: 'ഭരണഘടന (Constitution)',     topicId: 'pq_constitution',      marks: 5,  part: 'Part I: GK', code: '04' },
-  { label: 'കേരള ഭരണം (Governance)',    topicId: 'pq_kerala_governance', marks: 5,  part: 'Part I: GK', code: '05' },
-  { label: 'ജനറൽ സയൻസ് (Science)',     topicId: 'pq_science',           marks: 12, part: 'Part I: GK', code: '06' },
-  { label: 'കല, കായികം (Arts & Sports)', topicId: 'pq_arts_sports',      marks: 5,  part: 'Part I: GK', code: '07' },
-  { label: 'കമ്പ്യൂട്ടർ (Computer)',     topicId: 'pq_computer',          marks: 3,  part: 'Part I: GK', code: '08' },
-  { label: 'നിയമങ്ങൾ (Acts & Laws)',     topicId: 'pq_acts_laws',         marks: 5,  part: 'Part I: GK', code: '09' },
+  { label: 'കേരള ചരിത്രം (Kerala History)',         topicIds: ['pq_kerala_history'],    marks: 2,  part: 'Part I: GK', code: '01A' },
+  { label: 'ഇന്ത്യാ ചരിത്രം (Indian History)',      topicIds: ['pq_indian_history'],    marks: 2,  part: 'Part I: GK', code: '01B' },
+  { label: 'ലോക ചരിത്രം (World History)',           topicIds: ['pq_world_history'],     marks: 1,  part: 'Part I: GK', code: '01C' },
+  { label: 'ഭൂമിശാസ്ത്ര അടിസ്ഥാന തത്വങ്ങൾ',         topicIds: ['pq_basic_geography'],   marks: 1,  part: 'Part I: GK', code: '02A' },
+  { label: 'ഇന്ത്യൻ ഭൂമിശാസ്ത്രം (Indian Geo)',     topicIds: ['pq_indian_geography'],  marks: 2,  part: 'Part I: GK', code: '02B' },
+  { label: 'കേരള ഭൂമിശാസ്ത്രം (Kerala Geo)',        topicIds: ['pq_kerala_geography'],  marks: 2,  part: 'Part I: GK', code: '02C' },
+  { label: 'ധനതത്വശാസ്ത്രം (Economics)',            topicIds: ['pq_economics'],         marks: 5,  part: 'Part I: GK', code: '03' },
+  { label: 'ഇന്ത്യൻ ഭരണഘടന (Constitution)',         topicIds: ['pq_constitution'],      marks: 5,  part: 'Part I: GK', code: '04' },
+  { label: 'കേരള ഭരണം (Kerala Governance)',         topicIds: ['pq_kerala_governance'], marks: 5,  part: 'Part I: GK', code: '05' },
+  { label: 'ജീവശാസ്ത്രവും പൊതുജനാരോഗ്യവും (Biology)', topicIds: ['pq_biology'],          marks: 6,  part: 'Part I: GK', code: '06' },
+  { label: 'ഭൗതികശാസ്ത്രം (Physics)',               topicIds: ['pq_physics'],           marks: 3,  part: 'Part I: GK', code: '07' },
+  { label: 'രസതന്ത്രം (Chemistry)',                 topicIds: ['pq_chemistry'],         marks: 3,  part: 'Part I: GK', code: '08' },
+  { label: 'കല, കായികം, സാഹിത്യം, സംസ്കാരം',        topicIds: ['pq_arts_culture', 'pq_sports', 'pq_literature_cinema'], marks: 5, part: 'Part I: GK', code: '09' },
+  { label: 'കമ്പ്യൂട്ടർ (Computer Basics)',          topicIds: ['pq_computer'],          marks: 3,  part: 'Part I: GK', code: '10' },
+  { label: 'സുപ്രധാന നിയമങ്ങൾ (Acts & Laws)',       topicIds: ['pq_acts_laws'],         marks: 5,  part: 'Part I: GK', code: '11' },
   // Part II: Current Affairs (20 Marks)
-  { label: 'Current Affairs',            topicId: 'pq_current_affairs',   marks: 20, part: 'Part II: Current Affairs', code: '10' },
+  { label: 'ആനുകാലിക വിഷയങ്ങൾ (Current Affairs)',   topicIds: ['pq_current_affairs'],   marks: 20, part: 'Part II: Current Affairs', code: '12' },
   // Part III: Arithmetic & Mental Ability (10 Marks)
-  { label: 'Simple Arithmetic & Mental Ability', topicId: 'pq_maths',    marks: 10, part: 'Part III: Maths & Reasoning', code: '11' },
+  { label: 'ലഘുഗണിതം (Simple Arithmetic)',          topicIds: ['pq_arithmetic'],        marks: 5,  part: 'Part III: Maths & Reasoning', code: '13A' },
+  { label: 'മാനസിക ശേഷി (Mental Ability)',          topicIds: ['pq_mental_ability'],    marks: 5,  part: 'Part III: Maths & Reasoning', code: '13B' },
   // Part IV: General English (10 Marks)
-  { label: 'General English',            topicId: 'english',              marks: 10, part: 'Part IV: English', code: '12' },
+  { label: 'English Grammar',                       topicIds: ['pq_english_grammar'],   marks: 5,  part: 'Part IV: English', code: '14A', fallbackBank: 'english' },
+  { label: 'English Vocabulary',                    topicIds: ['pq_english_vocabulary'],marks: 5,  part: 'Part IV: English', code: '14B', fallbackBank: 'english' },
   // Part V: Malayalam Language (10 Marks)
-  { label: 'Malayalam Language',         topicId: 'malayalam',            marks: 10, part: 'Part V: Malayalam', code: '13' },
+  { label: 'മലയാളം (Malayalam Language)',           topicIds: ['pq_malayalam'],         marks: 10, part: 'Part V: Malayalam', code: '15', fallbackBank: 'malayalam' },
 ];
 
 const TOTAL_TIME = 75 * 60; // 1 hour 15 minutes = 4500 seconds
@@ -77,45 +85,27 @@ function buildPaper(selectedYear) {
 
   for (const seg of DISTRIBUTION) {
     let pool = [];
+    const matchTopic = (q) => seg.topicIds.includes(q.topic);
 
-    if (seg.topicId === 'english') {
-      if (selectedYear && selectedYear !== 'all') {
-        pool = PYQ_QUESTION_BANK.filter(
-          (q) =>
-            (q.topic === 'pq_english' || q.subject === 'english') &&
-            (q.year === selectedYear || q.id?.includes(`_${selectedYear}_`))
-        );
-      }
-      if (pool.length < seg.marks) {
-        const extra = ENGLISH_QUESTION_BANK.filter((q) => !pool.some((p) => p.id === q.id));
-        pool = [...pool, ...extra];
-      }
-    } else if (seg.topicId === 'malayalam') {
-      if (selectedYear && selectedYear !== 'all') {
-        pool = PYQ_QUESTION_BANK.filter(
-          (q) =>
-            (q.topic === 'pq_malayalam' || q.subject === 'malayalam') &&
-            (q.year === selectedYear || q.id?.includes(`_${selectedYear}_`))
-        );
-      }
-      if (pool.length < seg.marks) {
-        const extra = QUESTION_BANK.filter((q) => !pool.some((p) => p.id === q.id));
-        pool = [...pool, ...extra];
-      }
-    } else {
-      if (selectedYear && selectedYear !== 'all') {
-        pool = PYQ_QUESTION_BANK.filter(
-          (q) =>
-            q.topic === seg.topicId &&
-            (q.year === selectedYear || q.id?.includes(`_${selectedYear}_`))
-        );
-      }
-      if (pool.length < seg.marks) {
-        const fallback = PYQ_QUESTION_BANK.filter(
-          (q) => q.topic === seg.topicId && !pool.some((p) => p.id === q.id)
-        );
-        pool = [...pool, ...fallback];
-      }
+    if (selectedYear && selectedYear !== 'all') {
+      pool = PYQ_QUESTION_BANK.filter(
+        (q) =>
+          matchTopic(q) &&
+          (String(q.year) === String(selectedYear) || q.id?.includes(`_${selectedYear}_`))
+      );
+    }
+    if (pool.length < seg.marks) {
+      const fallback = PYQ_QUESTION_BANK.filter(
+        (q) => matchTopic(q) && !pool.some((p) => p.id === q.id)
+      );
+      pool = [...pool, ...fallback];
+    }
+    if (pool.length < seg.marks && seg.fallbackBank === 'english') {
+      const extra = ENGLISH_QUESTION_BANK.filter((q) => !pool.some((p) => p.id === q.id));
+      pool = [...pool, ...extra];
+    } else if (pool.length < seg.marks && seg.fallbackBank === 'malayalam') {
+      const extra = QUESTION_BANK.filter((q) => !pool.some((p) => p.id === q.id));
+      pool = [...pool, ...extra];
     }
 
     const picked = shuffle(pool).slice(0, seg.marks);

@@ -795,6 +795,16 @@ export const PYQ_TOPICS = [
 // Part II: Current Affairs (Monthly Capsules & Topic-Wise Sections)
 export const CURRENT_AFFAIRS_MONTH_TOPICS = [
   {
+    id: 'ca_oct',
+    qp_code: 'OCT-CA/2026',
+    name: 'ഒക്ടോബർ 2026 (October)',
+    icon: '',
+    desc: 'Current events, appointments, sports & awards from October 2026',
+    color: '#8b5cf6',
+    section: '2026 Monthly Capsules',
+    sectionMarks: '415 Qs'
+  },
+  {
     id: 'ca_sep',
     qp_code: 'SEP-CA/2026',
     name: 'സെപ്റ്റംബർ 2026 (September)',

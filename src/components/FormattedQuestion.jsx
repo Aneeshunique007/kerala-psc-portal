@@ -10,10 +10,10 @@ const STATEMENT_BADGE_REGEX = new RegExp('^(' + BADGE_CHARS + ')\\s+(.+)$', 'i')
 
 // ---- Highlight positive (ശരിയായ, ശരി...) vs negative (തെറ്റ്, ശരിയല്ലാത്ത, പൊരുത്തപ്പെടാത്തത്, ഉൾപ്പെടാത്തത്...) keywords in question stems ----
 const KW_POS_EARLY = 'തെറ്റില്ലാത്ത[\\p{L}\\p{M}\\u200C\\u200D]*';
-const KW_NEG_SRC = '(?:ശരിയല്ലാത്ത|ശരിയല്ല|തെറ്റായ|തെറ്റായി|തെറ്റാണ്|തെറ്റ്|പൊരുത്തപ്പെടാത്ത|യോജിക്കാത്ത|ബന്ധമില്ലാത്ത|ബന്ധപ്പെടാത്ത|ബന്ധപ്പെട്ടിട്ടില്ലാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്നില്ല|പെടാത്ത|അല്ലാത്ത|ഒഴികെ|ഒറ്റപ്പെട്ട|വ്യത്യസ്തമായ)[\\p{L}\\p{M}\\u200C\\u200D]*|[\\p{L}\\p{M}\\u200C\\u200D]+(?:ല്ലാത്ത|പെടാത്ത|പ്പെടാത്ത)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:not\\s+correct|not\\s+true|incorrect|false|wrong|mismatch\\w*|not\\s+match\\w*|does\\s+not\\s+belong|not\\s+related|except|odd\\s+one(?:\\s+out)?)\\b';
-const KW_POS_SRC = '(?:ശരിയായ|ശരിയായി|ശരിയാണ്|ശരിയേത്|ശരി|പൊരുത്തപ്പെടുന്ന|യോജിക്കുന്ന|യോജിച്ച|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്ന)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:correct|true|right)\\b';
+const KW_NEG_SRC = '(?:ശരിയല്ലാത്ത|ശരിയല്ല|തെറ്റായ|തെറ്റായി|തെറ്റാണ്|തെറ്റ്|പൊരുത്തപ്പെടാത്ത|യോജിക്കാത്ത|ബന്ധമില്ലാത്ത|ബന്ധപ്പെടാത്ത|ബന്ധപ്പെട്ടിട്ടില്ലാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടാത്ത|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്നില്ല|പെടാത്ത|അല്ലാത്ത|ഒഴികെ|ഒറ്റപ്പെട്ട|വ്യത്യസ്തമായ)[\\p{L}\\p{M}\\u200C\\u200D]*|[\\p{L}\\p{M}\\u200C\\u200D]+(?:ല്ലാത്ത|പെടാത്ത|പ്പെടാത്ത)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:not\\s+correct|not\\s+true|incorrect|incorrectly|false|wrong|wrongly|misspelt|misspelled|wrongly\\s+spelt|wrongly\\s+spelled|incorrectly\\s+spelt|incorrectly\\s+spelled|mismatch\\w*|not\\s+match\\w*|does\\s+not\\s+belong|not\\s+related|except|odd\\s+one(?:\\s+out)?|odd\\s+man(?:\\s+out)?)\\b';
+const KW_POS_SRC = '(?:ശരിയായ|ശരിയായി|ശരിയാണ്|ശരിയേത്|ശരി|പൊരുത്തപ്പെടുന്ന|യോജിക്കുന്ന|യോജിച്ച|ഉ(?:ൾ|ള\\u0D4D\\u200D)പ്പെടുന്ന)[\\p{L}\\p{M}\\u200C\\u200D]*|\\b(?:correct|correctly|right|true|correctly\\s+spelt|correctly\\s+spelled|spelt\\s+correctly|spelled\\s+correctly)\\b';
 const POLARITY_KW_REGEX = new RegExp(`(?<![\\p{L}\\p{M}])(?:(${KW_POS_EARLY})|(${KW_NEG_SRC})|(${KW_POS_SRC}))(?![\\p{L}\\p{M}])`, 'giu');
-const NEEDS_OPTIONS_REGEX = /താഴെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|സൂചിപ്പിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ചുവടെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ഇനിപ്പറയുന്നവയിൽ|ഇവയിൽ\s*നിന്ന്|\b(?:which\s+of\s+the\s+following|among\s+the\s+following)\b/iu;
+const NEEDS_OPTIONS_REGEX = /താഴെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|സൂചിപ്പിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ചുവടെ\s*(?:തന്നിരിക്കുന്ന|പറയുന്ന|കൊടുത്തിരിക്കുന്ന|നൽകിയിരിക്കുന്ന|പറഞ്ഞിരിക്കുന്ന)|ഇനിപ്പറയുന്നവയിൽ|ഇവയിൽ\s*നിന്ന്|അക്ഷരത്തെറ്റില്ലാത്ത|അക്ഷരത്തെറ്റുള്ള|ശരിയായ പദം|തെറ്റായ പദം|ശരിയായ വാക്യം|തെറ്റായ വാക്യം|പദശുദ്ധി|വാക്യശുദ്ധി|കൂട്ടത്തിൽ പെടാത്തത്|ചേരാത്തത്|ഒറ്റപ്പദം|\b(?:one\s+of\s+the\s+following|which\s+of\s+the\s+following|among\s+the\s+following|which\s+one\s+of\s+the\s+following|any\s+of\s+the\s+following|all\s+of\s+the\s+following|following\s+words?|following\s+sentences?|following\s+pairs?|misspelt|misspelled|correctly\s+spelt|correctly\s+spelled|odd\s+one\s+out|odd\s+man\s+out)\b/iu;
 
 // ---- Statement verdicts (Browse Mode): work out which statements are correct ----
 const normBadge = (b) => String(b || '').replace(/[().\s]/g, '').toLowerCase();
@@ -379,7 +379,8 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
             const verdict = verdicts ? verdicts[normBadge(st.badge)] : null;
             const markStatus = verdict || statementMarks[idx] || 'none';
             if (verdict) {
-              const verdictLabel = verdict === 'correct' ? 'ശരി' : 'തെറ്റ്';
+              const isEnglishQ = !/[\u0D00-\u0D7F]/.test(clean || '');
+              const verdictLabel = verdict === 'correct' ? (isEnglishQ ? 'Correct' : 'ശരി') : (isEnglishQ ? 'Incorrect' : 'തെറ്റ്');
               return (
                 <div
                   key={idx}
@@ -389,7 +390,7 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
                   <span className="pyq-statement-body" style={{ textDecoration: 'none', opacity: 1 }}>{st.body}</span>
                   <span
                     className={`statement-verdict-pill ${verdict}`}
-                    aria-label={verdict === 'correct' ? 'ശരിയായ പ്രസ്താവന' : 'തെറ്റായ പ്രസ്താവന'}
+                    aria-label={verdictLabel}
                   >
                     {verdict === 'correct' ? <CheckIcon size={12} /> : <XIcon size={12} />}
                     <span className="verdict-pill-text">{verdictLabel}</span>
@@ -466,6 +467,8 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
             } else {
               verdict = (hasNegKw ? !isPicked : isPicked) ? 'correct' : 'wrong';
             }
+            const isEnglishQ = !/[\u0D00-\u0D7F]/.test(clean || '');
+            const verdictText = verdict === 'correct' ? (isEnglishQ ? 'Correct' : 'ശരി') : (isEnglishQ ? 'Incorrect' : 'തെറ്റ്');
             return (
               <div
                 key={oIdx}
@@ -475,10 +478,10 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
                 <span className="pyq-statement-body" style={{ textDecoration: 'none', opacity: 1 }}>{opt}</span>
                 <span
                   className={`statement-verdict-pill ${verdict}`}
-                  aria-label={verdict === 'correct' ? 'ശരി' : 'തെറ്റ്'}
+                  aria-label={verdictText}
                 >
                   {verdict === 'correct' ? <CheckIcon size={12} /> : <XIcon size={12} />}
-                  <span className="verdict-pill-text">{verdict === 'correct' ? 'ശരി' : 'തെറ്റ്'}</span>
+                  <span className="verdict-pill-text">{verdictText}</span>
                 </span>
               </div>
             );

@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import {
-  QUESTION_BANK,
-  ENGLISH_QUESTION_BANK,
-  PYQ_QUESTION_BANK
-} from '../data/questions';
-import {
   TargetIcon,
   CheckIcon,
   CheckCircleIcon,

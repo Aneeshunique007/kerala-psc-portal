@@ -1,6 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import FormattedQuestion from './FormattedQuestion';
-import { cleanExplanation } from '../utils/cleanExplanation';
 import {
   BookmarkIcon,
   BookmarkFilledIcon,
@@ -8,12 +7,9 @@ import {
   ChevronRightIcon,
   SearchIcon,
   EyeIcon,
-  EyeOffIcon,
   TrashIcon,
-  CheckIcon,
   XIcon,
   AlertTriangleIcon,
-  InfoIcon,
   ArrowRightIcon,
   ChevronDownIcon
 } from './Icons';

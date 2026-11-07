@@ -3,7 +3,6 @@ import {
   QUESTION_BANK,
   ENGLISH_QUESTION_BANK,
   PYQ_QUESTION_BANK,
-  PYQ_YEARS,
 } from '../data/questions';
 import FormattedQuestion from './FormattedQuestion';
 import {
@@ -16,13 +15,11 @@ import {
   CheckCircleIcon,
   XCircleIcon,
   CalendarIcon,
-  LightbulbIcon,
   ArrowRightIcon,
   CheckIcon,
   XIcon,
   AlertTriangleIcon,
   RotateIcon,
-  TargetIcon,
   InfoIcon,
   ChevronLeftIcon
 } from './Icons';

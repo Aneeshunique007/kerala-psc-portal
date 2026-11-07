@@ -5,7 +5,6 @@ import {
   RotateIcon,
   ArrowRightIcon,
   AlertTriangleIcon,
-  CheckIcon,
   ShieldIcon,
   ClockIcon
 } from './Icons';

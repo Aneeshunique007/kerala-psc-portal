@@ -14,8 +14,6 @@ import {
   SearchIcon,
   CheckIcon,
   XIcon,
-  AlertTriangleIcon,
-  InfoIcon,
   ArrowRightIcon,
   BookmarkIcon,
   BookmarkFilledIcon,
@@ -25,8 +23,7 @@ import {
   LanguagesIcon,
   BookOpenIcon,
   CalendarIcon,
-  BarChartIcon,
-  GraduationCapIcon
+  BarChartIcon
 } from './Icons';
 
 // Professional Subject configurations

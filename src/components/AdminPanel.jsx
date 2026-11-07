@@ -12,7 +12,7 @@ import {
   adminRejectUser,
   adminDeleteUser,
 } from '../utils/supabaseClient';
-import { XIcon, AlertTriangleIcon, RotateIcon, CheckIcon } from './Icons';
+import { XIcon, RotateIcon } from './Icons';
 
 function CopyBtn({ text }) {
   const [copied, setCopied] = useState(false);

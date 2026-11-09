@@ -48,6 +48,34 @@ const LABEL_IN_ANS = /(?<![\p{L}\d])\(?([ivxIVX]{1,4}|[a-eA-E]|10|[1-9])[.)]?(?!
 const NUM_WORDS = { 'ഒന്ന്': 1, 'ഒന്നു': 1, 'ഒന്നൂ': 1, 'ഒന്നും': 1, 'ഒന്നൂം': 1, 'ഒന്നാമത്തെ': 1, 'രണ്ട്': 2, 'രണ്ടു': 2, 'രണ്ടൂ': 2, 'രണ്ടും': 2, 'രണ്ടൂം': 2, 'രണ്ടാമത്തെ': 2, 'മൂന്ന്': 3, 'മൂന്നു': 3, 'മൂന്നും': 3, 'മൂന്നാമത്തെ': 3, 'നാല്': 4, 'നാലു': 4, 'നാലും': 4, 'നാലാമത്തെ': 4, 'അഞ്ച്': 5, 'അഞ്ചു': 5, 'അഞ്ചും': 5 };
 const FILLER_WORDS = new Set(['ശരിയാണ്', 'ശരി', 'മാത്രം', 'എന്നിവ', 'ഉം', 'ശരിയായവ', 'പ്രസ്താവനകളും', 'പ്രസ്താവനകൾ', 'പ്രസ്താവന', 'പ്രസ്താവനയും']);
 
+// Automatically format Malayalam poem stanzas with slashes into verse lines
+function formatPoemVerses(text) {
+  if (!text || !text.includes(' / ')) return text;
+
+  // 1. Quoted poem stanzas: "verse 1 / verse 2" or “verse 1 / verse 2” or 'verse 1 / verse 2'
+  let res = text.replace(/(["“'])(.+?\s+\/\s+.+?)\1(\s*[—–-]?\s*(?:ഈ\s+വരികൾ|എന്ന\s+വരികൾ|ഇവ\s+ആരുടെ|ആരുടെ\s+വരികൾ|ഏത്\s+കൃതി|ആരുടെ\s+രചന|ആരുടേത്|എന്ന\s+കവിത|ആരുടെ\s+കവിതാ)[^?]*\??)?/gu, (match, qOpen, poemBody, tail) => {
+    const verses = poemBody.split(/\s+\/\s+/).map(v => v.trim()).filter(Boolean);
+    const hasPoemTail = Boolean(tail && tail.trim());
+    const isPoem = hasPoemTail || verses.length >= 3 || (verses.length >= 2 && verses.every(v => v.length >= 10 && v.includes(' ')));
+    if (!isPoem) return match;
+    const closeQuote = qOpen === '“' ? '”' : qOpen;
+    const formattedPoem = verses.join('\n');
+    const formattedTail = tail ? '\n' + tail.trim() : '';
+    return `${qOpen}${formattedPoem}${closeQuote}${formattedTail}`;
+  });
+
+  // 2. Unquoted poem stanzas ending with — ഈ വരികൾ ...
+  res = res.replace(/(^|\n)([^\n"“'\(\)]+?\s+\/\s+[^\n"“'\(\)]+?)\s*([—–-]\s*(?:ഈ\s+വരികൾ|എന്ന\s+വരികൾ|ആരുടെ\s+വരികൾ|ഏത്\s+കൃതി|ആരുടെ\s+രചന|ആരുടേത്)[^\n]*)/gu, (match, prefix, poemBody, tail) => {
+    const verses = poemBody.split(/\s+\/\s+/).map(v => v.trim()).filter(Boolean);
+    if (verses.length >= 2 && verses.every(v => v.length >= 8)) {
+      return `${prefix}${verses.join('\n')}\n${tail.trim()}`;
+    }
+    return match;
+  });
+
+  return res;
+}
+
 // Converts Malayalam number-word answers to something the label parser understands.
 // Returns { all: true } for "both/all N correct", or { text } with digits, or null.
 function normaliseNumberWords(answerText, statementCount) {
@@ -198,6 +226,8 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
     .replace(/[ \t]{2,}/g, ' ')
     .trim();
 
+  clean = formatPoemVerses(clean);
+
   // 1. Check for markdown table FIRST on raw lines (before splitting inline badges)
   // This ensures badges like (i), (a) inside table cells do not corrupt the table structure
   const rawLines = clean.split('\n').map(l => l.trim()).filter(Boolean);
@@ -332,7 +362,7 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
         <div className={`pyq-rendered-question ${className}`}>
           {introLines.length > 0 && (
             <div className="pyq-question-intro">
-              <span>{highlightQuestionPolarity(introLines.join(' '))}</span>
+              <span>{highlightQuestionPolarity(introLines.join('\n'))}</span>
               {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
             </div>
           )}
@@ -358,7 +388,7 @@ export default function FormattedQuestion({ text, className = '', showQpBadge = 
       <div className={`pyq-rendered-question ${className}`}>
         {introLines.length > 0 && (
           <div className="pyq-question-intro">
-            <span>{highlightQuestionPolarity(introLines.join(' '))}</span>
+            <span>{highlightQuestionPolarity(introLines.join('\n'))}</span>
             {showQpBadge && qpCode && <span className="pyq-qp-badge">QP: {qpCode}</span>}
           </div>
         )}

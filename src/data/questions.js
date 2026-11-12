@@ -802,7 +802,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from October 2026',
     color: '#8b5cf6',
     section: '2026 Monthly Capsules',
-    sectionMarks: '415 Qs'
+    sectionMarks: '404 Qs'
   },
   {
     id: 'ca_sep',
@@ -812,7 +812,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from September 2026',
     color: '#ec4899',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '150 Qs'
   },
   {
     id: 'ca_aug',
@@ -822,7 +822,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from August 2026',
     color: '#f59e0b',
     section: '2026 Monthly Capsules',
-    sectionMarks: '250 Qs'
+    sectionMarks: '162 Qs'
   },
   {
     id: 'ca_jul',
@@ -832,7 +832,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from July 2026',
     color: '#10b981',
     section: '2026 Monthly Capsules',
-    sectionMarks: '420 Qs'
+    sectionMarks: '368 Qs'
   },
   {
     id: 'ca_jun',
@@ -842,7 +842,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from June 2026',
     color: '#06b6d4',
     section: '2026 Monthly Capsules',
-    sectionMarks: '420 Qs'
+    sectionMarks: '366 Qs'
   },
   {
     id: 'ca_may',
@@ -852,7 +852,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from May 2026',
     color: '#8b5cf6',
     section: '2026 Monthly Capsules',
-    sectionMarks: '420 Qs'
+    sectionMarks: '343 Qs'
   },
   {
     id: 'ca_apr',
@@ -862,7 +862,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from April 2026',
     color: '#14b8a6',
     section: '2026 Monthly Capsules',
-    sectionMarks: '420 Qs'
+    sectionMarks: '356 Qs'
   },
   {
     id: 'ca_mar',
@@ -872,7 +872,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from March 2026',
     color: '#84cc16',
     section: '2026 Monthly Capsules',
-    sectionMarks: '420 Qs'
+    sectionMarks: '359 Qs'
   },
   {
     id: 'ca_feb',
@@ -882,7 +882,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from February 2026',
     color: '#f43f5e',
     section: '2026 Monthly Capsules',
-    sectionMarks: '420 Qs'
+    sectionMarks: '354 Qs'
   },
   {
     id: 'ca_jan',
@@ -892,7 +892,7 @@ export const CURRENT_AFFAIRS_MONTH_TOPICS = [
     desc: 'Current events, appointments, sports & awards from January 2026',
     color: '#3b82f6',
     section: '2026 Monthly Capsules',
-    sectionMarks: '420 Qs'
+    sectionMarks: '355 Qs'
   }
 ];
 

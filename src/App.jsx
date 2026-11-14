@@ -1140,9 +1140,12 @@ export default function App() {
   const handleSendToReviewQueue = (question) => {
     if (!currentUser || !question) return;
     const qId = question.id;
+    const freshQ = getFreshQuestion(question);
     const repeatItem = {
+      ...freshQ,
       id: qId,
-      remainingRepeats: 1,
+      difficulty: 'hard',
+      remainingRepeats: userRepeatTarget,
       minAvailableAt: (currentUser?.stats?.total || 0) + 2
     };
     let updatedRepeatQueue = [...(currentUser?.repeatQueue || [])];
@@ -1151,11 +1154,20 @@ export default function App() {
     } else {
       updatedRepeatQueue = updatedRepeatQueue.map(item => item.id === qId ? repeatItem : item);
     }
+    let updatedUpcoming = [...(currentUser?.upcomingRepeats || [])];
+    if (!updatedUpcoming.some(item => item.id === qId)) {
+      updatedUpcoming.push(repeatItem);
+    } else {
+      updatedUpcoming = updatedUpcoming.map(item => item.id === qId ? repeatItem : item);
+    }
+    const updatedLearned = (currentUser?.learnedQuestions || []).filter(id => id !== qId);
     const updated = users.map(u => {
       if (u.id === activeUserId) {
         return {
           ...u,
-          repeatQueue: updatedRepeatQueue
+          repeatQueue: updatedRepeatQueue,
+          upcomingRepeats: updatedUpcoming,
+          learnedQuestions: updatedLearned
         };
       }
       return u;
@@ -1443,10 +1455,11 @@ export default function App() {
       nextQ = getFreshQuestion(chosen);
       isRepeat = true;
     } else {
-      // All pending repeats for this subject / topic / year
+      // All pending repeats for this subject / topic / year (excluding questions already learned)
       const topicRepeats = upcomingList.filter(rep => {
         const freshQ = getFreshQuestion(rep);
         return isInActiveSubject(freshQ.id)
+          && !learnedSet.has(freshQ.id)
           && matchesTopic(freshQ, selectedTopic)
           && matchesYearFilter(freshQ)
           && (rep.remainingRepeats ?? 1) > 0;
@@ -1469,7 +1482,8 @@ export default function App() {
       );
 
       if (dueRepeats.length > 0 && (freshCandidates.length === 0 || Math.random() > 0.3)) {
-        nextQ = getFreshQuestion(dueRepeats[0]);
+        const chosenRepeat = dueRepeats[Math.floor(Math.random() * dueRepeats.length)];
+        nextQ = getFreshQuestion(chosenRepeat);
         isRepeat = true;
         soundFX.playRepeatAlert();
       } else if (freshCandidates.length > 0) {
@@ -1796,8 +1810,7 @@ export default function App() {
   const handleDifficultySelect = (difficulty) => {
     if (!currentQuestion || !currentUser) return;
     if (difficulty === 'easy' && (
-      currentQuestion.isRepeat
-      || !isAnswered
+      !isAnswered
       || selectedOption !== currentQuestion.answer
     )) return;
 
@@ -1814,15 +1827,33 @@ export default function App() {
     let updatedSolved = [...(currentUser?.solvedQuestions || [])];
 
     if (difficulty === 'easy') {
+      // Find current question ID and any identical/duplicate sister question IDs in the bank
+      const targetIds = new Set([qId]);
+      const normQText = currentQuestion?.question ? currentQuestion.question.replace(/[\s\-_–.,;:()/?!\"\'\[\]{}]+/g, '').trim() : '';
+      const correctAnsText = currentQuestion?.options?.[currentQuestion.answer]?.trim()?.toLowerCase() || '';
+
+      if (normQText && correctAnsText) {
+        currentQuestionBank.forEach(q => {
+          if (!q) return;
+          const qNorm = (q.question || '').replace(/[\s\-_–.,;:()/?!\"\'\[\]{}]+/g, '').trim();
+          const qAns = (q.options?.[q.answer] || '').trim().toLowerCase();
+          if (qAns === correctAnsText && (qNorm === normQText || (qNorm.length > 15 && (qNorm.includes(normQText) || normQText.includes(qNorm))))) {
+            targetIds.add(q.id);
+          }
+        });
+      }
+
       // Marked as learned! Removed from repeat queues
-      updatedUpcoming = updatedUpcoming.filter(item => item.id !== qId);
-      updatedRepeatQueue = updatedRepeatQueue.filter(item => item.id !== qId);
-      if (!updatedLearned.includes(qId)) {
-        updatedLearned.push(qId);
-      }
-      if (!updatedSolved.includes(qId)) {
-        updatedSolved.push(qId);
-      }
+      updatedUpcoming = updatedUpcoming.filter(item => !targetIds.has(item.id));
+      updatedRepeatQueue = updatedRepeatQueue.filter(item => !targetIds.has(item.id));
+      targetIds.forEach(id => {
+        if (!updatedLearned.includes(id)) {
+          updatedLearned.push(id);
+        }
+        if (!updatedSolved.includes(id)) {
+          updatedSolved.push(id);
+        }
+      });
     } else if (difficulty === 'medium') {
       // Repeats based on target (min of 2 and userRepeatTarget)
       const prevRemaining = existingRepeat?.remainingRepeats;
@@ -1916,21 +1947,24 @@ export default function App() {
 
       const isCorrect = selectedOption === currentQuestion.answer;
 
-      if (isCorrect && !currentQuestion.isRepeat) {
-        // Fresh question answered correctly: 1/h for Hard, 2/e for Easy
-        if (e.key === '1' || e.key.toLowerCase() === 'h') {
-          e.preventDefault();
-          handleDifficultySelect('hard');
-        } else if (e.key === '2' || e.key.toLowerCase() === 'e') {
+      if (isCorrect) {
+        // Question answered correctly (fresh or repeat): 2/e for Easy (mark learned)
+        if (e.key === '2' || e.key.toLowerCase() === 'e') {
           e.preventDefault();
           handleDifficultySelect('easy');
+          return;
         }
-      } else {
-        // Repeat question answered correctly OR incorrect answer: Enter/Space/1/ArrowRight advances!
-        if (e.key === 'Enter' || e.key === ' ' || e.key === '1' || e.key === 'ArrowRight') {
+        if (!currentQuestion.isRepeat && (e.key === '1' || e.key.toLowerCase() === 'h')) {
           e.preventDefault();
-          handleGoNext();
+          handleDifficultySelect('hard');
+          return;
         }
+      }
+
+      // Enter/Space/ArrowRight advances forward
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight' || (isCorrect && currentQuestion.isRepeat && e.key === '1')) {
+        e.preventDefault();
+        handleGoNext();
       }
     };
 
@@ -3179,6 +3213,30 @@ export default function App() {
                           >
                             <ArrowLeftIcon size={15} />
                             <span>Previous Question</span>
+                          </button>
+                        )}
+                        {(currentQuestion.remainingRepeats ?? userRepeatTarget) > 1 && (
+                          <button
+                            type="button"
+                            className="diff-btn-easy repeat-easy-btn"
+                            onClick={() => handleDifficultySelect('easy')}
+                            title="Mark as learned now (will not repeat again)"
+                            style={{
+                              padding: '0.5rem 1rem',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '0.45rem',
+                              borderRadius: '8px',
+                              cursor: 'pointer',
+                              fontSize: '0.875rem',
+                              fontWeight: 600,
+                              background: 'rgba(16, 185, 129, 0.15)',
+                              color: '#34d399',
+                              border: '1px solid rgba(16, 185, 129, 0.3)'
+                            }}
+                          >
+                            <CheckIcon size={15} />
+                            <span>Mark Learned (Easy)</span>
                           </button>
                         )}
                         <button

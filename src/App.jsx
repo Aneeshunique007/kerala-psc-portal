@@ -1810,7 +1810,8 @@ export default function App() {
   const handleDifficultySelect = (difficulty) => {
     if (!currentQuestion || !currentUser) return;
     if (difficulty === 'easy' && (
-      !isAnswered
+      currentQuestion.isRepeat
+      || !isAnswered
       || selectedOption !== currentQuestion.answer
     )) return;
 
@@ -1947,24 +1948,21 @@ export default function App() {
 
       const isCorrect = selectedOption === currentQuestion.answer;
 
-      if (isCorrect) {
-        // Question answered correctly (fresh or repeat): 2/e for Easy (mark learned)
-        if (e.key === '2' || e.key.toLowerCase() === 'e') {
-          e.preventDefault();
-          handleDifficultySelect('easy');
-          return;
-        }
-        if (!currentQuestion.isRepeat && (e.key === '1' || e.key.toLowerCase() === 'h')) {
+      if (isCorrect && !currentQuestion.isRepeat) {
+        // Fresh question answered correctly: 1/h for Hard, 2/e for Easy
+        if (e.key === '1' || e.key.toLowerCase() === 'h') {
           e.preventDefault();
           handleDifficultySelect('hard');
-          return;
+        } else if (e.key === '2' || e.key.toLowerCase() === 'e') {
+          e.preventDefault();
+          handleDifficultySelect('easy');
         }
-      }
-
-      // Enter/Space/ArrowRight advances forward
-      if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight' || (isCorrect && currentQuestion.isRepeat && e.key === '1')) {
-        e.preventDefault();
-        handleGoNext();
+      } else {
+        // Repeat question answered correctly OR incorrect answer: Enter/Space/1/ArrowRight advances!
+        if (e.key === 'Enter' || e.key === ' ' || e.key === '1' || e.key === 'ArrowRight') {
+          e.preventDefault();
+          handleGoNext();
+        }
       }
     };
 
@@ -3213,30 +3211,6 @@ export default function App() {
                           >
                             <ArrowLeftIcon size={15} />
                             <span>Previous Question</span>
-                          </button>
-                        )}
-                        {(currentQuestion.remainingRepeats ?? userRepeatTarget) > 1 && (
-                          <button
-                            type="button"
-                            className="diff-btn-easy repeat-easy-btn"
-                            onClick={() => handleDifficultySelect('easy')}
-                            title="Mark as learned now (will not repeat again)"
-                            style={{
-                              padding: '0.5rem 1rem',
-                              display: 'inline-flex',
-                              alignItems: 'center',
-                              gap: '0.45rem',
-                              borderRadius: '8px',
-                              cursor: 'pointer',
-                              fontSize: '0.875rem',
-                              fontWeight: 600,
-                              background: 'rgba(16, 185, 129, 0.15)',
-                              color: '#34d399',
-                              border: '1px solid rgba(16, 185, 129, 0.3)'
-                            }}
-                          >
-                            <CheckIcon size={15} />
-                            <span>Mark Learned (Easy)</span>
                           </button>
                         )}
                         <button

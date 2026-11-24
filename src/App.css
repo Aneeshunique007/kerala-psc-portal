@@ -4957,6 +4957,93 @@
   font-weight: 700;
 }
 
+/* My Notes Row in Sidebar */
+.my-notes-switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.6rem;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 0.35rem;
+}
+
+.my-notes-switch-row:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.my-notes-switch-row.active {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.22), rgba(6, 182, 212, 0.22));
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+}
+
+.my-notes-switch-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.1rem 0.2rem;
+  text-align: left;
+  font-family: var(--font-ui);
+}
+
+.my-notes-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.my-notes-badge {
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(16, 185, 129, 0.4);
+}
+
+.my-notes-btn-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.my-notes-switch-row:not(.active) .my-notes-btn-title {
+  color: #cbd5e1;
+}
+
+.my-notes-switch-row .subject-qcount {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #34d399;
+}
+
+.my-notes-switch-row.active .subject-qcount {
+  color: #6ee7b7;
+}
+
+/* My Notes Navbar button */
+.nav-btn.nav-my-notes-btn:hover,
+.nav-btn.nav-my-notes-btn.active {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+  color: #34d399 !important;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.25) !important;
+}
+
+.nav-icon-emerald {
+  color: #10b981;
+}
+
 /* Mobile Subject Nav Toggle (Row 1 of Top Nav) */
 .mobile-subject-nav-toggle {
   display: flex;

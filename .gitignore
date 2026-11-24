@@ -22,7 +22,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Editor / OS files
+# Large Raw Data
+pdfs/
+MY notes/
 .DS_Store
 .idea
 .vscode

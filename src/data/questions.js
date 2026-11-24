@@ -12,6 +12,7 @@ import pyq2024Questions from './pyq_2024_questions.json';
 import pyq2025Questions from './pyq_2025_questions.json';
 import pyq2026Questions from './pyq_2026_questions.json';
 import currentAffairsQuestions from './current_affairs_questions.json';
+import myNotesQuestions from './my_notes_questions.json';
 
 // -------------------------------------------------------------
 // 2. Syllabus & Topic Taxonomy Definitions
@@ -1075,6 +1076,55 @@ export const CURRENT_AFFAIRS_TOPICS = [
   ...CURRENT_AFFAIRS_SUBJECT_TOPICS
 ];
 
+// Revision (Classroom Notes / World History)
+export const MY_NOTES_TOPICS = [
+  {
+    id: 'my_notes_glorious_rev',
+    name: 'ഇംഗ്ലണ്ടിലെ മഹത്തായ വിപ്ലവം (1688)',
+    icon: '👑',
+    desc: 'Glorious / Bloodless Revolution, Bill of Rights & Stuart Dynasty',
+    color: '#6366f1',
+    section: 'Revision (108 Qs)',
+    sectionMarks: '108 Qs'
+  },
+  {
+    id: 'my_notes_american_rev',
+    name: 'അമേരിക്കൻ സ്വാതന്ത്ര്യ സമരം (1775-1783)',
+    icon: '🗽',
+    desc: '13 Colonies, Boston Tea Party, Declaration of Independence & Constitution',
+    color: '#3b82f6',
+    section: 'Revision (108 Qs)',
+    sectionMarks: '108 Qs'
+  },
+  {
+    id: 'my_notes_french_rev',
+    name: 'ഫ്രഞ്ച് വിപ്ലവം (1789)',
+    icon: '🏰',
+    desc: 'Bourbon Dynasty, Estates, Tennis Court Oath, Bastille, Reign of Terror & Napoleon',
+    color: '#ec4899',
+    section: 'Revision (108 Qs)',
+    sectionMarks: '108 Qs'
+  },
+  {
+    id: 'my_notes_latin_rev',
+    name: 'ലാറ്റിനമേരിക്കൻ വിപ്ലവങ്ങൾ',
+    icon: '🌎',
+    desc: 'Simon Bolivar, San Martin, Mestizoes & Machu Picchu',
+    color: '#f59e0b',
+    section: 'Revision (108 Qs)',
+    sectionMarks: '108 Qs'
+  },
+  {
+    id: 'my_notes_figures_titles',
+    name: 'പ്രധാന വ്യക്തികളും സ്ഥാനപ്പേരുകളും',
+    icon: '⭐',
+    desc: 'Joan of Arc, Industrial Revolution, Quotes & Historical Figures',
+    color: '#8b5cf6',
+    section: 'Revision (108 Qs)',
+    sectionMarks: '108 Qs'
+  }
+];
+
 // -------------------------------------------------------------
 // 3. Question Bank Exports
 // -------------------------------------------------------------
@@ -1084,6 +1134,8 @@ export const QUESTION_BANK = Array.isArray(malayalamQuestions) ? malayalamQuesti
 export const ENGLISH_QUESTION_BANK = Array.isArray(englishQuestions) ? englishQuestions : [];
 
 export const CURRENT_AFFAIRS_QUESTION_BANK = Array.isArray(currentAffairsQuestions) ? currentAffairsQuestions : [];
+
+export const MY_NOTES_QUESTION_BANK = Array.isArray(myNotesQuestions) ? myNotesQuestions : [];
 
 export const PYQ_YEARS = [
   { id: 'all', label: 'All Exam Papers (2026–2021)', shortLabel: '2026-2021', count: 17101 },

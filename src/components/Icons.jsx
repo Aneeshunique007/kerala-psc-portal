@@ -457,3 +457,19 @@ export function CloudIcon({ className = "icon", size = 18 }) {
   );
 }
 
+export function NotebookIcon({ className = "icon", size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M2 6h4"/>
+      <path d="M2 10h4"/>
+      <path d="M2 14h4"/>
+      <path d="M2 18h4"/>
+      <rect width="16" height="20" x="4" y="2" rx="2"/>
+      <path d="M9.5 8h5"/>
+      <path d="M9.5 12h5"/>
+      <path d="M9.5 16h5"/>
+    </svg>
+  );
+}
+
+

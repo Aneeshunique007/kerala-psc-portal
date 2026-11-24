@@ -12,6 +12,8 @@ import {
   CURRENT_AFFAIRS_MONTH_TOPICS,
   CURRENT_AFFAIRS_SUBJECT_TOPICS,
   CURRENT_AFFAIRS_QUESTION_BANK,
+  MY_NOTES_TOPICS,
+  MY_NOTES_QUESTION_BANK,
   PYQ_YEARS
 } from './data/questions';
 import { soundFX } from './utils/soundEffects';
@@ -61,7 +63,8 @@ import {
   ShieldCheckIcon,
   LogOutIcon,
   GraduationCapIcon,
-  LightbulbIcon
+  LightbulbIcon,
+  NotebookIcon
 } from './components/Icons';
 import './App.css';
 
@@ -91,6 +94,8 @@ function QuestionDisplay({ text }) {
 
 const getFreshQuestion = (q) => {
   if (!q) return q;
+  const freshNotes = MY_NOTES_QUESTION_BANK.find(nq => nq.id === q.id);
+  if (freshNotes) return freshNotes;
   const freshCA = CURRENT_AFFAIRS_QUESTION_BANK.find(cq => cq.id === q.id);
   if (freshCA) return freshCA;
   const freshPYQ = PYQ_QUESTION_BANK.find(pq => pq.id === q.id);
@@ -268,6 +273,8 @@ export default function App() {
     ? (caViewMode === 'topic'
         ? [CURRENT_AFFAIRS_TOPICS[0], ...CURRENT_AFFAIRS_SUBJECT_TOPICS]
         : [CURRENT_AFFAIRS_TOPICS[0], ...CURRENT_AFFAIRS_MONTH_TOPICS])
+    : activeSubject === 'my_notes'
+    ? MY_NOTES_TOPICS
     : SYLLABUS_TOPICS;
 
   const currentQuestionBank = activeSubject === 'english'
@@ -276,6 +283,8 @@ export default function App() {
     ? PYQ_QUESTION_BANK
     : activeSubject === 'current_affairs'
     ? CURRENT_AFFAIRS_QUESTION_BANK
+    : activeSubject === 'my_notes'
+    ? MY_NOTES_QUESTION_BANK
     : QUESTION_BANK;
 
   // Strict Access Gate: Only Admin and Admin-Permitted users can access this portal
@@ -943,6 +952,8 @@ export default function App() {
     localStorage.setItem('psc_active_subject', subject);
     const defaultTopic = (subject === 'pyq' && pyqViewMode === 'paper')
       ? ((PYQ_PAPER_TOPICS_BY_YEAR[selectedYear] || [])[0]?.id || 'all')
+      : subject === 'my_notes'
+      ? (MY_NOTES_TOPICS[0]?.id || 'my_notes_glorious_rev')
       : 'all';
     setSelectedTopic(defaultTopic);
     setIsRepeatOnlyMode(false);
@@ -1034,6 +1045,7 @@ export default function App() {
     english: ENGLISH_QUESTION_BANK.length,
     current_affairs: CURRENT_AFFAIRS_QUESTION_BANK.length,
     pyq: PYQ_QUESTION_BANK.length,
+    my_notes: MY_NOTES_QUESTION_BANK.length,
     pq_kerala_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_kerala_history').length,
     pq_indian_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_indian_history').length,
     pq_world_history: PYQ_QUESTION_BANK.filter(q => q.topic === 'pq_world_history').length,
@@ -1225,6 +1237,8 @@ export default function App() {
       return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === q.id) || String(q.id).startsWith('ca_');
     } else if (activeSubject === 'pyq') {
       return PYQ_QUESTION_BANK.some(pq => pq.id === q.id) || String(q.id).startsWith('pyq_');
+    } else if (activeSubject === 'my_notes') {
+      return MY_NOTES_QUESTION_BANK.some(nq => nq.id === q.id) || String(q.id).startsWith('note_q_');
     } else {
       return QUESTION_BANK.some(mq => mq.id === q.id);
     }
@@ -1252,6 +1266,9 @@ export default function App() {
         return !isMathsQuestion(question);
       }
       return true;
+    }
+    if (activeSubject === 'my_notes') {
+      return question.topic === targetTopicId;
     }
     if (activeSubject === 'current_affairs') {
       const caTopic = CURRENT_AFFAIRS_TOPICS.find(t => t.id === targetTopicId);
@@ -1307,6 +1324,9 @@ export default function App() {
 
   const isInActiveSubject = (qId) => {
     if (activeSubject === 'english') return ENGLISH_QUESTION_BANK.some(eq => eq.id === qId) || String(qId).startsWith('eng_');
+    if (activeSubject === 'my_notes') {
+      return MY_NOTES_QUESTION_BANK.some(nq => nq.id === qId) || String(qId).startsWith('note_q_');
+    }
     if (activeSubject === 'current_affairs') {
       return CURRENT_AFFAIRS_QUESTION_BANK.some(cq => cq.id === qId) || String(qId).startsWith('ca_');
     }
@@ -1519,19 +1539,21 @@ export default function App() {
     if (nextQ) {
       const isAuthenticKeyOrder = activeSubject === 'pyq';
       let finalOptions = [...nextQ.options];
-      let finalAnswer = nextQ.answer;
+      const correctText = typeof nextQ.answer === 'number'
+        ? nextQ.options[nextQ.answer]
+        : (nextQ.options.includes(nextQ.answer) ? nextQ.answer : nextQ.options[0]);
+      let finalAnswer = finalOptions.indexOf(correctText);
+      if (finalAnswer === -1) finalAnswer = 0;
 
       if (!isAuthenticKeyOrder) {
         // Randomize option order dynamically ONLY for regular syllabus practice, NOT for PYQs
-        const originalOptions = [...nextQ.options];
-        const correctText = originalOptions[nextQ.answer];
-
-        const shuffledOptions = [...originalOptions];
+        const shuffledOptions = [...nextQ.options];
         for (let i = shuffledOptions.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
         }
         finalAnswer = shuffledOptions.indexOf(correctText);
+        if (finalAnswer === -1) finalAnswer = 0;
         finalOptions = shuffledOptions;
       }
 
@@ -2270,6 +2292,24 @@ export default function App() {
               </div>
             )}
           </div>
+
+          {/* Revision / Classroom Notes Switcher */}
+          <div className={`my-notes-switch-row ${isSubjectActive('my_notes') ? 'active' : ''}`}>
+            <button
+              type="button"
+              className="my-notes-switch-btn"
+              onClick={() => {
+                handleChooseTopic('my_notes', MY_NOTES_TOPICS[0]?.id || 'my_notes_glorious_rev');
+                setViewMode('quiz');
+              }}
+            >
+              <div className="my-notes-btn-left">
+                <span className="my-notes-badge">REV</span>
+                <span className="my-notes-btn-title">Revision</span>
+              </div>
+              <span className="subject-qcount">{MY_NOTES_QUESTION_BANK.length} Qs</span>
+            </button>
+          </div>
         </div>
 
 
@@ -2415,6 +2455,16 @@ export default function App() {
                   >
                     PYQ
                   </button>
+                  <button
+                    type="button"
+                    className={`mob-subj-btn ${isSubjectActive('my_notes') ? 'active' : ''}`}
+                    onClick={() => {
+                      handleSwitchSubject('my_notes');
+                      setViewMode('quiz');
+                    }}
+                  >
+                    REV
+                  </button>
                 </div>
               ) : (
                 <div className="mobile-admin-title mobile-only">
@@ -2469,6 +2519,22 @@ export default function App() {
                       <span className="desktop-only">Admin Center</span>
                     </>
                   )}
+                </button>
+              )}
+
+              {/* Revision Navbar Button */}
+              {viewMode !== 'admin' && (
+                <button
+                  type="button"
+                  className={`nav-btn nav-my-notes-btn ${activeSubject === 'my_notes' && viewMode === 'quiz' ? 'active' : ''}`}
+                  onClick={() => {
+                    handleSwitchSubject('my_notes');
+                    setViewMode('quiz');
+                  }}
+                  title={`Revision & Notes (${MY_NOTES_QUESTION_BANK.length} Questions)`}
+                >
+                  <NotebookIcon size={14} className="nav-icon-emerald" />
+                  <span className="desktop-only">Revision</span>
                 </button>
               )}
 
@@ -2581,7 +2647,7 @@ export default function App() {
                 <div className="custom-topic-dropdown-menu">
                   <div className="dropdown-menu-header">
                     <span>
-                      Select Topic ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? (selectedYear === 'all' ? '2026–2021 All PYQs' : `${selectedYear} PYQ Papers`) : activeSubject === 'current_affairs' ? 'Current Affairs 2026' : 'Malayalam'})
+                      Select Topic ({activeSubject === 'english' ? 'English' : activeSubject === 'pyq' ? (selectedYear === 'all' ? '2026–2021 All PYQs' : `${selectedYear} PYQ Papers`) : activeSubject === 'current_affairs' ? 'Current Affairs 2026' : activeSubject === 'my_notes' ? 'Revision' : 'Malayalam'})
                     </span>
                     <button
                       className="dropdown-close-btn"
@@ -2730,8 +2796,8 @@ export default function App() {
                   )}
 
                   <div className="dropdown-options-list">
-                    {/* All Topics (hidden in PYQ Paper-wise mode) */}
-                    {!(activeSubject === 'pyq' && pyqViewMode === 'paper') && (() => {
+                    {/* All Topics (hidden in PYQ Paper-wise mode and My Notes) */}
+                    {!(activeSubject === 'pyq' && pyqViewMode === 'paper') && activeSubject !== 'my_notes' && (() => {
                       const { solved, total } = getTopicCounts('all');
                       const progressPercent = total > 0 ? Math.min(100, Math.max(solved > 0 ? 3 : 0, (solved / total) * 100)) : 0;
                       return (
@@ -2772,6 +2838,8 @@ export default function App() {
                         ? (pyqViewMode === 'paper' ? (selectedYear === 'all' ? '2026–2021 Question Papers' : `${selectedYear} Question Papers`) : 'PYQ Topics')
                         : activeSubject === 'current_affairs'
                         ? (caViewMode === 'topic' ? 'Current Affairs Topics' : 'Current Affairs Capsules')
+                        : activeSubject === 'my_notes'
+                        ? 'Revision Topics'
                         : 'Malayalam Topics'} ({currentSyllabusTopics.filter(t => t.id !== 'all').length})
                     </div>
 

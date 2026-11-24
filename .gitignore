@@ -25,6 +25,8 @@ lerna-debug.log*
 # Large Raw Data
 pdfs/
 MY notes/
+scratch_ocr/
+*.pdf
 .DS_Store
 .idea
 .vscode

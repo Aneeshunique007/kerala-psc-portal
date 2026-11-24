@@ -1076,49 +1076,82 @@ export const CURRENT_AFFAIRS_TOPICS = [
   ...CURRENT_AFFAIRS_SUBJECT_TOPICS
 ];
 
-// Revision (Classroom Notes / World History)
+// Revision (Classroom Notes & SCERT Textbooks)
 export const MY_NOTES_TOPICS = [
   {
     id: 'my_notes_glorious_rev',
     name: 'ഇംഗ്ലണ്ടിലെ മഹത്തായ വിപ്ലവം (1688)',
     englishName: 'Glorious Revolution (1688) & Industrial Revolution',
+    category: 'revision',
     icon: '👑',
     desc: 'Glorious / Bloodless Revolution, Bill of Rights, Stuart Dynasty & Industrial Revolution',
     color: '#6366f1',
-    section: 'Revision (108 Qs)',
-    sectionMarks: '108 Qs'
+    section: 'Classroom Notes',
+    sectionMarks: '27 Qs'
   },
   {
     id: 'my_notes_american_rev',
     name: 'അമേരിക്കൻ സ്വാതന്ത്ര്യ സമരം (1775-1783)',
     englishName: 'American War of Independence (1775-1783)',
+    category: 'revision',
     icon: '🗽',
     desc: '13 Colonies, Boston Tea Party, Declaration of Independence & Constitution',
     color: '#3b82f6',
-    section: 'Revision (108 Qs)',
-    sectionMarks: '108 Qs'
+    section: 'Classroom Notes',
+    sectionMarks: '27 Qs'
   },
   {
     id: 'my_notes_french_rev',
     name: 'ഫ്രഞ്ച് വിപ്ലവം (1789)',
     englishName: 'French Revolution (1789) & Napoleon Bonaparte',
+    category: 'revision',
     icon: '🏰',
     desc: 'Bourbon Dynasty, Estates, Tennis Court Oath, Bastille, Reign of Terror, Napoleon & Joan of Arc',
     color: '#ec4899',
-    section: 'Revision (108 Qs)',
-    sectionMarks: '108 Qs'
+    section: 'Classroom Notes',
+    sectionMarks: '27 Qs'
   },
   {
     id: 'my_notes_latin_rev',
     name: 'ലാറ്റിനമേരിക്കൻ വിപ്ലവങ്ങൾ',
     englishName: 'Latin American Revolutions & Simon Bolivar',
+    category: 'revision',
     icon: '🌎',
     desc: 'Simon Bolivar, San Martin, Mestizoes & Machu Picchu',
     color: '#f59e0b',
-    section: 'Revision (108 Qs)',
-    sectionMarks: '108 Qs'
+    section: 'Classroom Notes',
+    sectionMarks: '27 Qs'
+  },
+  // SCERT Chapters
+  {
+    id: 'scert_std9_physics_work_energy',
+    std: 'Std 9',
+    classNum: 9,
+    category: 'scert',
+    name: 'ഭൗതികശാസ്ത്രം: പ്രവൃത്തിയും ഊർജ്ജവും',
+    englishName: 'Class 9 Physics • Work, Energy & Power (SCERT Ch. 6)',
+    icon: '⚡',
+    desc: 'പ്രവൃത്തി (W=Fs, W=mgh), ഗതികോർജ്ജം & സ്ഥിതികോർജ്ജം, പവർ (Watt, HP) & Kerala PSC Arithmetic Problems',
+    color: '#10b981',
+    section: 'SCERT Std 9',
+    sectionMarks: '30 Qs'
+  },
+  {
+    id: 'scert_std10_physics_simple_machines',
+    std: 'Std 10',
+    classNum: 10,
+    category: 'scert',
+    name: 'ഭൗതികശാസ്ത്രം (ഭാഗം 2): യാന്ത്രികലാഭം പ്രയോഗത്തിൽ',
+    englishName: 'Class 10 Physics Part II • Simple Machines & Levers (SCERT)',
+    icon: '⚙️',
+    desc: 'ലഘുയന്ത്രങ്ങൾ, ഉത്തോലകം (1, 2, 3 വർഗ്ഗം), യാന്ത്രികലാഭം (MA=L/E), കപ്പികൾ, ചരിവുതലം & PSC Numerical Problems',
+    color: '#06b6d4',
+    section: 'SCERT Std 10',
+    sectionMarks: '22 Qs'
   }
 ];
+
+export const SCERT_TOPICS = MY_NOTES_TOPICS.filter(t => t.category === 'scert');
 
 // -------------------------------------------------------------
 // 3. Question Bank Exports

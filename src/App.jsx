@@ -32,6 +32,7 @@ import AdminPanel from './components/AdminPanel';
 import AdminLoginModal from './components/AdminLoginModal';
 import AdminDashboardView from './components/AdminDashboardView';
 import TopicNotes from './components/TopicNotes';
+import RevisionDashboard from './components/RevisionDashboard';
 import { cleanExplanation } from './utils/cleanExplanation';
 import {
   consumeInviteCode,
@@ -961,7 +962,9 @@ export default function App() {
     setMobileSidebarOpen(false);
     setQuestionHistoryStack([]);
     setHistoryPointer(-1);
-    if (subject === 'pyq' && pyqViewMode === 'paper') {
+    if (subject === 'my_notes') {
+      setViewMode('revision');
+    } else if (subject === 'pyq' && pyqViewMode === 'paper') {
       setViewMode('quiz');
     } else {
       setViewMode(subject === 'malayalam' || subject === 'english' || subject === 'pyq' || subject === 'current_affairs' ? 'notes' : 'quiz');
@@ -1996,7 +1999,7 @@ export default function App() {
     ? CURRENT_AFFAIRS_TOPICS.find(t => t.id === selectedTopic)
     : currentSyllabusTopics.find(t => t.id === selectedTopic)) || currentSyllabusTopics[0];
   const currentTopicProgress = getTopicCounts(selectedTopic);
-  const isPracticeMode = viewMode === 'quiz' || viewMode === 'notes';
+  const isPracticeMode = viewMode === 'quiz' || viewMode === 'notes' || viewMode === 'revision';
   const isSubjectActive = (subjectKey) => isPracticeMode && activeSubject === subjectKey;
 
   return (
@@ -2294,13 +2297,13 @@ export default function App() {
           </div>
 
           {/* Revision / Classroom Notes Switcher */}
-          <div className={`my-notes-switch-row ${isSubjectActive('my_notes') ? 'active' : ''}`}>
+          <div className={`my-notes-switch-row ${activeSubject === 'my_notes' && (viewMode === 'revision' || viewMode === 'quiz') ? 'active' : ''}`}>
             <button
               type="button"
               className="my-notes-switch-btn"
               onClick={() => {
-                handleChooseTopic('my_notes', MY_NOTES_TOPICS[0]?.id || 'my_notes_glorious_rev');
-                setViewMode('quiz');
+                handleSwitchSubject('my_notes');
+                setViewMode('revision');
               }}
             >
               <div className="my-notes-btn-left">
@@ -2457,10 +2460,10 @@ export default function App() {
                   </button>
                   <button
                     type="button"
-                    className={`mob-subj-btn ${isSubjectActive('my_notes') ? 'active' : ''}`}
+                    className={`mob-subj-btn ${activeSubject === 'my_notes' && (viewMode === 'revision' || viewMode === 'quiz') ? 'active' : ''}`}
                     onClick={() => {
                       handleSwitchSubject('my_notes');
-                      setViewMode('quiz');
+                      setViewMode('revision');
                     }}
                   >
                     REV
@@ -2483,6 +2486,11 @@ export default function App() {
                 <div className="current-topic-pill desktop-only">
                   <BookmarkIcon size={15} />
                   <strong>Bookmarks Library</strong>
+                </div>
+              ) : viewMode === 'revision' ? (
+                <div className="current-topic-pill desktop-only">
+                  <NotebookIcon size={15} />
+                  <strong>Revision Dashboard</strong>
                 </div>
               ) : (
                 <div className="current-topic-pill desktop-only">
@@ -2519,22 +2527,6 @@ export default function App() {
                       <span className="desktop-only">Admin Center</span>
                     </>
                   )}
-                </button>
-              )}
-
-              {/* Revision Navbar Button */}
-              {viewMode !== 'admin' && (
-                <button
-                  type="button"
-                  className={`nav-btn nav-my-notes-btn ${activeSubject === 'my_notes' && viewMode === 'quiz' ? 'active' : ''}`}
-                  onClick={() => {
-                    handleSwitchSubject('my_notes');
-                    setViewMode('quiz');
-                  }}
-                  title={`Revision & Notes (${MY_NOTES_QUESTION_BANK.length} Questions)`}
-                >
-                  <NotebookIcon size={14} className="nav-icon-emerald" />
-                  <span className="desktop-only">Revision</span>
                 </button>
               )}
 
@@ -2961,6 +2953,20 @@ export default function App() {
               year={selectedYear}
               onExit={() => setViewMode(previousViewMode || 'blueprint')}
             />
+          ) : viewMode === 'revision' ? (
+            <RevisionDashboard
+              currentUser={currentUser}
+              topics={MY_NOTES_TOPICS}
+              questionBank={MY_NOTES_QUESTION_BANK}
+              userSolvedSet={userSolvedSet}
+              onStartTopic={(topicId) => {
+                setActiveSubject('my_notes');
+                setSelectedTopic(topicId);
+                setIsRepeatOnlyMode(false);
+                setViewMode('quiz');
+              }}
+              onBackToHome={() => setViewMode('blueprint')}
+            />
           ) : viewMode === 'notes' ? (
             <TopicNotes
               subject={activeSubject}
@@ -2968,7 +2974,19 @@ export default function App() {
               onProceed={() => setViewMode('quiz')}
             />
           ) : currentQuestion ? (
-            <div className="question-card">
+            <div className="practice-question-wrapper">
+              {activeSubject === 'my_notes' && (
+                <button
+                  type="button"
+                  className="back-to-revision-btn"
+                  onClick={() => setViewMode('revision')}
+                  title="Back to Revision Dashboard"
+                >
+                  <ArrowLeftIcon size={14} />
+                  <span>Back to Revision</span>
+                </button>
+              )}
+              <div className="question-card">
               {/* Question Header & Badges */}
               <div className="card-top-bar">
                 <div className="card-top-bar-left">
@@ -3336,6 +3354,7 @@ export default function App() {
                 </div>
               )}
             </div>
+          </div>
           ) : (
             <div className="empty-state-card">
               <div style={{ marginBottom: '1rem', color: '#10b981', display: 'flex', justifyContent: 'center' }}>
@@ -3344,6 +3363,16 @@ export default function App() {
               <h2>{String(selectedTopic).startsWith('qp:') ? 'Question Paper Completed!' : 'Topic Completely Mastered!'}</h2>
               <p>Every question here has been answered correctly and all repeats are finished. Switch topics or practice another syllabus section.</p>
               <div className="empty-state-actions">
+                {activeSubject === 'my_notes' && (
+                  <button
+                    type="button"
+                    className="next-btn"
+                    style={{ background: 'linear-gradient(90deg, #ea580c, #f97316)', borderColor: '#f97316' }}
+                    onClick={() => setViewMode('revision')}
+                  >
+                    Back to Revision Topics
+                  </button>
+                )}
                 {!isRepeatOnlyMode && (
                   <button
                     type="button"

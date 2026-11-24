@@ -1081,8 +1081,9 @@ export const MY_NOTES_TOPICS = [
   {
     id: 'my_notes_glorious_rev',
     name: 'ഇംഗ്ലണ്ടിലെ മഹത്തായ വിപ്ലവം (1688)',
+    englishName: 'Glorious Revolution (1688) & Industrial Revolution',
     icon: '👑',
-    desc: 'Glorious / Bloodless Revolution, Bill of Rights & Stuart Dynasty',
+    desc: 'Glorious / Bloodless Revolution, Bill of Rights, Stuart Dynasty & Industrial Revolution',
     color: '#6366f1',
     section: 'Revision (108 Qs)',
     sectionMarks: '108 Qs'
@@ -1090,6 +1091,7 @@ export const MY_NOTES_TOPICS = [
   {
     id: 'my_notes_american_rev',
     name: 'അമേരിക്കൻ സ്വാതന്ത്ര്യ സമരം (1775-1783)',
+    englishName: 'American War of Independence (1775-1783)',
     icon: '🗽',
     desc: '13 Colonies, Boston Tea Party, Declaration of Independence & Constitution',
     color: '#3b82f6',
@@ -1099,8 +1101,9 @@ export const MY_NOTES_TOPICS = [
   {
     id: 'my_notes_french_rev',
     name: 'ഫ്രഞ്ച് വിപ്ലവം (1789)',
+    englishName: 'French Revolution (1789) & Napoleon Bonaparte',
     icon: '🏰',
-    desc: 'Bourbon Dynasty, Estates, Tennis Court Oath, Bastille, Reign of Terror & Napoleon',
+    desc: 'Bourbon Dynasty, Estates, Tennis Court Oath, Bastille, Reign of Terror, Napoleon & Joan of Arc',
     color: '#ec4899',
     section: 'Revision (108 Qs)',
     sectionMarks: '108 Qs'
@@ -1108,18 +1111,10 @@ export const MY_NOTES_TOPICS = [
   {
     id: 'my_notes_latin_rev',
     name: 'ലാറ്റിനമേരിക്കൻ വിപ്ലവങ്ങൾ',
+    englishName: 'Latin American Revolutions & Simon Bolivar',
     icon: '🌎',
     desc: 'Simon Bolivar, San Martin, Mestizoes & Machu Picchu',
     color: '#f59e0b',
-    section: 'Revision (108 Qs)',
-    sectionMarks: '108 Qs'
-  },
-  {
-    id: 'my_notes_figures_titles',
-    name: 'പ്രധാന വ്യക്തികളും സ്ഥാനപ്പേരുകളും',
-    icon: '⭐',
-    desc: 'Joan of Arc, Industrial Revolution, Quotes & Historical Figures',
-    color: '#8b5cf6',
     section: 'Revision (108 Qs)',
     sectionMarks: '108 Qs'
   }

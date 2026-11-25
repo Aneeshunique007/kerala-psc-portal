@@ -83,11 +83,16 @@ const SUBJECT_CONFIGS = [
 // Maths / Simple Arithmetic / Mental Ability detection (excluded from paper completion)
 const isMathsQuestion = (q) => {
   if (!q) return false;
+  if (q.is_maths || q.is_arithmetic) return true;
   const t = String(q.topic || '').trim().toLowerCase();
+  const st = String(q.sub_topic || '').trim().toLowerCase();
   if (['pq_maths', 'pq_arithmetic', 'pq_mental_ability', 'pq_simple_arithmetic', 'pq_quantitative_aptitude', 'mensuration'].includes(t)) {
     return true;
   }
   if (t.includes('math') || t.includes('arithmetic') || t.includes('mental ability') || t.includes('quantitative') || t.includes('mensuration')) {
+    return true;
+  }
+  if (st.includes('arithmetic') || st.includes('numerical')) {
     return true;
   }
   return false;

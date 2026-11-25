@@ -205,6 +205,24 @@ export default function App() {
       console.warn('Failed to save pyq maths preference', e);
     }
   };
+
+  const [scertIncludeMaths, setScertIncludeMaths] = useState(() => {
+    try {
+      const saved = localStorage.getItem('psc_scert_include_maths');
+      return saved !== null ? saved === 'true' : true;
+    } catch {
+      return true;
+    }
+  });
+
+  const handleToggleScertMaths = (included) => {
+    setScertIncludeMaths(included);
+    try {
+      localStorage.setItem('psc_scert_include_maths', String(included));
+    } catch (e) {
+      console.warn('Failed to save scert maths preference', e);
+    }
+  };
   const [caViewMode, setCaViewMode] = useState(() => {
     return localStorage.getItem('psc_ca_view_mode') || 'month';
   });
@@ -806,6 +824,10 @@ export default function App() {
             }
             return q.category === topicId || q.topic === topicId;
           }
+          if (subject === 'my_notes') {
+            if (String(topicId).startsWith('scert_') && !scertIncludeMaths && isMathsQuestion(q)) return false;
+            return q.topic === topicId;
+          }
           if (subject === 'english' || subject === 'pyq') {
             if (subject === 'pyq' && String(topicId).startsWith('qp:')) {
               if (!pyqPaperIncludeMaths && isMathsQuestion(q)) return false;
@@ -1247,14 +1269,23 @@ export default function App() {
     }
   });
 
-  // Maths / Simple Arithmetic / Mental Ability detection for PYQ papers
+  // Maths / Simple Arithmetic / Mental Ability detection for PYQ papers and SCERT
   const isMathsQuestion = (question) => {
     if (!question) return false;
+    if (question.is_maths || question.is_arithmetic) return true;
     const t = String(question.topic || '').trim().toLowerCase();
+    const st = String(question.sub_topic || '').trim().toLowerCase();
+    const qid = String(question.id || '').trim().toLowerCase();
     if (t === 'pq_maths' || t === 'pq_arithmetic' || t === 'pq_mental_ability' || t === 'pq_simple_arithmetic' || t === 'pq_quantitative_aptitude' || t === 'mensuration') {
       return true;
     }
     if (t.includes('math') || t.includes('arithmetic') || t.includes('mental ability') || t.includes('quantitative') || t.includes('mensuration')) {
+      return true;
+    }
+    if (st.includes('arithmetic') || st.includes('numerical')) {
+      return true;
+    }
+    if (qid.includes('_num_') && !st.includes('matching')) {
       return true;
     }
     return false;
@@ -1268,9 +1299,15 @@ export default function App() {
       if (activeSubject === 'pyq') {
         return !isMathsQuestion(question);
       }
+      if (activeSubject === 'my_notes' && !scertIncludeMaths) {
+        return !isMathsQuestion(question);
+      }
       return true;
     }
     if (activeSubject === 'my_notes') {
+      if (String(targetTopicId).startsWith('scert_') && !scertIncludeMaths && isMathsQuestion(question)) {
+        return false;
+      }
       return question.topic === targetTopicId;
     }
     if (activeSubject === 'current_affairs') {
@@ -1357,11 +1394,17 @@ export default function App() {
         } else if (String(selectedTopic).startsWith('qp:')) {
           pool = pool.filter(q => matchesTopic(q, selectedTopic));
         }
+      } else if (activeSubject === 'my_notes') {
+        if (!scertIncludeMaths && (selectedTopic === 'all' || String(selectedTopic).startsWith('scert_'))) {
+          pool = pool.filter(q => !isMathsQuestion(q));
+        }
       }
     } else if (selectedTopic === 'all') {
       pool = activeSubject === 'pyq'
         ? currentQuestionBank.filter(q => !isMathsQuestion(q))
-        : [...currentQuestionBank];
+        : (activeSubject === 'my_notes' && !scertIncludeMaths
+            ? currentQuestionBank.filter(q => !isMathsQuestion(q))
+            : [...currentQuestionBank]);
     } else {
       pool = currentQuestionBank.filter(q => matchesTopic(q, selectedTopic));
     }
@@ -1632,7 +1675,7 @@ export default function App() {
       setHistoryPointer(-1);
       loadNextQuestion({ reviewMode: false, clearHistory: true });
     }
-  }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId, viewMode, pyqPaperIncludeMaths]);
+  }, [selectedTopic, isRepeatOnlyMode, activeSubject, selectedYear, activeUserId, viewMode, pyqPaperIncludeMaths, scertIncludeMaths]);
 
   // Reset scroll to top whenever a new question is loaded so the question is never stuck at previous bottom
   useEffect(() => {
@@ -2310,8 +2353,37 @@ export default function App() {
                 <span className="my-notes-badge">REV</span>
                 <span className="my-notes-btn-title">Revision</span>
               </div>
-              <span className="subject-qcount">{MY_NOTES_QUESTION_BANK.length} Qs</span>
+              <span className="subject-qcount">
+                {scertIncludeMaths
+                  ? MY_NOTES_QUESTION_BANK.length
+                  : MY_NOTES_QUESTION_BANK.filter(q => !q.topic?.startsWith('scert_') || !isMathsQuestion(q)).length} Qs
+              </span>
             </button>
+            {activeSubject === 'my_notes' && (
+              <div className="pyq-maths-toggle-row pyq-maths-toggle-sidebar" style={{ marginTop: '0.45rem' }}>
+                <label className="pyq-maths-checkbox-label">
+                  <input
+                    type="checkbox"
+                    className="pyq-maths-checkbox"
+                    checked={scertIncludeMaths}
+                    onChange={(e) => handleToggleScertMaths(e.target.checked)}
+                  />
+                  <span className="pyq-maths-custom-checkbox">
+                    {scertIncludeMaths && (
+                      <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7.5L5.5 10.5L11.5 3.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    )}
+                  </span>
+                  <span className="pyq-maths-checkbox-text">
+                    SCERT Maths
+                  </span>
+                </label>
+                <span className={`pyq-maths-status-badge ${scertIncludeMaths ? 'included' : 'excluded'}`}>
+                  {scertIncludeMaths ? 'ON' : 'OFF'}
+                </span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -2959,6 +3031,8 @@ export default function App() {
               topics={MY_NOTES_TOPICS}
               questionBank={MY_NOTES_QUESTION_BANK}
               userSolvedSet={userSolvedSet}
+              scertIncludeMaths={scertIncludeMaths}
+              onToggleScertMaths={handleToggleScertMaths}
               onStartTopic={(topicId) => {
                 setActiveSubject('my_notes');
                 setSelectedTopic(topicId);
@@ -3018,8 +3092,9 @@ export default function App() {
                       </span>
                     </span>
                   )}
-                  {activeSubject === 'pyq' && String(selectedTopic).startsWith('qp:') && !pyqPaperIncludeMaths && (
-                    <span className="pyq-no-maths-pill" title="Maths & Mental Ability questions excluded from this question paper">
+                  {((activeSubject === 'pyq' && String(selectedTopic).startsWith('qp:') && !pyqPaperIncludeMaths) ||
+                    (activeSubject === 'my_notes' && String(selectedTopic).startsWith('scert_') && !scertIncludeMaths)) && (
+                    <span className="pyq-no-maths-pill" title="Maths & numerical arithmetic questions excluded">
                       No Maths
                     </span>
                   )}

@@ -5,10 +5,27 @@ export default function RevisionDashboard({
   topics = [],
   questionBank = [],
   userSolvedSet = new Set(),
+  scertIncludeMaths = true,
+  onToggleScertMaths,
   onStartTopic
 }) {
   const [activeTab, setActiveTab] = useState('scert'); // Default to 'scert' or 'topics'
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Helper to identify maths/numerical questions
+  const isQuestionMaths = (q) => {
+    return Boolean(q.is_maths || q.is_arithmetic || String(q.sub_topic || '').includes('arithmetic') || String(q.id || '').includes('_num_'));
+  };
+
+  // Active question bank respecting the scertIncludeMaths preference
+  const activeQuestionBank = useMemo(() => {
+    if (scertIncludeMaths) return questionBank;
+    return questionBank.filter(q => {
+      const isScert = String(q.topic || '').startsWith('scert_');
+      if (isScert && isQuestionMaths(q)) return false;
+      return true;
+    });
+  }, [questionBank, scertIncludeMaths]);
 
   // Split topics into Classroom Notes and SCERT Chapters
   const classroomTopics = useMemo(() => {
@@ -20,18 +37,23 @@ export default function RevisionDashboard({
   }, [topics]);
 
   // Overall Stats
-  const totalQuestions = questionBank.length;
-  const masteredCount = questionBank.filter(q => userSolvedSet.has(q.id)).length;
+  const totalQuestions = activeQuestionBank.length;
+  const masteredCount = activeQuestionBank.filter(q => userSolvedSet.has(q.id)).length;
   const overallPercent = totalQuestions > 0 ? Math.round((masteredCount / totalQuestions) * 100) : 0;
 
   const classroomTotalQs = useMemo(() => {
     const ids = new Set(classroomTopics.map(t => t.id));
-    return questionBank.filter(q => ids.has(q.topic)).length;
-  }, [classroomTopics, questionBank]);
+    return activeQuestionBank.filter(q => ids.has(q.topic)).length;
+  }, [classroomTopics, activeQuestionBank]);
 
   const scertTotalQs = useMemo(() => {
     const ids = new Set(scertChapters.map(t => t.id));
-    return questionBank.filter(q => ids.has(q.topic)).length;
+    return activeQuestionBank.filter(q => ids.has(q.topic)).length;
+  }, [scertChapters, activeQuestionBank]);
+
+  const totalScertMathsCount = useMemo(() => {
+    const ids = new Set(scertChapters.map(t => t.id));
+    return questionBank.filter(q => ids.has(q.topic) && isQuestionMaths(q)).length;
   }, [scertChapters, questionBank]);
 
   // Filter Classroom Topics
@@ -180,7 +202,7 @@ export default function RevisionDashboard({
           ) : (
             <div className="bp-topics-grid">
               {filteredClassroomTopics.map((topic, idx) => {
-                const topicQuestions = questionBank.filter(q => q.topic === topic.id);
+                const topicQuestions = activeQuestionBank.filter(q => q.topic === topic.id);
                 const total = topicQuestions.length;
                 const solved = topicQuestions.filter(q => userSolvedSet.has(q.id)).length;
                 const topicPercent = total > 0 ? Math.min(100, Math.round((solved / total) * 100)) : 0;
@@ -255,6 +277,31 @@ export default function RevisionDashboard({
               </span>
             </div>
 
+            {/* Maths & Numerical Problems Toggle Row */}
+            <div className="pyq-maths-toggle-row revision-scert-maths-toggle">
+              <label className="pyq-maths-checkbox-label">
+                <input
+                  type="checkbox"
+                  className="pyq-maths-checkbox"
+                  checked={scertIncludeMaths}
+                  onChange={(e) => onToggleScertMaths && onToggleScertMaths(e.target.checked)}
+                />
+                <span className="pyq-maths-custom-checkbox">
+                  {scertIncludeMaths && (
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                      <path d="M2.5 7.5L5.5 10.5L11.5 3.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  )}
+                </span>
+                <span className="pyq-maths-checkbox-text">
+                  Include Numerical & Arithmetic Problems (ഗണിത പ്രശ്നങ്ങൾ)
+                </span>
+              </label>
+              <span className={`pyq-maths-status-badge ${scertIncludeMaths ? 'included' : 'excluded'}`}>
+                {scertIncludeMaths ? `Maths Included (${totalScertMathsCount} Qs)` : 'Theory Only (No Maths)'}
+              </span>
+            </div>
+
             {filteredScertChapters.length === 0 ? (
               <div className="revision-empty-search">
                 <p>No SCERT chapters matching <strong>"{searchQuery}"</strong></p>
@@ -269,10 +316,14 @@ export default function RevisionDashboard({
             ) : (
               <div className="bp-topics-grid">
                 {filteredScertChapters.map((chapter) => {
-                  const chapterQuestions = questionBank.filter(q => q.topic === chapter.id);
+                  const chapterQuestions = activeQuestionBank.filter(q => q.topic === chapter.id);
                   const total = chapterQuestions.length;
                   const solved = chapterQuestions.filter(q => userSolvedSet.has(q.id)).length;
                   const chapterPercent = total > 0 ? Math.min(100, Math.round((solved / total) * 100)) : 0;
+
+                  const fullChapterQs = questionBank.filter(q => q.topic === chapter.id);
+                  const mathsCount = fullChapterQs.filter(q => isQuestionMaths(q)).length;
+                  const theoryCount = fullChapterQs.filter(q => !isQuestionMaths(q)).length;
 
                   return (
                     <div key={chapter.id} className="bp-topic-card revision-bp-card" style={{ borderLeft: '3px solid #10b981' }}>
@@ -312,7 +363,11 @@ export default function RevisionDashboard({
                       </div>
 
                       <div className="bp-topic-footer">
-                        <span className="bp-topic-count">Theory & Numerical Problems</span>
+                        <span className="bp-topic-count">
+                          {scertIncludeMaths
+                            ? `${theoryCount} Theory + ${mathsCount} Numerical Qs`
+                            : `Theory Only (${total} Qs)`}
+                        </span>
                         <button
                           type="button"
                           className="bp-practice-action-btn"

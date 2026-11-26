@@ -2359,31 +2359,6 @@ export default function App() {
                   : MY_NOTES_QUESTION_BANK.filter(q => !q.topic?.startsWith('scert_') || !isMathsQuestion(q)).length} Qs
               </span>
             </button>
-            {activeSubject === 'my_notes' && (
-              <div className="pyq-maths-toggle-row pyq-maths-toggle-sidebar" style={{ marginTop: '0.45rem' }}>
-                <label className="pyq-maths-checkbox-label">
-                  <input
-                    type="checkbox"
-                    className="pyq-maths-checkbox"
-                    checked={scertIncludeMaths}
-                    onChange={(e) => handleToggleScertMaths(e.target.checked)}
-                  />
-                  <span className="pyq-maths-custom-checkbox">
-                    {scertIncludeMaths && (
-                      <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
-                        <path d="M2.5 7.5L5.5 10.5L11.5 3.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    )}
-                  </span>
-                  <span className="pyq-maths-checkbox-text">
-                    SCERT Maths
-                  </span>
-                </label>
-                <span className={`pyq-maths-status-badge ${scertIncludeMaths ? 'included' : 'excluded'}`}>
-                  {scertIncludeMaths ? 'ON' : 'OFF'}
-                </span>
-              </div>
-            )}
           </div>
         </div>
 
